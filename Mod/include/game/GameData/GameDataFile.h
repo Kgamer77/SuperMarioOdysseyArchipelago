@@ -11,7 +11,7 @@
 #include "types.h"
 #include "UniqueObjInfo.h"
 #include "GameProgressData.h"
-
+#include "game/Layouts/ShopLayoutInfo.h"
 #include "sead/math/seadVector.h"
 #include "sead/stream/seadStream.h"
 
@@ -183,7 +183,7 @@ class GameDataFile
         void noPlayDemoWorldWarp(void);
         void calcWorldWarpHoleThroughNum(void);
         void enteredStage(void);
-        //void buyItem(ShopItem::ItemInfo const*,bool);
+        void buyItem(ShopItem::ItemInfo const*,bool);
         //void tryFindItemList(ShopItem::ItemInfo const*);
         void calcHaveClothNum(void);
         void calcHaveCapNum(void);

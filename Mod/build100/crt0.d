@@ -1,2 +1,2 @@
 crt0.o: \
- /mnt/c/users/kevin/source/repos/supermarioodysseyonline/source/crt0.s
+ /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/source/crt0.s

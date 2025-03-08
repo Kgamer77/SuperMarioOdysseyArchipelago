@@ -10,6 +10,9 @@
 #include "game/Player/PlayerActorBase.h"
 #include "game/Player/PlayerActorHakoniwa.h"
 #include "game/Player/PlayerHackKeeper.h"
+#include "game/Player/PlayerCostumeFunction.h"
+#include "game/Player/PlayerCostumeInfo.h"
+#include "game/Layouts/ShopLayoutInfo.h"
 #include "heap/seadHeap.h"
 #include "math/seadVector.h"
 #include "server/Client.hpp"
@@ -278,21 +281,17 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
     GameDataFile::HintInfo* curHintInfo =
     &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
     
-
     Client::sendShineCollectPacket(curHintInfo->mUniqueID);
-    if ((GameDataFunction::getCurrentStageName(thisPtr) == "BossRaidWorldHomeStage" || GameDataFunction::getCurrentStageName(thisPtr) == "ClashWorldHomeStage") && !GameDataFunction::isRepairHome(thisPtr))
-    {
-        GameDataFunction::repairHome(GameDataHolderWriter(thisPtr));
-    }
-    
-  
+}
 
-    //GameDataFile::HintInfo* curHintInfo = &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
+void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
 
+    Client::sendItemCollectPacket(info->mName, (int)info->mType);
+    //thisPtr.buyItem(info, flag);
+}
 
-    
-    //GameDataFunction::addPayShine(thisPtr, 1);
-    //GameDataFunction::registerShineInfo(thisPtr, curShine->curShineInfo, sead::Vector3f::zero);
+bool isBuyItems(ShopItem::ItemInfo* itemInfo) {
+    return false;
 }
 
 void stageInitHook(al::ActorInitInfo *info, StageScene *curScene, al::PlacementInfo const *placement, al::LayoutInitInfo const *lytInfo, al::ActorFactory const *factory, al::SceneMsgCtrl *sceneMsgCtrl, al::GameDataHolderBase *dataHolder) {
