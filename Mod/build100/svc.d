@@ -1,2 +1,2 @@
 svc.o: \
- /mnt/c/users/kevin/source/repos/supermarioodysseyonline/source/nx/svc.s
+ /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/source/nx/svc.s

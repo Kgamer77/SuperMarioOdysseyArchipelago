@@ -100,6 +100,7 @@ class Client {
         static void sendGameInfPacket(GameDataHolderAccessor holder);
         static void sendCostumeInfPacket(const char *body, const char *cap);
         static void sendShineCollectPacket(int shineId);
+        static void sendItemCollectPacket(char* itemName, int itemType);
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
         void resendInitPackets();
@@ -190,6 +191,7 @@ class Client {
         void updateGameInfo(GameInf *packet);
         void updateCostumeInfo(CostumeInf *packet);
         void updateShineInfo(ShineCollect *packet);
+        void updateItems(ItemCollect *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);

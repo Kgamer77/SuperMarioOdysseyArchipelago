@@ -13,5 +13,6 @@ public enum PacketType : short {
     Shine,
     Capture,
     ChangeStage,
-    Command
+    Command,
+    Item
 }

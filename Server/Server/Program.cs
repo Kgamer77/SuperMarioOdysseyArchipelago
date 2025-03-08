@@ -12,13 +12,14 @@ using Open.Nat;
 Server.Server server = new Server.Server();
 Server.APClient apClient = new Server.APClient();
 HashSet<int> shineBag = new HashSet<int>();
+HashSet<int> outfitBag = new HashSet<int>();
 CancellationTokenSource cts = new CancellationTokenSource();
 bool restartRequested = false;
 Logger consoleLogger = new Logger("Console");
 DiscordBot bot = new DiscordBot();
 await bot.Run();
 
-Dictionary<int, bool> captainToadMoons = new Dictionary<int, bool>()
+Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
         {
             { 227 , false },
             { 204 , false },
@@ -33,8 +34,20 @@ Dictionary<int, bool> captainToadMoons = new Dictionary<int, bool>()
             { 318 , false },
             { 1000 , false },
             { 605 , false },
-            { 1122 , false }
-
+            { 1122 , false },
+            { 1059 , false },
+            { 501 , false },
+            { 414 , false },
+            { 42 , false },
+            { 41 , false },
+            { 44 , false },
+            { 43 , false },
+            { 910 , false },
+            { 905 , false },
+            { 904 , false },
+            { 907 , false },
+            { 913 , false },
+            { 50 , false }
         };
 
 server.ClientJoined += (c, _) => {
@@ -66,6 +79,70 @@ async void SyncShineBag() {
 
         await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncShineBag(client));
     } catch {
+        // errors that can happen shines change will crash the server :)
+    }
+}
+
+async Task ClientSyncItem(Client client)
+{
+    try
+    {
+        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["outfitSync"] ??= new ConcurrentBag<int>());
+        foreach (int item in outfitBag.Except(clientBag).ToArray())
+        {
+            string s = APClient.inverseShopItems[item];
+            int incomingType = 0;
+
+            if (!s.Contains("Sticker"))
+            {
+                if (s.Contains("Cap"))
+                {
+                    s = s.Replace("Cap", "");
+                    incomingType = 1;
+                }
+                if (s.Contains("Clothes"))
+                {
+                    s = s.Replace("Clothes", "");
+                    incomingType = 0;
+                }
+            }
+
+            if (!giftMoons[item])
+                incomingType -= 4;
+
+            if (s.Contains("Sticker"))
+            {
+                incomingType = 3;
+            }
+            if (s.Contains("Souvenir"))
+            {
+                incomingType = 2;
+            }
+            //consoleLogger.Info($"Parsed Item {s } {incomingType}");
+
+            if (!client.Connected) return;
+            await client.Send(new ItemPacket
+            {
+                name = s,
+                itemType = incomingType
+            });
+        }
+    }
+    catch
+    {
+        // errors that can happen when sending will crash the server :)
+    }
+}
+
+async void SyncItem()
+{
+    try
+    {
+
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncItem(client));
+    }
+    catch
+    {
         // errors that can happen shines change will crash the server :)
     }
 }
@@ -182,12 +259,27 @@ server.PacketHandler = (c, p) => {
             if (c.Metadata["loadedSave"] is false) break;
             c.Logger.Info($"Got moon location {shinePacket.ShineId}");
             apClient.send_location(shinePacket.ShineId);
-                if (captainToadMoons.ContainsKey(shinePacket.ShineId))
-                    if (captainToadMoons[shinePacket.ShineId])
+                if (giftMoons.ContainsKey(shinePacket.ShineId))
+                    if (giftMoons[shinePacket.ShineId])
                         shineBag.Add(shinePacket.ShineId);
-                    else { captainToadMoons.Remove(shinePacket.ShineId); }
+                    else { giftMoons.Remove(shinePacket.ShineId); }
 
             break;
+        }
+
+        case ItemPacket itemPacket: {
+                c.Logger.Info($"Got Item {itemPacket.name} {itemPacket.itemType}");
+                string item = itemPacket.name;
+                if (itemPacket.itemType == 0)
+                    item += "Clothes";
+                if (itemPacket.itemType == 1)
+                    item += "Cap";
+                apClient.send_location(APClient.shopItems[item]);
+                //if (giftMoons.ContainsKey(APClient.shopItems[item]))
+                    //if (giftMoons[APClient.shopItems[itemPacket.name]])
+                        //outfitBag.Add(APClient.shopItems[itemPacket.name]);
+                    //else { giftMoons.Remove(APClient.shopItems[item]); }
+                break;
         }
 
         case PlayerPacket playerPacket: {
@@ -655,8 +747,13 @@ async void Upnp()
     var ip = await device.GetExternalIPAsync();
     Console.WriteLine("The external IP Address is: {0} ", ip);
 
-    await device.CreatePortMapAsync(new Mapping(Protocol.Tcp, 1027, 1027, "Kevins Apps"));
-    await device.CreatePortMapAsync(new Mapping(Protocol.Udp, 1027, 1027, "Kevins Apps"));
+    try
+    {
+        await device.CreatePortMapAsync(new Mapping(Protocol.Tcp, Settings.Instance.Archipelago.Port, Settings.Instance.Archipelago.Port, "SMO Online Server"));
+        await device.CreatePortMapAsync(new Mapping(Protocol.Udp, Settings.Instance.Archipelago.Port, Settings.Instance.Archipelago.Port, "SMO Online Server"));
+    }
+    catch (Exception ex) { consoleLogger.Info($"Failed to map port. {ex.Message}"); }
+
 
 }
 
@@ -671,9 +768,9 @@ void connectAP()
         consoleLogger.Info($"Received {itemReceivedName.ItemName} ID {itemReceivedName.ItemId}");
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId < 2500)
         {
-            if (captainToadMoons.ContainsKey((int)itemReceivedName.ItemId))
+            if (giftMoons.ContainsKey((int)itemReceivedName.ItemId))
             {
-                captainToadMoons[(int)itemReceivedName.ItemId] = true;
+                giftMoons[(int)itemReceivedName.ItemId] = true;
                 receivedItemsHelper.DequeueItem();
                 return;
             }
@@ -682,6 +779,11 @@ void connectAP()
         SyncShineBag();
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId == 2500)
             apClient.session.SetGoalAchieved();
+        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId >= 2502)
+        {
+            outfitBag.Add((int)itemReceivedName.ItemId);
+        }
+        SyncItem();
         receivedItemsHelper.DequeueItem();
     };
     consoleLogger.Info($"Attempting to connect to Archipelago. {apClient.result}");

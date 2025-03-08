@@ -60,6 +60,47 @@ B59E28 B seadPrintHook // sead::system::print
 
 1CEEDC BL registerShineToList
 
+// Skip Shine Demo
+//4DC18C NOP
+
+// Skip Player Shine Demo
+//4DC1D4 NOP
+
+//4DC52C NOP
+
+//4DC170 NOP
+
+//rs::buyCap
+54CB9C BL sendItemPacket
+
+//rs::buyCloth
+54C604 BL sendItemPacket
+
+//rs::buyItem
+54C3EC BL sendItemPacket
+
+//rs::buyItemInShopItemList
+54C324 BL sendItemPacket
+
+//rs::isBuyItemInShopItemList
+54C3A0 BL isBuyItems
+
+//ShopStateInShop::exeBuy
+318BF8 NOP
+
+// stop wearing cutscene awarded outfits
+4DD16C NOP
+4DD0AC NOP
+4DD0E8 NOP
+310FE4 NOP
+311440 NOP
+311464 NOP
+
+// Shop Costume Loading
+//444914 BL onInitClosetActor
+//4440FC BL onCreateBodyCostumeInfo
+//44532C BL onCreateHeadCostumeInfo
+
 // Amiibo Button Disabling
 577078: // rs::isHoldAmiiboMode
     MOV X0, #0

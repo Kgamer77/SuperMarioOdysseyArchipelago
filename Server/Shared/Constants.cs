@@ -7,6 +7,7 @@ namespace Shared;
 
 public static class Constants {
     public const int CostumeNameSize = 0x20;
+    public const int ItemNameSize = 0x80;
 
     // dictionary of packet types to packet
     public static readonly Dictionary<Type, PacketAttribute> PacketMap = Assembly

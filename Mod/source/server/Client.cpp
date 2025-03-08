@@ -362,6 +362,9 @@ void Client::readFunc() {
             case PacketType::SHINECOLL:
                 updateShineInfo((ShineCollect*)curPacket);
                 break;
+            case PacketType::ITEMCOLL:
+                updateItems((ItemCollect*)curPacket);
+                break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
                 curPacket->mUserID.print();
@@ -741,6 +744,29 @@ void Client::sendShineCollectPacket(int shineID) {
 
         sInstance->mSocket->queuePacket(packet);
     }
+}
+
+/**
+ * @brief
+ *
+ * @param itemName
+ */
+void Client::sendItemCollectPacket(char* itemName, int itemType) {
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+  /*  if (!strcmp(itemName, "")) {
+        return;
+    }*/
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    ItemCollect* packet = new ItemCollect(itemName, itemType);
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
 }
 
 /**
@@ -1273,6 +1299,43 @@ void Client::updateShines() {
     sInstance->resetCollectedShines();
     sInstance->mCurStageScene->mSceneLayout->startShineCountAnim(false);
     sInstance->mCurStageScene->mSceneLayout->updateCounterParts(); // updates shine chip layout to (maybe) prevent softlocks
+}
+
+/**
+ * @brief
+ *
+ */
+void Client::updateItems(ItemCollect *packet) {
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+
+    struct ShopItem::ShopItemInfo amiiboData = {1, 1};
+    struct ShopItem::ShopItemInfo *amiibo = &amiiboData;
+    struct ShopItem::ItemInfo info = {1, {}, (ShopItem::ItemType)0, 1, amiibo, true};
+    strcpy(info.mName, packet->name);
+    info.mType = (ShopItem::ItemType)(packet->type + 4);
+    struct ShopItem::ItemInfo* infoPtr = &info;
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+    if (packet->type > 0) {
+        accessor.mData->mGameDataFile->buyItem(infoPtr, false);
+    }
+    if (isInCostumeList(packet->name))
+        switch (packet->type + 4) {
+        case 0:
+            GameDataFunction::wearCostume(accessor, packet->name);
+            break;
+
+        case 1:
+            GameDataFunction::wearCap(accessor, packet->name);
+            break;
+
+        default:
+            break;
+        }
+
 }
 
 /**
