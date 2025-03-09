@@ -1316,14 +1316,14 @@ void Client::updateItems(ItemCollect *packet) {
     struct ShopItem::ShopItemInfo *amiibo = &amiiboData;
     struct ShopItem::ItemInfo info = {1, {}, (ShopItem::ItemType)0, 1, amiibo, true};
     strcpy(info.mName, packet->name);
-    info.mType = (ShopItem::ItemType)(packet->type + 4);
+    info.mType = (ShopItem::ItemType)(packet->type);
     struct ShopItem::ItemInfo* infoPtr = &info;
     GameDataHolderAccessor accessor(sInstance->mCurStageScene);
-    if (packet->type > 0) {
-        accessor.mData->mGameDataFile->buyItem(infoPtr, false);
-    }
+
+    accessor.mData->mGameDataFile->buyItem(infoPtr, false);
+    
     if (isInCostumeList(packet->name))
-        switch (packet->type + 4) {
+        switch (packet->type) {
         case 0:
             GameDataFunction::wearCostume(accessor, packet->name);
             break;

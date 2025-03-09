@@ -576,7 +576,7 @@ Linker script and memory map
                 0x0000000000000000                . = __start__
                 0x0000000000000000                __code_start__ = .
 
-.text           0x0000000000000000    0x11150
+.text           0x0000000000000000    0x11130
                 0x0000000000000000                __text_start__ = .
  *(.text.crt0)
  .text.crt0     0x0000000000000000        0x8 crt0.o
@@ -1802,821 +1802,822 @@ Linker script and memory map
                 0x0000000000009c60                Client::isNeedUpdateShines()
  *fill*         0x0000000000009c84        0xc 
  .text._ZN6Client11updateItemsEP11ItemCollect
-                0x0000000000009c90      0x130 Client.o
+                0x0000000000009c90      0x10c Client.o
                 0x0000000000009c90                Client::updateItems(ItemCollect*)
+ *fill*         0x0000000000009d9c        0x4 
  .text._ZN6Client8readFuncEv
-                0x0000000000009dc0      0x3e8 Client.o
-                0x0000000000009dc0                Client::readFunc()
- *fill*         0x000000000000a1a8        0x8 
+                0x0000000000009da0      0x3e8 Client.o
+                0x0000000000009da0                Client::readFunc()
+ *fill*         0x000000000000a188        0x8 
  .text._ZN6Client11clearArraysEv
-                0x000000000000a1b0       0x20 Client.o
-                0x000000000000a1b0                Client::clearArrays()
+                0x000000000000a190       0x20 Client.o
+                0x000000000000a190                Client::clearArrays()
  .text._ZN6Client18getDebugPuppetInfoEv
-                0x000000000000a1d0       0x1c Client.o
-                0x000000000000a1d0                Client::getDebugPuppetInfo()
- *fill*         0x000000000000a1ec        0x4 
+                0x000000000000a1b0       0x1c Client.o
+                0x000000000000a1b0                Client::getDebugPuppetInfo()
+ *fill*         0x000000000000a1cc        0x4 
  .text._ZN6Client14getDebugPuppetEv
-                0x000000000000a1f0       0x20 Client.o
-                0x000000000000a1f0                Client::getDebugPuppet()
+                0x000000000000a1d0       0x20 Client.o
+                0x000000000000a1d0                Client::getDebugPuppet()
  .text._ZN6Client11getKeyboardEv
-                0x000000000000a210       0x18 Client.o
-                0x000000000000a210                Client::getKeyboard()
- *fill*         0x000000000000a228        0x8 
+                0x000000000000a1f0       0x18 Client.o
+                0x000000000000a1f0                Client::getKeyboard()
+ *fill*         0x000000000000a208        0x8 
  .text._ZN6Client12getCurrentIPEv
-                0x000000000000a230       0x38 Client.o
-                0x000000000000a230                Client::getCurrentIP()
- *fill*         0x000000000000a268        0x8 
+                0x000000000000a210       0x38 Client.o
+                0x000000000000a210                Client::getCurrentIP()
+ *fill*         0x000000000000a248        0x8 
  .text._ZN6Client14getCurrentPortEv
-                0x000000000000a270       0x20 Client.o
-                0x000000000000a270                Client::getCurrentPort()
+                0x000000000000a250       0x20 Client.o
+                0x000000000000a250                Client::getCurrentPort()
  .text._ZN6Client13setLastUsedIPEPKc
-                0x000000000000a290       0x9c Client.o
-                0x000000000000a290                Client::setLastUsedIP(char const*)
- *fill*         0x000000000000a32c        0x4 
+                0x000000000000a270       0x9c Client.o
+                0x000000000000a270                Client::setLastUsedIP(char const*)
+ *fill*         0x000000000000a30c        0x4 
  .text._ZN6Client15setLastUsedPortEi
-                0x000000000000a330       0x18 Client.o
-                0x000000000000a330                Client::setLastUsedPort(int)
- *fill*         0x000000000000a348        0x8 
+                0x000000000000a310       0x18 Client.o
+                0x000000000000a310                Client::setLastUsedPort(int)
+ *fill*         0x000000000000a328        0x8 
  .text._ZN6Client12setSceneInfoERKN2al13ActorInitInfoEPK10StageScene
-                0x000000000000a350       0x84 Client.o
-                0x000000000000a350                Client::setSceneInfo(al::ActorInitInfo const&, StageScene const*)
- *fill*         0x000000000000a3d4        0xc 
+                0x000000000000a330       0x84 Client.o
+                0x000000000000a330                Client::setSceneInfo(al::ActorInitInfo const&, StageScene const*)
+ *fill*         0x000000000000a3b4        0xc 
  .text._ZN6Client16tryRegisterShineEP5Shine
-                0x000000000000a3e0       0x70 Client.o
-                0x000000000000a3e0                Client::tryRegisterShine(Shine*)
+                0x000000000000a3c0       0x70 Client.o
+                0x000000000000a3c0                Client::tryRegisterShine(Shine*)
  .text._ZN6Client14findStageShineEi
-                0x000000000000a450       0xc8 Client.o
-                0x000000000000a450                Client::findStageShine(int)
- *fill*         0x000000000000a518        0x8 
+                0x000000000000a430       0xc8 Client.o
+                0x000000000000a430                Client::findStageShine(int)
+ *fill*         0x000000000000a4f8        0x8 
  .text._ZN6Client12updateShinesEv
-                0x000000000000a520      0x238 Client.o
-                0x000000000000a520                Client::updateShines()
- *fill*         0x000000000000a758        0x8 
+                0x000000000000a500      0x238 Client.o
+                0x000000000000a500                Client::updateShines()
+ *fill*         0x000000000000a738        0x8 
  .text._ZN6Client6updateEv
-                0x000000000000a760       0x54 Client.o
-                0x000000000000a760                Client::update()
- .text          0x000000000000a7b4        0x0 DeltaTime.o
- *fill*         0x000000000000a7b4        0xc 
+                0x000000000000a740       0x54 Client.o
+                0x000000000000a740                Client::update()
+ .text          0x000000000000a794        0x0 DeltaTime.o
+ *fill*         0x000000000000a794        0xc 
  .text._ZN4Time8calcTimeEv
-                0x000000000000a7c0       0x70 DeltaTime.o
-                0x000000000000a7c0                Time::calcTime()
+                0x000000000000a7a0       0x70 DeltaTime.o
+                0x000000000000a7a0                Time::calcTime()
  .text.startup._GLOBAL__sub_I_DeltaTime.cpp
-                0x000000000000a830       0x28 DeltaTime.o
- .text          0x000000000000a858        0x0 HackModelHolder.o
- *fill*         0x000000000000a858        0x8 
+                0x000000000000a810       0x28 DeltaTime.o
+ .text          0x000000000000a838        0x0 HackModelHolder.o
+ *fill*         0x000000000000a838        0x8 
  .text._ZN15HackModelHolder10getCaptureEPKc
-                0x000000000000a860       0x78 HackModelHolder.o
-                0x000000000000a860                HackModelHolder::getCapture(char const*)
- *fill*         0x000000000000a8d8        0x8 
+                0x000000000000a840       0x78 HackModelHolder.o
+                0x000000000000a840                HackModelHolder::getCapture(char const*)
+ *fill*         0x000000000000a8b8        0x8 
  .text._ZN15HackModelHolder10getCaptureEi
-                0x000000000000a8e0       0x24 HackModelHolder.o
-                0x000000000000a8e0                HackModelHolder::getCapture(int)
- *fill*         0x000000000000a904        0xc 
+                0x000000000000a8c0       0x24 HackModelHolder.o
+                0x000000000000a8c0                HackModelHolder::getCapture(int)
+ *fill*         0x000000000000a8e4        0xc 
  .text._ZN15HackModelHolder15getCaptureClassEi
-                0x000000000000a910       0x2c HackModelHolder.o
-                0x000000000000a910                HackModelHolder::getCaptureClass(int)
- *fill*         0x000000000000a93c        0x4 
+                0x000000000000a8f0       0x2c HackModelHolder.o
+                0x000000000000a8f0                HackModelHolder::getCaptureClass(int)
+ *fill*         0x000000000000a91c        0x4 
  .text._ZN15HackModelHolder10addCaptureEP15PuppetHackActorPKc
-                0x000000000000a940       0x60 HackModelHolder.o
-                0x000000000000a940                HackModelHolder::addCapture(PuppetHackActor*, char const*)
+                0x000000000000a920       0x60 HackModelHolder.o
+                0x000000000000a920                HackModelHolder::addCapture(PuppetHackActor*, char const*)
  .text._ZN15HackModelHolder13removeCaptureEPKc
-                0x000000000000a9a0       0x88 HackModelHolder.o
-                0x000000000000a9a0                HackModelHolder::removeCapture(char const*)
- *fill*         0x000000000000aa28        0x8 
+                0x000000000000a980       0x88 HackModelHolder.o
+                0x000000000000a980                HackModelHolder::removeCapture(char const*)
+ *fill*         0x000000000000aa08        0x8 
  .text._ZN15HackModelHolder9resetListEv
-                0x000000000000aa30       0x30 HackModelHolder.o
-                0x000000000000aa30                HackModelHolder::resetList()
+                0x000000000000aa10       0x30 HackModelHolder.o
+                0x000000000000aa10                HackModelHolder::resetList()
  .text._ZN15HackModelHolder10setCurrentEPKc
-                0x000000000000aa60       0x90 HackModelHolder.o
-                0x000000000000aa60                HackModelHolder::setCurrent(char const*)
+                0x000000000000aa40       0x90 HackModelHolder.o
+                0x000000000000aa40                HackModelHolder::setCurrent(char const*)
  .text._ZN15HackModelHolder15getCurrentActorEv
-                0x000000000000aaf0       0x10 HackModelHolder.o
-                0x000000000000aaf0                HackModelHolder::getCurrentActor()
+                0x000000000000aad0       0x10 HackModelHolder.o
+                0x000000000000aad0                HackModelHolder::getCurrentActor()
  .text._ZN15HackModelHolder19getCurrentActorNameEv
-                0x000000000000ab00       0x14 HackModelHolder.o
-                0x000000000000ab00                HackModelHolder::getCurrentActorName()
- .text          0x000000000000ab14        0x0 SocketBase.o
- *fill*         0x000000000000ab14        0xc 
+                0x000000000000aae0       0x14 HackModelHolder.o
+                0x000000000000aae0                HackModelHolder::getCurrentActorName()
+ .text          0x000000000000aaf4        0x0 SocketBase.o
+ *fill*         0x000000000000aaf4        0xc 
  .text._ZN10SocketBase11closeSocketEv
-                0x000000000000ab20       0x44 SocketBase.o
-                0x000000000000ab20                SocketBase::closeSocket()
- *fill*         0x000000000000ab64        0xc 
+                0x000000000000ab00       0x44 SocketBase.o
+                0x000000000000ab00                SocketBase::closeSocket()
+ *fill*         0x000000000000ab44        0xc 
  .text._ZN10SocketBaseC2EPKc
-                0x000000000000ab70       0x30 SocketBase.o
-                0x000000000000ab70                SocketBase::SocketBase(char const*)
-                0x000000000000ab70                SocketBase::SocketBase(char const*)
+                0x000000000000ab50       0x30 SocketBase.o
+                0x000000000000ab50                SocketBase::SocketBase(char const*)
+                0x000000000000ab50                SocketBase::SocketBase(char const*)
  .text._ZN10SocketBase12getStateCharEv
-                0x000000000000aba0       0x54 SocketBase.o
-                0x000000000000aba0                SocketBase::getStateChar()
- *fill*         0x000000000000abf4        0xc 
+                0x000000000000ab80       0x54 SocketBase.o
+                0x000000000000ab80                SocketBase::getStateChar()
+ *fill*         0x000000000000abd4        0xc 
  .text._ZN10SocketBase11getLogStateEv
-                0x000000000000ac00        0x8 SocketBase.o
-                0x000000000000ac00                SocketBase::getLogState()
- *fill*         0x000000000000ac08        0x8 
+                0x000000000000abe0        0x8 SocketBase.o
+                0x000000000000abe0                SocketBase::getLogState()
+ *fill*         0x000000000000abe8        0x8 
  .text._ZN10SocketBase14set_sock_flagsEi
-                0x000000000000ac10        0x8 SocketBase.o
-                0x000000000000ac10                SocketBase::set_sock_flags(int)
- *fill*         0x000000000000ac18        0x8 
+                0x000000000000abf0        0x8 SocketBase.o
+                0x000000000000abf0                SocketBase::set_sock_flags(int)
+ *fill*         0x000000000000abf8        0x8 
  .text._ZN10SocketBase10socket_logEPKc
-                0x000000000000ac20       0x4c SocketBase.o
-                0x000000000000ac20                SocketBase::socket_log(char const*)
- *fill*         0x000000000000ac6c        0x4 
+                0x000000000000ac00       0x4c SocketBase.o
+                0x000000000000ac00                SocketBase::socket_log(char const*)
+ *fill*         0x000000000000ac4c        0x4 
  .text._ZN10SocketBase16socket_read_charEPc
-                0x000000000000ac70       0x74 SocketBase.o
-                0x000000000000ac70                SocketBase::socket_read_char(char*)
- *fill*         0x000000000000ace4        0xc 
+                0x000000000000ac50       0x74 SocketBase.o
+                0x000000000000ac50                SocketBase::socket_read_char(char*)
+ *fill*         0x000000000000acc4        0xc 
  .text._ZN10SocketBase5getFdEv
-                0x000000000000acf0       0x1c SocketBase.o
-                0x000000000000acf0                SocketBase::getFd()
- .text          0x000000000000ad0c        0x0 SocketClient.o
- *fill*         0x000000000000ad0c        0x4 
+                0x000000000000acd0       0x1c SocketBase.o
+                0x000000000000acd0                SocketBase::getFd()
+ .text          0x000000000000acec        0x0 SocketClient.o
+ *fill*         0x000000000000acec        0x4 
  .text._ZN4sead6Thread7destroyEv
-                0x000000000000ad10       0x10 SocketClient.o
-                0x000000000000ad10                sead::Thread::destroy()
+                0x000000000000acf0       0x10 SocketClient.o
+                0x000000000000acf0                sead::Thread::destroy()
  .text._ZN4sead19FixedSafeStringBaseIcLi32EED2Ev
-                0x000000000000ad20        0x4 SocketClient.o
-                0x000000000000ad20                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
-                0x000000000000ad20                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
- *fill*         0x000000000000ad24        0xc 
+                0x000000000000ad00        0x4 SocketClient.o
+                0x000000000000ad00                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
+                0x000000000000ad00                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
+ *fill*         0x000000000000ad04        0xc 
  .text._ZNK2al10FunctorV0MIP12SocketClientMS1_FvvEEclEv
-                0x000000000000ad30       0x24 SocketClient.o
-                0x000000000000ad30                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::operator()() const
- *fill*         0x000000000000ad54        0xc 
+                0x000000000000ad10       0x24 SocketClient.o
+                0x000000000000ad10                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::operator()() const
+ *fill*         0x000000000000ad34        0xc 
  .text._ZNK2al10FunctorV0MIP12SocketClientMS1_FvvEE5cloneEv
-                0x000000000000ad60       0x34 SocketClient.o
-                0x000000000000ad60                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::clone() const
- *fill*         0x000000000000ad94        0xc 
+                0x000000000000ad40       0x34 SocketClient.o
+                0x000000000000ad40                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::clone() const
+ *fill*         0x000000000000ad74        0xc 
  .text._ZN4sead19FixedSafeStringBaseIcLi32EED0Ev
-                0x000000000000ada0        0x8 SocketClient.o
-                0x000000000000ada0                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
- *fill*         0x000000000000ada8        0x8 
+                0x000000000000ad80        0x8 SocketClient.o
+                0x000000000000ad80                sead::FixedSafeStringBase<char, 32>::~FixedSafeStringBase()
+ *fill*         0x000000000000ad88        0x8 
  .text._ZN2al10FunctorV0MIP12SocketClientMS1_FvvEED2Ev
-                0x000000000000adb0       0x14 SocketClient.o
-                0x000000000000adb0                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
-                0x000000000000adb0                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
- *fill*         0x000000000000adc4        0xc 
+                0x000000000000ad90       0x14 SocketClient.o
+                0x000000000000ad90                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
+                0x000000000000ad90                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
+ *fill*         0x000000000000ada4        0xc 
  .text._ZN2al10FunctorV0MIP12SocketClientMS1_FvvEED0Ev
-                0x000000000000add0       0x2c SocketClient.o
-                0x000000000000add0                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
- *fill*         0x000000000000adfc        0x4 
+                0x000000000000adb0       0x2c SocketClient.o
+                0x000000000000adb0                al::FunctorV0M<SocketClient*, void (SocketClient::*)()>::~FunctorV0M()
+ *fill*         0x000000000000addc        0x4 
  .text._ZN4sead19FixedSafeStringBaseIcLi32EEaSERKNS_14SafeStringBaseIcEE
-                0x000000000000ae00       0xc0 SocketClient.o
-                0x000000000000ae00                sead::FixedSafeStringBase<char, 32>::operator=(sead::SafeStringBase<char> const&)
+                0x000000000000ade0       0xc0 SocketClient.o
+                0x000000000000ade0                sead::FixedSafeStringBase<char, 32>::operator=(sead::SafeStringBase<char> const&)
  .text._ZN12SocketClientC2EPKcPN4sead4HeapEP6Client
-                0x000000000000aec0      0x188 SocketClient.o
-                0x000000000000aec0                SocketClient::SocketClient(char const*, sead::Heap*, Client*)
-                0x000000000000aec0                SocketClient::SocketClient(char const*, sead::Heap*, Client*)
- *fill*         0x000000000000b048        0x8 
+                0x000000000000aea0      0x188 SocketClient.o
+                0x000000000000aea0                SocketClient::SocketClient(char const*, sead::Heap*, Client*)
+                0x000000000000aea0                SocketClient::SocketClient(char const*, sead::Heap*, Client*)
+ *fill*         0x000000000000b028        0x8 
  .text._ZN12SocketClient15getLocalUdpPortEv
-                0x000000000000b050       0x54 SocketClient.o
-                0x000000000000b050                SocketClient::getLocalUdpPort()
- *fill*         0x000000000000b0a4        0xc 
+                0x000000000000b030       0x54 SocketClient.o
+                0x000000000000b030                SocketClient::getLocalUdpPort()
+ *fill*         0x000000000000b084        0xc 
  .text._ZN12SocketClient14setPeerUdpPortEt
-                0x000000000000b0b0       0x60 SocketClient.o
-                0x000000000000b0b0                SocketClient::setPeerUdpPort(unsigned short)
+                0x000000000000b090       0x60 SocketClient.o
+                0x000000000000b090                SocketClient::setPeerUdpPort(unsigned short)
  .text._ZN12SocketClient15getUdpStateCharEv
-                0x000000000000b110       0x34 SocketClient.o
-                0x000000000000b110                SocketClient::getUdpStateChar()
- *fill*         0x000000000000b144        0xc 
+                0x000000000000b0f0       0x34 SocketClient.o
+                0x000000000000b0f0                SocketClient::getUdpStateChar()
+ *fill*         0x000000000000b124        0xc 
  .text._ZN12SocketClient11printPacketEP6Packet
-                0x000000000000b150       0xf8 SocketClient.o
-                0x000000000000b150                SocketClient::printPacket(Packet*)
- *fill*         0x000000000000b248        0x8 
+                0x000000000000b130       0xf8 SocketClient.o
+                0x000000000000b130                SocketClient::printPacket(Packet*)
+ *fill*         0x000000000000b228        0x8 
  .text._ZN12SocketClient17stringToIPAddressEPKcP7in_addr
-                0x000000000000b250       0x60 SocketClient.o
-                0x000000000000b250                SocketClient::stringToIPAddress(char const*, in_addr*)
+                0x000000000000b230       0x60 SocketClient.o
+                0x000000000000b230                SocketClient::stringToIPAddress(char const*, in_addr*)
  .text._ZN12SocketClient12startThreadsEv
-                0x000000000000b2b0       0xb4 SocketClient.o
-                0x000000000000b2b0                SocketClient::startThreads()
- *fill*         0x000000000000b364        0xc 
+                0x000000000000b290       0xb4 SocketClient.o
+                0x000000000000b290                SocketClient::startThreads()
+ *fill*         0x000000000000b344        0xc 
  .text._ZN12SocketClient10endThreadsEv
-                0x000000000000b370       0x8c SocketClient.o
-                0x000000000000b370                SocketClient::endThreads()
- *fill*         0x000000000000b3fc        0x4 
+                0x000000000000b350       0x8c SocketClient.o
+                0x000000000000b350                SocketClient::endThreads()
+ *fill*         0x000000000000b3dc        0x4 
  .text._ZN12SocketClient14waitForThreadsEv
-                0x000000000000b400        0x4 SocketClient.o
-                0x000000000000b400                SocketClient::waitForThreads()
- *fill*         0x000000000000b404        0xc 
+                0x000000000000b3e0        0x4 SocketClient.o
+                0x000000000000b3e0                SocketClient::waitForThreads()
+ *fill*         0x000000000000b3e4        0xc 
  .text._ZN12SocketClient11queuePacketEP6Packet
-                0x000000000000b410       0x54 SocketClient.o
-                0x000000000000b410                SocketClient::queuePacket(Packet*)
- *fill*         0x000000000000b464        0xc 
+                0x000000000000b3f0       0x54 SocketClient.o
+                0x000000000000b3f0                SocketClient::queuePacket(Packet*)
+ *fill*         0x000000000000b444        0xc 
  .text._ZN12SocketClient12tryGetPacketEN4sead12MessageQueue9BlockTypeE
-                0x000000000000b470       0x1c SocketClient.o
-                0x000000000000b470                SocketClient::tryGetPacket(sead::MessageQueue::BlockType)
- *fill*         0x000000000000b48c        0x4 
+                0x000000000000b450       0x1c SocketClient.o
+                0x000000000000b450                SocketClient::tryGetPacket(sead::MessageQueue::BlockType)
+ *fill*         0x000000000000b46c        0x4 
  .text._ZN12SocketClient18clearMessageQueuesEv
-                0x000000000000b490       0x94 SocketClient.o
-                0x000000000000b490                SocketClient::clearMessageQueues()
- *fill*         0x000000000000b524        0xc 
+                0x000000000000b470       0x94 SocketClient.o
+                0x000000000000b470                SocketClient::clearMessageQueues()
+ *fill*         0x000000000000b504        0xc 
  .text._ZN12SocketClient11closeSocketEv
-                0x000000000000b530       0x54 SocketClient.o
-                0x000000000000b530                SocketClient::closeSocket()
- *fill*         0x000000000000b584        0xc 
+                0x000000000000b510       0x54 SocketClient.o
+                0x000000000000b510                SocketClient::closeSocket()
+ *fill*         0x000000000000b564        0xc 
  .text._ZN12SocketClient12tryReconnectEv
-                0x000000000000b590       0xb0 SocketClient.o
-                0x000000000000b590                SocketClient::tryReconnect()
+                0x000000000000b570       0xb0 SocketClient.o
+                0x000000000000b570                SocketClient::tryReconnect()
  .text._ZN12SocketClient4sendEP6Packet
-                0x000000000000b640       0xfc SocketClient.o
-                0x000000000000b640                SocketClient::send(Packet*)
- *fill*         0x000000000000b73c        0x4 
+                0x000000000000b620       0xfc SocketClient.o
+                0x000000000000b620                SocketClient::send(Packet*)
+ *fill*         0x000000000000b71c        0x4 
  .text._ZN12SocketClient12trySendQueueEv
-                0x000000000000b740       0x54 SocketClient.o
-                0x000000000000b740                SocketClient::trySendQueue()
- *fill*         0x000000000000b794        0xc 
+                0x000000000000b720       0x54 SocketClient.o
+                0x000000000000b720                SocketClient::trySendQueue()
+ *fill*         0x000000000000b774        0xc 
  .text._ZN12SocketClient8sendFuncEv
-                0x000000000000b7a0       0x4c SocketClient.o
-                0x000000000000b7a0                SocketClient::sendFunc()
- *fill*         0x000000000000b7ec        0x4 
+                0x000000000000b780       0x4c SocketClient.o
+                0x000000000000b780                SocketClient::sendFunc()
+ *fill*         0x000000000000b7cc        0x4 
  .text._ZN12SocketClient4initEPKct
-                0x000000000000b7f0      0x3b4 SocketClient.o
-                0x000000000000b7f0                SocketClient::init(char const*, unsigned short)
- *fill*         0x000000000000bba4        0xc 
+                0x000000000000b7d0      0x3b4 SocketClient.o
+                0x000000000000b7d0                SocketClient::init(char const*, unsigned short)
+ *fill*         0x000000000000bb84        0xc 
  .text._ZN12SocketClient7recvTcpEv
-                0x000000000000bbb0      0x2ac SocketClient.o
-                0x000000000000bbb0                SocketClient::recvTcp()
- *fill*         0x000000000000be5c        0x4 
+                0x000000000000bb90      0x2ac SocketClient.o
+                0x000000000000bb90                SocketClient::recvTcp()
+ *fill*         0x000000000000be3c        0x4 
  .text._ZN12SocketClient7recvUdpEv
-                0x000000000000be60      0x118 SocketClient.o
-                0x000000000000be60                SocketClient::recvUdp()
- *fill*         0x000000000000bf78        0x8 
+                0x000000000000be40      0x118 SocketClient.o
+                0x000000000000be40                SocketClient::recvUdp()
+ *fill*         0x000000000000bf58        0x8 
  .text._ZN12SocketClient4recvEv
-                0x000000000000bf80       0xe4 SocketClient.o
-                0x000000000000bf80                SocketClient::recv()
- *fill*         0x000000000000c064        0xc 
+                0x000000000000bf60       0xe4 SocketClient.o
+                0x000000000000bf60                SocketClient::recv()
+ *fill*         0x000000000000c044        0xc 
  .text._ZN12SocketClient8recvFuncEv
-                0x000000000000c070       0x7c SocketClient.o
-                0x000000000000c070                SocketClient::recvFunc()
- .text          0x000000000000c0ec        0x0 captureSync.o
- *fill*         0x000000000000c0ec        0x4 
+                0x000000000000c050       0x7c SocketClient.o
+                0x000000000000c050                SocketClient::recvFunc()
+ .text          0x000000000000c0cc        0x0 captureSync.o
+ *fill*         0x000000000000c0cc        0x4 
  .text._Z15isInCaptureListPKc
-                0x000000000000c0f0       0xd4 captureSync.o
-                0x000000000000c0f0                isInCaptureList(char const*)
- *fill*         0x000000000000c1c4        0xc 
+                0x000000000000c0d0       0xd4 captureSync.o
+                0x000000000000c0d0                isInCaptureList(char const*)
+ *fill*         0x000000000000c1a4        0xc 
  .text._Z32createPuppetHackActorFromFactoryRKN2al13ActorInitInfoEPKNS_13PlacementInfoEP10PuppetInfoPKc
-                0x000000000000c1d0      0x138 captureSync.o
-                0x000000000000c1d0                createPuppetHackActorFromFactory(al::ActorInitInfo const&, al::PlacementInfo const*, PuppetInfo*, char const*)
- *fill*         0x000000000000c308        0x8 
+                0x000000000000c1b0      0x138 captureSync.o
+                0x000000000000c1b0                createPuppetHackActorFromFactory(al::ActorInitInfo const&, al::PlacementInfo const*, PuppetInfo*, char const*)
+ *fill*         0x000000000000c2e8        0x8 
  .text._Z11initObjHookRKN2al13ActorInitInfoEPKNS_13PlacementInfoE
-                0x000000000000c310      0x16c captureSync.o
-                0x000000000000c310                initObjHook(al::ActorInitInfo const&, al::PlacementInfo const*)
- .text          0x000000000000c47c        0x0 logger.o
- *fill*         0x000000000000c47c        0x4 
+                0x000000000000c2f0      0x16c captureSync.o
+                0x000000000000c2f0                initObjHook(al::ActorInitInfo const&, al::PlacementInfo const*)
+ .text          0x000000000000c45c        0x0 logger.o
+ *fill*         0x000000000000c45c        0x4 
  .text._ZN6Logger4initEPKct
-                0x000000000000c480      0x100 logger.o
-                0x000000000000c480                Logger::init(char const*, unsigned short)
+                0x000000000000c460      0x100 logger.o
+                0x000000000000c460                Logger::init(char const*, unsigned short)
  .text._ZN6Logger14createInstanceEv
-                0x000000000000c580       0x54 logger.o
-                0x000000000000c580                Logger::createInstance()
- *fill*         0x000000000000c5d4        0xc 
+                0x000000000000c560       0x54 logger.o
+                0x000000000000c560                Logger::createInstance()
+ *fill*         0x000000000000c5b4        0xc 
  .text._ZN6Logger3logEPKcSt9__va_list
-                0x000000000000c5e0       0x74 logger.o
-                0x000000000000c5e0                Logger::log(char const*, std::__va_list)
- *fill*         0x000000000000c654        0xc 
+                0x000000000000c5c0       0x74 logger.o
+                0x000000000000c5c0                Logger::log(char const*, std::__va_list)
+ *fill*         0x000000000000c634        0xc 
  .text._ZN6Logger4readEPc
-                0x000000000000c660        0x4 logger.o
-                0x000000000000c660                Logger::read(char*)
- *fill*         0x000000000000c664        0xc 
+                0x000000000000c640        0x4 logger.o
+                0x000000000000c640                Logger::read(char*)
+ *fill*         0x000000000000c644        0xc 
  .text._ZN6Logger3logEPKcz
-                0x000000000000c670      0x108 logger.o
-                0x000000000000c670                Logger::log(char const*, ...)
- *fill*         0x000000000000c778        0x8 
+                0x000000000000c650      0x108 logger.o
+                0x000000000000c650                Logger::log(char const*, ...)
+ *fill*         0x000000000000c758        0x8 
  .text._ZN6Logger10pingSocketEv
-                0x000000000000c780       0x20 logger.o
-                0x000000000000c780                Logger::pingSocket()
+                0x000000000000c760       0x20 logger.o
+                0x000000000000c760                Logger::pingSocket()
  .text._Z13tryInitSocketv
-                0x000000000000c7a0        0x8 logger.o
-                0x000000000000c7a0                tryInitSocket()
- .text          0x000000000000c7a8        0x0 HideAndSeekIcon.o
- *fill*         0x000000000000c7a8        0x8 
+                0x000000000000c780        0x8 logger.o
+                0x000000000000c780                tryInitSocket()
+ .text          0x000000000000c788        0x0 HideAndSeekIcon.o
+ *fill*         0x000000000000c788        0x8 
  .text._ZNK2al11LayoutActor14getNerveKeeperEv
-                0x000000000000c7b0        0x8 HideAndSeekIcon.o
-                0x000000000000c7b0                al::LayoutActor::getNerveKeeper() const
- *fill*         0x000000000000c7b8        0x8 
+                0x000000000000c790        0x8 HideAndSeekIcon.o
+                0x000000000000c790                al::LayoutActor::getNerveKeeper() const
+ *fill*         0x000000000000c798        0x8 
  .text._ZNK2al11LayoutActor7getNameEv
-                0x000000000000c7c0       0x60 HideAndSeekIcon.o
-                0x000000000000c7c0                al::LayoutActor::getName() const
-                0x000000000000c7f0                virtual thunk to al::LayoutActor::getName() const
+                0x000000000000c7a0       0x60 HideAndSeekIcon.o
+                0x000000000000c7a0                al::LayoutActor::getName() const
+                0x000000000000c7d0                virtual thunk to al::LayoutActor::getName() const
  .text._ZNK2al11LayoutActor15getEffectKeeperEv
-                0x000000000000c820       0x18 HideAndSeekIcon.o
-                0x000000000000c820                al::LayoutActor::getEffectKeeper() const
-                0x000000000000c830                non-virtual thunk to al::LayoutActor::getEffectKeeper() const
- *fill*         0x000000000000c838        0x8 
+                0x000000000000c800       0x18 HideAndSeekIcon.o
+                0x000000000000c800                al::LayoutActor::getEffectKeeper() const
+                0x000000000000c810                non-virtual thunk to al::LayoutActor::getEffectKeeper() const
+ *fill*         0x000000000000c818        0x8 
  .text._ZNK2al11LayoutActor14getAudioKeeperEv
-                0x000000000000c840       0x18 HideAndSeekIcon.o
-                0x000000000000c840                al::LayoutActor::getAudioKeeper() const
-                0x000000000000c850                non-virtual thunk to al::LayoutActor::getAudioKeeper() const
- *fill*         0x000000000000c858        0x8 
+                0x000000000000c820       0x18 HideAndSeekIcon.o
+                0x000000000000c820                al::LayoutActor::getAudioKeeper() const
+                0x000000000000c830                non-virtual thunk to al::LayoutActor::getAudioKeeper() const
+ *fill*         0x000000000000c838        0x8 
  .text._ZNK2al11LayoutActor21getLayoutActionKeeperEv
-                0x000000000000c860       0x18 HideAndSeekIcon.o
-                0x000000000000c860                al::LayoutActor::getLayoutActionKeeper() const
-                0x000000000000c870                non-virtual thunk to al::LayoutActor::getLayoutActionKeeper() const
- *fill*         0x000000000000c878        0x8 
+                0x000000000000c840       0x18 HideAndSeekIcon.o
+                0x000000000000c840                al::LayoutActor::getLayoutActionKeeper() const
+                0x000000000000c850                non-virtual thunk to al::LayoutActor::getLayoutActionKeeper() const
+ *fill*         0x000000000000c858        0x8 
  .text._ZNK2al11LayoutActor15getLayoutKeeperEv
-                0x000000000000c880       0x18 HideAndSeekIcon.o
-                0x000000000000c880                al::LayoutActor::getLayoutKeeper() const
-                0x000000000000c890                non-virtual thunk to al::LayoutActor::getLayoutKeeper() const
- *fill*         0x000000000000c898        0x8 
+                0x000000000000c860       0x18 HideAndSeekIcon.o
+                0x000000000000c860                al::LayoutActor::getLayoutKeeper() const
+                0x000000000000c870                non-virtual thunk to al::LayoutActor::getLayoutKeeper() const
+ *fill*         0x000000000000c878        0x8 
  .text._ZNK2al11LayoutActor17getCameraDirectorEv
-                0x000000000000c8a0       0x1c HideAndSeekIcon.o
-                0x000000000000c8a0                al::LayoutActor::getCameraDirector() const
-                0x000000000000c8b0                non-virtual thunk to al::LayoutActor::getCameraDirector() const
- *fill*         0x000000000000c8bc        0x4 
+                0x000000000000c880       0x1c HideAndSeekIcon.o
+                0x000000000000c880                al::LayoutActor::getCameraDirector() const
+                0x000000000000c890                non-virtual thunk to al::LayoutActor::getCameraDirector() const
+ *fill*         0x000000000000c89c        0x4 
  .text._ZNK2al11LayoutActor17getSceneObjHolderEv
-                0x000000000000c8c0       0x1c HideAndSeekIcon.o
-                0x000000000000c8c0                al::LayoutActor::getSceneObjHolder() const
-                0x000000000000c8d0                non-virtual thunk to al::LayoutActor::getSceneObjHolder() const
- *fill*         0x000000000000c8dc        0x4 
+                0x000000000000c8a0       0x1c HideAndSeekIcon.o
+                0x000000000000c8a0                al::LayoutActor::getSceneObjHolder() const
+                0x000000000000c8b0                non-virtual thunk to al::LayoutActor::getSceneObjHolder() const
+ *fill*         0x000000000000c8bc        0x4 
  .text._ZNK2al11LayoutActor16getMessageSystemEv
-                0x000000000000c8e0       0x1c HideAndSeekIcon.o
-                0x000000000000c8e0                al::LayoutActor::getMessageSystem() const
-                0x000000000000c8f0                non-virtual thunk to al::LayoutActor::getMessageSystem() const
- *fill*         0x000000000000c8fc        0x4 
+                0x000000000000c8c0       0x1c HideAndSeekIcon.o
+                0x000000000000c8c0                al::LayoutActor::getMessageSystem() const
+                0x000000000000c8d0                non-virtual thunk to al::LayoutActor::getMessageSystem() const
+ *fill*         0x000000000000c8dc        0x4 
  .text._ZN15HideAndSeekIcon6appearEv
-                0x000000000000c900       0x38 HideAndSeekIcon.o
-                0x000000000000c900                HideAndSeekIcon::appear()
- *fill*         0x000000000000c938        0x8 
+                0x000000000000c8e0       0x38 HideAndSeekIcon.o
+                0x000000000000c8e0                HideAndSeekIcon::appear()
+ *fill*         0x000000000000c918        0x8 
  .text._ZN15HideAndSeekIconC2EPKcRKN2al14LayoutInitInfoE
-                0x000000000000c940       0xd8 HideAndSeekIcon.o
-                0x000000000000c940                HideAndSeekIcon::HideAndSeekIcon(char const*, al::LayoutInitInfo const&)
- *fill*         0x000000000000ca18        0x8 
+                0x000000000000c920       0xd8 HideAndSeekIcon.o
+                0x000000000000c920                HideAndSeekIcon::HideAndSeekIcon(char const*, al::LayoutInitInfo const&)
+ *fill*         0x000000000000c9f8        0x8 
  .text._ZN15HideAndSeekIconC1EPKcRKN2al14LayoutInitInfoE
-                0x000000000000ca20       0xe4 HideAndSeekIcon.o
-                0x000000000000ca20                HideAndSeekIcon::HideAndSeekIcon(char const*, al::LayoutInitInfo const&)
- *fill*         0x000000000000cb04        0xc 
+                0x000000000000ca00       0xe4 HideAndSeekIcon.o
+                0x000000000000ca00                HideAndSeekIcon::HideAndSeekIcon(char const*, al::LayoutInitInfo const&)
+ *fill*         0x000000000000cae4        0xc 
  .text._ZN15HideAndSeekIcon6tryEndEv
-                0x000000000000cb10       0x50 HideAndSeekIcon.o
-                0x000000000000cb10                HideAndSeekIcon::tryEnd()
+                0x000000000000caf0       0x50 HideAndSeekIcon.o
+                0x000000000000caf0                HideAndSeekIcon::tryEnd()
  .text._ZN15HideAndSeekIcon8tryStartEv
-                0x000000000000cb60       0x98 HideAndSeekIcon.o
-                0x000000000000cb60                HideAndSeekIcon::tryStart()
- *fill*         0x000000000000cbf8        0x8 
+                0x000000000000cb40       0x98 HideAndSeekIcon.o
+                0x000000000000cb40                HideAndSeekIcon::tryStart()
+ *fill*         0x000000000000cbd8        0x8 
  .text._ZN15HideAndSeekIcon9exeAppearEv
-                0x000000000000cc00       0x38 HideAndSeekIcon.o
-                0x000000000000cc00                HideAndSeekIcon::exeAppear()
- *fill*         0x000000000000cc38        0x8 
+                0x000000000000cbe0       0x38 HideAndSeekIcon.o
+                0x000000000000cbe0                HideAndSeekIcon::exeAppear()
+ *fill*         0x000000000000cc18        0x8 
  .text._ZN12_GLOBAL__N_124HideAndSeekIconNrvAppear7executeEPN2al11NerveKeeperE
-                0x000000000000cc40        0x8 HideAndSeekIcon.o
- *fill*         0x000000000000cc48        0x8 
+                0x000000000000cc20        0x8 HideAndSeekIcon.o
+ *fill*         0x000000000000cc28        0x8 
  .text._ZN15HideAndSeekIcon7exeWaitEv
-                0x000000000000cc50      0x194 HideAndSeekIcon.o
-                0x000000000000cc50                HideAndSeekIcon::exeWait()
- *fill*         0x000000000000cde4        0xc 
+                0x000000000000cc30      0x194 HideAndSeekIcon.o
+                0x000000000000cc30                HideAndSeekIcon::exeWait()
+ *fill*         0x000000000000cdc4        0xc 
  .text._ZN12_GLOBAL__N_122HideAndSeekIconNrvWait7executeEPN2al11NerveKeeperE
-                0x000000000000cdf0        0x8 HideAndSeekIcon.o
- *fill*         0x000000000000cdf8        0x8 
+                0x000000000000cdd0        0x8 HideAndSeekIcon.o
+ *fill*         0x000000000000cdd8        0x8 
  .text._ZN15HideAndSeekIcon6exeEndEv
-                0x000000000000ce00       0x68 HideAndSeekIcon.o
-                0x000000000000ce00                HideAndSeekIcon::exeEnd()
- *fill*         0x000000000000ce68        0x8 
+                0x000000000000cde0       0x68 HideAndSeekIcon.o
+                0x000000000000cde0                HideAndSeekIcon::exeEnd()
+ *fill*         0x000000000000ce48        0x8 
  .text._ZN12_GLOBAL__N_121HideAndSeekIconNrvEnd7executeEPN2al11NerveKeeperE
-                0x000000000000ce70        0x8 HideAndSeekIcon.o
- *fill*         0x000000000000ce78        0x8 
+                0x000000000000ce50        0x8 HideAndSeekIcon.o
+ *fill*         0x000000000000ce58        0x8 
  .text._ZN15HideAndSeekIcon10showHidingEv
-                0x000000000000ce80       0x2c HideAndSeekIcon.o
-                0x000000000000ce80                HideAndSeekIcon::showHiding()
- *fill*         0x000000000000ceac        0x4 
+                0x000000000000ce60       0x2c HideAndSeekIcon.o
+                0x000000000000ce60                HideAndSeekIcon::showHiding()
+ *fill*         0x000000000000ce8c        0x4 
  .text._ZN15HideAndSeekIcon11showSeekingEv
-                0x000000000000ceb0       0x2c HideAndSeekIcon.o
-                0x000000000000ceb0                HideAndSeekIcon::showSeeking()
- .text          0x000000000000cedc        0x0 NameTag.o
- *fill*         0x000000000000cedc        0x4 
+                0x000000000000ce90       0x2c HideAndSeekIcon.o
+                0x000000000000ce90                HideAndSeekIcon::showSeeking()
+ .text          0x000000000000cebc        0x0 NameTag.o
+ *fill*         0x000000000000cebc        0x4 
  .text._ZN7NameTag11updateTransEv
-                0x000000000000cee0       0xd4 NameTag.o
-                0x000000000000cee0                NameTag::updateTrans()
- *fill*         0x000000000000cfb4        0xc 
+                0x000000000000cec0       0xd4 NameTag.o
+                0x000000000000cec0                NameTag::updateTrans()
+ *fill*         0x000000000000cf94        0xc 
  .text._ZN7NameTag3endEv
-                0x000000000000cfc0       0x50 NameTag.o
-                0x000000000000cfc0                NameTag::end()
+                0x000000000000cfa0       0x50 NameTag.o
+                0x000000000000cfa0                NameTag::end()
  .text._ZN7NameTagC2EP11PuppetActorRKN2al14LayoutInitInfoEffPKc
-                0x000000000000d010       0xec NameTag.o
-                0x000000000000d010                NameTag::NameTag(PuppetActor*, al::LayoutInitInfo const&, float, float, char const*)
- *fill*         0x000000000000d0fc        0x4 
+                0x000000000000cff0       0xec NameTag.o
+                0x000000000000cff0                NameTag::NameTag(PuppetActor*, al::LayoutInitInfo const&, float, float, char const*)
+ *fill*         0x000000000000d0dc        0x4 
  .text._ZN7NameTagC1EP11PuppetActorRKN2al14LayoutInitInfoEffPKc
-                0x000000000000d100       0xf8 NameTag.o
-                0x000000000000d100                NameTag::NameTag(PuppetActor*, al::LayoutInitInfo const&, float, float, char const*)
- *fill*         0x000000000000d1f8        0x8 
+                0x000000000000d0e0       0xf8 NameTag.o
+                0x000000000000d0e0                NameTag::NameTag(PuppetActor*, al::LayoutInitInfo const&, float, float, char const*)
+ *fill*         0x000000000000d1d8        0x8 
  .text._ZN7NameTag7setTextEPKc
-                0x000000000000d200       0x10 NameTag.o
-                0x000000000000d200                NameTag::setText(char const*)
+                0x000000000000d1e0       0x10 NameTag.o
+                0x000000000000d1e0                NameTag::setText(char const*)
  .text._ZNK7NameTag17isNearPlayerActorEf
-                0x000000000000d210       0x24 NameTag.o
-                0x000000000000d210                NameTag::isNearPlayerActor(float) const
- *fill*         0x000000000000d234        0xc 
+                0x000000000000d1f0       0x24 NameTag.o
+                0x000000000000d1f0                NameTag::isNearPlayerActor(float) const
+ *fill*         0x000000000000d214        0xc 
  .text._ZN7NameTag6appearEv
-                0x000000000000d240      0x138 NameTag.o
-                0x000000000000d240                NameTag::appear()
- *fill*         0x000000000000d378        0x8 
+                0x000000000000d220      0x138 NameTag.o
+                0x000000000000d220                NameTag::appear()
+ *fill*         0x000000000000d358        0x8 
  .text._ZN7NameTag6updateEv
-                0x000000000000d380       0xdc NameTag.o
-                0x000000000000d380                NameTag::update()
- *fill*         0x000000000000d45c        0x4 
+                0x000000000000d360       0xdc NameTag.o
+                0x000000000000d360                NameTag::update()
+ *fill*         0x000000000000d43c        0x4 
  .text._ZN7NameTag7controlEv
-                0x000000000000d460       0x8c NameTag.o
-                0x000000000000d460                NameTag::control()
- *fill*         0x000000000000d4ec        0x4 
+                0x000000000000d440       0x8c NameTag.o
+                0x000000000000d440                NameTag::control()
+ *fill*         0x000000000000d4cc        0x4 
  .text._ZNK7NameTag9isVisibleEv
-                0x000000000000d4f0        0x8 NameTag.o
-                0x000000000000d4f0                NameTag::isVisible() const
- *fill*         0x000000000000d4f8        0x8 
+                0x000000000000d4d0        0x8 NameTag.o
+                0x000000000000d4d0                NameTag::isVisible() const
+ *fill*         0x000000000000d4d8        0x8 
  .text._ZN7NameTag15getCurrentStateEv
-                0x000000000000d500       0xac NameTag.o
-                0x000000000000d500                NameTag::getCurrentState()
- *fill*         0x000000000000d5ac        0x4 
+                0x000000000000d4e0       0xac NameTag.o
+                0x000000000000d4e0                NameTag::getCurrentState()
+ *fill*         0x000000000000d58c        0x4 
  .text._ZN7NameTag9exeAppearEv
-                0x000000000000d5b0       0x38 NameTag.o
-                0x000000000000d5b0                NameTag::exeAppear()
- *fill*         0x000000000000d5e8        0x8 
+                0x000000000000d590       0x38 NameTag.o
+                0x000000000000d590                NameTag::exeAppear()
+ *fill*         0x000000000000d5c8        0x8 
  .text._ZN12_GLOBAL__N_116NameTagNrvAppear7executeEPN2al11NerveKeeperE
-                0x000000000000d5f0        0x8 NameTag.o
- *fill*         0x000000000000d5f8        0x8 
+                0x000000000000d5d0        0x8 NameTag.o
+ *fill*         0x000000000000d5d8        0x8 
  .text._ZN7NameTag7exeWaitEv
-                0x000000000000d600       0x30 NameTag.o
-                0x000000000000d600                NameTag::exeWait()
+                0x000000000000d5e0       0x30 NameTag.o
+                0x000000000000d5e0                NameTag::exeWait()
  .text._ZN12_GLOBAL__N_114NameTagNrvWait7executeEPN2al11NerveKeeperE
-                0x000000000000d630        0x8 NameTag.o
- *fill*         0x000000000000d638        0x8 
+                0x000000000000d610        0x8 NameTag.o
+ *fill*         0x000000000000d618        0x8 
  .text._ZN7NameTag6exeEndEv
-                0x000000000000d640       0x74 NameTag.o
-                0x000000000000d640                NameTag::exeEnd()
- *fill*         0x000000000000d6b4        0xc 
+                0x000000000000d620       0x74 NameTag.o
+                0x000000000000d620                NameTag::exeEnd()
+ *fill*         0x000000000000d694        0xc 
  .text._ZN12_GLOBAL__N_113NameTagNrvEnd7executeEPN2al11NerveKeeperE
-                0x000000000000d6c0        0x8 NameTag.o
- *fill*         0x000000000000d6c8        0x8 
+                0x000000000000d6a0        0x8 NameTag.o
+ *fill*         0x000000000000d6a8        0x8 
  .text._ZN7NameTag7exeHideEv
-                0x000000000000d6d0        0x4 NameTag.o
-                0x000000000000d6d0                NameTag::exeHide()
- *fill*         0x000000000000d6d4        0xc 
+                0x000000000000d6b0        0x4 NameTag.o
+                0x000000000000d6b0                NameTag::exeHide()
+ *fill*         0x000000000000d6b4        0xc 
  .text._ZN12_GLOBAL__N_114NameTagNrvHide7executeEPN2al11NerveKeeperE
-                0x000000000000d6e0        0x8 NameTag.o
- .text          0x000000000000d6e8        0x0 StageSceneStatePauseMenu.o
- *fill*         0x000000000000d6e8        0x8 
+                0x000000000000d6c0        0x8 NameTag.o
+ .text          0x000000000000d6c8        0x0 StageSceneStatePauseMenu.o
+ *fill*         0x000000000000d6c8        0x8 
  .text._ZN12_GLOBAL__N_131StageSceneStatePauseMenuNrvWait7executeEPN2al11NerveKeeperE
-                0x000000000000d6f0        0x8 StageSceneStatePauseMenu.o
- *fill*         0x000000000000d6f8        0x8 
+                0x000000000000d6d0        0x8 StageSceneStatePauseMenu.o
+ *fill*         0x000000000000d6d8        0x8 
  .text._ZN24StageSceneStatePauseMenu15exeServerConfigEv
-                0x000000000000d700       0xe4 StageSceneStatePauseMenu.o
-                0x000000000000d700                StageSceneStatePauseMenu::exeServerConfig()
- .text          0x000000000000d7e4        0x0 StageSceneStateServerConfig.o
- *fill*         0x000000000000d7e4        0xc 
+                0x000000000000d6e0       0xe4 StageSceneStatePauseMenu.o
+                0x000000000000d6e0                StageSceneStatePauseMenu::exeServerConfig()
+ .text          0x000000000000d7c4        0x0 StageSceneStateServerConfig.o
+ *fill*         0x000000000000d7c4        0xc 
  .text._ZNK27StageSceneStateServerConfig16getMessageSystemEv
-                0x000000000000d7f0        0x8 StageSceneStateServerConfig.o
-                0x000000000000d7f0                StageSceneStateServerConfig::getMessageSystem() const
- *fill*         0x000000000000d7f8        0x8 
+                0x000000000000d7d0        0x8 StageSceneStateServerConfig.o
+                0x000000000000d7d0                StageSceneStateServerConfig::getMessageSystem() const
+ *fill*         0x000000000000d7d8        0x8 
  .text._ZNK2al7FactoryIPFP18GameModeConfigMenuPKcEE11convertNameES4_
-                0x000000000000d800        0x8 StageSceneStateServerConfig.o
-                0x000000000000d800                al::Factory<GameModeConfigMenu* (*)(char const*)>::convertName(char const*) const
- *fill*         0x000000000000d808        0x8 
+                0x000000000000d7e0        0x8 StageSceneStateServerConfig.o
+                0x000000000000d7e0                al::Factory<GameModeConfigMenu* (*)(char const*)>::convertName(char const*) const
+ *fill*         0x000000000000d7e8        0x8 
  .text._ZN2al13HostStateBaseINS_5SceneEED2Ev
-                0x000000000000d810       0x14 StageSceneStateServerConfig.o
-                0x000000000000d810                al::HostStateBase<al::Scene>::~HostStateBase()
-                0x000000000000d810                al::HostStateBase<al::Scene>::~HostStateBase()
- *fill*         0x000000000000d824        0xc 
+                0x000000000000d7f0       0x14 StageSceneStateServerConfig.o
+                0x000000000000d7f0                al::HostStateBase<al::Scene>::~HostStateBase()
+                0x000000000000d7f0                al::HostStateBase<al::Scene>::~HostStateBase()
+ *fill*         0x000000000000d804        0xc 
  .text._ZN2al13HostStateBaseINS_5SceneEED0Ev
-                0x000000000000d830       0x2c StageSceneStateServerConfig.o
-                0x000000000000d830                al::HostStateBase<al::Scene>::~HostStateBase()
- *fill*         0x000000000000d85c        0x4 
+                0x000000000000d810       0x2c StageSceneStateServerConfig.o
+                0x000000000000d810                al::HostStateBase<al::Scene>::~HostStateBase()
+ *fill*         0x000000000000d83c        0x4 
  .text._ZN27StageSceneStateServerConfigD2Ev
-                0x000000000000d860       0x24 StageSceneStateServerConfig.o
-                0x000000000000d860                StageSceneStateServerConfig::~StageSceneStateServerConfig()
-                0x000000000000d860                StageSceneStateServerConfig::~StageSceneStateServerConfig()
- *fill*         0x000000000000d884        0xc 
+                0x000000000000d840       0x24 StageSceneStateServerConfig.o
+                0x000000000000d840                StageSceneStateServerConfig::~StageSceneStateServerConfig()
+                0x000000000000d840                StageSceneStateServerConfig::~StageSceneStateServerConfig()
+ *fill*         0x000000000000d864        0xc 
  .text._ZN27StageSceneStateServerConfigD0Ev
-                0x000000000000d890       0x3c StageSceneStateServerConfig.o
-                0x000000000000d890                StageSceneStateServerConfig::~StageSceneStateServerConfig()
- *fill*         0x000000000000d8cc        0x4 
+                0x000000000000d870       0x3c StageSceneStateServerConfig.o
+                0x000000000000d870                StageSceneStateServerConfig::~StageSceneStateServerConfig()
+ *fill*         0x000000000000d8ac        0x4 
  .text._ZN27StageSceneStateServerConfig6appearEv
-                0x000000000000d8d0       0x24 StageSceneStateServerConfig.o
-                0x000000000000d8d0                StageSceneStateServerConfig::appear()
- *fill*         0x000000000000d8f4        0xc 
+                0x000000000000d8b0       0x24 StageSceneStateServerConfig.o
+                0x000000000000d8b0                StageSceneStateServerConfig::appear()
+ *fill*         0x000000000000d8d4        0xc 
  .text._ZN27StageSceneStateServerConfig4killEv
-                0x000000000000d900       0x24 StageSceneStateServerConfig.o
-                0x000000000000d900                StageSceneStateServerConfig::kill()
- *fill*         0x000000000000d924        0xc 
+                0x000000000000d8e0       0x24 StageSceneStateServerConfig.o
+                0x000000000000d8e0                StageSceneStateServerConfig::kill()
+ *fill*         0x000000000000d904        0xc 
  .text._ZN27StageSceneStateServerConfig4initEv
-                0x000000000000d930       0x54 StageSceneStateServerConfig.o
-                0x000000000000d930                StageSceneStateServerConfig::init()
- *fill*         0x000000000000d984        0xc 
+                0x000000000000d910       0x54 StageSceneStateServerConfig.o
+                0x000000000000d910                StageSceneStateServerConfig::init()
+ *fill*         0x000000000000d964        0xc 
  .text._ZThn32_NK27StageSceneStateServerConfig16getMessageSystemEv
-                0x000000000000d990        0x8 StageSceneStateServerConfig.o
-                0x000000000000d990                non-virtual thunk to StageSceneStateServerConfig::getMessageSystem() const
- *fill*         0x000000000000d998        0x8 
+                0x000000000000d970        0x8 StageSceneStateServerConfig.o
+                0x000000000000d970                non-virtual thunk to StageSceneStateServerConfig::getMessageSystem() const
+ *fill*         0x000000000000d978        0x8 
  .text._ZN27StageSceneStateServerConfigC2EPKcPN2al5SceneERKNS2_14LayoutInitInfoEP11FooterPartsP14GameDataHolderb
-                0x000000000000d9a0      0x710 StageSceneStateServerConfig.o
-                0x000000000000d9a0                StageSceneStateServerConfig::StageSceneStateServerConfig(char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
-                0x000000000000d9a0                StageSceneStateServerConfig::StageSceneStateServerConfig(char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
+                0x000000000000d980      0x710 StageSceneStateServerConfig.o
+                0x000000000000d980                StageSceneStateServerConfig::StageSceneStateServerConfig(char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
+                0x000000000000d980                StageSceneStateServerConfig::StageSceneStateServerConfig(char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
  .text._ZN27StageSceneStateServerConfig11exeMainMenuEv
-                0x000000000000e0b0      0x208 StageSceneStateServerConfig.o
-                0x000000000000e0b0                StageSceneStateServerConfig::exeMainMenu()
- *fill*         0x000000000000e2b8        0x8 
+                0x000000000000e090      0x208 StageSceneStateServerConfig.o
+                0x000000000000e090                StageSceneStateServerConfig::exeMainMenu()
+ *fill*         0x000000000000e298        0x8 
  .text._ZN12_GLOBAL__N_138StageSceneStateServerConfigNrvMainMenu7executeEPN2al11NerveKeeperE
-                0x000000000000e2c0        0x8 StageSceneStateServerConfig.o
- *fill*         0x000000000000e2c8        0x8 
+                0x000000000000e2a0        0x8 StageSceneStateServerConfig.o
+ *fill*         0x000000000000e2a8        0x8 
  .text._ZN27StageSceneStateServerConfig17exeOpenKeyboardIPEv
-                0x000000000000e2d0       0x98 StageSceneStateServerConfig.o
-                0x000000000000e2d0                StageSceneStateServerConfig::exeOpenKeyboardIP()
- *fill*         0x000000000000e368        0x8 
+                0x000000000000e2b0       0x98 StageSceneStateServerConfig.o
+                0x000000000000e2b0                StageSceneStateServerConfig::exeOpenKeyboardIP()
+ *fill*         0x000000000000e348        0x8 
  .text._ZN12_GLOBAL__N_144StageSceneStateServerConfigNrvOpenKeyboardIP7executeEPN2al11NerveKeeperE
-                0x000000000000e370        0x8 StageSceneStateServerConfig.o
- *fill*         0x000000000000e378        0x8 
+                0x000000000000e350        0x8 StageSceneStateServerConfig.o
+ *fill*         0x000000000000e358        0x8 
  .text._ZN27StageSceneStateServerConfig19exeOpenKeyboardPortEv
-                0x000000000000e380       0x98 StageSceneStateServerConfig.o
-                0x000000000000e380                StageSceneStateServerConfig::exeOpenKeyboardPort()
- *fill*         0x000000000000e418        0x8 
+                0x000000000000e360       0x98 StageSceneStateServerConfig.o
+                0x000000000000e360                StageSceneStateServerConfig::exeOpenKeyboardPort()
+ *fill*         0x000000000000e3f8        0x8 
  .text._ZN12_GLOBAL__N_146StageSceneStateServerConfigNrvOpenKeyboardPort7executeEPN2al11NerveKeeperE
-                0x000000000000e420        0x8 StageSceneStateServerConfig.o
- *fill*         0x000000000000e428        0x8 
+                0x000000000000e400        0x8 StageSceneStateServerConfig.o
+ *fill*         0x000000000000e408        0x8 
  .text._ZN27StageSceneStateServerConfig11exeSaveDataEv
-                0x000000000000e430       0x68 StageSceneStateServerConfig.o
-                0x000000000000e430                StageSceneStateServerConfig::exeSaveData()
- *fill*         0x000000000000e498        0x8 
+                0x000000000000e410       0x68 StageSceneStateServerConfig.o
+                0x000000000000e410                StageSceneStateServerConfig::exeSaveData()
+ *fill*         0x000000000000e478        0x8 
  .text._ZN12_GLOBAL__N_138StageSceneStateServerConfigNrvSaveData7executeEPN2al11NerveKeeperE
-                0x000000000000e4a0        0x8 StageSceneStateServerConfig.o
- *fill*         0x000000000000e4a8        0x8 
+                0x000000000000e480        0x8 StageSceneStateServerConfig.o
+ *fill*         0x000000000000e488        0x8 
  .text._ZN27StageSceneStateServerConfig10endSubMenuEv
-                0x000000000000e4b0       0x5c StageSceneStateServerConfig.o
-                0x000000000000e4b0                StageSceneStateServerConfig::endSubMenu()
- *fill*         0x000000000000e50c        0x4 
+                0x000000000000e490       0x5c StageSceneStateServerConfig.o
+                0x000000000000e490                StageSceneStateServerConfig::endSubMenu()
+ *fill*         0x000000000000e4ec        0x4 
  .text._ZN27StageSceneStateServerConfig17exeGamemodeConfigEv
-                0x000000000000e510      0x1d8 StageSceneStateServerConfig.o
-                0x000000000000e510                StageSceneStateServerConfig::exeGamemodeConfig()
- *fill*         0x000000000000e6e8        0x8 
+                0x000000000000e4f0      0x1d8 StageSceneStateServerConfig.o
+                0x000000000000e4f0                StageSceneStateServerConfig::exeGamemodeConfig()
+ *fill*         0x000000000000e6c8        0x8 
  .text._ZN12_GLOBAL__N_144StageSceneStateServerConfigNrvGamemodeConfig7executeEPN2al11NerveKeeperE
-                0x000000000000e6f0        0x8 StageSceneStateServerConfig.o
- *fill*         0x000000000000e6f8        0x8 
+                0x000000000000e6d0        0x8 StageSceneStateServerConfig.o
+ *fill*         0x000000000000e6d8        0x8 
  .text._ZN27StageSceneStateServerConfig17exeGamemodeSelectEv
-                0x000000000000e700      0x1a0 StageSceneStateServerConfig.o
-                0x000000000000e700                StageSceneStateServerConfig::exeGamemodeSelect()
+                0x000000000000e6e0      0x1a0 StageSceneStateServerConfig.o
+                0x000000000000e6e0                StageSceneStateServerConfig::exeGamemodeSelect()
  .text._ZN12_GLOBAL__N_144StageSceneStateServerConfigNrvGamemodeSelect7executeEPN2al11NerveKeeperE
-                0x000000000000e8a0        0x8 StageSceneStateServerConfig.o
- .text          0x000000000000e8a8        0x0 CameraPoserCustom.o
- *fill*         0x000000000000e8a8        0x8 
+                0x000000000000e880        0x8 StageSceneStateServerConfig.o
+ .text          0x000000000000e888        0x0 CameraPoserCustom.o
+ *fill*         0x000000000000e888        0x8 
  .text._ZN2cc17CameraPoserCustom4initEv
-                0x000000000000e8b0       0x20 CameraPoserCustom.o
-                0x000000000000e8b0                cc::CameraPoserCustom::init()
+                0x000000000000e890       0x20 CameraPoserCustom.o
+                0x000000000000e890                cc::CameraPoserCustom::init()
  .text._ZN2cc17CameraPoserCustom9loadParamERKN2al9ByamlIterE
-                0x000000000000e8d0       0x64 CameraPoserCustom.o
-                0x000000000000e8d0                cc::CameraPoserCustom::loadParam(al::ByamlIter const&)
- *fill*         0x000000000000e934        0xc 
+                0x000000000000e8b0       0x64 CameraPoserCustom.o
+                0x000000000000e8b0                cc::CameraPoserCustom::loadParam(al::ByamlIter const&)
+ *fill*         0x000000000000e914        0xc 
  .text._ZN2cc17CameraPoserCustom5startERKN2al15CameraStartInfoE
-                0x000000000000e940       0xfc CameraPoserCustom.o
-                0x000000000000e940                cc::CameraPoserCustom::start(al::CameraStartInfo const&)
- *fill*         0x000000000000ea3c        0x4 
+                0x000000000000e920       0xfc CameraPoserCustom.o
+                0x000000000000e920                cc::CameraPoserCustom::start(al::CameraStartInfo const&)
+ *fill*         0x000000000000ea1c        0x4 
  .text._ZN2cc17CameraPoserCustom6updateEv
-                0x000000000000ea40      0x280 CameraPoserCustom.o
-                0x000000000000ea40                cc::CameraPoserCustom::update()
+                0x000000000000ea20      0x280 CameraPoserCustom.o
+                0x000000000000ea20                cc::CameraPoserCustom::update()
  .text._ZN2cc17CameraPoserCustomC2EPKc
-                0x000000000000ecc0       0x80 CameraPoserCustom.o
-                0x000000000000ecc0                cc::CameraPoserCustom::CameraPoserCustom(char const*)
-                0x000000000000ecc0                cc::CameraPoserCustom::CameraPoserCustom(char const*)
+                0x000000000000eca0       0x80 CameraPoserCustom.o
+                0x000000000000eca0                cc::CameraPoserCustom::CameraPoserCustom(char const*)
+                0x000000000000eca0                cc::CameraPoserCustom::CameraPoserCustom(char const*)
  .text._ZN2cc10normalize2ERN4sead7Vector3IfEEf
-                0x000000000000ed40       0x40 CameraPoserCustom.o
-                0x000000000000ed40                cc::normalize2(sead::Vector3<float>&, float)
+                0x000000000000ed20       0x40 CameraPoserCustom.o
+                0x000000000000ed20                cc::normalize2(sead::Vector3<float>&, float)
  .text._ZN2cc17CameraPoserCustom8movementEv
-                0x000000000000ed80        0x4 CameraPoserCustom.o
-                0x000000000000ed80                cc::CameraPoserCustom::movement()
- .text          0x000000000000ed84        0x0 ProjectCameraPoserFactory.o
- *fill*         0x000000000000ed84        0xc 
+                0x000000000000ed60        0x4 CameraPoserCustom.o
+                0x000000000000ed60                cc::CameraPoserCustom::movement()
+ .text          0x000000000000ed64        0x0 ProjectCameraPoserFactory.o
+ *fill*         0x000000000000ed64        0xc 
  .text._ZNK2al7FactoryIPFPNS_11CameraPoserEPKcEE11convertNameES4_
-                0x000000000000ed90        0x8 ProjectCameraPoserFactory.o
-                0x000000000000ed90                al::Factory<al::CameraPoser* (*)(char const*)>::convertName(char const*) const
- *fill*         0x000000000000ed98        0x8 
+                0x000000000000ed70        0x8 ProjectCameraPoserFactory.o
+                0x000000000000ed70                al::Factory<al::CameraPoser* (*)(char const*)>::convertName(char const*) const
+ *fill*         0x000000000000ed78        0x8 
  .text._ZN2cc23createCustomCameraPoserINS_17CameraPoserCustomEEEPN2al11CameraPoserEPKc
-                0x000000000000eda0       0x28 ProjectCameraPoserFactory.o
-                0x000000000000eda0                al::CameraPoser* cc::createCustomCameraPoser<cc::CameraPoserCustom>(char const*)
- *fill*         0x000000000000edc8        0x8 
+                0x000000000000ed80       0x28 ProjectCameraPoserFactory.o
+                0x000000000000ed80                al::CameraPoser* cc::createCustomCameraPoser<cc::CameraPoserCustom>(char const*)
+ *fill*         0x000000000000eda8        0x8 
  .text._ZN2al18CameraPoserFactoryC2EPKc
-                0x000000000000edd0       0x18 ProjectCameraPoserFactory.o
-                0x000000000000edd0                al::CameraPoserFactory::CameraPoserFactory(char const*)
-                0x000000000000edd0                al::CameraPoserFactory::CameraPoserFactory(char const*)
- *fill*         0x000000000000ede8        0x8 
+                0x000000000000edb0       0x18 ProjectCameraPoserFactory.o
+                0x000000000000edb0                al::CameraPoserFactory::CameraPoserFactory(char const*)
+                0x000000000000edb0                al::CameraPoserFactory::CameraPoserFactory(char const*)
+ *fill*         0x000000000000edc8        0x8 
  .text._ZN25ProjectCameraPoserFactoryC2Ev
-                0x000000000000edf0       0x44 ProjectCameraPoserFactory.o
-                0x000000000000edf0                ProjectCameraPoserFactory::ProjectCameraPoserFactory()
-                0x000000000000edf0                ProjectCameraPoserFactory::ProjectCameraPoserFactory()
- .text          0x000000000000ee34        0x0 Factory.o
- *fill*         0x000000000000ee34        0xc 
+                0x000000000000edd0       0x44 ProjectCameraPoserFactory.o
+                0x000000000000edd0                ProjectCameraPoserFactory::ProjectCameraPoserFactory()
+                0x000000000000edd0                ProjectCameraPoserFactory::ProjectCameraPoserFactory()
+ .text          0x000000000000ee14        0x0 Factory.o
+ *fill*         0x000000000000ee14        0xc 
  .text._ZNK2al7FactoryIPFPNS_9LiveActorEPKcEE11convertNameES4_
-                0x000000000000ee40        0x8 Factory.o
-                0x000000000000ee40                al::Factory<al::LiveActor* (*)(char const*)>::convertName(char const*) const
- *fill*         0x000000000000ee48        0x8 
+                0x000000000000ee20        0x8 Factory.o
+                0x000000000000ee20                al::Factory<al::LiveActor* (*)(char const*)>::convertName(char const*) const
+ *fill*         0x000000000000ee28        0x8 
  .text._ZN19ProjectActorFactoryC2Ev
-                0x000000000000ee50       0x30 Factory.o
-                0x000000000000ee50                ProjectActorFactory::ProjectActorFactory()
-                0x000000000000ee50                ProjectActorFactory::ProjectActorFactory()
- .text          0x000000000000ee80        0x0 Keyboard.o
+                0x000000000000ee30       0x30 Factory.o
+                0x000000000000ee30                ProjectActorFactory::ProjectActorFactory()
+                0x000000000000ee30                ProjectActorFactory::ProjectActorFactory()
+ .text          0x000000000000ee60        0x0 Keyboard.o
  .text._ZNK2al10FunctorV0MIP8KeyboardMS1_FvvEEclEv
-                0x000000000000ee80       0x24 Keyboard.o
-                0x000000000000ee80                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::operator()() const
- *fill*         0x000000000000eea4        0xc 
+                0x000000000000ee60       0x24 Keyboard.o
+                0x000000000000ee60                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::operator()() const
+ *fill*         0x000000000000ee84        0xc 
  .text._ZNK2al10FunctorV0MIP8KeyboardMS1_FvvEE5cloneEv
-                0x000000000000eeb0       0x34 Keyboard.o
-                0x000000000000eeb0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::clone() const
- *fill*         0x000000000000eee4        0xc 
+                0x000000000000ee90       0x34 Keyboard.o
+                0x000000000000ee90                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::clone() const
+ *fill*         0x000000000000eec4        0xc 
  .text._ZN2al10FunctorV0MIP8KeyboardMS1_FvvEED2Ev
-                0x000000000000eef0       0x14 Keyboard.o
-                0x000000000000eef0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
-                0x000000000000eef0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
- *fill*         0x000000000000ef04        0xc 
+                0x000000000000eed0       0x14 Keyboard.o
+                0x000000000000eed0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
+                0x000000000000eed0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
+ *fill*         0x000000000000eee4        0xc 
  .text._ZN2al10FunctorV0MIP8KeyboardMS1_FvvEED0Ev
-                0x000000000000ef10       0x2c Keyboard.o
-                0x000000000000ef10                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
- *fill*         0x000000000000ef3c        0x4 
+                0x000000000000eef0       0x2c Keyboard.o
+                0x000000000000eef0                al::FunctorV0M<Keyboard*, void (Keyboard::*)()>::~FunctorV0M()
+ *fill*         0x000000000000ef1c        0x4 
  .text._ZN8Keyboard14keyboardThreadEv
-                0x000000000000ef40      0x10c Keyboard.o
-                0x000000000000ef40                Keyboard::keyboardThread()
- *fill*         0x000000000000f04c        0x4 
+                0x000000000000ef20      0x10c Keyboard.o
+                0x000000000000ef20                Keyboard::keyboardThread()
+ *fill*         0x000000000000f02c        0x4 
  .text._ZN8KeyboardC2Em
-                0x000000000000f050      0x148 Keyboard.o
-                0x000000000000f050                Keyboard::Keyboard(unsigned long)
-                0x000000000000f050                Keyboard::Keyboard(unsigned long)
- *fill*         0x000000000000f198        0x8 
+                0x000000000000f030      0x148 Keyboard.o
+                0x000000000000f030                Keyboard::Keyboard(unsigned long)
+                0x000000000000f030                Keyboard::Keyboard(unsigned long)
+ *fill*         0x000000000000f178        0x8 
  .text._ZN8Keyboard12openKeyboardEPKcPFvRN2nn5swkbd14KeyboardConfigEE
-                0x000000000000f1a0       0x9c Keyboard.o
-                0x000000000000f1a0                Keyboard::openKeyboard(char const*, void (*)(nn::swkbd::KeyboardConfig&))
- .text          0x000000000000f23c        0x0 debugMenu.o
- *fill*         0x000000000000f23c        0x4 
+                0x000000000000f180       0x9c Keyboard.o
+                0x000000000000f180                Keyboard::openKeyboard(char const*, void (*)(nn::swkbd::KeyboardConfig&))
+ .text          0x000000000000f21c        0x0 debugMenu.o
+ *fill*         0x000000000000f21c        0x4 
  .text._Z14setupDebugMenuP10GameSystem
-                0x000000000000f240      0x14c debugMenu.o
-                0x000000000000f240                setupDebugMenu(GameSystem*)
- *fill*         0x000000000000f38c        0x4 
+                0x000000000000f220      0x14c debugMenu.o
+                0x000000000000f220                setupDebugMenu(GameSystem*)
+ *fill*         0x000000000000f36c        0x4 
  .text._Z14drawBackgroundPN3agl11DrawContextE
-                0x000000000000f390       0xdc debugMenu.o
-                0x000000000000f390                drawBackground(agl::DrawContext*)
- .text          0x000000000000f46c        0x0 helpers.o
- *fill*         0x000000000000f46c        0x4 
+                0x000000000000f370       0xdc debugMenu.o
+                0x000000000000f370                drawBackground(agl::DrawContext*)
+ .text          0x000000000000f44c        0x0 helpers.o
+ *fill*         0x000000000000f44c        0x4 
  .text._Z8isPartOfPKcS0_
-                0x000000000000f470       0x80 helpers.o
-                0x000000000000f470                isPartOf(char const*, char const*)
+                0x000000000000f450       0x80 helpers.o
+                0x000000000000f450                isPartOf(char const*, char const*)
  .text._Z7indexOfPcc
-                0x000000000000f4f0       0x5c helpers.o
-                0x000000000000f4f0                indexOf(char*, char)
- *fill*         0x000000000000f54c        0x4 
+                0x000000000000f4d0       0x5c helpers.o
+                0x000000000000f4d0                indexOf(char*, char)
+ *fill*         0x000000000000f52c        0x4 
  .text._Z11QuatToEulerPN4sead4QuatIfEE
-                0x000000000000f550       0xbc helpers.o
-                0x000000000000f550                QuatToEuler(sead::Quat<float>*)
- *fill*         0x000000000000f60c        0x4 
+                0x000000000000f530       0xbc helpers.o
+                0x000000000000f530                QuatToEuler(sead::Quat<float>*)
+ *fill*         0x000000000000f5ec        0x4 
  .text._Z9logVectorPKcN4sead7Vector3IfEE
-                0x000000000000f610       0x24 helpers.o
-                0x000000000000f610                logVector(char const*, sead::Vector3<float>)
- *fill*         0x000000000000f634        0xc 
+                0x000000000000f5f0       0x24 helpers.o
+                0x000000000000f5f0                logVector(char const*, sead::Vector3<float>)
+ *fill*         0x000000000000f614        0xc 
  .text._Z7logQuatPKcRN4sead4QuatIfEE
-                0x000000000000f640       0x2c helpers.o
-                0x000000000000f640                logQuat(char const*, sead::Quat<float>&)
- *fill*         0x000000000000f66c        0x4 
+                0x000000000000f620       0x2c helpers.o
+                0x000000000000f620                logQuat(char const*, sead::Quat<float>&)
+ *fill*         0x000000000000f64c        0x4 
  .text._Z12vecMagnitudeRKN4sead7Vector3IfEE
-                0x000000000000f670       0x18 helpers.o
-                0x000000000000f670                vecMagnitude(sead::Vector3<float> const&)
- *fill*         0x000000000000f688        0x8 
+                0x000000000000f650       0x18 helpers.o
+                0x000000000000f650                vecMagnitude(sead::Vector3<float> const&)
+ *fill*         0x000000000000f668        0x8 
  .text._Z9quatAngleRKN4sead4QuatIfEERS1_
-                0x000000000000f690       0x84 helpers.o
-                0x000000000000f690                quatAngle(sead::Quat<float> const&, sead::Quat<float>&)
- *fill*         0x000000000000f714        0xc 
+                0x000000000000f670       0x84 helpers.o
+                0x000000000000f670                quatAngle(sead::Quat<float> const&, sead::Quat<float>&)
+ *fill*         0x000000000000f6f4        0xc 
  .text._Z15isInCostumeListPKc
-                0x000000000000f720       0x44 helpers.o
-                0x000000000000f720                isInCostumeList(char const*)
- *fill*         0x000000000000f764        0xc 
+                0x000000000000f700       0x44 helpers.o
+                0x000000000000f700                isInCostumeList(char const*)
+ *fill*         0x000000000000f744        0xc 
  .text._Z19tryGetPuppetCapNameP10PuppetInfo
-                0x000000000000f770       0x28 helpers.o
-                0x000000000000f770                tryGetPuppetCapName(PuppetInfo*)
- *fill*         0x000000000000f798        0x8 
+                0x000000000000f750       0x28 helpers.o
+                0x000000000000f750                tryGetPuppetCapName(PuppetInfo*)
+ *fill*         0x000000000000f778        0x8 
  .text._Z20tryGetPuppetBodyNameP10PuppetInfo
-                0x000000000000f7a0       0x28 helpers.o
-                0x000000000000f7a0                tryGetPuppetBodyName(PuppetInfo*)
- *fill*         0x000000000000f7c8        0x8 
+                0x000000000000f780       0x28 helpers.o
+                0x000000000000f780                tryGetPuppetBodyName(PuppetInfo*)
+ *fill*         0x000000000000f7a8        0x8 
  .text._Z14tryConvertNamePKc
-                0x000000000000f7d0       0x68 helpers.o
-                0x000000000000f7d0                tryConvertName(char const*)
- *fill*         0x000000000000f838        0x8 
+                0x000000000000f7b0       0x68 helpers.o
+                0x000000000000f7b0                tryConvertName(char const*)
+ *fill*         0x000000000000f818        0x8 
  .text._ZN11VisualUtils10SmoothMoveE9TransformS0_fff
-                0x000000000000f840      0x234 helpers.o
-                0x000000000000f840                VisualUtils::SmoothMove(Transform, Transform, float, float, float)
- *fill*         0x000000000000fa74        0xc 
+                0x000000000000f820      0x234 helpers.o
+                0x000000000000f820                VisualUtils::SmoothMove(Transform, Transform, float, float, float)
+ *fill*         0x000000000000fa54        0xc 
  .text._Z14killMainPlayerPN2al9LiveActorE
-                0x000000000000fa80       0x60 helpers.o
-                0x000000000000fa80                killMainPlayer(al::LiveActor*)
+                0x000000000000fa60       0x60 helpers.o
+                0x000000000000fa60                killMainPlayer(al::LiveActor*)
  .text._Z14killMainPlayerP19PlayerActorHakoniwa
-                0x000000000000fae0       0x4c helpers.o
-                0x000000000000fae0                killMainPlayer(PlayerActorHakoniwa*)
- .text          0x000000000000fb2c        0x0 hooks.o
- *fill*         0x000000000000fb2c        0x4 
+                0x000000000000fac0       0x4c helpers.o
+                0x000000000000fac0                killMainPlayer(PlayerActorHakoniwa*)
+ .text          0x000000000000fb0c        0x0 hooks.o
+ *fill*         0x000000000000fb0c        0x4 
  .text._ZN12_GLOBAL__N_139StageSceneStatePauseMenuNrvServerConfig7executeEPN2al11NerveKeeperE
-                0x000000000000fb30        0x8 hooks.o
- *fill*         0x000000000000fb38        0x8 
+                0x000000000000fb10        0x8 hooks.o
+ *fill*         0x000000000000fb18        0x8 
  .text._Z12comboBtnHooki
-                0x000000000000fb40       0x40 hooks.o
-                0x000000000000fb40                comboBtnHook(int)
+                0x000000000000fb20       0x40 hooks.o
+                0x000000000000fb20                comboBtnHook(int)
  .text._Z13saveWriteHookPN2al11ByamlWriterE
-                0x000000000000fb80       0x98 hooks.o
-                0x000000000000fb80                saveWriteHook(al::ByamlWriter*)
- *fill*         0x000000000000fc18        0x8 
+                0x000000000000fb60       0x98 hooks.o
+                0x000000000000fb60                saveWriteHook(al::ByamlWriter*)
+ *fill*         0x000000000000fbf8        0x8 
  .text._Z12saveReadHookPiRKN2al9ByamlIterEPKc
-                0x000000000000fc20       0xb0 hooks.o
-                0x000000000000fc20                saveReadHook(int*, al::ByamlIter const&, char const*)
+                0x000000000000fc00       0xb0 hooks.o
+                0x000000000000fc00                saveReadHook(int*, al::ByamlIter const&, char const*)
  .text._Z19registerShineToListP5Shine
-                0x000000000000fcd0       0x20 hooks.o
-                0x000000000000fcd0                registerShineToList(Shine*)
+                0x000000000000fcb0       0x20 hooks.o
+                0x000000000000fcb0                registerShineToList(Shine*)
  .text._Z17overrideNerveHookP24StageSceneStatePauseMenuPN2al5NerveE
-                0x000000000000fcf0       0x48 hooks.o
-                0x000000000000fcf0                overrideNerveHook(StageSceneStatePauseMenu*, al::Nerve*)
- *fill*         0x000000000000fd38        0x8 
+                0x000000000000fcd0       0x48 hooks.o
+                0x000000000000fcd0                overrideNerveHook(StageSceneStatePauseMenu*, al::Nerve*)
+ *fill*         0x000000000000fd18        0x8 
  .text._Z13initStateHookP24StageSceneStatePauseMenuPKcPN2al5SceneERKNS3_14LayoutInitInfoEP11FooterPartsP14GameDataHolderb
-                0x000000000000fd40       0xa4 hooks.o
-                0x000000000000fd40                initStateHook(StageSceneStatePauseMenu*, char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
- *fill*         0x000000000000fde4        0xc 
+                0x000000000000fd20       0xa4 hooks.o
+                0x000000000000fd20                initStateHook(StageSceneStatePauseMenu*, char const*, al::Scene*, al::LayoutInitInfo const&, FooterParts*, GameDataHolder*, bool)
+ *fill*         0x000000000000fdc4        0xc 
  .text._Z18initNerveStateHookP24StageSceneStatePauseMenuP21StageSceneStateOptionPKN2al5NerveEPKc
-                0x000000000000fdf0       0x34 hooks.o
-                0x000000000000fdf0                initNerveStateHook(StageSceneStatePauseMenu*, StageSceneStateOption*, al::Nerve const*, char const*)
- *fill*         0x000000000000fe24        0xc 
+                0x000000000000fdd0       0x34 hooks.o
+                0x000000000000fdd0                initNerveStateHook(StageSceneStatePauseMenu*, StageSceneStateOption*, al::Nerve const*, char const*)
+ *fill*         0x000000000000fe04        0xc 
  .text._Z16startCounterHookP11CoinCounter
-                0x000000000000fe30       0x1c hooks.o
-                0x000000000000fe30                startCounterHook(CoinCounter*)
- *fill*         0x000000000000fe4c        0x4 
+                0x000000000000fe10       0x1c hooks.o
+                0x000000000000fe10                startCounterHook(CoinCounter*)
+ *fill*         0x000000000000fe2c        0x4 
  .text._Z10modeE3Hookv
-                0x000000000000fe50       0x14 hooks.o
-                0x000000000000fe50                modeE3Hook()
- *fill*         0x000000000000fe64        0xc 
+                0x000000000000fe30       0x14 hooks.o
+                0x000000000000fe30                modeE3Hook()
+ *fill*         0x000000000000fe44        0xc 
  .text._Z16playGuideEndHookPN2al25SimpleLayoutAppearWaitEndE
-                0x000000000000fe70       0x1c hooks.o
-                0x000000000000fe70                playGuideEndHook(al::SimpleLayoutAppearWaitEnd*)
- *fill*         0x000000000000fe8c        0x4 
+                0x000000000000fe50       0x1c hooks.o
+                0x000000000000fe50                playGuideEndHook(al::SimpleLayoutAppearWaitEnd*)
+ *fill*         0x000000000000fe6c        0x4 
  .text._Z15initHackCapHookPN2al9LiveActorE
-                0x000000000000fe90        0x4 hooks.o
-                0x000000000000fe90                initHackCapHook(al::LiveActor*)
- *fill*         0x000000000000fe94        0xc 
+                0x000000000000fe70        0x4 hooks.o
+                0x000000000000fe70                initHackCapHook(al::LiveActor*)
+ *fill*         0x000000000000fe74        0xc 
  .text._Z16createTicketHookP10StageScene
-                0x000000000000fea0       0x74 hooks.o
-                0x000000000000fea0                createTicketHook(StageScene*)
- *fill*         0x000000000000ff14        0xc 
+                0x000000000000fe80       0x74 hooks.o
+                0x000000000000fe80                createTicketHook(StageScene*)
+ *fill*         0x000000000000fef4        0xc 
  .text._Z18borderPullBackHookP20WorldEndBorderKeeper
-                0x000000000000ff20       0x60 hooks.o
-                0x000000000000ff20                borderPullBackHook(WorldEndBorderKeeper*)
+                0x000000000000ff00       0x60 hooks.o
+                0x000000000000ff00                borderPullBackHook(WorldEndBorderKeeper*)
  .text._Z13drawTableHookPN2al15ExecuteDirectorERKNS_21ExecuteSystemInitInfoE
-                0x000000000000ff80      0x194 hooks.o
-                0x000000000000ff80                drawTableHook(al::ExecuteDirector*, al::ExecuteSystemInitInfo const&)
- *fill*         0x0000000000010114        0xc 
+                0x000000000000ff60      0x194 hooks.o
+                0x000000000000ff60                drawTableHook(al::ExecuteDirector*, al::ExecuteSystemInitInfo const&)
+ *fill*         0x00000000000100f4        0xc 
  .text._Z15updateStateHookPN2al5SceneE
-                0x0000000000010120       0x2c hooks.o
-                0x0000000000010120                updateStateHook(al::Scene*)
- *fill*         0x000000000001014c        0x4 
+                0x0000000000010100       0x2c hooks.o
+                0x0000000000010100                updateStateHook(al::Scene*)
+ *fill*         0x000000000001012c        0x4 
  .text._Z14updateDrawHookPN2al15ExecuteDirectorEPKcS3_
-                0x0000000000010150       0x54 hooks.o
-                0x0000000000010150                updateDrawHook(al::ExecuteDirector*, char const*, char const*)
- .text          0x00000000000101a4        0x0 main.o
- *fill*         0x00000000000101a4        0xc 
+                0x0000000000010130       0x54 hooks.o
+                0x0000000000010130                updateDrawHook(al::ExecuteDirector*, char const*, char const*)
+ .text          0x0000000000010184        0x0 main.o
+ *fill*         0x0000000000010184        0xc 
  .text._Z16updatePlayerInfo22GameDataHolderAccessorP15PlayerActorBaseb
-                0x00000000000101b0      0x104 main.o
-                0x00000000000101b0                updatePlayerInfo(GameDataHolderAccessor, PlayerActorBase*, bool)
- *fill*         0x00000000000102b4        0xc 
+                0x0000000000010190      0x104 main.o
+                0x0000000000010190                updatePlayerInfo(GameDataHolderAccessor, PlayerActorBase*, bool)
+ *fill*         0x0000000000010294        0xc 
  .text._Z12drawMainHookP16HakoniwaSequencePN4sead8ViewportEPNS1_11DrawContextE
-                0x00000000000102c0      0x904 main.o
-                0x00000000000102c0                drawMainHook(HakoniwaSequence*, sead::Viewport*, sead::DrawContext*)
- *fill*         0x0000000000010bc4        0xc 
+                0x00000000000102a0      0x904 main.o
+                0x00000000000102a0                drawMainHook(HakoniwaSequence*, sead::Viewport*, sead::DrawContext*)
+ *fill*         0x0000000000010ba4        0xc 
  .text._Z15sendShinePacket22GameDataHolderAccessorP5Shine
-                0x0000000000010bd0       0x1c main.o
-                0x0000000000010bd0                sendShinePacket(GameDataHolderAccessor, Shine*)
- *fill*         0x0000000000010bec        0x4 
+                0x0000000000010bb0       0x1c main.o
+                0x0000000000010bb0                sendShinePacket(GameDataHolderAccessor, Shine*)
+ *fill*         0x0000000000010bcc        0x4 
  .text._Z14sendItemPacket12GameDataFilePN8ShopItem8ItemInfoEb
-                0x0000000000010bf0       0x10 main.o
-                0x0000000000010bf0                sendItemPacket(GameDataFile, ShopItem::ItemInfo*, bool)
+                0x0000000000010bd0       0x10 main.o
+                0x0000000000010bd0                sendItemPacket(GameDataFile, ShopItem::ItemInfo*, bool)
  .text._Z10isBuyItemsPN8ShopItem8ItemInfoE
-                0x0000000000010c00        0x8 main.o
-                0x0000000000010c00                isBuyItems(ShopItem::ItemInfo*)
- *fill*         0x0000000000010c08        0x8 
+                0x0000000000010be0        0x8 main.o
+                0x0000000000010be0                isBuyItems(ShopItem::ItemInfo*)
+ *fill*         0x0000000000010be8        0x8 
  .text._Z13stageInitHookPN2al13ActorInitInfoEP10StageScenePKNS_13PlacementInfoEPKNS_14LayoutInitInfoEPKNS_12ActorFactoryEPNS_12SceneMsgCtrlEPNS_18GameDataHolderBaseE
-                0x0000000000010c10       0x8c main.o
-                0x0000000000010c10                stageInitHook(al::ActorInitInfo*, StageScene*, al::PlacementInfo const*, al::LayoutInitInfo const*, al::ActorFactory const*, al::SceneMsgCtrl*, al::GameDataHolderBase*)
- *fill*         0x0000000000010c9c        0x4 
+                0x0000000000010bf0       0x8c main.o
+                0x0000000000010bf0                stageInitHook(al::ActorInitInfo*, StageScene*, al::PlacementInfo const*, al::LayoutInitInfo const*, al::ActorFactory const*, al::SceneMsgCtrl*, al::GameDataHolderBase*)
+ *fill*         0x0000000000010c7c        0x4 
  .text._Z14setPlayerModelPN2al9LiveActorERKNS_13ActorInitInfoEPKcS6_PNS_11AudioKeeperEb
-                0x0000000000010ca0       0x60 main.o
-                0x0000000000010ca0                setPlayerModel(al::LiveActor*, al::ActorInitInfo const&, char const*, char const*, al::AudioKeeper*, bool)
+                0x0000000000010c80       0x60 main.o
+                0x0000000000010c80                setPlayerModel(al::LiveActor*, al::ActorInitInfo const&, char const*, char const*, al::AudioKeeper*, bool)
  .text._Z13constructHookv
-                0x0000000000010d00       0x34 main.o
-                0x0000000000010d00                constructHook()
- *fill*         0x0000000000010d34        0xc 
+                0x0000000000010ce0       0x34 main.o
+                0x0000000000010ce0                constructHook()
+ *fill*         0x0000000000010d14        0xc 
  .text._Z10threadInitP16HakoniwaSequence
-                0x0000000000010d40       0x80 main.o
-                0x0000000000010d40                threadInit(HakoniwaSequence*)
+                0x0000000000010d20       0x80 main.o
+                0x0000000000010d20                threadInit(HakoniwaSequence*)
  .text._Z20hakoniwaSequenceHookP16HakoniwaSequence
-                0x0000000000010dc0      0x31c main.o
-                0x0000000000010dc0                hakoniwaSequenceHook(HakoniwaSequence*)
- *fill*         0x00000000000110dc        0x4 
+                0x0000000000010da0      0x31c main.o
+                0x0000000000010da0                hakoniwaSequenceHook(HakoniwaSequence*)
+ *fill*         0x00000000000110bc        0x4 
  .text._Z13seadPrintHookPKcz
-                0x00000000000110e0       0x68 main.o
-                0x00000000000110e0                seadPrintHook(char const*, ...)
- .text          0x0000000000011148        0x0 module.o
- .text          0x0000000000011148        0x0 ExecuteTables.o
- .text          0x0000000000011148        0x0 svc.o
+                0x00000000000110c0       0x68 main.o
+                0x00000000000110c0                seadPrintHook(char const*, ...)
+ .text          0x0000000000011128        0x0 module.o
+ .text          0x0000000000011128        0x0 ExecuteTables.o
+ .text          0x0000000000011128        0x0 svc.o
  .text.svcOutputDebugString
-                0x0000000000011148        0x8 svc.o
-                0x0000000000011148                svcOutputDebugString
- .text          0x0000000000011150        0x0 crt0.o
-                0x0000000000011150                __text_end__ = .
+                0x0000000000011128        0x8 svc.o
+                0x0000000000011128                svcOutputDebugString
+ .text          0x0000000000011130        0x0 crt0.o
+                0x0000000000011130                __text_end__ = .
 
-.plt            0x0000000000011150     0x1890
+.plt            0x0000000000011130     0x1890
  *(.plt .plt.*)
- .plt           0x0000000000011150     0x1890 seadCalendarTime.o
-                0x00000000000129e0                __code_end__ = .
+ .plt           0x0000000000011130     0x1890 seadCalendarTime.o
+                0x00000000000129c0                __code_end__ = .
                 0x0000000000013000                . = ALIGN (0x1000)
 
 .module_name    0x0000000000013000       0x14
@@ -3382,7 +3383,7 @@ LOAD crt0.o
 OUTPUT(/mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/Mod100.elf elf64-littleaarch64)
 LOAD linker stubs
 
-.debug_info     0x0000000000000000   0x1feb72
+.debug_info     0x0000000000000000   0x1feb62
  .debug_info    0x0000000000000000     0x3031 seadCalendarTime.o
  .debug_info    0x0000000000003031     0x17b3 seadDateSpan.o
  .debug_info    0x00000000000047e4     0x3638 seadDateTime.o
@@ -3401,29 +3402,29 @@ LOAD linker stubs
  .debug_info    0x00000000000aaffd    0x1489e GameModeManager.o
  .debug_info    0x00000000000bf89b     0x9a24 GravityModifier.o
  .debug_info    0x00000000000c92bf     0x90fe NoCapModifier.o
- .debug_info    0x00000000000d23bd    0x2a0e8 Client.o
- .debug_info    0x00000000000fc4a5     0x124e DeltaTime.o
- .debug_info    0x00000000000fd6f3     0x6354 HackModelHolder.o
- .debug_info    0x0000000000103a47     0x27dc SocketBase.o
- .debug_info    0x0000000000106223    0x19088 SocketClient.o
- .debug_info    0x000000000011f2ab    0x1ab87 captureSync.o
- .debug_info    0x0000000000139e32     0x69ce logger.o
- .debug_info    0x0000000000140800    0x1b803 HideAndSeekIcon.o
- .debug_info    0x000000000015c003     0xf881 NameTag.o
- .debug_info    0x000000000016b884     0x31fb StageSceneStatePauseMenu.o
- .debug_info    0x000000000016ea7f    0x1b028 StageSceneStateServerConfig.o
- .debug_info    0x0000000000189aa7     0x85fb CameraPoserCustom.o
- .debug_info    0x00000000001920a2     0x2a43 ProjectCameraPoserFactory.o
- .debug_info    0x0000000000194ae5     0xbb0b Factory.o
- .debug_info    0x00000000001a05f0     0x563a Keyboard.o
- .debug_info    0x00000000001a5c2a     0x657c debugMenu.o
- .debug_info    0x00000000001ac1a6    0x11524 helpers.o
- .debug_info    0x00000000001bd6ca    0x1b725 hooks.o
- .debug_info    0x00000000001d8def    0x23fb6 main.o
- .debug_info    0x00000000001fcda5       0xb0 module.o
- .debug_info    0x00000000001fce55     0x1ccd ExecuteTables.o
- .debug_info    0x00000000001feb22       0x28 svc.o
- .debug_info    0x00000000001feb4a       0x28 crt0.o
+ .debug_info    0x00000000000d23bd    0x2a0d8 Client.o
+ .debug_info    0x00000000000fc495     0x124e DeltaTime.o
+ .debug_info    0x00000000000fd6e3     0x6354 HackModelHolder.o
+ .debug_info    0x0000000000103a37     0x27dc SocketBase.o
+ .debug_info    0x0000000000106213    0x19088 SocketClient.o
+ .debug_info    0x000000000011f29b    0x1ab87 captureSync.o
+ .debug_info    0x0000000000139e22     0x69ce logger.o
+ .debug_info    0x00000000001407f0    0x1b803 HideAndSeekIcon.o
+ .debug_info    0x000000000015bff3     0xf881 NameTag.o
+ .debug_info    0x000000000016b874     0x31fb StageSceneStatePauseMenu.o
+ .debug_info    0x000000000016ea6f    0x1b028 StageSceneStateServerConfig.o
+ .debug_info    0x0000000000189a97     0x85fb CameraPoserCustom.o
+ .debug_info    0x0000000000192092     0x2a43 ProjectCameraPoserFactory.o
+ .debug_info    0x0000000000194ad5     0xbb0b Factory.o
+ .debug_info    0x00000000001a05e0     0x563a Keyboard.o
+ .debug_info    0x00000000001a5c1a     0x657c debugMenu.o
+ .debug_info    0x00000000001ac196    0x11524 helpers.o
+ .debug_info    0x00000000001bd6ba    0x1b725 hooks.o
+ .debug_info    0x00000000001d8ddf    0x23fb6 main.o
+ .debug_info    0x00000000001fcd95       0xb0 module.o
+ .debug_info    0x00000000001fce45     0x1ccd ExecuteTables.o
+ .debug_info    0x00000000001feb12       0x28 svc.o
+ .debug_info    0x00000000001feb3a       0x28 crt0.o
 
 .debug_abbrev   0x0000000000000000    0x1c0e2
  .debug_abbrev  0x0000000000000000      0x76e seadCalendarTime.o
@@ -3469,7 +3470,7 @@ LOAD linker stubs
  .debug_abbrev  0x000000000001c0ce       0x14 crt0.o
 
 .debug_loclists
-                0x0000000000000000    0x1992a
+                0x0000000000000000    0x1992d
  .debug_loclists
                 0x0000000000000000      0x6ff seadCalendarTime.o
  .debug_loclists
@@ -3505,43 +3506,43 @@ LOAD linker stubs
  .debug_loclists
                 0x000000000000a2c2       0x48 NoCapModifier.o
  .debug_loclists
-                0x000000000000a30a     0x6ea8 Client.o
+                0x000000000000a30a     0x6eab Client.o
  .debug_loclists
-                0x00000000000111b2       0xc8 DeltaTime.o
+                0x00000000000111b5       0xc8 DeltaTime.o
  .debug_loclists
-                0x000000000001127a      0x30f HackModelHolder.o
+                0x000000000001127d      0x30f HackModelHolder.o
  .debug_loclists
-                0x0000000000011589      0x1f8 SocketBase.o
+                0x000000000001158c      0x1f8 SocketBase.o
  .debug_loclists
-                0x0000000000011781     0x1aae SocketClient.o
+                0x0000000000011784     0x1aae SocketClient.o
  .debug_loclists
-                0x000000000001322f      0x6ea captureSync.o
+                0x0000000000013232      0x6ea captureSync.o
  .debug_loclists
-                0x0000000000013919      0x242 logger.o
+                0x000000000001391c      0x242 logger.o
  .debug_loclists
-                0x0000000000013b5b      0x698 HideAndSeekIcon.o
+                0x0000000000013b5e      0x698 HideAndSeekIcon.o
  .debug_loclists
-                0x00000000000141f3      0x8ff NameTag.o
+                0x00000000000141f6      0x8ff NameTag.o
  .debug_loclists
-                0x0000000000014af2       0x9f StageSceneStatePauseMenu.o
+                0x0000000000014af5       0x9f StageSceneStatePauseMenu.o
  .debug_loclists
-                0x0000000000014b91     0x1456 StageSceneStateServerConfig.o
+                0x0000000000014b94     0x1456 StageSceneStateServerConfig.o
  .debug_loclists
-                0x0000000000015fe7      0xb1b CameraPoserCustom.o
+                0x0000000000015fea      0xb1b CameraPoserCustom.o
  .debug_loclists
-                0x0000000000016b02       0x88 ProjectCameraPoserFactory.o
+                0x0000000000016b05       0x88 ProjectCameraPoserFactory.o
  .debug_loclists
-                0x0000000000016b8a       0xaf Factory.o
+                0x0000000000016b8d       0xaf Factory.o
  .debug_loclists
-                0x0000000000016c39      0x86e Keyboard.o
+                0x0000000000016c3c      0x86e Keyboard.o
  .debug_loclists
-                0x00000000000174a7      0x3f8 debugMenu.o
+                0x00000000000174aa      0x3f8 debugMenu.o
  .debug_loclists
-                0x000000000001789f      0xc55 helpers.o
+                0x00000000000178a2      0xc55 helpers.o
  .debug_loclists
-                0x00000000000184f4      0x766 hooks.o
+                0x00000000000184f7      0x766 hooks.o
  .debug_loclists
-                0x0000000000018c5a      0xcd0 main.o
+                0x0000000000018c5d      0xcd0 main.o
 
 .debug_aranges  0x0000000000000000     0x2fd0
  .debug_aranges
@@ -3628,7 +3629,7 @@ LOAD linker stubs
                 0x0000000000002fa0       0x30 crt0.o
 
 .debug_rnglists
-                0x0000000000000000     0x6046
+                0x0000000000000000     0x6040
  .debug_rnglists
                 0x0000000000000000      0x125 seadCalendarTime.o
  .debug_rnglists
@@ -3664,45 +3665,45 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000000000002525       0x3f NoCapModifier.o
  .debug_rnglists
-                0x0000000000002564     0x1b10 Client.o
+                0x0000000000002564     0x1b0a Client.o
  .debug_rnglists
-                0x0000000000004074       0xb3 DeltaTime.o
+                0x000000000000406e       0xb3 DeltaTime.o
  .debug_rnglists
-                0x0000000000004127       0xad HackModelHolder.o
+                0x0000000000004121       0xad HackModelHolder.o
  .debug_rnglists
-                0x00000000000041d4       0x7d SocketBase.o
+                0x00000000000041ce       0x7d SocketBase.o
  .debug_rnglists
-                0x0000000000004251      0x568 SocketClient.o
+                0x000000000000424b      0x568 SocketClient.o
  .debug_rnglists
-                0x00000000000047b9      0x13f captureSync.o
+                0x00000000000047b3      0x13f captureSync.o
  .debug_rnglists
-                0x00000000000048f8       0x75 logger.o
+                0x00000000000048f2       0x75 logger.o
  .debug_rnglists
-                0x000000000000496d      0x251 HideAndSeekIcon.o
+                0x0000000000004967      0x251 HideAndSeekIcon.o
  .debug_rnglists
-                0x0000000000004bbe      0x20c NameTag.o
+                0x0000000000004bb8      0x20c NameTag.o
  .debug_rnglists
-                0x0000000000004dca       0x22 StageSceneStatePauseMenu.o
+                0x0000000000004dc4       0x22 StageSceneStatePauseMenu.o
  .debug_rnglists
-                0x0000000000004dec      0x5c1 StageSceneStateServerConfig.o
+                0x0000000000004de6      0x5c1 StageSceneStateServerConfig.o
  .debug_rnglists
-                0x00000000000053ad      0x29c CameraPoserCustom.o
+                0x00000000000053a7      0x29c CameraPoserCustom.o
  .debug_rnglists
-                0x0000000000005649       0x35 ProjectCameraPoserFactory.o
+                0x0000000000005643       0x35 ProjectCameraPoserFactory.o
  .debug_rnglists
-                0x000000000000567e       0x35 Factory.o
+                0x0000000000005678       0x35 Factory.o
  .debug_rnglists
-                0x00000000000056b3      0x251 Keyboard.o
+                0x00000000000056ad      0x251 Keyboard.o
  .debug_rnglists
-                0x0000000000005904      0x116 debugMenu.o
+                0x00000000000058fe      0x116 debugMenu.o
  .debug_rnglists
-                0x0000000000005a1a      0x1d8 helpers.o
+                0x0000000000005a14      0x1d8 helpers.o
  .debug_rnglists
-                0x0000000000005bf2      0x169 hooks.o
+                0x0000000000005bec      0x169 hooks.o
  .debug_rnglists
-                0x0000000000005d5b      0x2eb main.o
+                0x0000000000005d55      0x2eb main.o
 
-.debug_line     0x0000000000000000    0x1dd34
+.debug_line     0x0000000000000000    0x1dd0d
  .debug_line    0x0000000000000000      0x7e6 seadCalendarTime.o
  .debug_line    0x00000000000007e6      0x265 seadDateSpan.o
  .debug_line    0x0000000000000a4b      0xaed seadDateTime.o
@@ -3721,29 +3722,29 @@ LOAD linker stubs
  .debug_line    0x000000000000a0bc      0xf2c GameModeManager.o
  .debug_line    0x000000000000afe8      0x50c GravityModifier.o
  .debug_line    0x000000000000b4f4      0x313 NoCapModifier.o
- .debug_line    0x000000000000b807     0x6b64 Client.o
- .debug_line    0x000000000001236b      0x272 DeltaTime.o
- .debug_line    0x00000000000125dd      0x554 HackModelHolder.o
- .debug_line    0x0000000000012b31      0x33f SocketBase.o
- .debug_line    0x0000000000012e70     0x1e2a SocketClient.o
- .debug_line    0x0000000000014c9a      0x8aa captureSync.o
- .debug_line    0x0000000000015544      0x513 logger.o
- .debug_line    0x0000000000015a57      0xbc9 HideAndSeekIcon.o
- .debug_line    0x0000000000016620      0xc01 NameTag.o
- .debug_line    0x0000000000017221      0x2e4 StageSceneStatePauseMenu.o
- .debug_line    0x0000000000017505     0x1b6f StageSceneStateServerConfig.o
- .debug_line    0x0000000000019074      0x9f2 CameraPoserCustom.o
- .debug_line    0x0000000000019a66      0x29f ProjectCameraPoserFactory.o
- .debug_line    0x0000000000019d05      0x30c Factory.o
- .debug_line    0x000000000001a011      0x91f Keyboard.o
- .debug_line    0x000000000001a930      0x51c debugMenu.o
- .debug_line    0x000000000001ae4c      0xa75 helpers.o
- .debug_line    0x000000000001b8c1      0xbc9 hooks.o
- .debug_line    0x000000000001c48a     0x1682 main.o
- .debug_line    0x000000000001db0c       0x3a module.o
- .debug_line    0x000000000001db46      0x155 ExecuteTables.o
- .debug_line    0x000000000001dc9b       0x4e svc.o
- .debug_line    0x000000000001dce9       0x4b crt0.o
+ .debug_line    0x000000000000b807     0x6b3d Client.o
+ .debug_line    0x0000000000012344      0x272 DeltaTime.o
+ .debug_line    0x00000000000125b6      0x554 HackModelHolder.o
+ .debug_line    0x0000000000012b0a      0x33f SocketBase.o
+ .debug_line    0x0000000000012e49     0x1e2a SocketClient.o
+ .debug_line    0x0000000000014c73      0x8aa captureSync.o
+ .debug_line    0x000000000001551d      0x513 logger.o
+ .debug_line    0x0000000000015a30      0xbc9 HideAndSeekIcon.o
+ .debug_line    0x00000000000165f9      0xc01 NameTag.o
+ .debug_line    0x00000000000171fa      0x2e4 StageSceneStatePauseMenu.o
+ .debug_line    0x00000000000174de     0x1b6f StageSceneStateServerConfig.o
+ .debug_line    0x000000000001904d      0x9f2 CameraPoserCustom.o
+ .debug_line    0x0000000000019a3f      0x29f ProjectCameraPoserFactory.o
+ .debug_line    0x0000000000019cde      0x30c Factory.o
+ .debug_line    0x0000000000019fea      0x91f Keyboard.o
+ .debug_line    0x000000000001a909      0x51c debugMenu.o
+ .debug_line    0x000000000001ae25      0xa75 helpers.o
+ .debug_line    0x000000000001b89a      0xbc9 hooks.o
+ .debug_line    0x000000000001c463     0x1682 main.o
+ .debug_line    0x000000000001dae5       0x3a module.o
+ .debug_line    0x000000000001db1f      0x155 ExecuteTables.o
+ .debug_line    0x000000000001dc74       0x4e svc.o
+ .debug_line    0x000000000001dcc2       0x4b crt0.o
 
 .debug_str      0x0000000000000000    0x4918a
  .debug_str     0x0000000000000000    0x4918a seadCalendarTime.o

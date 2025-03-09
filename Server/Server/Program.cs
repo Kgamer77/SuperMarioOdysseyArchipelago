@@ -87,8 +87,7 @@ async Task ClientSyncItem(Client client)
 {
     try
     {
-        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["outfitSync"] ??= new ConcurrentBag<int>());
-        foreach (int item in outfitBag.Except(clientBag).ToArray())
+        foreach (int item in outfitBag.ToArray())
         {
             string s = APClient.inverseShopItems[item];
             int incomingType = 0;
@@ -106,9 +105,6 @@ async Task ClientSyncItem(Client client)
                     incomingType = 0;
                 }
             }
-
-            if (!giftMoons[item])
-                incomingType -= 4;
 
             if (s.Contains("Sticker"))
             {
