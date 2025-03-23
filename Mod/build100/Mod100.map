@@ -576,7 +576,7 @@ Linker script and memory map
                 0x0000000000000000                . = __start__
                 0x0000000000000000                __code_start__ = .
 
-.text           0x0000000000000000    0x113a0
+.text           0x0000000000000000    0x117d0
                 0x0000000000000000                __text_start__ = .
  *(.text.crt0)
  .text.crt0     0x0000000000000000        0x8 crt0.o
@@ -2578,617 +2578,617 @@ Linker script and memory map
                 0x0000000000010510                drawMainHook(HakoniwaSequence*, sead::Viewport*, sead::DrawContext*)
  *fill*         0x0000000000010e14        0xc 
  .text._Z15sendShinePacket22GameDataHolderAccessorP5Shine
-                0x0000000000010e20       0x1c main.o
+                0x0000000000010e20      0x448 main.o
                 0x0000000000010e20                sendShinePacket(GameDataHolderAccessor, Shine*)
- *fill*         0x0000000000010e3c        0x4 
+ *fill*         0x0000000000011268        0x8 
  .text._Z14sendItemPacket12GameDataFilePN8ShopItem8ItemInfoEb
-                0x0000000000010e40       0x10 main.o
-                0x0000000000010e40                sendItemPacket(GameDataFile, ShopItem::ItemInfo*, bool)
+                0x0000000000011270       0x10 main.o
+                0x0000000000011270                sendItemPacket(GameDataFile, ShopItem::ItemInfo*, bool)
  .text._Z10isBuyItemsPN8ShopItem8ItemInfoE
-                0x0000000000010e50        0x8 main.o
-                0x0000000000010e50                isBuyItems(ShopItem::ItemInfo*)
- *fill*         0x0000000000010e58        0x8 
+                0x0000000000011280        0x8 main.o
+                0x0000000000011280                isBuyItems(ShopItem::ItemInfo*)
+ *fill*         0x0000000000011288        0x8 
  .text._Z13stageInitHookPN2al13ActorInitInfoEP10StageScenePKNS_13PlacementInfoEPKNS_14LayoutInitInfoEPKNS_12ActorFactoryEPNS_12SceneMsgCtrlEPNS_18GameDataHolderBaseE
-                0x0000000000010e60       0x8c main.o
-                0x0000000000010e60                stageInitHook(al::ActorInitInfo*, StageScene*, al::PlacementInfo const*, al::LayoutInitInfo const*, al::ActorFactory const*, al::SceneMsgCtrl*, al::GameDataHolderBase*)
- *fill*         0x0000000000010eec        0x4 
+                0x0000000000011290       0x8c main.o
+                0x0000000000011290                stageInitHook(al::ActorInitInfo*, StageScene*, al::PlacementInfo const*, al::LayoutInitInfo const*, al::ActorFactory const*, al::SceneMsgCtrl*, al::GameDataHolderBase*)
+ *fill*         0x000000000001131c        0x4 
  .text._Z14setPlayerModelPN2al9LiveActorERKNS_13ActorInitInfoEPKcS6_PNS_11AudioKeeperEb
-                0x0000000000010ef0       0x60 main.o
-                0x0000000000010ef0                setPlayerModel(al::LiveActor*, al::ActorInitInfo const&, char const*, char const*, al::AudioKeeper*, bool)
+                0x0000000000011320       0x60 main.o
+                0x0000000000011320                setPlayerModel(al::LiveActor*, al::ActorInitInfo const&, char const*, char const*, al::AudioKeeper*, bool)
  .text._Z13constructHookv
-                0x0000000000010f50       0x34 main.o
-                0x0000000000010f50                constructHook()
- *fill*         0x0000000000010f84        0xc 
+                0x0000000000011380       0x34 main.o
+                0x0000000000011380                constructHook()
+ *fill*         0x00000000000113b4        0xc 
  .text._Z10threadInitP16HakoniwaSequence
-                0x0000000000010f90       0x80 main.o
-                0x0000000000010f90                threadInit(HakoniwaSequence*)
+                0x00000000000113c0       0x80 main.o
+                0x00000000000113c0                threadInit(HakoniwaSequence*)
  .text._Z20hakoniwaSequenceHookP16HakoniwaSequence
-                0x0000000000011010      0x31c main.o
-                0x0000000000011010                hakoniwaSequenceHook(HakoniwaSequence*)
- *fill*         0x000000000001132c        0x4 
+                0x0000000000011440      0x31c main.o
+                0x0000000000011440                hakoniwaSequenceHook(HakoniwaSequence*)
+ *fill*         0x000000000001175c        0x4 
  .text._Z13seadPrintHookPKcz
-                0x0000000000011330       0x68 main.o
-                0x0000000000011330                seadPrintHook(char const*, ...)
- .text          0x0000000000011398        0x0 module.o
- .text          0x0000000000011398        0x0 ExecuteTables.o
- .text          0x0000000000011398        0x0 svc.o
+                0x0000000000011760       0x68 main.o
+                0x0000000000011760                seadPrintHook(char const*, ...)
+ .text          0x00000000000117c8        0x0 module.o
+ .text          0x00000000000117c8        0x0 ExecuteTables.o
+ .text          0x00000000000117c8        0x0 svc.o
  .text.svcOutputDebugString
-                0x0000000000011398        0x8 svc.o
-                0x0000000000011398                svcOutputDebugString
- .text          0x00000000000113a0        0x0 crt0.o
-                0x00000000000113a0                __text_end__ = .
+                0x00000000000117c8        0x8 svc.o
+                0x00000000000117c8                svcOutputDebugString
+ .text          0x00000000000117d0        0x0 crt0.o
+                0x00000000000117d0                __text_end__ = .
 
-.plt            0x00000000000113a0     0x1930
+.plt            0x00000000000117d0     0x1930
  *(.plt .plt.*)
- .plt           0x00000000000113a0     0x1930 seadCalendarTime.o
-                0x0000000000012cd0                __code_end__ = .
-                0x0000000000013000                . = ALIGN (0x1000)
+ .plt           0x00000000000117d0     0x1930 seadCalendarTime.o
+                0x0000000000013100                __code_end__ = .
+                0x0000000000014000                . = ALIGN (0x1000)
 
-.module_name    0x0000000000013000       0x14
+.module_name    0x0000000000014000       0x14
  *(.rodata.module_name)
  .rodata.module_name
-                0x0000000000013000       0x14 module.o
-                0x0000000000013000                module_name
-                0x0000000000013018                . = ALIGN (0x8)
+                0x0000000000014000       0x14 module.o
+                0x0000000000014000                module_name
+                0x0000000000014018                . = ALIGN (0x8)
 
-.rodata         0x0000000000013020     0xea1c
+.rodata         0x0000000000014020     0xeb0c
  *(.rodata .rodata.*)
  .rodata.str1.8
-                0x0000000000013020     0xb98d seadCalendarTime.o
+                0x0000000000014020     0xba7d seadCalendarTime.o
                                          0xa4 (size before relaxing)
- *fill*         0x000000000001e9ad        0x3 
- .rodata        0x000000000001e9b0       0x40 seadCalendarTime.o
- .rodata        0x000000000001e9f0       0x30 seadDateTime.o
+ *fill*         0x000000000001fa9d        0x3 
+ .rodata        0x000000000001faa0       0x40 seadCalendarTime.o
+ .rodata        0x000000000001fae0       0x30 seadDateTime.o
  .rodata.str1.8
-                0x000000000001ea20       0x31 seadDateUtil.o
+                0x000000000001fb10       0x31 seadDateUtil.o
  .rodata.str1.8
-                0x000000000001ea20      0x703 PuppetActor.o
- .rodata        0x000000000001ea20      0x510 PuppetActor.o
+                0x000000000001fb10      0x703 PuppetActor.o
+ .rodata        0x000000000001fb10      0x510 PuppetActor.o
  .rodata.str1.8
-                0x000000000001ef30      0x523 PuppetCapActor.o
+                0x0000000000020020      0x523 PuppetCapActor.o
  .rodata.str1.8
-                0x000000000001ef30      0x55b PuppetHackActor.o
+                0x0000000000020020      0x55b PuppetHackActor.o
  .rodata.str1.8
-                0x000000000001ef30      0x55b PuppetHolder.o
+                0x0000000000020020      0x55b PuppetHolder.o
  .rodata.str1.8
-                0x000000000001ef30     0x2f13 PuppetMain.o
+                0x0000000000020020     0x2f13 PuppetMain.o
  .rodata.str1.8
-                0x000000000001ef30      0x57b HideAndSeekConfigMenu.o
+                0x0000000000020020      0x57b HideAndSeekConfigMenu.o
  .rodata.str2.8
-                0x000000000001ef30      0x4ca HideAndSeekConfigMenu.o
+                0x0000000000020020      0x4ca HideAndSeekConfigMenu.o
                                          0x62 (size before relaxing)
  .rodata.str1.8
-                0x000000000001f3fa      0x5c3 HideAndSeekMode.o
+                0x00000000000204ea      0x5c3 HideAndSeekMode.o
  .rodata.str1.8
-                0x000000000001f3fa      0x553 GameModeManager.o
+                0x00000000000204ea      0x553 GameModeManager.o
  .rodata.str1.8
-                0x000000000001f3fa      0x523 GravityModifier.o
+                0x00000000000204ea      0x523 GravityModifier.o
  .rodata.str1.8
-                0x000000000001f3fa      0x523 NoCapModifier.o
+                0x00000000000204ea      0x523 NoCapModifier.o
  .rodata.str1.8
-                0x000000000001f3fa     0x48ab Client.o
+                0x00000000000204ea     0x48ab Client.o
  .rodata.str2.8
-                0x000000000001f3fa      0x14c Client.o
- *fill*         0x000000000001f3fa        0x6 
- .rodata        0x000000000001f400     0x20f0 Client.o
+                0x00000000000204ea      0x14c Client.o
+ *fill*         0x00000000000204ea        0x6 
+ .rodata        0x00000000000204f0     0x20f0 Client.o
  .rodata.str1.8
-                0x00000000000214f0      0x523 HackModelHolder.o
+                0x00000000000225e0      0x523 HackModelHolder.o
  .rodata.str1.8
-                0x00000000000214f0       0x6e SocketBase.o
+                0x00000000000225e0       0x6e SocketBase.o
  .rodata.str1.8
-                0x00000000000214f0      0xb2b SocketClient.o
+                0x00000000000225e0      0xb2b SocketClient.o
  .rodata.str1.8
-                0x00000000000214f0     0x2ef3 captureSync.o
- .rodata        0x00000000000214f0      0x510 captureSync.o
+                0x00000000000225e0     0x2ef3 captureSync.o
+ .rodata        0x00000000000225e0      0x510 captureSync.o
  .rodata.str1.8
-                0x0000000000021a00      0x54b logger.o
+                0x0000000000022af0      0x54b logger.o
  .rodata.str1.8
-                0x0000000000021a00     0x2f4b HideAndSeekIcon.o
+                0x0000000000022af0     0x2f4b HideAndSeekIcon.o
  .rodata.str1.8
-                0x0000000000021a00      0x573 NameTag.o
- .rodata.cst8   0x0000000000021a00       0x10 NameTag.o
+                0x0000000000022af0      0x573 NameTag.o
+ .rodata.cst8   0x0000000000022af0       0x10 NameTag.o
                                           0x8 (size before relaxing)
  .rodata.str1.8
-                0x0000000000021a10       0x5f StageSceneStatePauseMenu.o
+                0x0000000000022b00       0x5f StageSceneStatePauseMenu.o
  .rodata.str1.8
-                0x0000000000021a10      0x603 StageSceneStateServerConfig.o
+                0x0000000000022b00      0x603 StageSceneStateServerConfig.o
  .rodata.str2.8
-                0x0000000000021a10      0x2b6 StageSceneStateServerConfig.o
- .rodata.cst16  0x0000000000021a10       0x10 StageSceneStateServerConfig.o
+                0x0000000000022b00      0x2b6 StageSceneStateServerConfig.o
+ .rodata.cst16  0x0000000000022b00       0x10 StageSceneStateServerConfig.o
  .rodata.str1.8
-                0x0000000000021a20       0x4b CameraPoserCustom.o
+                0x0000000000022b10       0x4b CameraPoserCustom.o
  .rodata.str1.8
-                0x0000000000021a20      0x26a ProjectCameraPoserFactory.o
+                0x0000000000022b10      0x26a ProjectCameraPoserFactory.o
  .rodata.str1.8
-                0x0000000000021a20     0x2ec3 Factory.o
+                0x0000000000022b10     0x2ec3 Factory.o
  .rodata.str2.8
-                0x0000000000021a20       0x62 Keyboard.o
+                0x0000000000022b10       0x62 Keyboard.o
  .rodata.str1.8
-                0x0000000000021a20        0x6 Keyboard.o
+                0x0000000000022b10        0x6 Keyboard.o
  .rodata.str1.8
-                0x0000000000021a20       0x75 debugMenu.o
+                0x0000000000022b10       0x75 debugMenu.o
  .rodata.str1.8
-                0x0000000000021a20      0x55b helpers.o
- .rodata.cst8   0x0000000000021a20        0x8 helpers.o
+                0x0000000000022b10      0x55b helpers.o
+ .rodata.cst8   0x0000000000022b10        0x8 helpers.o
  .rodata.str1.8
-                0x0000000000021a20     0x2f83 hooks.o
+                0x0000000000022b10     0x2f83 hooks.o
  .rodata.str1.8
-                0x0000000000021a20     0x328b main.o
+                0x0000000000022b10     0x33ab main.o
  .rodata.str1.8
-                0x0000000000021a20     0x34cd ExecuteTables.o
- .rodata.mod0   0x0000000000021a20       0x1c crt0.o
-                0x0000000000021a20                __nx_mod0
+                0x0000000000022b10     0x34cd ExecuteTables.o
+ .rodata.mod0   0x0000000000022b10       0x1c crt0.o
+                0x0000000000022b10                __nx_mod0
 
-.gnu.version_d  0x0000000000021a40        0x0
+.gnu.version_d  0x0000000000022b30        0x0
  .gnu.version_d
-                0x0000000000021a40        0x0 seadCalendarTime.o
+                0x0000000000022b30        0x0 seadCalendarTime.o
 
-.gnu.version    0x0000000000021a3c        0x0
- .gnu.version   0x0000000000021a3c        0x0 seadCalendarTime.o
+.gnu.version    0x0000000000022b2c        0x0
+ .gnu.version   0x0000000000022b2c        0x0 seadCalendarTime.o
 
-.gnu.version_r  0x0000000000021a40        0x0
+.gnu.version_r  0x0000000000022b30        0x0
  .gnu.version_r
-                0x0000000000021a40        0x0 seadCalendarTime.o
+                0x0000000000022b30        0x0 seadCalendarTime.o
 
-.hash           0x0000000000021a40     0x17a8
+.hash           0x0000000000022b30     0x17a8
  *(.hash)
- .hash          0x0000000000021a40     0x17a8 seadCalendarTime.o
+ .hash          0x0000000000022b30     0x17a8 seadCalendarTime.o
 
 .gnu.hash
  *(.gnu.hash)
 
-.dynsym         0x00000000000231e8     0x5ce8
+.dynsym         0x00000000000242d8     0x5ce8
  *(.dynsym .dynsym.*)
- .dynsym        0x00000000000231e8     0x5ce8 seadCalendarTime.o
+ .dynsym        0x00000000000242d8     0x5ce8 seadCalendarTime.o
 
-.dynstr         0x0000000000028ed0     0xdad0
+.dynstr         0x0000000000029fc0     0xdad0
  *(.dynstr .dynstr.*)
- .dynstr        0x0000000000028ed0     0xdad0 seadCalendarTime.o
-                0x00000000000369a0                __rel_dyn_start__ = .
+ .dynstr        0x0000000000029fc0     0xdad0 seadCalendarTime.o
+                0x0000000000037a90                __rel_dyn_start__ = .
 
 .rel.dyn
  *(.rel.dyn)
-                0x00000000000369a0                __rel_dyn_end__ = .
-                0x00000000000369a0                __rela_dyn_start__ = .
+                0x0000000000037a90                __rel_dyn_end__ = .
+                0x0000000000037a90                __rela_dyn_start__ = .
 
-.rela.dyn       0x00000000000369a0    0x42cd8
+.rela.dyn       0x0000000000037a90    0x42cd8
  *(.rela.dyn)
- .rela.got      0x00000000000369a0      0xa20 seadCalendarTime.o
- .rela.ifunc    0x00000000000373c0        0x0 seadCalendarTime.o
+ .rela.got      0x0000000000037a90      0xa20 seadCalendarTime.o
+ .rela.ifunc    0x00000000000384b0        0x0 seadCalendarTime.o
  .rela.init_array
-                0x00000000000373c0       0x30 seadCalendarTime.o
+                0x00000000000384b0       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead14SafeStringBaseIcEE
-                0x00000000000373f0       0x60 seadCalendarTime.o
+                0x00000000000384e0       0x60 seadCalendarTime.o
  .rela.data.rel.ro.local
-                0x0000000000037450     0xbaa8 seadCalendarTime.o
+                0x0000000000038540     0xbaa8 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead22BufferedSafeStringBaseIcEE
-                0x0000000000042ef8       0x60 seadCalendarTime.o
+                0x0000000000043fe8       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead15FixedSafeStringILi8EEE
-                0x0000000000042f58       0x60 seadCalendarTime.o
+                0x0000000000044048       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al8IUseNameE
-                0x0000000000042fb8       0x18 seadCalendarTime.o
+                0x00000000000440a8       0x18 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al9StringTmpILi64EEE
-                0x0000000000042fd0       0x60 seadCalendarTime.o
+                0x00000000000440c0       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTC11PuppetActor24_N2al15IUseStageSwitchE
-                0x0000000000043030       0x48 seadCalendarTime.o
+                0x0000000000044120       0x48 seadCalendarTime.o
  .rela.data.rel.ro._ZTC11PuppetActor0_N2al9LiveActorE
-                0x0000000000043078      0x2e8 seadCalendarTime.o
+                0x0000000000044168      0x2e8 seadCalendarTime.o
  .rela.data.rel.ro._ZTT11PuppetActor
-                0x0000000000043360       0xc0 seadCalendarTime.o
+                0x0000000000044450       0xc0 seadCalendarTime.o
  .rela.data.rel.ro._ZTV11PuppetActor
-                0x0000000000043420      0x390 seadCalendarTime.o
+                0x0000000000044510      0x390 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al9StringTmpILi128EEE
-                0x00000000000437b0       0x60 seadCalendarTime.o
+                0x00000000000448a0       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al9StringTmpILi256EEE
-                0x0000000000043810       0x60 seadCalendarTime.o
+                0x0000000000044900       0x60 seadCalendarTime.o
  .rela.data.rel.local
-                0x0000000000043870     0xab78 seadCalendarTime.o
+                0x0000000000044960     0xab78 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead15FixedSafeStringILi32EEE
-                0x000000000004e3e8       0x60 seadCalendarTime.o
+                0x000000000004f4d8       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTC14PuppetCapActor24_N2al15IUseStageSwitchE
-                0x000000000004e448       0x48 seadCalendarTime.o
+                0x000000000004f538       0x48 seadCalendarTime.o
  .rela.data.rel.ro._ZTC14PuppetCapActor0_N2al9LiveActorE
-                0x000000000004e490      0x2e8 seadCalendarTime.o
+                0x000000000004f580      0x2e8 seadCalendarTime.o
  .rela.data.rel.ro._ZTT14PuppetCapActor
-                0x000000000004e778       0xc0 seadCalendarTime.o
+                0x000000000004f868       0xc0 seadCalendarTime.o
  .rela.data.rel.ro._ZTV14PuppetCapActor
-                0x000000000004e838      0x390 seadCalendarTime.o
+                0x000000000004f928      0x390 seadCalendarTime.o
  .rela.data.rel.ro._ZTC15PuppetHackActor24_N2al15IUseStageSwitchE
-                0x000000000004ebc8       0x48 seadCalendarTime.o
+                0x000000000004fcb8       0x48 seadCalendarTime.o
  .rela.data.rel.ro._ZTC15PuppetHackActor0_N2al9LiveActorE
-                0x000000000004ec10      0x2e8 seadCalendarTime.o
+                0x000000000004fd00      0x2e8 seadCalendarTime.o
  .rela.data.rel.ro._ZTT15PuppetHackActor
-                0x000000000004eef8       0xc0 seadCalendarTime.o
+                0x000000000004ffe8       0xc0 seadCalendarTime.o
  .rela.data.rel.ro._ZTV15PuppetHackActor
-                0x000000000004efb8      0x390 seadCalendarTime.o
+                0x00000000000500a8      0x390 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead15FixedSafeStringILi64EEE
-                0x000000000004f348       0x60 seadCalendarTime.o
+                0x0000000000050438       0x60 seadCalendarTime.o
  .rela.data.rel
-                0x000000000004f3a8    0x28860 seadCalendarTime.o
+                0x0000000000050498    0x28860 seadCalendarTime.o
  .rela.data.rel.ro
-                0x0000000000077c08      0x4e0 seadCalendarTime.o
+                0x0000000000078cf8      0x4e0 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead22BufferedSafeStringBaseIDsEE
-                0x00000000000780e8       0x60 seadCalendarTime.o
+                0x00000000000791d8       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead16WFixedSafeStringILi512EEE
-                0x0000000000078148       0x60 seadCalendarTime.o
+                0x0000000000079238       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTV21HideAndSeekConfigMenu
-                0x00000000000781a8       0x60 seadCalendarTime.o
+                0x0000000000079298       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead15FixedSafeStringILi16EEE
-                0x0000000000078208       0x60 seadCalendarTime.o
+                0x00000000000792f8       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTV15HideAndSeekMode
-                0x0000000000078268      0x108 seadCalendarTime.o
+                0x0000000000079358      0x108 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN15GameModeManager18SingletonDisposer_E
-                0x0000000000078370       0x30 seadCalendarTime.o
+                0x0000000000079460       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTV15GravityModifier
-                0x00000000000783a0       0x60 seadCalendarTime.o
+                0x0000000000079490       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTV13NoCapModifier
-                0x0000000000078400       0x60 seadCalendarTime.o
+                0x00000000000794f0       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead19FixedSafeStringBaseIcLi51EEE
-                0x0000000000078460       0x60 seadCalendarTime.o
+                0x0000000000079550       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead15FixedSafeStringILi51EEE
-                0x00000000000784c0       0x60 seadCalendarTime.o
+                0x00000000000795b0       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN6Client18SingletonDisposer_E
-                0x0000000000078520       0x30 seadCalendarTime.o
+                0x0000000000079610       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al10FunctorV0MIP6ClientMS1_FvvEEE
-                0x0000000000078550       0x60 seadCalendarTime.o
+                0x0000000000079640       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTV10SocketBase
-                0x00000000000785b0       0x30 seadCalendarTime.o
+                0x00000000000796a0       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN4sead19FixedSafeStringBaseIcLi32EEE
-                0x00000000000785e0       0x60 seadCalendarTime.o
+                0x00000000000796d0       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al10FunctorV0MIP12SocketClientMS1_FvvEEE
-                0x0000000000078640       0x60 seadCalendarTime.o
+                0x0000000000079730       0x60 seadCalendarTime.o
  .rela.data.rel.ro._ZTV12SocketClient
-                0x00000000000786a0       0x30 seadCalendarTime.o
+                0x0000000000079790       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTV6Logger
-                0x00000000000786d0       0x30 seadCalendarTime.o
+                0x00000000000797c0       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTC15HideAndSeekIcon16_N2al16IUseLayoutActionE
-                0x0000000000078700       0x48 seadCalendarTime.o
+                0x00000000000797f0       0x48 seadCalendarTime.o
  .rela.data.rel.ro._ZTC15HideAndSeekIcon8_N2al10IUseLayoutE
-                0x0000000000078748       0x30 seadCalendarTime.o
+                0x0000000000079838       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTC15HideAndSeekIcon0_N2al11LayoutActorE
-                0x0000000000078778      0x198 seadCalendarTime.o
+                0x0000000000079868      0x198 seadCalendarTime.o
  .rela.data.rel.ro._ZTT15HideAndSeekIcon
-                0x0000000000078910      0x120 seadCalendarTime.o
+                0x0000000000079a00      0x120 seadCalendarTime.o
  .rela.data.rel.ro._ZTV15HideAndSeekIcon
-                0x0000000000078a30      0x210 seadCalendarTime.o
+                0x0000000000079b20      0x210 seadCalendarTime.o
  .rela.data.rel.ro._ZTC7NameTag16_N2al16IUseLayoutActionE
-                0x0000000000078c40       0x48 seadCalendarTime.o
+                0x0000000000079d30       0x48 seadCalendarTime.o
  .rela.data.rel.ro._ZTC7NameTag8_N2al10IUseLayoutE
-                0x0000000000078c88       0x30 seadCalendarTime.o
+                0x0000000000079d78       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTC7NameTag0_N2al11LayoutActorE
-                0x0000000000078cb8      0x198 seadCalendarTime.o
+                0x0000000000079da8      0x198 seadCalendarTime.o
  .rela.data.rel.ro._ZTT7NameTag
-                0x0000000000078e50      0x120 seadCalendarTime.o
+                0x0000000000079f40      0x120 seadCalendarTime.o
  .rela.data.rel.ro._ZTV7NameTag
-                0x0000000000078f70      0x210 seadCalendarTime.o
+                0x000000000007a060      0x210 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al13HostStateBaseINS_5SceneEEE
-                0x0000000000079180       0xc0 seadCalendarTime.o
+                0x000000000007a270       0xc0 seadCalendarTime.o
  .rela.data.rel.ro._ZTV27StageSceneStateServerConfig
-                0x0000000000079240       0xf0 seadCalendarTime.o
+                0x000000000007a330       0xf0 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2cc17CameraPoserCustomE
-                0x0000000000079330      0x2a0 seadCalendarTime.o
+                0x000000000007a420      0x2a0 seadCalendarTime.o
  .rela.data.rel.ro._ZTV25ProjectCameraPoserFactory
-                0x00000000000795d0       0x30 seadCalendarTime.o
+                0x000000000007a6c0       0x30 seadCalendarTime.o
  .rela.data.rel.ro._ZTV19ProjectActorFactory
-                0x0000000000079600       0x18 seadCalendarTime.o
+                0x000000000007a6f0       0x18 seadCalendarTime.o
  .rela.data.rel.ro._ZTVN2al10FunctorV0MIP8KeyboardMS1_FvvEEE
-                0x0000000000079618       0x60 seadCalendarTime.o
-                0x0000000000079678                __rela_dyn_end__ = .
-                0x0000000000079678                __rel_plt_start__ = .
+                0x000000000007a708       0x60 seadCalendarTime.o
+                0x000000000007a768                __rela_dyn_end__ = .
+                0x000000000007a768                __rel_plt_start__ = .
 
 .rel.plt
  *(.rel.plt)
-                0x0000000000079678                __rel_plt_end__ = .
-                0x0000000000079678                __rela_plt_start__ = .
+                0x000000000007a768                __rel_plt_end__ = .
+                0x000000000007a768                __rela_plt_start__ = .
 
-.rela.plt       0x0000000000079678     0x2598
+.rela.plt       0x000000000007a768     0x2598
  *(.rela.plt)
- .rela.plt      0x0000000000079678     0x2598 seadCalendarTime.o
-                0x000000000007bc10                __rela_plt_end__ = .
+ .rela.plt      0x000000000007a768     0x2598 seadCalendarTime.o
+                0x000000000007cd00                __rela_plt_end__ = .
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
 
-.eh_frame_hdr   0x000000000007bc10        0x0
-                0x000000000007bc10                __eh_frame_hdr_start__ = .
+.eh_frame_hdr   0x000000000007cd00        0x0
+                0x000000000007cd00                __eh_frame_hdr_start__ = .
  *(.eh_frame_hdr)
-                0x000000000007bc10                __eh_frame_hdr_end__ = .
+                0x000000000007cd00                __eh_frame_hdr_end__ = .
 
-.eh_frame       0x000000000007bc10       0x28
+.eh_frame       0x000000000007cd00       0x28
  *(.eh_frame)
- .eh_frame      0x000000000007bc10       0x28 svc.o
+ .eh_frame      0x000000000007cd00       0x28 svc.o
 
 .note.gnu.build-id
-                0x000000000007bc38       0x24
+                0x000000000007cd28       0x24
  *(.note.gnu.build-id)
  .note.gnu.build-id
-                0x000000000007bc38       0x24 seadCalendarTime.o
-                0x000000000007c000                . = ALIGN (0x1000)
+                0x000000000007cd28       0x24 seadCalendarTime.o
+                0x000000000007d000                . = ALIGN (0x1000)
 
-.data           0x000000000007c000    0x175a0
+.data           0x000000000007d000    0x175a0
  *(.data .data.*)
- .data          0x000000000007c000        0x0 seadCalendarTime.o
+ .data          0x000000000007d000        0x0 seadCalendarTime.o
  .data.rel.ro._ZTVN4sead14SafeStringBaseIcEE
-                0x000000000007c000       0x30 seadCalendarTime.o
-                0x000000000007c000                vtable for sead::SafeStringBase<char>
+                0x000000000007d000       0x30 seadCalendarTime.o
+                0x000000000007d000                vtable for sead::SafeStringBase<char>
  .data.rel.ro.local
-                0x000000000007c030       0x38 seadCalendarTime.o
- .data.rel.ro   0x000000000007c068        0x0 seadCalendarTime.o
- .data          0x000000000007c068        0x0 seadDateSpan.o
- .data          0x000000000007c068        0x0 seadDateTime.o
- .data          0x000000000007c068        0x0 seadDateTimeUtc.o
- .data          0x000000000007c068        0x0 seadDateUtil.o
+                0x000000000007d030       0x38 seadCalendarTime.o
+ .data.rel.ro   0x000000000007d068        0x0 seadCalendarTime.o
+ .data          0x000000000007d068        0x0 seadDateSpan.o
+ .data          0x000000000007d068        0x0 seadDateTime.o
+ .data          0x000000000007d068        0x0 seadDateTimeUtc.o
+ .data          0x000000000007d068        0x0 seadDateUtil.o
  .data.rel.ro._ZTVN4sead22BufferedSafeStringBaseIcEE
-                0x000000000007c068       0x30 seadDateUtil.o
-                0x000000000007c068                vtable for sead::BufferedSafeStringBase<char>
+                0x000000000007d068       0x30 seadDateUtil.o
+                0x000000000007d068                vtable for sead::BufferedSafeStringBase<char>
  .data.rel.ro._ZTVN4sead15FixedSafeStringILi8EEE
-                0x000000000007c098       0x30 seadDateUtil.o
-                0x000000000007c098                vtable for sead::FixedSafeString<8>
- .data          0x000000000007c0c8        0x0 seadTickSpan.o
- .data          0x000000000007c0c8        0x0 seadNew.o
- .data          0x000000000007c0c8        0x0 PuppetActor.o
+                0x000000000007d098       0x30 seadDateUtil.o
+                0x000000000007d098                vtable for sead::FixedSafeString<8>
+ .data          0x000000000007d0c8        0x0 seadTickSpan.o
+ .data          0x000000000007d0c8        0x0 seadNew.o
+ .data          0x000000000007d0c8        0x0 PuppetActor.o
  .data.rel.ro._ZTVN2al8IUseNameE
-                0x000000000007c0c8       0x18 PuppetActor.o
-                0x000000000007c0c8                vtable for al::IUseName
+                0x000000000007d0c8       0x18 PuppetActor.o
+                0x000000000007d0c8                vtable for al::IUseName
  .data.rel.ro._ZTVN2al9StringTmpILi64EEE
-                0x000000000007c0e0       0x30 PuppetActor.o
-                0x000000000007c0e0                vtable for al::StringTmp<64>
+                0x000000000007d0e0       0x30 PuppetActor.o
+                0x000000000007d0e0                vtable for al::StringTmp<64>
  .data.rel.ro._ZTC11PuppetActor24_N2al15IUseStageSwitchE
-                0x000000000007c110       0x38 PuppetActor.o
-                0x000000000007c110                construction vtable for al::IUseStageSwitch-in-PuppetActor
+                0x000000000007d110       0x38 PuppetActor.o
+                0x000000000007d110                construction vtable for al::IUseStageSwitch-in-PuppetActor
  .data.rel.ro._ZTC11PuppetActor0_N2al9LiveActorE
-                0x000000000007c148      0x130 PuppetActor.o
-                0x000000000007c148                construction vtable for al::LiveActor-in-PuppetActor
+                0x000000000007d148      0x130 PuppetActor.o
+                0x000000000007d148                construction vtable for al::LiveActor-in-PuppetActor
  .data.rel.ro._ZTT11PuppetActor
-                0x000000000007c278       0x40 PuppetActor.o
-                0x000000000007c278                VTT for PuppetActor
+                0x000000000007d278       0x40 PuppetActor.o
+                0x000000000007d278                VTT for PuppetActor
  .data.rel.ro._ZTV11PuppetActor
-                0x000000000007c2b8      0x1d8 PuppetActor.o
-                0x000000000007c2b8                vtable for PuppetActor
+                0x000000000007d2b8      0x1d8 PuppetActor.o
+                0x000000000007d2b8                vtable for PuppetActor
  .data.rel.ro._ZTVN2al9StringTmpILi128EEE
-                0x000000000007c490       0x30 PuppetActor.o
-                0x000000000007c490                vtable for al::StringTmp<128>
+                0x000000000007d490       0x30 PuppetActor.o
+                0x000000000007d490                vtable for al::StringTmp<128>
  .data.rel.ro._ZTVN2al9StringTmpILi256EEE
-                0x000000000007c4c0       0x30 PuppetActor.o
-                0x000000000007c4c0                vtable for al::StringTmp<256>
+                0x000000000007d4c0       0x30 PuppetActor.o
+                0x000000000007d4c0                vtable for al::StringTmp<256>
  .data.rel.local
-                0x000000000007c4f0      0x298 PuppetActor.o
-                0x000000000007c4f0                executorName
- *fill*         0x000000000007c788        0x8 
+                0x000000000007d4f0      0x298 PuppetActor.o
+                0x000000000007d4f0                executorName
+ *fill*         0x000000000007d788        0x8 
  .data.rel.ro.local
-                0x000000000007c790       0x28 PuppetActor.o
- .data          0x000000000007c7b8        0x0 PuppetCapActor.o
+                0x000000000007d790       0x28 PuppetActor.o
+ .data          0x000000000007d7b8        0x0 PuppetCapActor.o
  .data.rel.ro._ZTVN4sead15FixedSafeStringILi32EEE
-                0x000000000007c7b8       0x30 PuppetCapActor.o
-                0x000000000007c7b8                vtable for sead::FixedSafeString<32>
+                0x000000000007d7b8       0x30 PuppetCapActor.o
+                0x000000000007d7b8                vtable for sead::FixedSafeString<32>
  .data.rel.ro._ZTC14PuppetCapActor24_N2al15IUseStageSwitchE
-                0x000000000007c7e8       0x38 PuppetCapActor.o
-                0x000000000007c7e8                construction vtable for al::IUseStageSwitch-in-PuppetCapActor
+                0x000000000007d7e8       0x38 PuppetCapActor.o
+                0x000000000007d7e8                construction vtable for al::IUseStageSwitch-in-PuppetCapActor
  .data.rel.ro._ZTC14PuppetCapActor0_N2al9LiveActorE
-                0x000000000007c820      0x130 PuppetCapActor.o
-                0x000000000007c820                construction vtable for al::LiveActor-in-PuppetCapActor
+                0x000000000007d820      0x130 PuppetCapActor.o
+                0x000000000007d820                construction vtable for al::LiveActor-in-PuppetCapActor
  .data.rel.ro._ZTT14PuppetCapActor
-                0x000000000007c950       0x40 PuppetCapActor.o
-                0x000000000007c950                VTT for PuppetCapActor
+                0x000000000007d950       0x40 PuppetCapActor.o
+                0x000000000007d950                VTT for PuppetCapActor
  .data.rel.ro._ZTV14PuppetCapActor
-                0x000000000007c990      0x1d8 PuppetCapActor.o
-                0x000000000007c990                vtable for PuppetCapActor
+                0x000000000007d990      0x1d8 PuppetCapActor.o
+                0x000000000007d990                vtable for PuppetCapActor
  .data.rel.local
-                0x000000000007cb68      0x290 PuppetCapActor.o
- .data          0x000000000007cdf8        0x0 PuppetHackActor.o
+                0x000000000007db68      0x290 PuppetCapActor.o
+ .data          0x000000000007ddf8        0x0 PuppetHackActor.o
  .data.rel.ro._ZTC15PuppetHackActor24_N2al15IUseStageSwitchE
-                0x000000000007cdf8       0x38 PuppetHackActor.o
-                0x000000000007cdf8                construction vtable for al::IUseStageSwitch-in-PuppetHackActor
+                0x000000000007ddf8       0x38 PuppetHackActor.o
+                0x000000000007ddf8                construction vtable for al::IUseStageSwitch-in-PuppetHackActor
  .data.rel.ro._ZTC15PuppetHackActor0_N2al9LiveActorE
-                0x000000000007ce30      0x130 PuppetHackActor.o
-                0x000000000007ce30                construction vtable for al::LiveActor-in-PuppetHackActor
+                0x000000000007de30      0x130 PuppetHackActor.o
+                0x000000000007de30                construction vtable for al::LiveActor-in-PuppetHackActor
  .data.rel.ro._ZTT15PuppetHackActor
-                0x000000000007cf60       0x40 PuppetHackActor.o
-                0x000000000007cf60                VTT for PuppetHackActor
+                0x000000000007df60       0x40 PuppetHackActor.o
+                0x000000000007df60                VTT for PuppetHackActor
  .data.rel.ro._ZTV15PuppetHackActor
-                0x000000000007cfa0      0x1d8 PuppetHackActor.o
-                0x000000000007cfa0                vtable for PuppetHackActor
+                0x000000000007dfa0      0x1d8 PuppetHackActor.o
+                0x000000000007dfa0                vtable for PuppetHackActor
  .data.rel.local
-                0x000000000007d178      0x290 PuppetHackActor.o
- .data          0x000000000007d408        0x0 PuppetHolder.o
+                0x000000000007e178      0x290 PuppetHackActor.o
+ .data          0x000000000007e408        0x0 PuppetHolder.o
  .data.rel.ro._ZTVN4sead15FixedSafeStringILi64EEE
-                0x000000000007d408       0x30 PuppetHolder.o
-                0x000000000007d408                vtable for sead::FixedSafeString<64>
+                0x000000000007e408       0x30 PuppetHolder.o
+                0x000000000007e408                vtable for sead::FixedSafeString<64>
  .data.rel.local
-                0x000000000007d438      0x290 PuppetHolder.o
- .data          0x000000000007d6c8        0x0 PuppetMain.o
- .data.rel      0x000000000007d6c8     0x23c0 PuppetMain.o
+                0x000000000007e438      0x290 PuppetHolder.o
+ .data          0x000000000007e6c8        0x0 PuppetMain.o
+ .data.rel      0x000000000007e6c8     0x23c0 PuppetMain.o
  .data.rel.local
-                0x000000000007fa88      0x290 PuppetMain.o
- .data.rel.ro   0x000000000007fd18       0x10 PuppetMain.o
- .data          0x000000000007fd28        0x0 GameModeTimer.o
- .data          0x000000000007fd28        0x0 HideAndSeekConfigMenu.o
+                0x0000000000080a88      0x290 PuppetMain.o
+ .data.rel.ro   0x0000000000080d18       0x10 PuppetMain.o
+ .data          0x0000000000080d28        0x0 GameModeTimer.o
+ .data          0x0000000000080d28        0x0 HideAndSeekConfigMenu.o
  .data.rel.ro._ZTVN4sead22BufferedSafeStringBaseIDsEE
-                0x000000000007fd28       0x30 HideAndSeekConfigMenu.o
-                0x000000000007fd28                vtable for sead::BufferedSafeStringBase<char16_t>
+                0x0000000000080d28       0x30 HideAndSeekConfigMenu.o
+                0x0000000000080d28                vtable for sead::BufferedSafeStringBase<char16_t>
  .data.rel.ro._ZTVN4sead16WFixedSafeStringILi512EEE
-                0x000000000007fd58       0x30 HideAndSeekConfigMenu.o
-                0x000000000007fd58                vtable for sead::WFixedSafeString<512>
+                0x0000000000080d58       0x30 HideAndSeekConfigMenu.o
+                0x0000000000080d58                vtable for sead::WFixedSafeString<512>
  .data.rel.ro._ZTV21HideAndSeekConfigMenu
-                0x000000000007fd88       0x30 HideAndSeekConfigMenu.o
-                0x000000000007fd88                vtable for HideAndSeekConfigMenu
+                0x0000000000080d88       0x30 HideAndSeekConfigMenu.o
+                0x0000000000080d88                vtable for HideAndSeekConfigMenu
  .data.rel.local
-                0x000000000007fdb8      0x290 HideAndSeekConfigMenu.o
- .data          0x0000000000080048        0x0 HideAndSeekMode.o
+                0x0000000000080db8      0x290 HideAndSeekConfigMenu.o
+ .data          0x0000000000081048        0x0 HideAndSeekMode.o
  .data.rel.ro._ZTVN4sead15FixedSafeStringILi16EEE
-                0x0000000000080048       0x30 HideAndSeekMode.o
-                0x0000000000080048                vtable for sead::FixedSafeString<16>
+                0x0000000000081048       0x30 HideAndSeekMode.o
+                0x0000000000081048                vtable for sead::FixedSafeString<16>
  .data.rel.ro._ZTV15HideAndSeekMode
-                0x0000000000080078       0x78 HideAndSeekMode.o
-                0x0000000000080078                vtable for HideAndSeekMode
+                0x0000000000081078       0x78 HideAndSeekMode.o
+                0x0000000000081078                vtable for HideAndSeekMode
  .data.rel.local
-                0x00000000000800f0      0x290 HideAndSeekMode.o
- .data.rel.ro   0x0000000000080380       0x10 HideAndSeekMode.o
- .data          0x0000000000080390        0x0 GameModeManager.o
+                0x00000000000810f0      0x290 HideAndSeekMode.o
+ .data.rel.ro   0x0000000000081380       0x10 HideAndSeekMode.o
+ .data          0x0000000000081390        0x0 GameModeManager.o
  .data.rel.ro._ZTVN15GameModeManager18SingletonDisposer_E
-                0x0000000000080390       0x20 GameModeManager.o
-                0x0000000000080390                vtable for GameModeManager::SingletonDisposer_
+                0x0000000000081390       0x20 GameModeManager.o
+                0x0000000000081390                vtable for GameModeManager::SingletonDisposer_
  .data.rel.local
-                0x00000000000803b0      0x290 GameModeManager.o
- .data.rel.ro   0x0000000000080640       0x30 GameModeManager.o
- .data          0x0000000000080670        0x0 GravityModifier.o
+                0x00000000000813b0      0x290 GameModeManager.o
+ .data.rel.ro   0x0000000000081640       0x30 GameModeManager.o
+ .data          0x0000000000081670        0x0 GravityModifier.o
  .data.rel.ro._ZTV15GravityModifier
-                0x0000000000080670       0x30 GravityModifier.o
-                0x0000000000080670                vtable for GravityModifier
+                0x0000000000081670       0x30 GravityModifier.o
+                0x0000000000081670                vtable for GravityModifier
  .data.rel.local
-                0x00000000000806a0      0x290 GravityModifier.o
- .data          0x0000000000080930        0x0 NoCapModifier.o
+                0x00000000000816a0      0x290 GravityModifier.o
+ .data          0x0000000000081930        0x0 NoCapModifier.o
  .data.rel.ro._ZTV13NoCapModifier
-                0x0000000000080930       0x30 NoCapModifier.o
-                0x0000000000080930                vtable for NoCapModifier
+                0x0000000000081930       0x30 NoCapModifier.o
+                0x0000000000081930                vtable for NoCapModifier
  .data.rel.local
-                0x0000000000080960      0x290 NoCapModifier.o
- .data          0x0000000000080bf0        0x0 Client.o
+                0x0000000000081960      0x290 NoCapModifier.o
+ .data          0x0000000000081bf0        0x0 Client.o
  .data.rel.ro._ZTVN4sead19FixedSafeStringBaseIcLi51EEE
-                0x0000000000080bf0       0x30 Client.o
-                0x0000000000080bf0                vtable for sead::FixedSafeStringBase<char, 51>
+                0x0000000000081bf0       0x30 Client.o
+                0x0000000000081bf0                vtable for sead::FixedSafeStringBase<char, 51>
  .data.rel.ro._ZTVN4sead15FixedSafeStringILi51EEE
-                0x0000000000080c20       0x30 Client.o
-                0x0000000000080c20                vtable for sead::FixedSafeString<51>
+                0x0000000000081c20       0x30 Client.o
+                0x0000000000081c20                vtable for sead::FixedSafeString<51>
  .data.rel.ro._ZTVN6Client18SingletonDisposer_E
-                0x0000000000080c50       0x20 Client.o
-                0x0000000000080c50                vtable for Client::SingletonDisposer_
+                0x0000000000081c50       0x20 Client.o
+                0x0000000000081c50                vtable for Client::SingletonDisposer_
  .data.rel.ro._ZTVN2al10FunctorV0MIP6ClientMS1_FvvEEE
-                0x0000000000080c70       0x30 Client.o
-                0x0000000000080c70                vtable for al::FunctorV0M<Client*, void (Client::*)()>
+                0x0000000000081c70       0x30 Client.o
+                0x0000000000081c70                vtable for al::FunctorV0M<Client*, void (Client::*)()>
  .data.rel.local
-                0x0000000000080ca0      0x290 Client.o
+                0x0000000000081ca0      0x290 Client.o
  .data.rel.ro.local
-                0x0000000000080f30     0x1cd0 Client.o
- .data          0x0000000000082c00        0x0 DeltaTime.o
- .data          0x0000000000082c00        0x0 HackModelHolder.o
+                0x0000000000081f30     0x1cd0 Client.o
+ .data          0x0000000000083c00        0x0 DeltaTime.o
+ .data          0x0000000000083c00        0x0 HackModelHolder.o
  .data.rel.local
-                0x0000000000082c00      0x290 HackModelHolder.o
- .data          0x0000000000082e90        0x0 SocketBase.o
+                0x0000000000083c00      0x290 HackModelHolder.o
+ .data          0x0000000000083e90        0x0 SocketBase.o
  .data.rel.ro._ZTV10SocketBase
-                0x0000000000082e90       0x20 SocketBase.o
-                0x0000000000082e90                vtable for SocketBase
- .data          0x0000000000082eb0        0x0 SocketClient.o
+                0x0000000000083e90       0x20 SocketBase.o
+                0x0000000000083e90                vtable for SocketBase
+ .data          0x0000000000083eb0        0x0 SocketClient.o
  .data.rel.ro._ZTVN4sead19FixedSafeStringBaseIcLi32EEE
-                0x0000000000082eb0       0x30 SocketClient.o
-                0x0000000000082eb0                vtable for sead::FixedSafeStringBase<char, 32>
+                0x0000000000083eb0       0x30 SocketClient.o
+                0x0000000000083eb0                vtable for sead::FixedSafeStringBase<char, 32>
  .data.rel.ro._ZTVN2al10FunctorV0MIP12SocketClientMS1_FvvEEE
-                0x0000000000082ee0       0x30 SocketClient.o
-                0x0000000000082ee0                vtable for al::FunctorV0M<SocketClient*, void (SocketClient::*)()>
+                0x0000000000083ee0       0x30 SocketClient.o
+                0x0000000000083ee0                vtable for al::FunctorV0M<SocketClient*, void (SocketClient::*)()>
  .data.rel.ro._ZTV12SocketClient
-                0x0000000000082f10       0x20 SocketClient.o
-                0x0000000000082f10                vtable for SocketClient
+                0x0000000000083f10       0x20 SocketClient.o
+                0x0000000000083f10                vtable for SocketClient
  .data.rel.local
-                0x0000000000082f30      0x290 SocketClient.o
- .data          0x00000000000831c0        0x0 captureSync.o
- .data.rel      0x00000000000831c0     0x23c0 captureSync.o
+                0x0000000000083f30      0x290 SocketClient.o
+ .data          0x00000000000841c0        0x0 captureSync.o
+ .data.rel      0x00000000000841c0     0x23c0 captureSync.o
  .data.rel.local
-                0x0000000000085580      0x290 captureSync.o
- .data.rel.ro   0x0000000000085810       0x10 captureSync.o
- .data          0x0000000000085820        0x0 logger.o
+                0x0000000000086580      0x290 captureSync.o
+ .data.rel.ro   0x0000000000086810       0x10 captureSync.o
+ .data          0x0000000000086820        0x0 logger.o
  .data.rel.ro._ZTV6Logger
-                0x0000000000085820       0x20 logger.o
-                0x0000000000085820                vtable for Logger
+                0x0000000000086820       0x20 logger.o
+                0x0000000000086820                vtable for Logger
  .data.rel.local
-                0x0000000000085840      0x290 logger.o
- .data          0x0000000000085ad0        0x0 HideAndSeekIcon.o
+                0x0000000000086840      0x290 logger.o
+ .data          0x0000000000086ad0        0x0 HideAndSeekIcon.o
  .data.rel.ro._ZTC15HideAndSeekIcon16_N2al16IUseLayoutActionE
-                0x0000000000085ad0       0x50 HideAndSeekIcon.o
-                0x0000000000085ad0                construction vtable for al::IUseLayoutAction-in-HideAndSeekIcon
+                0x0000000000086ad0       0x50 HideAndSeekIcon.o
+                0x0000000000086ad0                construction vtable for al::IUseLayoutAction-in-HideAndSeekIcon
  .data.rel.ro._ZTC15HideAndSeekIcon8_N2al10IUseLayoutE
-                0x0000000000085b20       0x30 HideAndSeekIcon.o
-                0x0000000000085b20                construction vtable for al::IUseLayout-in-HideAndSeekIcon
+                0x0000000000086b20       0x30 HideAndSeekIcon.o
+                0x0000000000086b20                construction vtable for al::IUseLayout-in-HideAndSeekIcon
  .data.rel.ro._ZTC15HideAndSeekIcon0_N2al11LayoutActorE
-                0x0000000000085b50       0xe8 HideAndSeekIcon.o
-                0x0000000000085b50                construction vtable for al::LayoutActor-in-HideAndSeekIcon
+                0x0000000000086b50       0xe8 HideAndSeekIcon.o
+                0x0000000000086b50                construction vtable for al::LayoutActor-in-HideAndSeekIcon
  .data.rel.ro._ZTT15HideAndSeekIcon
-                0x0000000000085c38       0x60 HideAndSeekIcon.o
-                0x0000000000085c38                VTT for HideAndSeekIcon
+                0x0000000000086c38       0x60 HideAndSeekIcon.o
+                0x0000000000086c38                VTT for HideAndSeekIcon
  .data.rel.ro._ZTV15HideAndSeekIcon
-                0x0000000000085c98      0x160 HideAndSeekIcon.o
-                0x0000000000085c98                vtable for HideAndSeekIcon
- .data.rel      0x0000000000085df8     0x23c0 HideAndSeekIcon.o
+                0x0000000000086c98      0x160 HideAndSeekIcon.o
+                0x0000000000086c98                vtable for HideAndSeekIcon
+ .data.rel      0x0000000000086df8     0x23c0 HideAndSeekIcon.o
  .data.rel.local
-                0x00000000000881b8      0x2a8 HideAndSeekIcon.o
- .data.rel.ro   0x0000000000088460       0x70 HideAndSeekIcon.o
- .data          0x00000000000884d0        0x0 NameTag.o
+                0x00000000000891b8      0x2a8 HideAndSeekIcon.o
+ .data.rel.ro   0x0000000000089460       0x70 HideAndSeekIcon.o
+ .data          0x00000000000894d0        0x0 NameTag.o
  .data.rel.ro._ZTC7NameTag16_N2al16IUseLayoutActionE
-                0x00000000000884d0       0x50 NameTag.o
-                0x00000000000884d0                construction vtable for al::IUseLayoutAction-in-NameTag
+                0x00000000000894d0       0x50 NameTag.o
+                0x00000000000894d0                construction vtable for al::IUseLayoutAction-in-NameTag
  .data.rel.ro._ZTC7NameTag8_N2al10IUseLayoutE
-                0x0000000000088520       0x30 NameTag.o
-                0x0000000000088520                construction vtable for al::IUseLayout-in-NameTag
+                0x0000000000089520       0x30 NameTag.o
+                0x0000000000089520                construction vtable for al::IUseLayout-in-NameTag
  .data.rel.ro._ZTC7NameTag0_N2al11LayoutActorE
-                0x0000000000088550       0xe8 NameTag.o
-                0x0000000000088550                construction vtable for al::LayoutActor-in-NameTag
+                0x0000000000089550       0xe8 NameTag.o
+                0x0000000000089550                construction vtable for al::LayoutActor-in-NameTag
  .data.rel.ro._ZTT7NameTag
-                0x0000000000088638       0x60 NameTag.o
-                0x0000000000088638                VTT for NameTag
+                0x0000000000089638       0x60 NameTag.o
+                0x0000000000089638                VTT for NameTag
  .data.rel.ro._ZTV7NameTag
-                0x0000000000088698      0x160 NameTag.o
-                0x0000000000088698                vtable for NameTag
+                0x0000000000089698      0x160 NameTag.o
+                0x0000000000089698                vtable for NameTag
  .data.rel.local
-                0x00000000000887f8      0x2b0 NameTag.o
- .data.rel.ro   0x0000000000088aa8       0x80 NameTag.o
- .data          0x0000000000088b28        0x0 StageSceneStatePauseMenu.o
+                0x00000000000897f8      0x2b0 NameTag.o
+ .data.rel.ro   0x0000000000089aa8       0x80 NameTag.o
+ .data          0x0000000000089b28        0x0 StageSceneStatePauseMenu.o
  .data.rel.local
-                0x0000000000088b28        0x8 StageSceneStatePauseMenu.o
- .data.rel.ro   0x0000000000088b30       0x20 StageSceneStatePauseMenu.o
- .data          0x0000000000088b50        0x0 StageSceneStateServerConfig.o
+                0x0000000000089b28        0x8 StageSceneStatePauseMenu.o
+ .data.rel.ro   0x0000000000089b30       0x20 StageSceneStatePauseMenu.o
+ .data          0x0000000000089b50        0x0 StageSceneStateServerConfig.o
  .data.rel.ro._ZTVN2al13HostStateBaseINS_5SceneEEE
-                0x0000000000088b50       0x50 StageSceneStateServerConfig.o
-                0x0000000000088b50                vtable for al::HostStateBase<al::Scene>
+                0x0000000000089b50       0x50 StageSceneStateServerConfig.o
+                0x0000000000089b50                vtable for al::HostStateBase<al::Scene>
  .data.rel.ro._ZTV27StageSceneStateServerConfig
-                0x0000000000088ba0       0x70 StageSceneStateServerConfig.o
-                0x0000000000088ba0                vtable for StageSceneStateServerConfig
+                0x0000000000089ba0       0x70 StageSceneStateServerConfig.o
+                0x0000000000089ba0                vtable for StageSceneStateServerConfig
  .data.rel.local
-                0x0000000000088c10      0x308 StageSceneStateServerConfig.o
-                0x0000000000088c40                testValues
- .data.rel.ro   0x0000000000088f18       0xe0 StageSceneStateServerConfig.o
- .data          0x0000000000088ff8        0x0 CameraPoserCustom.o
+                0x0000000000089c10      0x308 StageSceneStateServerConfig.o
+                0x0000000000089c40                testValues
+ .data.rel.ro   0x0000000000089f18       0xe0 StageSceneStateServerConfig.o
+ .data          0x0000000000089ff8        0x0 CameraPoserCustom.o
  .data.rel.ro._ZTVN2cc17CameraPoserCustomE
-                0x0000000000088ff8      0x140 CameraPoserCustom.o
-                0x0000000000088ff8                vtable for cc::CameraPoserCustom
- .data          0x0000000000089138        0x0 ProjectCameraPoserFactory.o
+                0x0000000000089ff8      0x140 CameraPoserCustom.o
+                0x0000000000089ff8                vtable for cc::CameraPoserCustom
+ .data          0x000000000008a138        0x0 ProjectCameraPoserFactory.o
  .data.rel.ro._ZTV25ProjectCameraPoserFactory
-                0x0000000000089138       0x20 ProjectCameraPoserFactory.o
-                0x0000000000089138                vtable for ProjectCameraPoserFactory
- .data.rel      0x0000000000089158      0x1a0 ProjectCameraPoserFactory.o
- .data          0x00000000000892f8        0x0 Factory.o
+                0x000000000008a138       0x20 ProjectCameraPoserFactory.o
+                0x000000000008a138                vtable for ProjectCameraPoserFactory
+ .data.rel      0x000000000008a158      0x1a0 ProjectCameraPoserFactory.o
+ .data          0x000000000008a2f8        0x0 Factory.o
  .data.rel.ro._ZTV19ProjectActorFactory
-                0x00000000000892f8       0x18 Factory.o
-                0x00000000000892f8                vtable for ProjectActorFactory
- .data.rel      0x0000000000089310     0x23c0 Factory.o
+                0x000000000008a2f8       0x18 Factory.o
+                0x000000000008a2f8                vtable for ProjectActorFactory
+ .data.rel      0x000000000008a310     0x23c0 Factory.o
  .data.rel.local
-                0x000000000008b6d0      0x290 Factory.o
- .data          0x000000000008b960        0x0 Keyboard.o
+                0x000000000008c6d0      0x290 Factory.o
+ .data          0x000000000008c960        0x0 Keyboard.o
  .data.rel.ro._ZTVN2al10FunctorV0MIP8KeyboardMS1_FvvEEE
-                0x000000000008b960       0x30 Keyboard.o
-                0x000000000008b960                vtable for al::FunctorV0M<Keyboard*, void (Keyboard::*)()>
- .data          0x000000000008b990        0x0 debugMenu.o
- .data          0x000000000008b990        0x0 helpers.o
+                0x000000000008c960       0x30 Keyboard.o
+                0x000000000008c960                vtable for al::FunctorV0M<Keyboard*, void (Keyboard::*)()>
+ .data          0x000000000008c990        0x0 debugMenu.o
+ .data          0x000000000008c990        0x0 helpers.o
  .data.rel.local
-                0x000000000008b990      0x290 helpers.o
- .data          0x000000000008bc20        0x0 hooks.o
- .data.rel      0x000000000008bc20     0x23c0 hooks.o
+                0x000000000008c990      0x290 helpers.o
+ .data          0x000000000008cc20        0x0 hooks.o
+ .data.rel      0x000000000008cc20     0x23c0 hooks.o
  .data.rel.local
-                0x000000000008dfe0      0x298 hooks.o
- .data.rel.ro   0x000000000008e278       0x30 hooks.o
- .data          0x000000000008e2a8        0x0 main.o
- .data.rel      0x000000000008e2a8     0x23c0 main.o
+                0x000000000008efe0      0x298 hooks.o
+ .data.rel.ro   0x000000000008f278       0x30 hooks.o
+ .data          0x000000000008f2a8        0x0 main.o
+ .data.rel      0x000000000008f2a8     0x23c0 main.o
  .data.rel.local
-                0x0000000000090668      0x290 main.o
- .data.rel.ro   0x00000000000908f8       0x10 main.o
- .data          0x0000000000090908        0x0 module.o
- .data          0x0000000000090908        0x8 ExecuteTables.o
-                0x0000000000090908                updateTableSize
-                0x000000000009090c                drawTableSize
+                0x0000000000091668      0x290 main.o
+ .data.rel.ro   0x00000000000918f8       0x10 main.o
+ .data          0x0000000000091908        0x0 module.o
+ .data          0x0000000000091908        0x8 ExecuteTables.o
+                0x0000000000091908                updateTableSize
+                0x000000000009190c                drawTableSize
  .data.rel.ro.local
-                0x0000000000090910     0x2c90 ExecuteTables.o
-                0x0000000000090910                updateTable
-                0x0000000000090988                drawTable
- .data          0x00000000000935a0        0x0 svc.o
- .data          0x00000000000935a0        0x0 crt0.o
+                0x0000000000091910     0x2c90 ExecuteTables.o
+                0x0000000000091910                updateTable
+                0x0000000000091988                drawTable
+ .data          0x00000000000945a0        0x0 svc.o
+ .data          0x00000000000945a0        0x0 crt0.o
 
 .data.rela.ro
  *(.data.rela.ro.local*)
@@ -3197,150 +3197,150 @@ Linker script and memory map
 .data.rel.ro
  *(.data.rel.ro.local*)
  *(.data.rel.ro .data.rel.ro.*)
-                0x00000000000935a0                __got_start__ = .
+                0x00000000000945a0                __got_start__ = .
 
-.got            0x00000000000935a0     0x1008
+.got            0x00000000000945a0     0x1008
  *(.got.plt)
- .got.plt       0x00000000000935a0      0xca0 seadCalendarTime.o
+ .got.plt       0x00000000000945a0      0xca0 seadCalendarTime.o
  *(.igot.plt)
  *(.got)
- .got           0x0000000000094240      0x368 seadCalendarTime.o
-                0x0000000000094240                _GLOBAL_OFFSET_TABLE_
+ .got           0x0000000000095240      0x368 seadCalendarTime.o
+                0x0000000000095240                _GLOBAL_OFFSET_TABLE_
  *(.igot)
-                0x00000000000945a8                __got_end__ = .
+                0x00000000000955a8                __got_end__ = .
 
-.dynamic        0x00000000000945a8      0x140
-                0x00000000000945a8                __dynamic_start__ = .
+.dynamic        0x00000000000955a8      0x140
+                0x00000000000955a8                __dynamic_start__ = .
  *(.dynamic)
- .dynamic       0x00000000000945a8      0x140 seadCalendarTime.o
-                0x00000000000945a8                _DYNAMIC
-                0x00000000000946e8                . = ALIGN (0x8)
+ .dynamic       0x00000000000955a8      0x140 seadCalendarTime.o
+                0x00000000000955a8                _DYNAMIC
+                0x00000000000956e8                . = ALIGN (0x8)
 
-.preinit_array  0x00000000000946e8        0x0
+.preinit_array  0x00000000000956e8        0x0
                 [!provide]                        PROVIDE (__preinit_array_start__ = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end__ = .)
 
-.init_array     0x00000000000946e8       0x10
+.init_array     0x00000000000956e8       0x10
                 [!provide]                        PROVIDE (__init_array_start__ = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*))
  *(.init_array)
- .init_array    0x00000000000946e8        0x8 seadCalendarTime.o
- .init_array    0x00000000000946f0        0x8 DeltaTime.o
+ .init_array    0x00000000000956e8        0x8 seadCalendarTime.o
+ .init_array    0x00000000000956f0        0x8 DeltaTime.o
                 [!provide]                        PROVIDE (__init_array_end__ = .)
 
-.fini_array     0x00000000000946f8        0x0
+.fini_array     0x00000000000956f8        0x0
                 [!provide]                        PROVIDE (__fini_array_start__ = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*))
  *(.fini_array)
                 [!provide]                        PROVIDE (__fini_array_end__ = .)
 
-.tdata          0x00000000000946f8        0x0
-                0x00000000000946f8                __tdata_align_abs__ = ABSOLUTE (.)
-                0x00000000000946f8                __tdata_start__ = .
+.tdata          0x00000000000956f8        0x0
+                0x00000000000956f8                __tdata_align_abs__ = ABSOLUTE (.)
+                0x00000000000956f8                __tdata_start__ = .
  *(.tdata .tdata.*)
-                0x00000000000946f8                __tdata_end__ = .
+                0x00000000000956f8                __tdata_end__ = .
 
-.tbss           0x00000000000946f8        0x0
-                0x00000000000946f8                __tbss_align_abs__ = ABSOLUTE (.)
-                0x00000000000946f8                __tbss_start__ = .
+.tbss           0x00000000000956f8        0x0
+                0x00000000000956f8                __tbss_align_abs__ = ABSOLUTE (.)
+                0x00000000000956f8                __tbss_start__ = .
  *(.tbss .tbss.*)
  *(.tcommon)
-                0x00000000000946f8                __tbss_end__ = .
-                0x0000000000095000                . = ALIGN (0x1000)
-
-.bss            0x0000000000095000     0x1000
-                0x0000000000095000                __bss_start__ = .
- *(.bss .bss.*)
- .bss           0x0000000000095000       0x8c seadCalendarTime.o
-                0x0000000000095000                sead::CalendarTime::cDefaultSecond
-                0x0000000000095008                sead::CalendarTime::cDefaultMinute
-                0x0000000000095010                sead::CalendarTime::cDefaultHour
-                0x0000000000095018                sead::CalendarTime::cDefaultDay
-                0x0000000000095020                sead::CalendarTime::cDefaultMonth
-                0x0000000000095028                sead::CalendarTime::cDefaultYear
-                0x0000000000095030                sead::CalendarTime::cMonth_Dec
-                0x0000000000095038                sead::CalendarTime::cMonth_Nov
-                0x0000000000095040                sead::CalendarTime::cMonth_Oct
-                0x0000000000095048                sead::CalendarTime::cMonth_Sep
-                0x0000000000095050                sead::CalendarTime::cMonth_Aug
-                0x0000000000095058                sead::CalendarTime::cMonth_Jul
-                0x0000000000095060                sead::CalendarTime::cMonth_Jun
-                0x0000000000095068                sead::CalendarTime::cMonth_May
-                0x0000000000095070                sead::CalendarTime::cMonth_Apr
-                0x0000000000095078                sead::CalendarTime::cMonth_Mar
-                0x0000000000095080                sead::CalendarTime::cMonth_Feb
-                0x0000000000095088                sead::CalendarTime::cMonth_Jan
- .bss           0x000000000009508c        0x0 seadDateSpan.o
- .bss           0x000000000009508c        0x1 seadDateTime.o
-                0x000000000009508c                sead::DateTime::mIsInitialized
- .bss           0x000000000009508d        0x0 seadDateTimeUtc.o
- .bss           0x000000000009508d        0x0 seadDateUtil.o
- .bss           0x000000000009508d        0x0 seadTickSpan.o
- .bss           0x000000000009508d        0x0 seadNew.o
- *fill*         0x000000000009508d        0x3 
- .bss           0x0000000000095090        0x4 PuppetActor.o
- .bss           0x0000000000095094        0x0 PuppetCapActor.o
- .bss           0x0000000000095094        0x0 PuppetHackActor.o
- .bss           0x0000000000095094        0x0 PuppetHolder.o
- .bss           0x0000000000095094        0x4 PuppetMain.o
- .bss           0x0000000000095098        0x0 GameModeTimer.o
- .bss           0x0000000000095098        0x4 HideAndSeekConfigMenu.o
- .bss           0x000000000009509c        0x4 HideAndSeekMode.o
- .bss           0x00000000000950a0       0x10 GameModeManager.o
-                0x00000000000950a0                GameModeManager::SingletonDisposer_::sStaticDisposer
-                0x00000000000950a8                GameModeManager::sInstance
- .bss           0x00000000000950b0        0x0 GravityModifier.o
- .bss           0x00000000000950b0        0x0 NoCapModifier.o
- .bss           0x00000000000950b0       0x14 Client.o
-                0x00000000000950b0                Client::SingletonDisposer_::sStaticDisposer
-                0x00000000000950b8                Client::sInstance
- *fill*         0x00000000000950c4        0x4 
- .bss           0x00000000000950c8       0x18 DeltaTime.o
-                0x00000000000950c8                Time::deltaTime
-                0x00000000000950d0                Time::deltaSpan
-                0x00000000000950d8                Time::prevTime
- .bss           0x00000000000950e0        0x0 HackModelHolder.o
- .bss           0x00000000000950e0        0x0 SocketBase.o
- .bss           0x00000000000950e0        0x4 SocketClient.o
- .bss           0x00000000000950e4        0x4 captureSync.o
- .bss           0x00000000000950e8        0x8 logger.o
-                0x00000000000950e8                Logger::sInstance
- .bss           0x00000000000950f0        0x4 HideAndSeekIcon.o
- .bss           0x00000000000950f4        0x0 NameTag.o
- .bss           0x00000000000950f4        0x0 StageSceneStatePauseMenu.o
- .bss           0x00000000000950f4        0x4 StageSceneStateServerConfig.o
- .bss           0x00000000000950f8        0x0 CameraPoserCustom.o
- .bss           0x00000000000950f8        0x0 ProjectCameraPoserFactory.o
- .bss           0x00000000000950f8        0x0 Factory.o
- .bss           0x00000000000950f8        0x4 Keyboard.o
- *fill*         0x00000000000950fc        0x4 
- .bss           0x0000000000095100        0x8 debugMenu.o
-                0x0000000000095100                gTextWriter
- .bss           0x0000000000095108        0x0 helpers.o
- .bss           0x0000000000095108        0xc hooks.o
-                0x0000000000095108                sceneStateServerConfig
- *fill*         0x0000000000095114        0x4 
- .bss           0x0000000000095118       0x2c main.o
-                0x0000000000095130                initInfo
-                0x0000000000095138                debugCaptureIndex
-                0x000000000009513c                debugPuppetIndex
- *fill*         0x0000000000095144        0x4 
- .bss           0x0000000000095148       0xd0 module.o
-                0x0000000000095148                __nx_module_runtime
- .bss           0x0000000000095218        0x0 ExecuteTables.o
- .bss           0x0000000000095218        0x0 svc.o
- .bss           0x0000000000095218        0x0 crt0.o
- *(COMMON)
-                0x0000000000095218                . = ALIGN (0x8)
-                0x0000000000095218                __bss_end__ = .
+                0x00000000000956f8                __tbss_end__ = .
                 0x0000000000096000                . = ALIGN (0x1000)
- *fill*         0x0000000000095218      0xde8 
-                0x0000000000096000                __end__ = ABSOLUTE (.)
-                0x0000000000096000                __argdata__ = .
 
-.dynbss         0x0000000000096000        0x0
- .dynbss        0x0000000000096000        0x0 seadCalendarTime.o
+.bss            0x0000000000096000     0x1000
+                0x0000000000096000                __bss_start__ = .
+ *(.bss .bss.*)
+ .bss           0x0000000000096000       0x8c seadCalendarTime.o
+                0x0000000000096000                sead::CalendarTime::cDefaultSecond
+                0x0000000000096008                sead::CalendarTime::cDefaultMinute
+                0x0000000000096010                sead::CalendarTime::cDefaultHour
+                0x0000000000096018                sead::CalendarTime::cDefaultDay
+                0x0000000000096020                sead::CalendarTime::cDefaultMonth
+                0x0000000000096028                sead::CalendarTime::cDefaultYear
+                0x0000000000096030                sead::CalendarTime::cMonth_Dec
+                0x0000000000096038                sead::CalendarTime::cMonth_Nov
+                0x0000000000096040                sead::CalendarTime::cMonth_Oct
+                0x0000000000096048                sead::CalendarTime::cMonth_Sep
+                0x0000000000096050                sead::CalendarTime::cMonth_Aug
+                0x0000000000096058                sead::CalendarTime::cMonth_Jul
+                0x0000000000096060                sead::CalendarTime::cMonth_Jun
+                0x0000000000096068                sead::CalendarTime::cMonth_May
+                0x0000000000096070                sead::CalendarTime::cMonth_Apr
+                0x0000000000096078                sead::CalendarTime::cMonth_Mar
+                0x0000000000096080                sead::CalendarTime::cMonth_Feb
+                0x0000000000096088                sead::CalendarTime::cMonth_Jan
+ .bss           0x000000000009608c        0x0 seadDateSpan.o
+ .bss           0x000000000009608c        0x1 seadDateTime.o
+                0x000000000009608c                sead::DateTime::mIsInitialized
+ .bss           0x000000000009608d        0x0 seadDateTimeUtc.o
+ .bss           0x000000000009608d        0x0 seadDateUtil.o
+ .bss           0x000000000009608d        0x0 seadTickSpan.o
+ .bss           0x000000000009608d        0x0 seadNew.o
+ *fill*         0x000000000009608d        0x3 
+ .bss           0x0000000000096090        0x4 PuppetActor.o
+ .bss           0x0000000000096094        0x0 PuppetCapActor.o
+ .bss           0x0000000000096094        0x0 PuppetHackActor.o
+ .bss           0x0000000000096094        0x0 PuppetHolder.o
+ .bss           0x0000000000096094        0x4 PuppetMain.o
+ .bss           0x0000000000096098        0x0 GameModeTimer.o
+ .bss           0x0000000000096098        0x4 HideAndSeekConfigMenu.o
+ .bss           0x000000000009609c        0x4 HideAndSeekMode.o
+ .bss           0x00000000000960a0       0x10 GameModeManager.o
+                0x00000000000960a0                GameModeManager::SingletonDisposer_::sStaticDisposer
+                0x00000000000960a8                GameModeManager::sInstance
+ .bss           0x00000000000960b0        0x0 GravityModifier.o
+ .bss           0x00000000000960b0        0x0 NoCapModifier.o
+ .bss           0x00000000000960b0       0x14 Client.o
+                0x00000000000960b0                Client::SingletonDisposer_::sStaticDisposer
+                0x00000000000960b8                Client::sInstance
+ *fill*         0x00000000000960c4        0x4 
+ .bss           0x00000000000960c8       0x18 DeltaTime.o
+                0x00000000000960c8                Time::deltaTime
+                0x00000000000960d0                Time::deltaSpan
+                0x00000000000960d8                Time::prevTime
+ .bss           0x00000000000960e0        0x0 HackModelHolder.o
+ .bss           0x00000000000960e0        0x0 SocketBase.o
+ .bss           0x00000000000960e0        0x4 SocketClient.o
+ .bss           0x00000000000960e4        0x4 captureSync.o
+ .bss           0x00000000000960e8        0x8 logger.o
+                0x00000000000960e8                Logger::sInstance
+ .bss           0x00000000000960f0        0x4 HideAndSeekIcon.o
+ .bss           0x00000000000960f4        0x0 NameTag.o
+ .bss           0x00000000000960f4        0x0 StageSceneStatePauseMenu.o
+ .bss           0x00000000000960f4        0x4 StageSceneStateServerConfig.o
+ .bss           0x00000000000960f8        0x0 CameraPoserCustom.o
+ .bss           0x00000000000960f8        0x0 ProjectCameraPoserFactory.o
+ .bss           0x00000000000960f8        0x0 Factory.o
+ .bss           0x00000000000960f8        0x4 Keyboard.o
+ *fill*         0x00000000000960fc        0x4 
+ .bss           0x0000000000096100        0x8 debugMenu.o
+                0x0000000000096100                gTextWriter
+ .bss           0x0000000000096108        0x0 helpers.o
+ .bss           0x0000000000096108        0xc hooks.o
+                0x0000000000096108                sceneStateServerConfig
+ *fill*         0x0000000000096114        0x4 
+ .bss           0x0000000000096118       0x2c main.o
+                0x0000000000096130                initInfo
+                0x0000000000096138                debugCaptureIndex
+                0x000000000009613c                debugPuppetIndex
+ *fill*         0x0000000000096144        0x4 
+ .bss           0x0000000000096148       0xd0 module.o
+                0x0000000000096148                __nx_module_runtime
+ .bss           0x0000000000096218        0x0 ExecuteTables.o
+ .bss           0x0000000000096218        0x0 svc.o
+ .bss           0x0000000000096218        0x0 crt0.o
+ *(COMMON)
+                0x0000000000096218                . = ALIGN (0x8)
+                0x0000000000096218                __bss_end__ = .
+                0x0000000000097000                . = ALIGN (0x1000)
+ *fill*         0x0000000000096218      0xde8 
+                0x0000000000097000                __end__ = ABSOLUTE (.)
+                0x0000000000097000                __argdata__ = .
+
+.dynbss         0x0000000000097000        0x0
+ .dynbss        0x0000000000097000        0x0 seadCalendarTime.o
 
 /DISCARD/
  *(.interp)
@@ -3388,7 +3388,7 @@ LOAD crt0.o
 OUTPUT(/mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/Mod100.elf elf64-littleaarch64)
 LOAD linker stubs
 
-.debug_info     0x0000000000000000   0x1ff63a
+.debug_info     0x0000000000000000   0x1fff40
  .debug_info    0x0000000000000000     0x3031 seadCalendarTime.o
  .debug_info    0x0000000000003031     0x17b3 seadDateSpan.o
  .debug_info    0x00000000000047e4     0x3638 seadDateTime.o
@@ -3403,33 +3403,33 @@ LOAD linker stubs
  .debug_info    0x000000000005e0fb    0x19cf6 PuppetMain.o
  .debug_info    0x0000000000077df1     0x4040 GameModeTimer.o
  .debug_info    0x000000000007be31    0x148d8 HideAndSeekConfigMenu.o
- .debug_info    0x0000000000090709    0x1aa93 HideAndSeekMode.o
- .debug_info    0x00000000000ab19c    0x148a4 GameModeManager.o
- .debug_info    0x00000000000bfa40     0x9a2a GravityModifier.o
- .debug_info    0x00000000000c946a     0x9104 NoCapModifier.o
- .debug_info    0x00000000000d256e    0x2a5d6 Client.o
- .debug_info    0x00000000000fcb44     0x124e DeltaTime.o
- .debug_info    0x00000000000fdd92     0x635a HackModelHolder.o
- .debug_info    0x00000000001040ec     0x27dc SocketBase.o
- .debug_info    0x00000000001068c8    0x1910b SocketClient.o
- .debug_info    0x000000000011f9d3    0x1ac0a captureSync.o
- .debug_info    0x000000000013a5dd     0x69d4 logger.o
- .debug_info    0x0000000000140fb1    0x1b886 HideAndSeekIcon.o
- .debug_info    0x000000000015c837     0xf887 NameTag.o
- .debug_info    0x000000000016c0be     0x31fb StageSceneStatePauseMenu.o
- .debug_info    0x000000000016f2b9    0x1b0ab StageSceneStateServerConfig.o
- .debug_info    0x000000000018a364     0x85fb CameraPoserCustom.o
- .debug_info    0x000000000019295f     0x2a43 ProjectCameraPoserFactory.o
- .debug_info    0x00000000001953a2     0xbb11 Factory.o
- .debug_info    0x00000000001a0eb3     0x563a Keyboard.o
- .debug_info    0x00000000001a64ed     0x657c debugMenu.o
- .debug_info    0x00000000001aca69    0x115a8 helpers.o
- .debug_info    0x00000000001be011    0x1b7a8 hooks.o
- .debug_info    0x00000000001d97b9    0x240b4 main.o
- .debug_info    0x00000000001fd86d       0xb0 module.o
- .debug_info    0x00000000001fd91d     0x1ccd ExecuteTables.o
- .debug_info    0x00000000001ff5ea       0x28 svc.o
- .debug_info    0x00000000001ff612       0x28 crt0.o
+ .debug_info    0x0000000000090709    0x1ab33 HideAndSeekMode.o
+ .debug_info    0x00000000000ab23c    0x148a4 GameModeManager.o
+ .debug_info    0x00000000000bfae0     0x9a2a GravityModifier.o
+ .debug_info    0x00000000000c950a     0x9104 NoCapModifier.o
+ .debug_info    0x00000000000d260e    0x2a676 Client.o
+ .debug_info    0x00000000000fcc84     0x124e DeltaTime.o
+ .debug_info    0x00000000000fded2     0x635a HackModelHolder.o
+ .debug_info    0x000000000010422c     0x27dc SocketBase.o
+ .debug_info    0x0000000000106a08    0x1910b SocketClient.o
+ .debug_info    0x000000000011fb13    0x1ac0a captureSync.o
+ .debug_info    0x000000000013a71d     0x69d4 logger.o
+ .debug_info    0x00000000001410f1    0x1b886 HideAndSeekIcon.o
+ .debug_info    0x000000000015c977     0xf887 NameTag.o
+ .debug_info    0x000000000016c1fe     0x31fb StageSceneStatePauseMenu.o
+ .debug_info    0x000000000016f3f9    0x1b0ab StageSceneStateServerConfig.o
+ .debug_info    0x000000000018a4a4     0x85fb CameraPoserCustom.o
+ .debug_info    0x0000000000192a9f     0x2a43 ProjectCameraPoserFactory.o
+ .debug_info    0x00000000001954e2     0xbb11 Factory.o
+ .debug_info    0x00000000001a0ff3     0x563a Keyboard.o
+ .debug_info    0x00000000001a662d     0x657c debugMenu.o
+ .debug_info    0x00000000001acba9    0x11648 helpers.o
+ .debug_info    0x00000000001be1f1    0x1b7a8 hooks.o
+ .debug_info    0x00000000001d9999    0x247da main.o
+ .debug_info    0x00000000001fe173       0xb0 module.o
+ .debug_info    0x00000000001fe223     0x1ccd ExecuteTables.o
+ .debug_info    0x00000000001ffef0       0x28 svc.o
+ .debug_info    0x00000000001fff18       0x28 crt0.o
 
 .debug_abbrev   0x0000000000000000    0x1c0e2
  .debug_abbrev  0x0000000000000000      0x76e seadCalendarTime.o
@@ -3475,7 +3475,7 @@ LOAD linker stubs
  .debug_abbrev  0x000000000001c0ce       0x14 crt0.o
 
 .debug_loclists
-                0x0000000000000000    0x19b92
+                0x0000000000000000    0x19cbb
  .debug_loclists
                 0x0000000000000000      0x6ff seadCalendarTime.o
  .debug_loclists
@@ -3519,35 +3519,35 @@ LOAD linker stubs
  .debug_loclists
                 0x00000000000117f1      0x1f8 SocketBase.o
  .debug_loclists
-                0x00000000000119e9     0x1aae SocketClient.o
+                0x00000000000119e9     0x1a8e SocketClient.o
  .debug_loclists
-                0x0000000000013497      0x6ea captureSync.o
+                0x0000000000013477      0x6ea captureSync.o
  .debug_loclists
-                0x0000000000013b81      0x242 logger.o
+                0x0000000000013b61      0x242 logger.o
  .debug_loclists
-                0x0000000000013dc3      0x698 HideAndSeekIcon.o
+                0x0000000000013da3      0x698 HideAndSeekIcon.o
  .debug_loclists
-                0x000000000001445b      0x8ff NameTag.o
+                0x000000000001443b      0x8f6 NameTag.o
  .debug_loclists
-                0x0000000000014d5a       0x9f StageSceneStatePauseMenu.o
+                0x0000000000014d31       0x9f StageSceneStatePauseMenu.o
  .debug_loclists
-                0x0000000000014df9     0x1456 StageSceneStateServerConfig.o
+                0x0000000000014dd0     0x1456 StageSceneStateServerConfig.o
  .debug_loclists
-                0x000000000001624f      0xb1b CameraPoserCustom.o
+                0x0000000000016226      0xb1b CameraPoserCustom.o
  .debug_loclists
-                0x0000000000016d6a       0x88 ProjectCameraPoserFactory.o
+                0x0000000000016d41       0x88 ProjectCameraPoserFactory.o
  .debug_loclists
-                0x0000000000016df2       0xaf Factory.o
+                0x0000000000016dc9       0xaf Factory.o
  .debug_loclists
-                0x0000000000016ea1      0x86e Keyboard.o
+                0x0000000000016e78      0x86e Keyboard.o
  .debug_loclists
-                0x000000000001770f      0x3f8 debugMenu.o
+                0x00000000000176e6      0x3f8 debugMenu.o
  .debug_loclists
-                0x0000000000017b07      0xc55 helpers.o
+                0x0000000000017ade      0xc55 helpers.o
  .debug_loclists
-                0x000000000001875c      0x766 hooks.o
+                0x0000000000018733      0x766 hooks.o
  .debug_loclists
-                0x0000000000018ec2      0xcd0 main.o
+                0x0000000000018e99      0xe22 main.o
 
 .debug_aranges  0x0000000000000000     0x2fe0
  .debug_aranges
@@ -3634,7 +3634,7 @@ LOAD linker stubs
                 0x0000000000002fb0       0x30 crt0.o
 
 .debug_rnglists
-                0x0000000000000000     0x60d8
+                0x0000000000000000     0x619d
  .debug_rnglists
                 0x0000000000000000      0x125 seadCalendarTime.o
  .debug_rnglists
@@ -3706,9 +3706,9 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000000000005c84      0x169 hooks.o
  .debug_rnglists
-                0x0000000000005ded      0x2eb main.o
+                0x0000000000005ded      0x3b0 main.o
 
-.debug_line     0x0000000000000000    0x1e008
+.debug_line     0x0000000000000000    0x1e3bb
  .debug_line    0x0000000000000000      0x7e6 seadCalendarTime.o
  .debug_line    0x00000000000007e6      0x265 seadDateSpan.o
  .debug_line    0x0000000000000a4b      0xaed seadDateTime.o
@@ -3745,55 +3745,55 @@ LOAD linker stubs
  .debug_line    0x000000000001abfa      0x51c debugMenu.o
  .debug_line    0x000000000001b116      0xa75 helpers.o
  .debug_line    0x000000000001bb8b      0xbce hooks.o
- .debug_line    0x000000000001c759     0x1687 main.o
- .debug_line    0x000000000001dde0       0x3a module.o
- .debug_line    0x000000000001de1a      0x155 ExecuteTables.o
- .debug_line    0x000000000001df6f       0x4e svc.o
- .debug_line    0x000000000001dfbd       0x4b crt0.o
+ .debug_line    0x000000000001c759     0x1a3a main.o
+ .debug_line    0x000000000001e193       0x3a module.o
+ .debug_line    0x000000000001e1cd      0x155 ExecuteTables.o
+ .debug_line    0x000000000001e322       0x4e svc.o
+ .debug_line    0x000000000001e370       0x4b crt0.o
 
-.debug_str      0x0000000000000000    0x493c6
- .debug_str     0x0000000000000000    0x493c6 seadCalendarTime.o
+.debug_str      0x0000000000000000    0x49632
+ .debug_str     0x0000000000000000    0x49632 seadCalendarTime.o
                                        0x21f9 (size before relaxing)
- .debug_str     0x00000000000493c6      0xe54 seadDateSpan.o
- .debug_str     0x00000000000493c6     0x2074 seadDateTime.o
- .debug_str     0x00000000000493c6     0x22e4 seadDateTimeUtc.o
- .debug_str     0x00000000000493c6     0x38ae seadDateUtil.o
- .debug_str     0x00000000000493c6      0x6c9 seadTickSpan.o
- .debug_str     0x00000000000493c6      0x9d5 seadNew.o
- .debug_str     0x00000000000493c6    0x19c17 PuppetActor.o
- .debug_str     0x00000000000493c6    0x101af PuppetCapActor.o
- .debug_str     0x00000000000493c6     0xf130 PuppetHackActor.o
- .debug_str     0x00000000000493c6     0xb53e PuppetHolder.o
- .debug_str     0x00000000000493c6    0x22f2d PuppetMain.o
- .debug_str     0x00000000000493c6     0x1dae GameModeTimer.o
- .debug_str     0x00000000000493c6    0x13600 HideAndSeekConfigMenu.o
- .debug_str     0x00000000000493c6    0x1aa38 HideAndSeekMode.o
- .debug_str     0x00000000000493c6    0x128ba GameModeManager.o
- .debug_str     0x00000000000493c6     0x718a GravityModifier.o
- .debug_str     0x00000000000493c6     0x529b NoCapModifier.o
- .debug_str     0x00000000000493c6    0x21ef4 Client.o
- .debug_str     0x00000000000493c6      0xc72 DeltaTime.o
- .debug_str     0x00000000000493c6     0x35aa HackModelHolder.o
- .debug_str     0x00000000000493c6     0x1214 SocketBase.o
- .debug_str     0x00000000000493c6    0x15947 SocketClient.o
- .debug_str     0x00000000000493c6    0x23884 captureSync.o
- .debug_str     0x00000000000493c6     0x394c logger.o
- .debug_str     0x00000000000493c6    0x23d8e HideAndSeekIcon.o
- .debug_str     0x00000000000493c6     0xcb8e NameTag.o
- .debug_str     0x00000000000493c6     0x1cb6 StageSceneStatePauseMenu.o
- .debug_str     0x00000000000493c6    0x19289 StageSceneStateServerConfig.o
- .debug_str     0x00000000000493c6     0x5d42 CameraPoserCustom.o
- .debug_str     0x00000000000493c6     0x2074 ProjectCameraPoserFactory.o
- .debug_str     0x00000000000493c6    0x12697 Factory.o
- .debug_str     0x00000000000493c6     0x3e24 Keyboard.o
- .debug_str     0x00000000000493c6     0x4e28 debugMenu.o
- .debug_str     0x00000000000493c6    0x12811 helpers.o
- .debug_str     0x00000000000493c6    0x24695 hooks.o
- .debug_str     0x00000000000493c6    0x30649 main.o
- .debug_str     0x00000000000493c6      0x158 module.o
- .debug_str     0x00000000000493c6      0xcb2 ExecuteTables.o
- .debug_str     0x00000000000493c6       0xa9 svc.o
- .debug_str     0x00000000000493c6       0xa7 crt0.o
+ .debug_str     0x0000000000049632      0xe54 seadDateSpan.o
+ .debug_str     0x0000000000049632     0x2074 seadDateTime.o
+ .debug_str     0x0000000000049632     0x22e4 seadDateTimeUtc.o
+ .debug_str     0x0000000000049632     0x38ae seadDateUtil.o
+ .debug_str     0x0000000000049632      0x6c9 seadTickSpan.o
+ .debug_str     0x0000000000049632      0x9d5 seadNew.o
+ .debug_str     0x0000000000049632    0x19c17 PuppetActor.o
+ .debug_str     0x0000000000049632    0x101af PuppetCapActor.o
+ .debug_str     0x0000000000049632     0xf130 PuppetHackActor.o
+ .debug_str     0x0000000000049632     0xb53e PuppetHolder.o
+ .debug_str     0x0000000000049632    0x22f2d PuppetMain.o
+ .debug_str     0x0000000000049632     0x1dae GameModeTimer.o
+ .debug_str     0x0000000000049632    0x13600 HideAndSeekConfigMenu.o
+ .debug_str     0x0000000000049632    0x1aca4 HideAndSeekMode.o
+ .debug_str     0x0000000000049632    0x128ba GameModeManager.o
+ .debug_str     0x0000000000049632     0x718a GravityModifier.o
+ .debug_str     0x0000000000049632     0x529b NoCapModifier.o
+ .debug_str     0x0000000000049632    0x22160 Client.o
+ .debug_str     0x0000000000049632      0xc72 DeltaTime.o
+ .debug_str     0x0000000000049632     0x35aa HackModelHolder.o
+ .debug_str     0x0000000000049632     0x1214 SocketBase.o
+ .debug_str     0x0000000000049632    0x15947 SocketClient.o
+ .debug_str     0x0000000000049632    0x23884 captureSync.o
+ .debug_str     0x0000000000049632     0x394c logger.o
+ .debug_str     0x0000000000049632    0x23d8e HideAndSeekIcon.o
+ .debug_str     0x0000000000049632     0xcb8e NameTag.o
+ .debug_str     0x0000000000049632     0x1cb6 StageSceneStatePauseMenu.o
+ .debug_str     0x0000000000049632    0x19289 StageSceneStateServerConfig.o
+ .debug_str     0x0000000000049632     0x5d42 CameraPoserCustom.o
+ .debug_str     0x0000000000049632     0x2074 ProjectCameraPoserFactory.o
+ .debug_str     0x0000000000049632    0x12697 Factory.o
+ .debug_str     0x0000000000049632     0x3e24 Keyboard.o
+ .debug_str     0x0000000000049632     0x4e28 debugMenu.o
+ .debug_str     0x0000000000049632    0x12a7d helpers.o
+ .debug_str     0x0000000000049632    0x24695 hooks.o
+ .debug_str     0x0000000000049632    0x308bc main.o
+ .debug_str     0x0000000000049632      0x158 module.o
+ .debug_str     0x0000000000049632      0xcb2 ExecuteTables.o
+ .debug_str     0x0000000000049632       0xa9 svc.o
+ .debug_str     0x0000000000049632       0xa7 crt0.o
 
 .debug_line_str
                 0x0000000000000000     0x3f82
@@ -3923,7 +3923,7 @@ LOAD linker stubs
  .comment       0x0000000000000023       0x24 module.o
  .comment       0x0000000000000023       0x24 ExecuteTables.o
 
-.debug_frame    0x0000000000000000     0x67e8
+.debug_frame    0x0000000000000000     0x6830
  .debug_frame   0x0000000000000000      0x2c0 seadCalendarTime.o
  .debug_frame   0x00000000000002c0       0xb8 seadDateSpan.o
  .debug_frame   0x0000000000000378      0x240 seadDateTime.o
@@ -3959,4 +3959,4 @@ LOAD linker stubs
  .debug_frame   0x0000000000005e30       0xe0 debugMenu.o
  .debug_frame   0x0000000000005f10      0x298 helpers.o
  .debug_frame   0x00000000000061a8      0x350 hooks.o
- .debug_frame   0x00000000000064f8      0x2f0 main.o
+ .debug_frame   0x00000000000064f8      0x338 main.o
