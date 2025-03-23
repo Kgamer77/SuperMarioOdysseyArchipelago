@@ -46,7 +46,6 @@ public class Settings {
     public BanListTable BanList { get; set; } = new BanListTable();
     public DiscordTable Discord { get; set; } = new DiscordTable();
     public ShineTable Shines { get; set; } = new ShineTable();
-    public PersistShinesTable PersistShines { get; set; } = new PersistShinesTable();
     public ArchipelagoTable Archipelago { get; set; } = new ArchipelagoTable();
 
     public class ServerTable {
@@ -83,18 +82,13 @@ public class Settings {
         public bool Enabled { get; set; } = true;
     }
 
-    public class PersistShinesTable
-    {
-        public bool Enabled { get; set; } = false;
-        public string Filename { get; set; } = "./moons.json";
-    }
-
     public class ArchipelagoTable
     {
         public string Server { get; set; } = "localhost";
         public ushort Port { get; set; } = 38281;
         public string Slot { get; set; } = "Super Mario Odyssey";
         public string Password { get; set; } = "";
+        public string FillerIndexes { get; set; } = "./recievedIndexes.json";
 
     }
 }

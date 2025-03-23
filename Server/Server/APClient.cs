@@ -148,12 +148,15 @@ namespace Server
             {"Mario64MetalCap", 2620},
             {"Mario64MetalClothes", 2621},
             {"MarioKingCap", 2622},
-            {"MarioKingClothes", 2623}
-
+            {"MarioKingClothes", 2623},
+            {"Tuxedo Cap", 2624},
+            {"Tuxedo Clothes", 2625}
         };
         
         public static readonly Dictionary<int, string> inverseShopItems = new Dictionary<int, string>()
         {
+            {2502, "MarioInvisibleCap"},
+            {2503 , "MarioCaptainCap"},
             {2504 , "MarioTailCoatCap"},
             {2505 , "MarioTailCoatClothes"},
             {2506 , "StickerCap"},
@@ -273,7 +276,9 @@ namespace Server
             {2620 , "Mario64MetalCap"},
             {2621 , "Mario64MetalClothes"},
             {2622 , "MarioKingCap"},
-            {2623 , "MarioKingClothes"}
+            {2623 , "MarioKingClothes"},
+            {2624 , "MarioTuxedoCap"},
+            {2625 , "MarioTuxedoClothes"}
         };
 
 
@@ -309,7 +314,8 @@ namespace Server
                 Console.WriteLine(errorMessage);
                 // Did not connect, show the user the contents of `errorMessage`
             }
-            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
+            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server
+            // and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
        }
 
 

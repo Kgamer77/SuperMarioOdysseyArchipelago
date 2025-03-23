@@ -8,11 +8,15 @@ using Shared;
 using Shared.Packet.Packets;
 using Timer = System.Timers.Timer;
 using Open.Nat;
+using Archipelago.MultiClient.Net;
+using System.Reflection;
 
 Server.Server server = new Server.Server();
 Server.APClient apClient = new Server.APClient();
 HashSet<int> shineBag = new HashSet<int>();
 HashSet<int> outfitBag = new HashSet<int>();
+HashSet<int> fillerIndex = new HashSet<int>();
+Dictionary<int, int> IndexToFiller = new Dictionary<int, int>();
 CancellationTokenSource cts = new CancellationTokenSource();
 bool restartRequested = false;
 Logger consoleLogger = new Logger("Console");
@@ -47,11 +51,92 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 904 , false },
             { 907 , false },
             { 913 , false },
-            { 50 , false }
+            { 50 , false },
+            { 578 , false },
+            { 714 , false },
+            { 877 , false },
+            { 878 , false },
+            { 533 , false },
+            { 712 , false },
+            { 498 , false },
+            { 457 , false },
+            { 580 , false },
+            { 874 , false },
+            { 474 , false },
+            { 973 , false },
+            { 409 , false },
+            { 1001 , false },
+            { 943 , false },
+            { 941 , false },
+            { 230 , false },
+            { 211 , false },
+            { 565 , false },
+            { 430 , false },
+            { 138 , false },
+            { 398 , false },
+            { 101 , false },
+            { 460 , false },
+            { 868 , false },
+            { 294 , false },
+            { 360 , false },
+            { 1157 , false },
+            { 933 , false },
+            { 209 , false },
+            { 544 , false },
+            { 408 , false },
+            { 155 , false },
+            { 1118 , false },
+            { 394 , false },
+            { 75 , false },
+            { 477 , false },
+            { 19 , false },
+            { 268 , false },
+            { 1117 , false },
+            { 338 , false },
+            { 581 , false },
+            { 1119 , false },
+            { 539 , false }
         };
+
+async Task PersistIndexes()
+{
+    try
+    {
+        string fillerJson = JsonSerializer.Serialize(fillerIndex);
+        await File.WriteAllTextAsync(Settings.Instance.Archipelago.FillerIndexes, fillerJson);
+    }
+    catch (Exception ex)
+    {
+        consoleLogger.Error(ex);
+    }
+}
+
+async Task LoadFiller()
+{
+    Settings.Instance.Archipelago.FillerIndexes = "recievedIndexes" + apClient.session.RoomState.Seed + ".json";
+    Settings.SaveSettings();
+    try
+    {
+        
+        string fillerJson = await File.ReadAllTextAsync(Settings.Instance.Archipelago.FillerIndexes);
+        var loadedIndexes = JsonSerializer.Deserialize<HashSet<int>>(fillerJson);
+
+        if (loadedIndexes is not null) fillerIndex = loadedIndexes;
+    }
+    catch (FileNotFoundException)
+    {
+        await PersistIndexes();
+    }
+    catch (Exception ex)
+    {
+        consoleLogger.Error(ex);
+    }
+}
 
 server.ClientJoined += (c, _) => {
     c.Metadata["shineSync"] = new ConcurrentBag<int>();
+    c.Metadata["itemSync"] = new ConcurrentBag<int>();
+    c.Metadata["fillerSync"] = new ConcurrentBag<int>();
     c.Metadata["loadedSave"] = false;
     c.Metadata["scenario"] = (byte?) 0;
     c.Metadata["2d"] = false;
@@ -87,7 +172,9 @@ async Task ClientSyncItem(Client client)
 {
     try
     {
-        foreach (int item in outfitBag.ToArray())
+        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["itemSync"] ??= new ConcurrentBag<int>());
+
+        foreach (int item in outfitBag.Except(clientBag).ToArray())
         {
             string s = APClient.inverseShopItems[item];
             int incomingType = 0;
@@ -122,6 +209,7 @@ async Task ClientSyncItem(Client client)
                 name = s,
                 itemType = incomingType
             });
+            clientBag.Add(item);
         }
     }
     catch
@@ -134,8 +222,43 @@ async void SyncItem()
 {
     try
     {
-
         await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncItem(client));
+    }
+    catch
+    {
+        // errors that can happen shines change will crash the server :)
+    }
+}
+
+async Task ClientSyncFillerItem(Client client)
+{
+    try
+    {
+        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["fillerSync"] ??= new ConcurrentBag<int>());
+
+        foreach (int item in fillerIndex.Except(clientBag).ToArray())
+        {
+            if (!client.Connected) return;
+            await client.Send(new FillerPacket
+            {
+                itemType = IndexToFiller[item] - 9990
+            });
+            clientBag.Add(item);
+        }
+        
+    }
+    catch
+    {
+        // errors that can happen when sending will crash the server :)
+    }
+}
+
+async void SyncFillerItem()
+{
+    try
+    {
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
+        await PersistIndexes();
     }
     catch
     {
@@ -696,16 +819,29 @@ CommandHandler.RegisterCommand("restartserver", args =>
 });
 CommandHandler.RegisterCommand("reconnect", args =>
 {
-    if (args.Length != 0)
-    {
-        return "Usage: reconnect (no arguments)";
-    }
-    else
+    const string optionUsage = "Valid options: (no arguments), <slot>, <slot> <password>";
+    // Make this a switch-case later
+    if (args.Length == 0)
     {
         connectAP();
-
         return "Attempting to reconnect to Archipelago";
     }
+    else if (args.Length == 1)
+    {
+        Settings.Instance.Archipelago.Slot = args[0];
+        Settings.SaveSettings();
+        connectAP();
+        return $"Attempting to reconnect to Archipelago as slot {args[0]}";
+    }
+    else if (args.Length == 2)
+    {
+        Settings.Instance.Archipelago.Slot = args[0];
+        Settings.Instance.Archipelago.Password = args[1];
+        Settings.SaveSettings();
+        connectAP();
+        return $"Attempting to reconnect to Archipelago as slot {args[0]}";
+    }
+    return optionUsage;
 });
 
 
@@ -762,27 +898,48 @@ void connectAP()
 
         var itemReceivedName = receivedItemsHelper.PeekItem();
         consoleLogger.Info($"Received {itemReceivedName.ItemName} ID {itemReceivedName.ItemId}");
-        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId < 2500)
+        if (itemReceivedName.ItemGame == "Super Mario Odyssey")
         {
-            if (giftMoons.ContainsKey((int)itemReceivedName.ItemId))
+            if (itemReceivedName.ItemId < 2500)
             {
-                giftMoons[(int)itemReceivedName.ItemId] = true;
-                receivedItemsHelper.DequeueItem();
-                return;
+                if (giftMoons.ContainsKey((int)itemReceivedName.ItemId))
+                {
+                    giftMoons[(int)itemReceivedName.ItemId] = true;
+                    receivedItemsHelper.DequeueItem();
+                    return;
+                }
+                shineBag.Add((int)itemReceivedName.ItemId);
             }
-            shineBag.Add((int)itemReceivedName.ItemId);
+            SyncShineBag();
+            if (itemReceivedName.ItemId == 2500)
+                apClient.session.SetGoalAchieved();
+            if (itemReceivedName.ItemId >= 2502 && itemReceivedName.ItemId < 9990)
+            {
+                outfitBag.Add((int)itemReceivedName.ItemId);
+            }
+            SyncItem();
+            if (itemReceivedName.ItemId >= 9990)
+            {
+                if (!fillerIndex.Contains(receivedItemsHelper.Index))
+                {
+                    fillerIndex.Add(receivedItemsHelper.Index);
+                    IndexToFiller.Add(receivedItemsHelper.Index, (int)itemReceivedName.ItemId);
+                }
+            }
+            SyncFillerItem();
+
         }
-        SyncShineBag();
-        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId == 2500)
-            apClient.session.SetGoalAchieved();
-        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId >= 2502)
-        {
-            outfitBag.Add((int)itemReceivedName.ItemId);
-        }
-        SyncItem();
         receivedItemsHelper.DequeueItem();
+
     };
-    consoleLogger.Info($"Attempting to connect to Archipelago. {apClient.result}");
+    if ($"{apClient.result}" == "")
+    {
+        Task.Run(LoadFiller);
+        consoleLogger.Info($"Successfully Connected to slot {Settings.Instance.Archipelago.Slot}");
+    }
+    else
+        consoleLogger.Info($"Attempting to connect to Archipelago. {apClient.result}");
+
 
 }
 
