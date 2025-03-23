@@ -192,6 +192,7 @@ class Client {
         void updateCostumeInfo(CostumeInf *packet);
         void updateShineInfo(ShineCollect *packet);
         void updateItems(ItemCollect *packet);
+        void updateFiller(FillerCollect *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);

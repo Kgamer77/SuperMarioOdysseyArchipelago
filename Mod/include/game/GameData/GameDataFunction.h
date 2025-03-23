@@ -77,7 +77,10 @@ public:
 
     // Gets Index for X Kingdom
     static s32 getWorldIndexWaterfall(void);
+    static s32 getWorldIndexClash(void);
+    static s32 getWorldIndexSky(void); 
     static s32 getWorldIndexMoon(void);
+    static s32 getWorldIndexBoss(void);
 
     // gets the current level of the Odyssey
     static int getHomeLevel(GameDataHolderAccessor);
@@ -113,6 +116,8 @@ public:
     // checks if odyssey is/needs a repair
     static bool isRepairHome(GameDataHolderAccessor);
     static void repairHome(GameDataHolderWriter);
+    static bool isRepairHomeByCrashedBoss(GameDataHolderAccessor);
+    static void repairHomeByCrashedBoss(GameDataHolderWriter);
 
     // checks if odyssey is crashed
     static bool isCrashHome(GameDataHolderAccessor);
@@ -145,6 +150,9 @@ public:
 
     // gets the value stored in the unique obj info that matches placement id and curstage
     static bool tryFindSaveObjS32Value(int *value, GameDataHolderAccessor accessor, al::PlacementId const* objId);
+
+    // adds the supplied int value to the current coin count
+    static void addCoin(GameDataHolderWriter, int value);
 
     // subtracts the supplied int value from the current coin count
     static void subCoin(GameDataHolderWriter, int value);

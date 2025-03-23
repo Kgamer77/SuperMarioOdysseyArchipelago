@@ -365,6 +365,9 @@ void Client::readFunc() {
             case PacketType::ITEMCOLL:
                 updateItems((ItemCollect*)curPacket);
                 break;
+            case PacketType::FILLERCOLL:
+                updateFiller((FillerCollect*)curPacket);
+                break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
                 curPacket->mUserID.print();
@@ -598,6 +601,35 @@ void Client::sendGameInfPacket(GameDataHolderAccessor holder) {
     packet->scenarioNo = holder.mData->mGameDataFile->getScenarioNo();
 
     strcpy(packet->stageName, GameDataFunction::getCurrentStageName(holder));
+
+    if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") == 0) {
+        int ruinedCount = 0;
+        if (!GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), 0)) {
+            for (int i = 1; i < 9; i++) {
+                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), i))
+                    ruinedCount++;
+            }
+        } else
+            ruinedCount = 3;
+        if (holder.mData->mGameDataFile->getScenarioNo() == 2 && ruinedCount < 3) {
+            GameDataFunction::repairHome(holder);
+        }
+        if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
+            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
+    }
+
+    if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
+        int lostCount = 0;
+        for (int i = 1; i < 25; i++) {
+            if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(), i))
+                lostCount++;
+        }
+        if (lostCount < 10) {
+            GameDataFunction::repairHome(holder);
+            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
+        } else
+            GameDataFunction::crashHome(holder);
+    }
 
     if (*packet != sInstance->emptyGameInfPacket) {
         sInstance->lastGameInfPacket = *packet;
@@ -1337,6 +1369,50 @@ void Client::updateItems(ItemCollect *packet) {
         }
 
 }
+
+/**
+ * @brief
+ *
+ */
+void Client::updateFiller(FillerCollect* packet) {
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+
+    switch (packet->type) {
+    case 4:
+        GameDataFunction::addCoin(accessor, 50);
+        break;
+    case 5:
+        GameDataFunction::addCoin(accessor, 100);
+        break;
+    case 6:
+        GameDataFunction::addCoin(accessor, 250);
+        break;
+    case 7:
+        GameDataFunction::addCoin(accessor, 500);
+        break;
+    case 8:
+        GameDataFunction::addCoin(accessor, 1000);
+        break;
+    case 9:
+        struct ShopItem::ShopItemInfo amiiboData = {1, 1};
+        struct ShopItem::ShopItemInfo* amiibo = &amiiboData;
+        struct ShopItem::ItemInfo info = {1, {}, (ShopItem::ItemType)0, 1, amiibo, true};
+        strcpy(info.mName, "LifeUpItem");
+        info.mType = (ShopItem::ItemType)(4);
+        struct ShopItem::ItemInfo* infoPtr = &info;
+        accessor.mData->mGameDataFile->buyItem(infoPtr, false);
+        break;
+
+    }
+
+}
+
+
 
 /**
  * @brief 

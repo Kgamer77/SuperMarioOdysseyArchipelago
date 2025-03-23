@@ -280,7 +280,6 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
 
     GameDataFile::HintInfo* curHintInfo =
     &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
-    
     Client::sendShineCollectPacket(curHintInfo->mUniqueID);
 }
 
