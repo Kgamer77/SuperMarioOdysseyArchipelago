@@ -9,12 +9,14 @@ using Shared.Packet.Packets;
 using Timer = System.Timers.Timer;
 using Open.Nat;
 using Archipelago.MultiClient.Net;
+using System.Reflection;
 
 Server.Server server = new Server.Server();
 Server.APClient apClient = new Server.APClient();
 HashSet<int> shineBag = new HashSet<int>();
 HashSet<int> outfitBag = new HashSet<int>();
 HashSet<int> fillerIndex = new HashSet<int>();
+Dictionary<int, int> IndexToFiller = new Dictionary<int, int>();
 CancellationTokenSource cts = new CancellationTokenSource();
 bool restartRequested = false;
 Logger consoleLogger = new Logger("Console");
@@ -92,7 +94,8 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 1117 , false },
             { 338 , false },
             { 581 , false },
-            { 1119 , false }
+            { 1119 , false },
+            { 539 , false }
         };
 
 async Task PersistIndexes()
@@ -133,6 +136,7 @@ async Task LoadFiller()
 server.ClientJoined += (c, _) => {
     c.Metadata["shineSync"] = new ConcurrentBag<int>();
     c.Metadata["itemSync"] = new ConcurrentBag<int>();
+    c.Metadata["fillerSync"] = new ConcurrentBag<int>();
     c.Metadata["loadedSave"] = false;
     c.Metadata["scenario"] = (byte?) 0;
     c.Metadata["2d"] = false;
@@ -226,16 +230,21 @@ async void SyncItem()
     }
 }
 
-async Task ClientSyncFillerItem(Client client, int fillerItemID)
+async Task ClientSyncFillerItem(Client client)
 {
     try
     {
-        if (!client.Connected) return;
+        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["fillerSync"] ??= new ConcurrentBag<int>());
 
-        await client.Send(new FillerPacket
+        foreach (int item in fillerIndex.Except(clientBag).ToArray())
         {
-            itemType = fillerItemID - 9990
-        });
+            if (!client.Connected) return;
+            await client.Send(new FillerPacket
+            {
+                itemType = IndexToFiller[item] - 9990
+            });
+            clientBag.Add(item);
+        }
         
     }
     catch
@@ -244,11 +253,11 @@ async Task ClientSyncFillerItem(Client client, int fillerItemID)
     }
 }
 
-async void SyncFillerItem(int fillerItemID)
+async void SyncFillerItem()
 {
     try
     {
-        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client, fillerItemID));
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
         await PersistIndexes();
     }
     catch
@@ -914,9 +923,11 @@ void connectAP()
                 if (!fillerIndex.Contains(receivedItemsHelper.Index))
                 {
                     fillerIndex.Add(receivedItemsHelper.Index);
-                    SyncFillerItem((int)itemReceivedName.ItemId);
+                    IndexToFiller.Add(receivedItemsHelper.Index, (int)itemReceivedName.ItemId);
                 }
             }
+            SyncFillerItem();
+
         }
         receivedItemsHelper.DequeueItem();
 
