@@ -377,7 +377,15 @@ server.PacketHandler = (c, p) => {
             if (!Settings.Instance.Shines.Enabled) return false;
             if (c.Metadata["loadedSave"] is false) break;
             c.Logger.Info($"Got moon location {shinePacket.ShineId}");
-            apClient.send_location(shinePacket.ShineId);
+            if (shinePacket.ShineId != 1123)
+                apClient.send_location(shinePacket.ShineId);
+            else
+            {
+                object? old = null;
+                c.Metadata.TryGetValue("lastGamePacket", out old);
+                if (old != null)
+                    apClient.send_location(APClient.darkSideHintArts[((GamePacket)old).Stage]);
+            }
                 if (giftMoons.ContainsKey(shinePacket.ShineId))
                     if (giftMoons[shinePacket.ShineId])
                         shineBag.Add(shinePacket.ShineId);

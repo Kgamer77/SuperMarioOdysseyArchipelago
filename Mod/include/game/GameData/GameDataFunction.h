@@ -76,11 +76,21 @@ public:
     static bool isGotShine(GameDataHolderAccessor, const char *stageName, const char *objID);
 
     // Gets Index for X Kingdom
+    static s32 getWorldIndexHat(void);
     static s32 getWorldIndexWaterfall(void);
+    static s32 getWorldIndexSand(void);
+    static s32 getWorldIndexForest(void);
+    static s32 getWorldIndexLake(void);
     static s32 getWorldIndexClash(void);
+    static s32 getWorldIndexCity(void);
+    static s32 getWorldIndexSea(void);
+    static s32 getWorldIndexSnow(void);
+    static s32 getWorldIndexLava(void);
+    static s32 getWorldIndexBoss(void);
     static s32 getWorldIndexSky(void); 
     static s32 getWorldIndexMoon(void);
-    static s32 getWorldIndexBoss(void);
+    static s32 getWorldIndexPeach(void);
+    static s32 getWorldIndexSpecial1(void);
 
     // gets the current level of the Odyssey
     static int getHomeLevel(GameDataHolderAccessor);

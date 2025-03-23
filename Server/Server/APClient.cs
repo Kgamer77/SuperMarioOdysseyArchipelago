@@ -281,7 +281,19 @@ namespace Server
             {2625 , "MarioTuxedoClothes"}
         };
 
-
+        public static readonly Dictionary<string, int> darkSideHintArts = new Dictionary<string, int>()
+        {
+            {"WaterfallWorldHomeStage", 1132},
+            {"CityWorldHomeStage", 1130},
+            {"PeachWorldHomeStage", 1131},
+            {"CloudWorldHomeStage", 1124},
+            {"SnowWorldHomeStage", 1129},
+            {"SeaWorldHomeStage", 1127},
+            {"ClashWorldHomeStage", 1126},
+            {"LavaWorldHomeStage", 1123},
+            {"LakeWorldHomeStage", 1128},
+            {"BossRaidWorldHomeStage", 1125}
+        };
 
         public void Connect(string server, string user, string pass, ushort port)
         {
