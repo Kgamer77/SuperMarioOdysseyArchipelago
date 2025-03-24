@@ -259,6 +259,7 @@ async void SyncFillerItem()
     {
         await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
         await PersistIndexes();
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
     }
     catch
     {
@@ -890,9 +891,13 @@ async void Upnp()
 }
 
 void connectAP()
+async void connectAP()
 {
     apClient = new APClient();
     apClient.Connect(Settings.Instance.Archipelago.Server, Settings.Instance.Archipelago.Slot, Settings.Instance.Archipelago.Password, Settings.Instance.Archipelago.Port);
+    {
+        await LoadFiller();
+    }
     apClient.session.Items.ItemReceived += (receivedItemsHelper) =>
     {
 
@@ -929,18 +934,14 @@ void connectAP()
             SyncFillerItem();
 
         }
+            apClient.session.SetGoalAchieved();
+        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId >= 2502)
+        {
+            outfitBag.Add((int)itemReceivedName.ItemId);
+        }
+        SyncItem();
         receivedItemsHelper.DequeueItem();
-
     };
-    if ($"{apClient.result}" == "")
-    {
-        Task.Run(LoadFiller);
-        consoleLogger.Info($"Successfully Connected to slot {Settings.Instance.Archipelago.Slot}");
-    }
-    else
-        consoleLogger.Info($"Attempting to connect to Archipelago. {apClient.result}");
-
-
 }
 
 Upnp();
