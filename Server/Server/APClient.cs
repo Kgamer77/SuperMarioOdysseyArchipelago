@@ -324,9 +324,10 @@ namespace Server
 
                 Console.WriteLine(errorMessage);
                 // Did not connect, show the user the contents of `errorMessage`
+                return;
             }
-            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server
 
+            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the
             // returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
             Console.WriteLine($"Successfully Connected to {server} as {user}");
             loginSuccessful = (LoginSuccessful)result;

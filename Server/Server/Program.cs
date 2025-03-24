@@ -257,7 +257,6 @@ async void SyncFillerItem()
 {
     try
     {
-        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
         await PersistIndexes();
         await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
     }
@@ -890,11 +889,11 @@ async void Upnp()
 
 }
 
-void connectAP()
 async void connectAP()
 {
     apClient = new APClient();
     apClient.Connect(Settings.Instance.Archipelago.Server, Settings.Instance.Archipelago.Slot, Settings.Instance.Archipelago.Password, Settings.Instance.Archipelago.Port);
+    if (apClient.result.Successful)
     {
         await LoadFiller();
     }
@@ -934,6 +933,8 @@ async void connectAP()
             SyncFillerItem();
 
         }
+        SyncShineBag();
+        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.get_goal())
             apClient.session.SetGoalAchieved();
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId >= 2502)
         {
