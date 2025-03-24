@@ -24,6 +24,7 @@ namespace Server
     {
         public ArchipelagoSession session;
         public LoginResult result;
+        public LoginSuccessful loginSuccessful;
         public ItemInfo lastReceivedItem;
         public static readonly Dictionary<string, int> shopItems = new Dictionary<string, int>()
         {
@@ -295,11 +296,21 @@ namespace Server
             {"BossRaidWorldHomeStage", 1125}
         };
 
+        public static readonly Dictionary<long, string> goals = new Dictionary<long, string>()
+        {
+            {4, "Sand Multi-Moon (2)"},
+            {5, "Lake Multi-Moon"},
+            {9, "Metro Multi-Moon (2)"},
+            {12, "Luncheon Multi-Moon (2)"},
+            {15, "Beat the Game"},
+            {17, "Dark Side Multi-Moon"},
+            {18, "Darker Side Multi-Moon"}
+        };
+
         public void Connect(string server, string user, string pass, ushort port)
         {
             session = ArchipelagoSessionFactory.CreateSession(server, port);
 
-            LoginResult result;
             try
             {
                 // handle TryConnectAndLogin attempt here and save the returned object to `result`
@@ -325,9 +336,13 @@ namespace Server
 
                 Console.WriteLine(errorMessage);
                 // Did not connect, show the user the contents of `errorMessage`
+                return;
             }
-            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server
-            // and the returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
+
+            // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the
+            // returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
+            Console.WriteLine($"Successfully Connected to {server} as {user}");
+            loginSuccessful = (LoginSuccessful)result;
        }
 
 
@@ -336,6 +351,11 @@ namespace Server
         public void send_location(int location)
         {
             session.Locations.CompleteLocationChecks(location);
+        }
+
+        public string get_goal()
+        {
+            return goals[(long)(loginSuccessful.SlotData["goal"])];
         }
     }
 }
