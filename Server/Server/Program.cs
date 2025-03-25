@@ -923,8 +923,6 @@ async void connectAP()
                 shineBag.Add((int)itemReceivedName.ItemId);
             }
             SyncShineBag();
-            if (itemReceivedName.ItemId == 2500)
-                apClient.session.SetGoalAchieved();
             if (itemReceivedName.ItemId >= 2502 && itemReceivedName.ItemId < 9990)
             {
                 outfitBag.Add((int)itemReceivedName.ItemId);
@@ -944,11 +942,6 @@ async void connectAP()
         SyncShineBag();
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.get_goal())
             apClient.session.SetGoalAchieved();
-        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemId >= 2502)
-        {
-            outfitBag.Add((int)itemReceivedName.ItemId);
-        }
-        SyncItem();
         receivedItemsHelper.DequeueItem();
     };
 }
