@@ -95,7 +95,8 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 338 , false },
             { 581 , false },
             { 1119 , false },
-            { 539 , false }
+            { 539 , false },
+            { 496 , false }
         };
 
 async Task PersistIndexes()
@@ -386,10 +387,10 @@ server.PacketHandler = (c, p) => {
                 if (old != null)
                     apClient.send_location(APClient.darkSideHintArts[((GamePacket)old).Stage]);
             }
-                if (giftMoons.ContainsKey(shinePacket.ShineId))
-                    if (giftMoons[shinePacket.ShineId])
-                        shineBag.Add(shinePacket.ShineId);
-                    else { giftMoons.Remove(shinePacket.ShineId); }
+            if (giftMoons.ContainsKey(shinePacket.ShineId))
+                if (giftMoons[shinePacket.ShineId])
+                    shineBag.Add(shinePacket.ShineId);
+                else { giftMoons.Remove(shinePacket.ShineId); }
 
             break;
         }
@@ -402,10 +403,6 @@ server.PacketHandler = (c, p) => {
                 if (itemPacket.itemType == 1)
                     item += "Cap";
                 apClient.send_location(APClient.shopItems[item]);
-                //if (giftMoons.ContainsKey(APClient.shopItems[item]))
-                    //if (giftMoons[APClient.shopItems[itemPacket.name]])
-                        //outfitBag.Add(APClient.shopItems[itemPacket.name]);
-                    //else { giftMoons.Remove(APClient.shopItems[item]); }
                 break;
         }
 
