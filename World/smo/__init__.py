@@ -80,7 +80,7 @@ class SMOWorld(World):
 
     def generate_basic(self) -> None:
         pass
-    
+
     def set_rules(self):
         set_rules(self, self.options)
 
@@ -133,8 +133,9 @@ class SMOWorld(World):
 
     def create_items(self):
         pool = item_table.keys() - filler_item_table.keys()
+        pool.remove("Beat the Game")
+
         if not self.options.goal == 15:
-            pool.remove("Beat the Game")
             pool.add("1000 Coins")
 
         pool.remove("Beat Bowser in Cloud")
@@ -178,6 +179,7 @@ class SMOWorld(World):
                                                  self.player).place_locked_item(
                         self.create_item(moon_item_list[i][location_index]))
                     pool.remove(moon_item_list[i][location_index])
+                moon_item_list[i].reverse()
 
         locations_list.reverse()
         moon_item_list.reverse()
@@ -192,11 +194,13 @@ class SMOWorld(World):
                 self.multiworld.get_location("Secret Path to Lake Lamode!", self.player).place_locked_item(
                     self.create_item("Lake Power Moon (417)"))
                 pool.remove("Lake Power Moon (417)")
-            moon_item_list[i].reverse()
             for location_index in range(len(locations_list[i].keys())):
                 self.multiworld.get_location(list(locations_list[i].keys())[location_index], self.player).place_locked_item(self.create_item(moon_item_list[i][location_index]))
                 if moon_item_list[i][location_index] in pool:
                     pool.remove(moon_item_list[i][location_index])
+
+        locations_list.reverse()
+        moon_item_list.reverse()
         for kingdom in self.unrequired_kingdoms:
             # Removes kingdom's power moons from the pool
             if self.options.replace == 1:

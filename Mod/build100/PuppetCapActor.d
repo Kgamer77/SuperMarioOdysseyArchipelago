@@ -262,6 +262,7 @@ PuppetCapActor.o: \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ShineCollect.h \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ItemCollect.h \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/FillerCollect.h \
+ /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ArchipelagoChatMessage.h \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/CaptureInf.h \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/HackCapInf.h \
  /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ChangeStagePacket.h \
@@ -533,6 +534,7 @@ PuppetCapActor.o: \
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ShineCollect.h:
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ItemCollect.h:
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/FillerCollect.h:
+/mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ArchipelagoChatMessage.h:
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/CaptureInf.h:
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/HackCapInf.h:
 /mnt/c/Users/Kevin/source/repos/SuperMarioOdysseyArchipelago/Mod/include/packets/ChangeStagePacket.h:

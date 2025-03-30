@@ -111,7 +111,6 @@ loc_Cascade_Postgame = {
     "Taking Notes: Hurry Upward": 770,
     "Across the Mysterious Clouds": 894,
     "Cascade Kingdom Master Cup": 224,
-    "Cascade Kingdom Master Cup": 224,
     "Atop a Wall Among the Clouds": 223,
     "Across the Gusty Bridges": 673,
     "Flying Far Away from Gusty Bridges": 674
