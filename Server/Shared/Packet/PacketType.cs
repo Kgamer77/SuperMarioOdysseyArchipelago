@@ -15,5 +15,6 @@ public enum PacketType : short {
     ChangeStage,
     Command,
     Item,
-    Filler
+    Filler,
+    ArchipelagoChat
 }

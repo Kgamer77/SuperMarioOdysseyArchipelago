@@ -10,6 +10,8 @@ using Timer = System.Timers.Timer;
 using Open.Nat;
 using Archipelago.MultiClient.Net;
 using System.Reflection;
+using Archipelago.MultiClient.Net.MessageLog.Messages;
+using System.Runtime.ExceptionServices;
 
 Server.Server server = new Server.Server();
 Server.APClient apClient = new Server.APClient();
@@ -17,6 +19,7 @@ HashSet<int> shineBag = new HashSet<int>();
 HashSet<int> outfitBag = new HashSet<int>();
 HashSet<int> fillerIndex = new HashSet<int>();
 Dictionary<int, int> IndexToFiller = new Dictionary<int, int>();
+Queue<string> chatMessages = new Queue<string>();
 CancellationTokenSource cts = new CancellationTokenSource();
 bool restartRequested = false;
 Logger consoleLogger = new Logger("Console");
@@ -138,6 +141,7 @@ server.ClientJoined += (c, _) => {
     c.Metadata["shineSync"] = new ConcurrentBag<int>();
     c.Metadata["itemSync"] = new ConcurrentBag<int>();
     c.Metadata["fillerSync"] = new ConcurrentBag<int>();
+    c.Metadata["messageLog"] = new List<string>();
     c.Metadata["loadedSave"] = false;
     c.Metadata["scenario"] = (byte?) 0;
     c.Metadata["2d"] = false;
@@ -267,11 +271,95 @@ async void SyncFillerItem()
     }
 }
 
+async Task ClientSendLogMessage(Client client)
+{
+    try
+    {
+        List<string> clientLog = (List<string>)(client.Metadata["messageLog"] ??= new List<string>());
+
+        if (!client.Connected) return;
+
+        if (chatMessages.Count == 0)
+        {
+            clientLog.Clear();
+        }
+
+        if (chatMessages.Count > 0 && clientLog.Count < 3)
+            clientLog.Add(chatMessages.Dequeue());
+
+        switch (clientLog.Count)
+        {
+            case 0:
+                await client.Send(new ArchipelagoChatMessage
+                {
+                    message3 = "",
+                    message2 = "",
+                    message1 = ""
+                });
+                break;
+            case 1:
+                await client.Send(new ArchipelagoChatMessage
+                {
+                    message3 = clientLog[0],
+                    message2 = "",
+                    message1 = ""
+                });
+                break;
+            case 2:
+                await client.Send(new ArchipelagoChatMessage
+                {
+                    message3 = clientLog[1],
+                    message2 = clientLog[0],
+                    message1 = ""
+                });
+                break;
+            case 3:
+                await client.Send(new ArchipelagoChatMessage
+                {
+                    message3 = clientLog[2],
+                    message2 = clientLog[1],
+                    message1 = clientLog[0]
+                });
+                break;
+
+        }
+
+        if (clientLog.Count == 3 && chatMessages.Count > 0)
+        {
+            clientLog.RemoveAt(0);
+        }
+
+    }
+    catch
+    {
+        // errors that can happen when sending will crash the server :)
+    }
+}
+
+async void SendLogMessage()
+{
+    try
+    {
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSendLogMessage(client));
+    }
+    catch
+    {
+        // errors that can happen shines change will crash the server :)
+    }
+}
+
 Timer timer = new Timer(120000);
 timer.AutoReset = true;
 timer.Enabled = true;
 timer.Elapsed += (_, _) => { SyncShineBag(); };
 timer.Start();
+
+Timer messageTimer = new Timer(4000);
+messageTimer.AutoReset = true;
+messageTimer.Enabled = true;
+messageTimer.Elapsed += (_, _) => { SendLogMessage(); };
+messageTimer.Start();
+
 
 float MarioSize(bool is2d) => is2d ? 180 : 160;
 
@@ -901,10 +989,10 @@ async void connectAP()
     if (apClient.result.Successful)
     {
         await LoadFiller();
+        chatMessages.Enqueue("Connected to Archipelago");
     }
     apClient.session.Items.ItemReceived += (receivedItemsHelper) =>
     {
-
         var itemReceivedName = receivedItemsHelper.PeekItem();
         consoleLogger.Info($"Received {itemReceivedName.ItemName} ID {itemReceivedName.ItemId}");
         if (itemReceivedName.ItemGame == "Super Mario Odyssey")
@@ -940,6 +1028,122 @@ async void connectAP()
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.get_goal())
             apClient.session.SetGoalAchieved();
         receivedItemsHelper.DequeueItem();
+    };
+
+    apClient.session.MessageLog.OnMessageReceived += async (incomingMessage) =>
+    {
+        switch (incomingMessage)
+        {
+            case HintItemSendLogMessage hintLogMessage:
+            {
+                if (hintLogMessage.IsReceiverTheActivePlayer && !hintLogMessage.IsFound)
+                {
+                    string message = "";
+                    if (hintLogMessage.Receiver.Name != hintLogMessage.Sender.Name)
+                    {
+                        message = $"has your {hintLogMessage.Item.ItemName}";
+
+                        if (Constants.ChatMessageSize - message.Length > 0)
+                        {
+                            if (Constants.ChatMessageSize - message.Length > hintLogMessage.Sender.Name.Length)
+                                message = hintLogMessage.Sender.Name + message;
+                            else
+                                message = hintLogMessage.Sender.Name.Substring(0, Constants.ChatMessageSize - message.Length) + message;
+                        }
+
+                        chatMessages.Enqueue(message);
+
+                        message = "at ";
+                        if (Constants.ChatMessageSize - message.Length > hintLogMessage.Item.LocationName.Length)
+                            message += hintLogMessage.Item.LocationName;
+                        else
+                            message += hintLogMessage.Item.LocationName.Substring(0, Constants.ChatMessageSize - message.Length);
+
+                        chatMessages.Enqueue(message);
+                    }
+                    else
+                    {
+                        message = $"{hintLogMessage.Item.ItemName} is at {hintLogMessage.Item.LocationName}";
+                        chatMessages.Enqueue(message);
+                    }
+                }
+
+                if (hintLogMessage.IsSenderTheActivePlayer && !(hintLogMessage.Receiver.Name == hintLogMessage.Sender.Name) && !hintLogMessage.IsFound)
+                {
+                    string message = "";
+
+                    if (hintLogMessage.Sender.Name.Length + hintLogMessage.Item.ItemName.Length + 3 < Constants.ChatMessageSize)
+                        message = $"{hintLogMessage.Sender.Name}'s {hintLogMessage.Item.ItemName}";
+                    else if (hintLogMessage.Item.ItemName.Length < Constants.ChatMessageSize)
+                        message += hintLogMessage.Item.ItemName;
+                    else message += hintLogMessage.Item.ItemName.Substring(0, Constants.ChatMessageSize);
+
+                    chatMessages.Enqueue(message);
+
+                    message = $"is at {hintLogMessage.Item.LocationName}";
+                    chatMessages.Enqueue(message);
+                }
+                break;
+            }
+
+            case ItemSendLogMessage sendLogMessage:
+            {
+                if (sendLogMessage.IsReceiverTheActivePlayer)
+                {
+                    string message = $"Got {sendLogMessage.Item.ItemName} from ";
+                    if (Constants.ChatMessageSize - message.Length > 0)
+                    {
+                        if (Constants.ChatMessageSize - message.Length > sendLogMessage.Sender.Name.Length)
+                            message += sendLogMessage.Sender.Name;
+                        else
+                            message += sendLogMessage.Sender.Name.Substring(0, Constants.ChatMessageSize - message.Length);
+                    }
+
+                    chatMessages.Enqueue(message);
+                }
+
+                if (sendLogMessage.IsSenderTheActivePlayer && !(sendLogMessage.Receiver.Name == sendLogMessage.Sender.Name))
+                {
+                    string message = $"Sent {sendLogMessage.Item.ItemName} to ";
+                    if (Constants.ChatMessageSize - message.Length > 0)
+                    {
+                        if (Constants.ChatMessageSize - message.Length > sendLogMessage.Receiver.Name.Length)
+                            message += sendLogMessage.Receiver.Name;
+                        else
+                            message += sendLogMessage.Receiver.Name.Substring(0, Constants.ChatMessageSize - message.Length);
+                    }
+
+                    chatMessages.Enqueue(message);
+                    messageTimer.Stop();
+                    SendLogMessage();
+                    messageTimer.Start();
+                }
+                break;
+            }
+
+            case ServerChatLogMessage logMessage:
+            {
+                Queue<string> words = new Queue<string>();
+                foreach (string word in logMessage.Message.Split(" "))
+                    words.Enqueue(word);
+
+                string a = "";
+                do
+                {
+                    if (a.Length + words.Peek().Length < Constants.ChatMessageSize)
+                        a += words.Dequeue();
+                    else
+                    {
+                        chatMessages.Enqueue(a);
+                        a = "";
+                    }
+
+                } while (words.Count > 0);
+
+                break;
+            }
+        }
+
     };
 }
 

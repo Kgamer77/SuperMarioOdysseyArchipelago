@@ -19,3 +19,5 @@ extern sead::TextWriter *gTextWriter;
 bool setupDebugMenu(agl::DrawContext* context, sead::Viewport* viewport);
 
 void drawBackground(agl::DrawContext *context);
+
+void drawApChatBackground(agl::DrawContext* context, float rows);
