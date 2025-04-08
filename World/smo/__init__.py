@@ -172,13 +172,12 @@ class SMOWorld(World):
         # Remove all post game checks from the pool
         if self.options.goal <= 15:
             for i in range(len(post_game_locations_list)):
-                moon_item_list[i].reverse()
                 for location_name in post_game_locations_list[i].keys():
+                    self.multiworld.get_location( location_name, self.player).place_locked_item(
                         self.create_item(self.item_id_to_name[self.location_name_to_id[location_name]]))
                     pool.remove(self.item_id_to_name[self.location_name_to_id[location_name]])
 
         locations_list.reverse()
-        moon_item_list.reverse()
         for i in range(18 - self.options.goal):
             if i == 6:
                 self.multiworld.get_location("Secret Path to Mount Volbono!", self.player).place_locked_item(self.create_item("Luncheon Power Moon (260)"))
@@ -190,11 +189,11 @@ class SMOWorld(World):
                 self.multiworld.get_location("Secret Path to Lake Lamode!", self.player).place_locked_item(
                     self.create_item("Lake Power Moon (417)"))
                 pool.remove("Lake Power Moon (417)")
-                if moon_item_list[i][location_index] in pool:
             for location_index in locations_list[i].keys():
                 self.multiworld.get_location(location_index, self.player).place_locked_item(self.create_item(self.item_id_to_name[self.location_name_to_id[location_index]]))
                 if self.item_id_to_name[self.location_name_to_id[location_index]] in pool:
                     pool.remove(self.item_id_to_name[self.location_name_to_id[location_index]])
+
 
         if self.options.story < 3:
             for item in self.item_name_to_id.keys():
