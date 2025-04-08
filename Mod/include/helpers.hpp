@@ -81,7 +81,8 @@ __attribute__((used)) static const char* costumeNames[] = {
     "MarioTailCoat",
     "MarioTuxedo",
     "MarioUnderwear",
-    "MarioCaptain"
+    "MarioCaptain",
+    "MarioInvisible"
 };
 // full costume list from 1.3
 // attribute otherwise the build log is spammed with unused warnings

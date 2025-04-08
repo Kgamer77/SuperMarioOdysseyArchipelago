@@ -44,7 +44,7 @@ def set_rules(self, options : SMOOptions) -> None:
 
     if options.goal >= 15:
         # Bowser Story Progress
-        set_rule(self.multiworld.get_location("Smart Bombing", self.player), lambda state: state.has("Bowser Story Moon (1)", self.player))
+        set_rule(self.multiworld.get_location("Smart Bombing", self.player), lambda state: state.has("Bowser's Story Moon (1)", self.player))
         set_rule(self.multiworld.get_location("Big Broodal Battle", self.player), lambda state: state.has("Bowser's Story Moon (2)", self.player))
         set_rule(self.multiworld.get_location("Showdown at Bowser’s Castle", self.player), lambda state: state.has("Bowser's Story Moon (3)", self.player) and
             state.has("Bowser's Story Moon (2)", self.player) and  state.has("Bowser's Story Moon (1)", self.player))
@@ -52,7 +52,7 @@ def set_rules(self, options : SMOOptions) -> None:
 
     # Outfit Moons
     set_rule(self.multiworld.get_location("Caveman Cave-Fan", self.player), lambda state: state.has("Primitive Man Hat", self.player) and state.has("Primitive Man Clothes", self.player))
-    set_rule(self.multiworld.get_location("Dancing with New Friends", self.player), lambda state: state.has("Poncho Hat", self.player) and state.has("Poncho Clothes", self.player))
+    set_rule(self.multiworld.get_location("Dancing with New Friends", self.player), lambda state: (state.has("Poncho Hat", self.player) and state.has("Poncho Clothes", self.player)) or state.has("Bone Clothes", self.player))
     set_rule(self.multiworld.get_location("I Feel Underdressed", self.player), lambda state: (state.has("Swimwear Hat", self.player) and state.has("Swimwear Clothes", self.player)) or state.has("Underwear", self.player))
     set_rule(self.multiworld.get_location("That Trendy “Pirate” Look", self.player), lambda state: state.has("Pirate Hat", self.player) and state.has("Pirate Clothes", self.player))
     set_rule(self.multiworld.get_location("Space Is “In” Right Now", self.player), lambda state: state.has("Space Suit Hat", self.player) and state.has("Space Suit Clothes", self.player))

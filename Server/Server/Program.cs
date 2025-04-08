@@ -14,7 +14,7 @@ using Archipelago.MultiClient.Net.MessageLog.Messages;
 using System.Runtime.ExceptionServices;
 
 Server.Server server = new Server.Server();
-Server.APClient apClient = new Server.APClient();
+Server.APClient apClient = new APClient();
 HashSet<int> shineBag = new HashSet<int>();
 HashSet<int> outfitBag = new HashSet<int>();
 HashSet<int> fillerIndex = new HashSet<int>();
@@ -99,7 +99,8 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 581 , false },
             { 1119 , false },
             { 539 , false },
-            { 496 , false }
+            { 496 , false },
+            { 129 , false }
         };
 
 async Task PersistIndexes()
@@ -216,6 +217,7 @@ async Task ClientSyncItem(Client client)
             });
             clientBag.Add(item);
         }
+
     }
     catch
     {
@@ -359,6 +361,11 @@ messageTimer.AutoReset = true;
 messageTimer.Enabled = true;
 messageTimer.Elapsed += (_, _) => { SendLogMessage(); };
 messageTimer.Start();
+
+Timer grandTimer = new Timer(35000);
+grandTimer.AutoReset = false;
+grandTimer.Enabled = true;
+grandTimer.Elapsed += (_, _) => { SyncShineBag(); };
 
 
 float MarioSize(bool is2d) => is2d ? 180 : 160;
@@ -917,14 +924,14 @@ CommandHandler.RegisterCommand("reconnect", args =>
     if (args.Length == 0)
     {
         connectAP();
-        return "Attempting to reconnect to Archipelago";
+        return "";
     }
     else if (args.Length == 1)
     {
         Settings.Instance.Archipelago.Slot = args[0];
         Settings.SaveSettings();
         connectAP();
-        return $"Attempting to reconnect to Archipelago as slot {args[0]}";
+        return "";
     }
     else if (args.Length == 2)
     {
@@ -932,11 +939,77 @@ CommandHandler.RegisterCommand("reconnect", args =>
         Settings.Instance.Archipelago.Password = args[1];
         Settings.SaveSettings();
         connectAP();
-        return $"Attempting to reconnect to Archipelago as slot {args[0]}";
+        return "";
     }
     return optionUsage;
 });
 
+CommandHandler.RegisterCommand("connect", args =>
+{
+    const string optionUsage = "Valid options: (no arguments), <address:port>, <address> <port>, <address> <port> <slot>, <address> <port> <slot> <password>";
+    // Make this a switch-case later
+    if (args.Length == 0)
+    {
+        connectAP();
+        return "";
+    }
+    else if (args.Length == 1)
+    {
+        if (args[0].Contains(":"))
+        {
+            Settings.Instance.Archipelago.Server = args[0].Split(":")[0];
+            Settings.Instance.Archipelago.Port = ushort.Parse(args[0].Split(":")[1]);
+        }
+        else
+        {
+            Settings.Instance.Archipelago.Server = args[0];
+        }
+        Settings.SaveSettings();
+        connectAP();
+        return "";
+    }
+    else if (args.Length == 2)
+    {
+        Settings.Instance.Archipelago.Server = args[0];
+        Settings.Instance.Archipelago.Port = ushort.Parse(args[1]);
+        Settings.SaveSettings();
+        connectAP();
+        return "";
+    }
+    else if (args.Length == 3)
+    {
+        Settings.Instance.Archipelago.Server = args[0];
+        Settings.Instance.Archipelago.Port = ushort.Parse(args[1]);
+        Settings.Instance.Archipelago.Slot = args[2];
+        Settings.SaveSettings();
+        connectAP();
+        return "";
+    }
+    else if (args.Length == 4)
+    {
+        Settings.Instance.Archipelago.Server = args[0];
+        Settings.Instance.Archipelago.Port = ushort.Parse(args[1]);
+        Settings.Instance.Archipelago.Slot = args[2];
+        Settings.Instance.Archipelago.Password = args[3];
+        Settings.SaveSettings();
+        connectAP();
+        return "";
+    }
+    return optionUsage;
+});
+
+
+CommandHandler.RegisterCommand("apsync", args =>
+{
+    const string optionUsage = "Valid options: (no arguments)";
+    // Make this a switch-case later
+    if (args.Length == 0)
+    {
+        ApSync();
+        return "Syncing AP Items";
+    }
+    return optionUsage;
+});
 
 Console.CancelKeyPress += (_, e) => {
     e.Cancel = true;
@@ -984,13 +1057,18 @@ async void Upnp()
 
 async void connectAP()
 {
-    apClient = new APClient();
     apClient.Connect(Settings.Instance.Archipelago.Server, Settings.Instance.Archipelago.Slot, Settings.Instance.Archipelago.Password, Settings.Instance.Archipelago.Port);
-    if (apClient.result.Successful)
+    if (!apClient.loginFailed)
     {
         await LoadFiller();
         chatMessages.Enqueue("Connected to Archipelago");
     }
+    else
+    {
+        chatMessages.Enqueue(apClient.get_error_message());
+        return;
+    }
+
     apClient.session.Items.ItemReceived += (receivedItemsHelper) =>
     {
         var itemReceivedName = receivedItemsHelper.PeekItem();
@@ -1006,6 +1084,13 @@ async void connectAP()
                     return;
                 }
                 shineBag.Add((int)itemReceivedName.ItemId);
+                if (itemReceivedName.ItemName.Contains("Multi") && itemReceivedName.ItemId == itemReceivedName.LocationId)
+                {
+                    consoleLogger.Warn("Item at it's own location!");
+                    receivedItemsHelper.DequeueItem();
+                    grandTimer.Start();
+                    return;
+                }
             }
             SyncShineBag();
             if (itemReceivedName.ItemId >= 2502 && itemReceivedName.ItemId < 9990)
@@ -1024,11 +1109,13 @@ async void connectAP()
             SyncFillerItem();
 
         }
-        SyncShineBag();
         if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.get_goal())
             apClient.session.SetGoalAchieved();
         receivedItemsHelper.DequeueItem();
     };
+
+
+    ApSync();
 
     apClient.session.MessageLog.OnMessageReceived += async (incomingMessage) =>
     {
@@ -1145,6 +1232,42 @@ async void connectAP()
         }
 
     };
+
+}
+
+void ApSync()
+{
+    foreach (long LocationId in apClient.session.Locations.AllLocationsChecked)
+    {
+        if (giftMoons.ContainsKey( (int)LocationId))
+        {
+            giftMoons.Remove((int)LocationId);
+        }
+    }
+
+    foreach (Archipelago.MultiClient.Net.Models.ItemInfo item in apClient.session.Items.AllItemsReceived)
+    {
+        if (item.ItemId < 2500)
+        {
+            if (giftMoons.ContainsKey((int)item.ItemId))
+            {
+                giftMoons[(int)item.ItemId] = true;
+            }
+            shineBag.Add((int)item.ItemId);
+        }
+        if (item.ItemId >= 2502 && item.ItemId < 9990)
+        {
+            outfitBag.Add((int)item.ItemId);
+        }
+        if (item.ItemGame == "Super Mario Odyssey" && item.ItemName == apClient.get_goal())
+            apClient.session.SetGoalAchieved();
+        while (apClient.session.Items.PeekItem() != null)
+        {
+            apClient.session.Items.DequeueItem();
+        }
+    }
+    SyncItem();
+    SyncShineBag();
 }
 
 Upnp();

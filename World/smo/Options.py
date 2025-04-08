@@ -15,12 +15,21 @@ class Goal(Choice):
     option_darker = 18
     default = 15  # default to moon
 
+class StorySanity(Choice):
+    """Adds story progression moons to the pool."""
+    display_name = "Randomize Story Moons"
+    option_single_moons = 1
+    option_multi_moons = 2
+    option_all = 3
+    option_off = 0
+    default = 0 # default to off
+
 class ShopSanity(Choice):
     """Adds various shop items to the pool."""
     display_name = "Randomize Shops"
     option_shuffle = 1
     option_outfits  = 2
-    option_nonoutfits = 3
+    option_non_outfits = 3
     option_all = 4
     option_off = 0
     default = 0  # default to off
@@ -34,5 +43,6 @@ class ReplaceUnneededMoons(Toggle):
 @dataclass
 class SMOOptions(PerGameCommonOptions):
     goal: Goal
+    story : StorySanity
     shops: ShopSanity
     replace: ReplaceUnneededMoons
