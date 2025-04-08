@@ -625,7 +625,7 @@ void Client::sendGameInfPacket(GameDataHolderAccessor holder) {
                 lostCount++;
         }
         if (lostCount < 10) {
-            GameDataFunction::repairHome(holder);
+            GameDataFunction::repairHomeByCrashedBoss(holder);
             GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
         } else
             GameDataFunction::crashHome(holder);

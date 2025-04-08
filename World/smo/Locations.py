@@ -297,32 +297,18 @@ loc_Lake_Postgame = {
 
 loc_Wooded = {
     "Road to Sky Garden": 129,
-    "Flower Thieves of Sky Garden": 130,
-    "Path to the Secret Flower Field": 159,
-    "Defend the Secret Flower Field!": 181,
-    "Behind the Rock Wall": 134,
-    "Back Way Up the Mountain": 150,
     "Rolling Rock in the Woods": 149,
     "Caught Hopping in the Forest!": 148,
-    "Thanks for the Charge!": 135,
     "Atop a Tall Tree": 139,
     "Tucked Away Inside a Tunnel": 143,
-    "Over the Cliff’s Edge": 146,
     "The Nut ‘Round The Corner": 145,
     "Climb the Cliff to Get the Nut": 140,
     "The Nut in the Red Maze": 141,
     "The Nut at the Dead End": 142,
-    "Cracked Nut on a Crumbling Tower": 144,
-    "The Nut that Grew on the Tall Fence": 147,
     "Fire in the Cave": 136,
-    "Hey Out There, Captain Toad!": 133,
-    "Love in the Forest Ruins": 131,
-    "Inside the Rock in the Forest": 1026,
     "Shopping in Steam Gardens": 138,
     "Nut Planted in the Tower": 180,
     "Stretching Your Legs": 179,
-    "Spinning-Platforms Treasure": 195,
-    "Make the Secret Flower Field Bloom": 182,
     "Rolling Rock in the Deep Woods": 183,
     "Glowing in the Deep Woods": 1137,
     "Past The Peculiar Pipes": 1159,
@@ -332,24 +318,43 @@ loc_Wooded = {
     "Beneath the Roots of a Moving Tree": 184,
     "Deep Woods Treasure Trap": 188,
     "Exploring for Treasure": 187,
-    "Wooded Kingdom Timer Challenge 1": 157,
-    "Wooded Kingdom Timer Challenge 2": 676,
     "Flooding Pipeway": 196,
-    "Flood Pipeway Ceiling Secret": 197,
-    "Wandering in the Fog": 193,
-    "Nut Hidden in the Fog": 194,
-    "Flower Road Run": 191,
-    "Flower Road Reach": 192,
-    "Elevator Escalation": 190,
-    "Elevator Blind Spot": 189,
-    "Walking on Clouds": 198,
-    "Above the Clouds": 199,
-    "Found with Wooded Kingdom Art": 1089,
-    "Swing Around Secret Flower Field": 1011,
+    "Flooding Pipeway Ceiling Secret": 197,
 }
 
 loc_Wooded_Post_Metro = {
     "Secret Path to the Steam Gardens": 137
+}
+
+loc_Wooded_Post_Story1 = {
+    "Flower Thieves of Sky Garden": 130,
+    "Path to the Secret Flower Field": 159,
+    "Cracked Nut on a Crumbling Tower": 144,
+    "The Nut that Grew on the Tall Fence": 147,
+    "Love in the Forest Ruins": 131,
+    "Thanks for the Charge!": 135,
+    "Spinning-Platforms Treasure": 195,
+    "Over the Cliff’s Edge": 146,
+    "Behind the Rock Wall": 134,
+    "Back Way Up the Mountain": 150,
+    "Flower Road Run": 191,
+    "Flower Road Reach": 192,
+    "Elevator Escalation": 190,
+    "Elevator Blind Spot": 189
+}
+
+loc_Wooded_Peace = {
+    "Defend the Secret Flower Field!": 181,
+    "Inside the Rock in the Forest": 1026,
+    "Hey Out There, Captain Toad!": 133,
+    "Make the Secret Flower Field Bloom": 182,
+    "Wooded Kingdom Timer Challenge 1": 157,
+    "Wooded Kingdom Timer Challenge 2": 676,
+    "Wandering in the Fog": 193,
+    "Nut Hidden in the Fog": 194,
+    "Walking on Clouds": 198,
+    "Above the Clouds": 199,
+    "Found with Wooded Kingdom Art": 1089
 }
 
 loc_Wooded_Shop = {
@@ -365,6 +370,7 @@ loc_Wooded_Shop = {
 }
 
 loc_Wooded_Postgame = {
+    "Swing Around Secret Flower Field": 1011,
     "Jammin’ in the Wooded Kingdom": 905,
     "Wooded Kingdom Regular Cup": 153,
     "Peach in the Wooded Kingdom": 155,
@@ -469,8 +475,6 @@ loc_Metro = {
     "Guitarist on Board!": 41,
     "Bassist on Board!": 44,
     "Trumpeter on Board!": 43,
-    "Powering Up the Station": 107,
-    "A Traditional Festival!": 95,
     "Inside an Iron Girder": 38,
     "Swaying in the Breeze": 39,
     "Girder Sandwich": 54,
@@ -480,10 +484,7 @@ loc_Metro = {
     "Who Piled Garbage on This?": 49,
     "Hidden in the Scrap": 62,
     "Left at the Cafe?": 77,
-    "Caught Hopping on a Building!": 99,
     "How Do They Take Out the Trash?": 68,
-    "Metro Kingdom Timer Challenge 1": 1054,
-    "Metro Kingdom Timer Challenge 2": 839,
     "City Gardening: Building Planter": 70,
     "City Gardening: Plaza Planter": 71,
     "City Gardening: Rooftop Planter": 69,
@@ -498,8 +499,6 @@ loc_Metro = {
     "RC Car Pro!": 105,
     "Taking Notes: In the Private Room": 102,
     "City Hall Lost & Found": 100,
-    "Sewer Treasure": 1100,
-    "Celebrating in the Streets!": 875,
     "Pushing Through the Crowd": 1022,
     "High Over the Crowd": 1023,
     "Rewiring the Neighborhood": 122,
@@ -514,12 +513,25 @@ loc_Metro = {
     "One Man’s Trash…": 116,
     "Motor Scooter: Escape!": 1139,
     "Big Jump: Escape!": 1140,
-    "Found with Metro Kingdom Art": 1088,
-    "A Tourist in the Metro Kingdom!": 881
+    "Found with Metro Kingdom Art": 1088
 }
 
 loc_Metro_Post_Sand = {
     "Secret Path to New Donk City!": 40
+}
+
+loc_Metro_Sewer_Access = {
+    "Powering Up the Station": 107,
+    "Sewer Treasure": 1100
+}
+
+loc_Metro_Peace = {
+    "A Traditional Festival!": 95,
+    "Celebrating in the Streets!": 875,
+    "Caught Hopping on a Building!": 99,
+    "Metro Kingdom Timer Challenge 1": 1054,
+    "Metro Kingdom Timer Challenge 2": 839,
+    "A Tourist in the Metro Kingdom!": 881
 }
 
 loc_Metro_Shop = {
@@ -570,7 +582,6 @@ loc_Seaside = {
     "The Lighthouse Seal": 441,
     "The Hot Spring Seal": 440,
     "The Seal Above the Canyon": 439,
-    "The Glass Is Half Full!": 437,
     "On the Cliff Overlooking the Beach": 449,
     "Ride the Jetstream": 455,
     "Ocean-Bottom Maze: Treasure": 466,
@@ -580,7 +591,6 @@ loc_Seaside = {
     "Gap in the Ocean Trench": 458,
     "Slip Through the Nesting Spot": 459,
     "Merci, Dorrie!": 453,
-    "Bonjour, Dorrie!": 452,
     "Under a Dangerous Ceiling": 445,
     "What the Waves Left Behind": 447,
     "The Back Canyon: Excavate!": 444,
@@ -593,17 +603,12 @@ loc_Seaside = {
     "Sea Gardening: Hot-Spring Seed": 1106,
     "Sea Gardening: Ocean Trench Seed": 1105,
     "Seaside Kingdom Timer Challenge 1": 468,
-    "Seaside Kingdom Timer Challenge 2": 863,
-    "Found on the Beach! Good Dog!": 471,
     "Moon Shards in the Sea": 454,
     "Taking Notes: Ocean Surface Dash": 442,
     "Love by the Seaside": 446,
-    "Lighthouse Leaper": 474,
     "Good Job, Captain Toad!": 443,
     "Ocean Quiz: Good!": 457,
     "Shopping in Bubblaine": 460,
-    "Beach Volleyball: Champ": 472,
-    "Beach Volleyball: Hero of the Beach!": 473,
     "Looking Back in the Dark Waterway": 1107,
     "The Sphynx’s Underwater Vault": 483,
     "A Rumble on the Seaside Floor": 1135,
@@ -615,6 +620,16 @@ loc_Seaside = {
     "Hurry and Stretch": 482,
     "Stretch on the Side Path": 481,
     "Found with Seaside Kingdom Art": 1095,
+}
+
+loc_Seaside_Peace = {
+    "The Glass Is Half Full!": 437,
+    "Bonjour, Dorrie!": 452,
+    "Seaside Kingdom Timer Challenge 2": 863,
+    "Found on the Beach! Good Dog!": 471,
+    "Lighthouse Leaper": 474,
+    "Beach Volleyball: Champ": 472,
+    "Beach Volleyball: Hero of the Beach!": 473
 }
 
 loc_Seaside_Shop = {
@@ -659,23 +674,29 @@ loc_Snow = {
     "The Ice Wall Barrier": 22,
     "The Gusty Barrier": 18,
     "The Snowy Mountain Barrier": 25,
-    "The Bound Bowl Grand Prix": 1020,
     "Entrance to Shiveria": 1081,
     "Behind the Snowy Mountain": 21,
     "Shining in the Snow in Town": 1080,
     "Atop a Blustery Arch": 16,
-    "Caught Hopping in the Snow!": 1002,
     "The Shiverian Treasure Chest": 23,
     "Treasure in the Ice Wall": 24,
+    "Ice-Dodging Goomba Stack": 20,
+    "Captain Toad is Chilly!": 694,
+    "Shopping in Shiveria": 868,
+    "Moon Shards in the Cold Room": 1030,
+    "Slip Behind the Ice": 1031,
+    "Found with Snow Kingdom Art": 1087
+}
+
+loc_Snow_Peace = {
+    "The Bound Bowl Grand Prix": 1020,
+    "Caught Hopping in the Snow!": 1002,
     "Snow Kingdom Timer Challenge 1": 678,
     "Snow Kingdom Timer Challenge 2": 686,
     "Moon Shards in the Snow": 2,
     "Taking Notes: Snow Path Dash": 3,
     "Fishing in the Glacier!": 4,
-    "Ice-Dodging Goomba Stack": 20,
-    "Captain Toad is Chilly!": 694,
     "I’m Not Cold!": 873,
-    "Shopping in Shiveria": 868,
     "Walking on Ice!": 877,
     "Snowline Circuit Class S": 879,
     "Dashing Over Cold Water!": 12,
@@ -683,10 +704,8 @@ loc_Snow = {
     "Jump ‘n’ Swim in the Freezing Water": 14,
     "Freezing Water Near the Ceiling": 15,
     "Blowing and Sliding": 33,
-    "Moon Shards in the Cold Room": 1030,
-    "Slip Behind the Ice": 1031,
     "Spinning Above the Clouds": 30,
-    "High-Altitude Spinning": 831
+    "High-Altitude Spinning": 831,
 }
 
 loc_Snow_Shop = {
@@ -699,7 +718,6 @@ loc_Snow_Shop = {
 
 loc_Snow_Postgame = {
     "Secret Path to Shiveria!": 937,
-    "Found with Snow Kingdom Art": 1087,
     "Snow Kingdom Regular Cup": 695,
     "Hat-and-Seek in the Snow": 903,
     "Peach in the Snow Kingdom": 19,
@@ -725,58 +743,66 @@ loc_Snow_Postgame = {
 
 loc_Luncheon = {
     "The Broodals Are After Some Cookin’": 291,
-    "Under the Cheese Rocks": 251,
-    "Big Pot on the Volcano: Dive In!": 292,
-    "Climb Up the Cascading Magma": 257,
-    "Cookatiel Showdown!": 290,
     "Piled on the Salt": 256,
     "Lurking in the Pillar’s Shadow": 250,
-    "Atop the Jutting Crag": 253,
-    "Is This an Ingredient Too?!": 240,
-    "Atop a Column in a Row": 247,
-    "Surrounded by Tall Mountains": 248,
-    "Island of Salt Floating in the Lava": 245,
     "Overlooking a Bunch of Ingredients": 246,
-    "Light the Lantern on the Small Island": 254,
-    "Golden Turnip Recipe 1": 242,
-    "Golden Turnip Recipe 2": 241,
-    "Golden Turnip Recipe 3": 243,
     "Luncheon Kingdom Timer Challenge 1": 264,
-    "Luncheon Kingdom Timer Challenge 2": 249,
-    "Luncheon Kingdom Timer Challenge 3": 711,
-    "Beneath the Rolling Vegetables": 263,
-    "All the Cracks Are Fixed": 970,
-    "Taking Notes: Swimming in Magma": 244,
     "Love Above the Lava": 803,
-    "Shopping in Mount Volbono": 294,
-    "Luncheon Kingdom Slots": 1042,
-    "A Strong Simmer": 991,
-    "An Extreme Simmer": 990,
-    "Alcove Behind the Pillars of Magma": 259,
-    "Treasure Beneath the Cheese Rocks": 952,
-    "Light the Two Flames": 255,
-    "Light the Far-Off Lanterns": 261,
-    "Bon Appetit, Captain Toad!": 265,
-    "The Treasure Chest in the Veggies": 992,
-    "Caught Hopping at the Volcano!": 289,
-    "Taking Notes: Big Pot Swim": 833,
     "Magma Swamp: Floating and Sinking": 302,
-    "Corner of the Magma Swamp": 303,
-    "Magma Narrow Path": 299,
-    "Crossing to the Magma": 298,
-    "Fork Flickin’ to the Summit": 296,
-    "Fork Flickin’ Detour": 297,
-    "Excavate ‘n’ Search the Cheese Rocks": 300,
-    "Climb the Cheese Rocks": 301,
-    "Spinning Athletics End Goal": 307,
-    "Taking Notes: Spinning Athletics": 306,
-    "Found with Luncheon Kingdom Art": 1090,
-    "The Rooftop Lantern": 269,
-    "A Tourist in the Luncheon Kingdom!": 908
+    "Corner of the Magma Swamp": 303
 }
 
 loc_Luncheon_Post_Wooded = {
     "Secret Path to Mount Volbono!": 260
+}
+
+loc_Luncheon_Post_Spewart = {
+    "Under the Cheese Rocks": 251,
+    "Atop the Jutting Crag": 253,
+    "Is This an Ingredient Too?!": 240,
+    "Atop a Column in a Row": 247,
+    "Island of Salt Floating in the Lava": 245,
+    "Golden Turnip Recipe 1": 242,
+    "Golden Turnip Recipe 2": 241,
+    "Shopping in Mount Volbono": 294,
+    "Luncheon Kingdom Slots": 1042,
+    "A Strong Simmer": 991,
+    "An Extreme Simmer": 990,
+    "Fork Flickin’ to the Summit": 296,
+    "Fork Flickin’ Detour": 297,
+    "Excavate ‘n’ Search the Cheese Rocks": 300,
+    "Climb the Cheese Rocks": 301
+}
+
+loc_Luncheon_Post_Cheese_Rocks = {
+    "Big Pot on the Volcano: Dive In!": 292,
+    "Climb Up the Cascading Magma": 257,
+    "Surrounded by Tall Mountains": 248,
+    "Light the Lantern on the Small Island": 254,
+    "Golden Turnip Recipe 3": 243,
+    "Beneath the Rolling Vegetables": 263,
+    "All the Cracks Are Fixed": 970,
+    "Taking Notes: Swimming in Magma": 244,
+    "Magma Narrow Path": 299,
+    "Crossing to the Magma": 298,
+    "Spinning Athletics End Goal": 307,
+    "Taking Notes: Spinning Athletics": 306,
+    "Luncheon Kingdom Timer Challenge 2": 249,
+    "Treasure Beneath the Cheese Rocks": 952,
+    "Light the Two Flames": 255,
+    "The Treasure Chest in the Veggies": 992,
+    "Found with Luncheon Kingdom Art": 1090,
+    "Alcove Behind the Pillars of Magma": 259,
+}
+
+loc_Luncheon_Peace = {
+    "Cookatiel Showdown!": 290,
+    "Luncheon Kingdom Timer Challenge 3": 711,
+    "Caught Hopping at the Volcano!": 289,
+    "Light the Far-Off Lanterns": 261,
+    "Bon Appetit, Captain Toad!": 265,
+    "Taking Notes: Big Pot Swim": 833,
+    "A Tourist in the Luncheon Kingdom!": 908
 }
 
 loc_Luncheon_Shop = {
@@ -792,6 +818,7 @@ loc_Luncheon_Shop = {
 }
 
 loc_Luncheon_Postgame = {
+    "The Rooftop Lantern": 269,
     "Jammin’ in the Luncheon Kingdom": 907,
     "Mechanic: Repairs Complete!": 886,
     "Diving from the Big Pot!": 1005,
@@ -830,43 +857,52 @@ loc_Ruined_Postgame = {
 
 loc_Bowser = {
     "Infiltrate Bowser’s Castle": 325,
-    "Smart Bombing": 334,
-    "Big Broodal Battle": 314,
-    "Showdown at Bowser’s Castle": 332,
     "Behind the Big Wall": 321,
+    "Caught on the Iron Fence": 345,
+    "Taking notes: Between spinies": 315,
+    "Stack up above the wall": 324,
+}
+
+loc_Bowser_Infiltrate = {
+    "Smart Bombing": 334,
     "Treasure Inside the Turret": 333,
+    "Poking Your Nose in the Plaster Wall": 323,
+    "Poking the Turret Wall": 337,
+}
+
+loc_Bowser_Post_Bombing = {
+    "Big Broodal Battle": 314,
     "From the Side above the Castle Gate": 335,
+    "Exterminate the Ogres!": 320,
+    "Jizo All in a Row": 316,
+    "Underground Jizo": 317,
+    "Shopping at Bowser’s Castle": 360,
+    "Scene of Crossing the Poison Swamp": 987,
+    "Taking Notes: In the Folding Screen": 988,
+}
+
+loc_Bowser_Peace = {
+    "Showdown at Bowser’s Castle": 332,
     "Sunken Treasure in the Moat": 327,
+    "On the Giant Bowser Statue’s Nose": 339,
+    "Inside a Block in the Castle": 319,
+    "Hidden Corridor Under the Floor": 1092,
+    "Poking Your Nose by the Great Gate": 328,
+    "Found Behind Bars!": 331,
+    "Good to See You, Captain Toad!": 318,
+    "Dashing Above the Clouds": 365,
+    "Dashing Through the Clouds": 366,
     "Past the Moving Wall": 340,
     "Above the Poison Swamp": 326,
     "Knocking Down the Nice Frame": 1133,
-    "Caught on the Iron Fence": 345,
-    "On the Giant Bowser Statue’s Nose": 339,
-    "Inside a Block in the Castle": 319,
     "Caught Hopping at Bowser’s Castle!": 343,
-    "Exterminate the Ogres!": 320,
     "Bowser’s Kingdom Timer Challenge 1": 691,
-    "Taking notes: Between spinies": 315,
-    "Stack up above the wall": 324,
-    "Hidden Corridor Under the Floor": 1092,
-    "Poking Your Nose in the Plaster Wall": 323,
-    "Poking the Turret Wall": 337,
-    "Poking Your Nose by the Great Gate": 328,
-    "Jizo All in a Row": 316,
-    "Underground Jizo": 317,
-    "Found Behind Bars!": 331,
     "Fishing(?) in Bowser’s Castle": 26,
-    "Good to See You, Captain Toad!": 318,
-    "Shopping at Bowser’s Castle": 360,
     "Bowser’s Castle Treasure Vault": 999,
-    "Scene of Crossing the Poison Swamp": 987,
-    "Taking Notes: In the Folding Screen": 988,
     "On Top of the Spinning Tower": 368,
     "Down and Up the Spinning Tower": 367,
     "Jizo’s Big Adventure": 363,
     "Jizo and the Hidden Room": 364,
-    "Dashing Above the Clouds": 365,
-    "Dashing Through the Clouds": 366,
 }
 
 loc_Bowser_Shop = {
@@ -1102,17 +1138,29 @@ base_locations_table = {
     **loc_Lake_Post_Seaside,
     **loc_Wooded,
     **loc_Wooded_Post_Metro,
+    **loc_Wooded_Post_Story1,
+    **loc_Wooded_Peace,
     **loc_Cloud,
     **loc_Lost,
     **loc_Lost_Revisit,
     **loc_Metro,
     **loc_Metro_Post_Sand,
+    **loc_Metro_Sewer_Access,
+    **loc_Metro_Peace,
     **loc_Snow,
+    **loc_Snow_Peace,
     **loc_Seaside,
+    **loc_Seaside_Peace,
     **loc_Luncheon,
     **loc_Luncheon_Post_Wooded,
+    **loc_Luncheon_Post_Spewart,
+    **loc_Luncheon_Post_Cheese_Rocks,
+    **loc_Luncheon_Peace,
     **loc_Ruined,
     **loc_Bowser,
+    **loc_Bowser_Infiltrate,
+    **loc_Bowser_Post_Bombing,
+    **loc_Bowser_Peace,
     **loc_Moon,
     **loc_Mushroom_Post_Luncheon
 }
@@ -1172,15 +1220,15 @@ locations_list = [
     {**loc_Cascade, **loc_Cascade_Revisit},
     {**loc_Sand, **loc_Sand_Peace},
     loc_Lake,
-    loc_Wooded,
+    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace},
     loc_Cloud,
     loc_Lost,
-    loc_Metro,
-    loc_Snow,
-    loc_Seaside,
-    loc_Luncheon,
+    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace},
+    {**loc_Snow, **loc_Snow_Peace},
+    {**loc_Seaside, **loc_Seaside_Peace},
+    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace},
     loc_Ruined,
-    loc_Bowser,
+    {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Peace},
     loc_Moon,
     loc_Mushroom,
     loc_Dark,

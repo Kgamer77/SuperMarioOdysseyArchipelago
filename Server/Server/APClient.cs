@@ -23,9 +23,12 @@ namespace Server
     public class APClient
     {
         public ArchipelagoSession session;
+        public bool loginFailed = false;
         public LoginResult result;
         public LoginSuccessful loginSuccessful;
         public ItemInfo lastReceivedItem;
+        public HashSet<long> preconnectChecks = new HashSet<long>();
+
         public static readonly Dictionary<string, int> shopItems = new Dictionary<string, int>()
         {
             {"MarioInvisibleCap", 2502},
@@ -335,6 +338,7 @@ namespace Server
                 }
 
                 Console.WriteLine(errorMessage);
+                loginFailed = true;
                 // Did not connect, show the user the contents of `errorMessage`
                 return;
             }
@@ -342,6 +346,9 @@ namespace Server
             // Successfully connected, `ArchipelagoSession` (assume statically defined as `session` from now on) can now be used to interact with the server and the
             // returned `LoginSuccessful` contains some useful information about the initial connection (e.g. a copy of the slot data as `loginSuccess.SlotData`)
             Console.WriteLine($"Successfully Connected to {server} as {user}");
+            loginFailed = false;
+            session.Locations.CompleteLocationChecks(preconnectChecks.ToArray());
+            preconnectChecks.Clear();
             loginSuccessful = (LoginSuccessful)result;
        }
 
@@ -350,7 +357,30 @@ namespace Server
         
         public void send_location(int location)
         {
-            session.Locations.CompleteLocationChecks(location);
+            if (!loginFailed)
+            {
+                session.Locations.CompleteLocationChecks(location);
+            }
+            else
+            {
+                Console.WriteLine($"Not connected to AP, storing check {location}");
+                preconnectChecks.Add(location);
+            }
+        }
+
+        public string get_error_message()
+        {
+            LoginFailure failure = (LoginFailure)result;
+            string errorMessage = $"Failed to Connect:";
+            foreach (string error in failure.Errors)
+            {
+                errorMessage += $" {error}";
+            }
+            foreach (ConnectionRefusedError error in failure.ErrorCodes)
+            {
+                errorMessage += $" {error}";
+            }
+            return errorMessage;
         }
 
         public string get_goal()

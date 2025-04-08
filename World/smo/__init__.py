@@ -3,7 +3,7 @@ from typing import Mapping, Any
 
 from .Items import item_table, SMOItem, filler_item_table, outfits, shop_items, multi_moons, \
     Cap, Cascade, Sand, Lake, Wooded, Cloud, Lost, Metro, Snow, Seaside, Luncheon, Ruined, \
-    Bowser, Moon, Mushroom, Dark, Darker, moon_item_list
+    Bowser, Moon, Mushroom, Dark, Darker
 from .Locations import locations_table, SMOLocation, loc_Cascade, loc_Cascade_Revisit, \
     loc_Cap, loc_Sand, loc_Lake, loc_Wooded, loc_Cloud, loc_Lost, loc_Metro, loc_Snow, \
     loc_Seaside, loc_Luncheon, loc_Ruined, loc_Bowser, post_game_locations_table, \
@@ -173,11 +173,9 @@ class SMOWorld(World):
         if self.options.goal <= 15:
             for i in range(len(post_game_locations_list)):
                 moon_item_list[i].reverse()
-                for location_index in range(len(post_game_locations_list[i].keys())):
-                    self.multiworld.get_location(list(post_game_locations_list[i].keys())[location_index],
-                                                 self.player).place_locked_item(
-                        self.create_item(moon_item_list[i][location_index]))
-                    pool.remove(moon_item_list[i][location_index])
+                for location_name in post_game_locations_list[i].keys():
+                        self.create_item(self.item_id_to_name[self.location_name_to_id[location_name]]))
+                    pool.remove(self.item_id_to_name[self.location_name_to_id[location_name]])
 
         locations_list.reverse()
         moon_item_list.reverse()
@@ -192,13 +190,24 @@ class SMOWorld(World):
                 self.multiworld.get_location("Secret Path to Lake Lamode!", self.player).place_locked_item(
                     self.create_item("Lake Power Moon (417)"))
                 pool.remove("Lake Power Moon (417)")
-            moon_item_list[i].reverse()
-            for location_index in range(len(locations_list[i].keys())):
-                self.multiworld.get_location(list(locations_list[i].keys())[location_index], self.player).place_locked_item(self.create_item(moon_item_list[i][location_index]))
                 if moon_item_list[i][location_index] in pool:
-                    pool.remove(moon_item_list[i][location_index])
+            for location_index in locations_list[i].keys():
+                self.multiworld.get_location(location_index, self.player).place_locked_item(self.create_item(self.item_id_to_name[self.location_name_to_id[location_index]]))
+                if self.item_id_to_name[self.location_name_to_id[location_index]] in pool:
+                    pool.remove(self.item_id_to_name[self.location_name_to_id[location_index]])
+
+        if self.options.story < 3:
+            for item in self.item_name_to_id.keys():
+                if self.options.story != 1 and "Story" in item and item in pool:
+                    self.multiworld.get_location(self.location_id_to_name[self.item_name_to_id[item]], self.player).place_locked_item(self.create_item(item))
+                    pool.remove(item)
+                if self.options.story != 2 and "Multi" in item and item in pool:
+                    self.multiworld.get_location(self.location_id_to_name[self.item_name_to_id[item]], self.player).place_locked_item(self.create_item(item))
+                    pool.remove(item)
+
+        locations_list.reverse()
         for kingdom in self.unrequired_kingdoms:
-            # Removes kingdom's power moons from the pool
+            # Removes unneeded power moons from the pool
             if self.options.replace == 1:
                 for item in self.item_name_groups[kingdom]:
                     if item in pool:
