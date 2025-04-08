@@ -80,7 +80,7 @@ class SMOWorld(World):
 
     def generate_basic(self) -> None:
         pass
-    
+
     def set_rules(self):
         set_rules(self, self.options)
 
@@ -133,8 +133,9 @@ class SMOWorld(World):
 
     def create_items(self):
         pool = item_table.keys() - filler_item_table.keys()
+        pool.remove("Beat the Game")
+
         if not self.options.goal == 15:
-            pool.remove("Beat the Game")
             pool.add("1000 Coins")
 
         pool.remove("Beat Bowser in Cloud")
@@ -177,6 +178,7 @@ class SMOWorld(World):
                         self.create_item(self.item_id_to_name[self.location_name_to_id[location_name]]))
                     pool.remove(self.item_id_to_name[self.location_name_to_id[location_name]])
 
+
         locations_list.reverse()
         for i in range(18 - self.options.goal):
             if i == 6:
@@ -189,6 +191,7 @@ class SMOWorld(World):
                 self.multiworld.get_location("Secret Path to Lake Lamode!", self.player).place_locked_item(
                     self.create_item("Lake Power Moon (417)"))
                 pool.remove("Lake Power Moon (417)")
+
             for location_index in locations_list[i].keys():
                 self.multiworld.get_location(location_index, self.player).place_locked_item(self.create_item(self.item_id_to_name[self.location_name_to_id[location_index]]))
                 if self.item_id_to_name[self.location_name_to_id[location_index]] in pool:

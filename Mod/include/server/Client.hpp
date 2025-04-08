@@ -156,6 +156,10 @@ class Client {
         
         static sead::FixedSafeString<0x20> getUsername() { return sInstance ? sInstance->mUsername : sead::FixedSafeString<0x20>::cEmptyString;}
 
+        static sead::FixedSafeString<0x4B> getAPChatMessage1() { return sInstance ? sInstance->apChatLine1 : sead::FixedSafeString<0x20>::cEmptyString;}
+        static sead::FixedSafeString<0x4B> getAPChatMessage2() { return sInstance ? sInstance->apChatLine2 : sead::FixedSafeString<0x20>::cEmptyString;}
+        static sead::FixedSafeString<0x4B> getAPChatMessage3() { return sInstance ? sInstance->apChatLine3 : sead::FixedSafeString<0x20>::cEmptyString;}
+
         static void setStageInfo(GameDataHolderAccessor holder);
 
         static void setLastUsedIP(const char* ip);
@@ -193,6 +197,7 @@ class Client {
         void updateShineInfo(ShineCollect *packet);
         void updateItems(ItemCollect *packet);
         void updateFiller(FillerCollect *packet);
+        void updateChatMessages(ArchipelagoChatMessage *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);
@@ -224,6 +229,11 @@ class Client {
         int collectedShineCount = 0;
 
         int lastCollectedShine = -1;
+
+        sead::FixedSafeString<0x4B> apChatLine1;
+        sead::FixedSafeString<0x4B> apChatLine2;
+        sead::FixedSafeString<0x4B> apChatLine3;
+
 
         // Backups for our last player/game packets, used for example to re-send them for newly connected clients
         PlayerInf lastPlayerInfPacket = PlayerInf();

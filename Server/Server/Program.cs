@@ -10,6 +10,8 @@ using Timer = System.Timers.Timer;
 using Open.Nat;
 using Archipelago.MultiClient.Net;
 using System.Reflection;
+using Archipelago.MultiClient.Net.MessageLog.Messages;
+using System.Runtime.ExceptionServices;
 
 Server.Server server = new Server.Server();
 Server.APClient apClient = new APClient();
@@ -364,6 +366,7 @@ Timer grandTimer = new Timer(35000);
 grandTimer.AutoReset = false;
 grandTimer.Enabled = true;
 grandTimer.Elapsed += (_, _) => { SyncShineBag(); };
+
 
 float MarioSize(bool is2d) => is2d ? 180 : 160;
 
@@ -1068,7 +1071,6 @@ async void connectAP()
 
     apClient.session.Items.ItemReceived += (receivedItemsHelper) =>
     {
-
         var itemReceivedName = receivedItemsHelper.PeekItem();
         consoleLogger.Info($"Received {itemReceivedName.ItemName} ID {itemReceivedName.ItemId}");
         if (itemReceivedName.ItemGame == "Super Mario Odyssey")
@@ -1111,6 +1113,7 @@ async void connectAP()
             apClient.session.SetGoalAchieved();
         receivedItemsHelper.DequeueItem();
     };
+
 
     ApSync();
 
@@ -1229,6 +1232,7 @@ async void connectAP()
         }
 
     };
+
 }
 
 void ApSync()

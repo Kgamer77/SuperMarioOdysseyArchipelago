@@ -90,24 +90,43 @@ void drawMainHook(HakoniwaSequence *curSequence, sead::Viewport *viewport, sead:
 
     Time::calcTime();  // this needs to be ran every frame, so running it here works
 
-    if(!debugMode) {
-        al::executeDraw(curSequence->mLytKit, "２Ｄバック（メイン画面）");
-        return;
-    }
-
-    // int dispWidth = al::getLayoutDisplayWidth();
     int dispHeight = al::getLayoutDisplayHeight();
 
     gTextWriter->mViewport = viewport;
 
     gTextWriter->mColor = sead::Color4f(1.f, 1.f, 1.f, 0.8f);
 
-    drawBackground((agl::DrawContext *)drawContext);
+    al::Scene* curScene = curSequence->curScene;
 
-    gTextWriter->beginDraw();
-    gTextWriter->setCursorFromTopLeft(sead::Vector2f(10.f, 10.f));
+    if (curScene && isInGame &&
+        !(Client::getAPChatMessage1() == Client::getAPChatMessage2() &&
+          Client::getAPChatMessage2() == Client::getAPChatMessage3())) {
+        if (Client::getAPChatMessage1() == Client::getAPChatMessage2())
+            drawApChatBackground((agl::DrawContext*)drawContext, 3.f);
+        else if (Client::getAPChatMessage1().isEmpty())
+            drawApChatBackground((agl::DrawContext*)drawContext, 2.f);
+        else
+            drawApChatBackground((agl::DrawContext*)drawContext, 1.f);
+
+        gTextWriter->beginDraw();
+        gTextWriter->setCursorFromTopLeft(sead::Vector2f(10.f, (dispHeight * 7 / 10) + 60.f));
+        gTextWriter->setScaleFromFontHeight(15.f);
+
+        gTextWriter->printf("%s\n", Client::getAPChatMessage1().cstr());
+        gTextWriter->printf("%s\n", Client::getAPChatMessage2().cstr());
+        gTextWriter->printf("%s\n", Client::getAPChatMessage3().cstr());
+    }
+
+    if(!debugMode) {
+        al::executeDraw(curSequence->mLytKit, "２Ｄバック（メイン画面）");
+        return;
+    }
+
+    // int dispWidth = al::getLayoutDisplayWidth();
 
     gTextWriter->printf("FPS: %d\n", static_cast<int>(round(Application::sInstance->mFramework->calcFps())));
+
+    drawBackground((agl::DrawContext*)drawContext);
 
     gTextWriter->setCursorFromTopLeft(sead::Vector2f(10.f, (dispHeight / 3) + 30.f));
     gTextWriter->setScaleFromFontHeight(20.f);
@@ -127,8 +146,6 @@ void drawMainHook(HakoniwaSequence *curSequence, sead::Viewport *viewport, sead:
     
     gTextWriter->printf("Send Queue Count: %d/%d\n", Client::instance()->mSocket->getSendCount(), Client::instance()->mSocket->getSendMaxCount());
     gTextWriter->printf("Recv Queue Count: %d/%d\n", Client::instance()->mSocket->getRecvCount(), Client::instance()->mSocket->getRecvMaxCount());
-
-    al::Scene *curScene = curSequence->curScene;
 
     if(curScene && isInGame) {
 

@@ -61,14 +61,6 @@ B59E28 B seadPrintHook // sead::system::print
 1CEEDC BL registerShineToList
 
 // Skip Shine Demo
-//4DC18C NOP
-
-// Skip Player Shine Demo
-//4DC1D4 NOP
-
-//4DC52C NOP
-
-//4DC170 NOP
 
 //rs::buyCap
 54CB9C BL sendItemPacket

@@ -55,6 +55,10 @@ Client::Client() {
     Logger::setLogName(playerName.name);  // set Debug logger name to player name
 
     mUsername = playerName.name;
+
+    apChatLine1 = "";
+    apChatLine2 = "";
+    apChatLine3 = "";
     
     mUserID.print();
 
@@ -367,6 +371,9 @@ void Client::readFunc() {
                 break;
             case PacketType::FILLERCOLL:
                 updateFiller((FillerCollect*)curPacket);
+                break;
+            case PacketType::APCHATMESSAGE:
+                updateChatMessages((ArchipelagoChatMessage*)curPacket);
                 break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
@@ -1412,7 +1419,21 @@ void Client::updateFiller(FillerCollect* packet) {
 
 }
 
+/**
+ * @brief
+ *
+ */
+void Client::updateChatMessages(ArchipelagoChatMessage* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
 
+    apChatLine1 = packet->message1;
+    apChatLine2 = packet->message2;
+    apChatLine3 = packet->message3;
+}
 
 /**
  * @brief 
