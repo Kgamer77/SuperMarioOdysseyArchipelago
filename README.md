@@ -1,5 +1,6 @@
 # Super Mario Odyssey - Archipelago Mod
-A mod adding Archipelago Multi World support to Super Mario Odyssey
+A mod adding Archipelago Multi World support to Super Mario Odyssey.
+WARNING: This mod only works on version 1.0.0 of Super Mario Odyssey.
 
 ## Features
 - Randomize Power Moons
@@ -26,6 +27,10 @@ Extract `SMO_Archipelago_Vx.x_Switch.zip` and Place the `atmosphere` folder onto
 Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory for Super Mario Odyssey.
 
 </details>
+
+Connecting to the Server from Super Mario Odyssey.
+- When prompted, the `IP Address` you are connecting to is your computer's local ipv4 this is found by entering the `ipconfig` command into command prompt on Windows.
+- When prompted, the `Port` is `1027` by default which does not need to be changed.
 
 `settings.json` has fields for the `Archipelago` connection.
 - `Server` is where the ip address or url of the AP Server or room your joining goes
