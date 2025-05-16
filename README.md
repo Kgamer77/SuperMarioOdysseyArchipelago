@@ -23,7 +23,7 @@ Extract `SMO_Archipelago_Vx.x_Switch.zip` and Place the `atmosphere` folder onto
 <details>
 <summary>Emulator</summary>
 
-### Ryujinx
+### Ryujinx (Cannot Send Checks)
 Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory for Super Mario Odyssey.
 
 </details>
