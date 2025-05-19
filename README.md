@@ -16,7 +16,7 @@ WARNING: This mod only works on version 1.0.0 of Super Mario Odyssey.
 <details>
 <summary>Switch</summary> 
   
-Extract `SMO_Archipelago_Vx.x_Switch.zip` and Place the `atmosphere` folder onto the root of your sd card.
+- Extract `SMO_Archipelago_Vx.x_Switch.zip` and Place the `atmosphere` folder onto the root of your sd card.
 
 </details>
 
@@ -24,11 +24,11 @@ Extract `SMO_Archipelago_Vx.x_Switch.zip` and Place the `atmosphere` folder onto
 <summary>Emulator</summary>
 
 ### Ryujinx (Cannot Send Checks)
-Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory for Super Mario Odyssey.
+- Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory for Super Mario Odyssey.
 
 ### Suyu
-Right Click on Super Mario Odyssey in the game menu and select `Open Mod Data Location`.
-Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory that opened.
+- Right Click on Super Mario Odyssey in the game menu and select `Open Mod Data Location`.
+- Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory that opened.
 </details>
 
 Connecting to the Server from Super Mario Odyssey.
