@@ -375,6 +375,12 @@ void Client::readFunc() {
             case PacketType::APCHATMESSAGE:
                 updateChatMessages((ArchipelagoChatMessage*)curPacket);
                 break;
+            case PacketType::SHINECOUNTS:
+                updateCounts((ShineCounts*)curPacket);
+                break;
+            case PacketType::UNLOCKWORLD:
+                updateWorlds((UnlockWorld*)curPacket);
+                break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
                 curPacket->mUserID.print();
@@ -609,33 +615,44 @@ void Client::sendGameInfPacket(GameDataHolderAccessor holder) {
 
     strcpy(packet->stageName, GameDataFunction::getCurrentStageName(holder));
 
-    if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") == 0) {
-        int ruinedCount = 0;
-        if (!GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), 0)) {
+    if (GameDataFunction::isCrashHome(holder)) {
+        if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") == 0) {
+            int ruinedCount = 0;
+            if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), 0)) {
+                ruinedCount += 3;
+            }
+
             for (int i = 1; i < 9; i++) {
                 if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), i))
                     ruinedCount++;
             }
-        } else
-            ruinedCount = 3;
-        if (holder.mData->mGameDataFile->getScenarioNo() == 2 && ruinedCount < 3) {
+            if (ruinedCount < sInstance->raidCount) {
+                GameDataFunction::repairHome(holder);
+            }
+        } else {
             GameDataFunction::repairHome(holder);
         }
-        if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
-            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
+
     }
 
-    if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
-        int lostCount = 0;
-        for (int i = 1; i < 25; i++) {
-            if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(), i))
-                lostCount++;
-        }
-        if (lostCount < 10) {
+    if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
+        GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
+
+    if (GameDataFunction::isCrashHome(holder)) {
+        if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
+            int lostCount = 0;
+            for (int i = 1; i < 25; i++) {
+                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(), i))
+                    lostCount++;
+            }
+            if (lostCount < sInstance->clashCount) {
+                GameDataFunction::repairHome(holder);
+                GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
+            } else
+                GameDataFunction::crashHome(holder);
+        } else {
             GameDataFunction::repairHome(holder);
-            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
-        } else
-            GameDataFunction::crashHome(holder);
+        }
     }
 
     if (*packet != sInstance->emptyGameInfPacket) {
@@ -1430,9 +1447,31 @@ void Client::updateChatMessages(ArchipelagoChatMessage* packet)
         return;
     }
 
-    apChatLine1 = packet->message1;
-    apChatLine2 = packet->message2;
-    apChatLine3 = packet->message3;
+    sInstance->apChatLine1 = packet->message1;
+    sInstance->apChatLine2 = packet->message2;
+    sInstance->apChatLine3 = packet->message3;
+}
+
+void Client::updateCounts(ShineCounts* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    sInstance->clashCount = packet->clash;
+    sInstance->raidCount = packet->raid;
+}
+
+void Client::updateWorlds(UnlockWorld* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+    GameDataFunction::unlockWorld(accessor, packet->worldID);
 }
 
 /**

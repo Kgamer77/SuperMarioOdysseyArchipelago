@@ -1062,7 +1062,10 @@ loc_Mushroom_Shop = {
     "Sticker Peach": 2582,
     "Classic Cap": 2600,
     "Classic Clothes": 2601,
-    "Bone Clothes": 2602,
+    "Bone Clothes": 2602
+}
+
+loc_Postgame_Shop = {
     "Luigi Cap": 2603,
     "Luigi Clothes": 2604,
     "Doctor Cap": 2605,
@@ -1178,6 +1181,7 @@ shop_locations_table = {
     **loc_Bowser_Shop,
     **loc_Moon_Shop,
     **loc_Mushroom_Shop,
+    **loc_Postgame_Shop,
     **loc_Dark_Outfit,
     **loc_Darker_Outfit
 }

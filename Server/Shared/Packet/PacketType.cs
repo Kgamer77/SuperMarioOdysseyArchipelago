@@ -16,5 +16,7 @@ public enum PacketType : short {
     Command,
     Item,
     Filler,
-    ArchipelagoChat
+    ArchipelagoChat,
+    ShineCounts,
+    UnlockWorld
 }

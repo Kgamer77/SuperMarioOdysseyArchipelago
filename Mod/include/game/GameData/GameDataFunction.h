@@ -132,6 +132,8 @@ public:
     // checks if odyssey is crashed
     static bool isCrashHome(GameDataHolderAccessor);
     static void crashHome(GameDataHolderWriter);
+    static bool isBossAttackedHome(GameDataHolderAccessor);
+    static void bossAttackHome(GameDataHolderWriter);
 
     // checks if odyssey is activated 
     static bool isActivateHome(GameDataHolderAccessor);

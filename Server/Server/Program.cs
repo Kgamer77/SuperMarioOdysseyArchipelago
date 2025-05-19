@@ -17,6 +17,7 @@ Server.Server server = new Server.Server();
 Server.APClient apClient = new APClient();
 HashSet<int> shineBag = new HashSet<int>();
 HashSet<int> outfitBag = new HashSet<int>();
+HashSet<int> worldBag = new HashSet<int>();
 HashSet<int> fillerIndex = new HashSet<int>();
 Dictionary<int, int> IndexToFiller = new Dictionary<int, int>();
 Queue<string> chatMessages = new Queue<string>();
@@ -28,7 +29,7 @@ await bot.Run();
 
 Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
         {
-            { 227 , false },
+            /*{ 227 , false },
             { 204 , false },
             { 692 , false },
             { 403 , false },
@@ -100,10 +101,11 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 1119 , false },
             { 539 , false },
             { 496 , false },
-            { 129 , false }
+            { 129 , false },*/
+            { 424 , false } // Broodals over the Lake
         };
 
-async Task PersistIndexes()
+/*async Task PersistIndexes()
 {
     try
     {
@@ -136,13 +138,14 @@ async Task LoadFiller()
     {
         consoleLogger.Error(ex);
     }
-}
+}*/
 
 server.ClientJoined += (c, _) => {
     c.Metadata["shineSync"] = new ConcurrentBag<int>();
     c.Metadata["itemSync"] = new ConcurrentBag<int>();
     c.Metadata["fillerSync"] = new ConcurrentBag<int>();
     c.Metadata["messageLog"] = new List<string>();
+    c.Metadata["worldSync"] = new ConcurrentBag<int>();
     c.Metadata["loadedSave"] = false;
     c.Metadata["scenario"] = (byte?) 0;
     c.Metadata["2d"] = false;
@@ -264,7 +267,7 @@ async void SyncFillerItem()
 {
     try
     {
-        await PersistIndexes();
+        //await PersistIndexes();
         await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncFillerItem(client));
     }
     catch
@@ -350,6 +353,74 @@ async void SendLogMessage()
     }
 }
 
+async Task ClientSendCounts(Client client)
+{
+    try
+    {
+        if (!client.Connected) return;
+
+        await client.Send(new ShineCounts
+        {
+            clash = apClient.GetClashCount(),
+            raid = apClient.GetRaidCount()
+        });
+        }
+    catch
+    {
+        // errors that can happen when sending will crash the server :)
+    }
+}
+
+async void SendCounts()
+{
+    try
+    {
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSendCounts(client));
+    }
+    catch
+    {
+        // errors that can happen shines change will crash the server :)
+    }
+}
+
+async Task ClientSyncWorld(Client client)
+{
+    try
+    {
+        ConcurrentBag<int> clientBag = (ConcurrentBag<int>)(client.Metadata["worldSync"] ??= new ConcurrentBag<int>());
+
+        foreach (int world in worldBag.Except(clientBag).ToArray())
+        {
+            
+            //consoleLogger.Info($"Parsed Item {s } {incomingType}");
+
+            if (!client.Connected) return;
+            await client.Send(new UnlockWorld
+            {
+                worldID = world
+            });
+            clientBag.Add(world);
+        }
+
+    }
+    catch
+    {
+        // errors that can happen when sending will crash the server :)
+    }
+}
+
+async void SyncWorld()
+{
+    try
+    {
+        await Parallel.ForEachAsync(server.ClientsConnected.ToArray(), async (client, _) => await ClientSyncWorld(client));
+    }
+    catch
+    {
+        // errors that can happen shines change will crash the server :)
+    }
+}
+
 Timer timer = new Timer(120000);
 timer.AutoReset = true;
 timer.Enabled = true;
@@ -423,11 +494,11 @@ server.PacketHandler = (c, p) => {
                         });
                     break;
                 case "ClashWorldHomeStage":
-                    apClient.send_location(2501);
+                    apClient.SendLocation(2501);
                     break;
                 case "PeachWorldHomeStage":
                     if (gamePacket.ScenarioNum > 1)
-                        apClient.send_location(2500);
+                        apClient.SendLocation(2500);
                     break;
             }
 
@@ -474,13 +545,13 @@ server.PacketHandler = (c, p) => {
             if (c.Metadata["loadedSave"] is false) break;
             c.Logger.Info($"Got moon location {shinePacket.ShineId}");
             if (shinePacket.ShineId != 1123)
-                apClient.send_location(shinePacket.ShineId);
+                apClient.SendLocation(shinePacket.ShineId);
             else
             {
                 object? old = null;
                 c.Metadata.TryGetValue("lastGamePacket", out old);
                 if (old != null)
-                    apClient.send_location(APClient.darkSideHintArts[((GamePacket)old).Stage]);
+                    apClient.SendLocation(APClient.darkSideHintArts[((GamePacket)old).Stage]);
             }
             if (giftMoons.ContainsKey(shinePacket.ShineId))
                 if (giftMoons[shinePacket.ShineId])
@@ -497,7 +568,7 @@ server.PacketHandler = (c, p) => {
                     item += "Clothes";
                 if (itemPacket.itemType == 1)
                     item += "Cap";
-                apClient.send_location(APClient.shopItems[item]);
+                apClient.SendLocation(APClient.shopItems[item]);
                 break;
         }
 
@@ -998,6 +1069,22 @@ CommandHandler.RegisterCommand("connect", args =>
     return optionUsage;
 });
 
+CommandHandler.RegisterCommand("unlock", args =>
+{
+    const string optionUsage = "Valid options: <world name>";
+    // Make this a switch-case later
+    if (args.Length == 0)
+    {
+        return optionUsage;
+    }
+    else if (args.Length == 1)
+    {
+        worldBag.Add(APClient.worlds[args[0]]);
+        SyncWorld();
+        return "";
+    }
+    return optionUsage;
+});
 
 CommandHandler.RegisterCommand("apsync", args =>
 {
@@ -1039,14 +1126,13 @@ Task.Run(() => {
 #pragma warning restore CS4014
 async void Upnp()
 {
-    var discoverer = new NatDiscoverer();
-    var cts = new CancellationTokenSource(10000);
-    var device = await discoverer.DiscoverDeviceAsync(PortMapper.Upnp, cts);
-    var ip = await device.GetExternalIPAsync();
-    Console.WriteLine("The external IP Address is: {0} ", ip);
-
     try
     {
+        var discoverer = new NatDiscoverer();
+        var cts = new CancellationTokenSource(10000);
+        var device = await discoverer.DiscoverDeviceAsync(PortMapper.Upnp, cts);
+        var ip = await device.GetExternalIPAsync();
+        Console.WriteLine("The external IP Address is: {0} ", ip);
         await device.CreatePortMapAsync(new Mapping(Protocol.Tcp, Settings.Instance.Archipelago.Port, Settings.Instance.Archipelago.Port, "SMO Online Server"));
         await device.CreatePortMapAsync(new Mapping(Protocol.Udp, Settings.Instance.Archipelago.Port, Settings.Instance.Archipelago.Port, "SMO Online Server"));
     }
@@ -1060,12 +1146,12 @@ async void connectAP()
     apClient.Connect(Settings.Instance.Archipelago.Server, Settings.Instance.Archipelago.Slot, Settings.Instance.Archipelago.Password, Settings.Instance.Archipelago.Port);
     if (!apClient.loginFailed)
     {
-        await LoadFiller();
+        //await LoadFiller();
         chatMessages.Enqueue("Connected to Archipelago");
     }
     else
     {
-        chatMessages.Enqueue(apClient.get_error_message());
+        chatMessages.Enqueue(apClient.GetErrorMessage());
         return;
     }
 
@@ -1077,27 +1163,37 @@ async void connectAP()
         {
             if (itemReceivedName.ItemId < 2500)
             {
-                if (giftMoons.ContainsKey((int)itemReceivedName.ItemId))
+                int nextMoon = apClient.GetNextMoon(itemReceivedName.ItemName);
+                consoleLogger.Info($"Received {itemReceivedName.ItemName} ID {nextMoon}");
+                if (giftMoons.ContainsKey(nextMoon))
                 {
-                    giftMoons[(int)itemReceivedName.ItemId] = true;
+                    giftMoons[nextMoon] = true;
                     receivedItemsHelper.DequeueItem();
                     return;
                 }
-                shineBag.Add((int)itemReceivedName.ItemId);
-                if (itemReceivedName.ItemName.Contains("Multi") && itemReceivedName.ItemId == itemReceivedName.LocationId)
+                shineBag.Add(nextMoon);
+                if (itemReceivedName.ItemName.Contains("Multi"))
                 {
-                    consoleLogger.Warn("Item at it's own location!");
                     receivedItemsHelper.DequeueItem();
                     grandTimer.Start();
                     return;
                 }
+                if (itemReceivedName.ItemName.Contains("Multi"))
+                {
+                    apClient.SendLocation(nextMoon);
+                }
             }
             SyncShineBag();
-            if (itemReceivedName.ItemId >= 2502 && itemReceivedName.ItemId < 9990)
+            if (itemReceivedName.ItemId >= 2502 && itemReceivedName.ItemId < 2630)
             {
                 outfitBag.Add((int)itemReceivedName.ItemId);
             }
             SyncItem();
+            if (itemReceivedName.ItemId >= 2630 && itemReceivedName.ItemId < 9990)
+            {
+                worldBag.Add(APClient.worlds[itemReceivedName.ItemName.Replace(" Kingdom", "")]);
+            }
+            SyncWorld();
             if (itemReceivedName.ItemId >= 9990)
             {
                 if (!fillerIndex.Contains(receivedItemsHelper.Index))
@@ -1109,11 +1205,11 @@ async void connectAP()
             SyncFillerItem();
 
         }
-        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.get_goal())
-            apClient.session.SetGoalAchieved();
+        if (itemReceivedName.ItemGame == "Super Mario Odyssey" && itemReceivedName.ItemName == apClient.GetGoal().item)
+            if (apClient.GetGoal().item == "Beat the Game" || apClient.GetMoons()[itemReceivedName.ItemName] > apClient.GetGoal().index)
+                apClient.session.SetGoalAchieved();
         receivedItemsHelper.DequeueItem();
     };
-
 
     ApSync();
 
@@ -1128,7 +1224,7 @@ async void connectAP()
                     string message = "";
                     if (hintLogMessage.Receiver.Name != hintLogMessage.Sender.Name)
                     {
-                        message = $"has your {hintLogMessage.Item.ItemName}";
+                        message = $" has your {hintLogMessage.Item.ItemName}";
 
                         if (Constants.ChatMessageSize - message.Length > 0)
                         {
@@ -1233,10 +1329,20 @@ async void connectAP()
 
     };
 
+    SendCounts();
+
+    apClient.deathLink.OnDeathLinkReceived += (deathLinkObject) =>
+    {
+        // Send kill item packet
+    };
+
 }
 
 void ApSync()
 {
+    shineBag.Clear();
+    apClient.ResetMoons();
+
     foreach (long LocationId in apClient.session.Locations.AllLocationsChecked)
     {
         if (giftMoons.ContainsKey( (int)LocationId))
@@ -1249,18 +1355,21 @@ void ApSync()
     {
         if (item.ItemId < 2500)
         {
-            if (giftMoons.ContainsKey((int)item.ItemId))
+            int nextMoon = apClient.GetNextMoon(item.ItemName);
+            if (giftMoons.ContainsKey(nextMoon))
             {
-                giftMoons[(int)item.ItemId] = true;
+                giftMoons[nextMoon] = true;
             }
-            shineBag.Add((int)item.ItemId);
+
+            shineBag.Add(nextMoon);
         }
         if (item.ItemId >= 2502 && item.ItemId < 9990)
         {
             outfitBag.Add((int)item.ItemId);
         }
-        if (item.ItemGame == "Super Mario Odyssey" && item.ItemName == apClient.get_goal())
-            apClient.session.SetGoalAchieved();
+        if (item.ItemGame == "Super Mario Odyssey" && item.ItemName == apClient.GetGoal().item)
+            if (apClient.GetGoal().item == "Beat the Game" || apClient.GetMoons()[item.ItemName] > apClient.GetGoal().index)
+                apClient.session.SetGoalAchieved();
         while (apClient.session.Items.PeekItem() != null)
         {
             apClient.session.Items.DequeueItem();

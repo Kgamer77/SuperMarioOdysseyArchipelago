@@ -30,6 +30,8 @@ enum PacketType : short {
     ITEMCOLL,
     FILLERCOLL,
     APCHATMESSAGE,
+    SHINECOUNTS,
+    UNLOCKWORLD,
     UDPINIT,
     HOLEPUNCH,
     End // end of enum for bounds checking
@@ -53,6 +55,8 @@ USED static const char *packetNames[] = {
     "Item Collection",
     "Filler Collection",
     "Archipelago Chat Message",
+    "Shine Counts",
+    "Unlock World",
     "Udp Initialization",
     "Hole punch",
     
@@ -95,6 +99,8 @@ struct PACKED Packet {
 #include "packets/ItemCollect.h"
 #include "packets/FillerCollect.h"
 #include "packets/ArchipelagoChatMessage.h"
+#include "packets/ShineCounts.h"
+#include "packets/UnlockWorld.h"
 #include "packets/CaptureInf.h"
 #include "packets/HackCapInf.h"
 #include "packets/ChangeStagePacket.h"
