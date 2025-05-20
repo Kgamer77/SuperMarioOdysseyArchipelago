@@ -932,7 +932,7 @@ multi_moons = {
     "Blowup at Mount Volbono: Rematch",
     "Rumble in Crumbleden: Rematch"],
     "Dark" : ["Arrival at Rabbit Ridge!"],
-    "Darker" : ["Long Journey's End"]
+    "Darker" : ["A Long Journey's End!"]
 }
 
 story_moons = {

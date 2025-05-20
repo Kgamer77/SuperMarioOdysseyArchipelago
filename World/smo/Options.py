@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from Options import Toggle, Choice, FreeText, PerGameCommonOptions, Visibility
+from Options import Toggle, Choice, FreeText, PerGameCommonOptions
 
 class Goal(Choice):
     """Sets the completion goal. This is the kingdom you must get the last story multi moon in to win the game.
@@ -43,12 +43,12 @@ class RomFSLocation(FreeText):
     """The Directory of an extracted RomFS folder for Super Mario Odyssey.
     Used to generate a RomFS folder to patch in special options."""
     display_name = "Extracted RomFS Directory"
-    visibility = 0b1101
+    #visibility = 0b1101
 
 class RandomizeMoonColors(Toggle):
     """Randomizes each kingdom's moon color."""
     display_name = "Randomize Moon Colors"
-    visibility = 0b1101
+    #visibility = 0b1101
 
 class RandomizeMoonCount(Choice):
     """Randomizes each kingdom's moon count.
@@ -58,7 +58,7 @@ class RandomizeMoonCount(Choice):
     extreme: Up to 200% of normal count.
     """
     display_name = "Randomize Moon Count"
-    visibility = 0b1101
+    #visibility = 0b1101
     option_same_total = 1
     option_same_total_lock_ruined = 2
     option_moderate = 3

@@ -47,9 +47,7 @@ class SMOWorld(World):
     item_name_to_id = {**item_table, **moon_types}
 
     location_name_to_id = locations_table
-
     unrequired_kingdoms = []
-
     # Number of Power Moons required to leave each kingdom
     moon_counts = {
         "cascade": 5,
@@ -165,25 +163,6 @@ class SMOWorld(World):
 
     # Items can be grouped using their names to allow easy checking if any item
     # from that group has been collected. Group names can also be used for !hint
-    # item_name_groups = {
-    #     "Cap": Cap.keys(),
-    #     "Cascade": Cascade.keys(),
-    #     "Sand": Sand.keys(),
-    #     "Lake": Lake.keys(),
-    #     "Wooded": Wooded.keys(),
-    #     "Cloud": Cloud.keys(),
-    #     "Lost": Lost.keys(),
-    #     "Metro": Metro.keys(),
-    #     "Snow": Snow.keys(),
-    #     "Seaside": Seaside.keys(),
-    #     "Luncheon": Luncheon.keys(),
-    #     "Ruined": Ruined.keys(),
-    #     "Bowser": Bowser.keys(),
-    #     "Moon": Moon.keys(),
-    #     "Mushroom": Mushroom.keys(),
-    #     "Dark": Dark.keys(),
-    #     "Darker": Darker.keys()
-    # }
     item_name_groups = {
         "Cap": ["Cap Power Moon"],
         "Cascade": ["Cascade Power Moon","Cascade Story Moon", "Cascade Multi-Moon"],
@@ -215,11 +194,7 @@ class SMOWorld(World):
     def generate_early(self):
         self.multiworld.early_items[self.player]["Cascade Multi-Moon"] = 1
         self.multiworld.early_items[self.player]["Cascade Story Moon"] = 1
-        possible_moons = list(range(2, 17))
-        # for i in range(self.moon_counts["cascade"]-4):
-        #     self.multiworld.early_items[self.player][list(Cascade.keys())[possible_moons.pop(random.randint(0, len(possible_moons)-1))]] = 1
         self.multiworld.early_items[self.player]["Cascade Power Moon"] = self.moon_counts["cascade"]-4
-
 
     def generate_basic(self) -> None:
         pass
@@ -235,42 +210,6 @@ class SMOWorld(World):
         else:
             if name == "Beat the Game" and self.options.goal == 15:
                 classification = ItemClassification.progression_skip_balancing
-            # elif self.options.goal <= 15 and item_id in post_game_locations_table.values():
-            #     classification = ItemClassification.filler
-            # elif self.options.goal <= 9 and item_id in loc_Cascade_Post_Snow.values():
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 18 and name in self.item_name_groups["Darker"]:
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 17 and (name in self.item_name_groups["Dark"] or (
-            #         name == "Bone Clothes" and (self.options.shop_sanity == "off" or self.options.shop_sanity == "non_outfits"))):
-            #     classification = ItemClassification.filler
-            # elif self.options.goal <= 15 and (
-            #         name in self.item_name_groups["Moon"] or name in self.item_name_groups["Mushroom"] or name in
-            #         self.item_name_groups["Cloud"] or name in self.item_name_groups["Cap"]):
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 12 and (
-            #         name in self.item_name_groups["Bowser"] or name in self.item_name_groups["Ruined"] or
-            #         name in self.item_name_groups["Luncheon"]):
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 9 and (
-            #         name in self.item_name_groups["Metro"] or name in self.item_name_groups["Seaside"] or
-            #         name in self.item_name_groups[
-            #             "Snow"]):
-            #         classification = ItemClassification.filler
-            #
-            # elif self.options.goal < 9 and name == "Sand Power Moon (1096)" or name == "Lake Power Moon (417)":
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 12 and name == "Cascade Power Moon (207)":
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 5 and name == "Sand Power Moon (524)":
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 5 and (
-            #         name in self.item_name_groups["Lake"] or name in self.item_name_groups["Wooded"] or name in
-            #         self.item_name_groups["Lost"] or name in self.item_name_groups["Cloud"]):
-            #     classification = ItemClassification.filler
-            # elif self.options.goal < 4 and name in self.item_name_groups["Sand"]:
-            #     classification = ItemClassification.filler
-
             elif name in outfits:
                 """self.options.goal > 4 and outfits.index(name) <= 2) or \
                                         (self.options.goal > 5 and outfits.index(name) <= 7) or \
@@ -311,12 +250,13 @@ class SMOWorld(World):
                         self.placed_counts["darker"] += 3 if "Multi" in name else 1
                         classification = ItemClassification.progression_skip_balancing
                     for group in self.item_name_groups.keys():
-                        if  (group.lower() in self.placed_counts and not item_id in post_game_locations_table.values()
+                        if (group.lower() in self.placed_counts
                                 and group != "Dark" and group != "Darker" and name in self.item_name_groups[group]
                                 and self.placed_counts[group.lower()] < self.moon_counts[group.lower()]):
                             self.placed_counts[group.lower()] += 3 if "Multi" in name else 1
                             #print(self.placed_counts[group.lower()], " ", group.lower())
                             classification = ItemClassification.progression_skip_balancing
+
                             break
 
 
@@ -374,72 +314,20 @@ class SMOWorld(World):
                         pool.append(item + " Power Moon")
 
         filler = 0
-        # if self.options.goal < 16:
-        #     self.unrequired_kingdoms.append("Cap")
-        #     self.unrequired_kingdoms.append("Cloud")
-        #
-        # if self.options.goal == 15:
-        #     self.unrequired_kingdoms.append("Moon")
-
-        # # Remove all post game checks from the pool
-        # if self.options.goal <= 15:
-        #     for i in range(len(post_game_locations_list)):
-        #         for location_name in post_game_locations_list[i].keys():
-        #             self.multiworld.get_location(location_name, self.player).place_locked_item(
-        #                 self.create_item(self.item_id_to_name[self.location_name_to_id[location_name]]))
-        #             pool.remove(self.item_id_to_name[self.location_name_to_id[location_name]])
-
-        locations_list.reverse()
-        # for i in range(18 - self.options.goal):
-        #     if i == 3:
-        #         self.multiworld.get_location("Secret Path to Peach’s Castle!", self.player).place_locked_item(
-        #             self.create_item("Power Star (608)"))
-        #         pool.remove("Power Star (608)")
-        #     if i == 6:
-        #         self.multiworld.get_location("Secret Path to Mount Volbono!", self.player).place_locked_item(
-        #             self.create_item("Luncheon Power Moon (260)"))
-        #         pool.remove("Luncheon Power Moon (260)")
-        #     if i == 8:
-        #         self.multiworld.get_location("Secret Path to Fossil Falls!", self.player).place_locked_item(
-        #             self.create_item("Cascade Power Moon (207)"))
-        #         pool.remove("Cascade Power Moon (207)")
-        #     if i == 7:
-        #         self.multiworld.get_location("Secret Path to Lake Lamode!", self.player).place_locked_item(
-        #             self.create_item("Lake Power Moon (417)"))
-        #         pool.remove("Lake Power Moon (417)")
-        #     if i == 13:
-        #         self.multiworld.get_location("Secret Path to Tostarena!", self.player).place_locked_item(
-        #             self.create_item("Sand Power Moon (524)"))
-        #         pool.remove("Sand Power Moon (524)")
-        #     for location_index in locations_list[i].keys():
-        #         self.multiworld.get_location(location_index, self.player).place_locked_item(
-        #             self.create_item(self.item_id_to_name[self.location_name_to_id[location_index]]))
-        #         if self.item_id_to_name[self.location_name_to_id[location_index]] in pool:
-        #             pool.remove(self.item_id_to_name[self.location_name_to_id[location_index]])
 
         # Remove Story and Multi Moons if the respective options aren't enabled
         if self.options.story < 3:
-            story_moons_cpy = story_moons.copy()
-            multi_moons_cpy = multi_moons.copy()
-            for item in pool:
-                if self.options.story != 1 and "Story" in item:
-                    self.multiworld.get_location(story_moons_cpy[item.split(" ")[0]].pop(),
-                                                 self.player).place_locked_item(self.create_item(item))
-                    pool.remove(item)
-                if self.options.story != 2 and "Multi" in item:
-                    self.multiworld.get_location(multi_moons_cpy[item.split(" ")[0]].pop(),
-                                                 self.player).place_locked_item(self.create_item(item))
-                    pool.remove(item)
-
-        locations_list.reverse()
-        # if self.options.goal <= 15:
-        #     for kingdom in self.unrequired_kingdoms:
-        #         # Removes unneeded power moons from the pool
-        #         if self.options.replace == 1:
-        #             for item in self.item_name_groups[kingdom]:
-        #                 if item in pool:
-        #                     pool.remove(item)
-        #                     filler += 1
+            for item in moon_types.keys():
+                if self.options.story != 1 and "Story" in item and item in pool:
+                    for moon in story_moons[item.split(" ")[0]]:
+                        self.multiworld.get_location(moon,
+                                                     self.player).place_locked_item(self.create_item(item))
+                        pool.remove(item)
+                if self.options.story != 2 and "Multi" in item and item in pool:
+                    for moon in multi_moons[item.split(" ")[0]]:
+                        self.multiworld.get_location(moon,
+                                                     self.player).place_locked_item(self.create_item(item))
+                        pool.remove(item)
 
         # Remove possible duplicate goal completion Multi Moons
         if self.options.story > 1:
@@ -455,10 +343,6 @@ class SMOWorld(World):
                 pool.remove("Dark Side Multi-Moon")
             if self.options.goal == "darker":
                 pool.remove("Darker Side Multi-Moon")
-
-        # for i in pool:
-        #     if pool.count(i) > 1 and i in moon_item_table:
-        #         raise Exception("Duplicate Moon in pool.")
 
         for i in pool:
             self.multiworld.itempool += [self.create_item(i)]
@@ -477,6 +361,10 @@ class SMOWorld(World):
         #         #print(location.item.name)
         #
         # print(total)
+
+        # Reset placed counts so multiworlds support more than one SMO instance
+        for key in self.placed_counts.keys():
+            self.placed_counts[key] = 0
 
         if filler > 0:
             for i in range(filler):
@@ -557,28 +445,6 @@ class SMOWorld(World):
             # if self.outfit_moon_counts[key] > self.moon_counts["dark"]:
             #     self.outfit_moon_counts[key] = self.moon_counts["dark"] - 1
 
-        # Remove kingdoms not in completion logic
-        # if self.options.goal < 18:
-        #     self.placed_counts.pop("darker")
-        # if self.options.goal < 17:
-        #     self.placed_counts.pop("dark")
-        # if self.options.goal < 15:
-        #     self.placed_counts.pop("bowser")
-        #     self.placed_counts.pop("ruined")
-        #     self.placed_counts.pop("luncheon")
-        # if self.options.goal < 12:
-        #     self.placed_counts.pop("seaside")
-        #     self.placed_counts.pop("snow")
-        # if self.options.goal <= 9:
-        #     self.placed_counts.pop("metro")
-        # if self.options.goal <= 5:
-        #     self.placed_counts.pop("lake")
-        #     self.placed_counts.pop("wooded")
-        #     self.placed_counts.pop("lost")
-        # if self.options.goal <= 4:
-        #     self.placed_counts.pop("sand")
-        # print(self.moon_counts)
-        # print(self.outfit_moon_counts)
 
 
     def generate_output(self, output_directory: str):

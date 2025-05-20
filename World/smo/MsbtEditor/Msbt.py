@@ -117,10 +117,11 @@ class Msbt():
 
         message_data.decode(get_decoding(self.encoding)).split("\0")
         # add message tags
-
+        num_traversed_messages = 0
         offset = 0
         self.msbt["labels"] = {}
-        while offset < len(labels):
+        while offset < len(labels) and num_traversed_messages < num_messages:
+            num_traversed_messages += 1
             label_length =  int.from_bytes(labels[offset:offset + 1], self.endian)
             offset += 1
             label_string = (labels[offset:offset + label_length]).decode("utf-8")

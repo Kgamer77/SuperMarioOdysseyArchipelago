@@ -125,7 +125,7 @@ def CompressYaz(src, level):
 
     dest = bytearray()
     dest += b"Yaz0"
-    dest += len(src).to_bytes(4)
+    dest += len(src).to_bytes(4, "big")
     dest += b'\x00\x00\x00\x00\x00\x00\x00\x00'
 
     code_byte_pos = 0

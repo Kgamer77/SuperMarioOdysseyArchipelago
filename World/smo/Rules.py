@@ -49,7 +49,7 @@ def set_rules(self, options : SMOOptions) -> None:
     #     # Bowser Story Progress
     #     set_rule(self.multiworld.get_location("Smart Bombing", self.player), lambda state: state.has("Bowser's Story Moon", self.player))
     #     set_rule(self.multiworld.get_location("Big Broodal Battle", self.player), lambda state: state.has("Bowser's Story Moon", self.player))
-    #     set_rule(self.multiworld.get_location("Showdown at Bowser’s Castle", self.player), lambda state: state.has("Bowser's Story Moon", self.player) and
+    #     set_rule(self.multiworld.get_location("Showdown at Bowser's Castle", self.player), lambda state: state.has("Bowser's Story Moon", self.player) and
     #         state.has("Bowser's Story Moon", self.player) and  state.has("Bowser's Story Moon", self.player))
 
 
@@ -71,7 +71,7 @@ def set_rules(self, options : SMOOptions) -> None:
     set_rule(self.multiworld.get_location("A Relaxing Dance", self.player), lambda state: state.has("Aloha Cap", self.player) and state.has("Aloha Clothes", self.player))
     set_rule(self.multiworld.get_location("Moon Shards in the Cold Room", self.player), lambda state: state.has("Snow Suit Cap", self.player) and state.has("Snow Suit Clothes", self.player))
     set_rule(self.multiworld.get_location("Slip Behind the Ice", self.player), lambda state: state.has("Snow Suit Cap", self.player) and state.has("Snow Suit Clothes", self.player))
-    set_rule(self.multiworld.get_location("I’m Not Cold!", self.player), lambda state: state.has("Underwear", self.player))
+    set_rule(self.multiworld.get_location("I'm Not Cold!", self.player), lambda state: state.has("Underwear", self.player))
     set_rule(self.multiworld.get_location("A Strong Simmer", self.player), lambda state: state.has("Cook Cap", self.player) and state.has("Cook Clothes", self.player))
     set_rule(self.multiworld.get_location("An Extreme Simmer", self.player), lambda state: state.has("Cook Cap", self.player) and state.has("Cook Clothes", self.player))
     set_rule(self.multiworld.get_location("Mechanic: Repairs Complete!", self.player), lambda state: state.has("Mechanic Cap", self.player) and state.has("Mechanic Clothes", self.player))
