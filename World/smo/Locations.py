@@ -1088,7 +1088,7 @@ loc_Postgame_Shop = {
 }
 
 loc_Dark = {
-    "Arrival at Rabbit Ridge": 1055,
+    "Arrival at Rabbit Ridge!": 1055,
     "Captain Toad on the Dark Side!": 1122,
     "Breakdown Road: Hurry": 1062,
     "Breakdown Road: Final Challenge!": 1063,

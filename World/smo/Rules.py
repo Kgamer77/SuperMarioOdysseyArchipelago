@@ -27,13 +27,11 @@ def set_rules(self, options : SMOOptions) -> None:
     #     set_rule(self.multiworld.get_location("Path to the Secret Flower Field", self.player), lambda state: state.has("Wooded Story Moon", self.player))
     #     set_rule(self.multiworld.get_location("Defend the Secret Flower Field!", self.player), lambda state: state.has("Wooded Story Moon", self.player))
     #
-    # if options.goal >= 9:
-    #     # Metro Story Progress
-    #     set_rule(self.multiworld.get_location("Powering Up the Station", self.player), lambda state: state.has("Metro Story Moon", self.player) and state.has("Metro Story Moon", self.player)
-    #         and state.has("Metro Story Moon", self.player) and state.has("Metro Story Moon", self.player))
-    #     set_rule(self.multiworld.get_location("A Traditional Festival!", self.player), lambda state: state.has("Metro Story Moon", self.player) and state.has("Metro Story Moon", self.player) and state.has("Metro Story Moon", self.player)
-    #         and state.has("Metro Story Moon", self.player) and state.has("Metro Story Moon", self.player))
-    #
+    if options.goal >= 9:
+        # Metro Story Progress
+        set_rule(self.multiworld.get_location("Powering Up the Station", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 4)
+        set_rule(self.multiworld.get_location("A Traditional Festival!", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 5)
+
     # if options.goal >= 12:
     #     # Seaside Story Progress
     #     set_rule(self.multiworld.get_location("The Glass Is Half Full!", self.player), lambda state: state.has("Seaside Story Moon", self.player) and
@@ -109,13 +107,13 @@ def set_rules(self, options : SMOOptions) -> None:
 
     # Completion State
     if options.goal == "sand":
-        self.multiworld.completion_condition[self.player] = lambda state: state.has("Sand Multi-Moon", self.player)
+        self.multiworld.completion_condition[self.player] = lambda state: state.count("Sand Multi-Moon", self.player) >= 2
     if options.goal == "lake":
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Lake Multi-Moon", self.player)
     if options.goal == "metro":
-        self.multiworld.completion_condition[self.player] = lambda state: state.has("Metro Multi-Moon", self.player)
+        self.multiworld.completion_condition[self.player] = lambda state: state.count("Metro Multi-Moon", self.player) >= 2
     if options.goal == "luncheon":
-        self.multiworld.completion_condition[self.player] = lambda state: state.has("Luncheon Multi-Moon", self.player)
+        self.multiworld.completion_condition[self.player] = lambda state: state.count("Luncheon Multi-Moon", self.player) >= 2
     if options.goal == "moon":
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Beat the Game", self.player)
         self.multiworld.get_location("Beat the Game", self.player).place_locked_item(self.create_item("Beat the Game"))
@@ -138,7 +136,7 @@ def set_rules(self, options : SMOOptions) -> None:
             self.multiworld.get_location("Cookatiel Showdown!", self.player).place_locked_item(
                 self.create_item("Luncheon Multi-Moon"))
         if options.goal == "dark":
-            self.multiworld.get_location("Arrival at Rabbit Ridge", self.player).place_locked_item(
+            self.multiworld.get_location("Arrival at Rabbit Ridge!", self.player).place_locked_item(
                 self.create_item("Dark Side Multi-Moon"))
         if options.goal == "darker":
             self.multiworld.get_location("A Long Journey's End!", self.player).place_locked_item(self.create_item("Darker Side Multi-Moon"))

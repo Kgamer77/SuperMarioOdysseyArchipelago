@@ -243,7 +243,7 @@ def create_regions(self, world, player):
 
     # Progression Connections
     regCascade.connect(regSand, "Sand Enter", lambda state: count_moons(self, state, "Cascade", player) >= self.moon_counts["cascade"])
-    regSand.connect(regSandPeace, "Sand World Peace", lambda state: state.count("Sand Story Moon", player) == 2)
+    regSand.connect(regSandPeace, "Sand World Peace", lambda state: state.count("Sand Story Moon", player) >= 2)
     regSand.connect(regCap)
     regSand.connect(regCascadeRe)
     regSandPeace.connect(regMetroSand)
@@ -252,15 +252,15 @@ def create_regions(self, world, player):
     regLake.connect(regSandRe)
 
     regWooded.connect(regWoodedStory1, "Wooded Story 1", lambda state: state.has("Wooded Story Moon", player))
-    regWoodedStory1.connect(regWoodedPeace, "Wooded World Peace", lambda state: state.count("Wooded Story Moon", player) == 2)
+    regWoodedStory1.connect(regWoodedPeace, "Wooded World Peace", lambda state: state.count("Wooded Story Moon", player) >= 2 and state.count("Wooded Multi-Moon", player) >= 1)
     regWoodedPeace.connect(regLuncheonWooded)
     regWooded.connect(regLost, "Lost Enter", lambda state: count_moons(self, state, "Lake", player) >= self.moon_counts["lake"] and count_moons(self, state, "Wooded", player) >= self.moon_counts["wooded"])
     regCloud.connect(regPostCloud)
     regLost.connect(regCloud, "Cloud Available", lambda state: count_moons(self, state, "Lost", player) >= self.moon_counts["lost"])
     regLost.connect(regMetro, "Metro Enter", lambda state: count_moons(self, state, "Lost", player) >= self.moon_counts["lost"])
 
-    regMetro.connect(regMetroSewer, "Metro Sewer", lambda state: state.has("Metro Story Moon", player) >= 4)
-    regMetroSewer.connect(regMetroPeace, "Metro World Peace", lambda state: state.count("Metro Story Moon", player) == 5)
+    regMetro.connect(regMetroSewer, "Metro Sewer", lambda state: state.count("Metro Story Moon", player) >= 4)
+    regMetroSewer.connect(regMetroPeace, "Metro World Peace", lambda state: state.count("Metro Story Moon", player) >= 5)
     regMetro.connect(regSnow, "Snow Enter", lambda state: count_moons(self, state, "Metro", player) >= self.moon_counts["metro"])
     regMetro.connect(regCascadeMetro)
     regMetro.connect(regWoodedMetro)

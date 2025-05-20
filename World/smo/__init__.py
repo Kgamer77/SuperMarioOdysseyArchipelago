@@ -313,9 +313,7 @@ class SMOWorld(World):
                     for group in self.item_name_groups.keys():
                         if  (group.lower() in self.placed_counts and not item_id in post_game_locations_table.values()
                                 and group != "Dark" and group != "Darker" and name in self.item_name_groups[group]
-                                and self.placed_counts[group.lower()] < self.moon_counts[group.lower()])\
-                                and name \
-                                and name != "Cascade Power Moon (211)": # Fixes cascade soft lock
+                                and self.placed_counts[group.lower()] < self.moon_counts[group.lower()]):
                             self.placed_counts[group.lower()] += 3 if "Multi" in name else 1
                             #print(self.placed_counts[group.lower()], " ", group.lower())
                             classification = ItemClassification.progression_skip_balancing
@@ -446,13 +444,13 @@ class SMOWorld(World):
         # Remove possible duplicate goal completion Multi Moons
         if self.options.story > 1:
             if self.options.goal == "sand":
-                pool.remove("Sand Multi-Moon (2)")
+                pool.remove("Sand Multi-Moon")
             if self.options.goal == "lake":
                 pool.remove("Lake Multi-Moon")
             if self.options.goal == "metro":
-                pool.remove("Metro Multi-Moon (2)")
+                pool.remove("Metro Multi-Moon")
             if self.options.goal == "luncheon":
-                pool.remove("Luncheon Multi-Moon (2)")
+                pool.remove("Luncheon Multi-Moon")
             if self.options.goal == "dark":
                 pool.remove("Dark Side Multi-Moon")
             if self.options.goal == "darker":
