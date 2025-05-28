@@ -1066,7 +1066,7 @@ shop_items = [
     "? Block Sticker",
     "Mushroom Kingdom Sticker",
     "Plush Frog",
-    "Bonneton Towser Model",
+    "Bonneton Tower Model",
     "T-Rex Model",
     "Triceratops Trophy",
     "Inverted Pyramid Model",
