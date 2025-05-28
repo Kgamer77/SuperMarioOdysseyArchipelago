@@ -102,7 +102,7 @@ def set_rules(self, options : SMOOptions) -> None:
     set_rule(self.multiworld.get_location("Gold Mario Cap", self.player), lambda state: total_moons(self, state, self.player) >= self.outfit_moon_counts["Gold Mario Cap"] or state.has("Gold Mario Cap", self.player))
     set_rule(self.multiworld.get_location("Gold Mario Suit", self.player), lambda state: total_moons(self, state, self.player) >= self.outfit_moon_counts["Gold Mario Suit"] or state.has("Gold Mario Suit", self.player))
     set_rule(self.multiworld.get_location("Metal Mario Cap", self.player), lambda state: total_moons(self, state, self.player) >= self.outfit_moon_counts["Metal Mario Cap"] or state.has("Metal Mario Cap", self.player))
-    set_rule(self.multiworld.get_location("Metal Mario Clothes", self.player), lambda state: total_moons(self, state, self.player) >= self.outfit_moon_counts["Metal Mario Clothes"] or state.has("Metal Mario Clothes", self.player))
+    set_rule(self.multiworld.get_location("Metal Mario Suit", self.player), lambda state: total_moons(self, state, self.player) >= self.outfit_moon_counts["Metal Mario Suit"] or state.has("Metal Mario Suit", self.player))
 
 
     # Completion State
