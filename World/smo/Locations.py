@@ -1116,7 +1116,7 @@ loc_Dark = {
 
 loc_Dark_Outfit = {
     "King's Crown": 2622,
-    "King's Outfit'": 2623
+    "King's Outfit": 2623
 }
 
 loc_Darker = {
