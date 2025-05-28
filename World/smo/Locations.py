@@ -21,11 +21,11 @@ loc_Cap = {
 }
 
 loc_Cap_Shop = {
-    "Sticker Cap": 2506,
-    "Souvenir Hat 1": 2507,
-    "Souvenir Hat 2": 2508,
-    "Tail Coat Cap": 2504,
-    "Tail Coat Clothes": 2505
+    "Cap Kingdom Sticker": 2506,
+    "Plush Frog": 2507,
+    "Bonneton Tower Model": 2508,
+    "Black Top Hat": 2504,
+    "Black Tuxedo": 2505
 }
 
 loc_Cap_Postgame = {
@@ -79,11 +79,11 @@ loc_Cascade_Revisit = {
 }
 
 loc_Cascade_Shop = {
-    "Primitive Man Cap": 2509,
-    "Primitive Man Clothes": 2510,
-    "Sticker Waterfall": 2511,
-    "Souvenir Fall 1": 2512,
-    "Souvenir Fall 2": 2513
+    "Caveman Headwear": 2509,
+    "Caveman Outfit": 2510,
+    "Cascade Kingdom Sticker": 2511,
+    "T-Rex Model": 2512,
+    "Triceratops Trophy": 2513
 }
 
 loc_Cascade_Post_Metro = {
@@ -185,17 +185,17 @@ loc_Sand_Peace = {
 }
 
 loc_Sand_Shop = {
-    "Captain Cap": 2503,
-    "Poncho Cap": 2514,
-    "Poncho Clothes": 2515,
-    "Gunman Cap": 2516,
-    "Gunman Clothes": 2517,
-    "Sticker Sand": 2518,
-    "Souvenir Sand 2": 2519,
-    "Souvenir Sand 1": 2520,
-    "Shopman Cap": 2585,
-    "Shopman Clothes": 2586,
-    "Underwear": 2587
+    "Captain's Hat": 2503,
+    "Sombrero": 2514,
+    "Poncho": 2515,
+    "Cowboy Hat": 2516,
+    "Cowboy Outfit": 2517,
+    "Sand Kingdom Sticker": 2518,
+    "Inverted Pyramid Model": 2519,
+    "Jaxi Statue": 2520,
+    "Employee Cap": 2585,
+    "Employee Uniform": 2586,
+    "Boxer Shorts": 2587
 }
 
 loc_Sand_Postgame = {
@@ -263,13 +263,13 @@ loc_Lake = {
 }
 
 loc_Lake_Shop = {
-    "Swimwear Cap": 2521,
-    "Swimwear Clothes": 2522,
-    "Sticker Lake": 2523,
-    "Souvenir Lake 2": 2524,
-    "Souvenir Lake 1": 2525,
-    "New 3DS Cap": 2588,
-    "New 3DS Clothes": 2589
+    "Swim Goggles": 2521,
+    "Swimwear": 2522,
+    "Lake Kingdom Sticker": 2523,
+    "Underwater Dome": 2524,
+    "Rubber Dorrie": 2525,
+    "Fashionable Cap": 2588,
+    "Fashionable Outfit": 2589
 }
 
 loc_Lake_Post_Seaside = {
@@ -357,15 +357,15 @@ loc_Wooded_Peace = {
 }
 
 loc_Wooded_Shop = {
-    "Explorer Cap": 2526,
-    "Explorer Clothes": 2527,
-    "Scientist Cap": 2528,
-    "Scientist Clothes": 2529,
-    "Sticker Forest": 2530,
-    "Souvenir Forest 1": 2531,
-    "Souvenir Forest 2": 2532,
+    "Explorer Hat": 2526,
+    "Explorer Outfit": 2527,
+    "Scientist Visor": 2528,
+    "Scientist Outfit": 2529,
+    "Wooded Kingdom Sticker": 2530,
+    "Flowers from Steam Gardens": 2531,
+    "Steam Gardener Watering Can": 2532,
     "Mechanic Cap": 2590,
-    "Mechanic Clothes": 2591
+    "Mechanic Outfit": 2591
 }
 
 loc_Wooded_Postgame = {
@@ -444,11 +444,11 @@ loc_Lost_Revisit = {
 }
 
 loc_Lost_Shop = {
-    "Pilot Cap": 2533,
-    "Pilot Clothes": 2534,
-    "Sticker Clash": 2535,
-    "Souvenir Crash 1": 2536,
-    "Souvenir Crash 2": 2537
+    "Aviator Cap": 2533,
+    "Aviator Outfit": 2534,
+    "Lost Kingdom Sticker": 2535,
+    "Potted Palm Tree": 2536,
+    "Butterfly Mobile": 2537
 }
 
 loc_Lost_Postgame = {
@@ -534,15 +534,15 @@ loc_Metro_Peace = {
 }
 
 loc_Metro_Shop = {
-    "Maker Cap": 2538,
-    "Maker Clothes": 2539,
+    "Builder Helmet": 2538,
+    "Builder Outfit": 2539,
     "Golf Cap": 2540,
-    "Golf Clothes": 2541,
-    "Sticker City": 2542,
-    "Souvenir City 2": 2543,
-    "Souvenir City 1": 2544,
-    "Suit Cap": 2592,
-    "Suit Clothes": 2593
+    "Golf Outfit": 2541,
+    "Metro Kingdom Sticker": 2542,
+    "Pauline Statue": 2543,
+    "New Donk City Hall Model": 2544,
+    "Black Fedora": 2592,
+    "Black Suit": 2593
 }
 
 loc_Metro_Postgame = {
@@ -632,15 +632,15 @@ loc_Seaside_Peace = {
 }
 
 loc_Seaside_Shop = {
-    "Aloha Cap": 2550,
-    "Aloha Clothes": 2551,
-    "Sailor Cap": 2552,
-    "Sailor Clothes": 2553,
-    "Sticker Sea": 2554,
-    "Souvenir Sea 2": 2555,
-    "Souvenir Sea 1": 2556,
-    "Pirate Cap": 2594,
-    "Pirate Clothes": 2595
+    "Resort Hat": 2550,
+    "Resort Outfit": 2551,
+    "Sailor Hat": 2552,
+    "Sailor Suit": 2553,
+    "Seaside Kingdom Sticker": 2554,
+    "Sand Jar": 2555,
+    "Glass Tower Model": 2556,
+    "Pirate Hat": 2594,
+    "Pirate Outfit": 2595
 }
 
 loc_Seaside_Postgame = {
@@ -708,11 +708,11 @@ loc_Snow_Peace = {
 }
 
 loc_Snow_Shop = {
-    "Snow Suit Cap": 2545,
-    "Snow Suit Clothes": 2546,
-    "Sticker Snow": 2547,
-    "Souvenir Snow 1": 2548,
-    "Souvenir Snow 2": 2549
+    "Snow Hood": 2545,
+    "Snow Suit": 2546,
+    "Snow Kingdom Sticker": 2547,
+    "Shiverian Rug": 2548,
+    "Shiverian Nesting Dolls": 2549
 }
 
 loc_Snow_Postgame = {
@@ -805,15 +805,15 @@ loc_Luncheon_Peace = {
 }
 
 loc_Luncheon_Shop = {
-    "Cook Cap": 2557,
-    "Cook Clothes": 2558,
-    "Painter Cap": 2559,
-    "Painter Clothes": 2560,
-    "Sticker Lava": 2561,
-    "Souvenir Lava 1": 2562,
-    "Souvenir Lava 2": 2563,
-    "Clown Cap": 2596,
-    "Clown Clothes": 2597
+    "Chef Hat": 2557,
+    "Chef Suit": 2558,
+    "Painter's Cap": 2559,
+    "Painter Outfit": 2560,
+    "Luncheon Kingdom Sticker": 2561,
+    "Souvenir Forks": 2562,
+    "Vegetable Plate": 2563,
+    "Clown Hat": 2596,
+    "Clown Suit": 2597
 }
 
 loc_Luncheon_Postgame = {
@@ -905,13 +905,13 @@ loc_Bowser_Peace = {
 }
 
 loc_Bowser_Shop = {
-    "Armor Cap": 2564,
-    "Armor Clothes": 2565,
-    "Happi Cap": 2566,
-    "Happi Clothes": 2567,
-    "Sticker Sky": 2568,
-    "Souvenir Sky1": 2569,
-    "Souvenir Sky2": 2570
+    "Samurai Helmet": 2564,
+    "Samurai Armor": 2565,
+    "Happi Headband": 2566,
+    "Happi Outfit": 2567,
+    "Bowser's Kingdom Sticker": 2568,
+    "Paper Lantern": 2569,
+    "Jizo Statue": 2570
 }
 
 loc_Bowser_Postgame = {
@@ -959,15 +959,15 @@ loc_Moon = {
 }
 
 loc_Moon_Shop = {
-    "Space Suit Cap": 2571,
-    "Space Suit Clothes": 2572,
-    "Sticker Moon": 2573,
-    "Souvenir Moon 1": 2574,
-    "Souvenir Moon 2": 2575,
-    "Football Cap": 2598,
-    "Football Clothes": 2599,
-    "Tuxedo Cap": 2624,
-    "Tuxedo Clothes": 2625
+    "Space Helmet": 2571,
+    "Space Suit": 2572,
+    "Moon Kingdom Sticker": 2573,
+    "Moon Rock Fragment": 2574,
+    "Moon Lamp": 2575,
+    "Football Helmet": 2598,
+    "Football Uniform": 2599,
+    "Mario's Top Hat": 2624,
+    "Mario's Tuxedo": 2625
 }
 
 loc_Moon_Post_Moon = {
@@ -1051,40 +1051,40 @@ loc_Mushroom_Post_Luncheon = {
 }
 
 loc_Mushroom_Shop = {
-    "64 Cap": 2576,
-    "64 Clothes": 2577,
-    "Souvenir Peach 1": 2583,
-    "Souvenir Peach 2": 2584,
-    "Sticker Peach Dokan": 2578,
-    "Sticker Peach Coin": 2579,
-    "Sticker Peach Block": 2580,
-    "Sticker Peach Block Question": 2581,
-    "Sticker Peach": 2582,
+    "Mario 64 Cap": 2576,
+    "Mario 64 Suit": 2577,
+    "Mushroom Cushion Set": 2583,
+    "Peach's Castle Model": 2584,
+    "Pipe Sticker": 2578,
+    "Coin Sticker": 2579,
+    "Block Sticker": 2580,
+    "? Block Sticker": 2581,
+    "Mushroom Kingdom Sticker": 2582,
     "Classic Cap": 2600,
-    "Classic Clothes": 2601,
-    "Bone Clothes": 2602
+    "Classic Suit": 2601,
+    "Skeleton Suit": 2602
 }
 
 loc_Postgame_Shop = {
     "Luigi Cap": 2603,
-    "Luigi Clothes": 2604,
-    "Doctor Cap": 2605,
-    "Doctor Clothes": 2606,
+    "Luigi Suit": 2604,
+    "Doctor Headwear": 2605,
+    "Doctor Outfit": 2606,
     "Waluigi Cap": 2607,
-    "Waluigi Clothes": 2608,
-    "Diddy Kong Cap": 2609,
-    "Diddy Kong Clothes": 2610,
+    "Waluigi Suit": 2608,
+    "Diddy Kong Hat": 2609,
+    "Diddy Kong Suit": 2610,
     "Wario Cap": 2611,
-    "Wario Clothes": 2612,
-    "Hakama Clothes": 2613,
-    "Koopa Cap": 2614,
-    "Koopa Clothes": 2615,
-    "Peach Cap": 2616,
-    "Peach Clothes": 2617,
-    "Gold Cap": 2618,
-    "Gold Clothes": 2619,
-    "64 Metal Cap": 2620,
-    "64 Metal Clothes": 2621
+    "Wario Suit": 2612,
+    "Hakama": 2613,
+    "Bowser's Top Hat": 2614,
+    "Bowser's Tuxedo": 2615,
+    "Bridal Veil": 2616,
+    "Bridal Gown": 2617,
+    "Gold Mario Cap": 2618,
+    "Gold Mario Suit": 2619,
+    "Metal Mario Cap": 2620,
+    "Metal Mario Suit": 2621
 }
 
 loc_Dark = {
@@ -1115,8 +1115,8 @@ loc_Dark = {
 }
 
 loc_Dark_Outfit = {
-    "King Cap": 2622,
-    "King Clothes": 2623
+    "King's Crown": 2622,
+    "King's Outfit'": 2623
 }
 
 loc_Darker = {
@@ -1124,7 +1124,7 @@ loc_Darker = {
 }
 
 loc_Darker_Outfit = {
-    "Invisible Cap": 2502
+    "Invisibility Hat": 2502
 }
 
 base_locations_table = {
