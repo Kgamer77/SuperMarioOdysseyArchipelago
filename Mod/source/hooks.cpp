@@ -69,6 +69,12 @@ bool saveReadHook(int* padRumbleInt, al::ByamlIter const& saveByml, char const* 
     return al::tryGetByamlS32(padRumbleInt, saveByml, padRumbleKey);
 }
 
+// GameDataFile::tryWriteByByaml
+// 
+// DameDataFile::tryReadByamlData line 198
+
+
+
 bool registerShineToList(Shine* shineActor) {
 
     if (shineActor->mShineIdx >= 0) {

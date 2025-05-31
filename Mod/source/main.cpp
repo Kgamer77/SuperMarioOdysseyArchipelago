@@ -333,6 +333,16 @@ void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
     //thisPtr.buyItem(info, flag);
 }
 
+void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placementId)
+{
+
+}
+
+void sendDeathlinkPacket()
+{
+
+}
+
 bool isBuyItems(ShopItem::ItemInfo* itemInfo) {
     return false;
 }

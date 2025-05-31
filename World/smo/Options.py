@@ -10,10 +10,10 @@ class Goal(Choice):
     option_lake = 5
     option_metro = 9
     option_luncheon = 12
-    option_moon = 15
-    option_dark = 17
-    option_darker = 18
-    default = 15  # default to moon
+    option_moon = 14
+    option_dark = 16
+    option_darker = 17
+    default = 14  # default to moon
 
 class StorySanity(Choice):
     """Adds story progression moons to the pool."""
@@ -26,7 +26,7 @@ class StorySanity(Choice):
 
 class ShopSanity(Choice):
     """Adds various shop items to the pool.
-    shuffle: shuffles items only into shop locations in your game."""
+    shuffle: shuffles outfits amongst themselves keeping them in your game."""
     display_name = "Randomize Shops"
     option_shuffle = 1
     option_outfits  = 2

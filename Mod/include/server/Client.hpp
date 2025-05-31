@@ -101,6 +101,8 @@ class Client {
         static void sendCostumeInfPacket(const char *body, const char *cap);
         static void sendShineCollectPacket(int shineId);
         static void sendItemCollectPacket(char* itemName, int itemType);
+        static void sendRegionalCollectPacket(char* objId);
+        static void sendDeathlinkPacket();
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
         void resendInitPackets();
