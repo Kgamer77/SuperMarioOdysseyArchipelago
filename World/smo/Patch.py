@@ -290,7 +290,7 @@ def patch_prices(self, item_list : sarc.SARC, save_item_list : sarc.SARCWriter) 
         if i["CoinType"] == "Collect":
             print(i)
             if i["StoreName"] in store_amounts:
-                if i["Price"] - store_amounts[i["StoreName"]] == 5:
+                if store_amounts[i["StoreName"]] == 5 and i["Price"] - store_amounts[i["StoreName"]] == 10:
                     break
                 store_amounts[i["StoreName"]] += i["Price"]
                 i["Price"] = byml.Int(store_amounts[i["StoreName"]])
@@ -443,7 +443,7 @@ def patch_items(self) -> bytes:
 
     # reapply shop item changes
     # not needed when using mod file as base
-    #patch_prices(self, item_list, save_item_list)
+    patch_prices(self, item_list, save_item_list)
 
     if self.options.colors.value:
         # Apply moon color changes
