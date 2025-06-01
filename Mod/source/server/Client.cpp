@@ -830,7 +830,7 @@ void Client::sendItemCollectPacket(char* itemName, int itemType) {
  *
  * @param itemName
  */
-void Client::sendRegionalCollectPacket(char* objId) {
+void Client::sendRegionalCollectPacket(const char* objId) {
     if (!sInstance) {
         Logger::log("Static Instance is Null!\n");
         return;
@@ -840,7 +840,7 @@ void Client::sendRegionalCollectPacket(char* objId) {
         return;
     }*/
 
-    GameDataHolderAccessor accessor(sInstance->mCurStageScene)
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
     RegionalCollect* packet = new RegionalCollect(objId, GameDataFunction::getCurrentStageName(accessor));
@@ -866,7 +866,7 @@ void Client::sendDeathlinkPacket() {
 
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
-    ItemCollect* packet = new ItemCollect(itemName, itemType);
+    Deathlink* packet = new Deathlink();
     packet->mUserID = sInstance->mUserID;
 
     sInstance->mSocket->queuePacket(packet);
@@ -1251,7 +1251,7 @@ ChangeStageInfo* Client::getLastEntrance()
     if (sInstance)
     {
         GameDataHolderAccessor accessor(sInstance->mCurStageScene);
-        sInstance->mLastEntrance.findScenarioNoByList(accessor);
+        sInstance->mLastEntrance->findScenarioNoByList(accessor.mData);
         return sInstance->mLastEntrance;
     }
 

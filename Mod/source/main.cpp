@@ -335,19 +335,20 @@ void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
 
 void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placementId)
 {
-
+    Client::sendRegionalCollectPacket(placementId->mID);
+    // Add flag in client to determine when option is disabled and pass regularly to GameDataFunction
 }
 
 void sendDeathlinkPacket()
 {
-
+    // Stub
 }
 
 // GameDataFunction::tryChangeNextStage(accessor, &info);
-void updateLastEntrance(GameDataHolderWriter holder, ChangeStageInfo const *stageInfo) 
+void updateLastEntrance(GameDataHolderWriter holder, ChangeStageInfo *stageInfo) 
 {
     Client::setLastEntrance(stageInfo);
-    holder.mData->changeNextStage(stageInfo, 0)
+    holder.mData->changeNextStage(stageInfo, 0);
 }
 
 void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
