@@ -191,8 +191,8 @@ loc_Sand_Shop = {
     "Cowboy Hat": 2516,
     "Cowboy Outfit": 2517,
     "Sand Kingdom Sticker": 2518,
-    "Inverted Pyramid Model": 2519,
-    "Jaxi Statue": 2520,
+    "Jaxi Statue": 2519,
+    "Inverted Pyramid Model": 2520,
     "Employee Cap": 2585,
     "Employee Uniform": 2586,
     "Boxer Shorts": 2587
@@ -266,8 +266,8 @@ loc_Lake_Shop = {
     "Swim Goggles": 2521,
     "Swimwear": 2522,
     "Lake Kingdom Sticker": 2523,
-    "Underwater Dome": 2524,
-    "Rubber Dorrie": 2525,
+    "Rubber Dorrie": 2524,
+    "Underwater Dome": 2525,
     "Fashionable Cap": 2588,
     "Fashionable Outfit": 2589
 }
@@ -539,8 +539,8 @@ loc_Metro_Shop = {
     "Golf Cap": 2540,
     "Golf Outfit": 2541,
     "Metro Kingdom Sticker": 2542,
-    "Pauline Statue": 2543,
-    "New Donk City Hall Model": 2544,
+    "New Donk City Hall Model": 2543,
+    "Pauline Statue": 2544,
     "Black Fedora": 2592,
     "Black Suit": 2593
 }
@@ -637,8 +637,8 @@ loc_Seaside_Shop = {
     "Sailor Hat": 2552,
     "Sailor Suit": 2553,
     "Seaside Kingdom Sticker": 2554,
-    "Sand Jar": 2555,
-    "Glass Tower Model": 2556,
+    "Glass Tower Model": 2555,
+    "Sand Jar": 2556,
     "Pirate Hat": 2594,
     "Pirate Outfit": 2595
 }
