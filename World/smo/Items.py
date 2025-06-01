@@ -1093,24 +1093,25 @@ shop_items = [
     "Peach's Castle Model"
 ]
 
-# world_items_table = {
-#     "Cap Kingdom" : 2630,
-#     "Cascade Kingdom" : 2631,
-#     "Sand Kingdom" : 2632,
-#     "Wooded Kingdom" : 2633,
-#     "Lake Kingdom" : 2634,
-#     "Cloud Kingdom" : 2635,
-#     "Lost Kingdom" : 2636,
-#     "Metro Kingdom" : 2637,
-#     "Seaside Kingdom" : 2638,
-#     "Snow Kingdom" : 2639,
-#     "Luncheon Kingdom" : 2640,
-#     "Bowser Kingdom" : 2641,
-#     "Moon Kingdom" : 2642,
-#     "Mushroom Kingdom" : 2643,
-#     "Dark Side" : 2644,
-#     "Darker Side" : 2645
-# }
+world_list = [
+    "Cap",
+    "Cascade",
+    "Sand",
+    "Lake",
+    "Wooded",
+    "Cloud",
+    "Lost",
+    "Metro",
+    "Snow",
+    "Seaside",
+    "Luncheon",
+    "Ruined",
+    "Bowser",
+    "Moon",
+    "Mushroom",
+    "Dark",
+    "Darker"
+]
 
 filler_item_table = {
     "50 Coins": 9994,

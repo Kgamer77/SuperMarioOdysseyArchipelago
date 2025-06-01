@@ -1192,6 +1192,7 @@ namespace Server
             { "Ruined Multi-Moon", 0},
             { "Bowser Multi-Moon", 3},
             { "Mushroom Multi-Moon", 0},
+            { "Dark Side Multi-Moon", 0},
 
         };
 

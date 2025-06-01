@@ -826,6 +826,53 @@ void Client::sendItemCollectPacket(char* itemName, int itemType) {
 }
 
 /**
+ * @brief
+ *
+ * @param itemName
+ */
+void Client::sendRegionalCollectPacket(char* objId) {
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+  /*  if (!strcmp(itemName, "")) {
+        return;
+    }*/
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene)
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    RegionalCollect* packet = new RegionalCollect(objId, GameDataFunction::getCurrentStageName(accessor));
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
+/**
+ * @brief
+ *
+ * @param itemName
+ */
+void Client::sendDeathlinkPacket() {
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+  /*  if (!strcmp(itemName, "")) {
+        return;
+    }*/
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    ItemCollect* packet = new ItemCollect(itemName, itemType);
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
+/**
  * @brief 
  * 
  * @param packet 

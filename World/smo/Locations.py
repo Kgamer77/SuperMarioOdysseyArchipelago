@@ -159,14 +159,20 @@ loc_Sand = {
     "Jaxi Stunt Driving": 556,
 }
 
-loc_Sand_Peace = {
+loc_Sand_Pyramid = {
     "Showdown on the Inverted Pyramid": 495,
-    "The Hole in the Desert": 560,
     "Secret of the Inverted Mural": 504,
     "On the Statue's Tail": 513,
     "Hidden Room in the Inverted Pyramid": 563,
+}
+
+loc_Sand_Underground = {
+    "The Hole in the Desert": 560,
     "Underground Treasure Chest": 953,
     "Goomba Tower Assembly": 558,
+}
+
+loc_Sand_Peace = {
     "Hang Your Hat on the Fountain": 534,
     "Found in the Sand! Good Dog!": 512,
     "Sand Kingdom Timer Challenge 1": 531,
@@ -521,11 +527,11 @@ loc_Metro_Post_Sand = {
 
 loc_Metro_Sewer_Access = {
     "Powering Up the Station": 107,
-    "Sewer Treasure": 1100
+    "Sewer Treasure": 1100,
+    "A Traditional Festival!": 95,
 }
 
 loc_Metro_Peace = {
-    "A Traditional Festival!": 95,
     "Celebrating in the Streets!": 875,
     "Caught Hopping on a Building!": 99,
     "Metro Kingdom Timer Challenge 1": 1054,
@@ -792,10 +798,10 @@ loc_Luncheon_Post_Cheese_Rocks = {
     "The Treasure Chest in the Veggies": 992,
     "Found with Luncheon Kingdom Art": 1090,
     "Alcove Behind the Pillars of Magma": 259,
+    "Cookatiel Showdown!": 290,
 }
 
 loc_Luncheon_Peace = {
-    "Cookatiel Showdown!": 290,
     "Luncheon Kingdom Timer Challenge 3": 711,
     "Caught Hopping at the Volcano!": 289,
     "Light the Far-Off Lanterns": 261,
@@ -1134,6 +1140,8 @@ base_locations_table = {
     **loc_Cascade_Post_Metro,
     **loc_Cascade_Post_Snow,
     **loc_Sand,
+    **loc_Sand_Pyramid,
+    **loc_Sand_Underground,
     **loc_Sand_Peace,
     **loc_Sand_Revisit,
     **loc_Lake,
@@ -1220,20 +1228,20 @@ locations_table = {
 
 locations_list = [
     loc_Cap,
-    {**loc_Cascade, **loc_Cascade_Revisit},
-    {**loc_Sand, **loc_Sand_Peace},
-    loc_Lake,
-    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace},
+    {**loc_Cascade, **loc_Cascade_Revisit, **loc_Cascade_Post_Snow, **loc_Cascade_Post_Metro},
+    {**loc_Sand, **loc_Sand_Peace, **loc_Sand_Revisit, **loc_Sand_Pyramid},
+    {**loc_Lake, **loc_Lake_Post_Seaside},
+    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace, **loc_Wooded_Post_Metro},
     loc_Cloud,
-    loc_Lost,
-    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace},
+    {**loc_Lost, **loc_Lost_Revisit},
+    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace, **loc_Metro_Post_Sand},
     {**loc_Snow, **loc_Snow_Peace},
     {**loc_Seaside, **loc_Seaside_Peace},
-    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace},
+    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace, **loc_Luncheon_Post_Wooded},
     loc_Ruined,
     {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Peace},
     loc_Moon,
-    loc_Mushroom,
+    {**loc_Mushroom, **loc_Mushroom_Post_Luncheon},
     loc_Dark,
     loc_Darker
 ]
