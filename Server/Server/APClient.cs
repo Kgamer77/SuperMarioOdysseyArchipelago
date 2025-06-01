@@ -1172,7 +1172,6 @@ namespace Server
             { "Moon Power Moon", 0},
             { "Power Star", 6},
             { "Dark Side Power Moon", 1},
-            { "Darker Side Multi-Moon", 0},
             { "Cascade Story Moon", 0},
             { "Sand Story Moon", 0},
             { "Wooded Story Moon", 0},
@@ -1193,6 +1192,7 @@ namespace Server
             { "Bowser Multi-Moon", 3},
             { "Mushroom Multi-Moon", 0},
             { "Dark Side Multi-Moon", 0},
+            { "Darker Side Multi-Moon", 0},
 
         };
 
@@ -1318,7 +1318,6 @@ namespace Server
                 { "Moon Power Moon", 0},
                 { "Power Star", 6},
                 { "Dark Side Power Moon", 1},
-                { "Darker Side Multi-Moon", 0},
                 { "Cascade Story Moon", 0},
                 { "Sand Story Moon", 0},
                 { "Wooded Story Moon", 0},
@@ -1338,6 +1337,8 @@ namespace Server
                 { "Ruined Multi-Moon", 0},
                 { "Bowser Multi-Moon", 3},
                 { "Mushroom Multi-Moon", 0},
+                { "Dark Side Multi-Moon", 0},
+                { "Darker Side Multi-Moon", 0},
 
             };
         }
