@@ -396,7 +396,7 @@ def patch_shop_text(self) -> bytes:
                 internal_name = internal_name.replace(" Cap","").replace("Clothes", "")
             item_classification : ItemClassification
             if item != "Skip":
-                if item in self.multiworld.regions.location_cache[self.player]:
+                if file_to_items[i][item] in self.multiworld.regions.location_cache[self.player]:
                     item_classification = self.multiworld.get_location(file_to_items[i][item], self.player).item.classification
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  self.multiworld.get_location(file_to_items[i][item], self.player).item.name.replace("_", " ")
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] += "\0"
