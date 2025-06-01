@@ -18,5 +18,7 @@ public enum PacketType : short {
     Filler,
     ArchipelagoChat,
     ShineCounts,
-    UnlockWorld
+    UnlockWorld,
+    RegionalCollect,
+    Deathlink
 }
