@@ -49,160 +49,159 @@ regular_kingdoms = [
 "bowser"
 ]
 
-caps = [
-    "Poncho Cap",
-    "Gunman Cap",
-    "Explorer Cap",
-    "Tail Coat Cap",
-    "Golf Cap",
-    "Aloha Cap",
-    "Sailor Cap",
-    "Swimwear Cap",
-    "Cook Cap",
-    "Armor Cap",
-    "Happi Cap",
-    "Tuxedo Cap",
-    "64 Cap",
-    "Luigi Cap",
-    "Football Cap",
-    "Mechanic Cap",
-    "New 3DS Cap",
-    "Painter Cap",
-    "Suit Cap",
-    "Maker Cap",
-    "Skip", # Racing
-    "Doctor Cap",
-    "Classic Cap",
-    "Gold Cap",
-    "Skip", # Link
-    "King Cap",
-    "Skip", # Mario
-    "Scientist Cap",
-    "Primitive Man Cap",
-    "Shopman Cap",
-    "Pilot Cap",
-    "Snow Suit Cap",
-    "Space Suit Cap",
-    "Diddy Kong Cap",
-    "Skip", # Batting
-    "Captain Cap",
-    "Wario Cap",
-    "Waluigi Cap",
-    "Skip", # Satellaview
-    "Skip", # conductor
-    "Skip", # Santa
-    "Skip", # Zombie
-    "Clown Cap",
-    "Pirate Cap",
-    "Peach Cap",
-    "Koopa Cap",
-    "Skip", # Knight
-    "64 Metal Cap",
-    "Invisible Cap"
-]
+caps = {
+    "Poncho Cap": "Sombrero",
+    "Gunman Cap": "Cowboy Hat",
+    "Explorer Cap": "Explorer Hat",
+    "Tail Coat Cap": "Black Top Hat",
+    "Golf Cap": "Golf Cap",
+    "Aloha Cap": "Resort Hat",
+    "Sailor Cap": "Sailor Hat",
+    "Swimwear Cap": "Swim Goggles",
+    "Cook Cap": "Chef Hat",
+    "Armor Cap": "Samurai Helmet",
+    "Happi Cap": "Happi Headband",
+    "Tuxedo Cap": "Mario's Top Hat",
+    "64 Cap": "Mario 64 Cap",
+    "Luigi Cap": "Luigi Cap",
+    "Football Cap": "Football Helmet",
+    "Mechanic Cap": "Mechanic Cap",
+    "New 3DS Cap": "Fashionable Cap",
+    "Painter Cap": "Painter's Cap",
+    "Suit Cap": "Black Fedora",
+    "Maker Cap": "Builder Helmet",
+    "Skip": "", # Racing
+    "Doctor Cap": "Doctor Headwear",
+    "Classic Cap": "Classic Cap",
+    "Gold Cap": "Gold Mario Cap",
+    "Skip": "", # Link
+    "King Cap": "King's Crown",
+    "Skip": "", # Mario
+    "Scientist Cap": "Scientist Visor",
+    "Primitive Man Cap": "Caveman Headwear",
+    "Shopman Cap": "Employee Cap",
+    "Pilot Cap": "Aviator Cap",
+    "Snow Suit Cap": "Snow Hood",
+    "Space Suit Cap": "Space Helmet",
+    "Diddy Kong Cap": "Diddy Kong Hat",
+    "Skip": "", # Batting
+    "Captain Cap": "Captain's Hat",
+    "Wario Cap": "Wario Cap",
+    "Waluigi Cap": "Waluigi Cap",
+    "Skip": "", # Satellaview
+    "Skip": "", # conductor
+    "Skip": "", # Santa
+    "Skip": "", # Zombie
+    "Clown Cap": "Clown Hat",
+    "Pirate Cap": "Pirate Hat",
+    "Peach Cap": "Bridal Veil",
+    "Koopa Cap": "Bowser's Top Hat",
+    "Skip": "", # Knight
+    "64 Metal Cap": "Metal Mario Cap",
+    "Invisible Cap": "Invisibility Hat"
+}
 
-clothes = [
-    "Poncho Clothes",
-    "Gunman Clothes",
-    "Explorer Clothes",
-    "Tail Coat Clothes",
-    "Golf Clothes",
-    "Aloha Clothes",
-    "Sailor Clothes",
-    "Swimwear Clothes",
-    "Cook Clothes",
-    "Armor Clothes",
-    "Happi Clothes",
-    "Tuxedo Clothes",
-    "64 Clothes",
-    "Luigi Clothes",
-    "Football Clothes",
-    "Underwear",
-    "Mechanic Clothes",
-    "New 3DS Clothes",
-    "Painter Clothes",
-    "Suit Clothes",
-    "Maker Clothes",
-    "Skip", # Racing
-    "Doctor Clothes",
-    "Hakama Clothes",
-    "Classic Clothes",
-    "Gold Clothes",
-    "Skip", # Link
-    "Bone Clothes",
-    "King Clothes",
-    "Skip", # Mario
-    "Scientist Clothes",
-    "Primitive Man Clothes",
-    "Shopman Clothes",
-    "Pilot Clothes",
-    "Snow Suit Clothes",
-    "Space Suit Clothes",
-    "Diddy Kong Clothes",
-    "Skip", # Baseball
-    "Wario Clothes",
-    "Waluigi Clothes",
-    "Skip", # Satellaview
-    "Skip", # conductor
-    "Skip", # Santa
-    "Skip", # Zombie
-    "Clown Clothes",
-    "Pirate Clothes",
-    "Peach Clothes",
-    "Koopa Clothes",
-    "Skip", # Knight
-    "64 Metal Clothes"
-]
+clothes = {
+    "Poncho Clothes": "Poncho",
+    "Gunman Clothes": "Cowboy Outfit",
+    "Explorer Clothes": "Explorer Outfit",
+    "Tail Coat Clothes": "Black Tuxedo",
+    "Golf Clothes": "Golf Outfit",
+    "Aloha Clothes": "Resort Outfit",
+    "Sailor Clothes": "Sailor Suit",
+    "Swimwear Clothes": "Swimwear",
+    "Cook Clothes": "Chef Suit",
+    "Armor Clothes": "Samurai Armor",
+    "Happi Clothes": "Happi Outfit",
+    "Tuxedo Clothes": "Mario's Tuxedo",
+    "64 Clothes": "Mario 64 Suit",
+    "Luigi Clothes": "Luigi Suit",
+    "Football Clothes": "Football Uniform",
+    "Underwear": "Boxer Shorts",
+    "Mechanic Clothes": "Mechanic Outfit",
+    "New 3DS Clothes": "Fashionable Outfit",
+    "Painter Clothes": "Painter Outfit",
+    "Suit Clothes": "Black Suit",
+    "Maker Clothes": "Builder Outfit",
+    "Skip": "", # Racing
+    "Doctor Clothes": "Doctor Outfit",
+    "Hakama Clothes": "Hakama",
+    "Classic Clothes": "Classic Suit",
+    "Gold Clothes": "Gold Mario Suit",
+    "Skip": "", # Link
+    "Bone Clothes": "Skeleton Suit",
+    "King Clothes": "King's Outfit",
+    "Skip": "", # Mario
+    "Scientist Clothes": "Scientist Outfit",
+    "Primitive Man Clothes": "Caveman Outfit",
+    "Shopman Clothes": "Employee Uniform",
+    "Pilot Clothes": "Aviator Outfit",
+    "Snow Suit Clothes": "Snow Suit",
+    "Space Suit Clothes": "Space Suit",
+    "Diddy Kong Clothes": "Diddy Kong Suit",
+    "Skip": "", # Batting=
+    "Wario Clothes": "Wario Suit",
+    "Waluigi Clothes": "Waluigi Suit",
+    "Skip": "", # Satellaview
+    "Skip": "", # conductor
+    "Skip": "", # Santa
+    "Skip": "", # Zombie
+    "Clown Clothes": "Clown Suit",
+    "Pirate Clothes": "Pirate Outfit",
+    "Peach Clothes": "Bridal Gown",
+    "Koopa Clothes": "Bowser's Tuxedo",
+    "Skip": "", # Knight
+    "64 Metal Clothes": "Metal Mario Suit"
+}
 # Technically filler until achievements implemented
-stickers = [
-    "Sticker Cap",
-    "Sticker Waterfall",
-    "Sticker Sand",
-    "Sticker Forest",
-    "Sticker City",
-    "Sticker Clash",
-    "Sticker Lake",
-    "Sticker Sea",
-    "Sticker Lava",
-    "Sticker Snow",
-    "Sticker Sky",
-    "Sticker Moon",
-    "Sticker Peach",
-    "Sticker Peach Dokan",
-    "Sticker Peach Coin",
-    "Sticker Peach Block",
-    "Sticker Peach Block Question"
-]
+stickers = {
+    "Sticker Cap": "Cap Kingdom Sticker",
+    "Sticker Waterfall": "Cascade Kingdom Sticker",
+    "Sticker Sand": "Sand Kingdom Sticker",
+    "Sticker Forest": "Wooded Kingdom Sticker",
+    "Sticker City": "Metro Kingdom Sticker",
+    "Sticker Clash": "Lost Kingdom Sticker",
+    "Sticker Lake": "Lake Kingdom Sticker",
+    "Sticker Sea": "Seaside Kingdom Sticker",
+    "Sticker Lava": "Luncheon Kingdom Sticker",
+    "Sticker Snow": "Snow Kingdom Sticker",
+    "Sticker Sky": "Bowser's Kingdom Sticker",
+    "Sticker Moon": "Moon Kingdom Sticker",
+    "Sticker Peach": "Mushroom Kingdom Sticker",
+    "Sticker Peach Dokan": "Pipe Sticker",
+    "Sticker Peach Coin": "Coin Sticker",
+    "Sticker Peach Block": "Block Sticker",
+    "Sticker Peach Block Question": "? Block Sticker"
+}
 
-gifts = [
-    "Souvenir Hat 1",
-    "Souvenir Hat 2",
-    "Souvenir Fall 1",
-    "Souvenir Fall 2",
-    "Souvenir Sand 2",
-    "Souvenir Sand 1",
-    "Souvenir Forest 1",
-    "Souvenir Forest 2",
-    "Souvenir City 2",
-    "Souvenir City 1",
-    "Souvenir Crash 1",
-    "Souvenir Crash 1",
-    "Souvenir Crash 2",
-    "Souvenir Lake 2",
-    "Souvenir Lake 1",
-    "Souvenir Lava 1",
-    "Souvenir Lava 2",
-    "Souvenir Sea 2",
-    "Souvenir Sea 1",
-    "Souvenir Snow 1",
-    "Souvenir Snow 2",
-    "Souvenir Sky1",
-    "Souvenir Sky2",
-    "Souvenir Moon 1",
-    "Souvenir Moon 2",
-    "Souvenir Peach 1",
-    "Souvenir Peach 2"
-]
+gifts = {
+    "Souvenir Hat 1": "Plush Frog",
+    "Souvenir Hat 2": "Bonneton Tower Model",
+    "Souvenir Fall 1": "T-Rex Model",
+    "Souvenir Fall 2": "Triceratops Trophy",
+    "Souvenir Sand 2": "Jaxi Statue",
+    "Souvenir Sand 1": "Inverted Pyramid Model",
+    "Souvenir Forest 1": "Flowers from Steam Gardens",
+    "Souvenir Forest 2": "Steam Gardener Watering Can",
+    "Souvenir City 2": "New Donk City Hall Model",
+    "Souvenir City 1": "Pauline Statue",
+    "Souvenir Crash 1": "Potted Palm Tree",
+    "Souvenir Crash 2": "Butterfly Mobile",
+    "Souvenir Lake 2": "Rubber Dorrie",
+    "Souvenir Lake 1": "Underwater Dome",
+    "Souvenir Lava 1": "Souvenir Forks",
+    "Souvenir Lava 2": "Vegetable Plate",
+    "Souvenir Sea 2": "Glass Tower Model",
+    "Souvenir Sea 1": "Sand Jar",
+    "Souvenir Snow 1": "Shiverian Rug",
+    "Souvenir Snow 2": "Shiverian Nesting Dolls",
+    "Souvenir Sky1": "Paper Lantern",
+    "Souvenir Sky2": "Jizo Statue",
+    "Souvenir Moon 1": "Moon Rock Fragment",
+    "Souvenir Moon 2": "Moon Lamp",
+    "Souvenir Peach 1": "Mushroom Cushion Set",
+    "Souvenir Peach 2": "Peach's Castle Model"
+}
 
 filler_item_table = {
     "50 Coins": "Pocket Change",
@@ -242,7 +241,7 @@ def set_moon_counts(self) -> bytes:
     """
     if not os.path.exists(os.path.join(self.options.romFS.value, "SystemData/WorldList.szs")):
         raise Exception("Super Mario Odyssey romfs is invalid: SystemData/WorldList.szs does not exist.")
-    world_list = sarc.read_file_and_make_sarc(open(self.options.romFS.value+"SystemData/WorldList.szs", "rb"))
+    world_list = sarc.read_file_and_make_sarc(open(self.options.romFS.value+"/SystemData/WorldList.szs", "rb"))
     data = world_list.get_file_data("StageLockList.byml")
     root = byml.Byml(data.tobytes()).parse()
     for i in range(14):
@@ -301,7 +300,8 @@ def patch_prices(self, item_list : sarc.SARC, save_item_list : sarc.SARCWriter) 
             if i["Price"] > 1000:
                 i["Price"] = byml.Int(1000)
         if "MoonNum" in i:
-            i["MoonNum"] = byml.Int(self.outfit_moon_counts[re.sub(r'((?<=[a-z])[A-Z]|(?<=[0-9])[A-Z])', r' \1', ((i["ItemName"].replace("Color", "").replace("Mario", "")) + i["ItemType"]))])
+            internalName = re.sub(r'((?<=[a-z])[A-Z]|(?<=[0-9])[A-Z])', r' \1', ((i["ItemName"].replace("Color", "").replace("Mario", "")) + i["ItemType"]))
+            i["MoonNum"] = byml.Int(self.outfit_moon_counts[caps[internalName] if i["ItemType"].strip() == "Cap" else clothes[internalName]])
 
     writer = byml.Writer(root)
     save_item_list.add_file("ItemList.byml", writer.get_bytes())

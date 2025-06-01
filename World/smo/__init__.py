@@ -63,24 +63,24 @@ class SMOWorld(World):
     # Number of Power Moons required to unlock post game outfits.
     outfit_moon_counts = {
         "Luigi Cap" : 160,
-        "Luigi Clothes" : 180,
-        "Doctor Cap" : 220,
-        "Doctor Clothes" : 240,
+        "Luigi Suit" : 180,
+        "Doctor Headwear" : 220,
+        "Doctor Outfit" : 240,
         "Waluigi Cap" : 260,
-        "Waluigi Clothes" : 280,
-        "Diddy Kong Cap" : 300,
-        "Diddy Kong Clothes" : 320,
+        "Waluigi Suit" : 280,
+        "Diddy Kong Hat" : 300,
+        "Diddy Kong Suit" : 320,
         "Wario Cap" : 340,
-        "Wario Clothes" : 360,
-        "Hakama Clothes" : 380,
-        "Koopa Cap" : 420,
-        "Koopa Clothes" : 440,
-        "Peach Cap" : 460,
-        "Peach Clothes" : 480,
-        "Gold Cap" : 500,
-        "Gold Clothes" : 500,
-        "64 Metal Cap" : 500,
-        "64 Metal Clothes" : 500
+        "Wario Suit" : 360,
+        "Hakama" : 380,
+        "Bowser's Top Hat" : 420,
+        "Bowser's Tuxedo" : 440,
+        "Bridal Veil" : 460,
+        "Bridal Gown" : 480,
+        "Gold Mario Cap" : 500,
+        "Gold Mario Suit" : 500,
+        "Metal Mario Cap" : 500,
+        "Metal Mario Suit" : 500
     }
 
     # Maximum number of Power Moons for any given kingdom's progression
