@@ -60,6 +60,15 @@ B59E28 B seadPrintHook // sead::system::print
 
 1CEEDC BL registerShineToList
 
+// CoinCollect2D::exeGot
+1C0C84 BL sendCollectPacket
+
+// CoinCollect::exeGot
+1C043C BL sendCollectPacket
+
+// CoinCollect2D::exeCountUp
+1C0560 BL sendCollectPacket
+
 // Skip Shine Demo
 
 //rs::buyCap
