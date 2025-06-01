@@ -1245,6 +1245,25 @@ locations_list = [
     loc_Dark,
     loc_Darker
 ]
+full_moon_locations_list = [
+    {**loc_Cap, **loc_Cap_Postgame},
+    {**loc_Cascade, **loc_Cascade_Revisit, **loc_Cascade_Post_Snow, **loc_Cascade_Post_Metro, **loc_Cascade_Postgame},
+    {**loc_Sand, **loc_Sand_Peace, **loc_Sand_Revisit, **loc_Sand_Pyramid, **loc_Sand_Postgame},
+    {**loc_Lake, **loc_Lake_Post_Seaside, **loc_Lake_Postgame},
+    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace, **loc_Wooded_Post_Metro, **loc_Wooded_Postgame},
+    {**loc_Cloud, **loc_Cloud_Postgame},
+    {**loc_Lost, **loc_Lost_Revisit, **loc_Lost_Postgame},
+    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace, **loc_Metro_Post_Sand, **loc_Metro_Postgame},
+    {**loc_Snow, **loc_Snow_Peace, **loc_Snow_Postgame},
+    {**loc_Seaside, **loc_Seaside_Peace, **loc_Seaside_Postgame},
+    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace, **loc_Luncheon_Post_Wooded, **loc_Luncheon_Postgame},
+    {**loc_Ruined, **loc_Ruined_Postgame},
+    {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Peace, **loc_Bowser_Postgame},
+    {**loc_Moon, **loc_Moon_Postgame},
+    {**loc_Mushroom, **loc_Mushroom_Post_Luncheon},
+    loc_Dark,
+    loc_Darker
+]
 
 post_game_locations_list = [
     loc_Cap_Postgame,
@@ -1263,3 +1282,12 @@ post_game_locations_list = [
     loc_Moon_Postgame
 ]
 
+goals_table = {
+    4 : "The Hole in the Desert",
+    5 : "Broodals Over the Lake",
+    9 : "A Traditional Festival!",
+    12 : "Cookatiel Showdown!",
+    14 : "Beat the Game",
+    16 : "Arrival at Rabbit Ridge!",
+    17 : "A Long Journey's End!"
+}
