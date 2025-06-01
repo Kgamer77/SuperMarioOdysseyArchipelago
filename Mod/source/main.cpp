@@ -343,6 +343,18 @@ void sendDeathlinkPacket()
 
 }
 
+// GameDataFunction::tryChangeNextStage(accessor, &info);
+void updateLastEntrance(GameDataHolderWriter holder, ChangeStageInfo const *stageInfo) 
+{
+    Client::setLastEntrance(stageInfo);
+    holder.mData->changeNextStage(stageInfo, 0)
+}
+
+void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
+{
+    holder.mData->changeNextStage(Client::getLastEntrance(), 0);
+}
+
 bool isBuyItems(ShopItem::ItemInfo* itemInfo) {
     return false;
 }

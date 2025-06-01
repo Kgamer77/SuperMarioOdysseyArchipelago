@@ -1239,6 +1239,25 @@ void Client::setStageInfo(GameDataHolderAccessor holder) {
     }
 }
 
+void Client::setLastEntrance(ChangeStageInfo* stageInfo) {
+    if (sInstance) 
+    {
+        sInstance->mLastEntrance = stageInfo;
+    } 
+}
+
+ChangeStageInfo* Client::getLastEntrance()
+{
+    if (sInstance)
+    {
+        GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+        sInstance->mLastEntrance.findScenarioNoByList(accessor);
+        return sInstance->mLastEntrance;
+    }
+
+    return nullptr;
+}
+
 /**
  * @brief 
  * 
