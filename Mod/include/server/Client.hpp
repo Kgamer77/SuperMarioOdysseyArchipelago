@@ -101,7 +101,8 @@ class Client {
         static void sendCostumeInfPacket(const char *body, const char *cap);
         static void sendShineCollectPacket(int shineId);
         static void sendItemCollectPacket(char* itemName, int itemType);
-        static void sendRegionalCollectPacket(const char* objId);
+        static void sendRegionalCollectPacket(GameDataHolderAccessor holder, const char* objId);
+        static void sendLastEntrancePacket(const ChangeStageInfo *stageInfo);
         static void sendDeathlinkPacket();
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
@@ -166,8 +167,8 @@ class Client {
         static ushort getRaidCount() { return sInstance ? sInstance->raidCount : 3; }
 
         static void setStageInfo(GameDataHolderAccessor holder);
-        static void setLastEntrance(ChangeStageInfo* stageInfo);
-        static ChangeStageInfo* getLastEntrance();
+        static void setLastEntrance(const ChangeStageInfo* stageInfo);
+        static void sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo);
 
         static void setLastUsedIP(const char* ip);
 
@@ -290,7 +291,7 @@ class Client {
 
         sead::ExpHeap *mHeap = nullptr; // Custom FrameHeap used for all Client related memory
 
-        ChangeStageInfo *mLastEntrance;
+        const ChangeStageInfo *mLastEntrance;
 
         // --- Puppet Info ---
 

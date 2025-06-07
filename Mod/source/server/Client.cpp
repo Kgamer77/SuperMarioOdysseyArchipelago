@@ -615,46 +615,6 @@ void Client::sendGameInfPacket(GameDataHolderAccessor holder) {
 
     strcpy(packet->stageName, GameDataFunction::getCurrentStageName(holder));
 
-    if (GameDataFunction::isCrashHome(holder)) {
-        if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") == 0) {
-            int ruinedCount = 0;
-            if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), 0)) {
-                ruinedCount += 3;
-            }
-
-            for (int i = 1; i < 9; i++) {
-                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), i))
-                    ruinedCount++;
-            }
-            if (ruinedCount < sInstance->raidCount) {
-                GameDataFunction::repairHome(holder);
-            }
-        } else {
-            GameDataFunction::repairHome(holder);
-        }
-
-    }
-
-    if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
-        GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
-
-    if (GameDataFunction::isCrashHome(holder)) {
-        if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
-            int lostCount = 0;
-            for (int i = 1; i < 25; i++) {
-                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(), i))
-                    lostCount++;
-            }
-            if (lostCount < sInstance->clashCount) {
-                GameDataFunction::repairHome(holder);
-                GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
-            } else
-                GameDataFunction::crashHome(holder);
-        } else {
-            GameDataFunction::repairHome(holder);
-        }
-    }
-
     if (*packet != sInstance->emptyGameInfPacket) {
         sInstance->lastGameInfPacket = *packet;
         sInstance->mSocket->queuePacket(packet);
@@ -830,20 +790,16 @@ void Client::sendItemCollectPacket(char* itemName, int itemType) {
  *
  * @param itemName
  */
-void Client::sendRegionalCollectPacket(const char* objId) {
+void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, const char* objId) {
     if (!sInstance) {
         Logger::log("Static Instance is Null!\n");
         return;
     }
 
-  /*  if (!strcmp(itemName, "")) {
-        return;
-    }*/
 
-    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
-    RegionalCollect* packet = new RegionalCollect(objId, GameDataFunction::getCurrentStageName(accessor));
+    RegionalCollect* packet = new RegionalCollect(objId, GameDataFunction::getCurrentStageName(holder));
     packet->mUserID = sInstance->mUserID;
 
     sInstance->mSocket->queuePacket(packet);
@@ -1239,23 +1195,50 @@ void Client::setStageInfo(GameDataHolderAccessor holder) {
     }
 }
 
-void Client::setLastEntrance(ChangeStageInfo* stageInfo) {
+void Client::setLastEntrance(const ChangeStageInfo* stageInfo) {
     if (sInstance) 
     {
         sInstance->mLastEntrance = stageInfo;
     } 
 }
 
-ChangeStageInfo* Client::getLastEntrance()
-{
+void Client::sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo) {
     if (sInstance)
     {
         GameDataHolderAccessor accessor(sInstance->mCurStageScene);
-        sInstance->mLastEntrance->findScenarioNoByList(accessor.mData);
-        return sInstance->mLastEntrance;
+
+        if (GameDataFunction::isUnlockedCurrentWorld(accessor)) {
+            writer.mData->changeNextStage(stageInfo, 0);
+        } else {
+            ChangeStageInfo* changeInfo;
+            changeInfo->changeStageName = "SandWorldHomeStage";
+            changeInfo->subType = static_cast<ChangeStageInfo::SubScenarioType>(0);
+            changeInfo->scenarioNo = GameDataFunction::getWorldScenarioNo(
+                accessor, GameDataFunction::getWorldIndexWaterfall());
+            writer.mData->changeNextStage(changeInfo, 0);
+        }
+    }
+}
+
+void Client::sendLastEntrancePacket(const ChangeStageInfo* stageInfo) 
+{
+
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
     }
 
-    return nullptr;
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    ChangeStagePacket *packet = new ChangeStagePacket();
+
+
+    strcpy(packet->changeStage, stageInfo->changeStageName.cstr());
+    packet->scenarioNo = stageInfo->scenarioNo;
+    packet->subScenarioType = stageInfo->subType;
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
 }
 
 /**

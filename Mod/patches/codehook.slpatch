@@ -71,8 +71,12 @@ B59E28 B seadPrintHook // sead::system::print
 
 // Shine::exeGot
 1D2F08 BL onGrandShineStageChange
+//1D2F1C NOP
 
 // Skip Shine Demo
+// PlayerActorHakoniwa::startDemoShineGet()
+//4220E4 NOP
+
 
 //rs::buyCap
 54CB9C BL sendItemPacket

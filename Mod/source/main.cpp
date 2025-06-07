@@ -57,6 +57,51 @@ void updatePlayerInfo(GameDataHolderAccessor holder, PlayerActorBase* playerBase
     }
 
     if (gameInfSendTimer >= 60) {
+        // Check and prevent crashed home softlock
+        if (GameDataFunction::isCrashHome(holder)) {
+            if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") ==
+                0) {
+                int ruinedCount = 0;
+                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(),
+                                                 0)) {
+                    ruinedCount += 3;
+                }
+
+                for (int i = 1; i < 9; i++) {
+                    if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(),
+                                                     i))
+                        ruinedCount++;
+                }
+                if (ruinedCount < Client::getRaidCount()) {
+                    GameDataFunction::repairHome(holder);
+                }
+            } else {
+                GameDataFunction::repairHome(holder);
+            }
+        }
+
+        // Edge case where game repairs odyssey in ruined but doesn't unlock bowser kingdom
+        if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
+            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
+
+        // Check for lost kingdom softlock state
+        if (GameDataFunction::isCrashHome(holder)) {
+            if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
+                int lostCount = 0;
+                for (int i = 1; i < 25; i++) {
+                    if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(),
+                                                     i))
+                        lostCount++;
+                }
+                if (lostCount < Client::getClashCount()) {
+                    GameDataFunction::repairHome(holder);
+                    GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
+                } else
+                    GameDataFunction::crashHome(holder);
+            } else {
+                GameDataFunction::repairHome(holder);
+            }
+        }
 
         if (isYukimaru) {
             Client::sendGameInfPacket(holder);
@@ -335,7 +380,7 @@ void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
 
 void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placementId)
 {
-    Client::sendRegionalCollectPacket(placementId->mID);
+    Client::sendRegionalCollectPacket(thisPtr, placementId->mID);
     // Add flag in client to determine when option is disabled and pass regularly to GameDataFunction
 }
 
@@ -345,7 +390,7 @@ void sendDeathlinkPacket()
 }
 
 // GameDataFunction::tryChangeNextStage(accessor, &info);
-void updateLastEntrance(GameDataHolderWriter holder, ChangeStageInfo *stageInfo) 
+void updateLastEntrance(GameDataHolderWriter holder, const ChangeStageInfo *stageInfo) 
 {
     Client::setLastEntrance(stageInfo);
     holder.mData->changeNextStage(stageInfo, 0);
@@ -353,7 +398,8 @@ void updateLastEntrance(GameDataHolderWriter holder, ChangeStageInfo *stageInfo)
 
 void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
 {
-    holder.mData->changeNextStage(Client::getLastEntrance(), 0);
+    Client::sendLastEntrancePacket(stageInfo);
+    Client::sendStage(holder, stageInfo);
 }
 
 bool isBuyItems(ShopItem::ItemInfo* itemInfo) {
