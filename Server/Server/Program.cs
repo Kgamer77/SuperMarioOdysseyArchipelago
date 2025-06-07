@@ -102,7 +102,7 @@ Dictionary<int, bool> giftMoons = new Dictionary<int, bool>()
             { 539 , false },
             { 496 , false },
             { 129 , false },*/
-            { 424 , false } // Broodals over the Lake
+            //{ 424 , false } // Broodals over the Lake
         };
 
 /*async Task PersistIndexes()
@@ -601,6 +601,12 @@ server.PacketHandler = (c, p) => {
                 return false;
             }
             break;
+        }
+    
+        case ChangeStagePacket changeStagePacket:
+        {
+                c.Logger.Info($"Change Stage {changeStagePacket.Stage}, Scenario {changeStagePacket.Scenario}, SubScenario {changeStagePacket.SubScenarioType}");
+                break;
         }
     }
 
