@@ -16,41 +16,41 @@ def set_rules(self, options : SMOOptions) -> None:
     # Cascade Story Progress
     set_rule(self.multiworld.get_location("Multi Moon Atop the Falls", self.player), lambda state: state.has("Cascade Story Moon", self.player))
 
-    if options.goal >= 4:
-        # Sand Story Progress
-        set_rule(self.multiworld.get_location("Moon Shards in the Sand", self.player), lambda state: state.has("Sand Story Moon", self.player))
-        set_rule(self.multiworld.get_location("Showdown on the Inverted Pyramid", self.player), lambda state: state.has("Sand Story Moon", self.player))
-
-    if options.goal > 5:
-        # Wooded Story Progress
-        set_rule(self.multiworld.get_location("Flower Thieves of Sky Garden", self.player), lambda state: state.has("Wooded Story Moon", self.player))
-        set_rule(self.multiworld.get_location("Path to the Secret Flower Field", self.player), lambda state: state.count("Wooded Story Moon", self.player) >= 1)
-        set_rule(self.multiworld.get_location("Defend the Secret Flower Field!", self.player), lambda state: state.count("Wooded Story Moon", self.player) >= 2)
-
-    if options.goal >= 9:
-        # Metro Story Progress
-        set_rule(self.multiworld.get_location("Powering Up the Station", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 4)
-        set_rule(self.multiworld.get_location("A Traditional Festival!", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 5)
-
-    if options.goal >= 12:
-        # Seaside Story Progress
-        # set_rule(self.multiworld.get_location("The Glass Is Half Full!", self.player), lambda state: state.has("Seaside Story Moon", self.player) and
-        #     state.has("Seaside Story Moon", self.player) and state.has("Seaside Story Moon", self.player) and state.has("Seaside Story Moon", self.player))
-        #
-        # # Snow Story Progress
-        # set_rule(self.multiworld.get_location("The Bound Bowl Grand Prix", self.player), lambda state: state.has("Snow Story Moon", self.player) and
-        #     state.has("Snow Story Moon", self.player) and state.has("Snow Story Moon", self.player) and state.has("Snow Story Moon", self.player))
-
-        # Luncheon Story Progress
-        set_rule(self.multiworld.get_location("Under the Cheese Rocks", self.player), lambda state: state.has("Luncheon Story Moon", self.player))
-        set_rule(self.multiworld.get_location("Big Pot on the Volcano: Dive In!", self.player), lambda state: state.count("Luncheon Story Moon", self.player) >= 2)
-        set_rule(self.multiworld.get_location("Cookatiel Showdown!", self.player), lambda state: state.count("Luncheon Story Moon", self.player) >= 3)
-
-    if options.goal >= 15:
-        # Bowser Story Progress
-        set_rule(self.multiworld.get_location("Smart Bombing", self.player), lambda state: state.has("Bowser Story Moon", self.player))
-        set_rule(self.multiworld.get_location("Big Broodal Battle", self.player), lambda state: state.count("Bowser Story Moon", self.player) >= 2)
-        set_rule(self.multiworld.get_location("Showdown at Bowser's Castle", self.player), lambda state: state.count("Bowser Story Moon", self.player) >= 3)
+    # if options.goal >= 4:
+    #     # Sand Story Progress
+    #     set_rule(self.multiworld.get_location("Moon Shards in the Sand", self.player), lambda state: state.has("Sand Story Moon", self.player))
+    #     set_rule(self.multiworld.get_location("Showdown on the Inverted Pyramid", self.player), lambda state: state.has("Sand Story Moon", self.player))
+    #
+    # if options.goal > 5:
+    #     # Wooded Story Progress
+    #     set_rule(self.multiworld.get_location("Flower Thieves of Sky Garden", self.player), lambda state: state.has("Wooded Story Moon", self.player))
+    #     set_rule(self.multiworld.get_location("Path to the Secret Flower Field", self.player), lambda state: state.count("Wooded Story Moon", self.player) >= 1)
+    #     set_rule(self.multiworld.get_location("Defend the Secret Flower Field!", self.player), lambda state: state.count("Wooded Story Moon", self.player) >= 2)
+    #
+    # if options.goal >= 9:
+    #     # Metro Story Progress
+    #     set_rule(self.multiworld.get_location("Powering Up the Station", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 4)
+    #     set_rule(self.multiworld.get_location("A Traditional Festival!", self.player), lambda state: state.count("Metro Story Moon", self.player) >= 5)
+    #
+    # if options.goal >= 12:
+    #     # Seaside Story Progress
+    #     # set_rule(self.multiworld.get_location("The Glass Is Half Full!", self.player), lambda state: state.has("Seaside Story Moon", self.player) and
+    #     #     state.has("Seaside Story Moon", self.player) and state.has("Seaside Story Moon", self.player) and state.has("Seaside Story Moon", self.player))
+    #     #
+    #     # # Snow Story Progress
+    #     # set_rule(self.multiworld.get_location("The Bound Bowl Grand Prix", self.player), lambda state: state.has("Snow Story Moon", self.player) and
+    #     #     state.has("Snow Story Moon", self.player) and state.has("Snow Story Moon", self.player) and state.has("Snow Story Moon", self.player))
+    #
+    #     # Luncheon Story Progress
+    #     set_rule(self.multiworld.get_location("Under the Cheese Rocks", self.player), lambda state: state.has("Luncheon Story Moon", self.player))
+    #     set_rule(self.multiworld.get_location("Big Pot on the Volcano: Dive In!", self.player), lambda state: state.count("Luncheon Story Moon", self.player) >= 2)
+    #     set_rule(self.multiworld.get_location("Cookatiel Showdown!", self.player), lambda state: state.count("Luncheon Story Moon", self.player) >= 3)
+    #
+    # if options.goal >= 15:
+    #     # Bowser Story Progress
+    #     set_rule(self.multiworld.get_location("Smart Bombing", self.player), lambda state: state.has("Bowser Story Moon", self.player))
+    #     set_rule(self.multiworld.get_location("Big Broodal Battle", self.player), lambda state: state.count("Bowser Story Moon", self.player) >= 2)
+    #     set_rule(self.multiworld.get_location("Showdown at Bowser's Castle", self.player), lambda state: state.count("Bowser Story Moon", self.player) >= 3)
 
 
     # Outfit Moons
@@ -187,29 +187,29 @@ def set_rules(self, options : SMOOptions) -> None:
     if options.goal == "darker":
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Darker Side Multi-Moon", self.player)
 
-    if options.story > 1:
-        if options.goal == "sand":
-            self.multiworld.get_location("The Hole in the Desert", self.player).place_locked_item(
-                self.create_item("Sand Multi-Moon"))
-        if options.goal == "lake":
-            self.multiworld.get_location("Broodals Over the Lake", self.player).place_locked_item(
-                self.create_item("Lake Multi-Moon"))
-        if options.goal == "metro":
-            self.multiworld.get_location("A Traditional Festival!", self.player).place_locked_item(
-                self.create_item("Metro Multi-Moon"))
-        if options.goal == "luncheon":
-            self.multiworld.get_location("Cookatiel Showdown!", self.player).place_locked_item(
-                self.create_item("Luncheon Multi-Moon"))
-        if options.goal == "dark":
-            self.multiworld.get_location("Arrival at Rabbit Ridge!", self.player).place_locked_item(
-                self.create_item("Dark Side Multi-Moon"))
-        if options.goal == "darker":
-            self.multiworld.get_location("A Long Journey's End!", self.player).place_locked_item(self.create_item("Darker Side Multi-Moon"))
+    # Place Goal moon at location
+    if options.goal == "sand":
+        self.multiworld.get_location("The Hole in the Desert", self.player).place_locked_item(
+            self.create_item("Sand Multi-Moon"))
+    if options.goal == "lake":
+        self.multiworld.get_location("Broodals Over the Lake", self.player).place_locked_item(
+            self.create_item("Lake Multi-Moon"))
+    if options.goal == "metro":
+        self.multiworld.get_location("A Traditional Festival!", self.player).place_locked_item(
+            self.create_item("Metro Multi-Moon"))
+    if options.goal == "luncheon":
+        self.multiworld.get_location("Cookatiel Showdown!", self.player).place_locked_item(
+            self.create_item("Luncheon Multi-Moon"))
+    if options.goal == "dark":
+        self.multiworld.get_location("Arrival at Rabbit Ridge!", self.player).place_locked_item(
+            self.create_item("Dark Side Multi-Moon"))
+    if options.goal == "darker":
+        self.multiworld.get_location("A Long Journey's End!", self.player).place_locked_item(self.create_item("Darker Side Multi-Moon"))
 
 
 
 # for debugging purposes, you may want to visualize the layout of your world. Uncomment the following code to
 # write a PlantUML diagram to the file "my_world.puml" that can help you see whether your regions and locations
 # are connected and placed as desired
-    from Utils import visualize_regions
-    visualize_regions(self.multiworld.get_region("Menu", self.player), "my_world.puml")
+#     from Utils import visualize_regions
+#     visualize_regions(self.multiworld.get_region("Menu", self.player), "my_world.puml")

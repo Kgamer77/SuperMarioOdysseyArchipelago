@@ -14,7 +14,7 @@ from .Locations import SMOLocation, loc_Cap, loc_Cascade, loc_Cascade_Revisit, \
     loc_Wooded_Peace, loc_Metro_Sewer_Access, loc_Metro_Peace, loc_Snow_Peace, loc_Seaside_Peace, \
     loc_Luncheon_Post_Spewart, loc_Luncheon_Post_Cheese_Rocks, loc_Luncheon_Peace, \
     loc_Bowser_Infiltrate, loc_Bowser_Post_Bombing, loc_Bowser_Peace, loc_Postgame_Shop, loc_Sand_Pyramid, \
-    loc_Sand_Underground
+    loc_Sand_Underground, loc_Bowser_Mecha_Broodal
 
 from .Logic import count_moons, total_moons
 
@@ -53,7 +53,8 @@ def create_regions(self, world, player):
     create_locs(regSandUnderground, *loc_Sand_Underground.keys())
     world.regions.append(regSandUnderground)
     regSandPeace = Region("Sand Peace", player, world, "Sand Kingdom Peace")
-    create_locs(regSandPeace, *loc_Sand_Peace.keys())
+    if self.options.goal > 4:
+        create_locs(regSandPeace, *loc_Sand_Peace.keys())
     world.regions.append(regSandPeace)
 
     # Lake Regions
@@ -161,6 +162,10 @@ def create_regions(self, world, player):
     if self.options.goal > 12:
         create_locs(regBowserBombing, *loc_Bowser_Post_Bombing.keys())
     world.regions.append(regBowserBombing)
+    regBowserMecha = Region("Bowser Mecha Broodal", player, world, "Bowser Kingdom Story 3")
+    if self.options.goal > 12:
+        create_locs(regBowserMecha, *loc_Bowser_Mecha_Broodal.keys())
+    world.regions.append(regBowserMecha)
     regBowserPeace = Region("Bowser World Peace", player, world, "Bowser Kingdom Peace")
     if self.options.goal > 12:
         create_locs(regBowserPeace, *loc_Bowser_Peace.keys())
@@ -207,7 +212,7 @@ def create_regions(self, world, player):
         create_locs(regCascadeMetro, *loc_Cascade_Post_Metro.keys())
         create_locs(regCascadeSnow, *loc_Cascade_Post_Snow.keys())
 
-    if self.options.goal > 4:
+    if self.options.goal > 5:
         create_locs(regSandRe, *loc_Sand_Revisit.keys())
         create_locs(regMetroSand, *loc_Metro_Post_Sand.keys())
 
@@ -343,7 +348,9 @@ def create_regions(self, world, player):
 
     regBowser.connect(regBowserInfiltrate, "Bowser Infiltrate", lambda state: state.has("Bowser Story Moon", player))
     regBowserInfiltrate.connect(regBowserBombing, "Bowser Bombing", lambda state: state.count("Bowser Story Moon", player) >= 2)
-    regBowserBombing.connect(regBowserPeace, "Bowser World Peace", lambda state: state.count("Bowser Story Moon", player) >= 3)
+
+    regBowserBombing.connect(regBowserMecha, "Bowser Mecha Fight", lambda state: state.count("Bowser Story Moon", player) >= 3)
+    regBowserMecha.connect(regBowserPeace, "Bowser World Peace")
     regBowserPeace.connect(regMoon, "Enter Moon", lambda state: count_moons(self, state, "Bowser", player) >= self.moon_counts["bowser"])
     regMoon.connect(regPostMoon)
     regMoon.connect(regPostGame)

@@ -288,7 +288,6 @@ def patch_prices(self, item_list : sarc.SARC, save_item_list : sarc.SARCWriter) 
 
     for i in root:
         if i["CoinType"] == "Collect":
-            print(i)
             if i["StoreName"] in store_amounts:
                 if store_amounts[i["StoreName"]] == 5 and i["Price"] - store_amounts[i["StoreName"]] == 10:
                     break
@@ -396,13 +395,13 @@ def patch_shop_text(self) -> bytes:
                 internal_name = internal_name.replace(" Cap","").replace("Clothes", "")
             item_classification : ItemClassification
             if item != "Skip":
-                if file_to_items[i][item] in self.multiworld.regions.location_cache[self.player]:
-                    item_classification = self.multiworld.get_location(file_to_items[i][item], self.player).item.classification
-                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  self.multiworld.get_location(file_to_items[i][item], self.player).item.name.replace("_", " ")
+                if item in self.multiworld.regions.location_cache[self.player]:
+                    item_classification = self.multiworld.get_location(item, self.player).item.classification
+                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  self.multiworld.get_location(item, self.player).item.name.replace("_", " ")
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] += "\0"
-                    item_player = self.multiworld.get_player_name(self.multiworld.get_location(file_to_items[i][item], self.player).item.player)
-                    item_game = self.multiworld.get_location(file_to_items[i][item], self.player).item.game
-                    if item_game != "Super Mario Odyssey" and self.multiworld.get_location(file_to_items[i][item], self.player).item.player != self.player:
+                    item_player = self.multiworld.get_player_name(self.multiworld.get_location(item, self.player).item.player)
+                    item_game = self.multiworld.get_location(item, self.player).item.game
+                    if item_game != "Super Mario Odyssey" and self.multiworld.get_location(item, self.player).item.player != self.player:
                         root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"]["message"] = \
                             ("Comes from the world of " + item_game.replace("_", " ") +  ".\nSeems to belong to " + item_player +
                             ".\n")
@@ -415,9 +414,9 @@ def patch_shop_text(self) -> bytes:
                             "message"] += "\0"
 
                     else:
-                        if self.multiworld.get_location(file_to_items[i][item], self.player).item.name in filler_item_table.keys():
+                        if self.multiworld.get_location(item, self.player).item.name in filler_item_table.keys():
                             root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"][
-                                "message"] = filler_item_table[self.multiworld.get_location(file_to_items[i][item], self.player).item.name] + "\0"
+                                "message"] = filler_item_table[self.multiworld.get_location(item, self.player).item.name] + "\0"
                         else:
                             root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"][
                                 "message"] = ("I may need this!" if item_classification == ItemClassification.progression_skip_balancing or item_classification ==

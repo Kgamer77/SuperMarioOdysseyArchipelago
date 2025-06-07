@@ -100,45 +100,45 @@ class SMOWorld(World):
         "darker": 750
     }
     # Number of Power Moons in the pool for each kingdom
-    pool_counts = {
-        "Cap" : 31,
-        "Cascade" : 38,
-        "Sand" : 85,
-        "Lake" : 41,
-        "Wooded" : 72,
-        "Cloud" : 9,
-        "Lost" : 35,
-        "Metro" : 74,
-        "Snow" : 50,
-        "Seaside" : 66,
-        "Luncheon" : 63,
-        "Ruined" : 9,
-        "Bowser" : 58,
-        "Moon" : 38,
-        "Mushroom" : 37,
-        "Dark Side" : 23,
-        "Cascade Story" : 1,
-        "Sand Story" : 2,
-        "Wooded Story" : 2,
-        "Metro Story" : 5,
-        "Snow Story" : 4,
-        "Seaside Story" : 4,
-        "Luncheon Story" : 3,
-        "Bowser Story" : 3,
-        "Cascade Multi" : 1,
-        "Sand Multi" : 2,
-        "Lake Multi" : 1,
-        "Wooded Multi" : 2,
-        "Metro Multi" : 2,
-        "Snow Multi" : 1,
-        "Seaside Multi" : 1,
-        "Luncheon Multi" : 2,
-        "Ruined Multi" : 1,
-        "Bowser Multi" : 1,
-        "Mushroom Multi" : 6,
-        "Dark Side Multi" : 1,
-        "Darker Side Multi" : 1
-    }
+    # pool_counts = {
+    #     "Cap" : 31,
+    #     "Cascade" : 38,
+    #     "Sand" : 85,
+    #     "Lake" : 41,
+    #     "Wooded" : 72,
+    #     "Cloud" : 9,
+    #     "Lost" : 35,
+    #     "Metro" : 74,
+    #     "Snow" : 50,
+    #     "Seaside" : 66,
+    #     "Luncheon" : 63,
+    #     "Ruined" : 9,
+    #     "Bowser" : 58,
+    #     "Moon" : 38,
+    #     "Mushroom" : 37,
+    #     "Dark Side" : 23,
+    #     "Cascade Story" : 1,
+    #     "Sand Story" : 2,
+    #     "Wooded Story" : 2,
+    #     "Metro Story" : 5,
+    #     "Snow Story" : 4,
+    #     "Seaside Story" : 4,
+    #     "Luncheon Story" : 3,
+    #     "Bowser Story" : 3,
+    #     "Cascade Multi" : 1,
+    #     "Sand Multi" : 2,
+    #     "Lake Multi" : 1,
+    #     "Wooded Multi" : 2,
+    #     "Metro Multi" : 2,
+    #     "Snow Multi" : 1,
+    #     "Seaside Multi" : 1,
+    #     "Luncheon Multi" : 2,
+    #     "Ruined Multi" : 1,
+    #     "Bowser Multi" : 1,
+    #     "Mushroom Multi" : 6,
+    #     "Dark Side Multi" : 1,
+    #     "Darker Side Multi" : 1
+    # }
 
     placed_counts = {
         "cascade": 0,
@@ -206,39 +206,18 @@ class SMOWorld(World):
             if name == "Beat the Game" and self.options.goal == "moon":
                 classification = ItemClassification.progression_skip_balancing
             elif name in outfits:
-                """self.options.goal > 4 and outfits.index(name) <= 2) or \
-                                        (self.options.goal > 5 and outfits.index(name) <= 7) or \
-                                        (self.options.goal > 9 and outfits.index(name) < 10) or \
-                                        (self.options.goal > 12 and outfits.index(name) <= 17) or \
-                                        (self.options.goal > 15 and"""
                 if outfits.index(name) <= 33:
                     classification = ItemClassification.progression_skip_balancing
             elif name in shop_items:
                 # Until achievements implemented if possible
                 classification = ItemClassification.filler
-
             else:
-                # if (self.options.goal == 17 and self.placed_counts["dark"] >= self.moon_counts["dark"]) or (
-                #         self.options.goal == 18 and self.placed_counts["darker"] > self.moon_counts["darker"]):
-                #     classification = ItemClassification.filler
-                # else:
-                #     classification = ItemClassification.progression_skip_balancing
                 if name in moon_types:
                     if (name in self.item_name_groups["Dark"] and self.options.goal < 18) or name in self.item_name_groups["Darker"]:
                         classification = ItemClassification.filler
                     if "Story" in name or "Multi" in name:
-                        # if (self.options.goal >= 4 and "Sand" in name) or \
-                        #         (self.options.goal >= 5 and "Lake" in name) or \
-                        #         (self.options.goal >= 9 and "Wooded" in name) or \
-                        #         (self.options.goal >= 9 and "Metro" in name) or \
-                        #         (self.options.goal > 9 and "Snow" in name) or \
-                        #         (self.options.goal > 9 and "Seaside" in name) or \
-                        #         (self.options.goal >= 12 and "Luncheon" in name) or \
-                        #         (self.options.goal >= 15 and "Bowser" in name) or \
-                        #         (self.options.goal == 17 and "Dark Side" in name) or \
-                        #         (self.options.goal == 18 and "Darker Side" in name):
                         classification = ItemClassification.progression_skip_balancing
-                    if self.placed_counts["dark"] < self.moon_counts["dark"] and name not in self.item_name_groups["Dark"]:
+                    if self.placed_counts["dark"] < self.moon_counts["dark"] and name not in self.item_name_groups["Dark"] and name not in self.item_name_groups["Darker"]:
                         self.placed_counts["dark"] += 3 if "Multi" in name else 1
                         classification = ItemClassification.progression_skip_balancing
                     if self.placed_counts["darker"] < self.moon_counts["darker"] and name not in self.item_name_groups["Darker"]:
@@ -276,48 +255,75 @@ class SMOWorld(World):
 
         # Additively build pool
         # moons
-        for index in range(len(world_list)):
-            for location in full_moon_locations_list[index]:
-                if location in self.get_locations():
+
+
+        locations: list = []
+        for location in self.get_locations():
+            if location.name in outfits or location.name in shop_items:
+                continue
+            else:
+                locations += [location.name]
+        # print(locations)
+
+        for location in locations:
+            # found : bool = False
+            for index in range(len(world_list)):
+                if location in full_moon_locations_list[index]:
+                    # found = True
+                    item: str = world_list[index]
                     place : bool = False
-                    item : str = world_list[index]
                     if "Dark" in item:
                         item += " Side"
                     # Multi
-                    if location in multi_moons[world_list[index]]:
+                    if world_list[index] in multi_moons and location in multi_moons[world_list[index]]:
                         item += " Multi-Moon"
                         # Prevent placement of duplicate goal Multi-Moon
                         if location == goals_table[self.options.goal.value]:
-                            continue
+                            break
                         place = not self.options.story >= 2
-                    elif location in story_moons[world_list[index]]:
+                    elif world_list[index] in story_moons and location in story_moons[world_list[index]]:
                         item += " Story Moon"
                         place = not (self.options.story == 1 or self.options.story == 3)
-                    if place:
-                        self.get_location(location).place_locked_item(self.create_item(item))
-                        continue
                     else:
                         if world_list[index] == "Mushroom":
                             item = "Power Star"
                         else:
                             item += " Power Moon"
+
+                    if place:
+                        self.get_location(location).place_locked_item(self.create_item(item))
+                        break
+
                     pool.append(item)
+                    break
+            # if not found:
+            #     print(location)
+
+        locations : list = []
+
+        for location in self.get_locations():
+            if location.name in outfits or location.name in shop_items:
+                locations += [location.name]
 
         # shops
         item_names : list = []
         # Outfits
         for location in outfits:
-            if location in self.get_locations():
-                if self.options.shop_sanity == "outfits":
+            if location in locations:
+                if self.options.shop_sanity == "outfits" or self.options.shop_sanity == "all":
                     pool.append(location)
                 elif self.options.shop_sanity == "shuffle":
                     item_names.append(location)
+                else:
+                    self.get_location(location).place_locked_item(self.create_item(location))
 
         # Souvenirs and stickers
-        if self.options.shop_sanity >= 3:
-            for location in shop_items:
-                if location in self.get_locations():
+        for location in shop_items:
+            if location in locations:
+                if self.options.shop_sanity == "non_outfits" or self.options.shop_sanity == "all":
                     pool.append(location)
+                else:
+                    self.get_location(location).place_locked_item(self.create_item(location))
 
         # Shop sanity shuffle
         if self.options.shop_sanity == "shuffle":
