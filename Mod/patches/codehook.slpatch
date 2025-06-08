@@ -67,7 +67,7 @@ B59E28 B seadPrintHook // sead::system::print
 1C043C BL sendCollectPacket
 
 // CoinCollect2D::exeCountUp
-1C0560 BL sendCollectPacket
+//1C0560 BL sendCollectPacket
 
 // Shine::exeGot
 1D2F08 BL onGrandShineStageChange

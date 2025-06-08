@@ -790,7 +790,7 @@ void Client::sendItemCollectPacket(char* itemName, int itemType) {
  *
  * @param itemName
  */
-void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, const char* objId) {
+void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId) {
     if (!sInstance) {
         Logger::log("Static Instance is Null!\n");
         return;
@@ -800,7 +800,10 @@ void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, const char
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
     RegionalCollect* packet = new RegionalCollect();
-    strcpy(packet->objId, objId);
+    
+    sead::FixedSafeString<0x20> placementString;
+    placementId->makeString(&placementString);
+    strcpy(packet->objId, placementString.cstr());
     strcpy(packet->worldName, GameDataFunction::getCurrentStageName(holder));
     packet->mUserID = sInstance->mUserID;
 

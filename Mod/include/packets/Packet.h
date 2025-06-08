@@ -11,7 +11,7 @@
 #define COSTUMEBUFSIZE   0x20
 #define ITEMNAMESIZE     0x80
 #define APMESSAGESIZE    0x4B
-#define OBJECTIDSIZE     0x8
+#define OBJECTIDSIZE     0x20
 #define MAXPACKSIZE      0x100
 
 enum PacketType : short {

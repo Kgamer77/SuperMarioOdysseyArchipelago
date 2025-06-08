@@ -101,7 +101,7 @@ class Client {
         static void sendCostumeInfPacket(const char *body, const char *cap);
         static void sendShineCollectPacket(int shineId);
         static void sendItemCollectPacket(char* itemName, int itemType);
-        static void sendRegionalCollectPacket(GameDataHolderAccessor holder, const char* objId);
+        static void sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId);
         static void sendLastEntrancePacket(const ChangeStageInfo *stageInfo);
         static void sendDeathlinkPacket();
         static void sendTagInfPacket();
