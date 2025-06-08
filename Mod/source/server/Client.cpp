@@ -799,7 +799,9 @@ void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, const char
 
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
-    RegionalCollect* packet = new RegionalCollect(objId, GameDataFunction::getCurrentStageName(holder));
+    RegionalCollect* packet = new RegionalCollect();
+    strcpy(packet->objId, objId);
+    strcpy(packet->worldName, GameDataFunction::getCurrentStageName(holder));
     packet->mUserID = sInstance->mUserID;
 
     sInstance->mSocket->queuePacket(packet);
@@ -1195,27 +1197,26 @@ void Client::setStageInfo(GameDataHolderAccessor holder) {
     }
 }
 
-void Client::setLastEntrance(const ChangeStageInfo* stageInfo) {
-    if (sInstance) 
-    {
-        sInstance->mLastEntrance = stageInfo;
-    } 
-}
-
 void Client::sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo) {
     if (sInstance)
     {
         GameDataHolderAccessor accessor(sInstance->mCurStageScene);
 
         if (GameDataFunction::isUnlockedCurrentWorld(accessor)) {
-            writer.mData->changeNextStage(stageInfo, 0);
+            GameDataFunction::tryChangeNextStage(accessor, stageInfo);
         } else {
-            ChangeStageInfo* changeInfo;
-            changeInfo->changeStageName = "SandWorldHomeStage";
-            changeInfo->subType = static_cast<ChangeStageInfo::SubScenarioType>(0);
-            changeInfo->scenarioNo = GameDataFunction::getWorldScenarioNo(
-                accessor, GameDataFunction::getWorldIndexWaterfall());
-            writer.mData->changeNextStage(changeInfo, 0);
+            int i = 0;
+            for (i = GameDataFunction::getWorldIndexSpecial2(); i > 0; i--)
+            {
+                if (GameDataFunction::isUnlockedWorld(accessor, i))
+                {
+                    break;
+                }
+            }
+            ChangeStageInfo info(accessor.mData, "",
+                                 GameDataFunction::getMainStageName(accessor, i), false, -1,
+                static_cast<ChangeStageInfo::SubScenarioType>(0));
+            GameDataFunction::tryChangeNextStage(accessor, &info);
         }
     }
 }

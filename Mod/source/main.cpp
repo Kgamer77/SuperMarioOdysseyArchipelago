@@ -389,13 +389,6 @@ void sendDeathlinkPacket()
     // Stub
 }
 
-// GameDataFunction::tryChangeNextStage(accessor, &info);
-void updateLastEntrance(GameDataHolderWriter holder, const ChangeStageInfo *stageInfo) 
-{
-    Client::setLastEntrance(stageInfo);
-    holder.mData->changeNextStage(stageInfo, 0);
-}
-
 void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
 {
     Client::sendLastEntrancePacket(stageInfo);

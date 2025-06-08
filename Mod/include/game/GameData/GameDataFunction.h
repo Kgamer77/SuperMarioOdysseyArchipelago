@@ -91,6 +91,7 @@ public:
     static s32 getWorldIndexMoon(void);
     static s32 getWorldIndexPeach(void);
     static s32 getWorldIndexSpecial1(void);
+    static s32 getWorldIndexSpecial2(void);
 
     // gets the current level of the Odyssey
     static int getHomeLevel(GameDataHolderAccessor);

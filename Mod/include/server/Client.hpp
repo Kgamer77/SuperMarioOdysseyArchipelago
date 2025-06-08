@@ -167,7 +167,6 @@ class Client {
         static ushort getRaidCount() { return sInstance ? sInstance->raidCount : 3; }
 
         static void setStageInfo(GameDataHolderAccessor holder);
-        static void setLastEntrance(const ChangeStageInfo* stageInfo);
         static void sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo);
 
         static void setLastUsedIP(const char* ip);
@@ -290,8 +289,6 @@ class Client {
         u8 mScenario = 0;
 
         sead::ExpHeap *mHeap = nullptr; // Custom FrameHeap used for all Client related memory
-
-        const ChangeStageInfo *mLastEntrance;
 
         // --- Puppet Info ---
 
