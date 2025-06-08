@@ -9,7 +9,7 @@ public static class Constants {
     public const int CostumeNameSize = 0x20;
     public const int ItemNameSize = 0x80;
     public const int ChatMessageSize = 0x4B;
-    public const int ObjectIdSize = 0x8;
+    public const int ObjectIdSize = 0x20;
     public const int WorldNameSize = 0x30;
 
     // dictionary of packet types to packet

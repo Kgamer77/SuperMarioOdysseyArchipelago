@@ -10,7 +10,7 @@ public struct RegionalCoinPacket : IPacket
     public string worldName;
 
 
-    public short Size => 0x3A;
+    public short Size => 0x52;
 
     public void Serialize(Span<byte> data)
     {
