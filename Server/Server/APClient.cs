@@ -1127,7 +1127,7 @@ namespace Server
             {5, new Goal { item = "Lake Multi-Moon", index = 0 }},
             {9, new Goal { item = "Metro Multi-Moon", index = 6 }},
             {12, new Goal { item = "Luncheon Multi-Moon", index = 4 }},
-            {15, new Goal { item = "Beat the Game", index = -1 }},
+            {14, new Goal { item = "Beat the Game", index = -1 }},
             {17, new Goal { item = "Dark Side Multi-Moon", index = 0 }},
             {18, new Goal { item = "Darker Side Multi-Moon", index = 0 }}
         };
