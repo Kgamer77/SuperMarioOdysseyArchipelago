@@ -1,0 +1,317 @@
+import asyncio
+import functools
+from copy import deepcopy
+
+import Utils
+from NetUtils import decode, encode, NetworkPlayer, NetworkItem, JSONtoTextParser, JSONMessagePart
+from MultiServer import Endpoint
+from CommonClient import get_base_parser, gui_enabled, logger, CommonContext, ClientCommandProcessor
+from typing import List, Any, Iterable
+from .Packets import PacketHeader, PacketType, Packet
+
+from .Data import inverse_shop_items, shop_items, get_item_type
+from .Player import SMOPlayer
+
+from websockets import WebSocketServerProtocol
+
+message_types = [
+    "ItemSend",
+    "Hint",
+    "Join",
+    "Part",
+    "Chat"
+]
+
+class SMOJSONToTextParser(JSONtoTextParser):
+    def _handle_color(self, node: JSONMessagePart):
+        return self._handle_text(node)  # No colors for the in-game text
+
+# Add Debug Commands like send_to and shine, etc
+class SMOCommandProcessor(ClientCommandProcessor):
+    def _cmd_smo(self):
+        """Check SMO Connection State"""
+        if isinstance(self.ctx, SMOContext):
+            logger.info(f"SMO Status: {self.ctx.get_smo_status()}")
+
+# Change send message and related calls to send packet and serialize and deserialize using the packet of the respective packet type.
+# Make sure to receive packets on the connection to send checks through to the AP Server from this client.
+
+class SMOContext(CommonContext):
+    command_processor = SMOCommandProcessor
+    game = "Super Mario Odyssey"
+
+    def __init__(self, server_address, password):
+        super().__init__(server_address, password)
+        self.proxy : asyncio.Server
+        self.proxy_chat = None
+        self.gamejsontotext = SMOJSONToTextParser(self)
+        self.autoreconnect_task = None
+        self.endpoint = None
+        self.items_handling = 0b111
+        self.room_info = None
+        self.connected_msg = None
+        self.game_connected : bool = False
+        self.awaiting_info : bool = False
+        self.full_inventory: List[Any] = []
+        self.server_msgs: List[Any] = []
+        self.proxy_msgs : List[Packet] = []
+        self.proxy_guid : bytes = bytes()
+        self.player_data : SMOPlayer = SMOPlayer()
+        self.slot_data : dict = {}
+        self.ping_task = None
+        self.awaiting_connection : bool = False
+        self.disconnect_timer : int = 5
+
+    async def server_auth(self, password_requested: bool = False):
+        if password_requested and not self.password:
+            await super(SMOContext, self).server_auth(password_requested)
+
+        await self.get_username()
+        await self.send_connect()
+
+    def get_smo_status(self) -> str:
+        if not self.game_connected:
+            return "Not connected to Super Mario Odyssey"
+
+        return "Connected to Super Mario Odyssey"
+
+    async def disconnect(self, allow_autoreconnect: bool = False):
+        await super().disconnect(allow_autoreconnect)
+
+    async def disconnect_proxy(self):
+        if self.endpoint and not self.endpoint.socket.closed:
+            await self.endpoint.socket.close()
+
+    def is_connected(self) -> bool:
+        return self.server and self.server.socket.open
+
+    # Handle APChatMessage here
+    def on_print_json(self, args: dict):
+        text = self.gamejsontotext(deepcopy(args["data"]))
+        if "type" in args and args["type"] in message_types:
+            self.player_data.add_message(text)
+
+        if self.ui:
+            self.ui.print_json(args["data"])
+        else:
+            text = self.jsontotextparser(args["data"])
+            logger.info(text)
+
+    def update_items(self):
+        # just to be safe - we might still have an inventory from a different room
+        if not self.is_connected():
+            return
+
+        self.server_msgs.append(encode([{"cmd": "ReceivedItems", "index": 0, "items": self.full_inventory}]))
+
+    # Handle sending packets to SMO here
+    def on_package(self, cmd: str, args: dict):
+        if cmd == "Connected":
+            json = args
+            me: NetworkPlayer
+            if "slot_info" in json.keys():
+                json["slot_info"] = {}
+            if "players" in json.keys():
+
+                for n in json["players"]:
+                    if n.slot == json["slot"] and n.team == json["team"]:
+                        me = n
+                        break
+
+                # Only put our player info in there as we actually need it
+                json["players"] = [me]
+                self.slot_data = json["slot_data"]
+            self.player_data.add_message(f"Connected to Archipelago as {me.name} playing Super Mario Odyssey")
+            # Send slot data to SMO
+            self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.ShineCounts,
+                                              packet_data=[self.slot_data["clash"], self.slot_data["raid"]]))
+            # if DEBUG:
+            #     print(json)
+            self.connected_msg = encode([json])
+            if self.awaiting_info:
+                self.server_msgs.append(self.room_info)
+                self.update_items()
+                self.awaiting_info = False
+
+        elif cmd == "RoomUpdate":
+            # Same story as above
+            json = args
+            if "players" in json.keys():
+                json["players"] = []
+
+            self.server_msgs.append(encode(json))
+
+        elif cmd == "ReceivedItems":
+            # Handle Sending various collect packets to SMO here
+            if args["index"] == 0:
+                self.full_inventory.clear()
+
+            for item in args["items"]:
+                net_item = NetworkItem(*item)
+                self.full_inventory.append(net_item)
+
+                match get_item_type(net_item.item):
+                    # Moons
+                    case -1:
+                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Shine,
+                                        packet_data=[self.player_data.get_next_moon(net_item.item)])
+                    # Regional Coins
+                    case -2:
+                        pass
+                    # Filler
+                    case -3:
+                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Filler,
+                                packet_data=[net_item.item])
+
+                    case _:
+                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Item,
+                                        packet_data=[inverse_shop_items[net_item.item], get_item_type(net_item.item)])
+
+                self.proxy_msgs.append(packet)
+
+            self.server_msgs.append(encode([args]))
+
+        elif cmd == "RoomInfo":
+            self.seed_name = args["seed_name"]
+            self.room_info = encode([args])
+
+        else:
+            if cmd != "PrintJSON":
+                self.server_msgs.append(encode([args]))
+
+    def run_gui(self):
+        from kvui import GameManager
+
+        class SMOManager(GameManager):
+            logging_pairs = [
+                ("Client", "Archipelago")
+            ]
+            base_title = "Archipelago Super Mario Odyssey Client"
+
+        self.ui = SMOManager(self)
+        self.ui_task = asyncio.create_task(self.ui.async_run(), name="UI")
+
+async def ping_loop(ctx : SMOContext):
+    while not ctx.exit_event.is_set():
+        if ctx.endpoint:
+            if ctx.disconnect_timer == 0:
+                ctx.game_connected = False
+            ctx.disconnect_timer -= 1
+        await asyncio.sleep(1.0)
+
+
+
+async def proxy_chat(ctx : SMOContext):
+    try:
+        clear_msgs : bool = False
+        while not ctx.exit_event.is_set():
+            if (len(ctx.player_data.messages) > 0 or clear_msgs) and ctx.game_connected:
+                msg_packet : Packet = Packet(guid=ctx.proxy_guid, packet_type=PacketType.ArchipelagoChat,
+                                             packet_data=[ctx.player_data.next_messages()])
+                ctx.proxy_msgs.append(msg_packet)
+                if len(ctx.player_data.messages) == 0 and not clear_msgs:
+                    clear_msgs = True
+                else:
+                    clear_msgs = False
+            await asyncio.sleep(5.0)
+    except Exception as e:
+        logger.exception(e)
+
+
+async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWriter, ctx : SMOContext) -> None:
+    data : bytearray
+    packet : Packet
+    ctx.endpoint = Endpoint(writer.transport.get_extra_info("socket"))
+    print(ctx.endpoint)
+    ctx.awaiting_connection = True
+    while True:
+        data : bytearray = bytearray(await reader.read(PacketHeader.SIZE))
+        packet = Packet(header_bytes=data)
+        packet_size : int = packet.header.packet_size.value
+        data = bytearray(await reader.read(packet_size))
+        packet.deserialize(data)
+        if packet.header.packet_type != PacketType.Unknown:
+            ctx.disconnect_timer = 5
+        match packet.header.packet_type:
+            case PacketType.Connect:
+                ctx.proxy_guid = packet.header.guid
+                init_packet = Packet(guid=ctx.proxy_guid, packet_type=PacketType.Init)
+                # Insert init packet at 0 in queue so other packets added before aren't dropped.
+                ctx.proxy_msgs.insert(0, init_packet)
+                ctx.game_connected = True
+                ctx.awaiting_connection = False
+                print("SMO Connected")
+            case PacketType.Disconnect:
+                ctx.game_connected = False
+                break
+            case PacketType.Shine:
+                shine_id : int = packet.packet.id.value
+                print(f"Got {shine_id}")
+                await ctx.send_msgs([{"cmd": "LocationChecks", "locations" : [shine_id]}])
+            case PacketType.Item:
+                item_name: int = packet.packet.name
+                await ctx.send_msgs([{"cmd": "LocationChecks", "locations": [shop_items[item_name]]}])
+            case PacketType.RegionalCollect:
+                pass
+                # shine_id: int = packet.packet.id.value
+                # ctx.server_msgs.append(encode([{"cmd": "LocationChecks", "locations": [shine_id]}]))
+
+        if len(ctx.proxy_msgs) > 0 and ctx.game_connected:
+            for i in range(len(ctx.proxy_msgs)):
+                response : Packet = ctx.proxy_msgs.pop(0)
+                #print(response.header.packet_type)
+                b = response.serialize()
+                writer.write(b)
+                await writer.drain()
+        if not ctx.game_connected and not ctx.awaiting_connection:
+            break
+    print("SMO Disconnected")
+    ctx.awaiting_connection = True
+    writer.close()
+
+
+
+
+def launch(*launch_args: str):
+    async def main():
+        parser = get_base_parser()
+        args = parser.parse_args(launch_args)
+
+        ctx = SMOContext(args.connect, args.password)
+        logger.info("Starting Super Mario Odyssey proxy server")
+
+        ctx.proxy = asyncio.start_server(functools.partial(handle_proxy, ctx=ctx), "0.0.0.0", 1027)
+        ctx.proxy_chat = asyncio.create_task(proxy_chat(ctx) , name="ChatLoop")
+        ctx.ping_task = asyncio.create_task(ping_loop(ctx), name="PingLoop")
+
+        if gui_enabled:
+            ctx.run_gui()
+        ctx.run_cli()
+
+        await ctx.proxy
+        await ctx.proxy_chat
+
+        await ctx.ping_task
+        # Make ping task wait 1-second intervals
+        # Add counter member to ctx
+        # if packet of any kind is read from stream,
+        # reset counter to 5
+        # if counter is 0 when ping task runs,
+        # send ping packet to SMO reset counter, set awaiting_ping member of ctx true
+        # when ping packet received, set awaiting_ping to false
+        # if counter reaches 0 and awaiting_ping is true,
+        # set game_connected to false.
+        # test without ping packet to see if enough packets
+        # saturate the stream to keep connection open with Mario idle
+        # if not then implement the above.
+
+        await ctx.exit_event.wait()
+
+
+    Utils.init_logging("SMOClient")
+    # options = Utils.get_options()
+
+    import colorama
+    colorama.just_fix_windows_console()
+    asyncio.run(main())
+    colorama.deinit()

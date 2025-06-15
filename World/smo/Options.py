@@ -35,16 +35,6 @@ class ShopSanity(Choice):
     option_off = 0
     default = 0  # default to off
 
-# class ReplaceUnneededMoons(Toggle):
-#     """Replaces moons from kingdoms not required to reach the win condition with filler items (Coins)."""
-#     display_name = "Replace Unnecessary Moons"
-
-class RomFSLocation(FreeText):
-    """The Directory of an extracted RomFS folder for Super Mario Odyssey.
-    Used to generate a RomFS folder to patch in special options."""
-    display_name = "Extracted RomFS Directory"
-    #visibility = 0b1101
-
 class RandomizeMoonColors(Toggle):
     """Randomizes each kingdom's moon color."""
     display_name = "Randomize Moon Colors"
@@ -57,7 +47,7 @@ class RandomizeMoonCount(Choice):
     moderate: Up to +25% and down to -20% of normal per kingdom counts.
     extreme: Up to 200% of normal count.
     """
-    display_name = "Randomize Moon Count"
+    display_name = "Randomize Moon Requirements"
     #visibility = 0b1101
     option_same_total = 1
     option_same_total_lock_ruined = 2
@@ -72,7 +62,6 @@ class SMOOptions(PerGameCommonOptions):
     story : StorySanity
     shop_sanity: ShopSanity
     # replace: ReplaceUnneededMoons
-    romFS:RomFSLocation
     colors: RandomizeMoonColors
     counts:RandomizeMoonCount
 

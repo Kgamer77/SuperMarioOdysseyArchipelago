@@ -3,7 +3,6 @@
 
 import argparse
 import sys
-import typing
 
 from . import rstb
 from . import util

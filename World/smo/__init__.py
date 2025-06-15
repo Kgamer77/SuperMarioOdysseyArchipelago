@@ -1,7 +1,6 @@
 import random
 import os
 from typing import Mapping, Any
-
 from .Items import item_table, SMOItem, filler_item_table, outfits, shop_items, multi_moons, \
     moon_item_table, moon_types, story_moons, world_list
 from .Locations import locations_table, SMOLocation, locations_list, post_game_locations_list, \
@@ -11,25 +10,43 @@ from .Rules import set_rules
 from .Regions import create_regions
 from BaseClasses import Item, ItemClassification
 from worlds.AutoWorld import World
+from worlds.LauncherComponents import (Component, components, Type as component_type, SuffixIdentifier, launch as launch_component)
+from .Patch import SMOProcedurePatch, make_output, write_patch
+from settings import Group, UserFolderPath
+from Utils import output_path
 
-from .Patch import make_output
+
+def launch_client(*args: str):
+    from .Connector.Client import launch
+    print(len(args))
+    if len(args) > 0:
+        make_output(args[0])
+        launch_component(launch, name="SMOClient", args=args[1:])
+    else:
+        launch_component(launch, name="SMOClient", args=args)
 
 
-"""
-class MyGameSettings(settings.Group):
-    class RomFile(settings.SNESRomPath):
-        Insert help text for host.yaml here.
+component = Component("Super Mario Odyssey Client", component_type=component_type.CLIENT,
+                      game_name="Super Mario Odyssey", file_identifier=SuffixIdentifier(".apsmo"), func=launch_client)
+components.append(component)
 
-    rom_file: RomFile = RomFile("MyGame.sfc")
-"""
+class SMOSettings(Group):
+    class SMORomFS(UserFolderPath):
+        """Folder location of your dumped Super Mario Odyssey RomFS."""
+        description = "Super Mario Odyssey RomFS"
+        copy_to = "SMO_RomFs"
+
+    romFS_folder: SMORomFS = SMORomFS(SMORomFS.copy_to)
 
 
 class SMOWorld(World):
     """Super Mario Odyssey is a 3-D Platformer where Mario sets off across the world with his companion Cappy to save Princess Peach and Cappy's sister Tiara from Bowser's wedding plans."""
     game = "Super Mario Odyssey"
-    # this gives the generator all the definitions for our options
+
+    settings_key = "smo_settings"
+    settings : SMOSettings
+
     options_dataclass = SMOOptions
-    # this gives us typing hints for all the options we defined
     options: SMOOptions
 
     topology_present = True  # show path to required location checks in spoiler
@@ -399,16 +416,17 @@ class SMOWorld(World):
             if count != 124:
                 raise Exception("Moon count exception! Moons required to beat the game is not 124, was " + str(count))
         # Change all outfit moon requirements to a proportion based on random Dark Side count
-        for key in self.outfit_moon_counts.keys():
-            self.outfit_moon_counts[key] = 124 #int(self.outfit_moon_counts[key] * (self.moon_counts["dark"]/250))
+        # for key in self.outfit_moon_counts.keys():
+        #     self.outfit_moon_counts[key] = int(self.outfit_moon_counts[key] * (self.moon_counts["dark"]/250))
             # if self.outfit_moon_counts[key] > self.moon_counts["dark"]:
             #     self.outfit_moon_counts[key] = self.moon_counts["dark"] - 1
 
 
 
     def generate_output(self, output_directory: str):
-        if self.options.romFS.value != "" and os.path.exists(os.path.join(self.options.romFS.value)):
-            self.options.romFS.value = os.path.join(self.options.romFS.value)
-            make_output(self, output_directory)
+        out_base = output_path(output_directory, self.multiworld.get_out_file_name_base(self.player))
+        patch = SMOProcedurePatch(player=self.player, player_name=self.multiworld.get_player_name(self.player))
+        write_patch(self, patch)
+        patch.write(os.path.join(output_directory, f"{out_base}{patch.patch_file_ending}"))
 
 
