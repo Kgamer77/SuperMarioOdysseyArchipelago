@@ -1205,7 +1205,9 @@ void Client::sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stage
     {
         GameDataHolderAccessor accessor(sInstance->mCurStageScene);
 
-        if (GameDataFunction::isUnlockedCurrentWorld(accessor)) {
+        if (GameDataFunction::getWorldIndexWaterfall() ==
+            GameDataFunction::getCurrentWorldId(accessor)
+                 || GameDataFunction::isUnlockedCurrentWorld(accessor)) {
             GameDataFunction::tryChangeNextStage(accessor, stageInfo);
         } else {
             int i = 0;
@@ -1396,8 +1398,8 @@ void Client::updateShines() {
                         stageShine->makeActorAlive();
                     }
                     
-                    stageShine->getDirect();
-                    stageShine->onSwitchGet();
+                    //stageShine->getDirect();
+                    //stageShine->onSwitchGet();
                 }
 
                 accessor.mData->mGameDataFile->setGotShine(shineInfo);
