@@ -33,6 +33,21 @@ class SMOCommandProcessor(ClientCommandProcessor):
         if isinstance(self.ctx, SMOContext):
             logger.info(f"SMO Status: {self.ctx.get_smo_status()}")
 
+    def _cmd_sync(self):
+        """Attempt to resync received items"""
+        if isinstance(self.ctx, SMOContext):
+            logger.info(f"SMO Status: Syncing")
+            self.ctx.player_data.item_index = 0
+            self.ctx.server_msgs.append({"cmd" : "Sync"})
+            # Add the sending locations part here if necessary.
+
+    def _cmd_warp(self, kingdom : str):
+        """Warp Mario to another kingdom"""
+        if isinstance(self.ctx, SMOContext):
+            logger.info(f"Sending Mario to {kingdom}")
+            raise "Not implemented exception"
+            self.ctx.proxy_msgs.append(Packet(guid=self.ctx.guid, packet_type=PacketType.ChangeStage, packet_data=[]))
+
 # Change send message and related calls to send packet and serialize and deserialize using the packet of the respective packet type.
 # Make sure to receive packets on the connection to send checks through to the AP Server from this client.
 
@@ -54,6 +69,7 @@ class SMOContext(CommonContext):
         self.awaiting_info : bool = False
         self.full_inventory: List[Any] = []
         self.server_msgs: List[Any] = []
+        self.server_comm_task = None
         self.proxy_msgs : List[Packet] = []
         self.proxy_guid : bytes = bytes()
         self.player_data : SMOPlayer = SMOPlayer()
@@ -61,6 +77,7 @@ class SMOContext(CommonContext):
         self.ping_task = None
         self.awaiting_connection : bool = False
         self.disconnect_timer : int = 5
+        self.logged_in : bool = False
 
     async def server_auth(self, password_requested: bool = False):
         if password_requested and not self.password:
@@ -102,7 +119,7 @@ class SMOContext(CommonContext):
         if not self.is_connected():
             return
 
-        self.server_msgs.append(encode([{"cmd": "ReceivedItems", "index": 0, "items": self.full_inventory}]))
+        self.server_msgs.append({"cmd": "ReceivedItems", "index": 0, "items": self.full_inventory})
 
     # Handle sending packets to SMO here
     def on_package(self, cmd: str, args: dict):
@@ -123,8 +140,9 @@ class SMOContext(CommonContext):
                 self.slot_data = json["slot_data"]
             self.player_data.add_message(f"Connected to Archipelago as {me.name} playing Super Mario Odyssey")
             # Send slot data to SMO
-            self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.ShineCounts,
-                                              packet_data=[self.slot_data["clash"], self.slot_data["raid"]]))
+            self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.SlotData,
+                                              packet_data=[self.slot_data["clash"], self.slot_data["raid"], self.slot_data["regionals"]]))
+            self.logged_in = True
             # if DEBUG:
             #     print(json)
             self.connected_msg = encode([json])
@@ -139,12 +157,22 @@ class SMOContext(CommonContext):
             if "players" in json.keys():
                 json["players"] = []
 
-            self.server_msgs.append(encode(json))
+            self.server_msgs.append(json)
 
         elif cmd == "ReceivedItems":
             # Handle Sending various collect packets to SMO here
             if args["index"] == 0:
                 self.full_inventory.clear()
+                # not sure if this is needed?
+                self.player_data.reset_moons()
+                self.player_data.item_index = 0
+                print("Accept full inventory.")
+
+            if args["index"] != self.player_data.item_index:
+                print("Next index mismatch, syncing.")
+                self.server_msgs.append({"cmd" : "Sync"})
+            else:
+                self.player_data.item_index += 1
 
             for item in args["items"]:
                 net_item = NetworkItem(*item)
@@ -169,15 +197,15 @@ class SMOContext(CommonContext):
 
                 self.proxy_msgs.append(packet)
 
-            self.server_msgs.append(encode([args]))
+            self.server_msgs.append(args)
 
         elif cmd == "RoomInfo":
             self.seed_name = args["seed_name"]
-            self.room_info = encode([args])
+            self.room_info = args
 
         else:
             if cmd != "PrintJSON":
-                self.server_msgs.append(encode([args]))
+                self.server_msgs.append(args)
 
     def run_gui(self):
         from kvui import GameManager
@@ -232,29 +260,35 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
         packet.deserialize(data)
         if packet.header.packet_type != PacketType.Unknown:
             ctx.disconnect_timer = 5
+        if ctx.proxy_guid and ctx.awaiting_connection:
+            ctx.game_connected = True
+            ctx.awaiting_connection = False
+            print("SMO Connected")
         match packet.header.packet_type:
             case PacketType.Connect:
                 ctx.proxy_guid = packet.header.guid
                 init_packet = Packet(guid=ctx.proxy_guid, packet_type=PacketType.Init)
                 # Insert init packet at 0 in queue so other packets added before aren't dropped.
                 ctx.proxy_msgs.insert(0, init_packet)
-                ctx.game_connected = True
-                ctx.awaiting_connection = False
-                print("SMO Connected")
+
             case PacketType.Disconnect:
                 ctx.game_connected = False
                 break
             case PacketType.Shine:
                 shine_id : int = packet.packet.id.value
                 print(f"Got {shine_id}")
-                await ctx.send_msgs([{"cmd": "LocationChecks", "locations" : [shine_id]}])
+                ctx.server_msgs.append({"cmd": "LocationChecks", "locations" : [shine_id]})
             case PacketType.Item:
-                item_name: int = packet.packet.name
-                await ctx.send_msgs([{"cmd": "LocationChecks", "locations": [shop_items[item_name]]}])
+                item_type : int = packet.packet.item_type.value
+                item_name = packet.packet.name
+                item_name += "Cap" if item_type == 1 else "Clothes" if item_type == 0 else ""
+                print(f"Got {item_name}")
+                item_id: int = shop_items[item_name]
+                ctx.server_msgs.append({"cmd": "LocationChecks", "locations": [item_id]})
             case PacketType.RegionalCollect:
                 pass
                 # shine_id: int = packet.packet.id.value
-                # ctx.server_msgs.append(encode([{"cmd": "LocationChecks", "locations": [shine_id]}]))
+
 
         if len(ctx.proxy_msgs) > 0 and ctx.game_connected:
             for i in range(len(ctx.proxy_msgs)):
@@ -266,10 +300,19 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
         if not ctx.game_connected and not ctx.awaiting_connection:
             break
     print("SMO Disconnected")
+    ctx.player_data.item_index = 0
     ctx.awaiting_connection = True
     writer.close()
 
 
+async def comm_loop(ctx : SMOContext):
+    while not ctx.exit_event.is_set():
+        if not ctx.is_connected():
+            ctx.logged_in = False
+        if len(ctx.server_msgs) > 0 and ctx.logged_in:
+            await ctx.send_msgs(ctx.server_msgs)
+            ctx.server_msgs.clear()
+        await asyncio.sleep(0.1)
 
 
 def launch(*launch_args: str):
@@ -283,6 +326,7 @@ def launch(*launch_args: str):
         ctx.proxy = asyncio.start_server(functools.partial(handle_proxy, ctx=ctx), "0.0.0.0", 1027)
         ctx.proxy_chat = asyncio.create_task(proxy_chat(ctx) , name="ChatLoop")
         ctx.ping_task = asyncio.create_task(ping_loop(ctx), name="PingLoop")
+        ctx.server_comm_task = asyncio.create_task(comm_loop(ctx), name="CommLoop")
 
         if gui_enabled:
             ctx.run_gui()
@@ -290,8 +334,8 @@ def launch(*launch_args: str):
 
         await ctx.proxy
         await ctx.proxy_chat
-
         await ctx.ping_task
+        await ctx.server_comm_task
         # Make ping task wait 1-second intervals
         # Add counter member to ctx
         # if packet of any kind is read from stream,
