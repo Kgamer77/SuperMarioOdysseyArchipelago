@@ -9,4 +9,5 @@ struct PACKED ShineCounts : Packet {
     };
     ushort clash = 0;
     ushort raid = 0;
+    bool regionals = false;
 };

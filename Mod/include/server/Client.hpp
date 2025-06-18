@@ -165,6 +165,7 @@ class Client {
 
         static ushort getClashCount() { return sInstance ? sInstance->clashCount : 10; }
         static ushort getRaidCount() { return sInstance ? sInstance->raidCount : 3; }
+        static bool getRegionalsFlag() { return sInstance ? sInstance->regionals : false; }
 
         static void setStageInfo(GameDataHolderAccessor holder);
         static void sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo);
@@ -245,6 +246,7 @@ class Client {
 
         ushort clashCount = 10;
         ushort raidCount = 3;
+        bool regionals = false;
 
         // Backups for our last player/game packets, used for example to re-send them for newly connected clients
         PlayerInf lastPlayerInfPacket = PlayerInf();

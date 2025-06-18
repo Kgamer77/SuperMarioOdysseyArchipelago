@@ -159,7 +159,7 @@ public:
     static s32 getCoinCollectNum(GameDataHolderAccessor);
 
     // adds regional coin to file
-    static void addCoinCollect(GameDataHolderAccessor, al::PlacementId);
+    static void addCoinCollect(GameDataHolderWriter, al::PlacementId const*);
 
     // saves an objects Stage Name, Object ID, and custom value to the save file
     static void saveObjS32(GameDataHolderWriter, al::PlacementId const*, int);
