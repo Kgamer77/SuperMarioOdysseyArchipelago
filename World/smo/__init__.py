@@ -25,7 +25,6 @@ def launch_client(*args: str):
     else:
         launch_component(launch, name="SMOClient", args=args)
 
-
 component = Component("Super Mario Odyssey Client", component_type=component_type.CLIENT,
                       game_name="Super Mario Odyssey", file_identifier=SuffixIdentifier(".apsmo"), func=launch_client)
 components.append(component)
@@ -195,8 +194,9 @@ class SMOWorld(World):
         "Darker": ["Darker Side Multi-Moon"]
     }
 
+    # Change regionals to be dependent on the option
     def fill_slot_data(self) -> Mapping[str, Any]:
-        return {**(self.options.as_dict("goal")), "clash" : self.moon_counts["lost"], "raid" : self.moon_counts["ruined"]}
+        return {**(self.options.as_dict("goal")), "clash" : self.moon_counts["lost"], "raid" : self.moon_counts["ruined"], "regionals" : False}
 
     def create_regions(self):
         if self.options.counts > 0:
@@ -424,9 +424,10 @@ class SMOWorld(World):
 
 
     def generate_output(self, output_directory: str):
-        out_base = output_path(output_directory, self.multiworld.get_out_file_name_base(self.player))
-        patch = SMOProcedurePatch(player=self.player, player_name=self.multiworld.get_player_name(self.player))
-        write_patch(self, patch)
-        patch.write(os.path.join(output_directory, f"{out_base}{patch.patch_file_ending}"))
+        if self.options.colors.value == "true" or self.options.counts != "off" or self.options.shop_sanity != "off":
+            out_base = output_path(output_directory, self.multiworld.get_out_file_name_base(self.player))
+            patch = SMOProcedurePatch(player=self.player, player_name=self.multiworld.get_player_name(self.player))
+            write_patch(self, patch)
+            patch.write(os.path.join(output_directory, f"{out_base}{patch.patch_file_ending}"))
 
 
