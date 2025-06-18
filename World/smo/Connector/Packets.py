@@ -19,7 +19,7 @@ class PacketType(Enum):
     Item : short = 13
     Filler : short = 14
     ArchipelagoChat : short = 15
-    ShineCounts : short = 16
+    SlotData : short = 16
     RegionalCollect : short = 18
     Deathlink : short = 19
 
@@ -59,7 +59,7 @@ class ItemPacket:
     item_type : c_int
     SIZE : short = 0x84
 
-    def __init__(self, packet_bytes : bytearray = None, name : str = None, item_type : int = None):
+    def __init__(self, packet_bytes: bytearray = None, name: str = None, item_type: int = None) -> None:
         if packet_bytes:
             self.deserialize(packet_bytes)
         else:
@@ -82,6 +82,7 @@ class ItemPacket:
             data = bytearray(data)
         offset : int = 0
         self.name = data[offset:self.ITEM_NAME_SIZE].decode()
+        self.name = self.name.replace("\0", "")
         offset += self.ITEM_NAME_SIZE
         self.item_type = c_int(int.from_bytes(data[offset:offset + 4], "little"))
 
@@ -167,14 +168,16 @@ class ChatMessagePacket:
         if data is bytes:
             data = bytearray(data)
 
-class CountsPacket:
+class SlotDataPacket:
     clash : ushort
     raid : ushort
-    SIZE : short = 4
+    regionals : bool
+    SIZE : short = 5
 
-    def __init__(self, clash : int, raid : int):
+    def __init__(self, clash : int, raid : int, regionals : bool):
         self.clash = short(clash)
         self.raid = short(raid)
+        self.regionals = regionals
 
     def serialize(self) -> bytearray:
         data : bytearray = bytearray()
@@ -182,6 +185,7 @@ class CountsPacket:
         data += int_value.to_bytes(2, "little")
         int_value = self.raid.value
         data += int_value.to_bytes(2, "little")
+        data += self.regionals.to_bytes(1, "little")
         if len(data) > self.SIZE:
             raise f"CountsPacket failed to serialize. bytearray exceeds maximum size {self.SIZE}."
         return data
@@ -327,8 +331,8 @@ class Packet:
                     self.packet = InitPacket()
                 case PacketType.ChangeStage:
                     self.packet = ChangeStagePacket()
-                case PacketType.ShineCounts:
-                    self.packet = CountsPacket(clash=packet_data[0], raid=packet_data[1])
+                case PacketType.SlotData:
+                    self.packet = SlotDataPacket(clash=packet_data[0], raid=packet_data[1], regionals=packet_data[2])
                 case PacketType.ArchipelagoChat:
                     self.packet = ChatMessagePacket(messages=packet_data[0])
                 case PacketType.Deathlink:
@@ -366,8 +370,8 @@ class Packet:
             case PacketType.RegionalCollect:
                 self.packet = RegionalCoinPacket()
             case PacketType.ArchipelagoChat:
-                self.packet = ChatMessagePacket()
-            case PacketType.ShineCounts:
-                self.packet = CountsPacket()
+                raise "Server only packet received from client"
+            case PacketType.SlotData:
+                raise "Server only packet received from client"
             case PacketType.Deathlink:
                 self.packet = DeathLinkPacket()

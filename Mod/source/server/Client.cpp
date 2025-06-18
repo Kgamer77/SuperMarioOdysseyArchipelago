@@ -1516,6 +1516,7 @@ void Client::updateCounts(ShineCounts* packet)
 
     sInstance->clashCount = packet->clash;
     sInstance->raidCount = packet->raid;
+    sInstance->regionals = packet->regionals;
 }
 
 void Client::updateWorlds(UnlockWorld* packet)

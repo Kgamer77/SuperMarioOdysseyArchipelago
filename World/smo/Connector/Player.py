@@ -2,8 +2,32 @@ from .Data import moon_list, id_to_name
 
 class SMOPlayer:
     moons = {}
+    MAX_MOONS = {
+        "Cascade Story Moon": 1,
+        "Sand Story Moon": 2,
+        "Wooded Story Moon": 2,
+        "Metro Story Moon": 5,
+        "Seaside Story Moon": 4,
+        "Snow Story Moon": 4,
+        "Luncheon Story Moon": 3,
+        "Bowser Story Moon": 3,
+        "Cascade Multi-Moon": 2,
+        "Sand Multi-Moon": 4,
+        "Wooded Multi-Moon": 4,
+        "Lake Multi-Moon": 1,
+        "Metro Multi-Moon": 7,
+        "Seaside Multi-Moon": 5,
+        "Snow Multi-Moon": 5,
+        "Luncheon Multi-Moon": 5,
+        "Ruined Multi-Moon": 1,
+        "Bowser Multi-Moon": 4,
+        "Mushroom Multi-Moon": 5,
+        "Dark Side Multi-Moon": 1,
+        "Darker Side Multi-Moon": 1
+    }
     messages : list[str] = []
     MAX_MESSAGE_SIZE = 0x42
+    item_index : int = 0
 
     def __init__(self):
         self.reset_moons()
@@ -57,6 +81,9 @@ class SMOPlayer:
             next moon id to send to SMO
         """
         item_name : str = id_to_name[item]
+        if item_name in self.MAX_MOONS:
+            if self.moons[item_name] >= self.MAX_MOONS[item_name]:
+                raise f"{item_name} out of bounds. Already received max amount of {item_name}s"
         moon_id : int = moon_list[item_name.split(" ")[0]][self.moons[item_name]]
         self.moons[item_name] += 1
         return moon_id

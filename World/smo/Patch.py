@@ -157,13 +157,13 @@ caps = {
     "Painter Cap": "Painter's Cap",
     "Suit Cap": "Black Fedora",
     "Maker Cap": "Builder Helmet",
-    "Skip": "", # Racing
+    "Skip1": "", # Racing
     "Doctor Cap": "Doctor Headwear",
     "Classic Cap": "Classic Cap",
     "Gold Cap": "Gold Mario Cap",
-    "Skip": "", # Link
+    "Skip2": "", # Link
     "King Cap": "King's Crown",
-    "Skip": "", # Mario
+    "Skip3": "", # Mario
     "Scientist Cap": "Scientist Visor",
     "Primitive Man Cap": "Caveman Headwear",
     "Shopman Cap": "Employee Cap",
@@ -171,19 +171,19 @@ caps = {
     "Snow Suit Cap": "Snow Hood",
     "Space Suit Cap": "Space Helmet",
     "Diddy Kong Cap": "Diddy Kong Hat",
-    "Skip": "", # Batting
+    "Skip4": "", # Batting
     "Captain Cap": "Captain's Hat",
     "Wario Cap": "Wario Cap",
     "Waluigi Cap": "Waluigi Cap",
-    "Skip": "", # Satellaview
-    "Skip": "", # conductor
-    "Skip": "", # Santa
-    "Skip": "", # Zombie
+    "Skip5": "", # Satellaview
+    "Skip6": "", # conductor
+    "Skip7": "", # Santa
+    "Skip8": "", # Zombie
     "Clown Cap": "Clown Hat",
     "Pirate Cap": "Pirate Hat",
     "Peach Cap": "Bridal Veil",
     "Koopa Cap": "Bowser's Top Hat",
-    "Skip": "", # Knight
+    "Skip9": "", # Knight
     "64 Metal Cap": "Metal Mario Cap",
     "Invisible Cap": "Invisibility Hat"
 }
@@ -210,15 +210,15 @@ clothes = {
     "Painter Clothes": "Painter Outfit",
     "Suit Clothes": "Black Suit",
     "Maker Clothes": "Builder Outfit",
-    "Skip": "", # Racing
+    "Skip1": "", # Racing
     "Doctor Clothes": "Doctor Outfit",
     "Hakama Clothes": "Hakama",
     "Classic Clothes": "Classic Suit",
     "Gold Clothes": "Gold Mario Suit",
-    "Skip": "", # Link
+    "Skip2": "", # Link
     "Bone Clothes": "Skeleton Suit",
     "King Clothes": "King's Outfit",
-    "Skip": "", # Mario
+    "Skip3": "", # Mario
     "Scientist Clothes": "Scientist Outfit",
     "Primitive Man Clothes": "Caveman Outfit",
     "Shopman Clothes": "Employee Uniform",
@@ -226,18 +226,18 @@ clothes = {
     "Snow Suit Clothes": "Snow Suit",
     "Space Suit Clothes": "Space Suit",
     "Diddy Kong Clothes": "Diddy Kong Suit",
-    "Skip": "", # Batting
+    "Skip4": "", # Batting
     "Wario Clothes": "Wario Suit",
     "Waluigi Clothes": "Waluigi Suit",
-    "Skip": "", # Satellaview
-    "Skip": "", # conductor
-    "Skip": "", # Santa
-    "Skip": "", # Zombie
+    "Skip5": "", # Satellaview
+    "Skip6": "", # conductor
+    "Skip7": "", # Santa
+    "Skip8": "", # Zombie
     "Clown Clothes": "Clown Suit",
     "Pirate Clothes": "Pirate Outfit",
     "Peach Clothes": "Bridal Gown",
     "Koopa Clothes": "Bowser's Tuxedo",
-    "Skip": "", # Knight
+    "Skip9": "", # Knight
     "64 Metal Clothes": "Metal Mario Suit"
 }
 # Technically filler until achievements implemented
@@ -365,7 +365,6 @@ def set_moon_counts(rom_fs : str, moon_counts : dict) -> bytes:
 def patch_prices(item_list : sarc.SARC, save_item_list : sarc.SARCWriter) -> None:
     """ Changes in game item prices so none exceed 1000 coins and so regional items are a threshold of the total in their kingdom.
         Args:
-            self: SMOWorld object for this player's world.
             item_list: The SARC (System Archive) of the item list.
             save_item_list: A Sarc writer for saving patch changes.
     """
@@ -481,7 +480,7 @@ def patch_shop_text(rom_fs : str, location_data : dict, player : int, names : di
             if i == "ItemCap" or i == "ItemCloth":
                 internal_name = internal_name.replace(" Cap","").replace("Clothes", "")
             item_classification : ItemClassification
-            if item != "Skip":
+            if not "Skip" in item:
                 if item in location_data:
                     item_classification = location_data[item][2]
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item][1].replace("_", " ")

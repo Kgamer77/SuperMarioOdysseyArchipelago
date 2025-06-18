@@ -380,7 +380,15 @@ void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
 
 void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placementId)
 {
-    Client::sendRegionalCollectPacket(thisPtr, placementId);
+    if (Client::getRegionalsFlag())
+    {
+        Client::sendRegionalCollectPacket(thisPtr, placementId);
+    }
+    else
+    {
+        GameDataFunction::addCoinCollect(thisPtr, placementId);
+    }
+    
     // Add flag in client to determine when option is disabled and pass regularly to GameDataFunction
 }
 
