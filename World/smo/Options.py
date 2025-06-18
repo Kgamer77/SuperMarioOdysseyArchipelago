@@ -60,9 +60,9 @@ class RandomizeMoonCount(Choice):
 class SMOOptions(PerGameCommonOptions):
     goal: Goal
     story : StorySanity
-    shop_sanity: ShopSanity
+    shop_sanity : ShopSanity
     # replace: ReplaceUnneededMoons
-    colors: RandomizeMoonColors
-    counts:RandomizeMoonCount
+    colors : RandomizeMoonColors
+    counts : RandomizeMoonCount
 
 
