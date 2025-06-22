@@ -38,7 +38,7 @@ class SMOPlayer:
         "Cascade Power Moon": 2,
         "Sand Power Moon": 4,
         "Wooded Power Moon": 4,
-        "Lake Power Moon": 0,
+        "Lake Power Moon": 1,
         "Cloud Power Moon": 0,
         "Lost Power Moon": 0,
         "Metro Power Moon": 7,
