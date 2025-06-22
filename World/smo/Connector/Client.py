@@ -193,7 +193,7 @@ class SMOContext(CommonContext):
 
                     case _:
                         packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Item,
-                                        packet_data=[inverse_shop_items[net_item.item], get_item_type(net_item.item)])
+                                        packet_data=[inverse_shop_items[net_item.item].replace("Cap", "").replace("Clothes", ""), get_item_type(net_item.item)])
 
                 self.proxy_msgs.append(packet)
 
