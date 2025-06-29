@@ -1103,7 +1103,6 @@ worlds = {
     "Bowser": 12,
     "Moon": 13,
     "Mushroom": 14,
-    "Power": 14,
     "Dark": 15,
     "Darker": 16
 }
