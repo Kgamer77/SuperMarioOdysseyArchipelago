@@ -102,7 +102,6 @@ class Client {
         static void sendShineCollectPacket(int shineId);
         static void sendItemCollectPacket(char* itemName, int itemType);
         static void sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId);
-        static void sendLastEntrancePacket(const ChangeStageInfo *stageInfo);
         static void sendDeathlinkPacket();
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
@@ -150,6 +149,11 @@ class Client {
                 return sInstance->mPuppetHolder;
             return nullptr;
         }
+
+        static void setScenario(int worldID, int scnenario);
+        static int getScenario(const char* worldName);
+        static void sendCorrectScenario(const ChangeStageInfo* info);
+        static void setMessage(int num, const char* msg);
 
         static Keyboard* getKeyboard();
 
@@ -208,6 +212,7 @@ class Client {
         void updateChatMessages(ArchipelagoChatMessage *packet);
         void updateCounts(ShineCounts *packet);
         void updateWorlds(UnlockWorld *packet);
+        void updateProgress(ProgressWorld *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);
@@ -247,6 +252,7 @@ class Client {
         ushort clashCount = 10;
         ushort raidCount = 3;
         bool regionals = false;
+        sead::SafeArray<int, 17> worldScenarios;
 
         // Backups for our last player/game packets, used for example to re-send them for newly connected clients
         PlayerInf lastPlayerInfPacket = PlayerInf();
