@@ -70,9 +70,14 @@ B59E28 B seadPrintHook // sead::system::print
 //1C0560 BL sendCollectPacket
 
 // Shine::exeGot
-1D2E90 B Shine::exeGot+1A8
+1D2E8C LDR X8, [X19, 0x1A0]
+1d2e90 NOP
+1D2E94 CMP X8,#0x2
+1d2e98 B.eq 0x1D2D48+1A0
 1D2F08 BL onGrandShineStageChange
-//1D2F1C NOP
+
+// GameDataHolder::changeNextStage()
+52F71C BL onStageChange
 
 // Skip Shine Demo
 // PlayerActorHakoniwa::startDemoShineGet()
