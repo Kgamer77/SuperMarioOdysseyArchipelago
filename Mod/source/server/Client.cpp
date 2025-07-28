@@ -1600,7 +1600,7 @@ void Client::sendProgressWorldPacket(int worldID, int scenario)
     if (!sInstance)
     {
         Logger::log("Client Null!\n");
-        return
+        return;
     }
 
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
