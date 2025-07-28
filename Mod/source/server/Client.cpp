@@ -1595,6 +1595,23 @@ void Client::updateWorlds(UnlockWorld* packet)
     GameDataFunction::unlockWorld(accessor, packet->worldID);
 }
 
+void Client::sendProgressWorldPacket(int worldID, int scenario)
+{
+    if (!sInstance)
+    {
+        Logger::log("Client Null!\n");
+        return
+    }
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    ProgressWorld* packet = new ProgressWorld();
+    packet->worldID = worldID;
+    packet->scenario = scenario;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
 void Client::updateProgress(ProgressWorld* packet)
 {
     if (!sInstance) {
@@ -1602,7 +1619,7 @@ void Client::updateProgress(ProgressWorld* packet)
         return;
     }
 
-    //sInstance->worldScenarios[packet->worldID] = packet->scenario;
+    sInstance->worldScenarios[packet->worldID] = packet->scenario;
     
 }
 
