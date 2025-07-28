@@ -488,6 +488,15 @@ void onStageChange(GameDataFile *file,const ChangeStageInfo* stageInfo, int para
     if (isPartOf(stageInfo->changeStageName.cstr(), "WorldHomeStage") &&
         Client::getScenario(stageInfo->changeStageName.cstr()) != stageInfo->scenarioNo)
     {
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Clash"))
+        {
+            Client::sendShineCollectPacket(2501);
+        }
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Peach") && stageInfo->scenarioNo > 1)
+        {
+            Client::setScenario(GameDataFunction::getWorldIndexPeach(), 2);
+            Client::sendShineCollectPacket(2500);
+        }
         Client::sendCorrectScenario(stageInfo);
     } else {
         // Non world transitions
