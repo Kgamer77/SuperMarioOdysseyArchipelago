@@ -343,6 +343,87 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
     GameDataFile::HintInfo* curHintInfo =
     &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
     
+    switch (curHintInfo->mUniqueID) {
+    //Cascade
+        case 218:
+        Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+    //Sand
+        case 495:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 560:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Lake
+        case 424:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Wooded
+        case 130:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 181:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Metro
+        case 37:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 95:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Seaside
+        case 437:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Snow
+        case 1020:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Luncheon
+        case 292:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 290:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Ruined
+        case 795:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Bowser
+        case 332:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        
+ 
+        default:
+            break;
+    }
+
     if (curHintInfo->mUniqueID == 0)
     {
         if (strcmp(curShine->curShineInfo->stageName.cstr(), "CapWorldHomeStage") == 0)
@@ -399,8 +480,20 @@ void sendDeathlinkPacket()
 
 void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
 {
-    Client::sendLastEntrancePacket(stageInfo);
     Client::sendStage(holder, stageInfo);
+}
+
+void onStageChange(GameDataFile *file,const ChangeStageInfo* stageInfo, int param2)
+{
+    if (isPartOf(stageInfo->changeStageName.cstr(), "WorldHomeStage") &&
+        Client::getScenario(stageInfo->changeStageName.cstr()) != stageInfo->scenarioNo)
+    {
+        Client::sendCorrectScenario(stageInfo);
+    } else {
+        // Non world transitions
+        file->changeNextStage(stageInfo, param2);
+    }
+    
 }
 
 bool isBuyItems(ShopItem::ItemInfo* itemInfo) {
