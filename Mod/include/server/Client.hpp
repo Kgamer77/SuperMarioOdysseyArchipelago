@@ -103,6 +103,7 @@ class Client {
         static void sendItemCollectPacket(char* itemName, int itemType);
         static void sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId);
         static void sendDeathlinkPacket();
+        static void sendProgressWorldPacket(int worldID, int scenario);
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
         void resendInitPackets();
