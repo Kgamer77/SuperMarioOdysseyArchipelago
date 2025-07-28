@@ -35,6 +35,7 @@ enum PacketType : short {
     UNLOCKWORLD,
     REGCOLL,
     DEATHLINK,
+    PROGRESS,
     UDPINIT,
     HOLEPUNCH,
     End // end of enum for bounds checking
@@ -62,6 +63,7 @@ USED static const char *packetNames[] = {
     "Unlock World",
     "Regional Coin Collection",
     "Deathlink",
+    "World Scenario",
     "Udp Initialization",
     "Hole punch",
     
@@ -108,6 +110,7 @@ struct PACKED Packet {
 #include "packets/UnlockWorld.h"
 #include "packets/RegionalCollect.h"
 #include "packets/Deathlink.h"
+#include "packets/ProgressWorld.h"
 #include "packets/CaptureInf.h"
 #include "packets/HackCapInf.h"
 #include "packets/ChangeStagePacket.h"
