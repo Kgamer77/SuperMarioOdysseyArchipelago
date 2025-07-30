@@ -196,7 +196,7 @@ class SMOWorld(World):
 
     # Change regionals to be dependent on the option
     def fill_slot_data(self) -> Mapping[str, Any]:
-        return {**(self.options.as_dict("goal")), "clash" : self.moon_counts["lost"], "raid" : self.moon_counts["ruined"], "regionals" : False}
+        return {**(self.options.as_dict("goal", "death_link")), "clash" : self.moon_counts["lost"], "raid" : self.moon_counts["ruined"], "regionals" : False}
 
     def create_regions(self):
         if self.options.counts > 0:
@@ -424,7 +424,7 @@ class SMOWorld(World):
 
 
     def generate_output(self, output_directory: str):
-        if self.options.colors.value == "true" or self.options.counts != "off" or self.options.shop_sanity != "off":
+        if self.options.colors.value or self.options.counts.value > 0 or self.options.shop_sanity.value > 0:
             out_base = output_path(output_directory, self.multiworld.get_out_file_name_base(self.player))
             patch = SMOProcedurePatch(player=self.player, player_name=self.multiworld.get_player_name(self.player))
             write_patch(self, patch)
