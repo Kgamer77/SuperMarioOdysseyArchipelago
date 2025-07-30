@@ -136,7 +136,7 @@ class SizeCalculator:
         self._factory_info: typing.Dict[str, SizeCalculator.Factory] = dict()
 
         if ".apworld" in os.path.realpath(__file__):
-            zf = zipfile.ZipFile(os.path.dirname(os.path.realpath(__file__).replace("\\smo\\rstb", "")))
+            zf = zipfile.ZipFile(os.path.dirname(os.path.normpath(__file__).replace(os.path.normpath("/smo/rstb"), "")))
             with tempfile.TemporaryDirectory() as tempdir:
                 zf.extractall(tempdir)
                 with open(os.path.join(tempdir, 'smo/rstb/resource_factory_info.tsv')) as f:
