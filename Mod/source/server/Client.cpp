@@ -844,8 +844,6 @@ void Client::receiveDeath(Deathlink* packet)
         return;
     }
 
-    sInstance->apChatLine1 = "Death Received";
-
     sInstance->apDeath = true;
     sInstance->dying = true;
 
@@ -1271,6 +1269,7 @@ void Client::setScenario(int worldID, int scenario)
         return;
     }
 
+    sendProgressWorldPacket(worldID, scenario);
     sInstance->worldScenarios[worldID] = scenario;
 
 }
