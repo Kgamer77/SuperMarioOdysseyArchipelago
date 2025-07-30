@@ -101,6 +101,9 @@ class Client {
         static void sendCostumeInfPacket(const char *body, const char *cap);
         static void sendShineCollectPacket(int shineId);
         static void sendItemCollectPacket(char* itemName, int itemType);
+        static void sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId);
+        static void sendDeathlinkPacket();
+        static void sendProgressWorldPacket(int worldID, int scenario);
         static void sendTagInfPacket();
         static void sendCaptureInfPacket(const PlayerActorHakoniwa *player);
         void resendInitPackets();
@@ -148,6 +151,11 @@ class Client {
             return nullptr;
         }
 
+        static void setScenario(int worldID, int scnenario);
+        static int getScenario(const char* worldName);
+        static void sendCorrectScenario(const ChangeStageInfo* info);
+        static void setMessage(int num, const char* msg);
+
         static Keyboard* getKeyboard();
 
         static const char* getCurrentIP();
@@ -160,7 +168,17 @@ class Client {
         static sead::FixedSafeString<0x4B> getAPChatMessage2() { return sInstance ? sInstance->apChatLine2 : sead::FixedSafeString<0x20>::cEmptyString;}
         static sead::FixedSafeString<0x4B> getAPChatMessage3() { return sInstance ? sInstance->apChatLine3 : sead::FixedSafeString<0x20>::cEmptyString;}
 
+        static ushort getClashCount() { return sInstance ? sInstance->clashCount : 10; }
+        static ushort getRaidCount() { return sInstance ? sInstance->raidCount : 3; }
+        static bool getRegionalsFlag() { return sInstance ? sInstance->regionals : false; }
+
         static void setStageInfo(GameDataHolderAccessor holder);
+        static void sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo);
+
+        static void setDying(bool value);
+        static void setApDeath(bool value);
+        static bool isDying() { return sInstance ? sInstance->dying : false; }
+        static bool isApDeath() { return sInstance ? sInstance->apDeath : false; }
 
         static void setLastUsedIP(const char* ip);
 
@@ -198,6 +216,10 @@ class Client {
         void updateItems(ItemCollect *packet);
         void updateFiller(FillerCollect *packet);
         void updateChatMessages(ArchipelagoChatMessage *packet);
+        void updateCounts(ShineCounts *packet);
+        void updateWorlds(UnlockWorld *packet);
+        void updateProgress(ProgressWorld *packet);
+        void receiveDeath(Deathlink *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);
@@ -234,6 +256,12 @@ class Client {
         sead::FixedSafeString<0x4B> apChatLine2;
         sead::FixedSafeString<0x4B> apChatLine3;
 
+        ushort clashCount = 10;
+        ushort raidCount = 3;
+        bool regionals = false;
+        sead::SafeArray<int, 17> worldScenarios;
+        bool dying = false;
+        bool apDeath = false;
 
         // Backups for our last player/game packets, used for example to re-send them for newly connected clients
         PlayerInf lastPlayerInfPacket = PlayerInf();

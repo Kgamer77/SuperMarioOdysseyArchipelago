@@ -57,6 +57,73 @@ void updatePlayerInfo(GameDataHolderAccessor holder, PlayerActorBase* playerBase
     }
 
     if (gameInfSendTimer >= 60) {
+        // Check and prevent crashed home softlock
+        if (GameDataFunction::isCrashHome(holder)) {
+            if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") ==
+                0) {
+                int ruinedCount = 0;
+                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(),
+                                                 0)) {
+                    ruinedCount += 3;
+                }
+
+                for (int i = 1; i < 9; i++) {
+                    if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(),
+                                                     i))
+                        ruinedCount++;
+                }
+                if (ruinedCount < Client::getRaidCount()) {
+                    GameDataFunction::repairHome(holder);
+                }
+            } else {
+                GameDataFunction::repairHome(holder);
+            }
+        }
+
+        // Edge case where game repairs odyssey in ruined but doesn't unlock bowser kingdom
+        if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
+            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
+
+        // Check for lost kingdom softlock state
+        if (GameDataFunction::isCrashHome(holder)) {
+            if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
+                int lostCount = 0;
+                for (int i = 1; i < 25; i++) {
+                    if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(),
+                                                     i))
+                        lostCount++;
+                }
+                if (lostCount < Client::getClashCount()) {
+                    GameDataFunction::repairHome(holder);
+                    GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
+                } else
+                    GameDataFunction::crashHome(holder);
+            } else {
+                GameDataFunction::repairHome(holder);
+            }
+        }
+
+        if (isInGame && !PlayerFunction::isPlayerDeadStatus(playerBase) && Client::isApDeath())
+        {
+            GameDataFunction::killPlayer(holder);
+            playerBase->startDemoPuppetable();
+            al::setVelocityZero(playerBase);
+            rs::faceToCamera(playerBase);
+            ((PlayerActorHakoniwa*)playerBase)->mPlayerAnimator->endSubAnim();
+            ((PlayerActorHakoniwa*)playerBase)->mPlayerAnimator->startAnimDead();
+            Client::setApDeath(false);
+        }
+
+        if (isInGame && PlayerFunction::isPlayerDeadStatus(playerBase) && !Client::isDying())
+        {
+            Client::sendDeathlinkPacket();
+            Client::setDying(true);
+        }
+
+        if (isInGame && !PlayerFunction::isPlayerDeadStatus(playerBase) && Client::isDying())
+        {
+            Client::setDying(false);
+        }
 
         if (isYukimaru) {
             Client::sendGameInfPacket(holder);
@@ -298,6 +365,87 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
     GameDataFile::HintInfo* curHintInfo =
     &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
     
+    switch (curHintInfo->mUniqueID) {
+    //Cascade
+        case 218:
+        Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+    //Sand
+        case 495:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 560:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Lake
+        case 424:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Wooded
+        case 130:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 181:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Metro
+        case 37:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 95:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Seaside
+        case 437:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Snow
+        case 1020:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Luncheon
+        case 292:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        case 290:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 3);
+            break;
+
+
+    //Ruined
+        case 795:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+
+    //Bowser
+        case 332:
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            break;
+
+        
+ 
+        default:
+            break;
+    }
+
     if (curHintInfo->mUniqueID == 0)
     {
         if (strcmp(curShine->curShineInfo->stageName.cstr(), "CapWorldHomeStage") == 0)
@@ -331,6 +479,47 @@ void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
 
     Client::sendItemCollectPacket(info->mName, (int)info->mType);
     //thisPtr.buyItem(info, flag);
+}
+
+void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placementId)
+{
+    if (Client::getRegionalsFlag())
+    {
+        Client::sendRegionalCollectPacket(thisPtr, placementId);
+    }
+    else
+    {
+        GameDataFunction::addCoinCollect(thisPtr, placementId);
+    }
+    
+    // Add flag in client to determine when option is disabled and pass regularly to GameDataFunction
+}
+
+void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
+{
+    Client::sendStage(holder, stageInfo);
+}
+
+void onStageChange(GameDataFile *file,const ChangeStageInfo* stageInfo, int param2)
+{
+    if (isPartOf(stageInfo->changeStageName.cstr(), "WorldHomeStage") &&
+        Client::getScenario(stageInfo->changeStageName.cstr()) != stageInfo->scenarioNo)
+    {
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Clash"))
+        {
+            Client::sendShineCollectPacket(2501);
+        }
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Peach") && stageInfo->scenarioNo > 1)
+        {
+            Client::setScenario(GameDataFunction::getWorldIndexPeach(), 2);
+            Client::sendShineCollectPacket(2500);
+        }
+        Client::sendCorrectScenario(stageInfo);
+    } else {
+        // Non world transitions
+        file->changeNextStage(stageInfo, param2);
+    }
+    
 }
 
 bool isBuyItems(ShopItem::ItemInfo* itemInfo) {

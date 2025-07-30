@@ -60,7 +60,29 @@ B59E28 B seadPrintHook // sead::system::print
 
 1CEEDC BL registerShineToList
 
+// CoinCollect2D::exeGot
+1C0C84 BL sendCollectPacket
+
+// CoinCollect::exeGot
+1C043C BL sendCollectPacket
+
+// CoinCollect2D::exeCountUp
+//1C0560 BL sendCollectPacket
+
+// Shine::exeGot
+1D2E8C LDR X8, [X19, 0x1A0]
+1d2e90 NOP
+1D2E94 CMP X8,#0x2
+1d2e98 B.eq 0x1D2D48+1A0
+1D2F08 BL onGrandShineStageChange
+
+// GameDataHolder::changeNextStage()
+52F71C BL onStageChange
+
 // Skip Shine Demo
+// PlayerActorHakoniwa::startDemoShineGet()
+//4220E4 NOP
+
 
 //rs::buyCap
 54CB9C BL sendItemPacket

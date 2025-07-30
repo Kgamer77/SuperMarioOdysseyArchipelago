@@ -28,16 +28,17 @@ class Shine : public al::LiveActor , public IUseDimension {
         void onSwitchGet(void);
         bool isGot() const;
         void setGrandShine(void);
+        void exeGot(void);
 
         void *qword110;
         int dword118;
-        bool mIsGotShine;
+        bool mIsGotShine; // 0x11C
         ShineInfo *curShineInfo; // 0x120
         unsigned char padding_188[0x188 - 0x128];
         al::RateParamV3f *mRateParam;
         void * qword190;
         void * qword198;
-        ShineType mModelType;
+        ShineType mModelType; // 0x1A0
         void * qword1A8;
         bool byte1B0;
         void * qword1B8;

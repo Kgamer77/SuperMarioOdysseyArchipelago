@@ -91,6 +91,7 @@ public:
     static s32 getWorldIndexMoon(void);
     static s32 getWorldIndexPeach(void);
     static s32 getWorldIndexSpecial1(void);
+    static s32 getWorldIndexSpecial2(void);
 
     // gets the current level of the Odyssey
     static int getHomeLevel(GameDataHolderAccessor);
@@ -132,6 +133,8 @@ public:
     // checks if odyssey is crashed
     static bool isCrashHome(GameDataHolderAccessor);
     static void crashHome(GameDataHolderWriter);
+    static bool isBossAttackedHome(GameDataHolderAccessor);
+    static void bossAttackHome(GameDataHolderWriter);
 
     // checks if odyssey is activated 
     static bool isActivateHome(GameDataHolderAccessor);
@@ -154,6 +157,9 @@ public:
 
     // gets current purple coin count
     static s32 getCoinCollectNum(GameDataHolderAccessor);
+
+    // adds regional coin to file
+    static void addCoinCollect(GameDataHolderWriter, al::PlacementId const*);
 
     // saves an objects Stage Name, Object ID, and custom value to the save file
     static void saveObjS32(GameDataHolderWriter, al::PlacementId const*, int);

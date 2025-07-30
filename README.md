@@ -9,8 +9,7 @@ WARNING: This mod only works on version 1.0.0 of Super Mario Odyssey.
 - Choose which kingdom is your win condition.
 
 ## Installation and Usage
-* Install the latest version from the releases page. `Server_Vx.x.zip`, `smo.apworld`, and either `SMO_Archipelago_Vx.x_Switch.zip` for console or `SMO_Archipelago_Vx.x_Emu.zip` for emulator.
-* Extract `Server_Vx.x.zip` to your directory of choice. Run `Server.exe` to start the server. On the first run, `settings.json` will be generated.
+* Install the latest version from the releases page. `smo.apworld` and either `SMO_Archipelago_Vx.x_Switch.zip` for console or `SMO_Archipelago_Vx.x_Emu.zip` for emulator.
 * Place `smo.apworld` in the `custom_worlds` folder of your Archipelago install which the default directory is `C:\ProgramData\Archipelago\custom_worlds`
 
 <details>
@@ -31,39 +30,26 @@ WARNING: This mod only works on version 1.0.0 of Super Mario Odyssey.
 - Extract `SMO_Archipelago_Vx.x_Emu.zip` and Place `SMOAP` folder in the mods directory that opened.
 </details>
 
-Connecting to the Server from Super Mario Odyssey.
+Connecting to the Connector from Super Mario Odyssey.
 - When prompted, the `IP Address` you are connecting to is your computer's local ipv4 this is found by entering the `ipconfig` command into command prompt on Windows.
 - When prompted, the `Port` is `1027` by default which does not need to be changed.
 
-`settings.json` has fields for the `Archipelago` connection.
-- `Server` is where the ip address or url of the AP Server or room your joining goes
-- `Port` is for the port you connect to the Archipelago over this should be left as the default `38281` unless specified by the host.
-- `Slot` is where you put the name of your slot for the Archipelago.
-- `Password` is where you put the password for the Archipelago you are joining. Leave this blank `""` for no password.
-- `FillerIndexes` is an internal field used by the server and shouldn't be changed manually.
+Using Options that Generate a Patch
+- If a world is generated using options that require additional romFS patches (`shop_sanity`, `colors`, `counts`) then an `<seed><slot><slot_name>.apsmo` file will be generated.
+- To generate the patch files open the patch file with the `Open Patch` option in the Archipelago Launcher.
+<details>
+<summary>Switch</summary> 
   
-`Server` field in `settings.json` shouldn't be changed unless you know what you're doing.
+- Place the generated `atmosphere` folder onto the root of your sd card and select `Replace the files in the destination` if prompted.
+
+</details>
 
 <details>
-<summary>Joining an Archipelago</summary> 
-
-Run `Server.exe` and it should connect to the Archipelago room automatically.
-
-If you see the error
-```
-Failed to Connect to <address> as <slot_name>:
-    Connection timed out.
-```
-The Archipelago room may not be opened. Enter `reconnect` to attempt to reconnect to the Archipelago room.
-
-If you see the error
-```
-Failed to Connect to <address> as <slot_name>:
-    The slot name did not match any slot on the server.
-    InvalidSlot
-```
-The `slot_name` in your settings was not a slot in the room you are trying to connect to. Enter `reconnect <slot_name>` to change your slot name and attempt to reconnect to the room.
-
+<summary>Emulator</summary>
+  
+### Suyu (Yuzu forks)
+- Right Click on Super Mario Odyssey in the game menu and select `Open Mod Data Location`.
+- Place `romfs` folder in the `SMOAP` folder that opened and select `Replace the files in the destination` if prompted.
 </details>
 
 Credits

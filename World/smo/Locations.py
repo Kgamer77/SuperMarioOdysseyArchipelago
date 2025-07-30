@@ -21,11 +21,11 @@ loc_Cap = {
 }
 
 loc_Cap_Shop = {
-    "Sticker Cap": 2506,
-    "Souvenir Hat 1": 2507,
-    "Souvenir Hat 2": 2508,
-    "Tail Coat Cap": 2504,
-    "Tail Coat Clothes": 2505
+    "Cap Kingdom Sticker": 2506,
+    "Plush Frog": 2507,
+    "Bonneton Tower Model": 2508,
+    "Black Top Hat": 2504,
+    "Black Tuxedo": 2505
 }
 
 loc_Cap_Postgame = {
@@ -37,7 +37,7 @@ loc_Cap_Postgame = {
     "Found with Cap Kingdom Art": 1086,
     "Next to Glasses Bridge": 233,
     "Danger Sign": 816,
-    "Under the Big One’s Brim": 817,
+    "Under the Big One's Brim": 817,
     "Fly to the Edge of the Fog": 1158,
     "Spin the Hat, Get a Prize": 1025,
     "Hidden in a Sunken Hat": 231,
@@ -79,11 +79,11 @@ loc_Cascade_Revisit = {
 }
 
 loc_Cascade_Shop = {
-    "Primitive Man Cap": 2509,
-    "Primitive Man Clothes": 2510,
-    "Sticker Waterfall": 2511,
-    "Souvenir Fall 1": 2512,
-    "Souvenir Fall 2": 2513
+    "Caveman Headwear": 2509,
+    "Caveman Outfit": 2510,
+    "Cascade Kingdom Sticker": 2511,
+    "T-Rex Model": 2512,
+    "Triceratops Trophy": 2513
 }
 
 loc_Cascade_Post_Metro = {
@@ -148,7 +148,7 @@ loc_Sand = {
     "Sand Kingdom Slots": 1047,
     "Walking the Desert!": 533,
     "Ice Cave Treasure": 567,
-    "Sphynx’s Treasure Vault": 566,
+    "Sphynx's Treasure Vault": 566,
     "A Rumble from the Sandy Floor": 1136,
     "Dancing with New Friends": 569,
     "The Invisible Maze": 562,
@@ -159,14 +159,20 @@ loc_Sand = {
     "Jaxi Stunt Driving": 556,
 }
 
-loc_Sand_Peace = {
+loc_Sand_Pyramid = {
     "Showdown on the Inverted Pyramid": 495,
-    "The Hole in the Desert": 560,
     "Secret of the Inverted Mural": 504,
-    "On the Statue’s Tail": 513,
+    "On the Statue's Tail": 513,
     "Hidden Room in the Inverted Pyramid": 563,
+}
+
+loc_Sand_Underground = {
+    "The Hole in the Desert": 560,
     "Underground Treasure Chest": 953,
     "Goomba Tower Assembly": 558,
+}
+
+loc_Sand_Peace = {
     "Hang Your Hat on the Fountain": 534,
     "Found in the Sand! Good Dog!": 512,
     "Sand Kingdom Timer Challenge 1": 531,
@@ -174,33 +180,33 @@ loc_Sand_Peace = {
     "Sand Kingdom Timer Challenge 3": 539,
     "Fishing in the Oasis": 502,
     "Love in the Heart of the Desert": 493,
-    "You’re Quite a Catch, Captain Toad!": 692,
+    "You're Quite a Catch, Captain Toad!": 692,
     "Jaxi Reunion!": 1059,
     "Welcome Back, Jaxi!": 501,
     "Bird Traveling Wastes": 552,
     "The Lurker Under the Stone": 538,
-    "Under the Mummy’s Curse": 995,
+    "Under the Mummy's Curse": 995,
     "Strange Neighborhood": 570,
     "Above a Strange Neighborhood": 571
 }
 
 loc_Sand_Shop = {
-    "Captain Cap": 2503,
-    "Poncho Cap": 2514,
-    "Poncho Clothes": 2515,
-    "Gunman Cap": 2516,
-    "Gunman Clothes": 2517,
-    "Sticker Sand": 2518,
-    "Souvenir Sand 2": 2519,
-    "Souvenir Sand 1": 2520,
-    "Shopman Cap": 2585,
-    "Shopman Clothes": 2586,
-    "Underwear": 2587
+    "Captain's Hat": 2503,
+    "Sombrero": 2514,
+    "Poncho": 2515,
+    "Cowboy Hat": 2516,
+    "Cowboy Outfit": 2517,
+    "Sand Kingdom Sticker": 2518,
+    "Jaxi Statue": 2519,
+    "Inverted Pyramid Model": 2520,
+    "Employee Cap": 2585,
+    "Employee Uniform": 2586,
+    "Boxer Shorts": 2587
 }
 
 loc_Sand_Postgame = {
     "Found with Sand Kingdom Art": 1096,
-    "Jammin’ in the Sand Kingdom": 910,
+    "Jammin' in the Sand Kingdom": 910,
     "Hat-and-Seek: In the Sand": 924,
     "Sand Kingdom Regular Cup": 1045,
     "Binding Band Returned": 887,
@@ -238,7 +244,7 @@ loc_Lake = {
     "Dorrie-Back Rider": 411,
     "Cheep Cheep Crossing": 412,
     "End of the Hidden Passage": 410,
-    "What’s in the Box?": 404,
+    "What's in the Box?": 404,
     "On the Lakeshore": 401,
     "From the Broken Pillar": 405,
     "Treasure in the Spiky Waterway": 415,
@@ -251,7 +257,7 @@ loc_Lake = {
     "Lake Fishing": 416,
     "I Met a Lake Cheep Cheep!": 409,
     "Our Secret Little Room": 414,
-    "Let’s Go Swimming, Captain Toad!": 403,
+    "Let's Go Swimming, Captain Toad!": 403,
     "Shopping in Lake Lamode": 430,
     "A Successful Repair Job": 971,
     "I Feel Underdressed": 406,
@@ -263,13 +269,13 @@ loc_Lake = {
 }
 
 loc_Lake_Shop = {
-    "Swimwear Cap": 2521,
-    "Swimwear Clothes": 2522,
-    "Sticker Lake": 2523,
-    "Souvenir Lake 2": 2524,
-    "Souvenir Lake 1": 2525,
-    "New 3DS Cap": 2588,
-    "New 3DS Clothes": 2589
+    "Swim Goggles": 2521,
+    "Swimwear": 2522,
+    "Lake Kingdom Sticker": 2523,
+    "Rubber Dorrie": 2524,
+    "Underwater Dome": 2525,
+    "Fashionable Cap": 2588,
+    "Fashionable Outfit": 2589
 }
 
 loc_Lake_Post_Seaside = {
@@ -290,7 +296,7 @@ loc_Lake_Postgame = {
     "Bird Traveling Over the Lake": 423,
     "Love by the Lake": 1017,
     "Lake Kingdom Master Cup": 720,
-    "Waves of Poison: Hoppin’ Over": 434,
+    "Waves of Poison: Hoppin' Over": 434,
     "Waves of Poison: Hop to It!": 431
 }
 
@@ -333,7 +339,7 @@ loc_Wooded_Post_Story1 = {
     "Love in the Forest Ruins": 131,
     "Thanks for the Charge!": 135,
     "Spinning-Platforms Treasure": 195,
-    "Over the Cliff’s Edge": 146,
+    "Over the Cliff's Edge": 146,
     "Behind the Rock Wall": 134,
     "Back Way Up the Mountain": 150,
     "Flower Road Run": 191,
@@ -357,20 +363,20 @@ loc_Wooded_Peace = {
 }
 
 loc_Wooded_Shop = {
-    "Explorer Cap": 2526,
-    "Explorer Clothes": 2527,
-    "Scientist Cap": 2528,
-    "Scientist Clothes": 2529,
-    "Sticker Forest": 2530,
-    "Souvenir Forest 1": 2531,
-    "Souvenir Forest 2": 2532,
+    "Explorer Hat": 2526,
+    "Explorer Outfit": 2527,
+    "Scientist Visor": 2528,
+    "Scientist Outfit": 2529,
+    "Wooded Kingdom Sticker": 2530,
+    "Flowers from Steam Gardens": 2531,
+    "Steam Gardener Watering Can": 2532,
     "Mechanic Cap": 2590,
-    "Mechanic Clothes": 2591
+    "Mechanic Outfit": 2591
 }
 
 loc_Wooded_Postgame = {
     "Swing Around Secret Flower Field": 1011,
-    "Jammin’ in the Wooded Kingdom": 905,
+    "Jammin' in the Wooded Kingdom": 905,
     "Wooded Kingdom Regular Cup": 153,
     "Peach in the Wooded Kingdom": 155,
     "High Up in the Cave": 168,
@@ -418,7 +424,7 @@ loc_Cloud_Postgame = {
 
 loc_Lost = {
     "Atop a Propeller Pillar": 376,
-    "Below the Cliff’s Edge": 380,
+    "Below the Cliff's Edge": 380,
     "Inside the Stone Cage": 374,
     "On a Tree in the Swamp": 377,
     "Over the Fuzzies, Above the Swamp": 384,
@@ -426,13 +432,13 @@ loc_Lost = {
     "Inside the Rising Stone Pillar": 375,
     "Enjoying the View of Forgotten Isle": 385,
     "On the Mountain Road": 379,
-    "A Propeller Pillar’s Secret": 373,
+    "A Propeller Pillar's Secret": 373,
     "Wrecked Rock Block": 942,
-    "A Butterfly’s Treasure": 388,
+    "A Butterfly's Treasure": 388,
     "Cave Gardening": 378,
     "Moon Shards in the Jungle": 386,
     "Peeking Out from Under the Bridge": 382,
-    "Twist ‘n’ Turn-Up Treasure": 1075,
+    "Twist ‘n' Turn-Up Treasure": 1075,
     "Soaring Over the Forgotten Isle!": 381,
     "The Caged Gold": 383,
     "Get Some Rest, Captain Toad": 372,
@@ -444,11 +450,11 @@ loc_Lost_Revisit = {
 }
 
 loc_Lost_Shop = {
-    "Pilot Cap": 2533,
-    "Pilot Clothes": 2534,
-    "Sticker Clash": 2535,
-    "Souvenir Crash 1": 2536,
-    "Souvenir Crash 2": 2537
+    "Aviator Cap": 2533,
+    "Aviator Outfit": 2534,
+    "Lost Kingdom Sticker": 2535,
+    "Potted Palm Tree": 2536,
+    "Butterfly Mobile": 2537
 }
 
 loc_Lost_Postgame = {
@@ -469,7 +475,7 @@ loc_Lost_Postgame = {
 }
 
 loc_Metro = {
-    "New Donk City’s Pest Problem": 37,
+    "New Donk City's Pest Problem": 37,
     "Drummer on Board!": 42,
     "Guitarist on Board!": 41,
     "Bassist on Board!": 44,
@@ -487,7 +493,7 @@ loc_Metro = {
     "City Gardening: Building Planter": 70,
     "City Gardening: Plaza Planter": 71,
     "City Gardening: Rooftop Planter": 69,
-    "How You Doin’, Captain Toad?": 46,
+    "How You Doin', Captain Toad?": 46,
     "Free Parking: Rooftop Hop": 809,
     "Bench Friends": 50,
     "Shopping in New Donk City": 101,
@@ -509,7 +515,7 @@ loc_Metro = {
     "Hanging from a High-Rise": 103,
     "Vaulting Up a High-Rise": 104,
     "Bullet Billding": 115,
-    "One Man’s Trash…": 116,
+    "One Man's Trash…": 116,
     "Motor Scooter: Escape!": 1139,
     "Big Jump: Escape!": 1140,
     "Found with Metro Kingdom Art": 1088
@@ -521,11 +527,11 @@ loc_Metro_Post_Sand = {
 
 loc_Metro_Sewer_Access = {
     "Powering Up the Station": 107,
-    "Sewer Treasure": 1100
+    "Sewer Treasure": 1100,
+    "A Traditional Festival!": 95,
 }
 
 loc_Metro_Peace = {
-    "A Traditional Festival!": 95,
     "Celebrating in the Streets!": 875,
     "Caught Hopping on a Building!": 99,
     "Metro Kingdom Timer Challenge 1": 1054,
@@ -534,15 +540,15 @@ loc_Metro_Peace = {
 }
 
 loc_Metro_Shop = {
-    "Maker Cap": 2538,
-    "Maker Clothes": 2539,
+    "Builder Helmet": 2538,
+    "Builder Outfit": 2539,
     "Golf Cap": 2540,
-    "Golf Clothes": 2541,
-    "Sticker City": 2542,
-    "Souvenir City 2": 2543,
-    "Souvenir City 1": 2544,
-    "Suit Cap": 2592,
-    "Suit Clothes": 2593
+    "Golf Outfit": 2541,
+    "Metro Kingdom Sticker": 2542,
+    "New Donk City Hall Model": 2543,
+    "Pauline Statue": 2544,
+    "Black Fedora": 2592,
+    "Black Suit": 2593
 }
 
 loc_Metro_Postgame = {
@@ -550,7 +556,7 @@ loc_Metro_Postgame = {
     "Mario Signs His Name": 97,
     "Surprise Clown!": 874,
     "A Request from the Mayor": 96,
-    "Jammin’ in the Metro Kingdom": 904,
+    "Jammin' in the Metro Kingdom": 904,
     "Sphynx in the City": 1037,
     "Free Parking: Leap of Faith": 979,
     "Metro Kingdom Regular Cup": 939,
@@ -586,7 +592,7 @@ loc_Seaside = {
     "Ocean-Bottom Maze: Treasure": 466,
     "Ocean-Bottom Maze: Hidden Room": 467,
     "Underwater Highway Tunnel": 450,
-    "Shh! It’s a Shortcut!": 451,
+    "Shh! It's a Shortcut!": 451,
     "Gap in the Ocean Trench": 458,
     "Slip Through the Nesting Spot": 459,
     "Merci, Dorrie!": 453,
@@ -609,7 +615,7 @@ loc_Seaside = {
     "Ocean Quiz: Good!": 457,
     "Shopping in Bubblaine": 460,
     "Looking Back in the Dark Waterway": 1107,
-    "The Sphynx’s Underwater Vault": 483,
+    "The Sphynx's Underwater Vault": 483,
     "A Rumble on the Seaside Floor": 1135,
     "A Relaxing Dance": 484,
     "Wading in the Cloud Sea": 485,
@@ -632,15 +638,15 @@ loc_Seaside_Peace = {
 }
 
 loc_Seaside_Shop = {
-    "Aloha Cap": 2550,
-    "Aloha Clothes": 2551,
-    "Sailor Cap": 2552,
-    "Sailor Clothes": 2553,
-    "Sticker Sea": 2554,
-    "Souvenir Sea 2": 2555,
-    "Souvenir Sea 1": 2556,
-    "Pirate Cap": 2594,
-    "Pirate Clothes": 2595
+    "Resort Hat": 2550,
+    "Resort Outfit": 2551,
+    "Sailor Hat": 2552,
+    "Sailor Suit": 2553,
+    "Seaside Kingdom Sticker": 2554,
+    "Glass Tower Model": 2555,
+    "Sand Jar": 2556,
+    "Pirate Hat": 2594,
+    "Pirate Outfit": 2595
 }
 
 loc_Seaside_Postgame = {
@@ -695,12 +701,12 @@ loc_Snow_Peace = {
     "Moon Shards in the Snow": 2,
     "Taking Notes: Snow Path Dash": 3,
     "Fishing in the Glacier!": 4,
-    "I’m Not Cold!": 873,
+    "I'm Not Cold!": 873,
     "Walking on Ice!": 877,
     "Snowline Circuit Class S": 879,
     "Dashing Over Cold Water!": 12,
     "Dashing Above and Beyond!": 13,
-    "Jump ‘n’ Swim in the Freezing Water": 14,
+    "Jump ‘n' Swim in the Freezing Water": 14,
     "Freezing Water Near the Ceiling": 15,
     "Blowing and Sliding": 33,
     "Spinning Above the Clouds": 30,
@@ -708,11 +714,11 @@ loc_Snow_Peace = {
 }
 
 loc_Snow_Shop = {
-    "Snow Suit Cap": 2545,
-    "Snow Suit Clothes": 2546,
-    "Sticker Snow": 2547,
-    "Souvenir Snow 1": 2548,
-    "Souvenir Snow 2": 2549
+    "Snow Hood": 2545,
+    "Snow Suit": 2546,
+    "Snow Kingdom Sticker": 2547,
+    "Shiverian Rug": 2548,
+    "Shiverian Nesting Dolls": 2549
 }
 
 loc_Snow_Postgame = {
@@ -741,9 +747,9 @@ loc_Snow_Postgame = {
 }
 
 loc_Luncheon = {
-    "The Broodals Are After Some Cookin’": 291,
+    "The Broodals Are After Some Cookin'": 291,
     "Piled on the Salt": 256,
-    "Lurking in the Pillar’s Shadow": 250,
+    "Lurking in the Pillar's Shadow": 250,
     "Overlooking a Bunch of Ingredients": 246,
     "Luncheon Kingdom Timer Challenge 1": 264,
     "Love Above the Lava": 803,
@@ -767,9 +773,9 @@ loc_Luncheon_Post_Spewart = {
     "Luncheon Kingdom Slots": 1042,
     "A Strong Simmer": 991,
     "An Extreme Simmer": 990,
-    "Fork Flickin’ to the Summit": 296,
-    "Fork Flickin’ Detour": 297,
-    "Excavate ‘n’ Search the Cheese Rocks": 300,
+    "Fork Flickin' to the Summit": 296,
+    "Fork Flickin' Detour": 297,
+    "Excavate ‘n' Search the Cheese Rocks": 300,
     "Climb the Cheese Rocks": 301
 }
 
@@ -792,10 +798,10 @@ loc_Luncheon_Post_Cheese_Rocks = {
     "The Treasure Chest in the Veggies": 992,
     "Found with Luncheon Kingdom Art": 1090,
     "Alcove Behind the Pillars of Magma": 259,
+    "Cookatiel Showdown!": 290,
 }
 
 loc_Luncheon_Peace = {
-    "Cookatiel Showdown!": 290,
     "Luncheon Kingdom Timer Challenge 3": 711,
     "Caught Hopping at the Volcano!": 289,
     "Light the Far-Off Lanterns": 261,
@@ -805,20 +811,20 @@ loc_Luncheon_Peace = {
 }
 
 loc_Luncheon_Shop = {
-    "Cook Cap": 2557,
-    "Cook Clothes": 2558,
-    "Painter Cap": 2559,
-    "Painter Clothes": 2560,
-    "Sticker Lava": 2561,
-    "Souvenir Lava 1": 2562,
-    "Souvenir Lava 2": 2563,
-    "Clown Cap": 2596,
-    "Clown Clothes": 2597
+    "Chef Hat": 2557,
+    "Chef Suit": 2558,
+    "Painter's Cap": 2559,
+    "Painter Outfit": 2560,
+    "Luncheon Kingdom Sticker": 2561,
+    "Souvenir Forks": 2562,
+    "Vegetable Plate": 2563,
+    "Clown Hat": 2596,
+    "Clown Suit": 2597
 }
 
 loc_Luncheon_Postgame = {
     "The Rooftop Lantern": 269,
-    "Jammin’ in the Luncheon Kingdom": 907,
+    "Jammin' in the Luncheon Kingdom": 907,
     "Mechanic: Repairs Complete!": 886,
     "Diving from the Big Pot!": 1005,
     "Hat-and-Seek: Among the Food": 280,
@@ -832,7 +838,7 @@ loc_Luncheon_Postgame = {
     "Luncheon Kingdom: Master Cup": 895,
     "Stepping Over the Gears and Lanterns on the Gear Steps": 313,
     "Lanterns on the Gear Steps": 312,
-    "Volcano Cave Cruisin’": 310,
+    "Volcano Cave Cruisin'": 310,
     "Volcano Cave and Mysterious Clouds": 311,
     "Treasure of the Lava Islands": 1101,
     "Flying Over the Lava Islands": 308
@@ -851,11 +857,11 @@ loc_Ruined_Postgame = {
     "Upon the Broken Arch": 835,
     "Rolling Rock on the Battlefield": 909,
     "Charging Through an Army": 891,
-    "The Mummy’s Curse": 890
+    "The Mummy's Curse": 890
 }
 
 loc_Bowser = {
-    "Infiltrate Bowser’s Castle": 325,
+    "Infiltrate Bowser's Castle!": 325,
     "Behind the Big Wall": 321,
     "Caught on the Iron Fence": 345,
     "Taking notes: Between spinies": 315,
@@ -875,15 +881,19 @@ loc_Bowser_Post_Bombing = {
     "Exterminate the Ogres!": 320,
     "Jizo All in a Row": 316,
     "Underground Jizo": 317,
-    "Shopping at Bowser’s Castle": 360,
+    "Shopping at Bowser's Castle": 360,
     "Scene of Crossing the Poison Swamp": 987,
     "Taking Notes: In the Folding Screen": 988,
 }
 
+loc_Bowser_Mecha_Broodal = {
+    "Showdown at Bowser's Castle": 332,
+}
+
 loc_Bowser_Peace = {
-    "Showdown at Bowser’s Castle": 332,
+
     "Sunken Treasure in the Moat": 327,
-    "On the Giant Bowser Statue’s Nose": 339,
+    "On the Giant Bowser Statue's Nose": 339,
     "Inside a Block in the Castle": 319,
     "Hidden Corridor Under the Floor": 1092,
     "Poking Your Nose by the Great Gate": 328,
@@ -894,47 +904,47 @@ loc_Bowser_Peace = {
     "Past the Moving Wall": 340,
     "Above the Poison Swamp": 326,
     "Knocking Down the Nice Frame": 1133,
-    "Caught Hopping at Bowser’s Castle!": 343,
-    "Bowser’s Kingdom Timer Challenge 1": 691,
-    "Fishing(?) in Bowser’s Castle": 26,
-    "Bowser’s Castle Treasure Vault": 999,
+    "Caught Hopping at Bowser's Castle!": 343,
+    "Bowser's Kingdom Timer Challenge 1": 691,
+    "Fishing(?) in Bowser's Castle": 26,
+    "Bowser's Castle Treasure Vault": 999,
     "On Top of the Spinning Tower": 368,
     "Down and Up the Spinning Tower": 367,
-    "Jizo’s Big Adventure": 363,
+    "Jizo's Big Adventure": 363,
     "Jizo and the Hidden Room": 364,
 }
 
 loc_Bowser_Shop = {
-    "Armor Cap": 2564,
-    "Armor Clothes": 2565,
-    "Happi Cap": 2566,
-    "Happi Clothes": 2567,
-    "Sticker Sky": 2568,
-    "Souvenir Sky1": 2569,
-    "Souvenir Sky2": 2570
+    "Samurai Helmet": 2564,
+    "Samurai Armor": 2565,
+    "Happi Headband": 2566,
+    "Happi Outfit": 2567,
+    "Bowser's Kingdom Sticker": 2568,
+    "Paper Lantern": 2569,
+    "Jizo Statue": 2570
 }
 
 loc_Bowser_Postgame = {
-    "Sphynx Over Bowser’s Castle": 1039,
+    "Sphynx Over Bowser's Castle": 1039,
     "I Met a Pokio!": 941,
-    "Bowser’s Kingdom Regular Cup": 859,
+    "Bowser's Kingdom Regular Cup": 859,
     "A Rumble Under the Arena Floor": 1161,
-    "Secret Path to Bowser’s Castle": 322,
-    "Peach in Bowser’s Kingdom": 338,
-    "Found with Bowser’s Kingdom Art": 1091,
+    "Secret Path to Bowser's Castle": 322,
+    "Peach in Bowser's Kingdom": 338,
+    "Found with Bowser's Kingdom Art": 1091,
     "Behind the Tall Wall: Poke, Poke!": 350,
     "From Crates in the Moat": 1032,
     "Caught on the Giant Horn": 1016,
     "Inside a Block at the Gate": 356,
-    "Small Bird in Bowser’s Castle": 1014,
-    "Invader in Bowser’s Castle": 349,
+    "Small Bird in Bowser's Castle": 1014,
+    "Invader in Bowser's Castle": 349,
     "Jumping from Flag to Flag": 355,
-    "Bowser’s Kingdom Timer Challenge 2": 52,
+    "Bowser's Kingdom Timer Challenge 2": 52,
     "Taking Notes: On the Wall": 351,
     "Taking Notes with a Spinning Throw": 1102,
     "Third Courtyard Outskirts": 348,
     "Stone Wall Circuit": 1143,
-    "Bowser’s Kingdom Master Cup": 896,
+    "Bowser's Kingdom Master Cup": 896,
     "Searching Hexagon Tower": 801,
     "Center of Hexagon Tower": 802,
     "Climb the Wooden Tower": 370,
@@ -949,7 +959,7 @@ loc_Moon = {
     "Caught Hopping on the Moon!": 585,
     "Cliffside Treasure Chest": 582,
     "Moon Kingdom Timer Challenge 1": 584,
-    "Taking Notes: On the Moon’s Surface": 576,
+    "Taking Notes: On the Moon's Surface": 576,
     "Under the Bowser Statue": 595,
     "In a Hole in the Magma": 596,
     "Around the Barrier Wall": 597,
@@ -959,15 +969,15 @@ loc_Moon = {
 }
 
 loc_Moon_Shop = {
-    "Space Suit Cap": 2571,
-    "Space Suit Clothes": 2572,
-    "Sticker Moon": 2573,
-    "Souvenir Moon 1": 2574,
-    "Souvenir Moon 2": 2575,
-    "Football Cap": 2598,
-    "Football Clothes": 2599,
-    "Tuxedo Cap": 2624,
-    "Tuxedo Clothes": 2625
+    "Space Helmet": 2571,
+    "Space Suit": 2572,
+    "Moon Kingdom Sticker": 2573,
+    "Moon Rock Fragment": 2574,
+    "Moon Lamp": 2575,
+    "Football Helmet": 2598,
+    "Football Uniform": 2599,
+    "Mario's Top Hat": 2624,
+    "Mario's Tuxedo": 2625
 }
 
 loc_Moon_Post_Moon = {
@@ -984,7 +994,7 @@ loc_Moon_Postgame = {
     "Walking on the Moon!": 578,
     "Moon Kingdom Regular Cup": 707,
     "Doctor in the House": 1164,
-    "Sphynx’s Hidden Vault": 599,
+    "Sphynx's Hidden Vault": 599,
     "A Tourist in the Moon Kingdom": 911,
     "Peach in the Moon Kingdom": 581,
     "Found with Moon Kindgom Art": 1165,
@@ -1005,24 +1015,24 @@ loc_Mushroom = {
     "A Tourist in the Mushroom Kingdom": 912,
     "Perched on the Castle Roof": 1134,
     "Pops out of the Tail": 1027,
-    "Caught Hopping at Peach’s Castle!": 613,
+    "Caught Hopping at Peach's Castle!": 613,
     "Gardening for Toad: Garden Seed": 1108,
     "Gardening for Toad: Field Seed": 1109,
     "Gardening for Toad: Pasture Seed": 1111,
     "Gardening for Toad: Lake Seed": 1110,
     "Grow a Flower Garden": 959,
     "Mushroom Kingdom Timer Challenge": 977,
-    "Found at Peach’s Castle! Good Dog!": 840,
+    "Found at Peach's Castle! Good Dog!": 840,
     "Taking Notes: Around the Well": 1121,
-    "Herding Sheep at Peach’s Castle": 607,
+    "Herding Sheep at Peach's Castle": 607,
     "Gobbling Fruit with Yoshi": 856,
-    "Yoshi’s Second Helping!": 857,
-    "Yoshi’s All Filled Up!": 858,
-    "Love at Peach’s Castle": 606,
+    "Yoshi's Second Helping!": 857,
+    "Yoshi's All Filled Up!": 858,
+    "Love at Peach's Castle": 606,
     "Toad Defender": 984,
     "Forever Onward, Captain Toad!": 605,
-    "Jammin’ in the Mushroom Kingdom": 913,
-    "Shopping Near Peach’s Castle": 933,
+    "Jammin' in the Mushroom Kingdom": 913,
+    "Shopping Near Peach's Castle": 933,
     "Mushroom Kingdom Regular Cup": 967,
     "Mushroom Kingdom Master Cup": 968,
     "Picture Match: Basically Mario": 985,
@@ -1031,11 +1041,11 @@ loc_Mushroom = {
     "Loose-Tile Trackdown": 956,
     "Totally Classic": 934,
     "Courtyard Chest Trap": 1144,
-    "Yoshi’s Feast in the Sea of Clouds": 974,
+    "Yoshi's Feast in the Sea of Clouds": 974,
     "Sunken Star in the Sea of Clouds": 975,
     "Secret 2D Treasure": 1050,
     "2D Boost from Bullet Bill": 1051,
-    "Tussle in Toastarena: Rematch": 1148,
+    "Tussle in Tostarena: Rematch": 1148,
     "Struggle in Steam Gardens: Rematch": 1149,
     "Dust-Up in New Donk City: Rematch": 1141,
     "Battle in Bubblaine: Rematch": 1147,
@@ -1047,45 +1057,48 @@ loc_Mushroom = {
 }
 
 loc_Mushroom_Post_Luncheon = {
-    "Secret Path to Peach’s Castle!": 608
+    "Secret Path to Peach's Castle!": 608
 }
 
 loc_Mushroom_Shop = {
-    "64 Cap": 2576,
-    "64 Clothes": 2577,
-    "Souvenir Peach 1": 2583,
-    "Souvenir Peach 2": 2584,
-    "Sticker Peach Dokan": 2578,
-    "Sticker Peach Coin": 2579,
-    "Sticker Peach Block": 2580,
-    "Sticker Peach Block Question": 2581,
-    "Sticker Peach": 2582,
+    "Mario 64 Cap": 2576,
+    "Mario 64 Suit": 2577,
+    "Mushroom Cushion Set": 2583,
+    "Peach's Castle Model": 2584,
+    "Pipe Sticker": 2578,
+    "Coin Sticker": 2579,
+    "Block Sticker": 2580,
+    "? Block Sticker": 2581,
+    "Mushroom Kingdom Sticker": 2582,
     "Classic Cap": 2600,
-    "Classic Clothes": 2601,
-    "Bone Clothes": 2602,
+    "Classic Suit": 2601,
+    "Skeleton Suit": 2602
+}
+
+loc_Postgame_Shop = {
     "Luigi Cap": 2603,
-    "Luigi Clothes": 2604,
-    "Doctor Cap": 2605,
-    "Doctor Clothes": 2606,
+    "Luigi Suit": 2604,
+    "Doctor Headwear": 2605,
+    "Doctor Outfit": 2606,
     "Waluigi Cap": 2607,
-    "Waluigi Clothes": 2608,
-    "Diddy Kong Cap": 2609,
-    "Diddy Kong Clothes": 2610,
+    "Waluigi Suit": 2608,
+    "Diddy Kong Hat": 2609,
+    "Diddy Kong Suit": 2610,
     "Wario Cap": 2611,
-    "Wario Clothes": 2612,
-    "Hakama Clothes": 2613,
-    "Koopa Cap": 2614,
-    "Koopa Clothes": 2615,
-    "Peach Cap": 2616,
-    "Peach Clothes": 2617,
-    "Gold Cap": 2618,
-    "Gold Clothes": 2619,
-    "64 Metal Cap": 2620,
-    "64 Metal Clothes": 2621
+    "Wario Suit": 2612,
+    "Hakama": 2613,
+    "Bowser's Top Hat": 2614,
+    "Bowser's Tuxedo": 2615,
+    "Bridal Veil": 2616,
+    "Bridal Gown": 2617,
+    "Gold Mario Cap": 2618,
+    "Gold Mario Suit": 2619,
+    "Metal Mario Cap": 2620,
+    "Metal Mario Suit": 2621
 }
 
 loc_Dark = {
-    "Arrival at Rabbit Ridge": 1055,
+    "Arrival at Rabbit Ridge!": 1055,
     "Captain Toad on the Dark Side!": 1122,
     "Breakdown Road: Hurry": 1062,
     "Breakdown Road: Final Challenge!": 1063,
@@ -1097,7 +1110,7 @@ loc_Dark = {
     "Fruit Feast Under Siege": 1067,
     "Yoshi on the Sinking Island": 1070,
     "Fruit Feast on the Sinking Island": 1071,
-    "Yoshi’s Magma Swamp": 1082,
+    "Yoshi's Magma Swamp": 1082,
     "Fruit Feast in the Magma Swamp!": 1083,
     "Found with Dark Side Art 1": 1132,
     "Found with Dark Side Art 2": 1130,
@@ -1112,8 +1125,8 @@ loc_Dark = {
 }
 
 loc_Dark_Outfit = {
-    "King Cap": 2622,
-    "King Clothes": 2623
+    "King's Crown": 2622,
+    "King's Outfit": 2623
 }
 
 loc_Darker = {
@@ -1121,7 +1134,7 @@ loc_Darker = {
 }
 
 loc_Darker_Outfit = {
-    "Invisible Cap": 2502
+    "Invisibility Hat": 2502
 }
 
 base_locations_table = {
@@ -1131,6 +1144,8 @@ base_locations_table = {
     **loc_Cascade_Post_Metro,
     **loc_Cascade_Post_Snow,
     **loc_Sand,
+    **loc_Sand_Pyramid,
+    **loc_Sand_Underground,
     **loc_Sand_Peace,
     **loc_Sand_Revisit,
     **loc_Lake,
@@ -1159,6 +1174,7 @@ base_locations_table = {
     **loc_Bowser,
     **loc_Bowser_Infiltrate,
     **loc_Bowser_Post_Bombing,
+    **loc_Bowser_Mecha_Broodal,
     **loc_Bowser_Peace,
     **loc_Moon,
     **loc_Mushroom_Post_Luncheon
@@ -1178,6 +1194,7 @@ shop_locations_table = {
     **loc_Bowser_Shop,
     **loc_Moon_Shop,
     **loc_Mushroom_Shop,
+    **loc_Postgame_Shop,
     **loc_Dark_Outfit,
     **loc_Darker_Outfit
 }
@@ -1216,20 +1233,39 @@ locations_table = {
 
 locations_list = [
     loc_Cap,
-    {**loc_Cascade, **loc_Cascade_Revisit},
-    {**loc_Sand, **loc_Sand_Peace},
-    loc_Lake,
-    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace},
+    {**loc_Cascade, **loc_Cascade_Revisit, **loc_Cascade_Post_Snow, **loc_Cascade_Post_Metro},
+    {**loc_Sand, **loc_Sand_Peace, **loc_Sand_Revisit, **loc_Sand_Pyramid},
+    {**loc_Lake, **loc_Lake_Post_Seaside},
+    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace, **loc_Wooded_Post_Metro},
     loc_Cloud,
-    loc_Lost,
-    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace},
+    {**loc_Lost, **loc_Lost_Revisit},
+    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace, **loc_Metro_Post_Sand},
     {**loc_Snow, **loc_Snow_Peace},
     {**loc_Seaside, **loc_Seaside_Peace},
-    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace},
+    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace, **loc_Luncheon_Post_Wooded},
     loc_Ruined,
-    {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Peace},
+    {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Mecha_Broodal, **loc_Bowser_Peace},
     loc_Moon,
-    loc_Mushroom,
+    {**loc_Mushroom, **loc_Mushroom_Post_Luncheon},
+    loc_Dark,
+    loc_Darker
+]
+full_moon_locations_list = [
+    {**loc_Cap, **loc_Cap_Postgame},
+    {**loc_Cascade, **loc_Cascade_Revisit, **loc_Cascade_Post_Snow, **loc_Cascade_Post_Metro, **loc_Cascade_Postgame},
+    {**loc_Sand, **loc_Sand_Peace, **loc_Sand_Revisit, **loc_Sand_Pyramid, **loc_Sand_Underground, **loc_Sand_Postgame},
+    {**loc_Lake, **loc_Lake_Post_Seaside, **loc_Lake_Postgame},
+    {**loc_Wooded, **loc_Wooded_Post_Story1, **loc_Wooded_Peace, **loc_Wooded_Post_Metro, **loc_Wooded_Postgame},
+    {**loc_Cloud, **loc_Cloud_Postgame},
+    {**loc_Lost, **loc_Lost_Revisit, **loc_Lost_Postgame},
+    {**loc_Metro, **loc_Metro_Sewer_Access, **loc_Metro_Peace, **loc_Metro_Post_Sand, **loc_Metro_Postgame},
+    {**loc_Snow, **loc_Snow_Peace, **loc_Snow_Postgame},
+    {**loc_Seaside, **loc_Seaside_Peace, **loc_Seaside_Postgame},
+    {**loc_Luncheon, **loc_Luncheon_Post_Spewart, **loc_Luncheon_Post_Cheese_Rocks, **loc_Luncheon_Peace, **loc_Luncheon_Post_Wooded, **loc_Luncheon_Postgame},
+    {**loc_Ruined, **loc_Ruined_Postgame},
+    {**loc_Bowser, **loc_Bowser_Infiltrate, **loc_Bowser_Post_Bombing, **loc_Bowser_Mecha_Broodal, **loc_Bowser_Peace, **loc_Bowser_Postgame},
+    {**loc_Moon, **loc_Moon_Postgame},
+    {**loc_Mushroom, **loc_Mushroom_Post_Luncheon},
     loc_Dark,
     loc_Darker
 ]
@@ -1251,3 +1287,12 @@ post_game_locations_list = [
     loc_Moon_Postgame
 ]
 
+goals_table = {
+    4 : "The Hole in the Desert",
+    5 : "Broodals Over the Lake",
+    9 : "A Traditional Festival!",
+    12 : "Cookatiel Showdown!",
+    14 : "Beat the Game",
+    16 : "Arrival at Rabbit Ridge!",
+    17 : "A Long Journey's End!"
+}

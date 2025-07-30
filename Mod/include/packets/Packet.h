@@ -11,6 +11,7 @@
 #define COSTUMEBUFSIZE   0x20
 #define ITEMNAMESIZE     0x80
 #define APMESSAGESIZE    0x4B
+#define OBJECTIDSIZE     0x20
 #define MAXPACKSIZE      0x100
 
 enum PacketType : short {
@@ -30,6 +31,11 @@ enum PacketType : short {
     ITEMCOLL,
     FILLERCOLL,
     APCHATMESSAGE,
+    SHINECOUNTS,
+    UNLOCKWORLD,
+    REGCOLL,
+    DEATHLINK,
+    PROGRESS,
     UDPINIT,
     HOLEPUNCH,
     End // end of enum for bounds checking
@@ -53,6 +59,11 @@ USED static const char *packetNames[] = {
     "Item Collection",
     "Filler Collection",
     "Archipelago Chat Message",
+    "Shine Counts",
+    "Unlock World",
+    "Regional Coin Collection",
+    "Deathlink",
+    "World Scenario",
     "Udp Initialization",
     "Hole punch",
     
@@ -95,6 +106,11 @@ struct PACKED Packet {
 #include "packets/ItemCollect.h"
 #include "packets/FillerCollect.h"
 #include "packets/ArchipelagoChatMessage.h"
+#include "packets/ShineCounts.h"
+#include "packets/UnlockWorld.h"
+#include "packets/RegionalCollect.h"
+#include "packets/Deathlink.h"
+#include "packets/ProgressWorld.h"
 #include "packets/CaptureInf.h"
 #include "packets/HackCapInf.h"
 #include "packets/ChangeStagePacket.h"

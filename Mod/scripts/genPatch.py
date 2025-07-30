@@ -159,7 +159,7 @@ def getPatchBin(target, patchAddress, patchValueStr):
         return bytearray(bytes(stringMatch.group(1), 'utf-8').decode('unicode_escape') + '\0', 'utf-8')
 
     # asm patch
-    branchNeedResolveMatch = re.match(r'([Bb][Ll]?\s+)([^\#]+$)', patchValueStr)
+    branchNeedResolveMatch = re.match(r'([Bb][.]?[Ll]?[Ee]?[Qq]?\s+)([^\#]+$)', patchValueStr)
     if branchNeedResolveMatch:
         target, toAddr = resolveAddressAndTarget(target, branchNeedResolveMatch.group(2))
         patchValueStr = (branchNeedResolveMatch.group(1) + '#' + hex(toAddr - patchAddress))

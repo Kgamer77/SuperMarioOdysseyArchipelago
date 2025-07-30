@@ -60,6 +60,8 @@ Client::Client() {
     apChatLine2 = "";
     apChatLine3 = "";
     
+    worldScenarios.fill(1);
+
     mUserID.print();
 
     Logger::log("Player Name: %s\n", playerName.name);
@@ -375,6 +377,18 @@ void Client::readFunc() {
             case PacketType::APCHATMESSAGE:
                 updateChatMessages((ArchipelagoChatMessage*)curPacket);
                 break;
+            case PacketType::SHINECOUNTS:
+                updateCounts((ShineCounts*)curPacket);
+                break;
+            case PacketType::UNLOCKWORLD:
+                updateWorlds((UnlockWorld*)curPacket);
+                break;
+            case PacketType::PROGRESS:
+                updateProgress((ProgressWorld*)curPacket);
+                break;
+            case PacketType::DEATHLINK:
+                receiveDeath((Deathlink*)curPacket);
+                break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
                 curPacket->mUserID.print();
@@ -609,35 +623,6 @@ void Client::sendGameInfPacket(GameDataHolderAccessor holder) {
 
     strcpy(packet->stageName, GameDataFunction::getCurrentStageName(holder));
 
-    if (strcmp(GameDataFunction::getCurrentStageName(holder), "BossRaidWorldHomeStage") == 0) {
-        int ruinedCount = 0;
-        if (!GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), 0)) {
-            for (int i = 1; i < 9; i++) {
-                if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexBoss(), i))
-                    ruinedCount++;
-            }
-        } else
-            ruinedCount = 3;
-        if (holder.mData->mGameDataFile->getScenarioNo() == 2 && ruinedCount < 3) {
-            GameDataFunction::repairHome(holder);
-        }
-        if (GameDataFunction::isRepairHomeByCrashedBoss(holder))
-            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexSky());
-    }
-
-    if (strcmp(GameDataFunction::getCurrentStageName(holder), "ClashWorldHomeStage") == 0) {
-        int lostCount = 0;
-        for (int i = 1; i < 25; i++) {
-            if (GameDataFunction::isGotShine(holder, GameDataFunction::getWorldIndexClash(), i))
-                lostCount++;
-        }
-        if (lostCount < 10) {
-            GameDataFunction::repairHome(holder);
-            GameDataFunction::unlockWorld(holder, GameDataFunction::getWorldIndexClash());
-        } else
-            GameDataFunction::crashHome(holder);
-    }
-
     if (*packet != sInstance->emptyGameInfPacket) {
         sInstance->lastGameInfPacket = *packet;
         sInstance->mSocket->queuePacket(packet);
@@ -806,6 +791,82 @@ void Client::sendItemCollectPacket(char* itemName, int itemType) {
     packet->mUserID = sInstance->mUserID;
 
     sInstance->mSocket->queuePacket(packet);
+}
+
+/**
+ * @brief
+ *
+ * @param itemName
+ */
+void Client::sendRegionalCollectPacket(GameDataHolderAccessor holder, al::PlacementId* placementId) {
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    RegionalCollect* packet = new RegionalCollect();
+    
+    sead::FixedSafeString<0x20> placementString;
+    placementId->makeString(&placementString);
+    strcpy(packet->objId, placementString.cstr());
+    strcpy(packet->worldName, GameDataFunction::getCurrentStageName(holder));
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
+/**
+ * @brief
+ *
+ * @param itemName
+ */
+void Client::sendDeathlinkPacket() {
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    Deathlink* packet = new Deathlink();
+    packet->mUserID = sInstance->mUserID;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
+void Client::receiveDeath(Deathlink* packet)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->apDeath = true;
+    sInstance->dying = true;
+
+}
+
+void Client::setDying(bool value)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->dying = value;
+}
+
+void Client::setApDeath(bool value)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->apDeath = value;
 }
 
 /**
@@ -1175,6 +1236,114 @@ void Client::setStageInfo(GameDataHolderAccessor holder) {
     }
 }
 
+void Client::sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo) {
+    if (sInstance)
+    {
+        GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+
+        if (GameDataFunction::getWorldIndexWaterfall() ==
+            GameDataFunction::getCurrentWorldId(accessor)
+                 || GameDataFunction::isUnlockedCurrentWorld(accessor)) {
+            GameDataFunction::tryChangeNextStage(accessor, stageInfo);
+        } else {
+            int i = 0;
+            for (i = GameDataFunction::getWorldIndexSpecial2(); i > 0; i--)
+            {
+                if (GameDataFunction::isUnlockedWorld(accessor, i))
+                {
+                    break;
+                }
+            }
+            ChangeStageInfo info(accessor.mData, "",
+                                 GameDataFunction::getMainStageName(accessor, i), false, -1,
+                static_cast<ChangeStageInfo::SubScenarioType>(0));
+            GameDataFunction::tryChangeNextStage(accessor, &info);
+        }
+    }
+}
+
+void Client::setScenario(int worldID, int scenario)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sendProgressWorldPacket(worldID, scenario);
+    sInstance->worldScenarios[worldID] = scenario;
+
+}
+
+int Client::getScenario(const char* worldName)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return -1;
+    }
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+
+    int worldID = accessor.mData->mWorldList->tryFindWorldIndexByStageName(worldName);
+
+    /*if (sInstance->worldScenarios[worldID] < GameDataFunction::getWorldScenarioNo(accessor, worldID))
+    {
+        setScenario(worldID, GameDataFunction::getWorldScenarioNo(accessor, worldID));
+    }*/
+    return sInstance->worldScenarios[worldID];
+
+}
+
+void Client::sendCorrectScenario(const ChangeStageInfo* stageInfo)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+
+    /*char str[12] = {'S', 'c', 'e', 'n', 'a', 'r', 'i', 'o', ' ', ' ', ' '};
+    str[9] = static_cast<char>(
+        48 + sInstance->worldScenarios[accessor.mData->mWorldList->tryFindWorldIndexByStageName(
+                                   stageInfo->changeStageName.cstr())]);
+
+    sInstance->apChatLine1 = str;
+    
+    char str2[12] = {'W', 'o', 'r', 'l', 'd', 'I', 'D', ' ', ' ', ' '};
+    str2[9] = static_cast<char>(
+        48 + accessor.mData->mWorldList->tryFindWorldIndexByStageName(stageInfo->changeStageName.cstr()));
+    sInstance->apChatLine2 = str2;*/
+
+    
+
+    ChangeStageInfo info(accessor.mData, stageInfo->changeStageId.cstr(),
+                         stageInfo->changeStageName.cstr(),
+                         false,
+                         getScenario(stageInfo->changeStageName.cstr()),
+                         static_cast<ChangeStageInfo::SubScenarioType>(0));
+    GameDataFunction::tryChangeNextStage(accessor, &info);
+}
+
+void Client::setMessage(int num, const char* msg)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    switch (num) {
+    case 1: 
+        sInstance->apChatLine1 = msg;
+        break;
+    case 2: 
+        sInstance->apChatLine2 = msg;
+        break;
+    case 3: 
+        sInstance->apChatLine3 = msg;
+        break;
+    }
+}
+
 /**
  * @brief 
  * 
@@ -1326,8 +1495,8 @@ void Client::updateShines() {
                         stageShine->makeActorAlive();
                     }
                     
-                    stageShine->getDirect();
-                    stageShine->onSwitchGet();
+                    //stageShine->getDirect();
+                    //stageShine->onSwitchGet();
                 }
 
                 accessor.mData->mGameDataFile->setGotShine(shineInfo);
@@ -1430,9 +1599,60 @@ void Client::updateChatMessages(ArchipelagoChatMessage* packet)
         return;
     }
 
-    apChatLine1 = packet->message1;
-    apChatLine2 = packet->message2;
-    apChatLine3 = packet->message3;
+    sInstance->apChatLine1 = packet->message1;
+    sInstance->apChatLine2 = packet->message2;
+    sInstance->apChatLine3 = packet->message3;
+}
+
+void Client::updateCounts(ShineCounts* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    sInstance->clashCount = packet->clash;
+    sInstance->raidCount = packet->raid;
+    sInstance->regionals = packet->regionals;
+}
+
+void Client::updateWorlds(UnlockWorld* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    GameDataHolderAccessor accessor(sInstance->mCurStageScene);
+    GameDataFunction::unlockWorld(accessor, packet->worldID);
+}
+
+void Client::sendProgressWorldPacket(int worldID, int scenario)
+{
+    if (!sInstance)
+    {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
+
+    ProgressWorld* packet = new ProgressWorld();
+    packet->worldID = worldID;
+    packet->scenario = scenario;
+
+    sInstance->mSocket->queuePacket(packet);
+}
+
+void Client::updateProgress(ProgressWorld* packet)
+{
+    if (!sInstance) {
+        Logger::log("Client Null!\n");
+        return;
+    }
+
+    sInstance->worldScenarios[packet->worldID] = packet->scenario;
+    
 }
 
 /**
