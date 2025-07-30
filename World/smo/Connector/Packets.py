@@ -1,5 +1,5 @@
 from enum import Enum
-from ctypes import c_short as short, c_ushort as ushort, c_int, c_byte as sbyte, c_ubyte as byte
+from ctypes import c_short as short, c_ushort as ushort, c_int, c_byte as sbyte, c_ubyte as byte, c_byte, c_ubyte
 from typing import Any
 
 class PacketType(Enum):
@@ -22,6 +22,7 @@ class PacketType(Enum):
     SlotData : short = 16
     RegionalCollect : short = 18
     Deathlink : short = 19
+    Progress : short = 20
 
 class ConnectionType(Enum):
     Connect = 0
@@ -195,29 +196,70 @@ class SlotDataPacket:
         if data is bytes:
             data = bytearray(data)
 
+
+
+
+
 #endregion
+
+class ProgressPacket:
+    world_id : c_int
+    scenario : c_int
+    SIZE : short = 8
+
+    def __init__(self, packet_bytes = None, world_id : int = 0, scenario : int = -1):
+        if packet_bytes:
+            self.deserialize(packet_bytes)
+        else:
+            self.world_id = c_int(world_id)
+            self.scenario = c_int(scenario)
+
+    def serialize(self) -> bytearray:
+        data : bytearray = bytearray()
+        int_value : int = self.world_id.value
+        data += int_value.to_bytes(4, "little")
+        int_value = self.scenario.value
+        data += int_value.to_bytes(2, "little")
+        if len(data) > self.SIZE:
+            raise f"ProgressPacket failed to serialize. bytearray exceeds maximum size {self.SIZE}."
+        return data
+
+    # Shouldn't be necessary
+    def deserialize(self, data : bytes | bytearray) -> None:
+        if data is bytes:
+            data = bytearray(data)
+        offset = 0
+        self.world_id = c_int(int.from_bytes(data[offset:offset + 4], "little"))
+        offset += 4
+        self.scenario = c_int(int.from_bytes(data[offset:offset + 4], "little"))
 
 class ChangeStagePacket:
     ID_SIZE : int  = 0x10
     STAGE_SIZE : int = 0x30
     stage : str
-    id : str
+    stage_id : str
     scenario : sbyte
     sub_scenario_type : byte
     SIZE : short = 0x42
+
+    def __init__(self, stage : str, stage_id : str = "", scenario : int = -1, sub_scenario_type : int = 0):
+        self.stage = stage
+        self.stage_id = stage_id
+        self.scenario = c_byte(int(scenario))
+        self.sub_scenario_type = c_ubyte(sub_scenario_type)
 
     def serialize(self) -> bytearray:
         data : bytearray = bytearray()
         data += self.stage.encode()
         while len(data) < self.STAGE_SIZE:
             data += b"\x00"
-        data += self.id.encode()
+        data += self.stage_id.encode()
         while len(data) < self.STAGE_SIZE + self.ID_SIZE:
             data += b"\x00"
-        int_value : int =  self.scenario.value
-        data += int_value.to_bytes(1, "little")
-        int_value = self.sub_scenario_type.value
-        data += int_value.to_bytes(1, "little")
+        int_value : int = self.scenario.value
+        data += int_value.to_bytes(1, "little", signed=True)
+        int_value2 : int = self.sub_scenario_type.value
+        data += int_value2.to_bytes(1, "little", signed=False)
         if len(data) > self.SIZE:
             raise f"ChangeStagePacket failed to serialize. bytearray exceeds maximum size {self.SIZE}."
         return data
@@ -228,7 +270,7 @@ class ChangeStagePacket:
         offset : int = 0
         self.stage = data[offset:self.STAGE_SIZE].decode()
         offset += self.STAGE_SIZE
-        self.id = data[offset:offset + self.ID_SIZE].decode()
+        self.stage_id = data[offset:offset + self.ID_SIZE].decode()
         offset += self.ID_SIZE
         self.scenario = sbyte(int.from_bytes(data[offset:offset + 1], "little"))
         offset += 1
@@ -236,9 +278,11 @@ class ChangeStagePacket:
 
 
 class DeathLinkPacket:
+    SIZE : short = 0x0
 
     def serialize(self) -> bytearray:
-        pass
+        data : bytearray = bytearray()
+        return data
 
     def deserialize(self, data : bytes | bytearray) -> None:
         if data is bytes:
@@ -330,7 +374,7 @@ class Packet:
                 case PacketType.Init:
                     self.packet = InitPacket()
                 case PacketType.ChangeStage:
-                    self.packet = ChangeStagePacket()
+                    self.packet = ChangeStagePacket(stage=packet_data[0], scenario=packet_data[1])
                 case PacketType.SlotData:
                     self.packet = SlotDataPacket(clash=packet_data[0], raid=packet_data[1], regionals=packet_data[2])
                 case PacketType.ArchipelagoChat:
@@ -345,6 +389,8 @@ class Packet:
                     self.packet = RegionalCoinPacket()
                 case PacketType.Filler:
                     self.packet = FillerPacket(packet_data[0])
+                case PacketType.Progress:
+                    self.packet = ProgressPacket(world_id=packet_data[0], scenario=packet_data[1])
 
     def serialize(self) -> bytearray:
         self.header.packet_size = self.packet.SIZE
@@ -358,7 +404,7 @@ class Packet:
             case PacketType.Connect:
                 self.packet = ConnectPacket()
             case PacketType.ChangeStage:
-                self.packet = ChangeStagePacket()
+                print("Client sending ChangeStagePacket Deprecated")
             # case PacketType.Command:
             #     self.packet = CommandP()
             case PacketType.Shine:
@@ -375,3 +421,5 @@ class Packet:
                 raise "Server only packet received from client"
             case PacketType.Deathlink:
                 self.packet = DeathLinkPacket()
+            case PacketType.Progress:
+                self.packet = ProgressPacket(packet_bytes=data)
