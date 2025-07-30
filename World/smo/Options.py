@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
-from Options import Toggle, Choice, FreeText, PerGameCommonOptions
+from Options import Toggle, Choice, FreeText, PerGameCommonOptions, DeathLink
+
 
 class Goal(Choice):
     """Sets the completion goal. This is the kingdom you must get the last story multi moon in to win the game.
@@ -56,6 +57,9 @@ class RandomizeMoonCount(Choice):
     option_off = 0
     default = 0
 
+class SMODeathLink(DeathLink):
+    __doc__ = DeathLink.__doc__ + "\n    In Super Mario Odyssey, Mario dying in any way sends a death and receiving a death causes Mario to die where he stands."
+
 @dataclass
 class SMOOptions(PerGameCommonOptions):
     goal: Goal
@@ -64,5 +68,5 @@ class SMOOptions(PerGameCommonOptions):
     # replace: ReplaceUnneededMoons
     colors : RandomizeMoonColors
     counts : RandomizeMoonCount
-
+    death_link : SMODeathLink
 
