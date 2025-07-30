@@ -5,12 +5,12 @@ from .Locations import shop_locations_table, loc_Post_Cloud, loc_Moon_Post_Moon
 class SMOItem(Item):
     game: str = "Super Mario Odyssey"
 
-    def __init__(self, name: str, classification: ItemClassification, player: int, id: int):
+    def __init__(self, name: str, classification: ItemClassification, player: int, id : int = None):
         super().__init__(name, classification, id, player)
 
 
-# def create_event(self, event: str) -> SMOItem:
-#     return SMOItem(event, ItemClassification.progression, self.player, None)
+def create_event(self, event: str) -> SMOItem:
+    return SMOItem(event, ItemClassification.progression, self.player)
 
 moon_types = {
     "Cap Power Moon": 1,
@@ -53,24 +53,6 @@ moon_types = {
 }
 
 moon_item_table = {
-    # **Cap,
-    # **Cascade,
-    # **Sand,
-    # **Lake,
-    # **Wooded,
-    # **Cloud,
-    # **Lost,
-    # **Metro,
-    # **Snow,
-    # **Seaside,
-    # **Luncheon,
-    # **Ruined,
-    # **Bowser,
-    # **Moon,
-    # **Mushroom,
-    # **Dark,
-    # **Darker,
-    #**moon_types,
     **loc_Post_Cloud,
     **loc_Moon_Post_Moon,
     **shop_locations_table
@@ -287,9 +269,14 @@ filler_item_table = {
     "1000 Coins": 9998
 }
 
+flag_items = {
+    "Beat the Game" : 39,
+}
+
 item_table = {
     **moon_item_table,
     # **world_items_table,
+    **flag_items,
     **filler_item_table
 }
 
