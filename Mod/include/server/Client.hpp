@@ -175,6 +175,11 @@ class Client {
         static void setStageInfo(GameDataHolderAccessor holder);
         static void sendStage(GameDataHolderWriter writer, const ChangeStageInfo* stageInfo);
 
+        static void setDying(bool value);
+        static void setApDeath(bool value);
+        static bool isDying() { return sInstance ? sInstance->dying : false; }
+        static bool isApDeath() { return sInstance ? sInstance->apDeath : false; }
+
         static void setLastUsedIP(const char* ip);
 
         static void setLastUsedPort(const int port);
@@ -214,6 +219,7 @@ class Client {
         void updateCounts(ShineCounts *packet);
         void updateWorlds(UnlockWorld *packet);
         void updateProgress(ProgressWorld *packet);
+        void receiveDeath(Deathlink *packet);
         void updatePlayerConnect(PlayerConnect *packet);
         void updateTagInfo(TagInf *packet);
         void updateCaptureInfo(CaptureInf* packet);
@@ -254,6 +260,8 @@ class Client {
         ushort raidCount = 3;
         bool regionals = false;
         sead::SafeArray<int, 17> worldScenarios;
+        bool dying = false;
+        bool apDeath = false;
 
         // Backups for our last player/game packets, used for example to re-send them for newly connected clients
         PlayerInf lastPlayerInfPacket = PlayerInf();
