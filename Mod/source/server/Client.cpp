@@ -386,6 +386,9 @@ void Client::readFunc() {
             case PacketType::PROGRESS:
                 updateProgress((ProgressWorld*)curPacket);
                 break;
+            case PacketType::DEATHLINK:
+                receiveDeath((Deathlink*)curPacket);
+                break;
             case PacketType::PLAYERDC:
                 Logger::log("Received Player Disconnect!\n");
                 curPacket->mUserID.print();
@@ -826,16 +829,46 @@ void Client::sendDeathlinkPacket() {
         return;
     }
 
-  /*  if (!strcmp(itemName, "")) {
-        return;
-    }*/
-
     sead::ScopedCurrentHeapSetter setter(sInstance->mHeap);
 
     Deathlink* packet = new Deathlink();
     packet->mUserID = sInstance->mUserID;
 
     sInstance->mSocket->queuePacket(packet);
+}
+
+void Client::receiveDeath(Deathlink* packet)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->apChatLine1 = "Death Received";
+
+    sInstance->apDeath = true;
+    sInstance->dying = true;
+
+}
+
+void Client::setDying(bool value)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->dying = value;
+}
+
+void Client::setApDeath(bool value)
+{
+    if (!sInstance) {
+        Logger::log("Static Instance is Null!\n");
+        return;
+    }
+
+    sInstance->apDeath = value;
 }
 
 /**
