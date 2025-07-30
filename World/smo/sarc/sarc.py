@@ -16,6 +16,7 @@ from ..rstb import rstb
 
 from ..yaz0 import yaz0
 
+
 def _get_unpack_endian_character(big_endian: bool):
     return '>' if big_endian else '<'
 
@@ -195,7 +196,7 @@ def _align_up(n: int, alignment: int) -> int:
 
 def _load_aglenv_file_info() -> typing.List[dict]:
     if ".apworld" in os.path.realpath(__file__):
-        zf = zipfile.ZipFile(os.path.dirname(os.path.realpath(__file__).replace("\\smo\\sarc", "")))
+        zf = zipfile.ZipFile(os.path.dirname(os.path.normpath(__file__).replace(os.path.normpath("/smo/sarc"), "")))
 
         with tempfile.TemporaryDirectory() as tempdir:
             zf.extractall(tempdir)
