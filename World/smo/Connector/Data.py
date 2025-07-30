@@ -1,11 +1,11 @@
 
 class Goal:
-    item : str
-    index : int
+    item : int
+    item_index : int
 
-    def __init__(self, item : str, index : int):
+    def __init__(self, item : int, item_index : int):
         self.item = item
-        self.index = index
+        self.item_index = item_index
 
 shop_items = {
     "MarioInvisibleCap" : 2502,
@@ -1107,6 +1107,26 @@ worlds = {
     "Darker": 16
 }
 
+inverse_worlds = {
+    0: "Cap",
+    1: "Cascade",
+    2: "Sand",
+    3: "Wooded",
+    4: "Lake",
+    5: "Cloud",
+    6: "Lost",
+    7: "Metro",
+    8: "Seaside",
+    9: "Snow",
+    10: "Luncheon",
+    11: "Ruined",
+    12: "Bowser",
+    13: "Moon",
+    14: "Mushroom",
+    15: "Dark",
+    16: "Darker"
+}
+
 
 inverse_moon_items = {
     1 : "Cap Power Moon",
@@ -1148,11 +1168,44 @@ inverse_moon_items = {
     38 : "Dark Side Multi-Moon"
 }
 
+inverse_filler_items = {
+    9994: "50 Coins",
+    9995: "100 Coins",
+    9996: "250 Coins",
+    9997: "500 Coins",
+    9998: "1000 Coins"
+}
+
+inverse_flag_items = {
+    39 : "Beat the Game"
+}
+
 # Add Regional coins and groups
 id_to_name = {
     **inverse_moon_items,
-    **inverse_shop_items
+    **inverse_shop_items,
+    **inverse_flag_items,
+    **inverse_filler_items
 }
+
+multi_moon_locations = [
+    218,
+    495,
+    560,
+    424,
+    130,
+    181,
+    37,
+    95,
+    437,
+    1020,
+    292,
+    290,
+    795,
+    332,
+    1055,
+    1061
+]
 
 regional_coin_groups = {
     "CapWorldHomeStage" : {
@@ -2642,6 +2695,89 @@ regional_coin_groups = {
         }
     }
 
+world_alias = {
+    "cap kingdom": "cap",
+    "cascade kingdom": "cascade",
+    "sand kingdom": "sand",
+    "wooded kingdom": "wooded",
+    "lake kingdom": "lake",
+    "cloud kingdom": "cloud",
+    "lost kingdom": "lost",
+    "metro kingdom": "metro",
+    "seaside kingdom": "seaside",
+    "snow kingdom": "snow",
+    "luncheon kingdom": "luncheon",
+    "ruined kingdom": "ruined",
+    "bowser kingdom": "bowser",
+    "moon kingdom": "moon",
+    "mushroom kingdom": "mushroom",
+    "dark side": "dark",
+    "darker side": "darker",
+    "cap": "hat",
+    "cascade": "waterfall",
+    "sand": "SandWorldHomeStage",
+    "wooded": "forest",
+    "lake": "LakeWorldHomeStage",
+    "cloud": "CloudWorldHomeStage",
+    "lost": "clash",
+    "metro": "city",
+    "seaside": "sea",
+    "snow": "SnowWorldHomeStage",
+    "luncheon": "lava",
+    "ruined": "raid",
+    "bowser": "sky",
+    "moon": "MoonWorldHomeStage",
+    "mushroom": "peach",
+    "dark": "special1",
+    "darker": "special2",
+    "odyssey": "home",
+    "hat" : "CapWorldHomeStage",
+    "waterfall" : "WaterfallWorldHomeStage",
+    "forest" : "ForestWorldHomeStage",
+    "clash" : "ClashWorldHomeStage",
+    "city" : "CityWorldHomeStage",
+    "sea" : "SeaWorldHomeStage",
+    "lava" : "LavaWorldHomeStage",
+    "raid" : "boss",
+    "boss" : "BossRaidWorldHomeStage",
+    "sky" : "SkyWorldHomeStage",
+    "peach" : "PeachWorldHomeStage",
+    "special1" : "Special1WorldHomeStage",
+    "special2" : "Special2WorldHomeStage",
+    "home" : "HomeShipInsideStageMap"
+}
+
+valid_warps = {
+    "CapWorldHomeStage": "Cap",
+    "SandWorldHomeStage": "Cascade",
+    "WaterfallWorldHomeStage": "Sand",
+    "ForestWorldHomeStage": "Wooded",
+    "LakeWorldHomeStage": "Lake",
+    "ClashWorldHomeStage": "Lost",
+    "CloudWorldHomeStage": "Cloud",
+    "CityWorldHomeStage": "Metro",
+    "SeaWorldHomeStage": "Seaside",
+    "SnowWorldHomeStage": "Snow",
+    "LavaWorldHomeStage": "Luncheon",
+    "BossRaidWorldHomeStage": "Ruined",
+    "SkyWorldHomeStage": "Bowser",
+    "MoonWorldHomeStage": "Moon",
+    "PeachWorldHomeStage": "Mushroom",
+    "Special1WorldHomeStage": "Dark",
+    "Special2WorldHomeStage": "Darker",
+    "HomeShipInsideStageMap": "Odyssey"
+}
+
+goals = {
+    4: Goal(27,3),
+    5: Goal(29,  0),
+    9: Goal(30,6),
+    12: Goal(33, 4),
+    14: Goal(39, item_index=-1),
+    17: Goal(38, 0),
+    18: Goal(17, 0)
+}
+
 def get_item_type(item : int) -> int:
     """
     Args:
@@ -2665,7 +2801,9 @@ def get_item_type(item : int) -> int:
             return -1
 
         # Filler
-        else:
+        elif item in inverse_filler_items:
             return -3
+        else:
+            return 0
 
 
