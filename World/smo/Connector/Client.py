@@ -1,15 +1,17 @@
 import asyncio
 import functools
+import typing
 from copy import deepcopy
 
 import Utils
-from NetUtils import decode, encode, NetworkPlayer, NetworkItem, JSONtoTextParser, JSONMessagePart
+from NetUtils import decode, encode, NetworkPlayer, NetworkItem, JSONtoTextParser, JSONMessagePart, ClientStatus
 from MultiServer import Endpoint
 from CommonClient import get_base_parser, gui_enabled, logger, CommonContext, ClientCommandProcessor
 from typing import List, Any, Iterable
 from .Packets import PacketHeader, PacketType, Packet
 
-from .Data import inverse_shop_items, shop_items, get_item_type
+from .Data import inverse_shop_items, shop_items, get_item_type, worlds, world_alias, valid_warps, inverse_worlds, \
+    multi_moon_locations
 from .Player import SMOPlayer
 
 from websockets import WebSocketServerProtocol
@@ -41,12 +43,23 @@ class SMOCommandProcessor(ClientCommandProcessor):
             self.ctx.server_msgs.append({"cmd" : "Sync"})
             # Add the sending locations part here if necessary.
 
-    def _cmd_warp(self, kingdom : str):
-        """Warp Mario to another kingdom"""
+    def _cmd_warp(self, kingdom : str, scenario : int = -1):
+        """Warp Mario to another kingdom.
+        Change kingdom scenario only if you know what you're doing as it can break the game."""
         if isinstance(self.ctx, SMOContext):
-            logger.info(f"Sending Mario to {kingdom}")
-            raise "Not implemented exception"
-            self.ctx.proxy_msgs.append(Packet(guid=self.ctx.guid, packet_type=PacketType.ChangeStage, packet_data=[]))
+            while kingdom.lower() in world_alias:
+                kingdom = world_alias[kingdom]
+            if not kingdom in valid_warps:
+                warps : str = ""
+                for value in valid_warps.values():
+                    warps += value + ", "
+                warps = warps.removesuffix(", ")
+                logger.info(f"{kingdom} is not a valid warp.\nValid warps: {warps}")
+            else:
+                logger.info(f"Sending Mario to {valid_warps[kingdom]}")
+                self.ctx.player_data.add_message(f"Sending Mario to {valid_warps[kingdom]}")
+                self.ctx.proxy_msgs.append(Packet(guid=self.ctx.proxy_guid, packet_type=PacketType.ChangeStage,
+                                                 packet_data=[kingdom, scenario]))
 
 # Change send message and related calls to send packet and serialize and deserialize using the packet of the respective packet type.
 # Make sure to receive packets on the connection to send checks through to the AP Server from this client.
@@ -76,8 +89,10 @@ class SMOContext(CommonContext):
         self.slot_data : dict = {}
         self.ping_task = None
         self.awaiting_connection : bool = False
-        self.disconnect_timer : int = 5
+        self.disconnect_timer : int = 120
         self.logged_in : bool = False
+        self.multi_moon_anim : bool = False
+        self.death_link_enabled : bool = False
 
     async def server_auth(self, password_requested: bool = False):
         if password_requested and not self.password:
@@ -121,91 +136,125 @@ class SMOContext(CommonContext):
 
         self.server_msgs.append({"cmd": "ReceivedItems", "index": 0, "items": self.full_inventory})
 
+    def on_deathlink(self, data: typing.Dict[str, typing.Any]) -> None:
+        if self.death_link_enabled:
+            super().on_deathlink(data)
+            death_link_packet : Packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Deathlink)
+            self.proxy_msgs.append(death_link_packet)
+            self.last_death_link = data["time"]
+
     # Handle sending packets to SMO here
     def on_package(self, cmd: str, args: dict):
-        if cmd == "Connected":
-            json = args
-            me: NetworkPlayer
-            if "slot_info" in json.keys():
-                json["slot_info"] = {}
-            if "players" in json.keys():
+        match cmd:
+            case "Connected":
+                json = args
+                me: NetworkPlayer
+                if "slot_info" in json.keys():
+                    json["slot_info"] = {}
+                if "players" in json.keys():
 
-                for n in json["players"]:
-                    if n.slot == json["slot"] and n.team == json["team"]:
-                        me = n
-                        break
+                    for n in json["players"]:
+                        if n.slot == json["slot"] and n.team == json["team"]:
+                            me = n
+                            break
 
-                # Only put our player info in there as we actually need it
-                json["players"] = [me]
-                self.slot_data = json["slot_data"]
-            self.player_data.add_message(f"Connected to Archipelago as {me.name} playing Super Mario Odyssey")
-            # Send slot data to SMO
-            self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.SlotData,
-                                              packet_data=[self.slot_data["clash"], self.slot_data["raid"], self.slot_data["regionals"]]))
-            self.logged_in = True
-            # if DEBUG:
-            #     print(json)
-            self.connected_msg = encode([json])
-            if self.awaiting_info:
-                self.server_msgs.append(self.room_info)
-                self.update_items()
-                self.awaiting_info = False
+                    # Only put our player info in there as we actually need it
+                    json["players"] = [me]
+                    self.slot_data = json["slot_data"]
+                self.player_data.player = me
+                self.player_data.add_message(f"Connected to Archipelago as {me.name} playing Super Mario Odyssey")
+                # Send slot data to SMO
+                self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.SlotData,
+                                                  packet_data=[self.slot_data["clash"], self.slot_data["raid"], self.slot_data["regionals"]]))
+                self.player_data.goal = self.slot_data["goal"]
+                self.death_link_enabled = self.slot_data["death_link"]
+                self.logged_in = True
 
-        elif cmd == "RoomUpdate":
-            # Same story as above
-            json = args
-            if "players" in json.keys():
-                json["players"] = []
+                if self.death_link_enabled:
+                    self.server_msgs.append({"cmd" : "ConnectUpdate", "tags" : ["AP", "DeathLink"]})
+                self.server_msgs.append({"cmd" : "Get", "keys" : [f"{self.player_data.player.name}_scenarios"]})
+                # if DEBUG:
+                #     print(json)
+                self.connected_msg = encode([json])
+                if self.awaiting_info:
+                    self.server_msgs.append(self.room_info)
+                    self.update_items()
+                    self.awaiting_info = False
 
-            self.server_msgs.append(json)
+            case "RoomUpdate":
+                # Same story as above
+                json = args
+                if "players" in json.keys():
+                    json["players"] = []
 
-        elif cmd == "ReceivedItems":
-            # Handle Sending various collect packets to SMO here
-            if args["index"] == 0:
-                self.full_inventory.clear()
-                # not sure if this is needed?
-                self.player_data.reset_moons()
-                self.player_data.item_index = 0
-                print("Accept full inventory.")
+                self.server_msgs.append(json)
 
-            if args["index"] != self.player_data.item_index:
-                print("Next index mismatch, syncing.")
-                self.server_msgs.append({"cmd" : "Sync"})
-            else:
-                self.player_data.item_index += 1
+            case "ReceivedItems":
+                # Handle Sending various collect packets to SMO here
+                if args["index"] == 0:
+                    self.full_inventory.clear()
+                    # not sure if this is needed?
+                    self.player_data.reset_moons()
+                    self.player_data.item_index = 0
+                    print("Accept full inventory.")
 
-            for item in args["items"]:
-                net_item = NetworkItem(*item)
-                self.full_inventory.append(net_item)
+                if args["index"] != self.player_data.item_index:
+                    print("Next index mismatch, syncing.")
+                    self.server_msgs.append({"cmd" : "Sync"})
+                else:
+                    self.player_data.item_index += 1
 
-                match get_item_type(net_item.item):
-                    # Moons
-                    case -1:
-                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Shine,
-                                        packet_data=[self.player_data.get_next_moon(net_item.item)])
-                    # Regional Coins
-                    case -2:
-                        pass
-                    # Filler
-                    case -3:
-                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Filler,
-                                packet_data=[net_item.item])
+                for item in args["items"]:
+                    net_item = NetworkItem(*item)
+                    self.full_inventory.append(net_item)
 
-                    case _:
-                        packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Item,
-                                        packet_data=[inverse_shop_items[net_item.item].replace("Cap", "").replace("Clothes", ""), get_item_type(net_item.item)])
+                    if self.player_data.check_goal(net_item):
+                        self.server_msgs.append({"cmd" : "StatusUpdate", "status" : ClientStatus.CLIENT_GOAL})
+                        print("Goal achieved")
 
-                self.proxy_msgs.append(packet)
+                    packet = None
+                    match get_item_type(net_item.item):
+                        # Flag items
+                        case 0:
+                            pass
 
-            self.server_msgs.append(args)
+                        # Moons
+                        case -1:
+                            packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Shine,
+                                            packet_data=[self.player_data.get_next_moon(net_item.item)])
+                        # Regional Coins
+                        case -2:
+                            pass
+                        # Filler
+                        case -3:
+                            packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Filler,
+                                    packet_data=[net_item.item - 9990])
 
-        elif cmd == "RoomInfo":
-            self.seed_name = args["seed_name"]
-            self.room_info = args
+                        case _:
+                            packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Item,
+                                            packet_data=[inverse_shop_items[net_item.item].replace("Cap", "").replace("Clothes", ""), get_item_type(net_item.item)])
+                    if packet:
+                        self.proxy_msgs.append(packet)
 
-        else:
-            if cmd != "PrintJSON":
                 self.server_msgs.append(args)
+
+            case "RoomInfo":
+                self.seed_name = args["seed_name"]
+                self.room_info = args
+
+            case "Retrieved":
+                if f"{self.player_data.player.name}_scenarios" in args["keys"] and args["keys"][f"{self.player_data.player.name}_scenarios"] is dict:
+                    self.player_data.world_scenarios = args["keys"][f"{self.player_data.player.name}_scenarios"]
+                    for world in self.player_data.world_scenarios.keys():
+                        self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.Progress,
+                                                      packet_data=[inverse_worlds[world], self.player_data.world_scenarios[world]]))
+                else:
+                    self.server_msgs.append({"cmd" : "Set", "key" : f"{self.player_data.player.name}_scenarios",
+                                            "operations" : [{ "operation" : "replace", "value" : self.player_data.world_scenarios}]})
+
+            case _:
+                if cmd != "PrintJSON":
+                    self.server_msgs.append(args)
 
     def run_gui(self):
         from kvui import GameManager
@@ -241,7 +290,10 @@ async def proxy_chat(ctx : SMOContext):
                     clear_msgs = True
                 else:
                     clear_msgs = False
-            await asyncio.sleep(5.0)
+            if ctx.multi_moon_anim:
+                await asyncio.sleep(27.0)
+            else:
+                await asyncio.sleep(5.0)
     except Exception as e:
         logger.exception(e)
 
@@ -250,23 +302,25 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
     data : bytearray
     packet : Packet
     ctx.endpoint = Endpoint(writer.transport.get_extra_info("socket"))
-    print(ctx.endpoint)
     ctx.awaiting_connection = True
     while True:
         data : bytearray = bytearray(await reader.read(PacketHeader.SIZE))
         packet = Packet(header_bytes=data)
+        if not ctx.proxy_guid:
+            ctx.proxy_guid = packet.header.guid
         packet_size : int = packet.header.packet_size.value
         data = bytearray(await reader.read(packet_size))
         packet.deserialize(data)
         if packet.header.packet_type != PacketType.Unknown:
-            ctx.disconnect_timer = 5
+            ctx.disconnect_timer = 30
         if ctx.proxy_guid and ctx.awaiting_connection:
             ctx.game_connected = True
             ctx.awaiting_connection = False
             print("SMO Connected")
         match packet.header.packet_type:
             case PacketType.Connect:
-                ctx.proxy_guid = packet.header.guid
+                if ctx.proxy_guid != packet.header.guid:
+                    ctx.proxy_guid = packet.header.guid
                 init_packet = Packet(guid=ctx.proxy_guid, packet_type=PacketType.Init)
                 # Insert init packet at 0 in queue so other packets added before aren't dropped.
                 ctx.proxy_msgs.insert(0, init_packet)
@@ -278,6 +332,8 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
                 shine_id : int = packet.packet.id.value
                 print(f"Got {shine_id}")
                 ctx.server_msgs.append({"cmd": "LocationChecks", "locations" : [shine_id]})
+                if shine_id in multi_moon_locations:
+                    ctx.multi_moon_anim = True
             case PacketType.Item:
                 item_type : int = packet.packet.item_type.value
                 item_name = packet.packet.name
@@ -288,12 +344,18 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
             case PacketType.RegionalCollect:
                 pass
                 # shine_id: int = packet.packet.id.value
+            case PacketType.Progress:
+                ctx.player_data.world_scenarios[inverse_worlds[packet.packet.world_id]] = packet.packet.scenario
+                ctx.server_msgs.append({"cmd": "Set", "operations": [{"operation" : "replace", "value" :
+                                                                     ctx.player_data.world_scenarios}]})
 
+            case PacketType.Deathlink:
+                if ctx.death_link_enabled:
+                    await ctx.send_death()
 
         if len(ctx.proxy_msgs) > 0 and ctx.game_connected:
             for i in range(len(ctx.proxy_msgs)):
                 response : Packet = ctx.proxy_msgs.pop(0)
-                #print(response.header.packet_type)
                 b = response.serialize()
                 writer.write(b)
                 await writer.drain()
