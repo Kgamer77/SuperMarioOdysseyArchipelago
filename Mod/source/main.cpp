@@ -103,6 +103,28 @@ void updatePlayerInfo(GameDataHolderAccessor holder, PlayerActorBase* playerBase
             }
         }
 
+        if (isInGame && !PlayerFunction::isPlayerDeadStatus(playerBase) && Client::isApDeath())
+        {
+            GameDataFunction::killPlayer(holder);
+            playerBase->startDemoPuppetable();
+            al::setVelocityZero(playerBase);
+            rs::faceToCamera(playerBase);
+            ((PlayerActorHakoniwa*)playerBase)->mPlayerAnimator->endSubAnim();
+            ((PlayerActorHakoniwa*)playerBase)->mPlayerAnimator->startAnimDead();
+            Client::setApDeath(false);
+        }
+
+        if (isInGame && PlayerFunction::isPlayerDeadStatus(playerBase) && !Client::isDying())
+        {
+            Client::sendDeathlinkPacket();
+            Client::setDying(true);
+        }
+
+        if (isInGame && !PlayerFunction::isPlayerDeadStatus(playerBase) && Client::isDying())
+        {
+            Client::setDying(false);
+        }
+
         if (isYukimaru) {
             Client::sendGameInfPacket(holder);
         } else {
@@ -471,11 +493,6 @@ void sendCollectPacket(GameDataHolderAccessor thisPtr, al::PlacementId* placemen
     }
     
     // Add flag in client to determine when option is disabled and pass regularly to GameDataFunction
-}
-
-void sendDeathlinkPacket()
-{
-    // Stub
 }
 
 void onGrandShineStageChange(GameDataHolderWriter holder, ChangeStageInfo const* stageInfo) 
