@@ -50,12 +50,12 @@ class SMOProcedurePatch(APProcedurePatch):
 
         patch_data["atmosphere/contents/0100000000010000/romfs/SystemData/ItemList.szs"] = patch_items(rom_fs, options)
 
-        patch_dir = os.path.join(os.path.dirname(self.path), "atmosphere/contents/0100000000010000/romfs/")
+        patch_dir = os.path.join(self.path[:self.path.rindex("/")], "atmosphere/contents/0100000000010000/romfs/")
         os.makedirs(os.path.join(patch_dir, "LocalizedData/USen/MessageData/"))
         os.mkdir(os.path.join(patch_dir, "SystemData"))
         os.mkdir(os.path.join(patch_dir, "StageData"))
         for archive in patch_data:
-            file = open(os.path.join(os.path.dirname(self.path), archive), "wb")
+            file = open(os.path.join(self.path[:self.path.rindex("/")], archive), "wb")
             file.write(patch_data[archive])
             file.close()
 
@@ -67,7 +67,11 @@ def write_patch(self, patch : SMOProcedurePatch) -> None:
     out = json.dumps(data)
     patch.write_file("location_data.json", out.encode())
 
-    out = json.dumps(self.multiworld.player_name)
+    data = {}
+    for i in range(1, self.multiworld.players + 1):
+        data[i] = self.multiworld.get_player_name(i)
+
+    out = json.dumps(data)
     patch.write_file("player_names.json", out.encode())
 
     out = json.dumps(self.moon_counts)
@@ -483,9 +487,9 @@ def patch_shop_text(rom_fs : str, location_data : dict, player : int, names : di
             if not "Skip" in item:
                 if item in location_data:
                     item_classification = location_data[item][2]
-                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item][1].replace("_", " ")
+                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item].item.name.replace("_", " ")
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] += "\0"
-                    item_player = names[str(location_data[item][3])]
+                    item_player = names[location_data[item][3]]
                     item_game = location_data[item][0]
                     if item_game != "Super Mario Odyssey" and location_data[item][3] != player:
                         root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"]["message"] = \
