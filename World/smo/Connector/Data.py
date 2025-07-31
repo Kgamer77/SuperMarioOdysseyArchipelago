@@ -2749,8 +2749,8 @@ world_alias = {
 
 valid_warps = {
     "CapWorldHomeStage": "Cap",
-    "SandWorldHomeStage": "Cascade",
-    "WaterfallWorldHomeStage": "Sand",
+    "SandWorldHomeStage": "Sand",
+    "WaterfallWorldHomeStage": "Cascade",
     "ForestWorldHomeStage": "Wooded",
     "LakeWorldHomeStage": "Lake",
     "ClashWorldHomeStage": "Lost",
