@@ -291,7 +291,9 @@ async def proxy_chat(ctx : SMOContext):
                 else:
                     clear_msgs = False
             if ctx.multi_moon_anim:
+                ctx.multi_moon_anim = False
                 await asyncio.sleep(27.0)
+
             else:
                 await asyncio.sleep(5.0)
     except Exception as e:
@@ -345,7 +347,8 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
                 pass
                 # shine_id: int = packet.packet.id.value
             case PacketType.Progress:
-                ctx.player_data.world_scenarios[inverse_worlds[packet.packet.world_id]] = packet.packet.scenario
+                world = inverse_worlds[packet.packet.world_id.value]
+                ctx.player_data.world_scenarios[world] = packet.packet.scenario.value
                 ctx.server_msgs.append({"cmd": "Set", "operations": [{"operation" : "replace", "value" :
                                                                      ctx.player_data.world_scenarios}]})
 
@@ -361,6 +364,7 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
                 await writer.drain()
         if not ctx.game_connected and not ctx.awaiting_connection:
             break
+
     print("SMO Disconnected")
     ctx.player_data.item_index = 0
     ctx.awaiting_connection = True

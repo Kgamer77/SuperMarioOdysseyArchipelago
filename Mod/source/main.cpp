@@ -365,10 +365,38 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
     GameDataFile::HintInfo* curHintInfo =
     &thisPtr.mData->mGameDataFile->mShineHintList[curShine->mShineIdx];
     
+    if (curHintInfo->mUniqueID == 0) {
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "CapWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1086);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SandWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1096);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "LakeWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1094);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "ForestWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1089);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "CityWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1088);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SnowWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1087);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SeaWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1095);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "LavaWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1090);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SkyWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1091);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "MoonWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1165);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "PeachWorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1152);
+        if (strcmp(curShine->curShineInfo->stageName.cstr(), "Special1WorldHomeStage") == 0)
+            Client::sendShineCollectPacket(1123);
+    } else
+        Client::sendShineCollectPacket(curHintInfo->mUniqueID);
+
     switch (curHintInfo->mUniqueID) {
     //Cascade
         case 218:
-        Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
+            Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
             break;
 
     //Sand
@@ -440,39 +468,8 @@ void sendShinePacket(GameDataHolderAccessor thisPtr, Shine* curShine) {
             Client::setScenario(GameDataFunction::getCurrentWorldId(thisPtr), 2);
             break;
 
-        
- 
-        default:
-            break;
     }
 
-    if (curHintInfo->mUniqueID == 0)
-    {
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "CapWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1086);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SandWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1096);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "LakeWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1094);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "ForestWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1089);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "CityWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1088);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SnowWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1087);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SeaWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1095);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "LavaWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1090);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "SkyWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1091);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "MoonWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1165);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "PeachWorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1152);
-        if (strcmp(curShine->curShineInfo->stageName.cstr(), "Special1WorldHomeStage") == 0)
-            Client::sendShineCollectPacket(1123);
-    } else Client::sendShineCollectPacket(curHintInfo->mUniqueID);
 }
 
 void sendItemPacket(GameDataFile thisPtr, ShopItem::ItemInfo* info, bool flag) {
