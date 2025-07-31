@@ -487,9 +487,10 @@ def patch_shop_text(rom_fs : str, location_data : dict, player : int, names : di
             if not "Skip" in item:
                 if item in location_data:
                     item_classification = location_data[item][2]
-                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item].item.name.replace("_", " ")
+                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item][1].replace("_", " ")
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] += "\0"
-                    item_player = names[location_data[item][3]]
+                    player_index = location_data[item][3]
+                    item_player = names[str(player_index)]
                     item_game = location_data[item][0]
                     if item_game != "Super Mario Odyssey" and location_data[item][3] != player:
                         root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"]["message"] = \
