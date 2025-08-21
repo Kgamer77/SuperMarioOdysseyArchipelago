@@ -502,6 +502,12 @@ void onStageChange(GameDataFile *file,const ChangeStageInfo* stageInfo, int para
     if (isPartOf(stageInfo->changeStageName.cstr(), "WorldHomeStage") &&
         Client::getScenario(stageInfo->changeStageName.cstr()) != stageInfo->scenarioNo)
     {
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Sand")) {
+            Client::setScenario(GameDataFunction::getWorldIndexWaterfall(), 3);
+        }
+        if (isPartOf(stageInfo->changeStageName.cstr(), "Metro")) {
+            Client::setScenario(GameDataFunction::getWorldIndexClash(), 2);
+        }
         if (isPartOf(stageInfo->changeStageName.cstr(), "Clash"))
         {
             Client::sendShineCollectPacket(2501);
