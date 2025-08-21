@@ -108,7 +108,7 @@ class SMOPlayer:
 
         if item_name in self.MAX_MOONS:
             if self.moons[item_name] >= self.MAX_MOONS[item_name]:
-                raise f"{item_name} out of bounds. Already received max amount of {item_name}s"
+                return -1
         moon_id : int = moon_list["Mushroom" if item_name == "Power Star" else item_name.split(" ")[0]][self.moons[item_name]]
         self.moons[item_name] += 1
         return moon_id
