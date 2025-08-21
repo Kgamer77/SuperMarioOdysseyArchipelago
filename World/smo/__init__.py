@@ -348,6 +348,11 @@ class SMOWorld(World):
                 item = item_names.pop(random.randint(0, len(item_names) - 1))
                 self.get_location(item).place_locked_item(self.create_item(item))
 
+        # Remove start_inventory items from pool
+        for start_item in self.options.start_inventory:
+            for num in range(self.options.start_inventory[start_item]):
+                pool.remove(start_item)
+
         for i in pool:
             self.multiworld.itempool += [self.create_item(i)]
 
