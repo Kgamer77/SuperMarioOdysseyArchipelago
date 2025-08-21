@@ -21,3 +21,4 @@ settings.json
 /cache/
 /data/
 /World/smo/sarc/__pycache__/
+*.pyc
