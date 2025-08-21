@@ -1522,7 +1522,7 @@ void Client::updateItems(ItemCollect *packet) {
 
     struct ShopItem::ShopItemInfo amiiboData = {1, 1};
     struct ShopItem::ShopItemInfo *amiibo = &amiiboData;
-    struct ShopItem::ItemInfo info = {1, {}, (ShopItem::ItemType)0, 1, amiibo, true};
+    struct ShopItem::ItemInfo info = {1, {}, static_cast<ShopItem::ItemType>(packet->type), 1, amiibo, true};
     strcpy(info.mName, packet->name);
     info.mType = (ShopItem::ItemType)(packet->type);
     struct ShopItem::ItemInfo* infoPtr = &info;
