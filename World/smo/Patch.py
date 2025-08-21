@@ -479,20 +479,21 @@ def patch_shop_text(rom_fs : str, location_data : dict, player : int, names : di
         data = item_text.get_file_data(i + ".msbt")
         root = Msbt.Msbt(data.tobytes())
 
-        for item in file_to_items[i]:
+        for item in file_to_items[i].keys():
             internal_name = ("MarioColor" + item) if "Luigi" in item or "Wario" in item or "Waluigi" in item or "Classic" in item or "Gold" in item else ("Mario" + item) if i == "ItemCap" or i == "ItemCloth" else item
             if i == "ItemCap" or i == "ItemCloth":
-                internal_name = internal_name.replace(" Cap","").replace("Clothes", "")
+                internal_name = internal_name.replace(" Cap","").replace("Clothes", "").replace(" ", "")
             item_classification : ItemClassification
             if not "Skip" in item:
-                if item in location_data:
-                    item_classification = location_data[item][2]
-                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[item][1].replace("_", " ")
+                location_item = file_to_items[i][item]
+                if location_item in location_data:
+                    item_classification = location_data[location_item][2]
+                    root.msbt["labels"][internal_name.replace(" ", "")]["message"] =  location_data[location_item][1].replace("_", " ")
                     root.msbt["labels"][internal_name.replace(" ", "")]["message"] += "\0"
-                    player_index = location_data[item][3]
+                    player_index = location_data[location_item][3]
                     item_player = names[str(player_index)]
-                    item_game = location_data[item][0]
-                    if item_game != "Super Mario Odyssey" and location_data[item][3] != player:
+                    item_game = location_data[location_item][0]
+                    if item_game != "Super Mario Odyssey" and location_data[location_item][3] != player:
                         root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"]["message"] = \
                             ("Comes from the world of " + item_game.replace("_", " ") +  ".\nSeems to belong to " + item_player +
                             ".\n")
@@ -505,9 +506,9 @@ def patch_shop_text(rom_fs : str, location_data : dict, player : int, names : di
                             "message"] += "\0"
 
                     else:
-                        if location_data[item][1] in filler_item_table.keys():
+                        if location_data[location_item][1] in filler_item_table.keys():
                             root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"][
-                                "message"] = filler_item_table[location_data[item][1]] + "\0"
+                                "message"] = filler_item_table[location_data[location_item][1]] + "\0"
                         else:
                             root.msbt["labels"][internal_name.replace(" ", "") + "_Explain"][
                                 "message"] = ("I may need this!" if item_classification == ItemClassification.progression_skip_balancing or item_classification ==
