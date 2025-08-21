@@ -220,8 +220,13 @@ class SMOContext(CommonContext):
 
                         # Moons
                         case -1:
-                            packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Shine,
-                                            packet_data=[self.player_data.get_next_moon(net_item.item)])
+                            next_moon : int = self.player_data.get_next_moon(net_item.item)
+                            if next_moon > -1:
+                                packet = Packet(guid=self.proxy_guid, packet_type=PacketType.Shine,
+                                                packet_data=[next_moon])
+                            else:
+                                logger.info(f"Received nonexistent moon. This is either caused by a bug or the use of commands to give"
+                                            f" this slot more of a type of moon than can possibly exist.")
                         # Regional Coins
                         case -2:
                             pass
@@ -244,10 +249,16 @@ class SMOContext(CommonContext):
 
             case "Retrieved":
                 if f"{self.player_data.player.name}_scenarios" in args["keys"] and args["keys"][f"{self.player_data.player.name}_scenarios"] is dict:
-                    self.player_data.world_scenarios = args["keys"][f"{self.player_data.player.name}_scenarios"]
+                    for key in self.player_data.world_scenarios.keys():
+                        if self.player_data.world_scenarios[key] <= args["keys"][f"{self.player_data.player.name}_scenarios"][key]:
+                            self.player_data.world_scenarios[key] = args["keys"][f"{self.player_data.player.name}_scenarios"][key]
                     for world in self.player_data.world_scenarios.keys():
                         self.proxy_msgs.append(Packet(guid=self.proxy_guid, packet_type=PacketType.Progress,
                                                       packet_data=[inverse_worlds[world], self.player_data.world_scenarios[world]]))
+
+                    self.server_msgs.append({"cmd": "Set", "key": f"{self.player_data.player.name}_scenarios",
+                                             "operations": [
+                                                 {"operation": "replace", "value": self.player_data.world_scenarios}]})
                 else:
                     self.server_msgs.append({"cmd" : "Set", "key" : f"{self.player_data.player.name}_scenarios",
                                             "operations" : [{ "operation" : "replace", "value" : self.player_data.world_scenarios}]})
@@ -305,6 +316,7 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
     packet : Packet
     ctx.endpoint = Endpoint(writer.transport.get_extra_info("socket"))
     ctx.awaiting_connection = True
+
     while True:
         data : bytearray = bytearray(await reader.read(PacketHeader.SIZE))
         packet = Packet(header_bytes=data)
@@ -318,7 +330,7 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
         if ctx.proxy_guid and ctx.awaiting_connection:
             ctx.game_connected = True
             ctx.awaiting_connection = False
-            print("SMO Connected")
+            logger.info("SMO Connected")
         match packet.header.packet_type:
             case PacketType.Connect:
                 if ctx.proxy_guid != packet.header.guid:
@@ -349,8 +361,8 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
             case PacketType.Progress:
                 world = inverse_worlds[packet.packet.world_id.value]
                 ctx.player_data.world_scenarios[world] = packet.packet.scenario.value
-                ctx.server_msgs.append({"cmd": "Set", "operations": [{"operation" : "replace", "value" :
-                                                                     ctx.player_data.world_scenarios}]})
+                ctx.server_msgs.append({"cmd" : "Set", "key" : f"{ctx.player_data.player.name}_scenarios" , "operations": [{"operation" : "replace", "value" :
+                                                                        ctx.player_data.world_scenarios}]})
 
             case PacketType.Deathlink:
                 if ctx.death_link_enabled:
@@ -369,6 +381,7 @@ async def handle_proxy(reader : asyncio.StreamReader, writer : asyncio.StreamWri
     ctx.player_data.item_index = 0
     ctx.awaiting_connection = True
     writer.close()
+
 
 
 async def comm_loop(ctx : SMOContext):
