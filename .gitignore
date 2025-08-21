@@ -20,4 +20,4 @@ settings.json
 **/__pycache__/**
 /cache/
 /data/
-/World/smo/__pycache__
+/World/smo/sarc/__pycache__/
