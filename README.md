@@ -38,6 +38,8 @@ Using Options that Generate a Patch
 - If a world is generated using options that require additional romFS patches (`shop_sanity`, `colors`, `counts`) then an `<seed><slot><slot_name>.apsmo` file will be generated.
 - To generate the patch files open the patch file with the `Open Patch` option in the Archipelago Launcher.
 - This requires you to have an extracted romfs for Super Mario Odyssey (methods for extracting romfs will not be covered here) which you will be prompted to select the directory of when opening a patch file for the first time.
+- When changing any setting that generates a patch, make sure to replace the SMO mod with a fresh install to avoid confusion from changed mod files from previous generated patches.
+- Patch files will not generate properly if an `atmosphere` folder already exists in the same directory as the `.apsmo` patch file, so make sure to delete any previous `atmosphere` folder before opening a patch.
 <details>
 <summary>Switch</summary> 
   
