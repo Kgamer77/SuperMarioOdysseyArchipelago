@@ -37,6 +37,7 @@ Connecting to the Connector from Super Mario Odyssey.
 Using Options that Generate a Patch
 - If a world is generated using options that require additional romFS patches (`shop_sanity`, `colors`, `counts`) then an `<seed><slot><slot_name>.apsmo` file will be generated.
 - To generate the patch files open the patch file with the `Open Patch` option in the Archipelago Launcher.
+- This requires you to have an extracted romfs for Super Mario Odyssey (methods for extracting romfs will not be covered here) which you will be prompted to select the directory of when opening a patch file for the first time.
 <details>
 <summary>Switch</summary> 
   
