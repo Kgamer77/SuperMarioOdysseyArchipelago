@@ -767,9 +767,12 @@ void onStartHack(PlayerHackKeeper* keeper, al::HitSensor* hitSensor1, al::HitSen
 }
 
 bool growOnPlant(GrowFlowerPot* thisPtr) {
-    rs::setGrowFlowerTime(thisPtr, thisPtr->mPlacementId, 3600000);
+    // Instantly bump the growth level
+    rs::addGrowFlowerGrowLevel(thisPtr, thisPtr->mPlacementId, 3);
+
     return al::isActionEnd(thisPtr);
 }
+
 
 // _ZN16HakoniwaSequence15exeBootLoadDataEv = 0x50F29C - 0x50F304
 void onNewGameDemoStart(char* name, bool unkBool) {
