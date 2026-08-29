@@ -15,6 +15,7 @@ from worlds.AutoWorld import World
 from worlds.LauncherComponents import (Component, components, Type as component_type, SuffixIdentifier, launch as launch_component)
 from settings import Group, UserFolderPath
 from Utils import output_path
+from .Web_World import SMOWebWorld
 
 
 def launch_client(*args: str):
@@ -37,6 +38,8 @@ class SMOWorld(World):
     options_dataclass = SMOOptions
     options: SMOOptions
 
+    web = SMOWebWorld()
+    
     topology_present = True  # show path to required location checks in spoiler
 
     # ID of first item and location, could be hard-coded but code may be easier
