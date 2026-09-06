@@ -14,7 +14,5 @@ extern "C" {
  * @return Result code.
  * @note Syscall number 0x27.
  */
-Result svcOutputDebugString(const char *str, u64 size);
-
-
+Result svcOutputDebugString(const char* str, u64 size);
 }

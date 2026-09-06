@@ -9,5 +9,4 @@ struct PACKED CaptureInf : Packet {
     };
 
     char hackName[0x20] = {};
-
 };

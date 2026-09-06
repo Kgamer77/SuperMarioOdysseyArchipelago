@@ -1,10 +1,10 @@
 ---
-Language:        Cpp
+Language: Cpp
 AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: false
 AlignConsecutiveDeclarations: false
-AlignOperands:   true
+AlignOperands: true
 AlignTrailingComments: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Never
@@ -22,28 +22,41 @@ BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Attach
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
-ColumnLimit:     100
-CommentPragmas:  '^ (IWYU pragma:|NOLINT)'
+ColumnLimit: 160
+CommentPragmas: "^ (IWYU pragma:|NOLINT)"
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
 Cpp11BracedListStyle: true
 DerivePointerAlignment: false
-DisableFormat:   false
-ForEachMacros:   []
+DisableFormat: false
+ForEachMacros: []
+IncludeBlocks: Regroup
 IncludeCategories:
-  - Regex:           '^<[Ww]indows\.h>$'
-    Priority:        1
-  - Regex:           '^<'
-    Priority:        2
-  - Regex:           '^"'
-    Priority:        3
+  - Regex: ^("|<)hk/
+    Priority: 1
+  - Regex: ^("|<)(nn/|nvn/|vapours/)
+    Priority: 2
+  - Regex: ^("|<)sead/
+    Priority: 3
+  - Regex: ^("|<)al/
+    Priority: 4
+  - Regex: ^("|<)agl/
+    Priority: 5
+  - Regex: ^("|<)game/
+    Priority: 6
+  - Regex: ^("|<)custom/
+    Priority: 8
+  - Regex: ^<
+    Priority: 9
+  - Regex: ^"
+    Priority: 10
 IndentCaseLabels: false
-IndentWidth:     4
+IndentWidth: 4
 IndentWrappedFunctionNames: false
 KeepEmptyLinesAtTheStartOfBlocks: false
-MacroBlockBegin: ''
-MacroBlockEnd:   ''
+MacroBlockBegin: ""
+MacroBlockEnd: ""
 MaxEmptyLinesToKeep: 1
 NamespaceIndentation: None
 ObjCBlockIndentWidth: 4
@@ -56,19 +69,19 @@ PenaltyBreakString: 1000
 PenaltyExcessCharacter: 1000000
 PenaltyReturnTypeOnItsOwnLine: 60
 PointerAlignment: Left
-ReflowComments:  true
-SortIncludes:    true
+ReflowComments: true
+SortIncludes: CaseInsensitive
 SpaceAfterCStyleCast: false
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 2
-SpacesInAngles:  false
+SpacesInAngles: false
 SpacesInContainerLiterals: true
 SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-Standard: c++17
-TabWidth:        4
-UseTab:          Never
-...
+Standard: c++20
+TypeNames: [u8, s8, u16, s16, u32, s32, f32, u64, s64, f64]
+TabWidth: 4
+UseTab: Never

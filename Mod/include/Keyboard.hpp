@@ -1,53 +1,53 @@
 #pragma once
 
-#include <cstddef>
-#include "al/async/AsyncFunctorThread.h"
-#include "al/async/FunctorV0M.hpp"
-
 #include "nn/swkbd/swkbd.h"
 
-#include "logger.hpp"
+#include "sead/prim/seadSafeString.h"
+
+#include "al/Library/Thread/AsyncFunctorThread.h"
+
+#include <cstddef>
 
 typedef void (*KeyboardSetup)(nn::swkbd::KeyboardConfig&);
+const u8 MAX_HOSTNAME_LENGTH = 50;
+typedef sead::FixedSafeString<MAX_HOSTNAME_LENGTH + 1> hostname;
 
-class Keyboard {
-    public:
-        Keyboard(ulong strSize);
-        void keyboardThread();
+inline char* mResBuf = (char*)malloc(0x7d4);
+inline nn::swkbd::String mResString = nn::swkbd::String(0x7d4, mResBuf);
 
-        void openKeyboard(const char* initialText, KeyboardSetup setup);
+class Keyboard : public al::AsyncFunctorThread {
+public:
+    Keyboard();
+    void threadFunction();
 
-        const char* getResult() {
-            if (mThread->isDone()) {
-                return mResultString.cstr();
-            }
-            return nullptr;
-        };
+    void openKeyboard(const char* initialText, KeyboardSetup setupFunc) {
+        mInitialText = initialText;
+        mSetupFunc = setupFunc;
 
-        bool isKeyboardCancelled() const { return mIsCancelled; }
+        start();
+    }
 
-        bool isThreadDone() { return mThread->isDone(); }
+    const char* getResult() {
+        if (isDone()) {
+            return mResString.cstr();
+        }
+        return nullptr;
+    };
 
-        void setHeaderText(const char16_t* text) { mHeaderText = text; }
-        void setSubText(const char16_t* text) { mSubText = text; }
+    bool isCancelled() const { return mIsCancelled; }
 
-    private:
+    void setHeaderText(const char* text) { mHeaderText = text; }
+    void setSubText(const char* text) { mSubText = text; }
 
-        al::AsyncFunctorThread* mThread;
-        nn::swkbd::String mResultString;
+private:
+    hostname mInitialText = hostname();
+    KeyboardSetup mSetupFunc = KeyboardSetup();
 
-        hostname mInitialText;
-        KeyboardSetup mSetupFunc;
+    const char* mHeaderText = "Enter Server IP Here!";
+    const char* mSubText = "Must be a Valid Address.";
 
-        const char16_t *mHeaderText = u"Enter Server IP Here!";
-        const char16_t* mSubText = u"Must be a Valid Address.";
+    bool mIsCancelled = false;
 
-        bool mIsCancelled = false;
-        
-        char* mWorkBuf;
-        int mWorkBufSize;
-        char* mTextCheckBuf;
-        int mTextCheckSize;
-        char* mCustomizeDicBuf;
-        int mCustomizeDicSize;
+    char* mWorkBuf = nullptr;
+    int mWorkBufSize = 0;
 };

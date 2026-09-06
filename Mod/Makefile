@@ -1,59 +1,87 @@
-# TODO (Khangaroo): Make this process a lot less hacky (no, export did not work)
-# See MakefileNSO
+.PHONY: debug clean release file_structure release_build
 
-.PHONY: all clean starlight send
+# Color definitions
+RESET := \033[0m
+BOLD := \033[1m
+RED := \033[31m
+GREEN := \033[32m
+YELLOW := \033[33m
+BLUE := \033[34m
+MAGENTA := \033[35m
+CYAN := \033[36m
+WHITE := \033[37m
 
 SMOVER ?= 100
-BUILDVER ?= 101 
-BUILDVERSTR ?= 1.0.1 
-IP ?= 10.0.0.221 # ftp server ip (usually is switch's local IP)
+BUILDVER ?= 101
+BUILDVERSTR ?= 0.7.5-pre
 DEBUGLOG ?= 0 # defaults to disable debug logger 
-SERVERIP ?= 0.0.0.0 # put debug logger server IP here
-ISEMU ?= 0 # set to 1 to compile for emulators
+SERVERIP ?= 192.168.178.41 # put debug logger server IP here
 
-PROJNAME ?= StarlightBase
+PROJNAME ?= SuperMarioOdysseyArchipelago
 
-all: starlight
+SWITCHPATH := package/$(PROJNAME)-Switch
+EMUPATH := package/$(PROJNAME)-Emulator
 
-starlight:
-	$(MAKE) all -f MakefileNSO SMOVER=$(SMOVER) BUILDVERSTR=$(BUILDVERSTR) BUILDVER=$(BUILDVER) DEBUGLOG=$(DEBUGLOG) SERVERIP=${SERVERIP} EMU=${ISEMU}
-	$(MAKE) starlight_patch_$(SMOVER)/*.ips
-	
-	mkdir -p starlight_patch_$(SMOVER)/atmosphere/exefs_patches/$(PROJNAME)/
-	mkdir -p starlight_patch_$(SMOVER)/atmosphere/contents/0100000000010000/exefs/
-	
-	mv starlight_patch_$(SMOVER)/3CA12DFAAF9C82DA064D1698DF79CDA1.ips starlight_patch_$(SMOVER)/atmosphere/exefs_patches/$(PROJNAME)/3CA12DFAAF9C82DA064D1698DF79CDA1.ips
-	mv $(shell basename $(CURDIR))$(SMOVER).elf starlight_patch_$(SMOVER)/subsdk1.elf
-	mv $(shell basename $(CURDIR))$(SMOVER).nso starlight_patch_$(SMOVER)/atmosphere/contents/0100000000010000/exefs/subsdk1
-	
-	cp -R romfs starlight_patch_$(SMOVER)/atmosphere/contents/0100000000010000
+SCONTENTPATH := $(SWITCHPATH)/atmosphere/contents/0100000000010000
+ECONTENTPATH :=  $(EMUPATH)/$(PROJNAME)
 
-starlight_patch_$(SMOVER)/*.ips: patches/*.slpatch patches/configs/$(SMOVER).config patches/maps/$(SMOVER)/*.map \
-								build$(SMOVER)/$(shell basename $(CURDIR))$(SMOVER).map scripts/genPatch.py
-	@rm -f starlight_patch_$(SMOVER)/*.ips
-	python3 scripts/genPatch.py $(SMOVER)
 
-# builds project with the file structure and flags used for emulators
-emu:
-	$(MAKE) all -f MakefileNSO SMOVER=$(SMOVER) BUILDVERSTR=$(BUILDVERSTR) BUILDVER=$(BUILDVER) EMU=1
-	$(MAKE) starlight_patch_$(SMOVER)/*.ips
+debug: format
+	cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG=TRUE -DPROJNAME=$(PROJNAME) -DSMOVER=$(SMOVER) -DBUILDVER=$(BUILDVER) -DBUILDVERSTR=$(BUILDVERSTR) -DSERVERIP=$(SERVERIP) -DDEBUGLOG=$(DEBUGLOG) -S . -B build && $(MAKE) -C build
 
-	mkdir -p starlight_patch_$(SMOVER)/yuzu/
+release_build: clean format
+	cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG=FALSE -DPROJNAME=$(PROJNAME) -DSMOVER=$(SMOVER) -DBUILDVER=$(BUILDVER) -DBUILDVERSTR=$(BUILDVERSTR) -DSERVERIP=$(SERVERIP) -DDEBUGLOG=0 -S . -B build && $(MAKE) -C build
 
-	mv starlight_patch_$(SMOVER)/3CA12DFAAF9C82DA064D1698DF79CDA1.ips starlight_patch_$(SMOVER)/yuzu/3CA12DFAAF9C82DA064D1698DF79CDA1.ips
-	mv $(shell basename $(CURDIR))$(SMOVER).elf starlight_patch_$(SMOVER)/subsdk1.elf
-	mv $(shell basename $(CURDIR))$(SMOVER).nso starlight_patch_$(SMOVER)/yuzu/subsdk1
-# builds and sends project to FTP server hosted on provided IP
-send: all
-	python3 scripts/sendPatch.py $(IP) $(PROJNAME)
+release:
+	$(MAKE) release_build
+	$(MAKE) file_structure
 
-log: all
-	python3 scripts/tcpServer.py $(SERVERIP)
+setup:
+	python sys/tools/setup_libcxx_prepackaged.py
+	python sys/tools/setup_sail.py
 
-sendlog: all
-	python3 scripts/sendPatch.py $(IP) $(PROJNAME) $(USER) $(PASS)
-	python3 scripts/tcpServer.py $(SERVERIP)
+format:
+	clear || true
+	find ./src -name "*.*" | xargs clang-format -i || true
+	find ./include -name "*.*" | xargs clang-format -i || true
+	find ./lib/custom -name "*.*" | xargs clang-format -i || true
 
 clean:
-	$(MAKE) clean -f MakefileNSO
-	@rm -fr starlight_patch_*
+	rm -r build || true
+
+file_structure:
+	@echo ""
+	@echo "$(CYAN)════════════════════════════════════════════════════════════════$(RESET)"
+	@echo "$(BOLD)$(WHITE)  Creating deployment structures...$(RESET)"
+	@echo "$(CYAN)════════════════════════════════════════════════════════════════$(RESET)"
+	
+	@echo "$(YELLOW)  → Creating Switch (Atmosphere) structure...$(RESET)"
+	@mkdir -p $(SCONTENTPATH)/exefs/
+	
+	@echo "$(YELLOW)  → Creating Emulator (SMOO-Plus) structure...$(RESET)"
+	@mkdir -p $(EMUPATH)/$(PROJNAME)/exefs/
+	@mkdir -p $(EMUPATH)/$(PROJNAME)/romfs/
+
+	@echo "$(BLUE)  → Copying subsdk binaries...$(RESET)" 
+	@cp build/$(PROJNAME).nso $(SCONTENTPATH)/exefs/subsdk4 
+	@cp build/$(PROJNAME).nso $(ECONTENTPATH)/exefs/subsdk4 
+
+	@echo "$(BLUE)  → Copying npdm file...$(RESET)"
+	@cp build/main.npdm $(SCONTENTPATH)/exefs/main.npdm 
+	@cp build/main.npdm $(ECONTENTPATH)/exefs/main.npdm 
+
+	@echo "$(BLUE)  → Moving NSS debug symbols...$(RESET)"
+	@mv build/$(PROJNAME).nss package/$(PROJNAME).nss || true
+	
+	@echo "$(BLUE)  → Copying romfs data...$(RESET)"
+	@cp -R romfs/ $(SCONTENTPATH)
+	@cp -R romfs/ $(ECONTENTPATH) 2>/dev/null || true
+
+	@echo ""
+	@echo "$(GREEN)════════════════════════════════════════════════════════════════$(RESET)"
+	@echo "$(BOLD)$(GREEN)  ✓ Build complete!$(RESET)"
+	@echo "$(GREEN)════════════════════════════════════════════════════════════════$(RESET)"
+	@echo "$(WHITE)  Switch (Atmosphere):  $(CYAN)package/$(PROJNAME)-Switch/atmosphere/$(RESET)"
+	@echo "$(WHITE)  Emulator (SMOO-Plus): $(CYAN)package/$(PROJNAME)-Emulator/SMOO-Plus/$(RESET)"
+	@echo "$(GREEN)════════════════════════════════════════════════════════════════$(RESET)"
+	@echo ""
