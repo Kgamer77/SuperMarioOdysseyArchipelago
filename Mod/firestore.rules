@@ -1,0 +1,97 @@
+rules_version = '2';
+
+// Multiplayer lobby/signaling. Same trust model as the tracker's
+// firestore.rules: access is entirely room-code-based (the path itself),
+// not FirebaseAuth. See docs/multiplayer-database-guide.md for the full
+// design - this only covers Stage 1 (Firestore lobby + STUN candidate
+// exchange for direct P2P). No relay/TURN fallback yet.
+//
+// IMPORTANT - password is NOT a real security boundary here: Firestore
+// rules can only inspect the resource being read/written, not an arbitrary
+// "here's the password I'm claiming" value a reader supplies - there's no
+// request body on a read the way there would be on an HTTP POST. So
+// passwordHash below is client-side UX only (the joiner's client hashes
+// what they typed and compares it locally after reading the room doc) -
+// anyone who reads the raw document directly (not through the tracker UI)
+// can see hostConnectInfo regardless of whether they know the password.
+// Real enforcement would need FirebaseAuth or a Cloud Function checking the
+// password server-side before returning connect info - explicitly out of
+// scope for now (see the guide's "no Firebase Auth" decision). Don't put
+// anything in a room document you wouldn't be fine with a stranger reading
+// if they guessed/found the room code.
+//
+// Paste this into Firebase Console -> Firestore Database -> Rules -> Publish
+// for the smo-randomizer-mp project (a SEPARATE project from the tracker's
+// smo-randomizer-tracker - don't paste this into that one or vice versa).
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /rooms/{roomCode} {
+      // Anyone with the room code can read the room (to check it exists,
+      // pull the seed, and read the host's STUN candidate once punching
+      // starts).
+      allow read: if true;
+
+      // Host creates the room. Shape-checked to catch obviously malformed
+      // writes, not a real security boundary (see note above). settingsBlob
+      // is an opaque hex-encoded settings snapshot (see MpLobby.h's
+      // kMaxSettingsBlobLength for the size derivation) - a joiner adopts
+      // the host's exact seed/settings rather than choosing their own.
+      // hasPassword is separate from passwordHash being non-empty: hashing
+      // an empty password still produces a real-looking hash string, so
+      // hasPassword is what the room-list view (a field-masked query that
+      // never sees passwordHash at all) actually checks.
+      allow create: if request.resource.data.keys().hasOnly(
+                          ['hostName', 'passwordHash', 'hasPassword', 'seed',
+                           'hostConnectInfo', 'status', 'createdAt', 'settingsBlob'])
+                    && request.resource.data.hostName is string
+                    && request.resource.data.hostName.size() < 32
+                    && request.resource.data.passwordHash is string
+                    && request.resource.data.passwordHash.size() < 128
+                    && request.resource.data.hasPassword is bool
+                    && request.resource.data.seed is int
+                    && request.resource.data.hostConnectInfo is string
+                    && request.resource.data.hostConnectInfo.size() < 64
+                    && request.resource.data.status == 'open'
+                    && request.resource.data.settingsBlob is string
+                    && request.resource.data.settingsBlob.size() < 1200;
+
+      // Host updates its own room (e.g. refreshing hostConnectInfo if its
+      // STUN candidate changes, publishing settingsBlob once generation
+      // finishes, or flipping status to 'closed'). No ownership check yet -
+      // anyone who knows the room code can currently overwrite it. Flagged
+      // as a real gap in the guide (§4) to revisit once Stage 1 proves the
+      // connect flow out; not a blocker for solo/trusted testing.
+      allow update: if request.resource.data.keys().hasOnly(
+                          ['hostName', 'passwordHash', 'hasPassword', 'seed',
+                           'hostConnectInfo', 'status', 'createdAt', 'settingsBlob'])
+                    && request.resource.data.hasPassword is bool
+                    && request.resource.data.hostConnectInfo is string
+                    && request.resource.data.hostConnectInfo.size() < 64
+                    && request.resource.data.status in ['open', 'closed']
+                    && request.resource.data.settingsBlob is string
+                    && request.resource.data.settingsBlob.size() < 1200;
+
+      allow delete: if false;
+
+      match /players/{playerId} {
+        // Anyone with the room code can see who's in the lobby and read
+        // their STUN candidates (needed for the host to learn where to
+        // send punch packets).
+        allow read: if true;
+
+        // A joiner writes/updates only its own presence doc (client picks
+        // playerId, e.g. a random session token - not tied to any real
+        // identity since there's no auth here).
+        allow create, update: if request.resource.data.keys().hasOnly(
+                                     ['displayName', 'connectInfo', 'joinedAt'])
+                              && request.resource.data.displayName is string
+                              && request.resource.data.displayName.size() < 32
+                              && request.resource.data.connectInfo is string
+                              && request.resource.data.connectInfo.size() < 64;
+
+        // Leaving cleans up your own presence doc.
+        allow delete: if true;
+      }
+    }
+  }
+}
