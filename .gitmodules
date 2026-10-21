@@ -8,6 +8,6 @@
 [submodule "Mod/sys"]
 	path = Mod/sys
 	url = https://github.com/fruityloops1/LibHakkun
-[submodule "Mod/lib/APCpp"]
-	path = Mod/lib/APCpp
-	url = https://github.com/N00byKing/APCpp
+[submodule "Mod/lib/APCppNX"]
+	path = Mod/lib/APCppNX
+	url = https://github.com/Kgamer77/APCppNX

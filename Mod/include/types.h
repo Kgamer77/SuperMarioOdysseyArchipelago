@@ -52,10 +52,10 @@ typedef __builtin_va_list va_list;
 #define va_start(v, l) __builtin_va_start(v, l)
 #define va_end(v) __builtin_va_end(v)
 
-#define RAD(deg) (deg * (M_PI / 180))             // converts Degrees to Radians
-#define DEG(rad) (rad * (180 / M_PI))             // converts Radians to Degrees
-#define BTOC(bool) (bool ? "True" : "False")      // converts boolean to true/false char
-#define ACNT(arr) (sizeof(arr) / sizeof(arr[0]))  // returns size of inputted array
+#define RAD(deg) (deg * (M_PI / 180)) // converts Degrees to Radians
+#define DEG(rad) (rad * (180 / M_PI)) // converts Radians to Degrees
+#define BTOC(bool) (bool ? "True" : "False") // converts boolean to true/false char
+#define ACNT(arr) (sizeof(arr) / sizeof(arr[0])) // returns size of inputted array
 // used to convert macro values to strings
 #define STRINGIFY(x) #x
 #define TOSTRING(x) STRINGIFY(x)
@@ -68,7 +68,13 @@ typedef u32 Result;
 typedef u32 Handle;
 typedef void (*ThreadFunc)(void*);
 
-enum Direction { RIGHT = 0, LEFT = 1, UP = 2, DOWN = 3 };
+enum Direction
+{
+    RIGHT = 0,
+    LEFT = 1,
+    UP = 2,
+    DOWN = 3
+};
 
 struct Rect {
     float left;
