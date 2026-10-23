@@ -6,6 +6,7 @@
 #include "al/Library/Thread/AsyncFunctorThread.h"
 #include "sead/heap/seadHeap.h"
 #include <basis/seadTypes.h>
+#include <set>
 #include <vector>
 
 #include "SD/SDHooks.h"
@@ -78,3 +79,5 @@ public:
 using DataFrameVector = std::vector<u8, DataFrameAllocator<u8>>;
 template <typename T>
 using vector = std::vector<T, DataFrameAllocator<T>>;
+template <typename T>
+using set = std::set<T, std::less<T>, DataFrameAllocator<T>>;

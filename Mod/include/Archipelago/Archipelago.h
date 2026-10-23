@@ -18,7 +18,7 @@
 #include <string>
 #include <vector>
 
-#include "APCpp/Archipelago.h"
+#include "APCppNX/Archipelago.h"
 #include "Archipelago/ArchipelagoHelpers.hpp"
 #include "Archipelago/ArchipelagoHintArrow.h"
 #include "Archipelago/ArchipelagoSocket.h"
@@ -122,7 +122,7 @@ namespace Archipelago {
     // Separate IP for Archipelago Client
     static sead::FixedSafeString<kArchipelagoNameSize> sApClientIP;
     static sead::FixedSafeString<kArchipelagoNameSize> sHostName;
-    static ushort sArchipelagoPort = kArchipelagoDefaultPort;
+    static u16 sArchipelagoPort = kArchipelagoDefaultPort;
     static sead::FixedSafeString<kArchipelagoNameSize> sSlotName;
     static sead::FixedSafeString<kArchipelagoNameSize> sPassword;
     static sead::FixedSafeString<kArchipelagoSeedSize> sSeedName;
@@ -318,7 +318,7 @@ namespace Archipelago {
     inline void setPort(ushort port) {
         sArchipelagoPort = port;
     };
-    inline ushort getPort() {
+    inline u16 getPort() {
         return sArchipelagoPort;
     };
 
@@ -491,8 +491,8 @@ namespace Archipelago {
     inline Shine* getStoryShine(int index) {
         return sStoryShineArray[index];
     };
-    inline void setGoal(u8 value) {
-        sGoal = value;
+    inline void setGoal(int value) {
+        sGoal = static_cast<u8>(value);
     };
     inline u8 getGoal() {
         return sGoal;
@@ -579,4 +579,7 @@ namespace Archipelago {
 
     PlayerActorHakoniwa* getPlayerActorHakoniwa(); // Returns nullptr if the player is not a PlayerActorHakoniwa
 
+    // ===== Archipelago Status Methods
+    bool isConnected();
+    bool isRefused();
 } // namespace Archipelago
