@@ -1,25 +1,8 @@
 from dataclasses import dataclass
 
-from Options import Toggle, DefaultOnToggle, Choice, FreeText, Range, PerGameCommonOptions, DeathLink, NamedRange, OptionGroup, Visibility
+from Options import Toggle, DefaultOnToggle, Choice, FreeText, Range, PerGameCommonOptions, DeathLink, OptionSet, OptionGroup, Visibility
 
-#Main Randomization
-
-class StartingPosition(Choice):
-    """
-    Vanilla: A new file starts where the Odyssey drops Mario off, as normal.
-    Overworld: A new file starts at a random sub-area exit in the first kingdom instead of at the Odyssey.
-    Max: A new file starts at a random sub-area exit in the first kingdom, or inside a sub-area you can still walk back out of.
-    Odyssey: A new save file starts inside the Odyssey, so you do not see what kingdom you are in until you step outside.
-    """
-    display_name = "Starting Position"
-    option_vanilla = 0
-    option_overworld = 1
-    option_max = 2
-    option_odyssey = 3
-
-    default = 0  # default to vanilla
-
-
+#Moon Randomization
 class Goal(Choice):
     """Sets the completion goal. This is the kingdom you must get the last story multi moon in to win the game.
     Valid options: Metro (A Traditional Festival), Luncheon (Cookatiel Showdown), Moon (Beat the game), Dark (Arrival at Rabbit Ridge), Darker (A Long Journey's End)"""
@@ -36,30 +19,25 @@ class Goal(Choice):
 
     default = 13  # default to moon
 
+class RandomizeMoons(DefaultOnToggle):
+    """
+    Randomizes the placement of moons in the game.
+    """
+    display_name = "Randomize Moons"
 
-class RandomizePaintings(DefaultOnToggle):
+class KingdomMoonCounts(Choice):
     """
-    Randomizes the paintings in the game.
+    Vanilla: every kingdom keeps the number of moons it has in the vanilla game.
+    Enabled: the total number of moons is shared out across the kingdoms again. Moon Allocation Difficulty says how.
     """
-    display_name = "Randomize Paintings"
+    display_name = "Moon Reallocation"
 
-class RandomizeKingdomOrder(Toggle):
-    """
-    Randomize the starting kingdom and kingdom progress order.
-    """
-
-    display_name = "Randomize Kingdom Order"
-
-class RandomizeStartKingdomState(Toggle):
-    """
-    Randomized each kingdom’s initial state between its pre-peace, post-peace, and Moon Cube scenarios for eligible kingdoms.
-    """
-
-    display_name = "Randomize Start Kingdom State"
+    option_vanilla = 0
+    option_enabled = 1
 
 class TripleMoons(Choice):
     """
-    Standard: triple moons are swapped between one another, staying in their existing triple spots.
+    Vanilla: triple moons are swapped between one another, staying in their existing triple spots.
     Anywhere: triple-moon rewards can appear at any moon location. Story Progression still follows physical location.
     Randomized: triple moons can be from any kingdom. The same total is kept and the triple spots stay put; only the pool changes. Needs Randomized Moons on.
     Randomized + Anywhere: triple moons can be from any kingdom and can appear at any location. Needs Randomized Moons on.
@@ -68,38 +46,61 @@ class TripleMoons(Choice):
     
     display_name = "Triple Moons"
 
-    option_standard = 0
+    option_vanilla = 0
     option_anywhere = 1
     option_randomized = 2
     option_randomized_anywhere = 3
     option_one_check_triple = 4
 
-    default = 0  # default to standard
+    default = 0  # default to vanilla
 
-class LoadingZones(Choice):
+class WithRequirements(OptionSet):
     """
-    Randomizes the loading zones in the game.
-
-    Off: loading zones keep their original destinations
-    Small Chains: subareas are connecting in shorter sequences
-    Standard: loading zones are paired, so entering and backing out returns you to the same place. How often a chain keeps going is random.
-    Long Chains: subareas are connected in longer sequences.
-    Limited: loading zones swap sub-areas but never chain.
-    Decoupled: entrances and exits are shuffled separately, so leaving may take you somewhere new.
+    Determines whether certain options require other options to be enabled.
     """
 
-    display_name = "Randomize Loading Zones"
+    display_name = "Kingdoms with Requirements"
+    
+    valid_keys = frozenset({
+        "Vanilla Kingdoms", "Cap Kingdom", "Cloud Kingdom", "Moon Kingdom",
+    })
+    default = frozenset({"Moon Kingdom"})
 
-    option_off = 0
-    option_small_chain = 1
-    option_standard = 2
-    option_long_chain = 3
-    option_limited = 4
-    option_decoupled = 5
+class MoonRequirement(Range):
+    """
+    Determines the minimum number of moons required to progress in the game.
+    """
+    display_name = "Moon Requirement"
+    default = 124
+    low = 0
+    high = 657
 
-    default = 2  # default to Standard
+class RequirementDifficulty(Choice):
+    """
+    Determines the difficulty of meeting the moon requirement.
+    """
+    display_name = "Requirement Difficulty"
 
-#Logic Settings
+    option_easy = 0
+    option_normal = 1
+    option_hard = 2
+    option_harder = 3
+    option_hardest = 4
+    option_insane = 5
+    option_max = 6
+
+    default = 1  # default to normal
+
+class RequirementDeviation(Range):
+    """
+    How far each kingdom requirement may sit either side of its base value. A kingdom is rolled somewhere in base-deviation to base+deviation; the total stays what you set. Press A to type a number; 5 is the vanilla setting
+    """
+    display_name = "Requirement Deviation"
+    default = 5
+    low = 0
+    high = 20
+
+#Progression and Logic
 
 class LogicLevel(Choice):
     """
@@ -121,214 +122,76 @@ class LogicLevel(Choice):
 
     default = 1  # default to Casual
 
-class PrioritizeDifficultMovement(Toggle): #This is a stupid setting that probably needs to be removed.
+class SeedOpenness(Choice):
     """
-    Prioritize progress through harder movement than casual instead of being left to chance.
-
+    Claustrophbic: few places open at once.
+    Compact: fewer things open at a time compared to standard.
+    Standard: a balanced mix of dead ends, chains and cross-kingdom doors.
+    Open: more options open at any time.
+    Wide Open: plenty of options to explore.
     """
+    
+    display_name = "Seed Openness"
 
-    display_name = "Prioritize Difficult Movement"
-    visibility = Visibility.none
+    option_claustrophobic = 0
+    option_compact = 1
+    option_standard = 2
+    option_open = 3
+    option_wide_open = 4
 
-class SeedStyle(Choice):
+    default = 2  # default to standard
+
+class SeedDifficulty(Choice):
     """
-    Sets the style of the seed.
-    Standard: The standard progression, with a mix of captures abilities and path options randomly placed throughout the run.
-    Ability Rush: Captures and abilities appear earlier in the run, giving you more movement options.
-    Focused Route: Less overall exploration options for a more focused experience.
-    Explorer: More paths will open earlier, giving you more exploration options.
-    Mystery: The seed style is randomly chosen, for a more random experience. (dont really need this)
+    Relaxed: a short path, and what you need is found close to where you need it. Prefers casual movement.
+    Easy: a slightly shorter path with less back-and-forth than usual.
+    Standard: the usual path length, spread and movement demands.
+    Hard: a longer path, and harder movement is required where the Logic Level allows it.
+    Brutal: the longest path, maximum back-and-forth, and the hardest movement the Logic Level allows.
     """
+    
+    display_name = "Seed Difficulty"
 
-    display_name = "Seed Style"
+    option_relaxed = 0
+    option_easy = 1
+    option_standard = 2
+    option_hard = 3
+    option_brutal = 4
 
-    option_standard = 0
-    option_ability_rush = 1
-    option_focused_route = 2
-    option_explorer = 3
-    option_mystery = 4
+    default = 2  # default to standard
 
-    default = 0  # default to Standard
-    visibility = Visibility.none
-
-#Ability and Capture Lock
-
-class LockedCaptures(DefaultOnToggle):
+class UnlockPacing(Choice):
     """
-    Captures are unlocked by collecting Mushroom Kingdom moons. Or receiving the item from another game.
-    """
-
-    display_name = "Locked Captures"
-
-class LockedAbilites(DefaultOnToggle):
-    """
-    Abilities are unlocked by collecting Dark Side moons. Or receiving the item from another game.
-    """
-
-    display_name = "Locked Abilities"
-
-class StartingEquipment(Choice):
-    """
-    Scarce: Start with just a single jump and a cap throw.
-    Normal: also start with 2 captures and an extra ability
-    Plentiful: also start with 4 captures and 2 extra abilities
+    Front-Loaded: get abilities and captures early, so you can use them for movement throughout the run. 
+    Early: captures and abilities show up sooner than usual, giving you more movement options early on.
+    Standard: captures and abilities are spread evenly across the run.
+    Late: captures and abilities show up later than usual.
+    Back-Loaded: most of your moveset arrives in the last third of the run.
     """
 
-    display_name = "Starting Equipment"
+    display_name = "Unlock Pacing"
 
-    option_scarce = 0
-    option_normal = 1
-    option_plentiful = 2
+    option_front_loaded = 0
+    option_early = 1
+    option_standard = 2
+    option_late = 3
+    option_back_loaded = 4
 
-    default = 1 # default to normal
+    default = 2  # default to standard
 
-class ItemPool(Choice):
+class RandomizeKingdomOrder(DefaultOnToggle):
     """
-    Scarce: one copy of each capture and ability.
-    Normal: duplicated captures CAN appear.
-    """
-
-    display_name = "Item Pool"
-
-    option_scarce = 0
-    option_normal = 1
-
-    default = 1 # default to normal
-
-class AbilitiesForSale(Range):
-    """
-    Each Purple Shop sells this many seeded progressive ability offers. Shops can repeat offers, but an individual shop cannot.
+    Randomize the starting kingdom and kingdom progress order.
     """
 
-    display_name = "Abilities For Sale"
+    display_name = "Randomize Kingdom Order"
 
-    range_start = 0
-    range_end = 3
-
-    # Range options must define an explicit default value.
-    default = 1
-
-
-class CapturesForSale(Range):
+class RandomizeStartKingdomState(Toggle):
     """
-    Each Purple Shop sells this many seeded capture offers. Shops can repeat offers, but an individual shop cannot.
+    Randomized each kingdom’s initial state between its pre-peace, post-peace, and Moon Cube scenarios for eligible kingdoms.
     """
 
-    display_name = "Captures For Sale"
-
-    range_start = 0
-    range_end = 3
-
-    # Range options must define an explicit default value.
-    default = 1
-
-class MoonsForSale(DefaultOnToggle):
-    """
-    Each Purple Shop sells one Power Moon for every eligible kingdom.
-    """
-
-    display_name = "Moons For Sale"
-
-
-class PurpleShopPrice(Choice):
-    """
-    The regional-purple-coin price of every Purple Coin Shop offer.
-
-    """
-
-    display_name = "Purple Shop Price"
-
-    option_ten = 1
-    option_twenty = 20
-    option_twenty_five = 25
-    option_fifty = 50
-    option_onehundred = 100
-
-    default = 50 # default to fifty
-
-#Additional Options
-
-class MoonRequirements(Range):
-    """
-    The total number of moons required to unlock each kingdom.
-    """
-
-    display_name = "Moon Requirements"
-
-    range_start = 1
-    range_end = 657
-
-    # Range options must define an explicit default value.
-    default = 124
-
-
-class RequiredDifficulty(Choice):
-    """
-    Easy: kingdoms with fewer moons and earlier kingdoms need fewer.
-    Normal: vanilla requirement distribution.
-    Hard: kingdoms with fewer moons and earlier kingdoms need more, capped at 30% of each kingdom’s moons.
-    Harder: randomly assigns each eligible kingdom 0 to 40% of its moons, preserving the total.
-    Hardest: randomly assigns each eligible kingdom 0 to 60% of its moons, preserving the total.
-    Insane: randomly assigns each eligible kingdom 0 to 80% of its moons, preserving the total.
-    Max: randomly assigns each eligible kingdom 0 to its max moons, preserving the total.
-    """
-
-    display_name = "Required Difficulty"
-
-    option_easy = 0
-    option_normal = 1
-    option_hard = 2
-    option_harder = 3
-    option_hardest = 4
-    option_insane = 5
-    option_max = 6
-
-    default = 1 # default to normal
-
-class CapMoons(Choice):
-    """
-    Choose whether Cap moons award coins, abilities, captures, one of those two, or unlocks the next kingdom.
-    """
-
-    display_name = "Cap Moons"
-
-    option_coins = 0
-    option_abilities = 1
-    option_captures = 2
-    option_next_kingdom = 3
-
-    default = 0  # default to coins
-
-class CloudMoons(Choice):
-    """
-    Choose whether Cloud moons award coins, abilities, captures, one of those two, unlocks the next kingdom or unlocks paintings.
-
-    """
-
-    display_name = "Cloud Moons"
-
-    option_coins = 0
-    option_abilities = 1
-    option_captures = 2
-    option_next_kingdom = 3
-    option_paintings = 4
-
-    default = 0  # default to coins
-
-class MoonMoons(Choice):
-    """
-    Choose whether Moon Kingdom moons award coins, abilities, captures, one of those two, or unlocks the kingdom exit and chapel door.
-
-    """
-
-    display_name = "Moon Moons"
-
-    option_coins = 0
-    option_abilities = 1
-    option_captures = 2
-    option_exit_and_chapel = 3
-
-    default = 0  # default to coins
+    display_name = "Randomize Start Kingdom State"
 
 class WorldPeace(Choice):
     """
@@ -345,101 +208,194 @@ class WorldPeace(Choice):
 
     default = 0  # default to story progression
 
-class MoonRockKey(Toggle):
+class StartingPosition(Choice):
     """
-    Each Moon Rock kingdom has a randomized kingdom moon that must be found before Mario can open that kingdom’s Moon Rock.
+    Vanilla: A new file starts where the Odyssey drops Mario off, as normal.
+    Overworld: A new file starts at a random sub-area exit in the first kingdom instead of at the Odyssey.
+    Max: A new file starts at a random sub-area exit in the first kingdom, or inside a sub-area you can still walk back out of.
+    Odyssey: A new save file starts inside the Odyssey, so you do not see what kingdom you are in until you step outside.
+    """
+    display_name = "Starting Position"
+    option_vanilla = 0
+    option_overworld = 1
+    option_max = 2
+    option_odyssey = 3
 
+    default = 0  # default to vanilla
+
+class RandomizePaintings(DefaultOnToggle):
+    """
+    Randomizes the paintings in the game.
+    """
+    display_name = "Randomize Paintings"
+
+class PaintingsPool(OptionSet):
+    """
+    Vanilla: only the ten kingdoms that ship a painting are eligible. Checkpoints next to inaccessible painting moons are unlocked on kingdom world peace.
+    Extended: the vanilla ten plus Cap, Lost and Moon are eligible - thirteen kingdoms. Checkpoints next to inaccessible painting moons are unlocked on kingdom world peace.
+    All: Extended plus Cloud, Ruined and Dark Side are eligible - sixteen kingdoms. Checkpoints next to inaccessible painting moons are unlocked on kingdom world peace.
+    Custom: When Custom is selected only the kingdoms you select are eligible for having painting.
+    """
+
+    valid_keys = frozenset({
+        "Vanilla", "Extended", "All", "Custom", "Cap", "Cascade", "Sand", "Lake", "Wooded", "Cloud", "Lost", "Metro", "Seaside", "Luncheon", "Ruined", "Moon", "Dark Side"
+    })
+    default = frozenset({"Vanilla"})
+
+class PaintingPairs(Range):
+    """
+    A pair count you set yourself, from none at all up to the whole pool. Checkpoints next to inaccessible painting moons are unlocked on kingdom world peace.
+    NOTE: This option can only go up to the max amount of paintings in the pool, which is determined by the Painting Pool option. If you set this higher than the max, it will be capped to the max.
+    """
+
+    display_name = "Painting Pairs"
+
+    range_start = 0
+    range_end = 16
+
+    # Range options must define an explicit default value.
+    default = 10
+
+class PaintingUnlocks(DefaultOnToggle):
+    """
+    Paintings are earned from moons in the kingdoms whose Kingdom Moon Rewards include Painting Unlocks (Cloud Kingdom by default). Off, every painting in the seed is open from the start.
+    You will only start with one painting unlocked.
+    """
+
+    display_name = "Painting Unlocks"
+
+#Random Options
+class LoadingZones(Choice):
+    """
+    Randomizes the loading zones in the game.
+
+    Off: loading zones keep their original destinations
+    Coupled: loading zones are paired, so entering and backing out returns you to the same place. How often a chain keeps going is random.
+    Limited: loading zones swap sub-areas but never chain.
+    Decoupled: entrances and exits are shuffled separately, 
+    """
+
+    display_name = "Randomize Loading Zones"
+
+    option_off = 0
+    option_coupled = 1
+    option_limited = 2
+    option_decoupled = 3
+
+    default = 1  # default to Coupled
+
+class ShuffleStoryLoadingZones(Toggle):
+    """
+    Also shuffle the loading zones the story uses. The chapel door on the Moon is never shuffled. A shuffled story room still shows its OWN kingdom's progress, so finding the Metro sewer in Lost Kingdom still shows you Metro's scenario of it. (BETA ONLY: may break story progression.)
+    """
+    
+    display_name = "Shuffle Story Loading Zones"
+
+class ShopLocations(Choice):
+    """
+    Randomizes the locations of shops in the game.
+
+    Randomized: shop doors are ordinary loading zones and shuffle with everything else.
+    Swap: shop doors shuffle only with each other, so a shop door always leads to some shop. Metro's two street doors count as one.
+    Vanilla: shop doors keep their original destinations. Sand's back way into its shop is not a shop door and still shuffles.
+    """
+
+    display_name = "Randomize Shop Locations"
+
+    option_off = 0
+    option_randomized = 1
+    option_swap = 2
+    option_vanilla = 3
+
+    default = 1  # default to randomized
+
+class MoonRockKey(DefaultOnToggle):
+    """
+    Moon rocks are locked behind a check.
     """
 
     display_name = "Moon Rock Key"
 
-class KingdomsOnMap(Choice):
+class SubareaUnlocks(Choice):
     """
-    Vanilla: #Only the kingdoms progression has unlocked appear in the World Map.
-    Visited: Kingdoms visited but not unlocked appear in the World Map and are accessible from the Odyssey
-    Unlocked: Every kingdom is on the World Map from the start, in vanilla order, and accessible from the Odyssey. Progression still unlocks them one by one as normal.
-    """
-
-    display_name = "Kingdoms On Map"
-
-    option_vanilla = 0
-    option_visited = 1
-    option_unlocked = 2
-
-    default = 1  # default to visited
-
-class SMODeathLink(DeathLink):
-   __doc__ = DeathLink.__doc__ + "\n    In Super Mario Odyssey, Mario dying in any way sends a death and receiving a death causes Mario to die where he stands."
-
-#Misc Randomization
-
-class RandomizeChestOrder(Toggle):
-    """
-    Shuffle the order the chests must be opened in inside the Wooded, Mushroom, and Seaside sequential chest rooms. The moon comes from whichever chest is last.
+    Disabled: Optional sub-areas are open from the start. Story routes are never locked either way.
+    Per Kingdom: Optional sub-areas are locked per kingdom. One key per kingdom unlocks every kind of door in it.
+    Per Type: Optional sub-areas are locked by the kind of door they use. One key per kind - Warp Pipes, Moon Pipes, Open Passages, Doorways, Scarecrow Doors, Beanstalks
+    Per Kingdom + Type: Optional sub-areas are locked per kingdom and door kind, e.g. Sand Kingdom's Warp Pipes.
     """
 
-    display_name = "Randomize Chest Order"
+    display_name = "Subarea Unlocks"
 
-class RandomizeSkyboxes(Choice):
-    """
-    Skybox Randomization: None, Kingdoms, Subareas, Own Areas (same-type only), or Max (anything goes) (Can also be changed in game)
-    """
+    option_disabled = 0
+    option_per_kingdom = 1
+    option_per_type = 2
+    option_per_kingdom_and_type = 3
 
-    display_name = "Randomize Skyboxes"
-
-    option_none = 0
-    option_kingdoms = 1
-    option_subareas = 2
-    option_own_areas = 3
-    option_max = 4
-
-    default = 1  # default to kingdoms
-
-class StabilizeShaders(DefaultOnToggle):
-    """
-    Use original kingdom lighting and shaders when swapping skyboxes. Avoids brightness issues, removes some mood from scene. (Can also be changed in game)
-    """
-
-    display_name = "Stabilize Shaders"
-
-class RandomizeSphinxQuestions(DefaultOnToggle):
-    """
-    Randomizes Sphinx quiz questions. (Can also be changed in game)
-    """
-
-    display_name = "Randomize Sphinx Questions"
-
-class HintPrices(Choice):
-    """
-    How much hinting a location would cost. Cheap - 500 coins  Normal - 750 coins  Expensive - 1000 coins (Can also be changed in game)
-    """
-
-    display_name = "Hint Prices"
-
-    option_cheap = 0
-    option_normal = 1
-    option_expensive = 2
-
-    default = 1  # default to normal
+    default = 1  # default to Per Kingdom
 
 #Sanities
-
-class ShopSanity(Choice):
+class CaptureSanity(DefaultOnToggle):
     """
-    Adds various shop items to the pool. 
-    shuffle: shuffles outfits amongst themselves keeping them in your game 
-    Non-Outfits: the last things in purple coin shops
+    Every Capture starts locked and is unlocked via checks.
     """
 
-    display_name = "Shop Sanity"
+    display_name = "Capture Sanity"
 
-    option_off = 0
-    option_outfits = 1
-    option_non_outfits = 2
-    option_all = 3
-    option_shuffle = 4
+class AbilitySanity(Choice):
+    """
+    Vanilla: every ability is available from the start.
+    All: every ability starts locked and is unlocked by collecting moons.
+    Original: Mario's moves start locked, but the traversal abilities (swimming, grabbing, Jaxi, scooter, and so on) stay available.
+    Non-Progressive: every ability starts locked but you get the final form of each move immediately.
+    """
 
-    default = 0  # default to off
+    display_name = "Ability Sanity"
+
+    option_vanilla = 0
+    option_all = 1
+    option_original = 2
+    option_non_progressive = 3
+
+    default = 2  # default to original
+
+class HealthUpgradeSanity(Toggle):
+    """
+    Health upgrades are locked and unlocked by other people sending them to you. You start at 1 HP.
+    """
+
+    display_name = "Health Upgrade Sanity"
+
+class StartingEquipment(Choice):
+    """
+    Scarce: Start with just a single jump and a cap throw.
+    Normal: also start with 2 captures and an extra ability
+    Plentiful: also start with 4 captures and 2 extra abilities
+    """
+
+    display_name = "Starting Equipment"
+
+    option_scarce = 0
+    option_normal = 1
+    option_plentiful = 2
+
+    default = 1 # default to normal
+
+class BonusAbilitiesSanity(OptionSet):
+    """
+    Jump: a jump right after catching Cappy always works. 
+    Warp: no checkpoint warps; the Odyssey and Return to Start stay open. 
+    Wallet: yellow coins are not kept, so no gold-coin shopping. 
+    Purple Wallet: purple coins are not kept (out of logic). 
+    Paintings: paintings cannot be entered. 
+    Odyssey Travel: no moon deposits or flights; use Return to Start.
+    """
+
+    display_name = "Bonus Ability Sanity"
+    
+    valid_keys = frozenset({
+        "Jump", "Warp To Checkpoints", "Wallet", "Purple Wallet", "Paintings", "Odyssey Travel"
+    })
+    default = frozenset({})
 
 class RegionalCoinSanity(Choice):
     """
@@ -470,292 +426,181 @@ class CheckpointSanity(Toggle):
     default = 0  # default to off
     visibility = Visibility.none
 
-#Music Randomization
 
-class MusicRandomization(Choice):
+#Enemy Randomizer
+# class RandomizeEnemiesAndCaptures(Toggle):
+#     """
+#     Randomizes the enemies and captures with other enemies and captures.
+#     """
+
+#     display_name = "Randomize Enemies and Captures"
+#     visibility = Visibility.none
+
+# class RandomizeNPCS(Choice):
+#     """
+#     Randomizes the NPCs with one another.
+#     NPCS or Captures: Randomizes NPCs with other NPCS and captures.
+#     """
+
+#     display_name = "Randomize NPCs"
+
+#     option_off = 0
+#     option_npcs = 1
+#     option_npcs_or_captures = 2
+
+#     default = 0  # default to off
+#     visibility = Visibility.none
+
+#Shop Stuff
+class YellowCoinShopSlots(Range):
     """
-    Off: Uses the game’s original background music.
-    Standard: Randomized most BGM with one fixed shuffle per seed. Does not affect some event-specific music or cutscenes.
-    Extended: Each physical kingdom or subarea gets a stable randomized track for each vanilla music cue
-    Max: Each newly requested source theme picks a fresh random track (Can also be changed in game)
-    """
-
-    display_name = "Music Randomization"
-
-    option_off = 0
-    option_standard = 1
-    option_extended = 2
-    option_max = 3
-
-    default = 1  # default to standard
-
-class MusicOverlay(DefaultOnToggle):
-    """
-    Overlay randomized music name (Can also be changed in game)
-    """
-
-    display_name = "Music Overlay"
-
-class StreamerMode(Toggle):
-    """
-    Exclude Japanese-language theme variants from the music randomizer’s track pool.(Can also be changed in game)
-    """
-
-    display_name = "Streamer Mode"
-
-class Disable2DThemes(Toggle):
-    """
-    Keep the 8-bit arrangements out of the track pool, so no area is randomized into its 2D theme.
+    Yellow Coin Shops sells this many items.
     """
 
-    display_name = "Disable 2D Themes"
+    display_name = "Yellow Coin Shop Slots"
 
-class DisableExtraThemes(Toggle):
+    range_start = 0
+    range_end = 60
+
+    # Range options must define an explicit default value.
+    default = 1
+
+class PurpleCoinShopSlots(Range):
     """
-    Keep the tracks that are not kingdom or sub-are themes out of the pool.
-    """
-
-    display_name = "Disable Extra Themes"
-
-class DisableBossThemes(Toggle):
-    """
-    Keeps the boss battle themes out of the pool, so every fight keeps its own music and no ordinary area is randomized into a boss theme
-    """
-
-    display_name = "Disable Boss Themes"
-
-#Quality of Life
-
-class FastMoonDemos(Toggle):
-    """
-    Moons are collected almost instantly. (Can also be changed in game)
+    Purple Coin Shops sells this many items.
     """
 
-    display_name = "Fast Moon Demos"
+    display_name = "Purple Coin Shop Slots"
 
-class SkipCutsceneCameras(Toggle):
-    """
-    Skip the camera pan that plays when a switch reveals something (faster, less interruption). (Can also be changed in game)
-    """
+    range_start = 0
+    range_end = 20
 
-    display_name = "Skip Cutscene Cameras"
+    # Range options must define an explicit default value.
+    default = 1
 
-class MotionFreeControls(Toggle):
+class MinimumYellowCoinShopPrice(Range):
     """
-    No motion needed for cap throws/captures/rolling - each role uses a button instead. Remap which button on the Controls page (L/R to page there). (Can also be changed in game)
-    """
-
-    display_name = "Motion-Free Controls"
-
-class EasyMinigames(Toggle):
-    """
-    Jump-rope and volleyball award their two moons after 10 and 25 successful hits.
+    The minimum yellow coin price of every Yellow Coin Shop offer.
     """
 
-    display_name = "Easy Minigames"
+    display_name = "Minimum Yellow Coin Shop Price"
 
-class OneSheepHerding(Toggle):
-    """
-    Sheep-herding moons spawn after any one sheep reaches the pen.
-    """
+    range_start = 0
+    range_end = 9999
 
-    display_name = "One Sheep Herding"
+    # Range options must define an explicit default value.
+    default = 100
 
-class FreeCostumeMoons(Toggle):
+class MaximumYellowCoinShopPrice(Range):
     """
-    Costume-check NPC’s give their moon without requiring the matching cap and outfit. 
-    """
-
-    display_name = "Free Costume Moons"
-
-class AreaNameOverlay(Toggle):
-    """
-    Show a brief banner with the current area’s name when entering an overworld kingdom or a subarea. 
+    The maximum yellow coin price of every Yellow Coin Shop offer.
     """
 
-    display_name = "Area Name Overlay"
+    display_name = "Maximum Yellow Coin Shop Price"
 
-class RandomizeOutfits(Toggle):
-    """
-    Change to a random outfit everytime you die.
-    """
+    range_start = 0
+    range_end = 9999
 
-    display_name = "Randomize Outfits"
+    # Range options must define an explicit default value.
+    default = 2000
 
-class StartWithNeutralCapThrow(Toggle):
+class MinimumPurpleCoinShopPrice(Range):
     """
-    Always hand out Neutral Throw as the free starting cap throws instead of rolling one of the four. Logic solves the seed around it
-    """
-
-    display_name = "Start With Neutral Cap Throw"
-
-class EnableNoClip(Toggle):
-    """
-    Allow ZL + ZR + D-Pad Up to toggle No Clip. Disabled by default.
+    The minimum purple coin price of every Purple Coin Shop offer.
     """
 
-    display_name = "Enable No-Clip"
+    display_name = "Minimum Purple Coin Shop Price"
 
-#Tracker
+    range_start = 0
+    range_end = 100
 
-class TrackerOverlay(Choice):
+    # Range options must define an explicit default value.
+    default = 10
+
+class MaximumPurpleCoinShopPrice(Range):
     """
-    None: No tracker is displayed on screen
-    Basic: Only kingdoms with requirements are displayed on screen
-    Extended: All kingdoms are displayed on screen
-    Hints: Show available checks from that kingdom next to each kingdom
-    Guided: Show progress related checks from that kingdom next to each kingdom
-    (Can also be changed in game)
-    """
-
-    display_name = "Tracker Overlay"
-
-    option_none = 0
-    option_basic = 1
-    option_extended = 2
-    option_hints = 3
-    option_guided = 4
-
-    default = 0  # default to off
-
-class TrackerOnRight(Toggle):
-    """
-    Show the tracker on the right side of the screen instead of the left. (Can also be changed in game)
+    The maximum purple coin price of every Purple Coin Shop offer.
     """
 
-    display_name = "Tracker On Right"
+    display_name = "Maximum Purple Coin Shop Price"
 
-class CaveSkip(Choice):
-    """
-    None: do not show the Cave Skip checklist on the tracker.
-    Easy: show Ground Pound Jump-or-Backflip, Wall Jump, and Dive beside Cave Requirements.
-    Hard: show only Wall Jump beside Cave Requirements. (Can also be changed in game)
+    range_start = 0
+    range_end = 100
 
-    """
+    # Range options must define an explicit default value.
+    default = 100
 
-    display_name = "Cave Skip"
-
-    option_none = 0
-    option_easy = 1
-    option_hard = 2
-
-    default = 0  # default to none
-
-class MoonLimits(Choice):
-    """
-    None: kingdom counts are never color coded on the tracker.
-    Upper: a kingdom’s moon count turns green once it reaches the highest requirement that a kingdom could have been given.
-    Full: red below the lowest requirement that kingdom could have been given, yellow inside the range, green at or past the highest. (Can also be changed in game)
-
-    """
-
-    display_name = "Moon Limits"
-
-    option_none = 0
-    option_upper = 1
-    option_full = 2
-
-    default = 0  # default to none
-
-class TrackerTimer(DefaultOnToggle):
-    """
-    Shows the elapsed playtime clock at the top of the progress tracker. (Can also be changed in game)
-    """
-
-    display_name = "Tracker Timer"
-
-
-
+#DeathLink
+class SMODeathLink(DeathLink):
+   __doc__ = DeathLink.__doc__ + "\n    In Super Mario Odyssey, Mario dying in any way sends a death and receiving a death causes Mario to die where he stands."
 
 @dataclass
 class SMOOptions(PerGameCommonOptions):
-    starting_position: StartingPosition
     goal: Goal
-    seed_style : SeedStyle
-    locked_captures : LockedCaptures
-    locked_abilities : LockedAbilites
-    starting_equipment : StartingEquipment
-    item_pool : ItemPool
-    abilities_for_sale : AbilitiesForSale
-    captures_for_sale : CapturesForSale
-    moons_for_sale : MoonsForSale
-    purple_shop_price : PurpleShopPrice
-    moon_requirements : MoonRequirements
-    required_difficulty : RequiredDifficulty
-    cap_moons : CapMoons
-    cloud_moons : CloudMoons
-    moon_moons : MoonMoons
+    randomize_moons: RandomizeMoons
+    kingdom_moon_counts: KingdomMoonCounts
+    triple_moons: TripleMoons
+    with_requirements: WithRequirements
+    moon_requirement: MoonRequirement
+    requirement_difficulty: RequirementDifficulty
+    requirement_deviation: RequirementDeviation
+    logic_level: LogicLevel
+    seed_openness: SeedOpenness
+    seed_difficulty: SeedDifficulty
+    unlock_pacing: UnlockPacing
+    randomize_kingdom_order: RandomizeKingdomOrder
+    randomize_start_kingdom_state: RandomizeStartKingdomState
     world_peace : WorldPeace
+    starting_position : StartingPosition
+    randomize_paintings : RandomizePaintings
+    paintings_pool : PaintingsPool
+    painting_pairs : PaintingPairs
+    painting_unlocks : PaintingUnlocks
+    loading_zones : LoadingZones
+    shuffle_story_loading_zones : ShuffleStoryLoadingZones
+    shop_locations : ShopLocations
     moon_rock_key : MoonRockKey
-    kingdoms_on_map : KingdomsOnMap
-    death_link : SMODeathLink
-    randomize_chest_order : RandomizeChestOrder
-    randomize_skyboxes : RandomizeSkyboxes
-    stabilize_shaders : StabilizeShaders
-    randomize_sphinx_questions : RandomizeSphinxQuestions
-    hint_prices : HintPrices
-    shop_sanity : ShopSanity
+    subarea_unlocks : SubareaUnlocks
+    capture_sanity : CaptureSanity
+    ability_sanity : AbilitySanity
+    health_upgrade_sanity : HealthUpgradeSanity
+    starting_equipment : StartingEquipment
+    bonus_abilities_sanity : BonusAbilitiesSanity
     regional_coins : RegionalCoinSanity
     checkpoint_sanity : CheckpointSanity
-    music_randomization : MusicRandomization
-    music_overlay : MusicOverlay
-    streamer_mode : StreamerMode
-    disable_2d_themes : Disable2DThemes
-    disable_extra_themes : DisableExtraThemes
-    disable_boss_themes : DisableBossThemes
-    fast_moon_demos : FastMoonDemos
-    skip_cutscene_cameras : SkipCutsceneCameras
-    motion_free_controls : MotionFreeControls
-    easy_minigames : EasyMinigames
-    one_sheep_herding : OneSheepHerding
-    free_costume_moons : FreeCostumeMoons
-    area_name_overlay : AreaNameOverlay
-    randomize_outfits : RandomizeOutfits
-    start_with_neutral_cap_throw : StartWithNeutralCapThrow
-    enable_no_clip : EnableNoClip
-    tracker_overlay : TrackerOverlay
-    tracker_on_right : TrackerOnRight
-    cave_skip : CaveSkip
-    moon_limits : MoonLimits
-    tracker_timer : TrackerTimer
+    yellow_coin_shop_slots : YellowCoinShopSlots
+    purple_coin_shop_slots : PurpleCoinShopSlots
+    minimum_yellow_coin_shop_price : MinimumYellowCoinShopPrice
+    maximum_yellow_coin_shop_price : MaximumYellowCoinShopPrice
+    minimum_purple_coin_shop_price : MinimumPurpleCoinShopPrice
+    maximum_purple_coin_shop_price : MaximumPurpleCoinShopPrice
+    death_link : SMODeathLink
     # replace: ReplaceUnneededMoons
 
 
 option_groups = [
     OptionGroup(
         "Main Randomization",
-        [StartingPosition, Goal, RandomizePaintings, RandomizeKingdomOrder, RandomizeStartKingdomState, TripleMoons, LoadingZones],
+        [Goal, RandomizeMoons, KingdomMoonCounts, TripleMoons, WithRequirements, MoonRequirement, RequirementDifficulty, RequirementDeviation],
     ),
     OptionGroup(
-        "Logic Settings",
-        [LogicLevel, PrioritizeDifficultMovement, SeedStyle],
+        "Progression and Logic",
+        [LogicLevel, SeedOpenness, SeedDifficulty, UnlockPacing, RandomizeKingdomOrder, RandomizeStartKingdomState, WorldPeace, StartingPosition, RandomizePaintings, PaintingsPool, PaintingPairs, PaintingUnlocks],
     ),
     OptionGroup(
-        "Ability and Capture Lock",
-        [LockedCaptures, LockedAbilites, StartingEquipment, ItemPool, AbilitiesForSale, CapturesForSale, MoonsForSale, PurpleShopPrice],
-    ),
-    OptionGroup(
-        "Additional Options",
-        [MoonRequirements, RequiredDifficulty, CapMoons, CloudMoons, MoonMoons, WorldPeace, MoonRockKey, KingdomsOnMap, DeathLink],
-    ),
-    OptionGroup(
-        "Misc. Randomization",
-        [RandomizeChestOrder, RandomizeSkyboxes, StabilizeShaders, RandomizeSphinxQuestions, HintPrices],
+        "Random Options",
+        [LoadingZones, ShuffleStoryLoadingZones, ShopLocations, MoonRockKey, SubareaUnlocks],
     ),
     OptionGroup(
         "Sanities",
-        [ShopSanity, RegionalCoinSanity, CheckpointSanity],
+        [CaptureSanity, AbilitySanity, HealthUpgradeSanity, StartingEquipment, BonusAbilitiesSanity, RegionalCoinSanity, CheckpointSanity],
     ),
     OptionGroup(
-        "Music Randomization",
-        [MusicRandomization, MusicOverlay, StreamerMode, Disable2DThemes, DisableExtraThemes, DisableBossThemes],
+        "Shop Stuff",
+        [YellowCoinShopSlots, PurpleCoinShopSlots, MinimumYellowCoinShopPrice, MaximumYellowCoinShopPrice, MinimumPurpleCoinShopPrice, MaximumPurpleCoinShopPrice],
     ),
     OptionGroup(
-        "Quality of Life",
-        [FastMoonDemos, SkipCutsceneCameras, MotionFreeControls, EasyMinigames, OneSheepHerding, FreeCostumeMoons, AreaNameOverlay, RandomizeOutfits, StartWithNeutralCapThrow, EnableNoClip],
-    ),
-    OptionGroup(
-        "Tracker",
-        [TrackerOverlay, TrackerOnRight, CaveSkip, MoonLimits, TrackerTimer],
+        "DeathLink",
+        [SMODeathLink],
     ),
 ]

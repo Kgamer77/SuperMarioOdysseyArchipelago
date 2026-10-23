@@ -11,11 +11,10 @@ from .Options import SMOOptions
 from .Rules import set_rules
 from .Regions import create_regions
 from BaseClasses import Item, ItemClassification
-from worlds.AutoWorld import World
+from worlds.AutoWorld import World, WebWorld
 from worlds.LauncherComponents import (Component, components, Type as component_type, SuffixIdentifier, launch as launch_component)
 from settings import Group, UserFolderPath
 from Utils import output_path
-from .Web_World import SMOWebWorld
 
 
 def launch_client(*args: str):
@@ -27,7 +26,23 @@ component = Component("Super Mario Odyssey Client", component_type=component_typ
                       game_name="Super Mario Odyssey", func=launch_client)
 components.append(component)
 
+class SMOWebWorld(WebWorld):
+    game = "Super Mario Odyssey"
 
+    theme = "grass"
+
+    setup_en = Tutorial(
+        "Multiworld Setup Guide",
+        "A guide to setting up SMO for MultiWorld.",
+        "English",
+        "setup_en.md",
+        "setup/en",
+        ["Kgamer77"],
+    )
+
+    tutorials = [setup_en]
+
+    option_groups = option_groups
 class SMOWorld(World):
     """Super Mario Odyssey is a 3-D Platformer where Mario sets off across the world with his companion Cappy to save Princess Peach and Cappy's sister Tiara from Bowser's wedding plans."""
     game = "Super Mario Odyssey"
