@@ -1,0 +1,5 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+ClashWorldHomeStage,Lost Kingdom,Lost Kingdom,ClashWorldHomeStage::start,overworld,true,true,3,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ClashWorldShopStage,Lost Kingdom,Crazy Cap Store,ClashWorldShopStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ImomuPoisonExStage,Lost Kingdom,Stretch and Traverse the Jungle,ImomuPoisonExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+JangoExStage,Lost Kingdom,Klepto 2 - Lava Boogaloo,JangoExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

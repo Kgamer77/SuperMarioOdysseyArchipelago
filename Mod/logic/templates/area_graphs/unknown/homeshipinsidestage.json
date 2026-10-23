@@ -1,0 +1,36 @@
+{
+  "room": {
+    "stage": "HomeShipInsideStage",
+    "kingdom": "",
+    "stage_display_name": "Inside the Odyssey",
+    "stage_start_node_id": "HomeShipInsideStage::start",
+    "area_scope": "subarea",
+    "listed_in_stage_warp": "false",
+    "has_shine_db_moons": "false",
+    "active_entrance_link_count": "0",
+    "excluded_entrance_link_count": "0",
+    "has_raw_stage_data_points": "true",
+    "status": "discovered",
+    "notes": "Every listed room gets a stage_start node even when EntranceDB has no active link."
+  },
+  "nodes": [],
+  "edges": [],
+  "moons": [],
+  "anchors": [],
+  "progression_events": [],
+  "scenario_metadata": [
+    {
+      "stage": "HomeShipInsideStage",
+      "kingdom": "",
+      "stage_display_name": "HomeShipInsideStage",
+      "area_scope": "subarea",
+      "scenario_no": "",
+      "active_layers": "",
+      "stage_map_indices": "0;1;2;3;4;5;6;7;8;9;10;11;12;13;14",
+      "source_archive": "HomeShipInsideStageMap.szs",
+      "source_file": "",
+      "status": "missing",
+      "notes": "No ScenarioInfo.byml in archive."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "room": {
+    "stage": "Special1WorldTowerRoomZone",
+    "kingdom": "",
+    "stage_display_name": "Rabbit Ridge Tower: Top Floor",
+    "stage_start_node_id": "Special1WorldTowerRoomZone::start",
+    "area_scope": "subarea",
+    "listed_in_stage_warp": "false",
+    "has_shine_db_moons": "false",
+    "active_entrance_link_count": "0",
+    "excluded_entrance_link_count": "0",
+    "has_raw_stage_data_points": "true",
+    "status": "discovered",
+    "notes": "Every listed room gets a stage_start node even when EntranceDB has no active link."
+  },
+  "nodes": [],
+  "edges": [],
+  "moons": [],
+  "anchors": [],
+  "progression_events": [],
+  "scenario_metadata": [
+    {
+      "stage": "Special1WorldTowerRoomZone",
+      "kingdom": "",
+      "stage_display_name": "Special1WorldTowerRoomZone",
+      "area_scope": "subarea",
+      "scenario_no": "",
+      "active_layers": "",
+      "stage_map_indices": "",
+      "source_archive": "Special1WorldTowerRoomZoneMap.szs",
+      "source_file": "",
+      "status": "missing",
+      "notes": "No ScenarioInfo.byml in archive."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+ByugoPuzzleExStage,Snow Kingdom,Ty-Foo Sliding Puzzle,ByugoPuzzleExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+IceWalkerExStage,Snow Kingdom,Koopa Walking in Snow,IceWalkerExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+IceWaterBlockExStage,Snow Kingdom,Freezing Water,IceWaterBlockExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+IceWaterDashExStage,Snow Kingdom,Dashing Over Cold Water,IceWaterDashExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+KillerRailCollisionExStage,Snow Kingdom,Wintery Flower Road,KillerRailCollisionExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldCloudBonusExStage,Snow Kingdom,Spinning Above the Clouds,SnowWorldCloudBonusExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldCostumeStage,Snow Kingdom,Shiveria Costume Room,SnowWorldCostumeStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldHomeStage,Snow Kingdom,Snow Kingdom,SnowWorldHomeStage::start,overworld,true,true,7,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,SnowWorldLobby000Stage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldLobby001Stage,Snow Kingdom,Class S Lobby,SnowWorldLobby001Stage::start,subarea,true,true,0,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldLobbyExStage,Snow Kingdom,Class S Lobby,SnowWorldLobbyExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SnowWorldShopStage,Snow Kingdom,Shiveria Shop,SnowWorldShopStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

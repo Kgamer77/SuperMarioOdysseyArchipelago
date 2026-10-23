@@ -1,0 +1,60 @@
+{
+  "room": {
+    "stage": "AttackWorldHomeStage",
+    "kingdom": "Ruined Kingdom",
+    "stage_display_name": "Ruined Kingdom",
+    "stage_start_node_id": "AttackWorldHomeStage::start",
+    "area_scope": "subarea",
+    "listed_in_stage_warp": "true",
+    "has_shine_db_moons": "false",
+    "active_entrance_link_count": "0",
+    "excluded_entrance_link_count": "0",
+    "has_raw_stage_data_points": "false",
+    "status": "listed",
+    "notes": "Every listed room gets a stage_start node even when EntranceDB has no active link."
+  },
+  "nodes": [
+    {
+      "node_id": "AttackWorldHomeStage::start",
+      "kingdom": "Ruined Kingdom",
+      "stage": "AttackWorldHomeStage",
+      "stage_display_name": "Ruined Kingdom",
+      "area_scope": "subarea",
+      "node_type": "stage_start",
+      "source": "generated",
+      "entrance_id": "",
+      "side": "",
+      "obj_id": "",
+      "display_name": "Default start",
+      "x": "",
+      "y": "",
+      "z": "",
+      "scenario_indices": "",
+      "notes": "Rename or split if this stage has multiple meaningful starts.",
+      "status": ""
+    }
+  ],
+  "edges": [],
+  "moons": [],
+  "anchors": [
+    {
+      "anchor_id": "AttackWorldHomeStage::start",
+      "node_id": "AttackWorldHomeStage::start",
+      "anchor_kind": "stage_start",
+      "kingdom": "Ruined Kingdom",
+      "stage": "AttackWorldHomeStage",
+      "area_scope": "subarea",
+      "change_stage_id": "",
+      "entrance_side": "",
+      "obj_id": "",
+      "x": "",
+      "y": "",
+      "z": "",
+      "source": "generated",
+      "status": "",
+      "notes": "Runtime/stable anchor for graph initialization or event checks."
+    }
+  ],
+  "progression_events": [],
+  "scenario_metadata": []
+}

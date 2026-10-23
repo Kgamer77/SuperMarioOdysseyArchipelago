@@ -1,0 +1,3 @@
+link_index,kingdom,area_scope,home_stage,home_entrance_in,home_entrance_out,sub_stage,sub_entrance_in,sub_entrance_out,home_in_node_id,home_out_node_id,sub_near_node_id,sub_far_node_id,status,notes
+46,Cloud Kingdom,overworld,CloudWorldHomeStage,Fukuwarai,Fukuwarai,FukuwaraiKuriboStage,Fukuwarai,Fukuwarai,CloudWorldHomeStage::entrance::Fukuwarai::home_in,CloudWorldHomeStage::entrance::Fukuwarai::home_out,FukuwaraiKuriboStage::entrance::Fukuwarai::sub_near,FukuwaraiKuriboStage::entrance::Fukuwarai::sub_far,active,
+47,Cloud Kingdom,overworld,CloudWorldHomeStage,cube,cube,Cube2DExStage,cube,cube,CloudWorldHomeStage::entrance::cube::home_in,CloudWorldHomeStage::entrance::cube::home_out,Cube2DExStage::entrance::cube::sub_near,Cube2DExStage::entrance::cube::sub_far,active,

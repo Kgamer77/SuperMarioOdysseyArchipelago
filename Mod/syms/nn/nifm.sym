@@ -1,0 +1,6 @@
+@sdk
+
+_ZN2nn4nifm10InitializeEv
+_ZN2nn4nifm20SubmitNetworkRequestEv
+_ZN2nn4nifm22IsNetworkRequestOnHoldEv
+_ZN2nn4nifm18IsNetworkAvailableEv

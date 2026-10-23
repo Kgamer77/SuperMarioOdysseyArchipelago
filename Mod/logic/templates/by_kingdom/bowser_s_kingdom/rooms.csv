@@ -1,0 +1,10 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+JizoSwitchExStage,Bowser's Kingdom,Jizo's Great Adventure,JizoSwitchExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+KaronWingTowerStage,Bowser's Kingdom,Hexagon Tower,KaronWingTowerStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SkyWorldCloudBonusExStage,Bowser's Kingdom,Dashing Above the Clouds,SkyWorldCloudBonusExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SkyWorldCostumeStage,Bowser's Kingdom,Scene in the Folding Screen,SkyWorldCostumeStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,SkyWorldHomeStage::start,overworld,true,true,8,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link. Includes embedded map SkyWorldCastleZone. Includes embedded map SkyWorldWallZone.
+SkyWorldShopStage,Bowser's Kingdom,Crazy Cap Store,SkyWorldShopStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SkyWorldTreasureStage,Bowser's Kingdom,Bowser's Kingdom Treasure Vault,SkyWorldTreasureStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+TsukkunClimbExStage,Bowser's Kingdom,Wooden Tower,TsukkunClimbExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+TsukkunRotateExStage,Bowser's Kingdom,Spinning Tower,TsukkunRotateExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

@@ -1,0 +1,11 @@
+link_id,source_kingdom,source_stage,source_node_id,destination_kingdom,destination_stage,destination_node_id,bidirectional,status,notes
+painting_cascade_to_bowsers,Cascade Kingdom,WaterfallWorldHomeStage,WaterfallWorldHomeStage::stage_change::Go::raw,Bowser's Kingdom,SkyWorldHomeStage,SkyWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_bowsers_to_snow,Bowser's Kingdom,SkyWorldHomeStage,SkyWorldHomeStage::stage_change::Go::raw,Snow Kingdom,SnowWorldHomeStage,SnowWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_snow_to_wooded,Snow Kingdom,SnowWorldHomeStage,SnowWorldHomeStage::stage_change::Go::raw,Wooded Kingdom,ForestWorldHomeStage,ForestWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_wooded_to_sand,Wooded Kingdom,ForestWorldHomeStage,ForestWorldHomeStage::stage_change::Go::raw,Sand Kingdom,SandWorldHomeStage,SandWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_sand_to_metro,Sand Kingdom,SandWorldHomeStage,SandWorldHomeStage::stage_change::Go::raw,Metro Kingdom,CityWorldHomeStage,CityWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_metro_to_lake,Metro Kingdom,CityWorldHomeStage,CityWorldHomeStage::stage_change::Go::raw,Lake Kingdom,LakeWorldTownZone,LakeWorldTownZone::stage_change::Come::raw,true,active,Default warp painting route.
+painting_lake_to_luncheon,Lake Kingdom,LakeWorldTownZone,LakeWorldTownZone::stage_change::Go::raw,Luncheon Kingdom,LavaWorldHomeStage,LavaWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_luncheon_to_mushroom,Luncheon Kingdom,LavaWorldHomeStage,LavaWorldHomeStage::stage_change::Go::raw,Mushroom Kingdom,PeachWorldHomeStage,PeachWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_mushroom_to_seaside,Mushroom Kingdom,PeachWorldHomeStage,PeachWorldHomeStage::stage_change::Go::raw,Seaside Kingdom,SeaWorldHomeStage,SeaWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.
+painting_seaside_to_cascade,Seaside Kingdom,SeaWorldHomeStage,SeaWorldHomeStage::stage_change::Go::raw,Cascade Kingdom,WaterfallWorldHomeStage,WaterfallWorldHomeStage::stage_change::Come::raw,true,active,Default warp painting route.

@@ -1,0 +1,3 @@
+event_token,event_type,kingdom,world_id,develop_name,main_stage,event_node_id,event_location_node_id,requirement_expr,status,notes
+WorldPeace_Moon,world_peace,Moon Kingdom,13,Moon,MoonWorldHomeStage,MoonWorldHomeStage::event::WorldPeace_Moon,,,todo,Fill the story moons/bosses that must be completed for world peace in this kingdom.
+MoonRockActive_Moon,moon_rock_active,Moon Kingdom,13,Moon,MoonWorldHomeStage,MoonWorldHomeStage::event::MoonRockActive_Moon,MoonWorldHomeStage::event::MoonRockActive_Moon,,todo,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj144.

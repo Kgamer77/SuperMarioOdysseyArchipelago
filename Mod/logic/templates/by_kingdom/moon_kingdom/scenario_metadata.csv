@@ -1,0 +1,21 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+MoonWorldHomeStage,Moon Kingdom,Moon Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+Galaxy2DExStage,Moon Kingdom,8-Bit Galaxy,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Galaxy2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonAthleticExStage,Moon Kingdom,Giant Swings,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonAthleticExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement004ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldBasementStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeBullZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeKillerZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeLavaPillarZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeLiftZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeMeganeZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldCaptureParadeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldHomeStage,Moon Kingdom,Moon Kingdom,overworld,,,,MoonWorldHome2DZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldShopRoom,Moon Kingdom,Crazy Cap Store,subarea,,,,MoonWorldShopRoomMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldSphinxRoom,Moon Kingdom,Moon Kingdom Treasure Vault,subarea,,,,MoonWorldSphinxRoomMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldWeddingRoomStage,Moon Kingdom,Wedding Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldWeddingRoomStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldWeddingRoomStage,Moon Kingdom,Wedding Room,subarea,,,,MoonWorldWeddingRoomZoneMap.szs,,missing,No ScenarioInfo.byml in archive.

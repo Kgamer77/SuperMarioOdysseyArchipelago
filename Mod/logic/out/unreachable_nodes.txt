@@ -1,0 +1,70 @@
+nodes total(non-excluded)=1594  reachable=926  UNREACHABLE=668
+moons with UNREACHABLE from_node: 0 / 775
+
+===== UNCOLLECTABLE MOONS (anchor node unreachable) — group by kingdom/stage =====
+
+
+===== OTHER UNREACHABLE NODES (no moon directly anchored) by node_type =====
+  stage_change         490
+  stage_start          123
+  home_entrance        20
+  state_event          19
+  custom_place         9
+  substage_entrance    7
+
+----- NON-SCAFFOLD unreachable nodes to inspect (custom_place / *_entrance / state_event) -----
+  [home_entrance   ] CapWorldHomeStage::entrance::Ex::home_in
+  [home_entrance   ] CapWorldHomeStage::entrance::Goal::home_out
+  [state_event     ] CapWorldHomeStage::event::WorldPeace_Cap
+  [substage_entrance] CapWorldTowerStage::entrance::Ex::sub_near
+  [substage_entrance] CapWorldTowerStage::entrance::Goal::sub_far
+  [home_entrance   ] CityWorldHomeStage::entrance::taxi::home_out
+  [state_event     ] CityWorldHomeStage::event::WorldPeace_Metro
+  [state_event     ] ClashWorldHomeStage::event::WorldPeace_Lost
+  [state_event     ] CloudWorldHomeStage::event::WorldPeace_Cloud
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai001::home_out
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai001v::home_in
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai002::home_in
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai002::home_out
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai003::home_out
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai004::home_in
+  [home_entrance   ] ForestWorldHomeStage::entrance::Jyukai004::home_out
+  [state_event     ] ForestWorldHomeStage::event::WorldPeace_Wooded
+  [substage_entrance] ForestWorldWoodsStage::entrance::Jyukai002::sub_far
+  [substage_entrance] ForestWorldWoodsStage::entrance::Jyukai004::sub_far
+  [state_event     ] LakeWorldHomeStage::event::WorldPeace_Lake
+  [state_event     ] LavaWorldHomeStage::event::WorldPeace_Luncheon
+  [custom_place    ] MoonWorldBasement000Zone::start
+  [custom_place    ] MoonWorldBasement001Zone::start
+  [custom_place    ] MoonWorldBasement002Zone::start
+  [custom_place    ] MoonWorldBasement003Zone::start
+  [custom_place    ] MoonWorldBasement004Zone::start
+  [state_event     ] MoonWorldHomeStage::event::WorldPeace_Moon
+  [home_entrance   ] PeachWorldHomeStage::entrance::BossRaidA::home_out
+  [home_entrance   ] PeachWorldHomeStage::entrance::GiantWanderBossA::home_out
+  [state_event     ] PeachWorldHomeStage::event::MoonRockActive_Mushroom
+  [state_event     ] PeachWorldHomeStage::event::WorldPeace_Mushroom
+  [home_entrance   ] SandWorldHomeStage::entrance::aaa::home_out
+  [home_entrance   ] SandWorldHomeStage::entrance::anki2::home_in
+  [home_entrance   ] SandWorldHomeStage::entrance::run00::home_in
+  [home_entrance   ] SandWorldHomeStage::entrance::wall::home_out
+  [state_event     ] SandWorldHomeStage::event::WorldPeace_Sand
+  [custom_place    ] SandWorldHomeTownZone::start
+  [substage_entrance] SandWorldMeganeExStage::entrance::wall::sub_far
+  [substage_entrance] SandWorldSphinxExStage::entrance::aaa::sub_far
+  [substage_entrance] SandWorldSphinxExStage::entrance::run00::sub_near
+  [state_event     ] SeaWorldHomeStage::event::WorldPeace_Seaside
+  [state_event     ] SkyWorldHomeStage::event::WorldPeace_Bowsers
+  [custom_place    ] SkyWorldHomeStage::place::new_place_2
+  [custom_place    ] SkyWorldWallZone::place::new_place
+  [custom_place    ] SkyWorldWallZone::place::new_place_2
+  [state_event     ] SnowWorldHomeStage::event::WorldPeace_Snow
+  [state_event     ] Special1WorldHomeStage::event::MoonRockActive_Dark
+  [state_event     ] Special1WorldHomeStage::event::WorldPeace_Dark
+  [home_entrance   ] Special2WorldCloudStage::entrance::room2_start::home_in
+  [home_entrance   ] Special2WorldCloudStage::entrance::room2_start::home_out
+  [state_event     ] Special2WorldHomeStage::event::MoonRockActive_Darker
+  [state_event     ] Special2WorldHomeStage::event::WorldPeace_Darker
+  [home_entrance   ] Special2WorldKoopaStage::entrance::room3_goal::home_in
+  [home_entrance   ] Special2WorldKoopaStage::entrance::room3_goal::home_out
+  [state_event     ] WaterfallWorldHomeStage::event::WorldPeace_Cascade

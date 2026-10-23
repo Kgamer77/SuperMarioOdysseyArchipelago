@@ -1,0 +1,22 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+ForestWorldBossStage,Wooded Kingdom,Secret Flower Field,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldBossStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+AnimalChaseExStage,Wooded Kingdom,Herding Sheep,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,AnimalChaseExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FogMountainExStage,Wooded Kingdom,Shards in the Fog,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FogMountainExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorld2DRoadZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorldAthleticZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldBonusStage,Wooded Kingdom,Spinning-Platforms Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldBonusStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldCloudBonusExStage,Wooded Kingdom,Walking on Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorldTimerAthletic001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldTowerStage,Wooded Kingdom,Sky Garden Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWaterExStage,Wooded Kingdom,Flooding Pipeway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWaterExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsCostumeStage,Wooded Kingdom,Costume Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsStage,Wooded Kingdom,Deep Woods,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsTreasureStage,Wooded Kingdom,Deep Woods Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRoadExStage,Wooded Kingdom,Breakdown Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRoadExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PackunPoisonExStage,Wooded Kingdom,Invisible Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PackunPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RailCollisionExStage,Wooded Kingdom,Flower Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RailCollisionExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingElevatorExStage,Wooded Kingdom,Crowded Elevator,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingElevatorExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

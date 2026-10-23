@@ -1,0 +1,11 @@
+gate_id,kingdom,logic_stage,edge_id,source_capture_token,replacement_capture_token,difficulty,match_mode,minimum_count,notes
+cg_moon_local_239_Frog_KillerMagnum,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,Tsukkun,casual,any,,
+cg_moon_local_238_Frog_KillerMagnum_2,Cap Kingdom,FrogSearchExStage,moon_local_238,Frog,Frog,casual,any,,
+cg_moon_local_238_Frog_KillerMagnum_3,Cap Kingdom,FrogSearchExStage,moon_local_238,Frog,Hosui,casual,any,,
+cg_moon_local_238_Frog_KillerMagnum_4,Cap Kingdom,FrogSearchExStage,moon_local_238,Frog,Tsukkun,casual,any,,
+cg_moon_local_238_Frog_KillerMagnum_6,Cap Kingdom,FrogSearchExStage,moon_local_238,Frog,Senobi,casual,any,,
+cg_moon_local_239_Frog_KillerMagnum_2,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,FireBros,casual,any,,
+cg_moon_local_239_Frog_KillerMagnum_3,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,Hosui,casual,any,,
+cg_moon_local_239_Frog_KillerMagnum_4,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,Frog,casual,any,,
+cg_moon_local_239_Frog_KillerMagnum_5,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,HammerBros,casual,any,,
+cg_moon_local_239_Frog_KillerMagnum_6,Cap Kingdom,FrogSearchExStage,moon_local_239,Frog,Senobi,casual,any,,

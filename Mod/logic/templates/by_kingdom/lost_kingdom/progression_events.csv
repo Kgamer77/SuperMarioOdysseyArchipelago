@@ -1,0 +1,3 @@
+event_token,event_type,kingdom,world_id,develop_name,main_stage,event_node_id,event_location_node_id,requirement_expr,status,notes
+WorldPeace_Lost,world_peace,Lost Kingdom,6,Lost,ClashWorldHomeStage,ClashWorldHomeStage::event::WorldPeace_Lost,,,todo,Fill the story moons/bosses that must be completed for world peace in this kingdom.
+MoonRockActive_Lost,moon_rock_active,Lost Kingdom,6,Lost,ClashWorldHomeStage,ClashWorldHomeStage::event::MoonRockActive_Lost,ClashWorldHomeStage::event::MoonRockActive_Lost,,todo,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj610.

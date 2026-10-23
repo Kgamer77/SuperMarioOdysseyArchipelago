@@ -1,0 +1,7 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+CapWorldHomeStage,Cap Kingdom,Cap Kingdom,CapWorldHomeStage::start,overworld,true,true,4,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CapWorldTowerStage,Cap Kingdom,Inside Cap Tower,CapWorldTowerStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+FrogSearchExStage,Cap Kingdom,Frog Pond,FrogSearchExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PoisonWaveExStage,Cap Kingdom,Poison Tides,PoisonWaveExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PushBlockExStage,Cap Kingdom,Push Block Peril,PushBlockExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+RollingExStage,Cap Kingdom,Precision Rolling,RollingExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

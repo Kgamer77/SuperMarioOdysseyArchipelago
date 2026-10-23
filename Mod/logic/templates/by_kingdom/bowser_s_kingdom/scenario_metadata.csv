@@ -1,0 +1,17 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,,,,SkyWorldCastleZoneMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,1,Common;Scenario1;Scenario1_2,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,2,Common;Scenario2;Scenario1_2;Scenario2_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,3,Common;A;Scenario3;Scenario2_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+JizoSwitchExStage,Bowser's Kingdom,Jizo's Great Adventure,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,JizoSwitchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KaronWingTowerStage,Bowser's Kingdom,Hexagon Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KaronWingTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldCloudBonusExStage,Bowser's Kingdom,Dashing Above the Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldCostumeStage,Bowser's Kingdom,Scene in the Folding Screen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldShopStage,Bowser's Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldTreasureStage,Bowser's Kingdom,Bowser's Kingdom Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,1,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,2,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,3,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+TsukkunClimbExStage,Bowser's Kingdom,Wooden Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TsukkunClimbExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TsukkunRotateExStage,Bowser's Kingdom,Spinning Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TsukkunRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

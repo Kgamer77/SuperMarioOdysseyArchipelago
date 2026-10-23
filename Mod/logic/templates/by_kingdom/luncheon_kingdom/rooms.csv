@@ -1,0 +1,14 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+CapAppearLavaLiftExStage,Luncheon Kingdom,Volcano Cave Cruising,CapAppearLavaLiftExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForkExStage,Luncheon Kingdom,Fork-Flickin to the Summit,ForkExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+GabuzouClockExStage,Luncheon Kingdom,Blazing Above the Gears,GabuzouClockExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaBonus1Zone,Luncheon Kingdom,Luncheon Kingdom Slots,LavaBonus1Zone::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldBubbleLaneExStage,Luncheon Kingdom,Narrow Magma Path,LavaWorldBubbleLaneExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldClockExStage,Luncheon Kingdom,Spinning Athletics,LavaWorldClockExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldCostumeStage,Luncheon Kingdom,Simmering in the Kitchen,LavaWorldCostumeStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldExcavationExStage,Luncheon Kingdom,Shards in the Cheese Rocks,LavaWorldExcavationExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldFenceLiftExStage,Luncheon Kingdom,Lava Island Fly-By,LavaWorldFenceLiftExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,LavaWorldHomeStage::start,overworld,true,true,10,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldShopStage,Luncheon Kingdom,Crazy Cap Store,LavaWorldShopStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldTreasureStage,Luncheon Kingdom,Luncheon Treasure Vault,LavaWorldTreasureStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,LavaWorldUpDownExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

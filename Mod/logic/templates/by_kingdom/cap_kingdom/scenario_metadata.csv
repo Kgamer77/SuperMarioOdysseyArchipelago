@@ -1,0 +1,7 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+CapWorldHomeStage,Cap Kingdom,Cap Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CapWorldTowerStage,Cap Kingdom,Inside Cap Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapWorldTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FrogSearchExStage,Cap Kingdom,Frog Pond,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FrogSearchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoisonWaveExStage,Cap Kingdom,Poison Tides,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoisonWaveExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PushBlockExStage,Cap Kingdom,Push Block Peril,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PushBlockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RollingExStage,Cap Kingdom,Precision Rolling,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RollingExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

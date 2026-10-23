@@ -1,0 +1,161 @@
+home_stage,home_entrance_in,home_entrance_out,sub_stage,sub_entrance_in,sub_entrance_out,home_out_behavior,sub_out_behavior,status,notes
+CapWorldHomeStage,Ex,Goal,CapWorldTowerStage,Ex,Goal,door,door,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+CapWorldHomeStage,PushBlockExStageEnt,PushBlockExStageEntDokan,PushBlockExStage,PushBlockExStageEnt,PushBlockExStageEntDokan,return_spawn,door,active,
+CapWorldHomeStage,PoisonWaveExEnt,PoisonWaveExEnt,PoisonWaveExStage,PoisonWaveExEnt,PoisonWaveExExit,same_side,door,active,
+CapWorldHomeStage,FrogSearchExStageEnt,FrogSearchExStageEnt,FrogSearchExStage,FrogSearchExStageEnt,FrogSearchExStageEnt,same_side,same_side,active,
+CapWorldHomeStage,rollingstart,rollinggoal,RollingExStage,rollingstart,rollinggoal,return_spawn,door,active,
+WaterfallWorldHomeStage,WanwanExStart,WanwanExGoal,WanwanClashExStage,WanwanExStart,WanwanExGoal,return_spawn,door,active,
+WaterfallWorldHomeStage,WindBlowExStart,WindBlowExGoal,WindBlowExStage,WindBlowExStart,WindBlowExGoal,return_spawn,door,active,
+WaterfallWorldHomeStage,CapAppearExEnt,CapAppearExExit,CapAppearExStage,CapAppearExEnt,CapAppearExExit,return_spawn,door,active,
+WaterfallWorldHomeStage,Lift2D,Lift2DExit,Lift2DExStage,Lift2D,Lift2DExit,return_spawn,door,active,
+WaterfallWorldHomeStage,RexPoppunEx,RexPoppunEx,TrexPoppunExStage,RexPoppunEx,RexPoppunEx,same_side,same_side,active,
+SandWorldHomeStage,doukutu1,doukutu2,SandWorldKillerExStage,doukutu1,doukutu2,return_spawn,door,active,
+SandWorldHomeStage,aaa,run00,SandWorldSphinxExStage,aaa,run00,return_spawn,door,active,
+SandWorldHomeStage,wall,anki2,SandWorldMeganeExStage,wall,anki2,return_spawn,door,active,
+SandWorldHomeStage,anki2,anki2,SandWorldMeganeExStage,anki2,anki2,same_side,same_side,excluded,anki2 is the exit pipe of the wall row — not a separate entrance
+SandWorldHomeStage,biru,birureturn,SandWorldRotateExStage,biru,birureturn,door,door,active,
+SandWorldHomeStage,rocket,rocket,RocketFlowerExStage,rocket,rocket,same_side,same_side,active,
+SandWorldHomeStage,meganelift01,meganelift02,MeganeLiftExStage,meganelift01,meganelift02,return_spawn,door,active,
+SandWorldHomeStage,arijigoku,arijigoku2,SandWorldPressExStage,arijigoku,arijigoku2,return_spawn,door,active,
+SandWorldHomeStage,hide,hide,SandWorldSecretStage,hide,hide,same_side,same_side,active,
+SandWorldHomeStage,run00return,run00,SandWorldSphinxExStage,run00return,run00return,return_spawn,same_side,active,
+SandWorldHomeStage,shindo,shindo,SandWorldVibrationStage,shindo,shindo,same_side,same_side,active,
+SandWorldHomeStage,bar1,bar1,SandWorldShopStage,bar1,bar1,same_side,same_side,active,
+SandWorldHomeStage,bar2,bar2,SandWorldShopStage,bar2,bar2,same_side,same_side,active,
+SandWorldHomeStage,town,town,SandWorldSlotStage,town,town,same_side,same_side,active,
+SandWorldHomeStage,abc,abc,SandWorldCostumeStage,abc,abc,same_side,same_side,active,
+SandWorldHomeStage,EX_2DHosui,EX_2DHosui_Exit,WaterTubeExStage,EX_2DHosui,EX_2DHosui_Exit,return_spawn,door,active,
+LakeWorldHomeStage,CapTrampolineA,CapTrampolineB,TrampolineWallCatchExStage,CapTrampolineA,CapTrampolineB,door,door,active,
+LakeWorldHomeStage,FastenerEx,FastenerEx,FastenerExStage,FastenerEx,FastenerEx,same_side,same_side,active,
+LakeWorldHomeStage,Goton,Goton,GotogotonExStage,Goton,Goton,same_side,same_side,active,
+LakeWorldHomeStage,LakeWorldMoonEX1a,LakeWorldMoonEX1b,FrogPoisonExStage,LakeWorldMoonEX1a,LakeWorldMoonEX1b,return_spawn,door,active,
+LakeWorldHomeStage,LakeWorldShop,LakeWorldShop,LakeWorldShopStage,LakeWorldShop,LakeWorldShop,same_side,same_side,active,
+ForestWorldHomeStage,EX_Water,EX_Water_Exit,ForestWorldWaterExStage,EX_Water,EX_Water_Exit,return_spawn,door,active,
+ForestWorldHomeStage,EX_RailCollision,EX_RailCollision_Exit,RailCollisionExStage,EX_RailCollision,EX_RailCollision_Exit,return_spawn,door,active,
+ForestWorldHomeStage,EX_Tankuro,EX_Tankuro_Exit,ShootingElevatorExStage,EX_Tankuro,EX_Tankuro_Exit,return_spawn,door,active,
+ForestWorldHomeStage,EX_Mist,EX_Mist,FogMountainExStage,EX_Mist,EX_Mist,same_side,same_side,active,
+ForestWorldHomeStage,bonus,bonus2,ForestWorldBonusStage,bonus,bonus2,return_spawn,door,active,
+ForestWorldHomeStage,PoisonEx,PoisonEx_Exit,PackunPoisonExStage,PoisonEx,PoisonEx_Exit,return_spawn,door,active,
+ForestWorldHomeStage,KillerRoad,KillerRoad,KillerRoadExStage,KillerRoad,KillerRoad,same_side,same_side,active,
+ForestWorldHomeStage,EXCloud,EXCloud,ForestWorldCloudBonusExStage,EXCloud,EXCloud,same_side,same_side,active,
+ForestWorldHomeStage,EX_AnimalChase,EX_AnimalChase,AnimalChaseExStage,EX_AnimalChase,EX_AnimalChase,same_side,same_side,active,
+ForestWorldHomeStage,Jyukai001,Jyukai001v,ForestWorldWoodsStage,Jyukai001,Jyukai001v,door,door,active,
+ForestWorldHomeStage,Jyukai001v,Jyukai001v,ForestWorldWoodsStage,Jyukai001v,Jyukai001v,same_side,same_side,excluded,vine exit — no PlayerStartObjNoLink in sub; exit of Jyukai001 row
+ForestWorldHomeStage,Jyukai002,Jyukai002,ForestWorldWoodsStage,Jyukai002,Jyukai002,same_side,same_side,excluded,vine exit only — no PlayerStartObjNoLink in sub
+ForestWorldHomeStage,Jyukai003,Jyukai003v,ForestWorldWoodsStage,Jyukai003,Jyukai003v,door,door,active,
+ForestWorldHomeStage,Jyukai003v,Jyukai003v,ForestWorldWoodsStage,Jyukai003v,Jyukai003v,same_side,same_side,excluded,vine exit — no PlayerStartObjNoLink in sub; exit of Jyukai003 row
+ForestWorldHomeStage,Jyukai004,Jyukai004,ForestWorldWoodsStage,Jyukai004,Jyukai004,same_side,same_side,excluded,vine exit only — no PlayerStartObjNoLink in sub
+CloudWorldHomeStage,Fukuwarai,Fukuwarai,FukuwaraiKuriboStage,Fukuwarai,Fukuwarai,same_side,same_side,active,
+CloudWorldHomeStage,cube,cube,Cube2DExStage,cube,cube,same_side,same_side,active,
+ClashWorldHomeStage,imomu_01,imomu_02,ImomuPoisonExStage,imomu_01,imomu_02,return_spawn,door,active,
+ClashWorldHomeStage,ClashWorldMoonEX2,ClashWorldMoonEX2,JangoExStage,ClashWorldMoonEX2,ClashWorldMoonEX2,same_side,same_side,active,
+ClashWorldHomeStage,Kinopio,Kinopio,ClashWorldShopStage,Kinopio,Kinopio,same_side,same_side,active,
+CityWorldHomeStage,main_enter,main_exit,CityWorldMainTowerStage,main_enter,main_exit,door,door,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+CityWorldHomeStage,densen,densendokan,ElectricWireExStage,densen,densendokan,return_spawn,door,active,
+CityWorldHomeStage,kaitendokan,kaitendokan,CapRotatePackunExStage,kaitendokan,kaitendokan,same_side,same_side,active,
+CityWorldHomeStage,bike02,bike02return,TrexBikeExStage,bike02,bike02return,return_spawn,door,active,
+CityWorldHomeStage,gragra,gragrareturn,SwingSteelExStage,gragra,gragrareturn,return_spawn,door,active,
+CityWorldHomeStage,donsuke,donsuke,DonsukeExStage,donsuke,donsuke,same_side,same_side,active,
+CityWorldHomeStage,theater,theater,Theater2DExStage,theater,theater,same_side,same_side,active,
+CityWorldHomeStage,gunsyu,gunsyudokan,CityPeopleRoadStage,gunsyu,gunsyudokan,door,door,active,
+CityWorldHomeStage,bou,boureturn,PoleKillerExStage,bou,boureturn,return_spawn,door,active,
+CityWorldHomeStage,onpu,onpu,Note2D3DRoomExStage,onpu,onpu,same_side,same_side,active,
+CityWorldHomeStage,car,car,RadioControlExStage,car,car,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+CityWorldHomeStage,tenjo,tenjo,PoleGrabCeilExStage,tenjo,tenjo,same_side,same_side,active,
+CityWorldHomeStage,taxi,taxireturn,ShootingCityExStage,taxi,taxireturn,return_spawn,door,active,
+CityWorldHomeStage,Bonus,Bonus,CityWorldSandSlotStage,Bonus,Bonus,same_side,same_side,active,
+CityWorldHomeStage,shop_corect,shop_corect,CityWorldShop01Stage,shop_corect,shop_corect,same_side,same_side,active,
+CityWorldHomeStage,shop_coin,shop_coin,CityWorldShop01Stage,shop_coin,shop_coin,same_side,same_side,active,
+CityWorldHomeStage,bike,bikereturn,BikeSteelExStage,bike,bikereturn,return_spawn,door,active,
+SnowWorldHomeStage,EX_IceWaterDash,EX_IceWaterDash_Exit,IceWaterDashExStage,EX_IceWaterDash,EX_IceWaterDash_Exit,return_spawn,door,active,
+SnowWorldHomeStage,EX_IceWater,EX_IceWater_Exit,IceWaterBlockExStage,EX_IceWater,EX_IceWater_Exit,return_spawn,door,active,
+SnowWorldHomeStage,ByugoPuzzle,ByugoPuzzle,ByugoPuzzleExStage,ByugoPuzzle,ByugoPuzzle,same_side,same_side,active,
+SnowWorldHomeStage,FigureWalker,FigureWalker,IceWalkerExStage,FigureWalker,FigureWalker,same_side,same_side,active,
+SnowWorldHomeStage,EX_SkyBonus,EX_SkyBonus,SnowWorldCloudBonusExStage,EX_SkyBonus,EX_SkyBonus,same_side,same_side,active,
+SnowWorldHomeStage,EX_RailCol2,EX_RailCol2_Exit,KillerRailCollisionExStage,EX_RailCol2,EX_RailCol2_Exit,return_spawn,door,active,
+SnowWorldHomeStage,MoonRace,MoonRace,SnowWorldLobbyExStage,MoonRace,MoonRace,same_side,same_side,active,
+SeaWorldHomeStage,SeaWorldEX1a,SeaWorldEX1b,WaterValleyExStage,SeaWorldEX1a,SeaWorldEX1b,door,door,active,
+SeaWorldHomeStage,SeaWorldEX2,SeaWorldEX2Return,CloudExStage,SeaWorldEX2,SeaWorldEX2Return,door,door,active,
+SeaWorldHomeStage,SeaWorldMoonEX2,SeaWorldMoonEX2,TogezoRotateExStage,SeaWorldMoonEX2,SeaWorldMoonEX2,same_side,same_side,active,
+SeaWorldHomeStage,SeaWorldEX3a,SeaWorldEX3b,SenobiTowerExStage,SeaWorldEX3a,SeaWorldEX3b,door,door,active,
+SeaWorldHomeStage,SeaWorldMoonEX1a,SeaWorldMoonEX1b,ReflectBombExStage,SeaWorldMoonEX1a,SeaWorldMoonEX1b,return_spawn,door,active,
+SeaWorldHomeStage,PukupukuCaveStart,PukupukuCaveGoal,SeaWorldUtsuboCaveStage,PukupukuCaveStart,PukupukuCaveGoal,door,door,vanilla,story sub-area: fixed vanilla identity link and never shuffled
+SeaWorldHomeStage,RoomEventWorldSea,RoomEventWorldSea,SeaWorldSneakingManStage,RoomEventWorldSea,RoomEventWorldSea,same_side,same_side,active,
+SeaWorldHomeStage,TreasureEventWorldSea,TreasureEventWorldSea,SeaWorldSecretStage,TreasureEventWorldSea,TreasureEventWorldSea,same_side,same_side,active,
+SeaWorldHomeStage,shindo_Lv2,shindo_Lv2,SeaWorldVibrationStage,shindo_Lv2,shindo_Lv2,same_side,same_side,active,
+SeaWorldHomeStage,CostumeEventSeaWorld,CostumeEventSeaWorld,SeaWorldCostumeStage,CostumeEventSeaWorld,CostumeEventSeaWorld,same_side,same_side,active,
+LavaWorldHomeStage,ForkEX,ForkEX,ForkExStage,ForkEX,ForkEX,same_side,same_side,active,
+LavaWorldHomeStage,LavaLiftEx,LavaLiftExdokan,CapAppearLavaLiftExStage,LavaLiftEx,LavaLiftExdokan,return_spawn,door,active,
+LavaWorldHomeStage,GabuzouClockEx,GabuzouClockExdokan,GabuzouClockExStage,GabuzouClockEx,GabuzouClockExdokan,return_spawn,door,active,
+LavaWorldHomeStage,PechoBubbleEx,PechoBubbleExDokan,LavaWorldBubbleLaneExStage,PechoBubbleEx,PechoBubbleExDokan,return_spawn,door,active,
+LavaWorldHomeStage,MartinCubeEx,MartinCubeEx,LavaWorldExcavationExStage,MartinCubeEx,MartinCubeEx,same_side,same_side,active,
+LavaWorldHomeStage,KeyMoveEx,KeyMoveExDokan,LavaWorldUpDownExStage,KeyMoveEx,KeyMoveExDokan,return_spawn,door,active,
+LavaWorldHomeStage,BBQEx,BBQExDokan,LavaWorldClockExStage,BBQEx,BBQExDokan,return_spawn,door,active,
+LavaWorldHomeStage,FenceLiftEx,FenceLiftExdokan,LavaWorldFenceLiftExStage,FenceLiftEx,FenceLiftExdokan,return_spawn,door,active,
+LavaWorldHomeStage,CostumeEventWorldLava,CostumeOut,LavaWorldCostumeStage,CostumeEventWorldLava,CostumeOut,return_spawn,door,active,
+LavaWorldHomeStage,TreasureEventWorldLava,TreasureEventWorldLava,LavaWorldTreasureStage,TreasureEventWorldLava,TreasureEventWorldLava,same_side,same_side,active,
+LavaWorldHomeStage,town,town,LavaBonus1Zone,town,town,same_side,same_side,active,
+LavaWorldHomeStage,shop,shop,LavaWorldShopStage,shop,shop,same_side,same_side,active,
+BossRaidWorldHomeStage,BossRaidWorldMoonEx02_Enter,BossRaidWorldMoonEx02_Exit,BullRunExStage,BossRaidWorldMoonEx02_Enter,BossRaidWorldMoonEx02_Exit,return_spawn,door,active,
+BossRaidWorldHomeStage,BossRaidWorldEx01_Eixt,BossRaidWorldEx01_Eixt,DotTowerExStage,BossRaidWorldEx01_Eixt,BossRaidWorldEx01_Eixt,same_side,same_side,active,
+SkyWorldHomeStage,jizo01,jizo02,JizoSwitchExStage,jizo01,jizo02,door,door,active,
+SkyWorldHomeStage,tukkun000_enter,tukkun000_exit,TsukkunRotateExStage,tukkun000_enter,tukkun000_exit,door,door,active,
+SkyWorldHomeStage,tukkun001_enter,tukkun001_exit,TsukkunClimbExStage,tukkun001_enter,tukkun001_exit,door,door,active,
+SkyWorldHomeStage,sora001,sora001,SkyWorldCloudBonusExStage,sora001,sora001,same_side,same_side,active,
+SkyWorldHomeStage,shop_dress,shop_dress,SkyWorldTreasureStage,shop_dress,shop_dress,same_side,same_side,active,
+SkyWorldHomeStage,shop,shop,SkyWorldShopStage,shop,shop,same_side,same_side,active,
+SkyWorldHomeStage,byoubu,byoubu,SkyWorldCostumeStage,byoubu,byoubu,same_side,same_side,active,
+MoonWorldHomeStage,dot00,dot01,Galaxy2DExStage,dot00,dot01,return_spawn,door,active,
+MoonWorldHomeStage,moon,moon_exit,MoonAthleticExStage,moon,moon_exit,return_spawn,door,active,
+MoonWorldHomeStage,ggg,ggg,MoonWorldSphinxRoom,ggg,ggg,same_side,same_side,active,
+MoonWorldHomeStage,ddd,ddd,MoonWorldShopRoom,ddd,ddd,same_side,same_side,active,
+PeachWorldHomeStage,PeachWorldEx1a,PeachWorldEx1a,YoshiCloudExStage,PeachWorldEx1a,PeachWorldEx1a,same_side,same_side,active,
+PeachWorldHomeStage,PeachWorldEx2a,PeachWorldEx2a,DotHardExStage,PeachWorldEx2a,PeachWorldEx2a,same_side,same_side,active,
+PeachWorldHomeStage,Fukuwarai2,Fukuwarai2,FukuwaraiMarioStage,Fukuwarai2,Fukuwarai2,same_side,same_side,active,
+PeachWorldHomeStage,PeachCastleGate,PeachCastleGate,PeachWorldCastleStage,PeachCastleGate,PeachCastleGate,same_side,same_side,active,
+PeachWorldHomeStage,PeachWorldShopA,PeachWorldShopA,PeachWorldShopStage,PeachWorldShopA,PeachWorldShopA,same_side,same_side,active,
+PeachWorldHomeStage,CostumeEventWorldPeach,CostumeEventWorldPeach,PeachWorldCostumeStage,CostumeEventWorldPeach,CostumeEventWorldPeach,same_side,same_side,active,
+PeachWorldHomeStage,BossForestA,BossForestA,PeachWorldPictureBossForestStage,BossForestA,BossForestA,same_side,same_side,active,
+PeachWorldHomeStage,BossKnuckleA,BossKnuckleA,PeachWorldPictureBossKnuckleStage,BossKnuckleA,BossKnuckleA,same_side,same_side,active,
+PeachWorldHomeStage,BossMagmaA,BossMagmaA,PeachWorldPictureBossMagmaStage,BossMagmaA,BossMagmaA,same_side,same_side,active,
+PeachWorldHomeStage,MofumofuA,MofumofuA,PeachWorldPictureMofumofuStage,MofumofuA,MofumofuA,same_side,same_side,active,
+PeachWorldHomeStage,BossRaidA,BossRaidB,PeachWorldPictureBossRaidStage,BossRaidB,BossRaidB,return_spawn,same_side,active,"Painting room is coupled on the sub side like the other boss re-fights. The arrival pipe (BossRaidA) is IsExitOnly inside the room, so it cannot be walked into; both sides use the persistent BossRaidB pipe and BossRaidA is never routed."
+PeachWorldHomeStage,GiantWanderBossA,GiantWanderBossB,PeachWorldPictureGiantWanderBossStage,GiantWanderBossB,GiantWanderBossB,return_spawn,same_side,active,"Painting room is coupled on the sub side like the other boss re-fights. The arrival pipe (GiantWanderBossA) is IsExitOnly inside the room, so it cannot be walked into; both sides use the persistent GiantWanderBossB pipe and GiantWanderBossA is never routed."
+Special1WorldHomeStage,StackerRoomStart,StackerRoomGoal,Special1WorldTowerStackerStage,StackerRoomStart,StackerRoomGoal,door,door,vanilla,
+Special1WorldHomeStage,BombTailRoomStart,BombTailRoomGoal,Special1WorldTowerBombTailStage,BombTailRoomStart,BombTailRoomGoal,door,door,vanilla,
+Special1WorldHomeStage,FireBlowerRoomStart,FireBlowerRoomGoal,Special1WorldTowerFireBlowerStage,FireBlowerRoomStart,FireBlowerRoomGoal,door,door,vanilla,
+Special1WorldHomeStage,CapThrowerRoomStart,CapThrowerRoomGoal,Special1WorldTowerCapThrowerStage,CapThrowerRoomStart,CapThrowerRoomGoal,door,door,vanilla,
+Special1WorldHomeStage,BikeSteelNoCapEx,BikeSteelNoCapEx_Exit,BikeSteelNoCapExStage,BikeSteelNoCapEx,BikeSteelNoCapEx_Exit,return_spawn,door,active,
+Special1WorldHomeStage,PackunPoisonNoCapEx,PackunPoisonNoCapEx_Exit,PackunPoisonNoCapExStage,PackunPoisonNoCapEx,PackunPoisonNoCapEx_Exit,return_spawn,door,active,
+Special1WorldHomeStage,KillerRoadNoCapEx,KillerRoadNoCapEx,KillerRoadNoCapExStage,KillerRoadNoCapEx,KillerRoadNoCapEx,same_side,same_side,active,
+Special1WorldHomeStage,ShootingCityYoshiEx,ShootingCityYoshiEx_Exit,ShootingCityYoshiExStage,ShootingCityYoshiEx,ShootingCityYoshiEx_Exit,return_spawn,door,active,
+Special1WorldHomeStage,SenobiTowerYoshiEx,SenobiTowerYoshiEx_Exit,SenobiTowerYoshiExStage,SenobiTowerYoshiEx,SenobiTowerYoshiEx_Exit,return_spawn,door,active,
+Special1WorldHomeStage,LavaWorldUpDownYoshiEx,LavaWorldUpDownYoshiEx_Exit,LavaWorldUpDownYoshiExStage,LavaWorldUpDownYoshiEx,LavaWorldUpDownYoshiEx_Exit,return_spawn,door,active,
+Special2WorldHomeStage,CP_Entrance,MoonGoal,Special2WorldLavaStage,CP_Entrance,MoonGoal,door,door,vanilla,Fixed Darker Side story route; the runtime exposes one external home warp to this stage's Odyssey.
+SandWorldHomeStage,arijigoku,arijigoku1,SandWorldPressExStage,arijigoku,arijigoku1,return_spawn,door,vanilla,"fixed coupled return alias for the Ice Cave entrance pipe; never a randomized home-side entry"
+ForestWorldWoodsStage,Explorer_Bonus,Explorer_Bonus,ForestWorldWoodsCostumeStage,Explorer_Bonus,Explorer_Bonus,same_side,same_side,active,Deep Woods owns the door; the Costume Room is the sub-area (matches the TreasureTree row below)
+ForestWorldWoodsStage,TreasureTree,TreasureTree,ForestWorldWoodsTreasureStage,TreasureTree,TreasureTree,same_side,same_side,active,
+SkyWorldHomeStage,Patakaron02,Patakaron02,KaronWingTowerStage,Patakaron02,Patakaron02,same_side,same_side,active,Hexagon Tower moon pipe (DokanStageChange Patakaron02); raw stage_change paired into a shuffleable door
+CityWorldHomeStage,under001enter,under001enter,CityWorldFactoryStage,under001enter,under001enter,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+ForestWorldHomeStage,boss001,boss001,ForestWorldBossStage,boss001,boss001,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+ForestWorldHomeStage,Tower001,Tower001,ForestWorldTowerStage,Tower001,Tower001,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+MoonWorldHomeStage,bbb,bbb,MoonWorldCaptureParadeStage,bbb,bbb,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+MoonWorldHomeStage,aaa,aaa,MoonWorldWeddingRoomStage,aaa,aaa,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureBossForestStage,PictureBossForest,PictureBossForest,RevengeForestBossStage,PictureBossForest,PictureBossForest,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureBossKnuckleStage,PictureBossKnuckle,PictureBossKnuckle,RevengeBossKnuckleStage,PictureBossKnuckle,PictureBossKnuckle,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureBossMagmaStage,PictureBossMagma,PictureBossMagma,RevengeBossMagmaStage,PictureBossMagma,PictureBossMagma,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureBossRaidStage,PictureBossRaid,PictureBossRaid,RevengeBossRaidStage,PictureBossRaid,PictureBossRaid,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureGiantWanderBossStage,PictureGiantWanderBoss,PictureGiantWanderBoss,RevengeGiantWanderBossStage,PictureGiantWanderBoss,PictureGiantWanderBoss,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+PeachWorldPictureMofumofuStage,PictureMofumofu,PictureMofumofu,RevengeMofumofuStage,PictureMofumofu,PictureMofumofu,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SandWorldHomeStage,pyramid01,pyramid01,SandWorldPyramid000Stage,pyramid01,pyramid01,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SandWorldHomeStage,pyramid04,pyramid04,SandWorldPyramid001Stage,pyramid04,pyramid04,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SandWorldHomeStage,Under01,Under01,SandWorldUnderground000Stage,Under01,Under01,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SandWorldHomeStage,Out,Out,SandWorldUnderground001Stage,Out,Out,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SandWorldUnderground000Stage,Yadokari00,Yadokari00,SandWorldUnderground001Stage,Yadokari00,Yadokari00,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SnowWorldTownStage,SnowCostumeEx,SnowCostumeEx,SnowWorldCostumeStage,SnowCostumeEx,SnowCostumeEx,same_side,same_side,active,
+SnowWorldHomeStage,SnowUGExit,SnowUGExit,SnowWorldTownStage,SnowUGExit,SnowUGExit,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SnowWorldTownStage,RaceEntrance,RaceTrackExit,SnowWorldLobby000Stage,RaceEntrance,RaceTrackExit,return_spawn,door,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+SnowWorldTownStage,ShopDoor,ShopDoor,SnowWorldShopStage,ShopDoor,ShopDoor,same_side,same_side,active,
+Special2WorldLavaStage,room2_start,room2_start,Special2WorldCloudStage,room2_start,room2_start,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+Special2WorldLavaStage,room3_start,room3_start,Special2WorldKoopaStage,room3_goal,room3_goal,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."
+ForestWorldHomeStage,Tower002,Tower002,ForestWorldTowerStage,Tower002,Tower002,same_side,same_side,vanilla,"Fixed (non-randomized) story/internal route; connected for logic, excluded from ER shuffle."

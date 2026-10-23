@@ -1,0 +1,431 @@
+"unit_config_name","friendly_name","class_name","category","capture_token","swap_out","any_pool","notes"
+"Frog","Frog","Frog","capture","Frog","true","true",""
+"KuriboPossessed","Goomba","KuriboHack","capture","Kuribo","true","false","Capturable Goomba; class_name corrected from KuriboPossessed (not factory-registered) to KuriboHack"
+"KuriboWing","Paragoomba","KuriboWing","capture","KuriboWing","true","true","Paragoomba"
+"KuriboMini","Mini Goomba","KuriboMini","enemy","","true","true","Mini Goomba (not capturable)"
+"KuriboGirl","Goombette","KuriboGirl","special","","false","false","Goombette: stack-moon target"
+"Kuribo2D3D","Kuribo2D3D","Kuribo2D3D","enemy2d","","true","true",""
+"Wanwan","Chain Chomp","Wanwan","capture","Wanwan","true","true","Chain Chomp: creates its own chain and pile subactors; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"WanwanBig","Big Chain Chomp","Wanwan","capture","WanwanBig","true","true","Big Chain Chomp: creates its own chain and pile subactors; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"WanwanHole","Wanwan","WanwanHole","generator","Wanwan","false","false",""
+"TRex","T-Rex","TRex","capture","TRex","true","true","Sleeping T-Rex; class_name corrected from TRexSleep (not factory-registered) to TRex; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"TRexPatrol","Patrolling T-Rex","TRex","capture","TRex","true","true","Patrolling T-Rex; class_name corrected from TRexPatrol (not factory-registered) to TRex; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"TRexForceScroll","TRex","TRexForceScroll","special","TRex","false","false","Chase sequence"
+"Fukankun","Binoculars","Fukankun","capture","Fukankun","true","true","Binoculars: experimental full-actor swap target"
+"Megane","Moe-Eye","Megane","capture","Megane","true","true","Moe-Eye"
+"Cactus","Cactus","Cactus","capture","Cactus","true","true",""
+"CactusMini","CactusMini","CactusMini","enemy","","true","true",""
+"BazookaElectric","Mini Rocket","BazookaElectric","capture","BazookaElectric","false","false","Mini Rocket: entry/exit traversal - never randomized so logic keeps the capture reliable"
+"Kakku","Glydon","Kakku","capture","Kakku","true","true","Glydon; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"JugemFishing","Lakitu","JugemFishing","capture","JugemFishing","false","false","Lakitu: fishing setup"
+"Fastener","Fastener","Fastener","capture","Fastener","false","false","Zipper: attached to geometry"
+"Pukupuku","Cheep Cheep","Pukupuku","capture","Pukupuku","true","true","Cheep Cheep (water)"
+"PukupukuSnow","Snow Cheep Cheep","Pukupuku","capture","PukupukuSnow","true","true",""
+"GotogotonLake000","GotogotonLake","Gotogoton","capture","GotogotonLake","false","false","Puzzle part"
+"GotogotonCity000","GotogotonCity","Gotogoton","capture","GotogotonCity","false","false","Puzzle part"
+"PackunFire","Fire Piranha Plant","PackunFire","capture","PackunFire","true","true","Fire Piranha Plant"
+"PackunPoison","Poison Piranha Plant","PackunFire","capture","PackunPoison","true","true","Poison Piranha Plant"
+"PackunPoisonBig","PackunPoison","PackunFire","special","PackunPoison","false","false","Lost Kingdom big plant"
+"Senobi","Uproot","Senobi","capture","Senobi","true","false","Uproot: one-shot pickup, superseded by the respawning SenobiGeneratePoint as a swap target"
+"SenobiGeneratePoint","Senobi","SenobiGeneratePoint","generator","Senobi","false","true","Self-contained Uproot spawner: respawning replacement target"
+"FireBrosPossessed","Fire Bro","FireBros","capture","FireBros","true","false","class_name corrected from FireBrosPossessed (not factory-registered) to FireBros"
+"HammerBrosPossessed","Hammer Bro","HammerBros","capture","HammerBros","true","false","class_name corrected from HammerBrosPossessed (not factory-registered) to HammerBros"
+"HammerBros2D","HammerBros2D","HammerBros2D","enemy2d","","true","true",""
+"Tank","Sherm","Tank","capture","Tank","true","true","Sherm"
+"Gamane","Coin Coffer","Gamane","capture","Gamane","true","true","Coin Coffer"
+"Byugo","Ty-foo","Byugo","capture","Byugo","true","true","Ty-foo"
+"Imomu","Tropical Wiggler","Imomu","capture","Imomu","true","true","Tropical Wiggler"
+"Hosui","Gushen","Hosui","capture","Hosui","true","true","Gushen"
+"HackFork","HackFork","HackFork","capture","HackFork","false","true","Volbonan fork: full actor target; source placements stay protected"
+"Tsukkun","Pokio","Tsukkun","capture","Tsukkun","true","true","Pokio"
+"StatueJizo","Jizo","Statue","capture","Statue","false","false","Jizo puzzle"
+"KaronWing","Parabones","KaronWing","capture","KaronWing","true","true","Parabones"
+"Bull","Chargin' Chuck","Bull","capture","Bull","true","true","Chargin' Chuck"
+"Yukimaru","Yukimaru","Yukimaru","capture","Yukimaru","false","true","Shiverian racer setup; previously crashed (al::EventFlowChart::findEntryNode) because Yukimaru::init() starts an EventFlow using the foreign placement's own EventName. Fixed by redirecting EventName to None for scoped Yukimaru replacements (EnemySwapHooks.cpp, same mechanism as the NPC EventName fix) - re-enabled for in-game verification"
+"Yoshi","Yoshi","Yoshi","capture","Yoshi","false","false","Scripted egg/post-game"
+"ElectricWire","Spark Pylon","ElectricWire","capture","ElectricWire","false","false","Spark Pylon: traversal; createGraph needs authored ElectricWireRailKeeper links+rail so it crashes on a foreign placement - never a swap target"
+"ElectricWireRadio","Spark Pylon","ElectricWire","capture","ElectricWire","false","false",""
+"RadiconNpc","RC Car","RadiconNpc","capture","Radicon","false","false","RC Car setup"
+"CarryMeat","Meat","CarryMeat","capture","CarryMeat","false","false","Meat"
+"RockForest","Boulder","RockForest","capture","RockForest","false","false","Pushable boulder; reliable-only capture token. NOT in the factory class registry (ProjectActorFactory) under this name - do not enable as a swap target until the real placeable class is confirmed"
+"Bubble","Lava Bubble","Bubble","capture","Bubble","false","true","Lava Bubble source (distinct entity from the BubbleLauncher generator, same token); class confirmed factory-registered, enabled as a swap target"
+"Guidepost","Pole","Guidepost","capture","Guidepost","false","false","Extendable signpost; reliable-only capture token. NOT in the factory class registry (ProjectActorFactory) under this name - do not enable as a swap target until the real placeable class is confirmed"
+"StatueKoopa","Jizo","Statue","capture","StatueKoopa","false","true","Confirmed in-game to render as Jizo, same as StatueJizo, despite the distinct StatueKoopa token/name - the Statue class doesn't visually distinguish this variant"
+"AnagramAlphabetCharacter","Letter","AnagramAlphabetCharacter","capture","AnagramAlphabetCharacter","false","false","Word-scramble letter puzzle piece. Factory only registers the AnagramAlphabet holder (spawns multiple letters), not this class standalone - do not enable as a swap target until resolved"
+"CapMan","Cap Kingdom Resident","TalkNpc","npc","","true","true","Ambient Cap Kingdom resident; vetted NPC/combat pool"
+"CityMan","Metro Kingdom Resident","TalkNpc","npc","","true","true","Ambient Metro Kingdom resident; vetted NPC/combat pool"
+"CityManLow","Metro Kingdom Crowd Resident","TalkNpc","npc","","true","true","Ambient Metro Kingdom crowd resident; vetted NPC/combat pool"
+"CityManSit","Seated Metro Kingdom Resident","TalkNpc","npc","","true","true","Ambient seated Metro Kingdom resident; vetted NPC/combat pool"
+"DesertMan","Sand Kingdom Resident","TalkNpc","npc","","true","true","Ambient Sand Kingdom resident; vetted NPC/combat pool"
+"ForestMan","Wooded Kingdom Resident","TalkNpc","npc","","true","true","Ambient Wooded Kingdom resident; vetted NPC/combat pool"
+"LakeMan","Lake Kingdom Resident","TalkNpc","npc","","true","true","Ambient Lake Kingdom resident; vetted NPC/combat pool"
+"LavaMan","Luncheon Kingdom Resident","TalkNpc","npc","","true","true","Ambient Luncheon Kingdom resident; vetted NPC/combat pool"
+"SeaMan","Seaside Kingdom Resident","TalkNpc","npc","","true","true","Ambient Seaside Kingdom resident; vetted NPC/combat pool"
+"SnowMan","Shiverian","TalkNpc","npc","","true","true","Ambient Snow Kingdom resident; vetted NPC/combat pool"
+"Togezo","Spiny","Togezo","enemy","","true","true","Spiny"
+"Togezo2D","Togezo2D","Togezo2D","enemy2d","","true","true",""
+"Chorobon2D3D","Fuzzy holder","ChorobonHolder","enemy","","true","false","Fuzzy holder: rail-aware holder. CONFIRMED did not spawn as a swap target - likely needs an authored path/rail it doesn't get on a foreign placement - disabled until investigated further"
+"Donsuke","Stairface Ogre","Donsuke","enemy","","true","true","Stairface Ogre: uses authored MoveArea/SearchArea links"
+"Gunetter","Urban Stingby","Gunetter","enemy","","true","false","Urban Stingby. CONFIRMED renders as an unscaled/placeholder square as a swap target (class not decompiled, likely a missing size/Args dependency) - disabled until investigated further"
+"GunetterMove","Rail-bound Stingby","Gunetter","enemy","","true","true","Rail-bound Stingby; class_name corrected from GunetterMove (not factory-registered) to Gunetter. CAUTION: rail-bound behavior may depend on an authored rail like ElectricWire - unverified as a foreign-placement swap target"
+"GabuZou","GabuZou","GabuZou","enemy","","true","true",""
+"GabuZouGroup","GabuZouGroup","GabuZouGroup","generator","","false","false",""
+"Pecho","Pecho","Pecho","enemy","","true","true",""
+"Poetter","Poetter","Poetter","enemy","","true","true","; previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"Mummy","Chincho","Mummy","enemy","","true","false","Chincho. CONFIRMED did not spawn as a swap target - init() calls rs::tryInitLinkShine to find a linked Moon and only calls al::setNerve (starting its state machine) if that link resolves; a foreign placement has no such link, so it never activates. MummyGenerator (self-contained, no link) is the safe respawning alternative"
+"MummyGenerator","Self-contained Mummy spawner","MummyGenerator","generator","","false","false","Self-contained Mummy spawner"
+"Grower","Wall-bound Uproot enemy","GrowerWorm","enemy","","false","true","Wall-bound Uproot enemy"
+"GrowerBug","Wall-bound Uproot enemy","GrowerBug","enemy","","false","true","Wall-bound Uproot enemy"
+"Utsubo","Maw-Ray","Utsubo","enemy","","false","true","Maw-Ray: link-area enemy"
+"Joku","Joku","Joku","enemy","","false","false",""
+"Jango","Cap-stealing bird","Jango","enemy","","true","false","Cap-stealing bird"
+"Radish","Turnip","Radish","enemy","Turnip","false","true","Override prop: pullable/throwable turnip, no rail dependency found; capture_token wired so it's selectable as a capture-gate alternative (always_unlocked in logic_tokens.csv, so picking it is free)"
+"GrowPlantSeed","Nut","GrowPlantSeed","enemy","Nut","false","true","Override prop: plantable vine seed; class corrected from GrowFlowerSeed (not factory-registered) to GrowPlantSeed (confirmed factory-registered, exeHold/exeThrow/exeWaitWater/exeRevival match a plant-and-grow seed); capture_token wired so it's selectable as a capture-gate alternative (always_unlocked in logic_tokens.csv, so picking it is free)"
+"SphinxRide","Jaxi","SphinxRide","enemy","Jaxi","false","true","Override prop: rideable Jaxi, no rail/graph dependency found in available decomp context; capture_token wired so it's selectable as a capture-gate alternative (always_unlocked in logic_tokens.csv, so picking it is free); previously crashed in scene-init because init() requires a per-placement camera ticket (which doesn't exist on foreign placements). Fixed by intercepting al::CameraDirector::createCameraFromFactory to return the default poser on failure (EnemySwapHooks.cpp)"
+"Motorcycle","Bike","Motorcycle","enemy","Bike","false","true","Override prop: rideable bike, depends on authored CoursePoint child links (al::getChildLinkT) - enabled for in-game verification, may crash/misbehave on a foreign placement; capture_token wired so it's selectable as a capture-gate alternative (always_unlocked in logic_tokens.csv, so picking it is free)"
+"RocketFlower","Rocket Flower","RocketFlower","enemy","RocketFlower","true","true","Speed-boost flower; selectable as a capture-gate alternative and grouped source placements may randomize while retaining a vanilla anchor"
+"NokonokoGreen2D","NokonokoGreen2D","Nokonoko2D","enemy2d","","true","true",""
+"NokonokoRed2D","NokonokoRed2D","Nokonoko2D","enemy2d","","true","true",""
+"Bubble2D","Bubble2D","Bubble2D","enemy2d","","true","true",""
+"BubbleLauncher","Bubble","BubbleLauncher","generator","Bubble","false","false","Lava Bubble source"
+"KillerLauncher","Bullet Bill Launcher","KillerLauncher","generator","Killer","false","false","Bullet Bill launcher: self-contained replacement target"
+"KillerLauncherMagnum","Banzai Bill Launcher","KillerLauncher","generator","KillerMagnum","false","false","Banzai Bill launcher: self-contained replacement target"
+"KillerLauncherDot","KillerLauncherDot","KillerLauncherDot","generator","","false","false",""
+"PopnGenerator","Self-contained Popn spawner","PopnGenerator","generator","","false","false","Self-contained Popn spawner"
+"LongGenerator","Self-contained Long spawner","LongGenerator","generator","","false","false","Self-contained Long spawner"
+"ReflectBombGenerator","Self-contained Reflect Bomb spawner","ReflectBombGenerator","generator","","false","false","Self-contained Reflect Bomb spawner"
+"TsukkunHole","TsukkunHole","TsukkunHole","special","","false","false",""
+"Koopa","Bowser","Koopa","capture","Koopa","false","true","Re-enabled for in-game verification, 4 crash fixes applied in EnemySwapHooks.cpp: (1) empty depth-shadow catalog in validateDepthShadowMap/invalidateDepthShadowMap, (2) PeachOnKoopaShoulder sub-actor creation (SubActorKeeper allocation crash), (3) calcInitFileSpringControlJointNum's model-resource-YAML existence check on a sub-actor, (4) DemoStateHackFirst first-hack cutscene. All best-effort from undecompiled/unmatched pseudocode - unverified in-game, may still hit further init-sequence issues (Koopa::init is 1720 bytes, this is a very complex composite actor)"
+"KoopaLv1","Koopa","KoopaLv1","boss","Koopa","false","false",""
+"KoopaLv2","Koopa","KoopaLv2","boss","Koopa","false","false",""
+"KoopaLv3","Koopa","KoopaLv3","boss","Koopa","false","false",""
+"BossKnuckle","BossKnuckle","BossKnuckle","boss","","false","false",""
+"BossKnuckleLv2","BossKnuckleLv2","BossKnuckle","boss","","false","false",""
+"BossKnuckleBody","BossKnuckleBody","BossKnuckleFix","boss","","false","false",""
+"Breeda","Breeda","Breeda","boss","","false","false",""
+"BreedaLv2","BreedaLv2","Breeda","boss","","false","false",""
+"BombTail","Mechawiggler part","BombTail","boss","","false","false","Mechawiggler part"
+"CardboardBox","Cardboard Box","CardboardBox","prop","","true","true","Static cardboard box; full-actor prop pool"
+"FrailBox","Breakable crate","FrailBox","prop","","true","true","Breakable crate; foreign-pose setQuat is handled by EnemySwapHooks"
+"Chair","Chair","Chair","prop","","true","false","Static chair (source only); no Chair.szs archive so it must never be a swap-target model"
+"HomeChairL","Peach's Castle Chair","HomeChair","prop","","true","true","Peach's Castle chair; full-actor prop pool"
+"CityWorldChairB","Metro Chair","FixMapParts","prop","","true","true","Metro chair; full-actor prop pool"
+"CityWorldHomeBench000","Metro Bench","Chair","prop","","true","true","Metro bench; full-actor prop pool"
+"SandWorldHomeBench000","Sand Bench","Chair","prop","","true","true","Sand bench; full-actor prop pool"
+"SkyWorldHomeBench000","Bowser's Kingdom Bench","Chair","prop","","true","true","Bowser bench; full-actor prop pool"
+"CityWorldTableA","Metro Table A","CityWorldTable","prop","","false","true","Metro table; source protection retained pending subactor/bend crash fix"
+"CityWorldTableB","Metro Table B","CityWorldTable","prop","","false","true","Metro table; source protection retained pending subactor/bend crash fix"
+"CityWorldTableC","Metro Table C","CityWorldTable","prop","","false","true","Metro table; source protection retained pending subactor/bend crash fix"
+"LavaWorldHomeTable000","Luncheon Table","FixMapParts","prop","","true","true","Luncheon table; full-actor prop pool"
+"MoonWorldTable","Moon Table","FixMapParts","prop","","true","true","Moon table; full-actor prop pool"
+"MoonWorldTableB","Moon Table B","FixMapParts","prop","","true","true","Moon table; full-actor prop pool"
+"CityWorldHomeTree000","Metro Tree","FixMapParts","prop","","true","true","Metro tree; full-actor prop pool"
+"ClashWorldHomeTree000","Lost Kingdom Tree A","BendLeafTree","prop","","false","true","Lost tree; source protection retained pending subactor/bend crash fix"
+"ClashWorldHomeTree001","Lost Kingdom Tree B","FixMapParts","prop","","true","true","Lost tree; full-actor prop pool"
+"ClashWorldHomeTree002","Lost Kingdom Tree C","FixMapParts","prop","","true","true","Lost tree; full-actor prop pool"
+"ForestWorldHomeTree000","Wooded Kingdom Tree A","FixMapParts","prop","","true","true","Wooded tree; full-actor prop pool"
+"ForestWorldHomeTree001","Wooded Kingdom Tree B","FixMapParts","prop","","true","true","Wooded tree; full-actor prop pool"
+"ForestWorldHomeTree002","Wooded Kingdom Tree C","PoleClimbParts","prop","","true","true","Wooded tree; full-actor prop pool"
+"ForestWorldHomeTree003","Wooded Kingdom Tree D","FixMapParts","prop","","true","true","Wooded tree; full-actor prop pool"
+"ForestWorldUnderBreakTree000","Wooded Cave Tree","PoleClimbPartsBreak","prop","","false","true","Wooded cave tree; source protection retained pending subactor/break crash fix"
+"SandWorldHomeTreePalm000","Sand Kingdom Palm","BendLeafTree","prop","","false","true","Sand palm; source protection retained pending bend crash fix"
+"PeachWorldHomeTree000","Mushroom Kingdom Tree A","FixMapParts","prop","","true","true","Peach tree; full-actor prop pool"
+"PeachWorldHomeTree001","Mushroom Kingdom Tree B","FixMapParts","prop","","true","true","Peach tree; full-actor prop pool"
+"PeachWorldHomeTree002","Mushroom Kingdom Tree C","Chair","prop","","true","true","Peach tree; full-actor prop pool"
+"PeachWorldCostumeRoomTree000","Costume Room Tree","PeachWorldTree","prop","","true","true","Costume-room tree; full-actor prop pool"
+"PeachWorldHomeYoshiHouseTree","Yoshi's House Tree","FixMapParts","prop","","true","true","Yoshi house tree; full-actor prop pool"
+"SeaWorldHomeBush000","Seaside Bush A","FixMapParts","prop","","true","true","Seaside bush; full-actor prop pool"
+"SeaWorldHomeBush001","Seaside Bush B","FixMapParts","prop","","true","true","Seaside bush; full-actor prop pool"
+"SeaWorldHomeBush002","Seaside Bush C","FixMapParts","prop","","true","true","Seaside bush; full-actor prop pool"
+"CapWorldHomePlant000","Cap Kingdom Plant A","RippleFixMapParts","prop","","true","true","Cap plant; full-actor prop pool"
+"CapWorldHomePlant001","Cap Kingdom Plant B","RippleFixMapParts","prop","","true","true","Cap plant; full-actor prop pool"
+"ForestWorldHomePlant000","Wooded Kingdom Plant A","RippleFixMapParts","prop","","true","true","Wooded plant; full-actor prop pool"
+"ForestWorldHomePlant009","Wooded Kingdom Plant B","FixMapParts","prop","","true","true","Wooded plant; full-actor prop pool"
+"WaterfallWorldHomePlant000","Cascade Kingdom Plant A","RippleFixMapParts","prop","","true","true","Cascade plant; full-actor prop pool"
+"WaterfallWorldHomePlant001","Cascade Kingdom Plant B","FixMapParts","prop","","true","true","Cascade plant; full-actor prop pool"
+"CityWorldHomeStreetlight000","Metro Streetlight A","CityStreetlight","prop","","true","true","Metro streetlight; full-actor prop pool"
+"CityWorldHomeStreetlight001","Metro Streetlight B","FixMapParts","prop","","true","true","Metro streetlight; full-actor prop pool"
+"SandWorldHomeStreetlight000","Sand Kingdom Streetlight","FixMapParts","prop","","true","true","Sand streetlight; full-actor prop pool"
+"StreetlightA","Streetlight","CityStreetlight","prop","","true","true","Streetlight; full-actor prop pool"
+"CityWorldHomeSign000","Metro Sign","FixMapParts","prop","","true","true","Metro sign; full-actor prop pool"
+"ShopSign","Shop Sign","FixMapParts","prop","","true","true","Shop sign; full-actor prop pool"
+"SignBoardNormal","Sign Board","SignBoard","prop","","true","true","Sign board; full-actor prop pool"
+"SignBoardDanger","Danger sign","SignBoardDanger","prop","","true","true","Danger sign; foreign-pose setQuat is handled by EnemySwapHooks"
+"CapWorldHomePole000","Cap Kingdom Pole","FixMapParts","prop","","true","true","Cap pole; full-actor prop pool"
+"ForestWorldHomePole000","Wooded Kingdom Pole","FixMapParts","prop","","true","true","Wooded pole; full-actor prop pool"
+"SeaWorldHomeLighthousePole000","Lighthouse Pole","FixMapParts","prop","","true","true","Lighthouse pole; full-actor prop pool"
+"WaterfallWorldHomeElectricPole000","Cascade Kingdom Pole","FixMapParts","prop","","true","true","Cascade pole; full-actor prop pool"
+"Burrbo","Snow Kingdom Burrbo","Burrbo","enemy","","true","false","Snow Kingdom Burrbo: generic combat target. Disabled as a swap target - class_name NOT in the factory class registry under this name, real internal class unknown"
+"Trapeetle","Trapeetle","Trapeetle","enemy","","true","false","Trapeetle: generic combat target. Disabled as a swap target - class_name NOT in the factory class registry under this name, real internal class unknown"
+"Komboo","Komboo","Komboo","enemy","","true","false","Komboo: generic combat target. Disabled as a swap target - class_name NOT in the factory class registry under this name, real internal class unknown"
+Bird,Small Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdCap,Cap Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdCity,Metro Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdClash,Lost Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdCloud,Cloud Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdEagle,Eagle,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdForest,Wooded Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdGull,Seagull,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdLake,Lake Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdLava,Luncheon Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdMoon,Moon Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdSand,Sand Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdSky,Bowser's Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdSnow,Snow Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BirdWaterfall,Cascade Kingdom Bird,Bird,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjBeans,Loose Beans,BlowObjBeans,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjCan,Loose Can,BlowObjCan,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjFootBall,Football,BlowObj,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjGarbageBag,Garbage Bag,BlowObjGarbageBag,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjMushroom,Loose Mushroom,BlowObjMushroom,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjPylon,Traffic Cone,BlowObj,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+BlowObjTire,Tire,BlowObj,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CageBreakable,Breakable Cage,CageBreakable,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapHanger,Hat Stand,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldCandlestand000,Cap Kingdom Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapHanger000,Cap Kingdom Hat Stand A,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapHanger001,Cap Kingdom Hat Stand B,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapHanger002,Cap Kingdom Hat Stand C,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapHanger003,Cap Kingdom Hat Stand D,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapHanger004,Cap Kingdom Hat Stand E,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapShip000,Cap Ship A,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapShip002,Cap Ship B,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CapWorldHomeCapShip003,Cap Ship C,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CarBreakable,Breakable Car,CarBreakable,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign002,Metro Sign B,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign003,Metro Sign C,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign004,Metro Sign D,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign005,Metro Sign E,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign006,Metro Sign F,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign016,Metro Sign G,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSign027,Metro Sign H,CitySign,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSignal000,Traffic Signal,CitySignal,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeSignal001,Signal Streetlight,CityStreetlight,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CityWorldHomeTrashBox000,Metro Trash Can,ReactionObject,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+ClashWorldCandlestand000,Lost Kingdom Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CommonExCandleStand000,Challenge Room Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+CrystalBreakable,CrystalBreakable,CrystalBreakable,prop,,true,false,auto broad prop source; source-only; ParameterConfigName=CrystalBreakable
+DigPoint,DigPoint,DigPoint,prop,,true,false,auto broad prop source; source-only; ParameterConfigName=DigPoint
+DotMarioCat,8-bit Mario Cat,ReactionObjectDotCharacter,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+DotPeachCat,8-bit Peach Cat,ReactionObjectDotCharacter,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+DotPeachCatReverse,Reversed 8-bit Peach Cat,ReactionObjectDotCharacter,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+DotRosetta,8-bit Rosalina,ReactionObjectDotCharacter,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+FireHydrant,Fire Hydrant,FireHydrant,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+KickStone,Kickable Rock,KickStone,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+LavaWorldCandlestand000,Luncheon Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+MoonWorldCandlestand000,Moon Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+PeachWorldTapestry,Peach's Castle Tapestry,ReactionObject,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+Pen,Pen,Pen,prop,,true,false,auto broad prop source; source-only; ParameterConfigName=Pen
+PosterCeremony,Festival Poster,PosterCeremony,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+PosterWedding,Wedding Poster,PosterWedding,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+ReactionObject,ReactionObject,ReactionObject,prop,,true,false,auto broad prop source; source-only; ParameterConfigName=ReactionObject
+RunawayCrab,Crab,Squirrel,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+RunawayLizard,Lizard,Squirrel,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+RunawayRat,Rat,Squirrel,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+RunawaySquirrel,Squirrel,Squirrel,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SandWorldCandlestand000,Sand Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SeaWorldHomeCapHanger000,Seaside Hat Stand,CapHanger,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldBellA,Bowser's Kingdom Bell,ReactionObjectSkyRhythm,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldCandlestand000,Bowser's Kingdom Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldFlagA,Bowser's Kingdom Flag,ReactionObjectSkyRhythm,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldHomeTorch000,Bowser's Kingdom Torch,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldKiteA,Bowser's Kingdom Kite,ReactionObjectSkyRhythm,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldLanternA,Bowser's Kingdom Lantern A,ReactionObjectSkyRhythm,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SkyWorldLanternB,Bowser's Kingdom Lantern B,ReactionObjectSkyRhythm,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SnowWorldCandlestand000,Snow Candlestand,Candlestand,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+SnowWorldIcicleIcicle000,Falling Icicle,IcicleFall,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+Souvenir,Souvenir,Souvenir,prop,,true,false,auto broad prop source; source-only; ParameterConfigName=Souvenir
+Stake,Stake,Stake,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+StakeLava,Luncheon Stake,Stake,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+TreasureBox,Treasure Chest,TreasureBox,prop,,true,true,promoted full-actor prop target; standalone archive; in-game depth audit pending
+"CapWorldHomePlant002","Cap Kingdom Plant C","RippleFixMapParts","prop","","true","true","Promoted full-actor prop target; same factory family as audited Cap plants; in-game depth audit pending"
+"CapWorldHomePlant003","Cap Kingdom Plant D","RippleFixMapParts","prop","","true","true","Promoted full-actor prop target; same factory family as audited Cap plants; in-game depth audit pending"
+"CapWorldHomePlant004","Cap Kingdom Plant E","RippleFixMapParts","prop","","false","false","Cappy-meeting demo-linked plant"
+"TrampleBush","Cap Kingdom Bush","TrampleBush","prop","","true","false","Trample bush; source-only because it has no standalone archive"
+"HintNpc","Hint Toad","HintNpc","npc","","true","false","Hint Toad; source-only so its interaction can be randomized away"
+"AmiiboNpc","Uncle amiibo","AmiiboNpc","npc","","true","false","Uncle amiibo robot; source-only so its interaction can be randomized away"
+"BullRunExBreakParts000","Breakable Bull Pole","BreakablePole","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+"Car","Metro Car","Car","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; rail is optional; in-game depth audit pending"
+"PeachWorldCastleInsideChair","Peach's Castle Chair","Chair","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+"CityWorldSign","Animated Metro Sign","CityWorldSign","prop","","true","false","Source-only pending a manual visual-bounds review; its 30459x11694 animated clipping OBB makes it a target no-op under size matching"
+"HomeBed","Odyssey Bed","HomeBed","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+"RhythmSpotlight","Festival Spotlight","RhythmSpotlight","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+"RhythmSpotlight01","Festival Spotlight B","RhythmSpotlight","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+"VocalMike","Festival Microphone","VocalMike","prop","","true","true","Promoted full-actor prop target; standalone archive and factory registration verified; in-game depth audit pending"
+BossRaidWorldHomeDecoration000,Ruined Kingdom Decoration,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+BossRaidWorldHomeStone000,Ruined Kingdom Stone,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CapWorldHomeCapShip004,Cap Ship Hat D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldChairAFixParts,Metro Chair A,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldChairBFixParts,Metro Chair B,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeCeremonyLight000,Festival String Light,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeGraffiti000,Metro Graffiti,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight000,Metro Light A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight001,Metro Light B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight003,Metro Light C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight004,Metro Light D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight005,Metro Light E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeLight006,Metro Light F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeManhole000,Metro Manhole A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeManhole003,Metro Manhole B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomePoster001,Metro Poster,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign001,Metro Sign I,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign007,Metro Sign J,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign008,Metro Sign K,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign009,Metro Sign L,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign010,Metro Sign M,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign012,Metro Sign N,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign013,Metro Scenario Sign A,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign017,Metro Sign O,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign018,Metro Scenario Sign B,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign019,Metro Scenario Sign C,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign020,Metro Scenario Sign D,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign021,Metro Scenario Sign E,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign022,Metro Scenario Sign F,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign023,Metro Sign P,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSign024,Metro Scenario Sign G,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign025,Metro Scenario Sign H,FixMapPartsScenarioAction,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+CityWorldHomeSign026,Metro Sign Q,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal002,Metro Signal C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal003,Metro Signal D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal006,Metro Signal G,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal007,Metro Signal H,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal008,Metro Signal I,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal009,Metro Signal J,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal010,Metro Signal K,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal011,Metro Signal L,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal012,Metro Signal M,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSignal013,Metro Signal N,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ClashWorldHomeTree003,Lost Kingdom Tree D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ClashWorldHomeTree004,Lost Kingdom Tree E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ClashWorldHomeTree005,Lost Kingdom Tree F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CommonShopRoomRack000,Crazy Cap Rack A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CommonShopRoomRack001,Crazy Cap Rack B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CommonSlotRoomSpotLight000,Slot Room Spotlight,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeFlower000,Wooded Kingdom Flower A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeFlower001,Wooded Kingdom Flower B,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeFlower002,Wooded Kingdom Flower C,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeFlower003,Wooded Kingdom Flower D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant001,Wooded Kingdom Plant B,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant002,Wooded Kingdom Plant C,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant003,Wooded Kingdom Plant D,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant004,Wooded Kingdom Plant E,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant005,Wooded Kingdom Plant F,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant006,Wooded Kingdom Plant G,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant007,Wooded Kingdom Plant H,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant008,Wooded Kingdom Plant I,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomePlant010,Wooded Kingdom Plant K,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeRock000,Wooded Kingdom Rock,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeTree004,Wooded Kingdom Tree E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ForestWorldHomeTree005,Wooded Kingdom Tree F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+HomeInsideMirror,Odyssey Mirror,FixMapParts,prop,,true,false,Odyssey interior piece; source protected and excluded from target pools because it has no collision
+LakeWorldHomeDebris000,Lake Kingdom Debris,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeShowWindow000,Lake Kingdom Display Window,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar000,Lake Stone Pillar A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar001,Lake Stone Pillar B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar002,Lake Stone Pillar C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar003,Lake Stone Pillar D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar004,Lake Stone Pillar E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar005,Lake Stone Pillar F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar006,Lake Stone Pillar G,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar007,Lake Stone Pillar H,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LakeWorldHomeStonePillar008,Lake Stone Pillar I,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LavaWorldHomeFlag000,Luncheon Kingdom Flag,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+LavaWorldHomeRock000,Luncheon Kingdom Rock,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+Lift2DExPlant000,Lift Room Plant,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+MoonWorldLunchMat,Moon Picnic Mat,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+ParkingMeter,Parking Meter,FixMapPartsCapHanger,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PeachWorldHomeCastleFlag,Peach's Castle Flag,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PeachWorldHomeFountain,Peach's Castle Fountain,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PeachWorldHomeGrass000,Mushroom Kingdom Grass,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PeachWorldHomeStone000,Mushroom Kingdom Stone,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PeachWorldHomeYoshiHouseLeaf,Yoshi's House Leaves,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+PlayGuideBoard,Guide Board,PlayGuideBoard,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+PlayGuideBoardWall,Wall Guide Board,PlayGuideBoard,prop,,true,false,stage-by-stage prop audit; source-only because PlayGuideBoard disappears without the authored ShowMessage/EventFlow placement arguments
+SandWorldHomeStone000,Sand Kingdom Stone A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone001,Sand Kingdom Stone B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone002,Sand Kingdom Stone C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone003,Sand Kingdom Stone D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone004,Sand Kingdom Stone E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone005,Sand Kingdom Stone F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStone006,Sand Kingdom Stone G,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStonePillar000,Sand Stone Pillar A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStonePillar001,Sand Stone Pillar B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStonePillar002,Sand Stone Pillar C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SaucePan,Saucepan,SaucePan,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBottle000,Seaside Bottle,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush003,Seaside Bush D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush004,Seaside Bush E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush005,Seaside Bush F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush006,Seaside Bush G,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush007,Seaside Bush H,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush008,Seaside Bush I,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush009,Seaside Bush J,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush010,Seaside Bush K,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeBush011,Seaside Bush L,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SignBoardNormalWall,Wall Sign Board,SignBoard,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+SkyWorldHomeLanternAStand,Bowser's Kingdom Lantern Stand,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SlotSignA,Slot Sign A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SlotSignB,Slot Sign B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SnowWorldRaceFlag000,Snow Race Flag A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SnowWorldRaceFlag001,Snow Race Flag B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SnowWorldRaceFlag002,Snow Race Flag C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+Special1WorldHomePole000,Dark Side Pole,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+Special1WorldHomeRock000,Dark Side Rock,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+Special2WorldHomeSpeaker,Darker Side Speaker,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+Sticker,Crazy Cap Sticker,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+WaterTower,Metro Water Tower,FixMapPartsCapHanger,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant002,Cascade Plant C,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant003,Cascade Plant D,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant004,Cascade Plant E,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant005,Cascade Plant F,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant006,Cascade Plant G,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant007,Cascade Plant H,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant008,Cascade Plant I,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant009,Cascade Plant J,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant010,Cascade Plant K,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant011,Cascade Plant L,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomePlant012,Cascade Plant M,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomeRock000,Cascade Rock A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WaterfallWorldHomeRock002,Cascade Rock C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+WeddingCake,Wedding Cake,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+WeddingFlower,Wedding Flower,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+WeddingFood,Wedding Food,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+WeddingRingStand,Wedding Ring Stand,FixMapParts,prop,,true,false,stage-by-stage prop audit; source-only pending standalone target construction or spatial review
+BossRaidBatGroup,Ruined Kingdom Bat Flock,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CandlestandFire,Candlestand Flame,CandlestandFire,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+JaguarTaxistop,Jaxi Stop,TaxiStop,prop,,true,false,stage-by-stage prop audit; source-only because TaxiStop initializes event flow and disappears without its authored SphinxRide child link
+KinokoUfo,Mushroom Kingdom UFO,KinokoUfo,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+MofumofuScrap,Spewart Scrap,MofumofuScrap,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+MoonWorldHomeBell,Moon Kingdom Bell,MoonWorldBell,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeGrass000,Sand Kingdom Grass,RippleFixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeStatue000,Sand Kingdom Statue,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef000,Seaside Coral Reef A,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef001,Seaside Coral Reef B,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef002,Seaside Coral Reef C,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef003,Seaside Coral Reef D,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef004,Seaside Coral Reef E,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef005,Seaside Coral Reef F,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef006,Seaside Coral Reef G,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef007,Seaside Coral Reef H,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef008,Seaside Coral Reef I,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef009,Seaside Coral Reef J,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef010,Seaside Coral Reef K,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef011,Seaside Coral Reef L,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef012,Seaside Coral Reef M,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef013,Seaside Coral Reef N,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SeaWorldHomeCoralReef014,Seaside Coral Reef O,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SnowWorldIcicleIcicle001,Large Snow Kingdom Icicle,SnowWorldBigIcicle,prop,,true,false,stage-by-stage prop audit; source-only because SnowWorldBigIcicle requires authored IcicleFall/MoveNext links and save/camera setup
+SnowWorldIcicleIcicle002,Snow Kingdom Icicle Cluster,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeFrame000,Girder,FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CityWorldHomeSwingParts000,Rotating Girder,SwingMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CrystalBreakableIce,Breakable Ice Block,CrystalBreakable,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+CrystalSmallBreakableIce,Small Breakable Ice Block,CrystalBreakable,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIce000,Sand Ice Block (Huge A),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIce001,Sand Ice Block (Huge B),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIce002,Sand Ice Block (Huge C),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIce003,Sand Ice Block (Huge D),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIcePillar000,Sand Ice Block (Medium A),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIcePillar001,Sand Ice Block (Medium B),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIcePillar002,Sand Ice Block (Medium C),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIcePillar003,Sand Ice Block (Medium D),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending
+SandWorldHomeIcePillar004,Sand Ice Block (Medium E),FixMapParts,prop,,true,true,stage-by-stage prop audit; standalone archive and bounded spatial metadata; in-game depth audit pending

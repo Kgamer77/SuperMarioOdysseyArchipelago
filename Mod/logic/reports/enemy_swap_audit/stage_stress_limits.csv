@@ -1,0 +1,17 @@
+operation_mode,context_id,stage,scenario,ladder,max_supported_instances,first_failing_instances,failure_verdict,rungs_supported,scene_free_at_max_bytes,world_resource_free_at_max_bytes,scene_bytes_per_instance
+docked,317480361662234643,FogMountainExStage,1,uniform,6,-1,,4,270665104,510322904,-407656
+docked,317480361662234643,FogMountainExStage,1,diverse,6,-1,,4,268821904,510322904,-82038
+docked,2735036053934176685,ForestWorldWaterExStage,1,uniform,10,-1,,5,265110928,427448392,-229717
+docked,2735036053934176685,ForestWorldWaterExStage,1,diverse,10,-1,,5,261256592,424708160,187051
+docked,3064292897549827137,ForestWorldHomeStage,2,uniform,1,-1,,1,61496320,552779048,0
+docked,3064292897549827137,ForestWorldHomeStage,2,diverse,1,-1,,1,61303808,552779048,0
+docked,3336013911190331726,PackunPoisonExStage,1,uniform,5,-1,,4,253494672,283901224,-337920
+docked,3336013911190331726,PackunPoisonExStage,1,diverse,5,-1,,4,252503440,283901224,-174299
+docked,3721483692471404338,ForestWorldHomeStage,5,uniform,1,-1,,1,58963080,547412776,0
+docked,3721483692471404338,ForestWorldHomeStage,5,diverse,1,-1,,1,59184264,547412776,0
+docked,6274489348061360182,ForestWorldHomeStage,1,uniform,8,-1,,4,88663440,600153256,-190589
+docked,6274489348061360182,ForestWorldHomeStage,1,diverse,8,-1,,4,87325696,576224152,-7189
+docked,17345649590879222040,ForestWorldHomeStage,3,uniform,1,-1,,1,85710224,551630592,0
+docked,17345649590879222040,ForestWorldHomeStage,3,diverse,1,-1,,1,85702032,551630592,0
+docked,18310522634545418635,ForestWorldHomeStage,4,uniform,1,-1,,1,68080776,551630592,0
+docked,18310522634545418635,ForestWorldHomeStage,4,diverse,1,-1,,1,68097160,551630592,0

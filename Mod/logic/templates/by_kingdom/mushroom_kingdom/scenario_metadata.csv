@@ -1,0 +1,51 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+PeachWorldCastleStage,Mushroom Kingdom,Peach's Castle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldCastleStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldHomeStage,Mushroom Kingdom,Mushroom Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DotHardExStage,Mushroom Kingdom,8-Bit Bullet Bills,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DotHardExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FukuwaraiMarioStage,Mushroom Kingdom,Picture Match,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FukuwaraiMarioStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldCostumeStage,Mushroom Kingdom,Castle Courtyard 64,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldShopStage,Mushroom Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,5,Scenario3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,1,Common;G;H;J,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,2,A;H;I;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,3,A;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,4,A;B;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,5,A;C;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,6,A;D;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,7,A;E;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossRaidStage,Mushroom Kingdom,Lord of Lightning Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossRaidStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeForestBossStage,Mushroom Kingdom,Torkdrift Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeForestBossStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeMofumofuStage,Mushroom Kingdom,Mechawiggler Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeMofumofuStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+YoshiCloudExStage,Mushroom Kingdom,Yoshi in the Sea of Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,YoshiCloudExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

@@ -1,0 +1,19 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+BikeSteelExStage,Metro Kingdom,Scooter Daredevil,BikeSteelExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CapRotatePackunExStage,Metro Kingdom,Rotating Maze Shards,CapRotatePackunExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CityPeopleRoadStage,Metro Kingdom,Crowded Alleyway,CityPeopleRoadStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CityWorldFactoryStage,Metro Kingdom,Sewers,CityWorldFactoryStage::start,subarea,true,true,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link. Includes embedded map CityWorldFactory01Zone.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,CityWorldHomeStage::start,overworld,true,true,15,3,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link. Includes embedded map CityWorld2DSign004Zone. Includes embedded map CityWorldTimerAthletic002Zone. Includes embedded map CityWorldTimerAthletic003Zone.
+CityWorldMainTowerStage,Metro Kingdom,Inside New Donk City Tower,CityWorldMainTowerStage::start,subarea,true,true,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CityWorldSandSlotStage,Metro Kingdom,Metro Kingdom Slots,CityWorldSandSlotStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+CityWorldShop01Stage,Metro Kingdom,Crazy Cap Store,CityWorldShop01Stage::start,subarea,true,true,2,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+DonsukeExStage,Metro Kingdom,Pitchblack Mountain,DonsukeExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ElectricWireExStage,Metro Kingdom,Rewiring the Neighborhood,ElectricWireExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Note2D3DRoomExStage,Metro Kingdom,Rainbow Notes,Note2D3DRoomExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PoleGrabCeilExStage,Metro Kingdom,Swinging Along the High-Rises,PoleGrabCeilExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PoleKillerExStage,Metro Kingdom,Bullet Billding,PoleKillerExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+RadioControlExStage,Metro Kingdom,RC Race,RadioControlExStage::start,subarea,true,true,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ShootingCityExStage,Metro Kingdom,Shards Under Siege,ShootingCityExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SwingSteelExStage,Metro Kingdom,Swinging Scaffolding,SwingSteelExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Theater2DExStage,Metro Kingdom,On the Big Screen,Theater2DExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+TrexBikeExStage,Metro Kingdom,Scooter Escape!,TrexBikeExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

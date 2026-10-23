@@ -1,0 +1,18 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+Special1WorldHomeStage,Dark Side,Dark Side,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+BikeSteelNoCapExStage,Dark Side,Vanishing Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BikeSteelNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRoadNoCapExStage,Dark Side,Breakdown Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRoadNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,1,Common;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,2,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,4,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,5,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,6,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,7,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+PackunPoisonNoCapExStage,Dark Side,Invisible Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PackunPoisonNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SenobiTowerYoshiExStage,Dark Side,Yoshi on the Sinking Island,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SenobiTowerYoshiExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingCityYoshiExStage,Dark Side,Yoshi Under Siege,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingCityYoshiExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerBombTailStage,Dark Side,Rabbit Ridge Tower: Hariet Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerBombTailStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerCapThrowerStage,Dark Side,Rabbit Ridge Tower: Rango Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerCapThrowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerFireBlowerStage,Dark Side,Rabbit Ridge Tower: Spewart Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerFireBlowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerStackerStage,Dark Side,Rabbit Ridge Tower: Topper Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerStackerStageMap.szs,,missing,No ScenarioInfo.byml in archive.

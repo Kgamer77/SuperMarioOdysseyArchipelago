@@ -1,0 +1,3 @@
+event_token,event_type,kingdom,world_id,develop_name,main_stage,event_node_id,event_location_node_id,requirement_expr,status,notes
+WorldPeace_Dark,world_peace,Dark Side,15,Dark,Special1WorldHomeStage,Special1WorldHomeStage::event::WorldPeace_Dark,,,todo,Fill the story moons/bosses that must be completed for world peace in this kingdom.
+MoonRockActive_Dark,moon_rock_active,Dark Side,15,Dark,Special1WorldHomeStage,Special1WorldHomeStage::event::MoonRockActive_Dark,,,todo,Fill the route to the Moon Rock and any prerequisite story/global state.

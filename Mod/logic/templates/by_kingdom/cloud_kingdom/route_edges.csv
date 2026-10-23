@@ -1,0 +1,6 @@
+edge_id,kingdom,area_scope,from_node_id,to_node_id,requirement_expr,requirement_notes,edge_type,difficulty,bidirectional,source,notes,option_scenarios,status
+edge_user_0108,Cloud Kingdom,overworld,CloudWorldHomeStage::start,CloudWorldHomeStage::event::MoonRockActive_Cloud,free,,human_route,casual,true,editor,Created in graph editor.,,
+edge_user_0110,Cloud Kingdom,overworld,CloudWorldHomeStage::start,CloudWorldHomeStage::entrance::Fukuwarai::home_in,free,,human_route,casual,true,editor,Created in graph editor.,,
+edge_user_0109,Cloud Kingdom,overworld,CloudWorldHomeStage::start,CloudWorldHomeStage::entrance::cube::home_in,free,,human_route,casual,true,editor,Created in graph editor.,,
+edge_user_0413,Cloud Kingdom,subarea,Cube2DExStage::entrance::cube::sub_near,Cube2DExStage::entrance::cube::sub_far,free,,human_route,casual,true,editor,Created in graph editor.,,
+edge_user_0414,Cloud Kingdom,subarea,FukuwaraiKuriboStage::entrance::Fukuwarai::sub_near,FukuwaraiKuriboStage::entrance::Fukuwarai::sub_far,free,,human_route,casual,true,editor,Created in graph editor.,,

@@ -1,0 +1,23 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+SnowWorldHomeStage,Snow Kingdom,Snow Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobby000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby001Stage,Snow Kingdom,SnowWorldLobby001Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobby001StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ByugoPuzzleExStage,Snow Kingdom,Ty-Foo Sliding Puzzle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ByugoPuzzleExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWalkerExStage,Snow Kingdom,Koopa Walking in Snow,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWalkerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWaterBlockExStage,Snow Kingdom,Freezing Water,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWaterBlockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWaterDashExStage,Snow Kingdom,Dashing Over Cold Water,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWaterDashExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRailCollisionExStage,Snow Kingdom,Wintery Flower Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRailCollisionExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldBalconyZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldByugoZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldCloudBonusExStage,Snow Kingdom,Spinning Above the Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldCostumeStage,Snow Kingdom,Cold Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldGabuzouZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldIcicleZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobbyExStage,Snow Kingdom,Class S Lobby,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobbyExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobbyExStage,Snow Kingdom,Class S Lobby,subarea,,,,SnowWorldRaceExZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceFlagZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceGroundZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceObjectZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldShopStage,Snow Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldTownStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldTownZoneMap.szs,,missing,No ScenarioInfo.byml in archive.

@@ -1,0 +1,134 @@
+token,token_type,display_name,category,prerequisite,always_unlocked,requires_any_cap_throw,can_start_with_seed,aliases,notes
+SingleJump,ability,Single Jump,Movement,kNoPrerequisite,true,false,false,Single Jump,
+DoubleJump,ability,Double Jump,Movement,kNoPrerequisite,false,false,false,Double Jump,
+TripleJump,ability,Triple Jump,Movement,AbilityId_DoubleJump,false,false,false,Triple Jump,
+CapReturnJump,ability,Cap Return Jump,Movement,kNoPrerequisite,true,false,false,Cap Return Jump,
+Backflip,ability,Backflip,Movement,AbilityId_Crouch,false,false,false,Backflip,
+LongJump,ability,Long Jump,Movement,AbilityId_Crouch,false,false,false,Long Jump,
+Vault,ability,Vault,Movement,kNoPrerequisite,false,true,false,Vault,
+SideFlip,ability,Side Flip,Movement,kNoPrerequisite,false,false,false,Side Flip,
+GroundPoundJump,ability,Ground Pound Jump,Movement,AbilityId_GroundPound,false,false,false,Ground Pound Jump,
+Roll,ability,Roll,Movement,AbilityId_Crouch,false,false,false,Roll,
+RollBoost,ability,Roll Boost,Movement,AbilityId_Roll,false,false,false,Roll Boost,
+Crouch,ability,Crouch,Movement,kNoPrerequisite,false,false,false,Crouch,
+GroundPound,ability,Ground Pound,Movement,kNoPrerequisite,false,false,false,Ground Pound,
+Dive,ability,Dive,Movement,AbilityId_GroundPound,false,false,false,Dive,
+Spin,ability,Spin,Movement,kNoPrerequisite,false,false,false,Spin,
+WallJump,ability,Wall Jump,Movement,kNoPrerequisite,false,false,false,Wall Jump,
+LedgeGrab,ability,Ledge Grab,Movement,kNoPrerequisite,false,false,false,Ledge Grab,
+Climb,ability,Climb,Movement,kNoPrerequisite,false,false,false,Climb,
+Swing,ability,Swing,Movement,kNoPrerequisite,false,false,false,Swing,
+NeutralThrow,ability,Neutral Throw,CapThrow,kNoPrerequisite,false,false,true,Neutral Throw,
+UpThrow,ability,Up Throw,CapThrow,kNoPrerequisite,false,false,true,Up Throw,
+DownThrow,ability,Down Throw,CapThrow,kNoPrerequisite,false,false,true,Down Throw,
+SpinThrow,ability,Spin Throw,CapThrow,kNoPrerequisite,false,false,true,Spin Throw,
+Frog,capture,Frog,Capture,,false,false,false,Frog,
+ElectricWire,capture,Spark Pylon,Capture,,false,false,false,Spark Pylon; ElectricWireMover,
+KuriboWing,capture,Paragoomba,Capture,,false,false,false,Paragoomba,
+Wanwan,capture,Chain Chomp,Capture,,false,false,false,Chain Chomp,
+WanwanBig,capture,Big Chain Chomp,Capture,,false,false,false,Big Chain Chomp,
+BreedaWanwan,capture,Broode's Chain Chomp,Capture,,false,false,false,Broode's Chain Chomp,
+TRex,capture,T-Rex,Capture,,false,false,false,T-Rex,
+Fukankun,capture,Binoculars,Capture,,false,false,false,Binoculars,
+Killer,capture,Bullet Bill,Capture,,false,false,false,Bullet Bill,
+Megane,capture,Moe-Eye,Capture,,false,false,false,Moe-Eye,
+Cactus,capture,Cactus,Capture,,false,false,false,Cactus,
+Kuribo,capture,Goomba,Capture,,false,false,false,Goomba,
+BossKnuckleHand,capture,Knucklotec's Fist,Capture,,false,false,false,Knucklotec's Fist,
+BazookaElectric,capture,Mini Rocket,Capture,,false,false,false,Mini Rocket,
+Kakku,capture,Glydon,Capture,,false,false,false,Glydon,
+JugemFishing,capture,Lakitu,Capture,,false,false,false,Lakitu; Jugem,
+Fastener,capture,Zipper,Capture,,false,false,false,Zipper,
+Pukupuku,capture,Cheep Cheep,Capture,,false,false,false,Cheep Cheep,
+GotogotonLake,capture,Puzzle Part (Lake Kingdom),Capture,,false,false,false,Puzzle Part (Lake Kingdom),
+PackunPoison,capture,Poison Piranha Plant,Capture,,false,false,false,Poison Piranha Plant,
+Senobi,capture,Uproot,Capture,,false,false,false,Uproot,
+FireBros,capture,Fire Bro,Capture,,false,false,false,Fire Bro,
+Tank,capture,Sherm,Capture,,false,false,false,Sherm,
+Gamane,capture,Coin Coffer,Capture,,false,false,false,Coin Coffer,
+Tree,capture,Tree,Capture,,false,false,false,Tree,
+RockForest,capture,Boulder,Capture,,false,false,false,Boulder,
+FukuwaraiFacePartsKuribo,capture,Picture Match Part (Goomba),Capture,,false,false,false,Picture Match Part (Goomba),
+Imomu,capture,Tropical Wiggler,Capture,,false,false,false,Tropical Wiggler,
+Guidepost,capture,Pole,Capture,,false,false,false,Pole,
+Manhole,capture,Manhole,Capture,,false,false,false,Manhole,
+Car,capture,Taxi,Capture,,false,false,false,Taxi,
+Radicon,capture,RC Car,Capture,,false,false,false,RC Car; RadiconNpc,
+Byugo,capture,Ty-foo,Capture,,false,false,false,Ty-foo,
+Yukimaru,capture,Shiverian Racer,Capture,,false,false,false,Shiverian Racer,
+PukupukuSnow,capture,Cheep Cheep (Snow Kingdom),Capture,,false,false,false,Cheep Cheep (Snow Kingdom),
+Hosui,capture,Gushen,Capture,,false,false,false,Gushen,
+Bubble,capture,Lava Bubble,Capture,,false,false,false,Lava Bubble; LavaBubble,
+HackFork,capture,Volbonan,Capture,,false,false,false,Volbonan,
+HammerBros,capture,Hammer Bro,Capture,,false,false,false,Hammer Bro,
+CarryMeat,capture,Meat,Capture,,false,false,false,Meat,
+PackunFire,capture,Fire Piranha Plant,Capture,,false,false,false,Fire Piranha Plant,
+Tsukkun,capture,Pokio,Capture,,false,false,false,Pokio,
+Statue,capture,Jizo,Capture,,false,false,false,Jizo; StatueJizo,
+StatueKoopa,capture,Jizo,Capture,,false,false,false,Jizo; Bowser Statue,
+KaronWing,capture,Parabones,Capture,,false,false,false,Parabones,
+KillerMagnum,capture,Banzai Bill,Capture,,false,false,false,Banzai Bill,
+Bull,capture,Chargin' Chuck,Capture,,false,false,false,Chargin' Chuck,
+Koopa,capture,Bowser,Capture,,false,false,false,Bowser; KoopaHack,
+AnagramAlphabetCharacter,capture,Letter,Capture,,false,false,false,Letter,
+GotogotonCity,capture,Puzzle Part (Metro Kingdom),Capture,,false,false,false,Puzzle Part (Metro Kingdom),
+FukuwaraiFacePartsMario,capture,Picture Match Part (Mario),Capture,,false,false,false,Picture Match Part (Mario),
+Yoshi,capture,Yoshi,Capture,,false,false,false,Yoshi; YoshiModel,
+Turnip,capture,Turnip,Capture,,true,false,false,Turnip; Radish,Override prop alternative; always unlocked (no real capture is needed)
+Nut,capture,Nut,Capture,,true,false,false,Nut; GrowPlantSeed,Override prop alternative; always unlocked (no real capture is needed)
+Jaxi,capture,Jaxi,Capture,,true,false,false,Jaxi; SphinxRide,Override prop alternative; always unlocked (no real capture is needed)
+Bike,capture,Bike,Capture,,true,false,false,Bike; Motorcycle,Override prop alternative; always unlocked (no real capture is needed)
+RocketFlower,capture,Rocket Flower,Capture,,true,false,false,Rocket Flower,Override prop alternative; always unlocked (no real capture is needed)
+WorldPeace_Cap,event,WorldPeace_Cap,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Cap Kingdom.
+MoonRockActive_Cap,event,MoonRockActive_Cap,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj859.,See progression_events.csv for Cap Kingdom.
+WorldPeace_Cascade,event,WorldPeace_Cascade,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Cascade Kingdom.
+MoonRockActive_Cascade,event,MoonRockActive_Cascade,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj1030.,See progression_events.csv for Cascade Kingdom.
+WorldPeace_Sand,event,WorldPeace_Sand,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Sand Kingdom.
+MoonRockActive_Sand,event,MoonRockActive_Sand,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj3428.,See progression_events.csv for Sand Kingdom.
+WorldPeace_Wooded,event,WorldPeace_Wooded,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Wooded Kingdom.
+MoonRockActive_Wooded,event,MoonRockActive_Wooded,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj5126.,See progression_events.csv for Wooded Kingdom.
+WorldPeace_Lake,event,WorldPeace_Lake,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Lake Kingdom.
+MoonRockActive_Lake,event,MoonRockActive_Lake,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj552.,See progression_events.csv for Lake Kingdom.
+WorldPeace_Cloud,event,WorldPeace_Cloud,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Cloud Kingdom.
+MoonRockActive_Cloud,event,MoonRockActive_Cloud,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj182.,See progression_events.csv for Cloud Kingdom.
+WorldPeace_Lost,event,WorldPeace_Lost,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Lost Kingdom.
+MoonRockActive_Lost,event,MoonRockActive_Lost,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj610.,See progression_events.csv for Lost Kingdom.
+WorldPeace_Metro,event,WorldPeace_Metro,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Metro Kingdom.
+MoonRockActive_Metro,event,MoonRockActive_Metro,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj12582.,See progression_events.csv for Metro Kingdom.
+WorldPeace_Seaside,event,WorldPeace_Seaside,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Seaside Kingdom.
+MoonRockActive_Seaside,event,MoonRockActive_Seaside,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj1374.,See progression_events.csv for Seaside Kingdom.
+WorldPeace_Snow,event,WorldPeace_Snow,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Snow Kingdom.
+MoonRockActive_Snow,event,MoonRockActive_Snow,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj583.,See progression_events.csv for Snow Kingdom.
+WorldPeace_Luncheon,event,WorldPeace_Luncheon,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Luncheon Kingdom.
+MoonRockActive_Luncheon,event,MoonRockActive_Luncheon,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj4881.,See progression_events.csv for Luncheon Kingdom.
+WorldPeace_Ruined,event,WorldPeace_Ruined,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Ruined Kingdom.
+MoonRockActive_Ruined,event,MoonRockActive_Ruined,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj395.,See progression_events.csv for Ruined Kingdom.
+WorldPeace_Bowsers,event,WorldPeace_Bowsers,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Bowser's Kingdom.
+MoonRockActive_Bowsers,event,MoonRockActive_Bowsers,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj1378.,See progression_events.csv for Bowser's Kingdom.
+WorldPeace_Moon,event,WorldPeace_Moon,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Moon Kingdom.
+MoonRockActive_Moon,event,MoonRockActive_Moon,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj144.,See progression_events.csv for Moon Kingdom.
+WorldPeace_Mushroom,event,WorldPeace_Mushroom,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Mushroom Kingdom.
+MoonRockActive_Mushroom,event,MoonRockActive_Mushroom,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state.,See progression_events.csv for Mushroom Kingdom.
+WorldPeace_Dark,event,WorldPeace_Dark,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Dark Side.
+MoonRockActive_Dark,event,MoonRockActive_Dark,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state.,See progression_events.csv for Dark Side.
+WorldPeace_Darker,event,WorldPeace_Darker,world_peace,,false,false,false,Fill the story moons/bosses that must be completed for world peace in this kingdom.,See progression_events.csv for Darker Side.
+MoonRockActive_Darker,event,MoonRockActive_Darker,moon_rock_active,,false,false,false,Fill the route to the Moon Rock and any prerequisite story/global state.,See progression_events.csv for Darker Side.
+free,constant,Free,Logic,,true,false,false,none; no requirement,"Use when no ability, capture, event, or item is required."
+impossible,constant,Impossible,Logic,,false,false,false,unreachable,Use for intentionally blocked paths.
+KingdomAccess_Cap,kingdom,Cap Kingdom Access,Kingdom Access,,false,false,false,Cap Kingdom,Requires being able to reach the Cap Kingdom. (e.g. a hint-art moon that depends on another kingdom).
+KingdomAccess_Cascade,kingdom,Cascade Kingdom Access,Kingdom Access,,false,false,false,Cascade Kingdom,Requires being able to reach the Cascade Kingdom.
+KingdomAccess_Sand,kingdom,Sand Kingdom Access,Kingdom Access,,false,false,false,Sand Kingdom,Requires being able to reach the Sand Kingdom.
+KingdomAccess_Wooded,kingdom,Wooded Kingdom Access,Kingdom Access,,false,false,false,Wooded Kingdom,Requires being able to reach the Wooded Kingdom.
+KingdomAccess_Lake,kingdom,Lake Kingdom Access,Kingdom Access,,false,false,false,Lake Kingdom,Requires being able to reach the Lake Kingdom.
+KingdomAccess_Cloud,kingdom,Cloud Kingdom Access,Kingdom Access,,false,false,false,Cloud Kingdom,Requires being able to reach the Cloud Kingdom.
+KingdomAccess_Lost,kingdom,Lost Kingdom Access,Kingdom Access,,false,false,false,Lost Kingdom,Requires being able to reach the Lost Kingdom.
+KingdomAccess_Metro,kingdom,Metro Kingdom Access,Kingdom Access,,false,false,false,Metro Kingdom,Requires being able to reach the Metro Kingdom.
+KingdomAccess_Seaside,kingdom,Seaside Kingdom Access,Kingdom Access,,false,false,false,Seaside Kingdom,Requires being able to reach the Seaside Kingdom.
+KingdomAccess_Snow,kingdom,Snow Kingdom Access,Kingdom Access,,false,false,false,Snow Kingdom,Requires being able to reach the Snow Kingdom.
+KingdomAccess_Luncheon,kingdom,Luncheon Kingdom Access,Kingdom Access,,false,false,false,Luncheon Kingdom,Requires being able to reach the Luncheon Kingdom.
+KingdomAccess_Ruined,kingdom,Ruined Kingdom Access,Kingdom Access,,false,false,false,Ruined Kingdom,Requires being able to reach the Ruined Kingdom.
+KingdomAccess_Bowsers,kingdom,Bowser's Kingdom Access,Kingdom Access,,false,false,false,Bowser's Kingdom,Requires being able to reach the Bowser's Kingdom.
+KingdomAccess_Moon,kingdom,Moon Kingdom Access,Kingdom Access,,false,false,false,Moon Kingdom,Requires being able to reach the Moon Kingdom.
+KingdomAccess_Mushroom,kingdom,Mushroom Kingdom Access,Kingdom Access,,false,false,false,Mushroom Kingdom,Requires being able to reach the Mushroom Kingdom.
+KingdomAccess_Dark,kingdom,Dark Side Access,Kingdom Access,,false,false,false,Dark Side,Requires being able to reach the Dark Side.
+KingdomAccess_Darker,kingdom,Darker Side Access,Kingdom Access,,false,false,false,Darker Side,Requires being able to reach the Darker Side.

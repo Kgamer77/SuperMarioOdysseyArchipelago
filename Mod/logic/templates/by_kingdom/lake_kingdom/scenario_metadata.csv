@@ -1,0 +1,22 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+FastenerExStage,Lake Kingdom,Unzipping the Chasm,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FastenerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FrogPoisonExStage,Lake Kingdom,Waves of Poison,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FrogPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+GotogotonExStage,Lake Kingdom,Puzzle Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,GotogotonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,,,,LakeWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrampolineWallCatchExStage,Lake Kingdom,"Jump, Grab, Cling, Climb",subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrampolineWallCatchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

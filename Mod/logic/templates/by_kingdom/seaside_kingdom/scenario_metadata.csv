@@ -1,0 +1,68 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CloudExStage,Seaside Kingdom,A Sea of Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CloudExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ReflectBombExStage,Seaside Kingdom,"Stop, Poke, and Roll",subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ReflectBombExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,A;E,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,B;E;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,C;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,C;D;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldCoveCaveZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldSecretStage,Seaside Kingdom,Sphynx Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldSecretStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldSneakingManStage,Seaside Kingdom,Wriggling Power Moon,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldSneakingManStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldSphinxQuizZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldUtsuboDenZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldVibrationStage,Seaside Kingdom,Rumbling Floor Cave,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldVibrationStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SenobiTowerExStage,Seaside Kingdom,Stretching Up the Sinking Island,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SenobiTowerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TogezoRotateExStage,Seaside Kingdom,Spinning Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TogezoRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WaterValleyExStage,Seaside Kingdom,Flying Through the Narrow Valley,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterValleyExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

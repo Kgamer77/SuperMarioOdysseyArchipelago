@@ -1,0 +1,34 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,1,A;B;C;D;E;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,2,A;B;C;D;G;J;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,3,A;B;N;H,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,4,A;B;C;D;G;I;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,5,A;B;C;D;G;I;K;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+BikeSteelExStage,Metro Kingdom,Scooter Daredevil,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BikeSteelExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapRotatePackunExStage,Metro Kingdom,Rotating Maze Shards,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapRotatePackunExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityPeopleRoadStage,Metro Kingdom,Crowded Alleyway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityPeopleRoadStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign004ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign005ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign006ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldFactoryStage,Metro Kingdom,Sewers,subarea,,,,CityWorldFactory01ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldFactoryStage,Metro Kingdom,Sewers,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldFactoryStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldMainTowerStage,Metro Kingdom,Inside New Donk City Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldMainTowerStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldSandSlotStage,Metro Kingdom,Metro Kingdom Slots,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldSandSlotStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldShop01Stage,Metro Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldShop01StageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+DonsukeExStage,Metro Kingdom,Pitchblack Mountain,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DonsukeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ElectricWireExStage,Metro Kingdom,Rewiring the Neighborhood,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ElectricWireExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Note2D3DRoomExStage,Metro Kingdom,Rainbow Notes,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11,Note2D3DRoomExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoleGrabCeilExStage,Metro Kingdom,Swinging Along the High-Rises,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoleGrabCeilExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoleKillerExStage,Metro Kingdom,Bullet Billding,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoleKillerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RadioControlExStage,Metro Kingdom,RC Race,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RadioControlExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingCityExStage,Metro Kingdom,Shards Under Siege,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingCityExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SwingSteelExStage,Metro Kingdom,Swinging Scaffolding,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SwingSteelExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Theater2DExStage,Metro Kingdom,On the Big Screen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Theater2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrexBikeExStage,Metro Kingdom,Scooter Escape!,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrexBikeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

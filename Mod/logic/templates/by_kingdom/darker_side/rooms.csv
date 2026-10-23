@@ -1,0 +1,5 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+Special2WorldCloudStage,Darker Side,Culmina Crater: Pokio Section,Special2WorldCloudStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special2WorldHomeStage,Darker Side,Darker Side,Special2WorldHomeStage::start,overworld,true,true,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special2WorldKoopaStage,Darker Side,Culmina Crater: Bowser Escape,Special2WorldKoopaStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special2WorldLavaStage,Darker Side,Inside Culmina Crater,Special2WorldLavaStage::start,subarea,true,false,0,3,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

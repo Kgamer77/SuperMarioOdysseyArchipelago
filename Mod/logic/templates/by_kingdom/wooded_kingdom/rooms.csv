@@ -1,0 +1,13 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+ForestWorldBossStage,Wooded Kingdom,Secret Flower Field,ForestWorldBossStage::start,subarea,true,true,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldCloudBonusExStage,Wooded Kingdom,Walking on Clouds,ForestWorldCloudBonusExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,ForestWorldHomeStage::start,overworld,true,true,11,7,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link. Includes embedded map ForestWorld2DRoadZone. Includes embedded map ForestWorldTimerAthletic001Zone.
+ForestWorldTowerStage,Wooded Kingdom,Sky Garden Tower,ForestWorldTowerStage::start,subarea,true,true,0,2,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldWaterExStage,Wooded Kingdom,Flooding Pipeway,ForestWorldWaterExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldWoodsCostumeStage,Wooded Kingdom,Costume Room,ForestWorldWoodsCostumeStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldWoodsStage,Wooded Kingdom,Deep Woods,ForestWorldWoodsStage::start,subarea,true,true,4,4,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ForestWorldWoodsTreasureStage,Wooded Kingdom,Deep Woods Treasure Vault,ForestWorldWoodsTreasureStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+KillerRoadExStage,Wooded Kingdom,Breakdown Road,KillerRoadExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PackunPoisonExStage,Wooded Kingdom,Invisible Road,PackunPoisonExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+RailCollisionExStage,Wooded Kingdom,Flower Road,RailCollisionExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ShootingElevatorExStage,Wooded Kingdom,Crowded Elevator,ShootingElevatorExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

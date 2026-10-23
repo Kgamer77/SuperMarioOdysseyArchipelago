@@ -1,0 +1,6 @@
+@sdk
+
+_ZN2nn2os11SleepThreadENS_8TimeSpanE
+_ZN2nn2os22GetSystemTickFrequencyEv
+_ZN2nn2os12CreateThreadEPNS0_10ThreadTypeEPFvPvES3_S3_mii
+_ZN2nn2os11StartThreadEPNS0_10ThreadTypeE

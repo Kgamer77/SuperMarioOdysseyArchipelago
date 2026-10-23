@@ -1,0 +1,3 @@
+event_token,event_type,kingdom,world_id,develop_name,main_stage,event_node_id,event_location_node_id,requirement_expr,status,notes
+WorldPeace_Wooded,world_peace,Wooded Kingdom,3,Wooded,ForestWorldHomeStage,ForestWorldHomeStage::event::WorldPeace_Wooded,,,todo,Fill the story moons/bosses that must be completed for world peace in this kingdom.
+MoonRockActive_Wooded,moon_rock_active,Wooded Kingdom,3,Wooded,ForestWorldHomeStage,ForestWorldHomeStage::event::MoonRockActive_Wooded,ForestWorldHomeStage::event::MoonRockActive_Wooded,,todo,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj5126.

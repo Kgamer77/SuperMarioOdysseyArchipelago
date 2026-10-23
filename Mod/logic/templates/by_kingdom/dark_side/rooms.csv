@@ -1,0 +1,12 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+BikeSteelNoCapExStage,Dark Side,Vanishing Road Capless,BikeSteelNoCapExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+KillerRoadNoCapExStage,Dark Side,Breakdown Road Capless,KillerRoadNoCapExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,LavaWorldUpDownYoshiExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+PackunPoisonNoCapExStage,Dark Side,Invisible Road Capless,PackunPoisonNoCapExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+SenobiTowerYoshiExStage,Dark Side,Yoshi on the Sinking Island,SenobiTowerYoshiExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+ShootingCityYoshiExStage,Dark Side,Yoshi Under Siege,ShootingCityYoshiExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special1WorldHomeStage,Dark Side,Dark Side,Special1WorldHomeStage::start,overworld,true,true,6,4,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special1WorldTowerBombTailStage,Dark Side,Rabbit Ridge Tower: Hariet Battle,Special1WorldTowerBombTailStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special1WorldTowerCapThrowerStage,Dark Side,Rabbit Ridge Tower: Rango Battle,Special1WorldTowerCapThrowerStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special1WorldTowerFireBlowerStage,Dark Side,Rabbit Ridge Tower: Spewart Battle,Special1WorldTowerFireBlowerStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+Special1WorldTowerStackerStage,Dark Side,Rabbit Ridge Tower: Topper Battle,Special1WorldTowerStackerStage::start,subarea,true,false,0,1,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

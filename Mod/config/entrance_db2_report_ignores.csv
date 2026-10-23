@@ -1,0 +1,24 @@
+home_stage,sub_stage,reason
+CityWorldHomeStage,CityWorldFactoryStage,Story path to the Metro sewers is intentionally non-randomized.
+ForestWorldHomeStage,ForestWorldBossStage,Story boss access is intentionally non-randomized.
+ForestWorldHomeStage,ForestWorldTowerStage,Story tower access is intentionally non-randomized.
+MoonWorldHomeStage,MoonWorldCaptureParadeStage,Main Moon Kingdom story route is intentionally non-randomized.
+MoonWorldHomeStage,MoonWorldWeddingRoomStage,Wedding story route is intentionally non-randomized.
+PeachWorldPictureBossForestStage,RevengeForestBossStage,Painting room to boss refight is intentionally left vanilla for user experience.
+PeachWorldPictureBossKnuckleStage,RevengeBossKnuckleStage,Painting room to boss refight is intentionally left vanilla for user experience.
+PeachWorldPictureBossMagmaStage,RevengeBossMagmaStage,Painting room to boss refight is intentionally left vanilla for user experience.
+PeachWorldPictureBossRaidStage,RevengeBossRaidStage,Painting room to boss refight is intentionally left vanilla for user experience.
+PeachWorldPictureGiantWanderBossStage,RevengeGiantWanderBossStage,Painting room to boss refight is intentionally left vanilla for user experience.
+PeachWorldPictureMofumofuStage,RevengeMofumofuStage,Painting room to boss refight is intentionally left vanilla for user experience.
+SandWorldHomeStage,SandWorldPyramid000Stage,Story pyramid route is intentionally non-randomized.
+SandWorldHomeStage,SandWorldPyramid001Stage,Story pyramid route is intentionally non-randomized.
+SandWorldHomeStage,SandWorldUnderground000Stage,Story underground route is intentionally non-randomized.
+SandWorldHomeStage,SandWorldUnderground001Stage,Story underground route is intentionally non-randomized.
+SandWorldUnderground000Stage,SandWorldUnderground001Stage,Story underground progression route is intentionally non-randomized.
+SkyWorldHomeStage,KaronWingTowerStage,Story tower route in Bowser's Kingdom is intentionally non-randomized.
+SnowWorldCostumeStage,SnowWorldTownStage,Shiveria town access is intentionally non-randomized.
+SnowWorldHomeStage,SnowWorldTownStage,Shiveria town access is intentionally non-randomized.
+SnowWorldLobby000Stage,SnowWorldTownStage,Shiveria town access is intentionally non-randomized.
+SnowWorldShopStage,SnowWorldTownStage,Shiveria town access is intentionally non-randomized.
+Special2WorldCloudStage,Special2WorldLavaStage,Darker Side internal route is intentionally non-randomized.
+Special2WorldKoopaStage,Special2WorldLavaStage,Darker Side internal route is intentionally non-randomized.

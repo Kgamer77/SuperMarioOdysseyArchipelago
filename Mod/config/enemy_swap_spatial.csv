@@ -1,0 +1,320 @@
+unit_config_name,footprint,height,solid,collision_x,collision_y,collision_z,model_x,model_y,model_z,measurement,confidence,notes
+CardboardBox,150,100,true,100,100,150,19,100,153,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+FrailBox,202,201,true,202,201,201,201,206,201,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+Chair,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+HomeChairL,180,186,true,180,186,172,173,189,171,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldChairB,63,70,true,63,70,63,63,71,63,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeBench000,301,163,true,301,163,157,299,158,144,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeBench000,280,140,true,280,140,139,252,146,152,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldHomeBench000,250,70,true,250,70,100,271,77,114,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldTableA,150,131,true,150,131,143,151,130,150,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldTableB,150,131,true,150,131,143,151,130,150,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldTableC,400,380,true,400,380,400,307,394,421,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LavaWorldHomeTable000,400,101,true,200,101,400,213,105,403,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+MoonWorldTable,500,120,true,500,120,500,524,121,532,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+MoonWorldTableB,500,300,true,500,300,500,524,301,532,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeTree000,127,944,true,126,944,127,851,1049,630,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldHomeTree000,112,724,true,112,724,88,670,91,78,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldHomeTree001,1113,1608,true,1113,1608,1081,1453,1634,1151,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldHomeTree002,764,1512,true,764,1512,501,741,1501,508,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree000,1365,11459,true,1296,11459,1365,2770,11313,3540,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree001,414,6717,true,414,6717,414,1378,6994,1479,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree002,120,1182,true,120,1182,120,982,1124,554,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree003,1365,11449,true,1296,11449,1365,2770,11313,3540,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldUnderBreakTree000,120,1182,true,120,1182,120,982,1124,554,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeTreePalm000,238,1117,true,238,1117,204,1100,237,206,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeTree000,239,1030,true,239,1030,239,814,1102,793,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeTree001,367,1631,true,367,1631,367,941,1085,994,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeTree002,596,591,true,596,591,419,974,1186,895,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldCostumeRoomTree000,60,600,true,60,600,60,975,801,0,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeYoshiHouseTree,1196,2724,true,1196,2724,1171,1195,2701,1171,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeBush000,214,214,false,0,0,0,88,56,157,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush001,624,624,false,0,0,0,505,70,375,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush002,399,399,false,0,0,0,302,57,293,clipping_radius,low,clipping sphere fallback; review before structural use
+CapWorldHomePlant000,12500,1100,false,0,0,0,1072,82,1582,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CapWorldHomePlant001,10862,2082,false,0,0,0,2919,186,3592,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant000,16361,3196,false,0,0,0,1675,982,11823,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant009,600,600,false,0,0,0,94,67,45,clipping_radius,low,clipping sphere fallback; review before structural use
+WaterfallWorldHomePlant000,10310,9664,false,0,0,0,4861,2716,4870,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant001,9698,11155,false,0,0,0,3812,11370,5089,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeStreetlight000,302,782,true,78,782,302,150,768,336,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeStreetlight001,60,580,true,60,580,60,120,678,279,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeStreetlight000,40,686,true,40,686,40,88,704,88,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+StreetlightA,60,633,true,60,633,60,90,663,90,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign000,40,480,true,40,480,40,304,480,79,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ShopSign,600,600,false,0,0,0,204,202,8,clipping_radius,low,clipping sphere fallback; review before structural use
+SignBoardNormal,216,254,true,216,254,50,239,362,71,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SignBoardDanger,295,519,true,295,519,76,272,928,53,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomePole000,50,1141,true,50,1141,44,92,93,92,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomePole000,16212,9180,true,7237,9180,16212,7213,9088,16188,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeLighthousePole000,151,4133,true,151,4133,151,151,4100,151,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+WaterfallWorldHomeElectricPole000,450,7925,true,450,7925,100,80,5875,80,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Bird,80,80,false,0,0,0,87,57,39,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdCap,80,80,false,0,0,0,57,52,42,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdCity,80,80,false,0,0,0,63,42,127,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdClash,150,150,false,0,0,0,134,26,207,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdCloud,80,80,false,0,0,0,63,42,127,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdEagle,200,200,false,0,0,0,180,46,176,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdForest,80,80,false,0,0,0,103,59,37,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdGull,200,200,false,0,0,0,168,41,98,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdLake,80,80,false,0,0,0,87,57,39,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdLava,80,80,false,0,0,0,80,65,58,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdMoon,80,80,false,0,0,0,128,131,131,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdSand,80,80,false,0,0,0,86,56,38,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdSky,80,80,false,0,0,0,70,45,31,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdSnow,80,80,false,0,0,0,67,55,46,body_sensor,medium,union of 1 body-sensor sphere(s)
+BirdWaterfall,80,80,false,0,0,0,101,74,38,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjBeans,110,110,false,0,0,0,110,61,81,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjCan,50,50,false,0,0,0,49,51,49,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjFootBall,100,100,false,0,0,0,129,83,83,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjGarbageBag,120,120,false,0,0,0,139,119,116,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjMushroom,60,60,false,0,0,0,53,54,53,body_sensor,medium,union of 1 body-sensor sphere(s)
+BlowObjPylon,98,139,true,98,139,98,151,170,147,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+BlowObjTire,141,45,true,141,45,141,126,48,126,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CageBreakable,400,400,true,400,400,400,418,410,418,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapHanger,120,120,false,0,0,0,0,0,0,body_sensor,medium,union of 1 body-sensor sphere(s)
+CapWorldCandlestand000,146,240,true,146,240,146,173,200,165,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapHanger000,40,75,true,40,75,40,67,90,64,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapHanger001,50,100,true,50,100,44,92,100,92,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapHanger002,50,350,true,50,350,44,304,350,163,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapHanger003,73,81,true,40,81,73,67,100,94,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapHanger004,54,405,true,54,405,53,80,412,76,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapShip000,901,550,true,901,550,901,901,550,901,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapShip002,901,451,true,901,451,901,901,450,901,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CapWorldHomeCapShip003,901,451,true,901,451,901,901,450,901,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CarBreakable,938,290,true,337,290,938,410,383,970,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign002,194,754,true,194,754,60,338,837,213,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign003,198,821,true,198,821,60,210,922,173,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign004,303,635,true,303,635,64,304,635,57,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign005,303,520,true,303,520,64,304,518,57,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign006,303,520,true,303,520,64,304,518,57,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign016,435,1776,true,113,1776,435,145,1825,387,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign027,586,1038,true,128,1038,586,114,842,302,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSignal000,582,649,true,76,649,582,151,750,625,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSignal001,631,476,true,631,476,84,624,411,87,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeTrashBox000,114,141,true,114,141,114,111,136,111,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldCandlestand000,200,200,true,200,200,200,220,200,220,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CommonExCandleStand000,200,200,true,200,200,200,200,208,200,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CrystalBreakable,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+DigPoint,250,250,false,0,0,0,0,0,0,body_sensor,medium,union of 1 body-sensor sphere(s)
+DotMarioCat,110,110,false,0,0,0,103,85,0,body_sensor,medium,union of 1 body-sensor sphere(s)
+DotPeachCat,110,110,false,0,0,0,103,90,0,body_sensor,medium,union of 1 body-sensor sphere(s)
+DotPeachCatReverse,110,110,false,0,0,0,103,90,1,body_sensor,medium,union of 1 body-sensor sphere(s)
+DotRosetta,110,110,false,0,0,0,108,81,1,body_sensor,medium,union of 1 body-sensor sphere(s)
+FireHydrant,96,147,true,96,147,92,159,100,90,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+KickStone,140,140,false,0,0,0,141,146,140,body_sensor,medium,union of 1 body-sensor sphere(s)
+LavaWorldCandlestand000,200,200,true,200,200,200,196,201,200,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+MoonWorldCandlestand000,200,200,true,200,200,200,198,201,198,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldTapestry,160,300,false,0,0,0,295,169,198,body_sensor,medium,union of 2 body-sensor sphere(s)
+Pen,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+PosterCeremony,160,280,false,0,0,0,240,160,3,body_sensor,medium,union of 2 body-sensor sphere(s)
+PosterWedding,160,280,false,0,0,0,240,160,34,body_sensor,medium,union of 2 body-sensor sphere(s)
+ReactionObject,0,0,false,0,0,0,0,0,0,unknown,unknown,no usable spatial metadata
+RunawayCrab,300,300,false,0,0,0,43,43,48,body_sensor,medium,union of 1 body-sensor sphere(s)
+RunawayLizard,300,300,false,0,0,0,120,18,42,body_sensor,medium,union of 1 body-sensor sphere(s)
+RunawayRat,300,300,false,0,0,0,88,33,24,body_sensor,medium,union of 1 body-sensor sphere(s)
+RunawaySquirrel,300,300,false,0,0,0,135,48,37,body_sensor,medium,union of 1 body-sensor sphere(s)
+SandWorldCandlestand000,200,200,true,200,200,200,240,200,240,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCapHanger000,115,105,true,115,105,95,244,82,244,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldBellA,272,384,true,259,384,272,380,323,340,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldCandlestand000,200,211,true,200,211,200,204,209,204,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldFlagA,351,1268,true,351,1268,40,380,1371,42,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldHomeTorch000,100,205,true,100,205,100,100,201,100,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldKiteA,3796,3662,true,3796,3662,1361,3796,4054,1550,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldLanternA,2290,400,true,2290,400,400,1106,501,450,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SkyWorldLanternB,240,240,false,0,0,0,399,105,104,body_sensor,medium,union of 1 body-sensor sphere(s)
+SnowWorldCandlestand000,222,210,true,222,210,222,201,200,201,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldIcicleIcicle000,300,500,true,300,500,300,300,500,300,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Souvenir,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+Stake,100,185,true,100,185,100,80,92,92,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+StakeLava,100,185,true,100,185,100,80,90,88,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+TreasureBox,300,239,true,230,239,300,178,162,230,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+CapWorldHomePlant002,3440,277,false,0,0,0,2162,75,631,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CapWorldHomePlant003,6763,2482,false,0,0,0,3198,2487,1573,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CapWorldHomePlant004,5009,431,false,0,0,0,262,267,911,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+TrampleBush,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+BullRunExBreakParts000,50,600,true,50,600,50,50,600,50,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Car,963,297,true,357,297,963,410,383,982,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldCastleInsideChair,218,426,true,218,426,161,252,431,158,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldSign,30459,11694,false,0,0,0,15682,5730,22365,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+HomeBed,371,162,true,206,162,371,229,165,283,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+RhythmSpotlight,3000,3000,false,0,0,0,100,111,100,clipping_radius,low,clipping sphere fallback; review before structural use
+RhythmSpotlight01,3000,3000,false,0,0,0,893,887,100,clipping_radius,low,clipping sphere fallback; review before structural use
+VocalMike,74,197,true,74,197,74,187,49,42,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+BossRaidWorldHomeDecoration000,13632,13632,false,0,0,0,11036,5386,2285,clipping_radius,low,clipping sphere fallback; review before structural use
+BossRaidWorldHomeStone000,800,800,false,0,0,0,364,20,265,clipping_radius,low,clipping sphere fallback; review before structural use
+CapWorldHomeCapShip004,901,451,true,901,451,901,901,450,901,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldChairAFixParts,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+CityWorldChairBFixParts,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+CityWorldHomeCeremonyLight000,127,179,true,60,179,127,220,988,822,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeGraffiti000,12928,12928,false,0,0,0,7262,2367,4550,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeLight000,200,200,true,200,200,100,4166,9220,677,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeLight001,34000,34000,false,0,0,0,2880,1698,0,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeLight003,8263,8263,false,0,0,0,548,0,587,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeLight004,4742,4742,false,0,0,0,1647,0,1644,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeLight005,800,800,false,0,0,0,500,0,718,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeLight006,10930,10930,false,0,0,0,1446,1,1035,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeManhole000,151,40,true,151,40,151,155,8,155,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeManhole003,459,47,true,459,47,459,401,9,401,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomePoster001,37171,37171,false,0,0,0,2374,379,68,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeSign001,40,480,true,40,480,40,100,480,63,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign007,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign008,1710,2414,true,1710,2414,270,1705,2392,207,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign009,1932,2860,true,1932,2860,288,1932,2850,298,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign010,3346,2493,true,3346,2493,1102,2629,1942,787,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign012,940,700,true,940,700,267,930,714,266,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign013,3394,2590,true,3394,2590,1288,2656,2090,1039,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign017,940,700,true,940,700,267,930,714,266,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign018,940,700,true,940,700,267,930,714,266,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign019,940,700,true,940,700,267,930,714,266,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign020,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign021,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign022,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign023,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign024,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign025,943,1260,true,943,1260,270,921,1250,276,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSign026,30459,11694,false,0,0,0,7572,5867,21989,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeSignal002,1170,1170,false,0,0,0,143,26,21,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeSignal003,60,435,true,60,435,60,75,433,75,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSignal006,140,60,false,0,0,0,27,35,123,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeSignal007,165,40,false,0,0,0,27,35,157,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeSignal008,1300,1300,false,0,0,0,27,35,168,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeSignal009,160,50,false,0,0,0,27,35,138,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeSignal010,130,45,false,0,0,0,27,35,121,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+CityWorldHomeSignal011,1200,1200,false,0,0,0,27,35,161,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeSignal012,1300,1300,false,0,0,0,27,35,156,clipping_radius,low,clipping sphere fallback; review before structural use
+CityWorldHomeSignal013,990,990,false,0,0,0,93,40,45,clipping_radius,low,clipping sphere fallback; review before structural use
+ClashWorldHomeTree003,899,1802,true,514,1802,899,643,1800,1149,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldHomeTree004,872,1440,true,872,1440,828,851,1457,840,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ClashWorldHomeTree005,706,1606,true,659,1606,706,648,1842,805,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CommonShopRoomRack000,200,200,true,200,200,100,289,18,190,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CommonShopRoomRack001,200,200,true,200,200,100,289,18,190,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CommonSlotRoomSpotLight000,3000,3000,false,0,0,0,10,0,10,clipping_radius,low,clipping sphere fallback; review before structural use
+ForestWorldHomeFlower000,70,65,true,70,65,70,1077,1,803,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeFlower001,3366,56,true,3360,56,3366,1538,95,1901,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeFlower002,3366,56,true,3360,56,3366,1596,100,1809,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeFlower003,22727,12827,false,0,0,0,791,1,754,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant001,17155,4893,false,0,0,0,2957,635,7456,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant002,15482,5817,false,0,0,0,3042,734,9393,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant003,12300,1583,false,0,0,0,2575,254,3066,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant004,13008,3970,false,0,0,0,8198,3419,3272,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant005,6505,984,false,0,0,0,4890,884,1531,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant006,10628,2563,false,0,0,0,1301,2245,8710,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant007,9141,5830,false,0,0,0,3271,1348,8203,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant008,11258,2668,false,0,0,0,4492,1537,1676,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+ForestWorldHomePlant010,600,600,false,0,0,0,94,35,271,clipping_radius,low,clipping sphere fallback; review before structural use
+ForestWorldHomeRock000,531,326,true,531,326,373,527,332,385,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree004,1358,11449,true,1289,11449,1358,3854,11316,2768,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+ForestWorldHomeTree005,1365,11459,true,1296,11459,1365,2275,11313,2848,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+HomeInsideMirror,600,600,false,0,0,0,1261,669,1133,clipping_radius,low,clipping sphere fallback; review before structural use
+LakeWorldHomeDebris000,400,378,true,400,378,304,430,304,240,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeShowWindow000,2740,800,true,2740,800,1070,2761,800,1133,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar000,240,1105,true,208,1105,240,260,1074,260,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar001,300,805,true,174,805,300,250,801,250,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar002,300,591,true,174,591,300,234,591,234,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar003,300,235,true,174,235,300,234,235,234,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar004,523,472,true,520,472,523,481,465,481,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar005,520,722,true,520,722,520,520,718,520,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar006,382,1052,true,382,1052,382,409,1053,409,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar007,382,444,true,382,444,382,409,443,409,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LakeWorldHomeStonePillar008,240,632,true,208,632,240,260,630,260,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LavaWorldHomeFlag000,2804,860,true,2804,860,1607,3897,863,3939,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+LavaWorldHomeRock000,546,646,true,546,646,536,543,645,525,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Lift2DExPlant000,3000,3000,false,0,0,0,958,397,979,clipping_radius,low,clipping sphere fallback; review before structural use
+MoonWorldLunchMat,600,600,false,0,0,0,469,4,446,clipping_radius,low,clipping sphere fallback; review before structural use
+ParkingMeter,40,165,true,40,165,40,48,164,32,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeCastleFlag,162,626,true,162,626,162,189,594,189,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeFountain,65,54,true,65,54,61,2280,793,1950,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+PeachWorldHomeGrass000,21188,2825,false,0,0,0,4751,2690,1636,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+PeachWorldHomeStone000,10000,10000,false,0,0,0,947,138,322,clipping_radius,low,clipping sphere fallback; review before structural use
+PeachWorldHomeYoshiHouseLeaf,10339,10339,false,0,0,0,3079,2278,3056,clipping_radius,low,clipping sphere fallback; review before structural use
+PlayGuideBoard,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+PlayGuideBoardWall,600,600,false,0,0,0,201,127,26,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone000,5336,598,true,5336,598,1836,939,320,296,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeStone001,28562,28562,false,0,0,0,3721,336,3981,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone002,43115,43115,false,0,0,0,7140,398,2268,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone003,42566,42566,false,0,0,0,7539,217,1441,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone004,39549,39549,false,0,0,0,2251,313,7862,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone005,33027,33027,false,0,0,0,1779,540,3709,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStone006,26352,26352,false,0,0,0,2360,269,4464,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStonePillar000,7800,1850,true,4200,1850,7800,4166,1851,7801,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeStonePillar001,580,3015,true,580,3015,580,580,3000,580,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeStonePillar002,1946,1692,true,1946,1692,401,1934,1934,396,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SaucePan,903,404,true,903,404,903,958,349,863,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+SeaWorldHomeBottle000,1112,2546,true,1078,2546,1112,2440,6176,2513,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeBush003,12245,12245,false,0,0,0,304,74,192,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush004,3000,3000,false,0,0,0,476,57,455,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush005,7329,7329,false,0,0,0,344,68,319,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush006,2620,2620,false,0,0,0,732,93,442,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush007,6087,6087,false,0,0,0,1260,156,368,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush008,6441,6441,false,0,0,0,872,66,911,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush009,5659,5659,false,0,0,0,30,43,36,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush010,7017,7017,false,0,0,0,544,70,444,clipping_radius,low,clipping sphere fallback; review before structural use
+SeaWorldHomeBush011,2616,2616,false,0,0,0,608,77,528,clipping_radius,low,clipping sphere fallback; review before structural use
+SignBoardNormalWall,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+SkyWorldHomeLanternAStand,300,760,true,300,760,248,300,775,238,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SlotSignA,200,189,true,200,189,40,205,194,35,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SlotSignB,220,189,true,65,189,220,42,191,223,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldRaceFlag000,200,200,true,200,200,100,715,1275,130,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldRaceFlag001,200,200,true,200,200,100,715,1275,130,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldRaceFlag002,200,200,true,200,200,100,715,1275,130,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Special1WorldHomePole000,450,7925,true,450,7925,100,80,1870,80,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Special1WorldHomeRock000,623,527,true,623,527,525,624,529,517,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Special2WorldHomeSpeaker,1537,634,true,1537,634,937,1525,675,1128,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+Sticker,0,0,false,0,0,0,0,0,0,unknown,unknown,ObjectData archive is absent
+WaterTower,258,537,true,258,537,258,256,555,256,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+WaterfallWorldHomePlant002,10219,5479,false,0,0,0,6341,691,3306,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant003,6000,6000,false,0,0,0,2955,334,4211,clipping_radius,low,clipping sphere fallback; review before structural use
+WaterfallWorldHomePlant004,5419,1608,false,0,0,0,4874,1621,3306,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant005,6810,1471,false,0,0,0,4776,1054,2962,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant006,10000,10000,false,0,0,0,2492,202,1530,clipping_radius,low,clipping sphere fallback; review before structural use
+WaterfallWorldHomePlant007,10687,2653,false,0,0,0,8640,553,3065,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant008,7198,2269,false,0,0,0,6805,809,2413,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant009,9600,9600,false,0,0,0,4921,519,7034,clipping_radius,low,clipping sphere fallback; review before structural use
+WaterfallWorldHomePlant010,8357,618,false,0,0,0,8164,419,3340,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant011,9440,955,false,0,0,0,1101,544,1397,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomePlant012,6024,745,false,0,0,0,1999,177,2190,clipping_obb,medium,explicit clipping OBB; no collision mesh in archive
+WaterfallWorldHomeRock000,361,378,true,353,378,361,352,371,375,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+WaterfallWorldHomeRock002,719,402,true,719,402,664,642,255,522,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+WeddingCake,0,0,false,0,0,0,523,821,522,unknown,unknown,no usable spatial metadata
+WeddingFlower,0,0,false,0,0,0,505,552,480,unknown,unknown,no usable spatial metadata
+WeddingFood,0,0,false,0,0,0,219,645,494,unknown,unknown,no usable spatial metadata
+WeddingRingStand,0,0,false,0,0,0,415,155,363,unknown,unknown,no usable spatial metadata
+BossRaidBatGroup,3000,3000,false,0,0,0,146,38,84,clipping_radius,low,clipping sphere fallback; review before structural use
+CandlestandFire,160,160,false,0,0,0,0,0,0,body_sensor,medium,union of 1 body-sensor sphere(s)
+JaguarTaxistop,172,431,true,172,431,164,197,411,171,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+KinokoUfo,1130,972,true,1130,972,1106,1103,940,1103,kcl_aabb,high,union of 3 collision-mesh AABB(s)
+MofumofuScrap,927,366,true,927,366,644,445,447,394,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+MoonWorldHomeBell,1461,1652,true,1461,1652,1080,1447,1929,1080,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeGrass000,8909,8909,false,0,0,0,648,94,614,clipping_radius,low,clipping sphere fallback; review before structural use
+SandWorldHomeStatue000,1200,490,true,1200,490,300,650,488,301,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef000,9783,1511,true,9783,1511,5530,6599,1424,1288,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef001,11258,1591,true,5500,1591,11258,2848,1424,8881,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef002,5705,807,true,5705,807,4684,4529,706,2923,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef003,7351,769,true,6040,769,7351,1436,585,4882,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef004,3553,323,true,2335,323,3553,1211,252,1232,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef005,11517,4397,true,11517,4397,5077,7373,6238,6793,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef006,1478,385,true,876,385,1478,728,343,636,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef007,3164,257,true,3164,257,1358,879,192,761,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef008,2174,519,true,2174,519,1726,1518,507,1449,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef009,5195,359,true,5195,359,3784,1821,262,3328,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef010,13096,718,true,7015,718,13096,6223,527,12348,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef011,2273,351,true,2273,351,1750,1775,300,1546,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef012,1199,454,true,1199,454,955,1026,491,889,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef013,4014,569,true,2425,569,4014,716,451,2543,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SeaWorldHomeCoralReef014,1659,651,true,1659,651,915,1565,518,799,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldIcicleIcicle001,1985,2100,true,1985,2100,1961,1380,2123,1650,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SnowWorldIcicleIcicle002,1665,2225,true,1665,2225,1623,546,537,547,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeFrame000,1200,1200,true,1200,1200,1200,1200,1200,1200,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CityWorldHomeSwingParts000,1600,100,true,280,100,1600,15,1539,15,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CrystalBreakableIce,181,256,true,181,256,157,156,275,140,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+CrystalSmallBreakableIce,160,160,false,0,0,0,113,76,119,body_sensor,medium,union of 1 body-sensor sphere(s)
+SandWorldHomeIce000,26002,1987,true,26002,1987,10220,9060,582,20971,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIce001,19309,2857,true,12935,2857,19309,5670,4742,6623,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIce002,23940,1173,true,23940,1173,7510,35498,1959,14289,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIce003,22339,1445,true,22339,1445,13080,11113,529,12354,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIcePillar000,686,2086,true,686,2086,686,673,1386,675,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIcePillar001,7151,2569,true,7151,2569,6159,4862,1684,5421,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+SandWorldHomeIcePillar002,13551,2404,true,13551,2404,11674,12299,1250,17410,kcl_aabb,high,union of 2 collision-mesh AABB(s)
+SandWorldHomeIcePillar003,2486,3133,true,2386,3133,2486,2136,2411,2061,kcl_aabb,high,union of 1 collision-mesh AABB(s)
+SandWorldHomeIcePillar004,5336,598,true,5336,598,1836,1059,394,629,kcl_aabb,high,union of 1 collision-mesh AABB(s)

@@ -1,0 +1,7 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+WaterfallWorldHomeStage,Cascade Kingdom,Cascade Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterfallWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CapAppearExStage,Cascade Kingdom,Mysterious Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapAppearExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Lift2DExStage,Cascade Kingdom,8-Bit Chasm Lifts,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Lift2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrexPoppunExStage,Cascade Kingdom,Dinosaur Nest,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrexPoppunExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WanwanClashExStage,Cascade Kingdom,Nice Shots with Chain Chomps,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WanwanClashExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WindBlowExStage,Cascade Kingdom,Gusty Bridges,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WindBlowExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

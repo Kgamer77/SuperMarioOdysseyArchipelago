@@ -1,0 +1,5 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+ClashWorldHomeStage,Lost Kingdom,Lost Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ClashWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ClashWorldShopStage,Lost Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ClashWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ImomuPoisonExStage,Lost Kingdom,Stretch and Traverse the Jungle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ImomuPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+JangoExStage,Lost Kingdom,Klepto 2 - Lava Boogaloo,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,JangoExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

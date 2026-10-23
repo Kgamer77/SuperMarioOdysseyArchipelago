@@ -1,0 +1,395 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+BossRaidWorldHomeStage,Ruined Kingdom,Ruined Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BossRaidWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapAppearLavaLiftExStage,Luncheon Kingdom,Volcano Cave Cruising,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapAppearLavaLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapWorldHomeStage,Cap Kingdom,Cap Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,1,A;B;C;D;E;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,2,A;B;C;D;G;J;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,3,A;B;N;H,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,4,A;B;C;D;G;I;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,5,A;B;C;D;G;I;K;L;N;O,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ClashWorldHomeStage,Lost Kingdom,Lost Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ClashWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CloudWorldHomeStage,Cloud Kingdom,Cloud Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CloudWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldBossStage,Wooded Kingdom,Secret Flower Field,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldBossStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,,LakeWorldTownZoneMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,1,Common;G;H;J,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,2,A;H;I;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,3,A;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,4,A;B;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,5,A;C;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,6,A;D;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,7,A;E;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+MoonWorldHomeStage,Moon Kingdom,Moon Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+PeachWorldCastleStage,Mushroom Kingdom,Peach's Castle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldCastleStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldHomeStage,Mushroom Kingdom,Mushroom Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,4,Scenario1_3;Scenario2_3;Scenario3;C,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,5,Scenario1_3;Scenario2_3;Scenario3;C;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,5,Scenario3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,,,,SkyWorldCastleZoneMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,1,Common;Scenario1;Scenario1_2,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,2,Common;Scenario2;Scenario1_2;Scenario2_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,3,Common;A;Scenario3;Scenario2_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SnowWorldHomeStage,Snow Kingdom,Snow Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobby000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby001Stage,Snow Kingdom,SnowWorldLobby001Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobby001StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldHomeStage,Dark Side,Dark Side,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WaterfallWorldHomeStage,Cascade Kingdom,Cascade Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterfallWorldHomeStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+AnimalChaseExStage,Wooded Kingdom,Herding Sheep,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,AnimalChaseExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+BikeSteelExStage,Metro Kingdom,Scooter Daredevil,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BikeSteelExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+BikeSteelNoCapExStage,Dark Side,Vanishing Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BikeSteelNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+BullRunExStage,Ruined Kingdom,Mummy Army,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,BullRunExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ByugoPuzzleExStage,Snow Kingdom,Ty-Foo Sliding Puzzle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ByugoPuzzleExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapAppearExStage,Cascade Kingdom,Mysterious Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapAppearExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapRotatePackunExStage,Metro Kingdom,Rotating Maze Shards,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapRotatePackunExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CapWorldTowerStage,Cap Kingdom,Inside Cap Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapWorldTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityPeopleRoadStage,Metro Kingdom,Crowded Alleyway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityPeopleRoadStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign004ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign005ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorld2DSign006ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldFactoryStage,Metro Kingdom,Sewers,subarea,,,,CityWorldFactory01ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldFactoryStage,Metro Kingdom,Sewers,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldFactoryStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldMainTowerStage,Metro Kingdom,Inside New Donk City Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldMainTowerStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldSandSlotStage,Metro Kingdom,Metro Kingdom Slots,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldSandSlotStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldShop01Stage,Metro Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CityWorldShop01StageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+CityWorldHomeStage,Metro Kingdom,Metro Kingdom,overworld,,,,CityWorldTimerAthletic003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ClashWorldShopStage,Lost Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ClashWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+CloudExStage,Seaside Kingdom,A Sea of Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CloudExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Cube2DExStage,Cloud Kingdom,2D Cube,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Cube2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoBossRaidAttackStage,,DemoBossRaidAttackStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoBossRaidAttackStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoChangeWorldBossRaidAttackStage,,DemoChangeWorldBossRaidAttackStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoChangeWorldBossRaidAttackStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoChangeWorldFindKoopaShipStage,,DemoChangeWorldFindKoopaShipStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoChangeWorldFindKoopaShipStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoChangeWorldStage,,DemoChangeWorldStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoChangeWorldStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoCrashHomeFallStage,,DemoCrashHomeFallStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoCrashHomeFallStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoCrashHomeStage,,DemoCrashHomeStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoCrashHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoEndingStage,,DemoEndingStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoEndingStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoHackFirstStage,,DemoHackFirstStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoHackFirstStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoHackKoopaStage,,DemoHackKoopaStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoHackKoopaStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoLavaWorldScenario1EndStage,,DemoLavaWorldScenario1EndStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoLavaWorldScenario1EndStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoMeetCapNpcSubStage,,DemoMeetCapNpcSubStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoMeetCapNpcSubStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoOpeningStage,,DemoOpeningStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoOpeningStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoStartWorldWaterfallStage,,DemoStartWorldWaterfallStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoStartWorldWaterfallStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoTakeOffKoopaForMoonStage,,DemoTakeOffKoopaForMoonStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoTakeOffKoopaForMoonStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveBackwardArriveStage,,DemoWorldMoveBackwardArriveStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveBackwardArriveStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveBackwardStage,,DemoWorldMoveBackwardStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveBackwardStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveForwardArriveStage,,DemoWorldMoveForwardArriveStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveForwardArriveStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveForwardFirstStage,,DemoWorldMoveForwardFirstStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveForwardFirstStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveForwardStage,,DemoWorldMoveForwardStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveForwardStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveMoonBackwardStage,,DemoWorldMoveMoonBackwardStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveMoonBackwardStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveMoonForwardFirstStage,,DemoWorldMoveMoonForwardFirstStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveMoonForwardFirstStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldMoveMoonForwardStage,,DemoWorldMoveMoonForwardStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldMoveMoonForwardStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DemoWorldWarpHoleStage,,DemoWorldWarpHoleStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DemoWorldWarpHoleStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DonsukeExStage,Metro Kingdom,Pitchblack Mountain,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DonsukeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DotHardExStage,Mushroom Kingdom,8-Bit Bullet Bills,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DotHardExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+DotTowerExStage,Ruined Kingdom,Roulette Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,DotTowerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ElectricWireExStage,Metro Kingdom,Rewiring the Neighborhood,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ElectricWireExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FastenerExStage,Lake Kingdom,Unzipping the Chasm,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FastenerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FogMountainExStage,Wooded Kingdom,Shards in the Fog,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FogMountainExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorld2DRoadZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorldAthleticZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldBonusStage,Wooded Kingdom,Spinning-Platforms Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldBonusStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldCloudBonusExStage,Wooded Kingdom,Walking on Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldHomeStage,Wooded Kingdom,Wooded Kingdom,overworld,,,,ForestWorldTimerAthletic001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldTowerStage,Wooded Kingdom,Sky Garden Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWaterExStage,Wooded Kingdom,Flooding Pipeway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWaterExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsCostumeStage,Wooded Kingdom,Costume Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsStage,Wooded Kingdom,Deep Woods,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForestWorldWoodsTreasureStage,Wooded Kingdom,Deep Woods Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForestWorldWoodsTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ForkExStage,Luncheon Kingdom,Fork-Flickin to the Summit,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForkExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FrogPoisonExStage,Lake Kingdom,Waves of Poison,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FrogPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FrogSearchExStage,Cap Kingdom,Frog Pond,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FrogSearchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FukuwaraiKuriboStage,Cloud Kingdom,Picture Match,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FukuwaraiKuriboStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FukuwaraiMarioStage,Mushroom Kingdom,Picture Match,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FukuwaraiMarioStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+GabuzouClockExStage,Luncheon Kingdom,Blazing Above the Gears,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,GabuzouClockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Galaxy2DExStage,Moon Kingdom,8-Bit Galaxy,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Galaxy2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+GotogotonExStage,Lake Kingdom,Puzzle Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,GotogotonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+HomeShipInsideStage,,HomeShipInsideStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,HomeShipInsideStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWalkerExStage,Snow Kingdom,Koopa Walking in Snow,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWalkerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWaterBlockExStage,Snow Kingdom,Freezing Water,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWaterBlockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+IceWaterDashExStage,Snow Kingdom,Dashing Over Cold Water,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,IceWaterDashExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ImomuPoisonExStage,Lost Kingdom,Stretch and Traverse the Jungle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ImomuPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+JangoExStage,Lost Kingdom,Klepto 2 - Lava Boogaloo,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,JangoExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+JizoSwitchExStage,Bowser's Kingdom,Jizo's Great Adventure,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,JizoSwitchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KaronWingTowerStage,Bowser's Kingdom,Hexagon Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KaronWingTowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRailCollisionExStage,Snow Kingdom,Wintery Flower Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRailCollisionExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRoadExStage,Wooded Kingdom,Breakdown Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRoadExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+KillerRoadNoCapExStage,Dark Side,Breakdown Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,KillerRoadNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,1,A;E,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,2,B;E;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,3,C;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,4,C;D;F,,LakeWorld2DZoneMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LakeWorldShopStageMap.szs,ScenarioInfo.byml,extracted,
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,overworld,,,,LakeWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaBonus1Zone,Luncheon Kingdom,Luncheon Kingdom Slots(?),subarea,,,,LavaBonus1ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldBubbleLaneExStage,Luncheon Kingdom,Narrow Magma Path,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldBubbleLaneExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldCaveZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldClockExStage,Luncheon Kingdom,Spinning Athletics,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldClockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldCostumeStage,Luncheon Kingdom,Simmering in the Kitchen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldExcavationExStage,Luncheon Kingdom,Shards in the Cheese Rocks,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldExcavationExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldFenceLiftExStage,Luncheon Kingdom,Lava Island Fly-By,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldFenceLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldIslandZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldShopStage,Luncheon Kingdom,Crazy Cap Store(?),subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldTimerAthletic001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldTreasureStage,Luncheon Kingdom,Luncheon Treasure Vault(?),subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,1,Common;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,2,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,4,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,5,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,6,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,7,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,1,Common;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,2,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,4,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,5,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,6,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownYoshiExStage,Dark Side,Yoshi's Magma Swamp,subarea,7,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownYoshiExStageMap.szs,ScenarioInfo.byml,extracted,
+Lift2DExStage,Cascade Kingdom,8-Bit Chasm Lifts,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Lift2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MeganeLiftExStage,Sand Kingdom,The Invisible Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MeganeLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonAthleticExStage,Moon Kingdom,Giant Swings,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonAthleticExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement002ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement003ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,,MoonWorldBasement004ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldBasementStage,Moon Kingdom,Moon Cave Escape,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldBasementStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeBullZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeKillerZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeLavaPillarZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeLiftZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,,MoonWorldCaptureParadeMeganeZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldCaptureParadeStage,Moon Kingdom,Underground Caverns,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldCaptureParadeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldHomeStage,Moon Kingdom,Moon Kingdom,overworld,,,,MoonWorldHome2DZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldKoopa1Stage,,MoonWorldKoopa1Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldKoopa1StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldKoopa2Stage,,MoonWorldKoopa2Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldKoopa2StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldShopRoom,Moon Kingdom,Crazy Cap Store,subarea,,,,MoonWorldShopRoomMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldSphinxRoom,Moon Kingdom,Moon Kingdom Treasure Vault,subarea,,,,MoonWorldSphinxRoomMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldWeddingRoom2Stage,,MoonWorldWeddingRoom2Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldWeddingRoom2StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldWeddingRoomStage,Moon Kingdom,Wedding Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MoonWorldWeddingRoomStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+MoonWorldWeddingRoomStage,Moon Kingdom,Wedding Room,subarea,,,,MoonWorldWeddingRoomZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+Note2D3DRoomExStage,Metro Kingdom,Rainbow Notes,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11,Note2D3DRoomExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PackunPoisonExStage,Wooded Kingdom,Invisible Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PackunPoisonExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PackunPoisonNoCapExStage,Dark Side,Invisible Road Capless,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PackunPoisonNoCapExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldCostumeStage,Mushroom Kingdom,Castle Courtyard 64,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossForestStage,Mushroom Kingdom,Painting Room: Torkdrift,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossForestStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossKnuckleStage,Mushroom Kingdom,Painting Room: Knucklotec,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossMagmaStage,Mushroom Kingdom,Painting Room: Cookatiel,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureBossRaidStage,Mushroom Kingdom,Painting Room: Lord of Lightning,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureBossRaidStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureGiantWanderBossStage,Mushroom Kingdom,Painting Room: Mollusque-Lanceur,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureMofumofuStage,Mushroom Kingdom,Painting Room: Mechawiggler,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldPictureMofumofuStageMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomDokanZone,,PeachWorldPictureRoomDokanZone,subarea,1,Common,,PeachWorldPictureRoomDokanZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomDokanZone,,PeachWorldPictureRoomDokanZone,subarea,2,Common,,PeachWorldPictureRoomDokanZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomDokanZone,,PeachWorldPictureRoomDokanZone,subarea,3,Common,,PeachWorldPictureRoomDokanZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomDokanZone,,PeachWorldPictureRoomDokanZone,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,,PeachWorldPictureRoomDokanZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomZone,,PeachWorldPictureRoomZone,subarea,1,Common,,PeachWorldPictureRoomZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomZone,,PeachWorldPictureRoomZone,subarea,2,Common,,PeachWorldPictureRoomZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomZone,,PeachWorldPictureRoomZone,subarea,3,Common,,PeachWorldPictureRoomZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldPictureRoomZone,,PeachWorldPictureRoomZone,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,,PeachWorldPictureRoomZoneMap.szs,ScenarioInfo.byml,extracted,
+PeachWorldShopStage,Mushroom Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PeachWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoisonWaveExStage,Cap Kingdom,Poison Tides,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoisonWaveExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoleGrabCeilExStage,Metro Kingdom,Swinging Along the High-Rises,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoleGrabCeilExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PoleKillerExStage,Metro Kingdom,Bullet Billding,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PoleKillerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+PushBlockExStage,Cap Kingdom,Push Block Peril,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,PushBlockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RadioControlExStage,Metro Kingdom,RC Race,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RadioControlExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RailCollisionExStage,Wooded Kingdom,Flower Road,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RailCollisionExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ReflectBombExStage,Seaside Kingdom,"Stop, Poke, and Roll",subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ReflectBombExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossKnuckleStage,Mushroom Kingdom,Knucklotec Boss Re-fight,subarea,5,Scenario3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossKnuckleStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,1,Common;G;H;J,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,2,A;H;I;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,3,A;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,4,A;B;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,5,A;C;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,6,A;D;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossMagmaStage,Mushroom Kingdom,Cookatiel Boss Re-fight,subarea,7,A;E;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossMagmaStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeBossRaidStage,Mushroom Kingdom,Lord of Lightning Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeBossRaidStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeForestBossStage,Mushroom Kingdom,Torkdrift Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeForestBossStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeGiantWanderBossStage,Mushroom Kingdom,Mollusque-Lanceur Boss Re-fight,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeGiantWanderBossStageMap.szs,ScenarioInfo.byml,extracted,
+RevengeMofumofuStage,Mushroom Kingdom,Mechawiggler Boss Re-fight,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RevengeMofumofuStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RocketFlowerExStage,Sand Kingdom,Colossal Ruins,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RocketFlowerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RollingExStage,Cap Kingdom,Precision Rolling,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RollingExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldCostumeStage,Sand Kingdom,Costume Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,,,,SandWorldHomeTownZoneMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SandWorldKillerExStage,Sand Kingdom,Bullet Bill Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldKillerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,,,,SandWorldKillerTowerZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldMeganeExStage,Sand Kingdom,Transparent Lifts,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldMeganeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPressExStage,Sand Kingdom,Ice Cave,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPressExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPyramid000Stage,Sand Kingdom,Inverted Pyramid: Lower Interior,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPyramid000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPyramid001Stage,Sand Kingdom,Inverted Pyramid: Upper Interior,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPyramid001StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldRotateExStage,Sand Kingdom,Strange Neighborhood,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSecretStage,Sand Kingdom,Sphynx Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSecretStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldShopStage,Sand Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSlotStage,Sand Kingdom,Tostarena Slots,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSlotStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSphinxExStage,Sand Kingdom,Jaxi Driving,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSphinxExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldUnderground000Stage,Sand Kingdom,Underground Ruins,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldVibrationStage,Sand Kingdom,Rumbling Floor House,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldVibrationStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,A;E,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,B;E;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,C;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,C;D;F,,SeaWorld2DLargeZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorld2DSmallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldBeachVolleyBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldBottomHollowZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldCostumeStage,Seaside Kingdom,Costume Room,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldCostumeStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldCoveCaveZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldDamageBallZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLavaZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLighthouseZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldLongReefZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldSecretStage,Seaside Kingdom,Sphynx Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldSecretStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldSneakingManStage,Seaside Kingdom,Wriggling Power Moon,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldSneakingManStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldSphinxQuizZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldUnderGlassZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldUtsuboCaveStage,Seaside Kingdom,Underwater Tunnel,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldUtsuboCaveStageMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,,,,SeaWorldUtsuboDenZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldVibrationStage,Seaside Kingdom,Rumbling Floor Cave,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SeaWorldVibrationStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldWallCaveCenterZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,1,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,2,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,3,Common,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SeaWorldHomeStage,Seaside Kingdom,Seaside Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SeaWorldWallCaveWestZoneMap.szs,ScenarioInfo.byml,extracted,
+SenobiTowerExStage,Seaside Kingdom,Stretching Up the Sinking Island,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SenobiTowerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SenobiTowerYoshiExStage,Dark Side,Yoshi on the Sinking Island,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SenobiTowerYoshiExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingCityExStage,Metro Kingdom,Shards Under Siege,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingCityExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingCityYoshiExStage,Dark Side,Yoshi Under Siege,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingCityYoshiExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+ShootingElevatorExStage,Wooded Kingdom,Crowded Elevator,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ShootingElevatorExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldCloudBonusExStage,Bowser's Kingdom,Dashing Above the Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldCostumeStage,Bowser's Kingdom,Scene in the Folding Screen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldShopStage,Bowser's Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldTreasureStage,Bowser's Kingdom,Bowser's Kingdom Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SkyWorldTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,1,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,2,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,3,Common,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SkyWorldHomeStage,Bowser's Kingdom,Bowser's Kingdom,overworld,4,A;Scenario3;Scenario2_3;Scenario1_3,,SkyWorldWallZoneMap.szs,ScenarioInfo.byml,extracted,
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldBalconyZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldByugoZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldCloudBonusExStage,Snow Kingdom,Spinning Above the Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldCloudBonusExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldCostumeStage,Snow Kingdom,Cold Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldGabuzouZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldIcicleZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobbyExStage,Snow Kingdom,Class S Lobby,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldLobbyExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldRace000Stage,,SnowWorldRace000Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldRace000StageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldRace001Stage,,SnowWorldRace001Stage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldRace001StageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldRaceCircuitZone,,SnowWorldRaceCircuitZone,subarea,,,,SnowWorldRaceCircuitZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldRaceExStage,,SnowWorldRaceExStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldRaceExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobbyExStage,Snow Kingdom,Class S Lobby,subarea,,,,SnowWorldRaceExZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceFlagZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceGroundZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldRaceHardExStage,,SnowWorldRaceHardExStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldRaceHardExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldLobby000Stage,Snow Kingdom,Class A Lobby,subarea,,,,SnowWorldRaceObjectZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldRaceTutorialStage,,SnowWorldRaceTutorialStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldRaceTutorialStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldShopStage,Snow Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SnowWorldTownStageMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SnowWorldTownStage,Snow Kingdom,Shiveria Town,subarea,,,,SnowWorldTownZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerBombTailStage,Dark Side,Rabbit Ridge Tower: Hariet Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerBombTailStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerCapThrowerStage,Dark Side,Rabbit Ridge Tower: Rango Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerCapThrowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerFireBlowerStage,Dark Side,Rabbit Ridge Tower: Spewart Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerFireBlowerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerRoomZone,,Special1WorldTowerRoomZone,subarea,,,,Special1WorldTowerRoomZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special1WorldTowerStackerStage,Dark Side,Rabbit Ridge Tower: Topper Battle,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special1WorldTowerStackerStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special2WorldCloudStage,Darker Side,Culmina Crater: Pokio Section,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special2WorldCloudStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special2WorldHomeStage,Darker Side,Darker Side,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special2WorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special2WorldKoopaStage,Darker Side,Culmina Crater: Bowser Escape,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special2WorldKoopaStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Special2WorldLavaStage,Darker Side,Inside Culmina Crater,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Special2WorldLavaStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+StaffRollMoonRockDemo,,StaffRollMoonRockDemo,subarea,,,,StaffRollMoonRockDemoMap.szs,,missing,No ScenarioInfo.byml in archive.
+SwingSteelExStage,Metro Kingdom,Swinging Scaffolding,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SwingSteelExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Theater2DExStage,Metro Kingdom,On the Big Screen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Theater2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TogezoRotateExStage,Seaside Kingdom,Spinning Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TogezoRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrampolineWallCatchExStage,Lake Kingdom,"Jump, Grab, Cling, Climb",subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrampolineWallCatchExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrexBikeExStage,Metro Kingdom,Scooter Escape!,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrexBikeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TrexPoppunExStage,Cascade Kingdom,Dinosaur Nest,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TrexPoppunExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TsukkunClimbExStage,Bowser's Kingdom,Wooden Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TsukkunClimbExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+TsukkunRotateExStage,Bowser's Kingdom,Spinning Tower,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,TsukkunRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WanwanClashExStage,Cascade Kingdom,Nice Shots with Chain Chomps,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WanwanClashExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WaterTubeExStage,Sand Kingdom,Freezing Waterway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterTubeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WaterValleyExStage,Seaside Kingdom,Flying Through the Narrow Valley,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterValleyExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WindBlowExStage,Cascade Kingdom,Gusty Bridges,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WindBlowExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WorldMapStage,,WorldMapStage,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WorldMapStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+YoshiCloudExStage,Mushroom Kingdom,Yoshi in the Sea of Clouds,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,YoshiCloudExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

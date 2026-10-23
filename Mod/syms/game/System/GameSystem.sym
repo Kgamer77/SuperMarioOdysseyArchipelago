@@ -1,0 +1,4 @@
+@smo:100,101,110,120
+
+_ZN10GameSystem4initEv
+_ZN10GameSystem8drawMainEv

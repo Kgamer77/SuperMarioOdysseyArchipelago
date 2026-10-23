@@ -1,0 +1,6512 @@
+{
+  "placements": [
+    {
+      "location_moon_id": "CapWorldHomeStage:2444:861",
+      "item_moon_id": "PeachWorldHomeStage:756:605"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2730:1033",
+      "item_moon_id": "SkyWorldCastleZone:7421:1092"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:2209:1121",
+      "item_moon_id": "SandWorldKillerTowerZone:42:505"
+    },
+    {
+      "location_moon_id": "CloudExStage:2512:486",
+      "item_moon_id": "SeaWorldHomeStage:3622:1151"
+    },
+    {
+      "location_moon_id": "SnowWorldCostumeStage:450:1030",
+      "item_moon_id": "RailCollisionExStage:171:191"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1120:406",
+      "item_moon_id": "Theater2DExStage:493:928"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:531:17",
+      "item_moon_id": "YoshiCloudExStage:903:975"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5142:138",
+      "item_moon_id": "CityWorldHomeStage:14384:938"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:343:1137",
+      "item_moon_id": "LakeWorldTownZone:1434:1015"
+    },
+    {
+      "location_moon_id": "SkyWorldCostumeStage:2659:988",
+      "item_moon_id": "CityWorldHomeStage:6939:96"
+    },
+    {
+      "location_moon_id": "SkyWorldShopStage:36:360",
+      "item_moon_id": "MoonWorldWeddingRoomZone:361:1165"
+    },
+    {
+      "location_moon_id": "RailCollisionExStage:171:191",
+      "item_moon_id": "SandWorldHomeStage:2874:1112"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2097:450",
+      "item_moon_id": "WaterfallWorldHomeStage:2819:822"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5574:136",
+      "item_moon_id": "SandWorldHomeStage:4000:511"
+    },
+    {
+      "location_moon_id": "IceWaterDashExStage:81:12",
+      "item_moon_id": "SandWorldMeganeExStage:253:561"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6164:148",
+      "item_moon_id": "ForestWorldWoodsStage:206:186"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2874:1112",
+      "item_moon_id": "MoonWorldHome2DZone:139:828"
+    },
+    {
+      "location_moon_id": "DotHardExStage:690:1050",
+      "item_moon_id": "LavaWorldHomeStage:3424:266"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1732:977",
+      "item_moon_id": "SkyWorldHomeStage:1388:349"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:992:607",
+      "item_moon_id": "SandWorldSlotStage:34:1047"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1622:460",
+      "item_moon_id": "ClashWorldHomeStage:2833:855"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:415:1159",
+      "item_moon_id": "LavaWorldTreasureStage:14:992"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:256:793",
+      "item_moon_id": "SandWorldHomeStage:6270:1059"
+    },
+    {
+      "location_moon_id": "SkyWorldCloudBonusExStage:2288:366",
+      "item_moon_id": "ForestWorldTimerAthletic001Zone:41:676"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:756:605",
+      "item_moon_id": "ClashWorldHomeStage:564:380"
+    },
+    {
+      "location_moon_id": "RevengeBossMagmaStage:5904:1142",
+      "item_moon_id": "RevengeBossRaidStage:30:1146"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1955:464",
+      "item_moon_id": "SeaWorldHomeStage:1863:443"
+    },
+    {
+      "location_moon_id": "PackunPoisonNoCapExStage:4:1069",
+      "item_moon_id": "LavaWorldHomeStage:5721:289"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2268:453",
+      "item_moon_id": "SnowWorldTownStage:1101:19"
+    },
+    {
+      "location_moon_id": "SeaWorldUtsuboDenZone:68:459",
+      "item_moon_id": "CityWorldHomeStage:14411:939"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6177:149",
+      "item_moon_id": "ClashWorldHomeStage:83:372"
+    },
+    {
+      "location_moon_id": "Galaxy2DExStage:650:603",
+      "item_moon_id": "ForestWorldHomeStage:7205:1001"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2143:526",
+      "item_moon_id": "MoonAthleticExStage:53:601"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:918:22",
+      "item_moon_id": "SnowWorldTownStage:1134:873"
+    },
+    {
+      "location_moon_id": "SeaWorldSphinxQuizZone:11:457",
+      "item_moon_id": "PeachWorldCastleStage:101:956"
+    },
+    {
+      "location_moon_id": "SnowWorldBalconyZone:89:21",
+      "item_moon_id": "PeachWorldHomeStage:1678:967"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1039:578",
+      "item_moon_id": "ForestWorldHomeStage:5309:151"
+    },
+    {
+      "location_moon_id": "SandWorldShopStage:9:564",
+      "item_moon_id": "SkyWorldHomeStage:1673:315"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:877:580",
+      "item_moon_id": "CapAppearLavaLiftExStage:241:311"
+    },
+    {
+      "location_moon_id": "SkyWorldCloudBonusExStage:1581:365",
+      "item_moon_id": "MoonWorldHomeStage:217:583"
+    },
+    {
+      "location_moon_id": "LakeWorld2DZone:13:407",
+      "item_moon_id": "SnowWorldHomeStage:1459:973"
+    },
+    {
+      "location_moon_id": "SeaWorldCoveCaveZone:76:448",
+      "item_moon_id": "ElectricWireExStage:509:122"
+    },
+    {
+      "location_moon_id": "SnowWorldCostumeStage:733:1031",
+      "item_moon_id": "SandWorldHomeStage:1841:532"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1102:1110",
+      "item_moon_id": "LakeWorldHomeStage:551:422"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:217:583",
+      "item_moon_id": "LavaWorldIslandZone:314:970"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1078:714",
+      "item_moon_id": "WaterfallWorldHomeStage:2467:209"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:396:402",
+      "item_moon_id": "MoonWorldHomeStage:877:580"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2876:1114",
+      "item_moon_id": "WaterfallWorldHomeStage:1027:213"
+    },
+    {
+      "location_moon_id": "IceWaterDashExStage:262:13",
+      "item_moon_id": "SkyWorldHomeStage:1387:348"
+    },
+    {
+      "location_moon_id": "SeaWorldUtsuboCaveStage:681:1107",
+      "item_moon_id": "SandWorldRotateExStage:206:571"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:155:582",
+      "item_moon_id": "CapWorldHomeStage:2424:817"
+    },
+    {
+      "location_moon_id": "SeaWorldSphinxQuizZone:81:458",
+      "item_moon_id": "SkyWorldCastleZone:4857:690"
+    },
+    {
+      "location_moon_id": "MoonWorldShopRoom:21:1157",
+      "item_moon_id": "CapWorldHomeStage:2611:981"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:772:414",
+      "item_moon_id": "LavaWorldHomeStage:2499:255"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1678:967",
+      "item_moon_id": "PeachWorldCostumeStage:13:934"
+    },
+    {
+      "location_moon_id": "SandWorldKillerTowerZone:42:505",
+      "item_moon_id": "ForestWorldHomeStage:5183:169"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2710:1019",
+      "item_moon_id": "CapRotatePackunExStage:179:119"
+    },
+    {
+      "location_moon_id": "PeachWorldCostumeStage:35:1144",
+      "item_moon_id": "FukuwaraiMarioStage:117:986"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1679:968",
+      "item_moon_id": "SandWorldMeganeExStage:119:562"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1593:442",
+      "item_moon_id": "ClashWorldHomeStage:2981:942"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:536:517",
+      "item_moon_id": "SandWorldHomeStage:3433:545"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1295:613",
+      "item_moon_id": "SnowWorldHomeStage:1113:8"
+    },
+    {
+      "location_moon_id": "CloudWorldHomeStage:154:853",
+      "item_moon_id": "CityWorldHomeStage:3633:46"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1554:913",
+      "item_moon_id": "SkyWorldHomeStage:1394:355"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:326:424",
+      "item_moon_id": "LavaWorldHomeStage:3112:290"
+    },
+    {
+      "location_moon_id": "Galaxy2DExStage:864:604",
+      "item_moon_id": "RocketFlowerExStage:302:574"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1333:870",
+      "item_moon_id": "MoonWorldHomeStage:155:582"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:2102:1027",
+      "item_moon_id": "LavaWorldHomeStage:4867:276"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:220:183",
+      "item_moon_id": "CityWorldHomeStage:4448:38"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1315:771",
+      "item_moon_id": "SandWorldHomeStage:4392:552"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1329:869",
+      "item_moon_id": "LavaWorldHomeStage:5326:261"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:461:579",
+      "item_moon_id": "Special1WorldHomeStage:485:1128"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3371:523",
+      "item_moon_id": "CityWorldHomeStage:13419:65"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1103:1111",
+      "item_moon_id": "SandWorldHomeStage:2188:515"
+    },
+    {
+      "location_moon_id": "FrogSearchExStage:106:238",
+      "item_moon_id": "CapWorldHomeStage:2196:232"
+    },
+    {
+      "location_moon_id": "SeaWorld2DLargeZone:13:466",
+      "item_moon_id": "LakeWorldHomeStage:715:401"
+    },
+    {
+      "location_moon_id": "SkyWorldCostumeStage:2573:987",
+      "item_moon_id": "CapWorldHomeStage:926:227"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1334:871",
+      "item_moon_id": "SnowWorldHomeStage:1431:937"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:953:585",
+      "item_moon_id": "FrogPoisonExStage:4547:431"
+    },
+    {
+      "location_moon_id": "MoonWorldHome2DZone:32:586",
+      "item_moon_id": "SeaWorldBeachVolleyBallZone:357:472"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:622:413",
+      "item_moon_id": "WaterfallWorldHomeStage:1119:211"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:551:422",
+      "item_moon_id": "SandWorldHomeStage:3371:523"
+    },
+    {
+      "location_moon_id": "ShootingElevatorExStage:105:190",
+      "item_moon_id": "PackunPoisonNoCapExStage:4:1069"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1100:1108",
+      "item_moon_id": "LavaWorldHomeStage:6595:1090"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1380:345",
+      "item_moon_id": "SeaWorldLighthouseZone:406:775"
+    },
+    {
+      "location_moon_id": "MoonWorldHome2DZone:139:828",
+      "item_moon_id": "SnowWorldHomeStage:581:7"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1487:1166",
+      "item_moon_id": "SandWorldSphinxExStage:880:556"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1566:959",
+      "item_moon_id": "MoonWorldHomeStage:461:579"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:926:227",
+      "item_moon_id": "LavaWorldHomeStage:4980:244"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:783:423",
+      "item_moon_id": "MoonWorldHomeStage:1125:798"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:1183:1081",
+      "item_moon_id": "WaterfallWorldHomeStage:2618:669"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1277:715",
+      "item_moon_id": "ClashWorldHomeStage:54:375"
+    },
+    {
+      "location_moon_id": "SeaWorld2DLargeZone:365:467",
+      "item_moon_id": "LavaWorldHomeStage:6442:952"
+    },
+    {
+      "location_moon_id": "CloudExStage:310:485",
+      "item_moon_id": "PackunPoisonExStage:112:202"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2875:1113",
+      "item_moon_id": "LavaWorldCostumeStage:39:991"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1391:1000",
+      "item_moon_id": "SkyWorldCostumeStage:2573:987"
+    },
+    {
+      "location_moon_id": "MoonAthleticExStage:82:602",
+      "item_moon_id": "CityWorldHomeStage:4956:68"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:568:411",
+      "item_moon_id": "GotogotonExStage:269:971"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:524:415",
+      "item_moon_id": "BossRaidWorldHomeStage:256:793"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:614:412",
+      "item_moon_id": "IceWaterDashExStage:81:12"
+    },
+    {
+      "location_moon_id": "DotHardExStage:723:1051",
+      "item_moon_id": "SenobiTowerExStage:162:482"
+    },
+    {
+      "location_moon_id": "SeaWorldBottomHollowZone:38:454",
+      "item_moon_id": "SkyWorldCastleZone:7296:1039"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:1715:498",
+      "item_moon_id": "Special1WorldHomeStage:469:1122"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:987:23",
+      "item_moon_id": "SkyWorldCastleZone:649:339"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3782:525",
+      "item_moon_id": "MoonWorldHomeStage:937:577"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2112:451",
+      "item_moon_id": "SeaWorldVibrationStage:15:1135"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:576:518",
+      "item_moon_id": "SnowWorldByugoZone:272:703"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4059:508",
+      "item_moon_id": "PackunPoisonExStage:328:203"
+    },
+    {
+      "location_moon_id": "FrogSearchExStage:249:239",
+      "item_moon_id": "LakeWorldTownZone:1333:870"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1125:798",
+      "item_moon_id": "KillerRoadExStage:1667:882"
+    },
+    {
+      "location_moon_id": "SeaWorldUnderGlassZone:400:1057",
+      "item_moon_id": "PeachWorldHomeStage:734:912"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4508:145",
+      "item_moon_id": "SnowWorldIcicleZone:206:20"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4352:143",
+      "item_moon_id": "DotTowerExStage:282:888"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4503:144",
+      "item_moon_id": "CityWorldHomeStage:10046:59"
+    },
+    {
+      "location_moon_id": "ForestWorldTowerStage:161:180",
+      "item_moon_id": "LakeWorldHomeStage:918:1017"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:3772:141",
+      "item_moon_id": "PeachWorldHomeStage:1495:857"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:3577:139",
+      "item_moon_id": "Special1WorldHomeStage:478:1125"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:3694:140",
+      "item_moon_id": "CityWorldHomeStage:13457:99"
+    },
+    {
+      "location_moon_id": "ForestWorldTowerStage:220:179",
+      "item_moon_id": "LavaWorldHomeStage:4879:287"
+    },
+    {
+      "location_moon_id": "SeaWorldCostumeStage:21:484",
+      "item_moon_id": "SkyWorldWallZone:1671:334"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:1064:129",
+      "item_moon_id": "ClashWorldHomeStage:142:378"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4127:142",
+      "item_moon_id": "SkyWorldCastleZone:3646:319"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:488:410",
+      "item_moon_id": "LavaWorldBubbleLaneExStage:743:299"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2422:815",
+      "item_moon_id": "PeachWorldCostumeStage:35:1144"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1863:443",
+      "item_moon_id": "MoonWorldHomeStage:1216:811"
+    },
+    {
+      "location_moon_id": "SeaWorldWallCaveCenterZone:4:455",
+      "item_moon_id": "PeachWorldHomeStage:1103:1111"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1973:1104",
+      "item_moon_id": "PoleKillerExStage:1583:116"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2225:1105",
+      "item_moon_id": "SandWorldHomeStage:4483:553"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:392:1153",
+      "item_moon_id": "SandWorldHomeStage:5206:501"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1831:1103",
+      "item_moon_id": "CityWorldHomeStage:12578:881"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:3104:1106",
+      "item_moon_id": "SkyWorldCastleZone:7276:1032"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1558:449",
+      "item_moon_id": "LavaWorldHomeStage:3419:243"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:382:438",
+      "item_moon_id": "PeachWorldHomeStage:1554:913"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:407:206",
+      "item_moon_id": "SkyWorldHomeStage:1809:324"
+    },
+    {
+      "location_moon_id": "SandWorldMeganeExStage:253:561",
+      "item_moon_id": "SkyWorldCastleZone:5201:691"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1596:322",
+      "item_moon_id": "SeaWorldDamageBallZone:60:439"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:214:205",
+      "item_moon_id": "CityPeopleRoadStage:247:1023"
+    },
+    {
+      "location_moon_id": "SandWorldCostumeStage:19:569",
+      "item_moon_id": "CityWorldHomeStage:10128:71"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:424:130",
+      "item_moon_id": "Special2WorldHomeStage:55:1061"
+    },
+    {
+      "location_moon_id": "FogMountainExStage:92:193",
+      "item_moon_id": "ClashWorldHomeStage:575:381"
+    },
+    {
+      "location_moon_id": "FrogPoisonExStage:4456:434",
+      "item_moon_id": "CityWorldHomeStage:12592:84"
+    },
+    {
+      "location_moon_id": "BikeSteelNoCapExStage:6:1065",
+      "item_moon_id": "SandWorldShopStage:9:564"
+    },
+    {
+      "location_moon_id": "KillerRoadNoCapExStage:3:1062",
+      "item_moon_id": "ForestWorldWoodsStage:186:185"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:263:576:taking_notes_on_the_moon_s_surface",
+      "item_moon_id": "CityWorldHomeStage:7046:41"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:753:584",
+      "item_moon_id": "SandWorldHomeStage:2230:521"
+    },
+    {
+      "location_moon_id": "SandWorldMeganeExStage:119:562",
+      "item_moon_id": "SkyWorldCastleZone:6841:963"
+    },
+    {
+      "location_moon_id": "FogMountainExStage:249:194",
+      "item_moon_id": "PeachWorldHomeStage:1507:1119"
+    },
+    {
+      "location_moon_id": "IceWaterBlockExStage:363:15",
+      "item_moon_id": "SnowWorldShopStage:24:868"
+    },
+    {
+      "location_moon_id": "IceWaterBlockExStage:170:14",
+      "item_moon_id": "PeachWorldHomeStage:1295:613"
+    },
+    {
+      "location_moon_id": "CityPeopleRoadStage:1379:1021",
+      "item_moon_id": "SandWorldHomeStage:3437:547"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7421:1092",
+      "item_moon_id": "SandWorldHomeStage:5335:712"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:2335:318",
+      "item_moon_id": "TsukkunRotateExStage:149:367"
+    },
+    {
+      "location_moon_id": "CityPeopleRoadStage:247:1023",
+      "item_moon_id": "ForestWorldWoodsTreasureStage:8:188"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1673:315",
+      "item_moon_id": "FukuwaraiKuriboStage:116:982"
+    },
+    {
+      "location_moon_id": "CityPeopleRoadStage:1390:1022",
+      "item_moon_id": "SandWorldUnderground001Stage:321:995"
+    },
+    {
+      "location_moon_id": "SkyWorldWallZone:1179:333",
+      "item_moon_id": "SwingSteelExStage:103:126"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1264:321",
+      "item_moon_id": "SandWorldHomeStage:6244:1096"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:469:1122",
+      "item_moon_id": "SeaWorldWallCaveCenterZone:4:455"
+    },
+    {
+      "location_moon_id": "SkyWorldWallZone:2165:337",
+      "item_moon_id": "SeaWorldHomeStage:2558:477"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1740:323",
+      "item_moon_id": "ClashWorldHomeStage:2560:393"
+    },
+    {
+      "location_moon_id": "SkyWorldWallZone:1690:335",
+      "item_moon_id": "ForestWorldBonusStage:91:195"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1431:937",
+      "item_moon_id": "SnowWorldCostumeStage:450:1030"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsTreasureStage:8:188",
+      "item_moon_id": "ShootingElevatorExStage:105:190"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:3646:319",
+      "item_moon_id": "MoonWorldHomeStage:997:581"
+    },
+    {
+      "location_moon_id": "RevengeGiantWanderBossStage:1277:1147",
+      "item_moon_id": "SeaWorldHomeStage:1277:437"
+    },
+    {
+      "location_moon_id": "FrogPoisonExStage:4547:431",
+      "item_moon_id": "TrampolineWallCatchExStage:1117:425"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:3056:331",
+      "item_moon_id": "LavaWorldUpDownYoshiExStage:26:1082"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:2203:327",
+      "item_moon_id": "YoshiCloudExStage:668:974"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:2320:328",
+      "item_moon_id": "ForestWorldHomeStage:5142:138"
+    },
+    {
+      "location_moon_id": "SnowWorldIcicleZone:412:699",
+      "item_moon_id": "MoonWorldCaptureParadeLavaPillarZone:460:596"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:918:1017",
+      "item_moon_id": "SeaWorld2DLargeZone:13:466"
+    },
+    {
+      "location_moon_id": "LakeWorldTimerAthletic000Zone:175:420",
+      "item_moon_id": "PeachWorldHomeStage:1732:977"
+    },
+    {
+      "location_moon_id": "RailCollisionExStage:216:192",
+      "item_moon_id": "CityWorldMainTowerStage:489:100"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1809:324",
+      "item_moon_id": "MoonWorldShopRoom:21:1157"
+    },
+    {
+      "location_moon_id": "SnowWorldGabuzouZone:235:24",
+      "item_moon_id": "SkyWorldHomeStage:3316:1016"
+    },
+    {
+      "location_moon_id": "SeaWorldDamageBallZone:144:446",
+      "item_moon_id": "MoonWorldWeddingRoomZone:260:1164"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1762:984",
+      "item_moon_id": "SeaWorldLavaZone:606:1043"
+    },
+    {
+      "location_moon_id": "FukuwaraiKuriboStage:117:983",
+      "item_moon_id": "SkyWorldWallZone:1179:333"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:794:606",
+      "item_moon_id": "DotHardExStage:690:1050"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:3942:131",
+      "item_moon_id": "CityWorldTimerAthletic003Zone:27:1054"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5652:147",
+      "item_moon_id": "PeachWorldHomeStage:1102:1110"
+    },
+    {
+      "location_moon_id": "MoonWorldCaptureParadeLavaPillarZone:460:596",
+      "item_moon_id": "LakeWorldHomeStage:783:423"
+    },
+    {
+      "location_moon_id": "ForestWorld2DRoadZone:61:150",
+      "item_moon_id": "SkyWorldCastleZone:3056:331"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:1667:159",
+      "item_moon_id": "ElectricWireExStage:764:121"
+    },
+    {
+      "location_moon_id": "ShootingElevatorExStage:160:189",
+      "item_moon_id": "ImomuPoisonExStage:3970:399"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4570:146",
+      "item_moon_id": "Note2D3DRoomExStage:901:102"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3387:524",
+      "item_moon_id": "BikeSteelNoCapExStage:5:1064"
+    },
+    {
+      "location_moon_id": "FukuwaraiKuriboStage:116:982",
+      "item_moon_id": "CityWorldFactory01Zone:599:1100"
+    },
+    {
+      "location_moon_id": "SnowWorldIcicleZone:206:20",
+      "item_moon_id": "LavaWorldHomeStage:5666:908"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:2309:134",
+      "item_moon_id": "LavaWorldCostumeStage:20:990"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:3203:37",
+      "item_moon_id": "RevengeForestBossStage:6:1149"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:2364:1134",
+      "item_moon_id": "SandWorldHomeStage:3434:546"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1495:857",
+      "item_moon_id": "ForestWorldHomeStage:4127:142"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:645:416",
+      "item_moon_id": "MoonWorldHomeStage:1078:714"
+    },
+    {
+      "location_moon_id": "ForestWorldWaterExStage:52:196",
+      "item_moon_id": "IceWalkerExStage:18:877"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:7051:42",
+      "item_moon_id": "SnowWorldGabuzouZone:280:701"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1473:856",
+      "item_moon_id": "SkyWorldWallZone:2165:337"
+    },
+    {
+      "location_moon_id": "SeaWorldSecretStage:13:483",
+      "item_moon_id": "SeaWorldUnderGlassZone:345:474"
+    },
+    {
+      "location_moon_id": "LavaWorldUpDownYoshiExStage:27:1083",
+      "item_moon_id": "SkyWorldCastleZone:8382:1161"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1497:858",
+      "item_moon_id": "ForestWorldHomeStage:5887:174"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:7046:41",
+      "item_moon_id": "SandWorldHomeStage:2888:522"
+    },
+    {
+      "location_moon_id": "LavaWorldUpDownYoshiExStage:26:1082",
+      "item_moon_id": "SeaWorldSphinxQuizZone:11:457"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:9072:44",
+      "item_moon_id": "ForestWorldHomeStage:7285:1011"
+    },
+    {
+      "location_moon_id": "RevengeMofumofuStage:54:1141",
+      "item_moon_id": "RevengeBossKnuckleStage:9:1148"
+    },
+    {
+      "location_moon_id": "ImomuPoisonExStage:4857:400",
+      "item_moon_id": "SandWorldHomeStage:4277:535"
+    },
+    {
+      "location_moon_id": "SandWorldSecretStage:92:566",
+      "item_moon_id": "SnowWorldLobby000Stage:951:903"
+    },
+    {
+      "location_moon_id": "ImomuPoisonExStage:3970:399",
+      "item_moon_id": "PeachWorldHomeStage:1719:978"
+    },
+    {
+      "location_moon_id": "ByugoPuzzleExStage:69:33",
+      "item_moon_id": "ForestWorldTowerStage:220:179"
+    },
+    {
+      "location_moon_id": "ForestWorldBossStage:6:181",
+      "item_moon_id": "RevengeGiantWanderBossStage:1277:1147"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:7299:1010",
+      "item_moon_id": "SandWorldHomeStage:6209:1046"
+    },
+    {
+      "location_moon_id": "ForestWorldBossStage:488:182",
+      "item_moon_id": "LavaWorldTimerAthletic000Zone:100:264"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5161:156",
+      "item_moon_id": "SandWorldHomeStage:6126:965"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:398:409",
+      "item_moon_id": "WaterTubeExStage:3240:35"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:7205:1001",
+      "item_moon_id": "LavaWorldHomeStage:4868:277"
+    },
+    {
+      "location_moon_id": "PushBlockExStage:193:234",
+      "item_moon_id": "SandWorldHomeStage:3456:493"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6970:905",
+      "item_moon_id": "SeaWorldBeachVolleyBallZone:385:473"
+    },
+    {
+      "location_moon_id": "ForestWorldTimerAthletic001Zone:41:676",
+      "item_moon_id": "WaterfallWorldHomeStage:2423:906"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5887:174",
+      "item_moon_id": "WaterValleyExStage:800:478"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1057:405",
+      "item_moon_id": "ForestWorld2DRoadZone:61:150"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5309:151",
+      "item_moon_id": "LavaWorldHomeStage:2184:254"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2771:1073",
+      "item_moon_id": "SeaWorldLighthouseZone:16:441"
+    },
+    {
+      "location_moon_id": "AnimalChaseExStage:1383:201",
+      "item_moon_id": "SnowWorldCloudBonusExStage:5375:830"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:974:1078",
+      "item_moon_id": "ClashWorldHomeStage:1001:385"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:7360:1026",
+      "item_moon_id": "PeachWorldCastleStage:131:1152"
+    },
+    {
+      "location_moon_id": "AnimalChaseExStage:552:200",
+      "item_moon_id": "ClashWorldHomeStage:920:384"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2394:445",
+      "item_moon_id": "ImomuPoisonExStage:4857:400"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5621:152",
+      "item_moon_id": "SnowWorldGabuzouZone:235:24"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:493:160",
+      "item_moon_id": "SkyWorldHomeStage:1389:350"
+    },
+    {
+      "location_moon_id": "ClashWorldShopStage:19:398",
+      "item_moon_id": "ForestWorldHomeStage:6968:901"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6962:892",
+      "item_moon_id": "LakeWorldTownZone:645:416"
+    },
+    {
+      "location_moon_id": "SeaWorldLighthouseZone:16:441",
+      "item_moon_id": "ForestWorldHomeStage:5185:170"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:3622:1151",
+      "item_moon_id": "CityWorldHomeStage:12590:82"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5184:161",
+      "item_moon_id": "ShootingCityYoshiExStage:4:1067"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1288:719",
+      "item_moon_id": "ForestWorldWoodsStage:415:1159"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:7285:1011",
+      "item_moon_id": "SnowWorldHomeStage:1507:1003"
+    },
+    {
+      "location_moon_id": "PackunPoisonNoCapExStage:9:1068",
+      "item_moon_id": "WaterfallWorldHomeStage:1526:208"
+    },
+    {
+      "location_moon_id": "SeaWorldLavaZone:168:440",
+      "item_moon_id": "SkyWorldShopStage:36:360"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6110:177",
+      "item_moon_id": "SnowWorldLobby000Stage:684:843"
+    },
+    {
+      "location_moon_id": "SeaWorldDamageBallZone:60:439",
+      "item_moon_id": "ForestWorldHomeStage:6177:149"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:1840:168",
+      "item_moon_id": "LavaWorldHomeStage:4862:271"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:371:403",
+      "item_moon_id": "MoonWorldHomeStage:263:576:taking_notes_on_the_moon_s_surface"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:848:709",
+      "item_moon_id": "CityWorldHomeStage:7058:43"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6371:157",
+      "item_moon_id": "SandWorldSphinxExStage:334:557"
+    },
+    {
+      "location_moon_id": "ForestWorldCloudBonusExStage:11:198",
+      "item_moon_id": "LakeWorldTownZone:371:403"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5183:169",
+      "item_moon_id": "SnowWorldTownStage:536:25"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5185:170",
+      "item_moon_id": "Lift2DExStage:6784:221"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:859:720",
+      "item_moon_id": "LakeWorldHomeStage:976:1094"
+    },
+    {
+      "location_moon_id": "PushBlockExStage:463:235",
+      "item_moon_id": "ForestWorldBossStage:488:182"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5180:133",
+      "item_moon_id": "WaterfallWorldHomeStage:2455:217"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6560:166",
+      "item_moon_id": "LavaWorldClockExStage:544:307"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1277:437",
+      "item_moon_id": "CityWorldHomeStage:3203:37"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2802:1028",
+      "item_moon_id": "MoonWorldHomeStage:1064:707"
+    },
+    {
+      "location_moon_id": "TogezoRotateExStage:465:489",
+      "item_moon_id": "SandWorldHomeStage:123:516"
+    },
+    {
+      "location_moon_id": "SeaWorldSphinxQuizZone:106:778",
+      "item_moon_id": "RocketFlowerExStage:232:575"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:4391:1163",
+      "item_moon_id": "LavaWorldIslandZone:113:263"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:3153:1120",
+      "item_moon_id": "SandWorldHomeStage:576:518"
+    },
+    {
+      "location_moon_id": "SeaWorldUnderGlassZone:384:475",
+      "item_moon_id": "SkyWorldCostumeStage:2659:988"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2581:780",
+      "item_moon_id": "LakeWorldTownZone:568:411"
+    },
+    {
+      "location_moon_id": "SnowWorldShopStage:24:868",
+      "item_moon_id": "Galaxy2DExStage:864:604"
+    },
+    {
+      "location_moon_id": "SeaWorld2DLargeZone:559:790",
+      "item_moon_id": "RailCollisionExStage:216:192"
+    },
+    {
+      "location_moon_id": "SeaWorldLighthouseZone:406:775",
+      "item_moon_id": "SandWorldHomeStage:5989:893"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2248:452",
+      "item_moon_id": "ClashWorldHomeStage:616:392"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2578:773",
+      "item_moon_id": "TrexBikeExStage:3726:1140"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2803:1029",
+      "item_moon_id": "WaterfallWorldHomeStage:1028:214"
+    },
+    {
+      "location_moon_id": "SeaWorldLighthouseZone:407:776",
+      "item_moon_id": "CapWorldHomeStage:2721:1025"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:1665:476",
+      "item_moon_id": "SnowWorldHomeStage:1116:6"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2580:779",
+      "item_moon_id": "CityWorldHomeStage:13924:809"
+    },
+    {
+      "location_moon_id": "SeaWorldBeachVolleyBallZone:357:472",
+      "item_moon_id": "LakeWorldHomeStage:974:1078"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2652:864",
+      "item_moon_id": "CityWorldHomeStage:14342:904"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2689:920",
+      "item_moon_id": "ByugoPuzzleExStage:69:33"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2645:863",
+      "item_moon_id": "WanwanClashExStage:504:226"
+    },
+    {
+      "location_moon_id": "SeaWorldBeachVolleyBallZone:385:473",
+      "item_moon_id": "SeaWorldCoveCaveZone:76:448"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1033:207",
+      "item_moon_id": "SandWorldHomeStage:5364:799"
+    },
+    {
+      "location_moon_id": "SeaWorldLavaZone:606:1043",
+      "item_moon_id": "SnowWorldHomeStage:1491:1002"
+    },
+    {
+      "location_moon_id": "SeaWorldUnderGlassZone:345:474",
+      "item_moon_id": "SandWorldHomeStage:980:520"
+    },
+    {
+      "location_moon_id": "TogezoRotateExStage:958:490",
+      "item_moon_id": "GabuzouClockExStage:439:312"
+    },
+    {
+      "location_moon_id": "ForestWorldCloudBonusExStage:1556:199",
+      "item_moon_id": "SandWorldHomeStage:4059:508"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:532:18",
+      "item_moon_id": "DotHardExStage:723:1051"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:7058:43",
+      "item_moon_id": "Cube2DExStage:38:914"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:536:25",
+      "item_moon_id": "PeachWorldHomeStage:992:607"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6241:153",
+      "item_moon_id": "SandWorldHomeStage:4632:531"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:21:218",
+      "item_moon_id": "RevengeMofumofuStage:54:1141"
+    },
+    {
+      "location_moon_id": "WindBlowExStage:167:673",
+      "item_moon_id": "SandWorldPyramid001Stage:265:563"
+    },
+    {
+      "location_moon_id": "WindBlowExStage:299:674",
+      "item_moon_id": "ForestWorldHomeStage:7463:1089"
+    },
+    {
+      "location_moon_id": "RollingExStage:11:950",
+      "item_moon_id": "CityWorldHomeStage:12585:74"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:124:212",
+      "item_moon_id": "CapWorldHomeStage:2789:1086"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2975:1158",
+      "item_moon_id": "ClashWorldHomeStage:492:379"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2741:708",
+      "item_moon_id": "SeaWorldHomeStage:2803:1029"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2424:817",
+      "item_moon_id": "PeachWorldHomeStage:794:606"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2691:670",
+      "item_moon_id": "SeaWorld2DLargeZone:559:790"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2618:669",
+      "item_moon_id": "PeachWorldShopStage:21:933"
+    },
+    {
+      "location_moon_id": "SandWorldKillerExStage:127:555",
+      "item_moon_id": "LakeWorldShopStage:12:430"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:123:516",
+      "item_moon_id": "LakeWorld2DZone:13:407"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2972:1156",
+      "item_moon_id": "IceWalkerExStage:19:878"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2778:770",
+      "item_moon_id": "LakeWorldHomeStage:768:408"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2047:504",
+      "item_moon_id": "SkyWorldHomeStage:2043:317"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2490:210",
+      "item_moon_id": "SandWorldHomeStage:4685:536"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1928:216",
+      "item_moon_id": "CloudWorldHomeStage:130:1118"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:3523:1167",
+      "item_moon_id": "CityWorldHomeStage:13616:50"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2824:826",
+      "item_moon_id": "SeaWorldLongReefZone:238:447"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2611:981",
+      "item_moon_id": "MoonWorldHomeStage:1399:1049"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:902:507",
+      "item_moon_id": "WaterfallWorldHomeStage:124:212"
+    },
+    {
+      "location_moon_id": "RollingExStage:4:951",
+      "item_moon_id": "ClashWorldHomeStage:71:376"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1717:204",
+      "item_moon_id": "SandWorldHomeStage:3387:524"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2423:816",
+      "item_moon_id": "BikeSteelNoCapExStage:6:1065"
+    },
+    {
+      "location_moon_id": "RevengeBossKnuckleStage:9:1148",
+      "item_moon_id": "SnowWorldLobby001Stage:331:1020"
+    },
+    {
+      "location_moon_id": "TrexPoppunExStage:18:1116",
+      "item_moon_id": "ForestWorldWoodsCostumeStage:14:187"
+    },
+    {
+      "location_moon_id": "WanwanClashExStage:371:225",
+      "item_moon_id": "TrampolineWallCatchExStage:1238:426"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1119:211",
+      "item_moon_id": "Special1WorldHomeStage:482:1127"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:3284:1145",
+      "item_moon_id": "CapWorldHomeStage:2972:1156"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2455:217",
+      "item_moon_id": "ForestWorldHomeStage:3942:131"
+    },
+    {
+      "location_moon_id": "WanwanClashExStage:504:226",
+      "item_moon_id": "SeaWorldBottomHollowZone:38:454"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2947:894",
+      "item_moon_id": "LakeWorldTownZone:1334:871"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:980:520",
+      "item_moon_id": "PushBlockExStage:463:235"
+    },
+    {
+      "location_moon_id": "YoshiCloudExStage:668:974",
+      "item_moon_id": "ForestWorldHomeStage:5180:133"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:3110:1004",
+      "item_moon_id": "ForestWorldHomeStage:4352:143"
+    },
+    {
+      "location_moon_id": "YoshiCloudExStage:903:975",
+      "item_moon_id": "ForestWorldHomeStage:6078:137"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1029:215",
+      "item_moon_id": "SnowWorldLobby000Stage:943:879"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2681:1018",
+      "item_moon_id": "SeaWorldHomeStage:2225:1105"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2721:1025",
+      "item_moon_id": "SeaWorldHomeStage:2580:779"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2729:1034",
+      "item_moon_id": "PoisonWaveExStage:381:237"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2898:866",
+      "item_moon_id": "TogezoRotateExStage:958:490"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1526:208",
+      "item_moon_id": "ForestWorldHomeStage:1667:159"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:820:231",
+      "item_moon_id": "SandWorldHomeStage:5267:538"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2823:825",
+      "item_moon_id": "SenobiTowerYoshiExStage:25:1071"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:3208:1041",
+      "item_moon_id": "FukuwaraiMarioStage:116:985"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2196:232",
+      "item_moon_id": "BossRaidWorldHomeStage:353:835"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1101:1109",
+      "item_moon_id": "Special1WorldHomeStage:476:1124"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1074:404",
+      "item_moon_id": "Special1WorldHomeStage:486:1129"
+    },
+    {
+      "location_moon_id": "BikeSteelNoCapExStage:5:1064",
+      "item_moon_id": "PeachWorldHomeStage:1762:984"
+    },
+    {
+      "location_moon_id": "MoonWorldCaptureParadeStage:246:595",
+      "item_moon_id": "PeachWorldHomeStage:2364:1134"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:1097:291",
+      "item_moon_id": "ShootingCityYoshiExStage:3:1066"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:1599:497",
+      "item_moon_id": "PeachWorldHomeStage:1566:959"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3735:496",
+      "item_moon_id": "PeachWorldHomeStage:2209:1121"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:903:417",
+      "item_moon_id": "PeachWorldHomeStage:1473:856"
+    },
+    {
+      "location_moon_id": "MoonAthleticExStage:53:601",
+      "item_moon_id": "PeachWorldHomeStage:1101:1109"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1028:214",
+      "item_moon_id": "PeachWorldHomeStage:2102:1027"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1338:694",
+      "item_moon_id": "Special1WorldHomeStage:480:1126"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:30:795",
+      "item_moon_id": "RevengeBossMagmaStage:5904:1142"
+    },
+    {
+      "location_moon_id": "CloudWorldHomeStage:156:851",
+      "item_moon_id": "PeachWorldHomeStage:1100:1108"
+    },
+    {
+      "location_moon_id": "CloudWorldHomeStage:138:852",
+      "item_moon_id": "PeachWorldHomeStage:1497:858"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:1001:385",
+      "item_moon_id": "KillerRoadNoCapExStage:5:1063"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:111:377",
+      "item_moon_id": "PeachWorldHomeStage:281:608"
+    },
+    {
+      "location_moon_id": "CloudWorldHomeStage:392:1160",
+      "item_moon_id": "Special1WorldHomeStage:475:1123"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2079:444",
+      "item_moon_id": "SenobiTowerYoshiExStage:26:1070"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:355:251",
+      "item_moon_id": "PeachWorldHomeStage:1679:968"
+    },
+    {
+      "location_moon_id": "DotTowerExStage:282:888",
+      "item_moon_id": "Special1WorldHomeStage:489:1132"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:836:320",
+      "item_moon_id": "PeachWorldCastleStage:71:807"
+    },
+    {
+      "location_moon_id": "KillerRoadNoCapExStage:5:1063",
+      "item_moon_id": "Special1WorldHomeStage:487:1130"
+    },
+    {
+      "location_moon_id": "BullRunExStage:122:890",
+      "item_moon_id": "PeachWorldHomeStage:1439:840"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5859:269",
+      "item_moon_id": "ClashWorldHomeStage:2620:394"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:475:1123",
+      "item_moon_id": "KillerRailCollisionExStage:2902:31"
+    },
+    {
+      "location_moon_id": "LavaWorldIslandZone:113:263",
+      "item_moon_id": "SkyWorldWallZone:1690:335"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:2174:253",
+      "item_moon_id": "WanwanClashExStage:371:225"
+    },
+    {
+      "location_moon_id": "FukuwaraiMarioStage:117:986",
+      "item_moon_id": "PushBlockExStage:193:234"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3420:241",
+      "item_moon_id": "LakeWorldTownZone:614:412"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12590:82",
+      "item_moon_id": "WindBlowExStage:299:674"
+    },
+    {
+      "location_moon_id": "ElectricWireExStage:509:122",
+      "item_moon_id": "CapWorldHomeStage:2681:1018"
+    },
+    {
+      "location_moon_id": "KaronWingTowerStage:1190:802",
+      "item_moon_id": "SnowWorldHomeStage:1049:3"
+    },
+    {
+      "location_moon_id": "IceWalkerExStage:18:877",
+      "item_moon_id": "CapWorldHomeStage:2268:228"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:2584:256",
+      "item_moon_id": "AnimalChaseExStage:552:200"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13457:99",
+      "item_moon_id": "LavaWorldHomeStage:4871:280"
+    },
+    {
+      "location_moon_id": "BullRunExStage:120:891",
+      "item_moon_id": "ForestWorldHomeStage:6371:157"
+    },
+    {
+      "location_moon_id": "LavaWorldClockExStage:544:307",
+      "item_moon_id": "IceWaterDashExStage:262:13"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:335:834",
+      "item_moon_id": "SeaWorldHomeStage:3104:1106"
+    },
+    {
+      "location_moon_id": "TrexBikeExStage:3656:1139",
+      "item_moon_id": "ClashWorldHomeStage:615:396"
+    },
+    {
+      "location_moon_id": "CloudWorldHomeStage:130:1118",
+      "item_moon_id": "ForestWorldWoodsStage:220:183"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2862:897",
+      "item_moon_id": "SnowWorldTownStage:532:18"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:1144:373",
+      "item_moon_id": "ForestWorldHomeStage:1840:168"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:570:387",
+      "item_moon_id": "LavaWorldHomeStage:5778:268"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4862:271",
+      "item_moon_id": "SandWorldHomeStage:481:502"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1388:349",
+      "item_moon_id": "WaterfallWorldHomeStage:3110:1004"
+    },
+    {
+      "location_moon_id": "Cube2DExStage:38:914",
+      "item_moon_id": "SandWorldPressExStage:87:567"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4879:287",
+      "item_moon_id": "ForestWorldWaterExStage:138:197"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:405:909",
+      "item_moon_id": "ForestWorldHomeStage:5652:147"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5978:829",
+      "item_moon_id": "SeaWorldHomeStage:2268:453"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:39:374",
+      "item_moon_id": "SeaWorldUtsuboCaveStage:681:1107"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2560:393",
+      "item_moon_id": "WaterfallWorldHomeStage:2947:894"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:616:392",
+      "item_moon_id": "BikeSteelExStage:666:124"
+    },
+    {
+      "location_moon_id": "LavaWorldTreasureStage:14:992",
+      "item_moon_id": "SandWorldHomeStage:6059:924"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:2720:859",
+      "item_moon_id": "LavaWorldBubbleLaneExStage:414:298"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:1101:19",
+      "item_moon_id": "ClashWorldHomeStage:2774:832"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:2826:896",
+      "item_moon_id": "LakeWorldTownZone:1288:719"
+    },
+    {
+      "location_moon_id": "Cube2DExStage:251:915",
+      "item_moon_id": "SnowWorldHomeStage:1423:900"
+    },
+    {
+      "location_moon_id": "CityWorldTimerAthletic002Zone:399:839",
+      "item_moon_id": "SeaWorldHomeStage:3052:1095"
+    },
+    {
+      "location_moon_id": "DotTowerExStage:371:889",
+      "item_moon_id": "CityWorldHomeStage:11212:62"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2467:209",
+      "item_moon_id": "GabuzouClockExStage:719:313"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:882:230",
+      "item_moon_id": "ForestWorldHomeStage:5574:136"
+    },
+    {
+      "location_moon_id": "CityWorldSandSlotStage:29:1040",
+      "item_moon_id": "MoonWorldHomeStage:1039:578"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6209:1046",
+      "item_moon_id": "SeaWorldHomeStage:1955:464"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6022:833",
+      "item_moon_id": "LavaWorldHomeStage:4125:265"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10126:70",
+      "item_moon_id": "JizoSwitchExStage:218:363"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:615:396",
+      "item_moon_id": "PoisonWaveExStage:5:236"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:143:1117",
+      "item_moon_id": "LavaWorldHomeStage:5575:245"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:2590:257",
+      "item_moon_id": "DonsukeExStage:1075:948"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:485:1128",
+      "item_moon_id": "SandWorldVibrationStage:15:1136"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:487:1130",
+      "item_moon_id": "ForestWorldHomeStage:2309:134"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:850:383",
+      "item_moon_id": "ForestWorldHomeStage:5190:163"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5206:501",
+      "item_moon_id": "LavaWorldHomeStage:1097:291"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:1185:1080",
+      "item_moon_id": "CityWorldHomeStage:3066:53"
+    },
+    {
+      "location_moon_id": "PoleGrabCeilExStage:659:104",
+      "item_moon_id": "LavaWorldHomeStage:6527:1005"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3456:493",
+      "item_moon_id": "CloudWorldHomeStage:154:853"
+    },
+    {
+      "location_moon_id": "LavaWorldExcavationExStage:629:301",
+      "item_moon_id": "MoonWorldHomeStage:1199:810"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:476:1124",
+      "item_moon_id": "LavaWorldHomeStage:6022:833"
+    },
+    {
+      "location_moon_id": "GabuzouClockExStage:439:312",
+      "item_moon_id": "BullRunExStage:120:891"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2833:855",
+      "item_moon_id": "TsukkunClimbExStage:19:369"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1116:6",
+      "item_moon_id": "ForestWorldHomeStage:4503:144"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4187:540",
+      "item_moon_id": "ShootingElevatorExStage:160:189"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3442:550",
+      "item_moon_id": "SandWorldShopStage:21:565"
+    },
+    {
+      "location_moon_id": "BossRaidWorldHomeStage:353:835",
+      "item_moon_id": "SnowWorldLobbyExStage:340:998"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14411:939",
+      "item_moon_id": "CityWorldSandSlotStage:29:1040"
+    },
+    {
+      "location_moon_id": "TrampolineWallCatchExStage:1117:425",
+      "item_moon_id": "TsukkunClimbExStage:76:370"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2774:832",
+      "item_moon_id": "MeganeLiftExStage:315:573"
+    },
+    {
+      "location_moon_id": "SnowWorldByugoZone:272:703",
+      "item_moon_id": "SeaWorldDamageBallZone:144:446"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:575:381",
+      "item_moon_id": "Galaxy2DExStage:650:603"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5326:261",
+      "item_moon_id": "SandWorldUnderground000Stage:463:953"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4272:513",
+      "item_moon_id": "SandWorldHomeStage:1715:498"
+    },
+    {
+      "location_moon_id": "SandWorldUnderground000Stage:463:953",
+      "item_moon_id": "ClashWorldHomeStage:3283:1075"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:489:1132",
+      "item_moon_id": "CityWorldHomeStage:10124:69"
+    },
+    {
+      "location_moon_id": "FastenerExStage:158:1008",
+      "item_moon_id": "ForestWorldWoodsStage:392:1153"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:2184:254",
+      "item_moon_id": "FogMountainExStage:92:193"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:482:1127",
+      "item_moon_id": "SandWorldHomeStage:4272:513"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1216:811",
+      "item_moon_id": "ClashWorldHomeStage:70:386"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:83:372",
+      "item_moon_id": "MeganeLiftExStage:217:572"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:206:186",
+      "item_moon_id": "CapWorldHomeStage:2729:1034"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:3362:340",
+      "item_moon_id": "BossRaidWorldHomeStage:335:834"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1491:1002",
+      "item_moon_id": "LavaWorldHomeStage:5616:240"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1719:978",
+      "item_moon_id": "CityWorldHomeStage:2782:51"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12584:77",
+      "item_moon_id": "SkyWorldHomeStage:1740:323"
+    },
+    {
+      "location_moon_id": "RadioControlExStage:280:105",
+      "item_moon_id": "ForestWorldHomeStage:6343:155"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2789:1086",
+      "item_moon_id": "LavaWorldHomeStage:2584:256"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6078:137",
+      "item_moon_id": "ForestWorldHomeStage:7299:1010"
+    },
+    {
+      "location_moon_id": "BikeSteelExStage:666:124",
+      "item_moon_id": "BossRaidWorldHomeStage:143:1117"
+    },
+    {
+      "location_moon_id": "MoonWorldWeddingRoomZone:361:1165",
+      "item_moon_id": "MoonWorldHomeStage:1280:899"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1394:355",
+      "item_moon_id": "SkyWorldHomeStage:1921:325"
+    },
+    {
+      "location_moon_id": "LavaWorldFenceLiftExStage:104:308",
+      "item_moon_id": "PoleKillerExStage:1477:115"
+    },
+    {
+      "location_moon_id": "TsukkunClimbExStage:76:370",
+      "item_moon_id": "LavaBonus1Zone:34:1042"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:54:375",
+      "item_moon_id": "SkyWorldHomeStage:1596:322"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:488:1131",
+      "item_moon_id": "SkyWorldCastleZone:3362:340"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14877:1037",
+      "item_moon_id": "SeaWorldUnderGlassZone:400:1057"
+    },
+    {
+      "location_moon_id": "SnowWorldLobby000Stage:943:879",
+      "item_moon_id": "LakeWorldTownZone:1277:715"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2268:228",
+      "item_moon_id": "ForestWorldHomeStage:1064:129"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2599:390",
+      "item_moon_id": "ClashWorldHomeStage:2862:897"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:486:1129",
+      "item_moon_id": "ForestWorldHomeStage:6962:892"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4871:280",
+      "item_moon_id": "SkyWorldHomeStage:2569:338"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:340:250",
+      "item_moon_id": "ForestWorldHomeStage:3694:140"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2981:942",
+      "item_moon_id": "LavaWorldHomeStage:340:250"
+    },
+    {
+      "location_moon_id": "IceWalkerExStage:19:878",
+      "item_moon_id": "TrexBikeExStage:3656:1139"
+    },
+    {
+      "location_moon_id": "PoleKillerExStage:1477:115",
+      "item_moon_id": "SnowWorldByugoZone:276:16"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:16048:1155",
+      "item_moon_id": "DonsukeExStage:705:949"
+    },
+    {
+      "location_moon_id": "MoonWorldCaptureParadeKillerZone:199:597",
+      "item_moon_id": "SandWorldHomeStage:2875:1113"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5947:803",
+      "item_moon_id": "LavaWorldHomeStage:3421:242"
+    },
+    {
+      "location_moon_id": "TrampolineWallCatchExStage:1238:426",
+      "item_moon_id": "CloudExStage:310:485"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:920:384",
+      "item_moon_id": "IceWaterBlockExStage:363:15"
+    },
+    {
+      "location_moon_id": "Lift2DExStage:6784:221",
+      "item_moon_id": "LavaWorldHomeStage:2174:253"
+    },
+    {
+      "location_moon_id": "ForestWorldBonusStage:91:195",
+      "item_moon_id": "MoonWorldHomeStage:1041:672"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:281:608",
+      "item_moon_id": "ShootingCityExStage:66:114"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1041:672",
+      "item_moon_id": "SnowWorldTownStage:1183:1081"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:3284:1077",
+      "item_moon_id": "LavaWorldHomeStage:6328:886"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5616:240",
+      "item_moon_id": "SnowWorldLobbyExStage:950:997"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3999:506",
+      "item_moon_id": "LavaWorldClockExStage:320:306"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2423:906",
+      "item_moon_id": "SkyWorldCastleZone:7554:1133"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1280:899",
+      "item_moon_id": "ForkExStage:692:296"
+    },
+    {
+      "location_moon_id": "SenobiTowerYoshiExStage:26:1070",
+      "item_moon_id": "ClashWorldHomeStage:2599:390"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:564:380",
+      "item_moon_id": "CityWorldHomeStage:14592:979"
+    },
+    {
+      "location_moon_id": "Special2WorldHomeStage:55:1061",
+      "item_moon_id": "LavaWorldHomeStage:1725:292"
+    },
+    {
+      "location_moon_id": "Note2D3DRoomExStage:901:102",
+      "item_moon_id": "LavaWorldFenceLiftExStage:999:1101"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:4118:343",
+      "item_moon_id": "SandWorldHomeStage:5320:692"
+    },
+    {
+      "location_moon_id": "SkyWorldWallZone:1671:334",
+      "item_moon_id": "ForestWorldHomeStage:4052:135"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:4591:39",
+      "item_moon_id": "LakeWorldTownZone:1120:406"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:2204:316",
+      "item_moon_id": "LavaWorldExcavationExStage:629:301"
+    },
+    {
+      "location_moon_id": "GabuzouClockExStage:719:313",
+      "item_moon_id": "LavaWorldHomeStage:5859:269"
+    },
+    {
+      "location_moon_id": "CapAppearExStage:342:224",
+      "item_moon_id": "BossRaidWorldHomeStage:405:909"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1199:810",
+      "item_moon_id": "ForestWorldWaterExStage:52:196"
+    },
+    {
+      "location_moon_id": "SnowWorldByugoZone:276:16",
+      "item_moon_id": "SeaWorldHomeStage:1622:460"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1113:8",
+      "item_moon_id": "SandWorldHomeStage:4271:534"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3434:546",
+      "item_moon_id": "BullRunExStage:122:890"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2819:822",
+      "item_moon_id": "JangoExStage:211:491"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1439:840",
+      "item_moon_id": "WaterfallWorldHomeStage:2490:210"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2207:229",
+      "item_moon_id": "SandWorldKillerExStage:49:554"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:4110:95",
+      "item_moon_id": "ForestWorldBossStage:6:181"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1117:10",
+      "item_moon_id": "LavaWorldHomeStage:3420:241"
+    },
+    {
+      "location_moon_id": "SenobiTowerYoshiExStage:25:1071",
+      "item_moon_id": "CityWorldHomeStage:10126:70"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2921:943",
+      "item_moon_id": "LakeWorldTownZone:398:409"
+    },
+    {
+      "location_moon_id": "SnowWorldBalconyZone:281:704",
+      "item_moon_id": "FukuwaraiKuriboStage:117:983"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:142:378",
+      "item_moon_id": "SandWorldHomeStage:4001:510"
+    },
+    {
+      "location_moon_id": "CityWorldFactory01Zone:599:1100",
+      "item_moon_id": "CityWorldHomeStage:14258:874"
+    },
+    {
+      "location_moon_id": "SandWorldUnderground001Stage:321:995",
+      "item_moon_id": "SeaWorldSphinxQuizZone:81:458"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:2821:823",
+      "item_moon_id": "LavaWorldHomeStage:5947:803"
+    },
+    {
+      "location_moon_id": "SkyWorldWallZone:2315:1143",
+      "item_moon_id": "SnowWorldCloudBonusExStage:5760:831"
+    },
+    {
+      "location_moon_id": "LavaWorldUpDownExStage:132:302",
+      "item_moon_id": "SandWorldHomeStage:4187:540"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:715:401",
+      "item_moon_id": "FrogSearchExStage:249:239"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6328:886",
+      "item_moon_id": "CapWorldHomeStage:2975:1158"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:478:1125",
+      "item_moon_id": "MoonAthleticExStage:82:602"
+    },
+    {
+      "location_moon_id": "DonsukeExStage:1075:948",
+      "item_moon_id": "ClashWorldHomeStage:1144:373"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2420:813",
+      "item_moon_id": "SnowWorldTownStage:1187:1087"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:3066:53",
+      "item_moon_id": "PackunPoisonNoCapExStage:9:1068"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2739:1038",
+      "item_moon_id": "KillerRoadExStage:3539:883"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:944:911",
+      "item_moon_id": "SkyWorldCastleZone:2138:326"
+    },
+    {
+      "location_moon_id": "ShootingCityYoshiExStage:3:1066",
+      "item_moon_id": "LakeWorldTownZone:1329:869"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:480:1126",
+      "item_moon_id": "CapWorldHomeStage:2420:813"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1321:686",
+      "item_moon_id": "ClashWorldHomeStage:2921:943"
+    },
+    {
+      "location_moon_id": "JangoExStage:211:491",
+      "item_moon_id": "CityWorldFactoryStage:360:107"
+    },
+    {
+      "location_moon_id": "LavaWorldExcavationExStage:438:300",
+      "item_moon_id": "CityWorldFactoryStage:517:848"
+    },
+    {
+      "location_moon_id": "KillerRoadExStage:3539:883",
+      "item_moon_id": "CapWorldHomeStage:2249:233"
+    },
+    {
+      "location_moon_id": "CapWorldHomeStage:2249:233",
+      "item_moon_id": "LavaWorldHomeStage:5624:248"
+    },
+    {
+      "location_moon_id": "TrexPoppunExStage:169:1115",
+      "item_moon_id": "CityPeopleRoadStage:1390:1022"
+    },
+    {
+      "location_moon_id": "PeachWorldCastleStage:71:807",
+      "item_moon_id": "LakeWorldHomeStage:396:402"
+    },
+    {
+      "location_moon_id": "SnowWorldCloudBonusExStage:5760:831",
+      "item_moon_id": "Theater2DExStage:1015:929"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:1134:873",
+      "item_moon_id": "WaterTubeExStage:3706:36"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4632:531",
+      "item_moon_id": "ForestWorldCloudBonusExStage:11:198"
+    },
+    {
+      "location_moon_id": "FastenerExStage:602:1009",
+      "item_moon_id": "CloudWorldHomeStage:156:851"
+    },
+    {
+      "location_moon_id": "ShootingCityYoshiExStage:4:1067",
+      "item_moon_id": "LavaWorldHomeStage:6329:895"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14420:940",
+      "item_moon_id": "LavaWorldUpDownExStage:430:303"
+    },
+    {
+      "location_moon_id": "Theater2DExStage:1015:929",
+      "item_moon_id": "SandWorldHomeStage:3782:525"
+    },
+    {
+      "location_moon_id": "CapAppearExStage:304:223",
+      "item_moon_id": "MoonWorldHomeStage:953:585"
+    },
+    {
+      "location_moon_id": "LakeWorldTownZone:1434:1015",
+      "item_moon_id": "SkyWorldHomeStage:836:320"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:222:184",
+      "item_moon_id": "ForestWorldHomeStage:6164:148"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1395:356",
+      "item_moon_id": "CityWorldHomeStage:15040:1088"
+    },
+    {
+      "location_moon_id": "LavaWorldCostumeStage:20:990",
+      "item_moon_id": "TogezoRotateExStage:465:489"
+    },
+    {
+      "location_moon_id": "MoonWorldCaptureParadeKillerZone:296:594",
+      "item_moon_id": "SeaWorldHomeStage:2394:445"
+    },
+    {
+      "location_moon_id": "Lift2DExStage:6019:222",
+      "item_moon_id": "SnowWorldTownStage:987:23"
+    },
+    {
+      "location_moon_id": "CityWorldFactoryStage:517:848",
+      "item_moon_id": "MoonWorldHomeStage:753:584"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:492:379",
+      "item_moon_id": "SeaWorldHomeStage:1665:476"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5335:712",
+      "item_moon_id": "CapRotatePackunExStage:84:118"
+    },
+    {
+      "location_moon_id": "SnowWorldTownStage:1187:1087",
+      "item_moon_id": "ForestWorldHomeStage:493:160"
+    },
+    {
+      "location_moon_id": "PeachWorldCastleStage:131:1152",
+      "item_moon_id": "RadioControlExStage:280:105"
+    },
+    {
+      "location_moon_id": "PoisonWaveExStage:5:236",
+      "item_moon_id": "WindBlowExStage:167:673"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6057:910",
+      "item_moon_id": "SeaWorldSecretStage:13:483"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1064:707",
+      "item_moon_id": "PoleGrabCeilExStage:659:104"
+    },
+    {
+      "location_moon_id": "CapRotatePackunExStage:179:119",
+      "item_moon_id": "SnowWorldBalconyZone:281:704"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1387:348",
+      "item_moon_id": "SandWorldHomeStage:1609:533"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1052:671",
+      "item_moon_id": "SnowWorldBalconyZone:89:21"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3453:259",
+      "item_moon_id": "MoonWorldHomeStage:1052:671"
+    },
+    {
+      "location_moon_id": "SnowWorldLobbyExStage:950:997",
+      "item_moon_id": "CapWorldHomeStage:882:230"
+    },
+    {
+      "location_moon_id": "PoisonWaveExStage:381:237",
+      "item_moon_id": "CityWorldHomeStage:9072:44"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12578:881",
+      "item_moon_id": "SkyWorldHomeStage:2720:859"
+    },
+    {
+      "location_moon_id": "MoonWorldSphinxRoom:92:599",
+      "item_moon_id": "LavaWorldExcavationExStage:438:300"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14258:874",
+      "item_moon_id": "SeaWorldHomeStage:1973:1104"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6595:1090",
+      "item_moon_id": "SeaWorldHomeStage:2652:864"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:3283:1075",
+      "item_moon_id": "ForestWorldTowerStage:161:180"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsCostumeStage:14:187",
+      "item_moon_id": "MoonWorldHome2DZone:32:586"
+    },
+    {
+      "location_moon_id": "LavaWorldBubbleLaneExStage:743:299",
+      "item_moon_id": "SnowWorldHomeStage:1321:686"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2188:515",
+      "item_moon_id": "CityWorldHomeStage:13473:75"
+    },
+    {
+      "location_moon_id": "SwingSteelExStage:103:126",
+      "item_moon_id": "LakeWorldHomeStage:859:720"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:6841:963",
+      "item_moon_id": "LavaWorldHomeStage:6335:907"
+    },
+    {
+      "location_moon_id": "LakeWorldShopStage:12:430",
+      "item_moon_id": "ForestWorldHomeStage:6560:166"
+    },
+    {
+      "location_moon_id": "SnowWorldGabuzouZone:280:701",
+      "item_moon_id": "SeaWorldHomeStage:2689:920"
+    },
+    {
+      "location_moon_id": "RocketFlowerExStage:232:575",
+      "item_moon_id": "SandWorldHomeStage:3999:506"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1399:1049",
+      "item_moon_id": "SandWorldKillerTowerZone:210:783"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:3116:54",
+      "item_moon_id": "CityWorldHomeStage:10635:60"
+    },
+    {
+      "location_moon_id": "PackunPoisonExStage:112:202",
+      "item_moon_id": "SeaWorld2DSmallZone:18:468"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:997:581",
+      "item_moon_id": "SeaWorldLavaZone:168:440"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5778:268",
+      "item_moon_id": "LakeWorldTownZone:1315:771"
+    },
+    {
+      "location_moon_id": "Special1WorldHomeStage:130:1055",
+      "item_moon_id": "SkyWorldCastleZone:3819:332"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1389:350",
+      "item_moon_id": "CapWorldHomeStage:2730:1033"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5267:538",
+      "item_moon_id": "SnowWorldHomeStage:1309:678"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:609:395",
+      "item_moon_id": "MoonWorldCaptureParadeKillerZone:199:597"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:1609:533",
+      "item_moon_id": "LavaWorldTimerAthletic001Zone:109:249"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:1062:693",
+      "item_moon_id": "MoonWorldWeddingRoomStage:187:593"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12585:74",
+      "item_moon_id": "SandWorldKillerExStage:127:555"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:71:376",
+      "item_moon_id": "SeaWorldSphinxQuizZone:106:778"
+    },
+    {
+      "location_moon_id": "FukuwaraiMarioStage:116:985",
+      "item_moon_id": "MoonWorldHomeStage:1062:693"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:4857:690",
+      "item_moon_id": "LakeWorldTownZone:1074:404"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13924:809",
+      "item_moon_id": "ForestWorldHomeStage:5161:156"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6329:895",
+      "item_moon_id": "LavaWorldHomeStage:5621:247"
+    },
+    {
+      "location_moon_id": "ForkExStage:692:296",
+      "item_moon_id": "SkyWorldCastleZone:2320:328"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:769:2",
+      "item_moon_id": "FrogPoisonExStage:4456:434"
+    },
+    {
+      "location_moon_id": "GotogotonExStage:269:971",
+      "item_moon_id": "SkyWorldCastleZone:3811:314"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3431:542",
+      "item_moon_id": "SandWorldHomeStage:902:507"
+    },
+    {
+      "location_moon_id": "WaterfallWorldHomeStage:1027:213",
+      "item_moon_id": "WaterfallWorldHomeStage:214:205"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:768:408",
+      "item_moon_id": "SeaWorldHomeStage:1831:1103"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7276:1032",
+      "item_moon_id": "CityWorldTimerAthletic002Zone:399:839"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4483:553",
+      "item_moon_id": "RollingExStage:11:950"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:701:382",
+      "item_moon_id": "LakeWorldTownZone:772:414"
+    },
+    {
+      "location_moon_id": "MoonWorldCaptureParadeStage:345:598:fly_to_the_treasure_chest_and_back",
+      "item_moon_id": "ReflectBombExStage:2157:487"
+    },
+    {
+      "location_moon_id": "SnowWorldLobby000Stage:951:903",
+      "item_moon_id": "SandWorldHomeStage:3442:550"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:581:7",
+      "item_moon_id": "RadioControlExStage:337:106"
+    },
+    {
+      "location_moon_id": "TsukkunRotateExStage:76:368",
+      "item_moon_id": "KillerRailCollisionExStage:4422:32"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:3819:332",
+      "item_moon_id": "SandWorldUnderground001Stage:9:560"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13473:75",
+      "item_moon_id": "MoonWorldCaptureParadeKillerZone:296:594"
+    },
+    {
+      "location_moon_id": "SeaWorldLongReefZone:238:447",
+      "item_moon_id": "CapWorldHomeStage:2207:229"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:595:388",
+      "item_moon_id": "SandWorldHomeStage:1599:497"
+    },
+    {
+      "location_moon_id": "JangoExStage:226:492",
+      "item_moon_id": "LavaWorldHomeStage:5913:711"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:70:386",
+      "item_moon_id": "FrogSearchExStage:106:238"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14342:904",
+      "item_moon_id": "WaterfallWorldHomeStage:1717:204"
+    },
+    {
+      "location_moon_id": "MoonWorldWeddingRoomStage:187:593",
+      "item_moon_id": "SkyWorldWallZone:2315:1143"
+    },
+    {
+      "location_moon_id": "CapRotatePackunExStage:84:118",
+      "item_moon_id": "SeaWorldUtsuboDenZone:68:459"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4980:244",
+      "item_moon_id": "CityWorldHomeStage:14877:1037"
+    },
+    {
+      "location_moon_id": "BikeSteelExStage:478:123",
+      "item_moon_id": "RollingExStage:4:951"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:4052:135",
+      "item_moon_id": "ForestWorldHomeStage:5184:161"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:2043:317",
+      "item_moon_id": "SkyWorldHomeStage:2826:896"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6126:965",
+      "item_moon_id": "FastenerExStage:158:1008"
+    },
+    {
+      "location_moon_id": "ClashWorldHomeStage:2620:394",
+      "item_moon_id": "SkyWorldHomeStage:3285:1014"
+    },
+    {
+      "location_moon_id": "PeachWorldShopStage:21:933",
+      "item_moon_id": "CityWorldHomeStage:13057:97"
+    },
+    {
+      "location_moon_id": "MoonWorldWeddingRoomZone:260:1164",
+      "item_moon_id": "CityWorldHomeStage:10646:61"
+    },
+    {
+      "location_moon_id": "LakeWorldHomeStage:976:1094",
+      "item_moon_id": "SandWorldHomeStage:878:519"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7554:1133",
+      "item_moon_id": "SkyWorldCastleZone:7369:1091"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:2569:338",
+      "item_moon_id": "ForestWorldHomeStage:4570:146"
+    },
+    {
+      "location_moon_id": "WaterTubeExStage:3240:35",
+      "item_moon_id": "SeaWorld2DLargeZone:365:467"
+    },
+    {
+      "location_moon_id": "TsukkunRotateExStage:149:367",
+      "item_moon_id": "ClashWorldHomeStage:111:377"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1309:678",
+      "item_moon_id": "KaronWingTowerStage:1190:802"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3112:290",
+      "item_moon_id": "CityWorldHomeStage:4110:95"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3421:242",
+      "item_moon_id": "SandWorldHomeStage:4002:509"
+    },
+    {
+      "location_moon_id": "KillerRailCollisionExStage:4422:32",
+      "item_moon_id": "CapAppearLavaLiftExStage:125:310"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:2499:255",
+      "item_moon_id": "WaterfallWorldHomeStage:2824:826"
+    },
+    {
+      "location_moon_id": "LavaWorldUpDownExStage:430:303",
+      "item_moon_id": "SeaWorldCostumeStage:21:484"
+    },
+    {
+      "location_moon_id": "ForestWorldWoodsStage:186:185",
+      "item_moon_id": "SeaWorldHomeStage:2578:773"
+    },
+    {
+      "location_moon_id": "SnowWorldLobby001Stage:331:1020",
+      "item_moon_id": "ForestWorldHomeStage:424:130"
+    },
+    {
+      "location_moon_id": "PeachWorldCastleStage:101:956",
+      "item_moon_id": "SnowWorldIcicleZone:412:699"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:481:502",
+      "item_moon_id": "BikeSteelExStage:478:123"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:3285:1014",
+      "item_moon_id": "SeaWorldHomeStage:1558:449"
+    },
+    {
+      "location_moon_id": "MoonWorldHomeStage:937:577",
+      "item_moon_id": "SandWorldHomeStage:2143:526"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6208:1045",
+      "item_moon_id": "ForestWorldHomeStage:3577:139"
+    },
+    {
+      "location_moon_id": "CityWorldMainTowerStage:489:100",
+      "item_moon_id": "KaronWingTowerStage:1186:801"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:1507:1119",
+      "item_moon_id": "LavaWorldHomeStage:5978:829"
+    },
+    {
+      "location_moon_id": "SnowWorldLobbyExStage:340:998",
+      "item_moon_id": "SnowWorldHomeStage:1117:10"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6968:901",
+      "item_moon_id": "SkyWorldHomeStage:1395:356"
+    },
+    {
+      "location_moon_id": "SenobiTowerExStage:162:482",
+      "item_moon_id": "ForestWorldHomeStage:6241:153"
+    },
+    {
+      "location_moon_id": "PeachWorldHomeStage:734:912",
+      "item_moon_id": "LakeWorldTownZone:1487:1166"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:3316:1016",
+      "item_moon_id": "LakeWorldHomeStage:524:415"
+    },
+    {
+      "location_moon_id": "SandWorldVibrationStage:15:1136",
+      "item_moon_id": "SnowWorldTownStage:918:22"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:6939:96",
+      "item_moon_id": "LakeWorldTownZone:1057:405"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1049:3",
+      "item_moon_id": "WaterfallWorldHomeStage:2691:670"
+    },
+    {
+      "location_moon_id": "LavaWorldTimerAthletic000Zone:100:264",
+      "item_moon_id": "SnowWorldTownStage:531:17"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5621:247",
+      "item_moon_id": "JangoExStage:226:492"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1459:973",
+      "item_moon_id": "SeaWorldUnderGlassZone:384:475"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5624:248",
+      "item_moon_id": "FogMountainExStage:249:194"
+    },
+    {
+      "location_moon_id": "PeachWorldCostumeStage:13:934",
+      "item_moon_id": "SeaWorldHomeStage:2248:452"
+    },
+    {
+      "location_moon_id": "DonsukeExStage:705:949",
+      "item_moon_id": "SeaWorldSneakingManStage:21:1024"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10635:60",
+      "item_moon_id": "LavaWorldHomeStage:2590:257"
+    },
+    {
+      "location_moon_id": "SkyWorldTreasureStage:95:999",
+      "item_moon_id": "SeaWorldHomeStage:2097:450"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:8382:1161",
+      "item_moon_id": "IceWaterBlockExStage:170:14"
+    },
+    {
+      "location_moon_id": "SeaWorldSneakingManStage:21:1024",
+      "item_moon_id": "ForestWorldCloudBonusExStage:1556:199"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4867:276",
+      "item_moon_id": "SkyWorldHomeStage:2204:316"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1507:1003",
+      "item_moon_id": "CityWorld2DSign004Zone:346:875"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7369:1091",
+      "item_moon_id": "CapAppearExStage:304:223"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6527:1005",
+      "item_moon_id": "WaterfallWorldHomeStage:2821:823"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2888:522",
+      "item_moon_id": "TrexPoppunExStage:169:1115"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3998:512",
+      "item_moon_id": "SandWorldHomeStage:6208:1045"
+    },
+    {
+      "location_moon_id": "RevengeBossRaidStage:30:1146",
+      "item_moon_id": "SandWorldHomeStage:1432:495"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12586:78",
+      "item_moon_id": "SandWorldHomeStage:6057:910"
+    },
+    {
+      "location_moon_id": "SandWorldRotateExStage:20:570",
+      "item_moon_id": "SeaWorldHomeStage:3153:1120"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10128:71",
+      "item_moon_id": "ShootingCityExStage:1539:113"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5320:692",
+      "item_moon_id": "SkyWorldHomeStage:1380:345"
+    },
+    {
+      "location_moon_id": "ElectricWireExStage:764:121",
+      "item_moon_id": "SkyWorldHomeStage:1264:321"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:1841:532",
+      "item_moon_id": "ClashWorldHomeStage:570:387"
+    },
+    {
+      "location_moon_id": "PoleKillerExStage:1583:116",
+      "item_moon_id": "SnowWorldHomeStage:1115:9"
+    },
+    {
+      "location_moon_id": "LavaWorldFenceLiftExStage:999:1101",
+      "item_moon_id": "LavaWorldHomeStage:5620:246"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:5190:163",
+      "item_moon_id": "CloudExStage:2512:486"
+    },
+    {
+      "location_moon_id": "SenobiTowerExStage:131:481",
+      "item_moon_id": "CloudWorldHomeStage:138:852"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4890:260",
+      "item_moon_id": "LakeWorldTownZone:622:413"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3424:266",
+      "item_moon_id": "SeaWorldHomeStage:1593:442"
+    },
+    {
+      "location_moon_id": "JizoSwitchExStage:543:364",
+      "item_moon_id": "CityPeopleRoadStage:1379:1021"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6335:907",
+      "item_moon_id": "CapWorldHomeStage:2444:861"
+    },
+    {
+      "location_moon_id": "LavaWorldIslandZone:314:970",
+      "item_moon_id": "TsukkunRotateExStage:76:368"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1359:695",
+      "item_moon_id": "SandWorldHomeStage:4555:544"
+    },
+    {
+      "location_moon_id": "SnowWorldLobby000Stage:684:843",
+      "item_moon_id": "LavaWorldShopStage:27:294"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4392:552",
+      "item_moon_id": "ForestWorldHomeStage:5621:152"
+    },
+    {
+      "location_moon_id": "CityWorld2DSign004Zone:346:875",
+      "item_moon_id": "CapWorldHomeStage:2710:1019"
+    },
+    {
+      "location_moon_id": "RevengeForestBossStage:6:1149",
+      "item_moon_id": "LakeWorldHomeStage:326:424"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1423:900",
+      "item_moon_id": "SeaWorldHomeStage:4391:1163"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5721:289",
+      "item_moon_id": "SandWorldHomeStage:536:517"
+    },
+    {
+      "location_moon_id": "KaronWingTowerStage:1186:801",
+      "item_moon_id": "SeaWorldHomeStage:2112:451"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10046:59",
+      "item_moon_id": "WaterfallWorldHomeStage:1033:207"
+    },
+    {
+      "location_moon_id": "Theater2DExStage:493:928",
+      "item_moon_id": "SnowWorldHomeStage:1338:694"
+    },
+    {
+      "location_moon_id": "JizoSwitchExStage:218:363",
+      "item_moon_id": "SandWorldCostumeStage:19:569"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:2138:326",
+      "item_moon_id": "SkyWorldCastleZone:2335:318"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:6825:941",
+      "item_moon_id": "Special1WorldHomeStage:488:1131"
+    },
+    {
+      "location_moon_id": "LavaWorldBubbleLaneExStage:414:298",
+      "item_moon_id": "SnowWorldTownStage:1185:1080"
+    },
+    {
+      "location_moon_id": "SandWorldSlotStage:34:1047",
+      "item_moon_id": "ClashWorldHomeStage:609:395"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5989:893",
+      "item_moon_id": "SandWorldSecretStage:92:566"
+    },
+    {
+      "location_moon_id": "SeaWorldVibrationStage:15:1135",
+      "item_moon_id": "CapWorldHomeStage:2739:1038"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3389:530",
+      "item_moon_id": "CityWorldShop01Stage:36:101"
+    },
+    {
+      "location_moon_id": "TsukkunClimbExStage:19:369",
+      "item_moon_id": "Lift2DExStage:6019:222"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:1725:292",
+      "item_moon_id": "Special1WorldHomeStage:130:1055"
+    },
+    {
+      "location_moon_id": "SnowWorldCloudBonusExStage:5375:830",
+      "item_moon_id": "WaterfallWorldHomeStage:2741:708"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:5201:691",
+      "item_moon_id": "PoleGrabCeilExStage:301:103"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4555:544",
+      "item_moon_id": "SnowWorldCostumeStage:733:1031"
+    },
+    {
+      "location_moon_id": "RocketFlowerExStage:302:574",
+      "item_moon_id": "ForkExStage:4746:297"
+    },
+    {
+      "location_moon_id": "ForkExStage:4746:297",
+      "item_moon_id": "MoonWorldSphinxRoom:92:599"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:6343:155",
+      "item_moon_id": "MoonWorldCaptureParadeStage:345:598:fly_to_the_treasure_chest_and_back"
+    },
+    {
+      "location_moon_id": "ShootingCityExStage:1539:113",
+      "item_moon_id": "CityWorldHomeStage:12586:78"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1115:9",
+      "item_moon_id": "SkyWorldCloudBonusExStage:2288:366"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4125:265",
+      "item_moon_id": "CityWorldHomeStage:7051:42"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5575:245",
+      "item_moon_id": "SeaWorldHomeStage:2079:444"
+    },
+    {
+      "location_moon_id": "LavaBonus1Zone:34:1042",
+      "item_moon_id": "CapWorldHomeStage:2771:1073"
+    },
+    {
+      "location_moon_id": "KillerRailCollisionExStage:2902:31",
+      "item_moon_id": "MoonWorldHomeStage:944:911"
+    },
+    {
+      "location_moon_id": "TrexBikeExStage:3726:1140",
+      "item_moon_id": "ClashWorldShopStage:19:398"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7296:1039",
+      "item_moon_id": "LavaWorldHomeStage:4890:260"
+    },
+    {
+      "location_moon_id": "CapAppearLavaLiftExStage:241:311",
+      "item_moon_id": "ClashWorldHomeStage:39:374"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:3811:314",
+      "item_moon_id": "WaterfallWorldHomeStage:3523:1167"
+    },
+    {
+      "location_moon_id": "SwingSteelExStage:39:125",
+      "item_moon_id": "SandWorldHomeStage:3389:530"
+    },
+    {
+      "location_moon_id": "SnowWorldHomeStage:1086:4",
+      "item_moon_id": "ClashWorldHomeStage:701:382"
+    },
+    {
+      "location_moon_id": "SandWorldUnderground001Stage:9:560",
+      "item_moon_id": "BossRaidWorldHomeStage:30:795"
+    },
+    {
+      "location_moon_id": "WaterValleyExStage:1125:479",
+      "item_moon_id": "LavaWorldUpDownExStage:132:302"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:7501:1102",
+      "item_moon_id": "ClashWorldHomeStage:595:388"
+    },
+    {
+      "location_moon_id": "ForestWorldHomeStage:7463:1089",
+      "item_moon_id": "SkyWorldTreasureStage:95:999"
+    },
+    {
+      "location_moon_id": "RadioControlExStage:337:106",
+      "item_moon_id": "SwingSteelExStage:39:125"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14384:938",
+      "item_moon_id": "LavaWorldFenceLiftExStage:104:308"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:8895:40",
+      "item_moon_id": "WaterfallWorldHomeStage:1029:215"
+    },
+    {
+      "location_moon_id": "ForestWorldWaterExStage:138:197",
+      "item_moon_id": "SkyWorldHomeStage:1390:351"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:15040:1088",
+      "item_moon_id": "LakeWorldTimerAthletic000Zone:175:420"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6059:924",
+      "item_moon_id": "CityWorldHomeStage:8073:49"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5620:246",
+      "item_moon_id": "SandWorldHomeStage:2876:1114"
+    },
+    {
+      "location_moon_id": "ReflectBombExStage:2083:488",
+      "item_moon_id": "SnowWorldHomeStage:1359:695"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:15743:1150",
+      "item_moon_id": "ForestWorldHomeStage:4508:145"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:4868:277",
+      "item_moon_id": "WaterfallWorldHomeStage:2778:770"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5666:908",
+      "item_moon_id": "ClashWorldHomeStage:850:383"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:878:519",
+      "item_moon_id": "LavaWorldHomeStage:3453:259"
+    },
+    {
+      "location_moon_id": "LavaWorldTimerAthletic001Zone:109:249",
+      "item_moon_id": "ForestWorldHomeStage:3772:141"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4685:536",
+      "item_moon_id": "LakeWorldTownZone:488:410"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1390:351",
+      "item_moon_id": "SandWorldHomeStage:2047:504"
+    },
+    {
+      "location_moon_id": "SandWorldShopStage:21:565",
+      "item_moon_id": "SeaWorldHomeStage:2802:1028"
+    },
+    {
+      "location_moon_id": "PoleGrabCeilExStage:301:103",
+      "item_moon_id": "LavaWorldUpDownYoshiExStage:27:1083"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10646:61",
+      "item_moon_id": "SandWorldHomeStage:3431:542"
+    },
+    {
+      "location_moon_id": "SandWorldKillerExStage:49:554",
+      "item_moon_id": "CapAppearExStage:342:224"
+    },
+    {
+      "location_moon_id": "KillerRoadExStage:1667:882",
+      "item_moon_id": "ForestWorldHomeStage:7360:1026"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:5913:711",
+      "item_moon_id": "SkyWorldCastleZone:7501:1102"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:3052:1095",
+      "item_moon_id": "WaterfallWorldHomeStage:407:206"
+    },
+    {
+      "location_moon_id": "LavaWorldCostumeStage:39:991",
+      "item_moon_id": "LavaWorldHomeStage:355:251"
+    },
+    {
+      "location_moon_id": "MeganeLiftExStage:217:572",
+      "item_moon_id": "CapWorldHomeStage:2422:815"
+    },
+    {
+      "location_moon_id": "PackunPoisonExStage:328:203",
+      "item_moon_id": "WaterfallWorldHomeStage:3284:1145"
+    },
+    {
+      "location_moon_id": "SkyWorldCastleZone:649:339",
+      "item_moon_id": "JizoSwitchExStage:543:364"
+    },
+    {
+      "location_moon_id": "CapAppearLavaLiftExStage:125:310",
+      "item_moon_id": "FastenerExStage:602:1009"
+    },
+    {
+      "location_moon_id": "MeganeLiftExStage:315:573",
+      "item_moon_id": "SandWorldHomeStage:4807:539"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2255:471",
+      "item_moon_id": "KillerRoadNoCapExStage:3:1062"
+    },
+    {
+      "location_moon_id": "ShootingCityExStage:66:114",
+      "item_moon_id": "SeaWorldHomeStage:2255:471"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:3419:243",
+      "item_moon_id": "CloudWorldHomeStage:392:1160"
+    },
+    {
+      "location_moon_id": "LavaWorldClockExStage:320:306",
+      "item_moon_id": "CityWorldHomeStage:3116:54"
+    },
+    {
+      "location_moon_id": "SkyWorldHomeStage:1921:325",
+      "item_moon_id": "ForestWorldHomeStage:6110:177"
+    },
+    {
+      "location_moon_id": "SandWorldPressExStage:87:567",
+      "item_moon_id": "ClashWorldHomeStage:3284:1077"
+    },
+    {
+      "location_moon_id": "SeaWorld2DSmallZone:18:468",
+      "item_moon_id": "WaterValleyExStage:1125:479"
+    },
+    {
+      "location_moon_id": "SandWorldPyramid001Stage:265:563",
+      "item_moon_id": "WaterfallWorldHomeStage:1928:216"
+    },
+    {
+      "location_moon_id": "SandWorldUnderground000Stage:352:558",
+      "item_moon_id": "SeaWorldHomeStage:2581:780"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3433:545",
+      "item_moon_id": "AnimalChaseExStage:1383:201"
+    },
+    {
+      "location_moon_id": "SeaWorldHomeStage:2558:477",
+      "item_moon_id": "CapWorldHomeStage:2423:816"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12592:84",
+      "item_moon_id": "WaterfallWorldHomeStage:2898:866"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13419:65",
+      "item_moon_id": "SeaWorldLighthouseZone:407:776"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:2782:51",
+      "item_moon_id": "CityWorldHomeStage:4591:39"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:3437:547",
+      "item_moon_id": "CityWorldHomeStage:15743:1150"
+    },
+    {
+      "location_moon_id": "LavaWorldHomeStage:6442:952",
+      "item_moon_id": "WaterfallWorldHomeStage:3208:1041"
+    },
+    {
+      "location_moon_id": "LavaWorldShopStage:27:294",
+      "item_moon_id": "CityWorldHomeStage:8895:40"
+    },
+    {
+      "location_moon_id": "WaterValleyExStage:800:478",
+      "item_moon_id": "ForestWorldWoodsStage:343:1137"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13057:97",
+      "item_moon_id": "ForestWorldWoodsStage:222:184"
+    },
+    {
+      "location_moon_id": "CityWorldFactoryStage:360:107",
+      "item_moon_id": "SnowWorldHomeStage:1086:4"
+    },
+    {
+      "location_moon_id": "ReflectBombExStage:2157:487",
+      "item_moon_id": "SeaWorldHomeStage:2645:863"
+    },
+    {
+      "location_moon_id": "SandWorldKillerTowerZone:210:783",
+      "item_moon_id": "SnowWorldHomeStage:769:2"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:2230:521",
+      "item_moon_id": "SkyWorldCastleZone:4118:343"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:10124:69",
+      "item_moon_id": "CityWorldHomeStage:14420:940"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:1432:495",
+      "item_moon_id": "WaterfallWorldHomeStage:21:218"
+    },
+    {
+      "location_moon_id": "SandWorldUnderground001Stage:244:887",
+      "item_moon_id": "SandWorldUnderground001Stage:244:887"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:4448:38",
+      "item_moon_id": "SkyWorldCastleZone:2203:327"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4271:534",
+      "item_moon_id": "SenobiTowerExStage:131:481"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:11212:62",
+      "item_moon_id": "ReflectBombExStage:2083:488"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:14592:979",
+      "item_moon_id": "SandWorldHomeStage:3735:496"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:4956:68",
+      "item_moon_id": "SandWorldUnderground000Stage:352:558"
+    },
+    {
+      "location_moon_id": "SandWorldRotateExStage:206:571",
+      "item_moon_id": "SandWorldHomeStage:3998:512"
+    },
+    {
+      "location_moon_id": "CityWorldTimerAthletic003Zone:27:1054",
+      "item_moon_id": "DotTowerExStage:371:889"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4001:510",
+      "item_moon_id": "SkyWorldCloudBonusExStage:1581:365"
+    },
+    {
+      "location_moon_id": "SandWorldSphinxExStage:880:556",
+      "item_moon_id": "SandWorldRotateExStage:20:570"
+    },
+    {
+      "location_moon_id": "SandWorldSphinxExStage:334:557",
+      "item_moon_id": "SeaWorldHomeStage:382:438"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6270:1059",
+      "item_moon_id": "ForestWorldHomeStage:6970:905"
+    },
+    {
+      "location_moon_id": "CityWorldShop01Stage:36:101",
+      "item_moon_id": "TrexPoppunExStage:18:1116"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4000:511",
+      "item_moon_id": "MoonWorldHomeStage:1391:1000"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4002:509",
+      "item_moon_id": "LakeWorldHomeStage:848:709"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:8073:49",
+      "item_moon_id": "LakeWorldTownZone:903:417"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4277:535",
+      "item_moon_id": "CityWorldHomeStage:12584:77"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:13616:50",
+      "item_moon_id": "Cube2DExStage:251:915"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:4807:539",
+      "item_moon_id": "WaterfallWorldHomeStage:2823:825"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:12589:81",
+      "item_moon_id": "CityWorldHomeStage:16048:1155"
+    },
+    {
+      "location_moon_id": "WaterTubeExStage:3706:36",
+      "item_moon_id": "CityWorldHomeStage:12589:81"
+    },
+    {
+      "location_moon_id": "CityWorldHomeStage:3633:46",
+      "item_moon_id": "CapWorldHomeStage:820:231"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:5364:799",
+      "item_moon_id": "SkyWorldCastleZone:6825:941"
+    },
+    {
+      "location_moon_id": "SandWorldHomeStage:6244:1096",
+      "item_moon_id": "MoonWorldCaptureParadeStage:246:595"
+    }
+  ],
+  "entrances": [
+    {
+      "source_index": 1,
+      "destination_index": 38,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 2,
+      "destination_index": 14,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 3,
+      "destination_index": 91,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 4,
+      "destination_index": 115,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 5,
+      "destination_index": 12,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 6,
+      "destination_index": 16,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 7,
+      "destination_index": 66,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 8,
+      "destination_index": 110,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 9,
+      "destination_index": 28,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 10,
+      "destination_index": 97,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 11,
+      "destination_index": 11,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 12,
+      "destination_index": 24,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 14,
+      "destination_index": 53,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 15,
+      "destination_index": 114,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 16,
+      "destination_index": 48,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 17,
+      "destination_index": 107,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 18,
+      "destination_index": 109,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 19,
+      "destination_index": 88,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 20,
+      "destination_index": 83,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 21,
+      "destination_index": 153,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 22,
+      "destination_index": 117,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 23,
+      "destination_index": 131,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 24,
+      "destination_index": 118,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 25,
+      "destination_index": 19,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 26,
+      "destination_index": 32,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 27,
+      "destination_index": 84,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 28,
+      "destination_index": 5,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 29,
+      "destination_index": 62,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 30,
+      "destination_index": 3,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 31,
+      "destination_index": 43,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 32,
+      "destination_index": 4,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 33,
+      "destination_index": 46,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 34,
+      "destination_index": 86,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 35,
+      "destination_index": 59,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 36,
+      "destination_index": 1,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 37,
+      "destination_index": 134,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 38,
+      "destination_index": 50,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 39,
+      "destination_index": 72,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 40,
+      "destination_index": 68,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 43,
+      "destination_index": 70,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 46,
+      "destination_index": 104,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 47,
+      "destination_index": 93,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 48,
+      "destination_index": 18,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 49,
+      "destination_index": 64,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 50,
+      "destination_index": 30,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 52,
+      "destination_index": 136,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 53,
+      "destination_index": 7,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 54,
+      "destination_index": 108,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 55,
+      "destination_index": 23,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 56,
+      "destination_index": 17,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 57,
+      "destination_index": 40,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 58,
+      "destination_index": 2,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 59,
+      "destination_index": 89,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 60,
+      "destination_index": 21,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 62,
+      "destination_index": 129,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 63,
+      "destination_index": 75,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 64,
+      "destination_index": 63,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 65,
+      "destination_index": 15,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 66,
+      "destination_index": 26,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 67,
+      "destination_index": 81,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 68,
+      "destination_index": 95,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 69,
+      "destination_index": 103,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 70,
+      "destination_index": 49,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 71,
+      "destination_index": 47,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 72,
+      "destination_index": 78,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 73,
+      "destination_index": 8,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 74,
+      "destination_index": 60,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 75,
+      "destination_index": 85,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 76,
+      "destination_index": 99,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 77,
+      "destination_index": 156,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 78,
+      "destination_index": 100,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 79,
+      "destination_index": 92,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 81,
+      "destination_index": 128,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 82,
+      "destination_index": 102,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 83,
+      "destination_index": 22,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 84,
+      "destination_index": 127,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 85,
+      "destination_index": 130,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 86,
+      "destination_index": 113,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 87,
+      "destination_index": 54,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 88,
+      "destination_index": 116,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 89,
+      "destination_index": 67,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 90,
+      "destination_index": 79,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 91,
+      "destination_index": 57,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 92,
+      "destination_index": 112,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 93,
+      "destination_index": 87,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 94,
+      "destination_index": 101,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 95,
+      "destination_index": 36,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 96,
+      "destination_index": 35,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 97,
+      "destination_index": 76,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 98,
+      "destination_index": 52,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 99,
+      "destination_index": 20,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 100,
+      "destination_index": 69,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 101,
+      "destination_index": 71,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 102,
+      "destination_index": 121,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 103,
+      "destination_index": 37,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 104,
+      "destination_index": 10,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 105,
+      "destination_index": 58,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 106,
+      "destination_index": 111,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 107,
+      "destination_index": 55,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 108,
+      "destination_index": 94,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 109,
+      "destination_index": 39,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 110,
+      "destination_index": 31,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 111,
+      "destination_index": 65,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 112,
+      "destination_index": 27,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 113,
+      "destination_index": 126,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 114,
+      "destination_index": 25,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 115,
+      "destination_index": 9,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 116,
+      "destination_index": 120,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 117,
+      "destination_index": 106,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 118,
+      "destination_index": 6,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 119,
+      "destination_index": 33,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 120,
+      "destination_index": 82,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 121,
+      "destination_index": 105,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 126,
+      "destination_index": 29,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 127,
+      "destination_index": 77,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 128,
+      "destination_index": 56,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 129,
+      "destination_index": 135,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 130,
+      "destination_index": 96,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 131,
+      "destination_index": 74,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 134,
+      "destination_index": 90,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 135,
+      "destination_index": 119,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 136,
+      "destination_index": 73,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 153,
+      "destination_index": 34,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 156,
+      "destination_index": 98,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 0,
+      "destination_index": 0,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 13,
+      "destination_index": 13,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 41,
+      "destination_index": 41,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 42,
+      "destination_index": 42,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 44,
+      "destination_index": 44,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 45,
+      "destination_index": 45,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 51,
+      "destination_index": 51,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 61,
+      "destination_index": 61,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 80,
+      "destination_index": 80,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 122,
+      "destination_index": 122,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 123,
+      "destination_index": 123,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 124,
+      "destination_index": 124,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 125,
+      "destination_index": 125,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 132,
+      "destination_index": 132,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 133,
+      "destination_index": 133,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 137,
+      "destination_index": 137,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 138,
+      "destination_index": 138,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 139,
+      "destination_index": 139,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 140,
+      "destination_index": 140,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 141,
+      "destination_index": 141,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 142,
+      "destination_index": 142,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 143,
+      "destination_index": 143,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 144,
+      "destination_index": 144,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 145,
+      "destination_index": 145,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 146,
+      "destination_index": 146,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 147,
+      "destination_index": 147,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 148,
+      "destination_index": 148,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 149,
+      "destination_index": 149,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 150,
+      "destination_index": 150,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 151,
+      "destination_index": 151,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 152,
+      "destination_index": 152,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 154,
+      "destination_index": 154,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 155,
+      "destination_index": 155,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 157,
+      "destination_index": 157,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 158,
+      "destination_index": 158,
+      "is_home_warp": false
+    },
+    {
+      "source_index": 159,
+      "destination_index": 159,
+      "is_home_warp": false
+    }
+  ],
+  "path": [
+    {
+      "sphere": 0,
+      "location_moon_id": "CapWorldHomeStage:2444:861",
+      "item_moon_id": "PeachWorldHomeStage:756:605",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Frog",
+        "MoonRockActive_Cloud",
+        "MoonRockActive_Lost",
+        "MoonRockActive_Moon"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CapWorldHomeStage:2730:1033",
+      "item_moon_id": "SkyWorldCastleZone:7421:1092",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:2209:1121",
+      "item_moon_id": "SandWorldKillerTowerZone:42:505",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CloudExStage:2512:486",
+      "item_moon_id": "SeaWorldHomeStage:3622:1151",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldCostumeStage:450:1030",
+      "item_moon_id": "RailCollisionExStage:171:191",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:1120:406",
+      "item_moon_id": "Theater2DExStage:493:928",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldTownStage:531:17",
+      "item_moon_id": "YoshiCloudExStage:903:975",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "PackunFire"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldHomeStage:5142:138",
+      "item_moon_id": "CityWorldHomeStage:14384:938",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldWoodsStage:343:1137",
+      "item_moon_id": "LakeWorldTownZone:1434:1015",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldCostumeStage:2659:988",
+      "item_moon_id": "CityWorldHomeStage:6939:96",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldShopStage:36:360",
+      "item_moon_id": "MoonWorldWeddingRoomZone:361:1165",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "RailCollisionExStage:171:191",
+      "item_moon_id": "SandWorldHomeStage:2874:1112",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:2097:450",
+      "item_moon_id": "WaterfallWorldHomeStage:2819:822",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldHomeStage:5574:136",
+      "item_moon_id": "SandWorldHomeStage:4000:511",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "IceWaterDashExStage:81:12",
+      "item_moon_id": "SandWorldMeganeExStage:253:561",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldHomeStage:6164:148",
+      "item_moon_id": "ForestWorldWoodsStage:206:186",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:2874:1112",
+      "item_moon_id": "MoonWorldHome2DZone:139:828",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "DotHardExStage:690:1050",
+      "item_moon_id": "LavaWorldHomeStage:3424:266",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1732:977",
+      "item_moon_id": "SkyWorldHomeStage:1388:349",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:992:607",
+      "item_moon_id": "SandWorldSlotStage:34:1047",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:1622:460",
+      "item_moon_id": "ClashWorldHomeStage:2833:855",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldWoodsStage:415:1159",
+      "item_moon_id": "LavaWorldTreasureStage:14:992",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "BossRaidWorldHomeStage:256:793",
+      "item_moon_id": "SandWorldHomeStage:6270:1059",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldCloudBonusExStage:2288:366",
+      "item_moon_id": "ForestWorldTimerAthletic001Zone:41:676",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:756:605",
+      "item_moon_id": "ClashWorldHomeStage:564:380",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "RevengeBossMagmaStage:5904:1142",
+      "item_moon_id": "RevengeBossRaidStage:30:1146",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "PackunPoison"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:1955:464",
+      "item_moon_id": "SeaWorldHomeStage:1863:443",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PackunPoisonNoCapExStage:4:1069",
+      "item_moon_id": "LavaWorldHomeStage:5721:289",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:2268:453",
+      "item_moon_id": "SnowWorldTownStage:1101:19",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldUtsuboDenZone:68:459",
+      "item_moon_id": "CityWorldHomeStage:14411:939",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldHomeStage:6177:149",
+      "item_moon_id": "ClashWorldHomeStage:83:372",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "Galaxy2DExStage:650:603",
+      "item_moon_id": "ForestWorldHomeStage:7205:1001",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:2143:526",
+      "item_moon_id": "MoonAthleticExStage:53:601",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 2,
+      "location_moon_id": "SnowWorldTownStage:918:22",
+      "item_moon_id": "SnowWorldTownStage:1134:873",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldSphinxQuizZone:11:457",
+      "item_moon_id": "PeachWorldCastleStage:101:956",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "AnagramAlphabetCharacter"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldBalconyZone:89:21",
+      "item_moon_id": "PeachWorldHomeStage:1678:967",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Tree"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:1039:578",
+      "item_moon_id": "ForestWorldHomeStage:5309:151",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldShopStage:9:564",
+      "item_moon_id": "SkyWorldHomeStage:1673:315",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:877:580",
+      "item_moon_id": "CapAppearLavaLiftExStage:241:311",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldCloudBonusExStage:1581:365",
+      "item_moon_id": "MoonWorldHomeStage:217:583",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorld2DZone:13:407",
+      "item_moon_id": "SnowWorldHomeStage:1459:973",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldCoveCaveZone:76:448",
+      "item_moon_id": "ElectricWireExStage:509:122",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldCostumeStage:733:1031",
+      "item_moon_id": "SandWorldHomeStage:1841:532",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1102:1110",
+      "item_moon_id": "LakeWorldHomeStage:551:422",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:217:583",
+      "item_moon_id": "LavaWorldIslandZone:314:970",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:1078:714",
+      "item_moon_id": "WaterfallWorldHomeStage:2467:209",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldHomeStage:396:402",
+      "item_moon_id": "MoonWorldHomeStage:877:580",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:2876:1114",
+      "item_moon_id": "WaterfallWorldHomeStage:1027:213",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "IceWaterDashExStage:262:13",
+      "item_moon_id": "SkyWorldHomeStage:1387:348",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldUtsuboCaveStage:681:1107",
+      "item_moon_id": "SandWorldRotateExStage:206:571",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:155:582",
+      "item_moon_id": "CapWorldHomeStage:2424:817",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldSphinxQuizZone:81:458",
+      "item_moon_id": "SkyWorldCastleZone:4857:690",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldShopRoom:21:1157",
+      "item_moon_id": "CapWorldHomeStage:2611:981",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:772:414",
+      "item_moon_id": "LavaWorldHomeStage:2499:255",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1678:967",
+      "item_moon_id": "PeachWorldCostumeStage:13:934",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "HackFork"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldKillerTowerZone:42:505",
+      "item_moon_id": "ForestWorldHomeStage:5183:169",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CapWorldHomeStage:2710:1019",
+      "item_moon_id": "CapRotatePackunExStage:179:119",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldCostumeStage:35:1144",
+      "item_moon_id": "FukuwaraiMarioStage:117:986",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Cactus"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1679:968",
+      "item_moon_id": "SandWorldMeganeExStage:119:562",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:1593:442",
+      "item_moon_id": "ClashWorldHomeStage:2981:942",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:536:517",
+      "item_moon_id": "SandWorldHomeStage:3433:545",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1295:613",
+      "item_moon_id": "SnowWorldHomeStage:1113:8",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CloudWorldHomeStage:154:853",
+      "item_moon_id": "CityWorldHomeStage:3633:46",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1554:913",
+      "item_moon_id": "SkyWorldHomeStage:1394:355",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldHomeStage:326:424",
+      "item_moon_id": "LavaWorldHomeStage:3112:290",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "WorldPeace_Lake",
+        "MoonRockActive_Lake"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "Galaxy2DExStage:864:604",
+      "item_moon_id": "RocketFlowerExStage:302:574",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1333:870",
+      "item_moon_id": "MoonWorldHomeStage:155:582",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:2102:1027",
+      "item_moon_id": "LavaWorldHomeStage:4867:276",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ForestWorldWoodsStage:220:183",
+      "item_moon_id": "CityWorldHomeStage:4448:38",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1315:771",
+      "item_moon_id": "SandWorldHomeStage:4392:552",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1329:869",
+      "item_moon_id": "LavaWorldHomeStage:5326:261",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:461:579",
+      "item_moon_id": "Special1WorldHomeStage:485:1128",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "DownThrow"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:3371:523",
+      "item_moon_id": "CityWorldHomeStage:13419:65",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1103:1111",
+      "item_moon_id": "SandWorldHomeStage:2188:515",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "FrogSearchExStage:106:238",
+      "item_moon_id": "CapWorldHomeStage:2196:232",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorld2DLargeZone:13:466",
+      "item_moon_id": "LakeWorldHomeStage:715:401",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldCostumeStage:2573:987",
+      "item_moon_id": "CapWorldHomeStage:926:227",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1334:871",
+      "item_moon_id": "SnowWorldHomeStage:1431:937",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:953:585",
+      "item_moon_id": "FrogPoisonExStage:4547:431",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHome2DZone:32:586",
+      "item_moon_id": "SeaWorldBeachVolleyBallZone:357:472",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:622:413",
+      "item_moon_id": "WaterfallWorldHomeStage:1119:211",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldHomeStage:551:422",
+      "item_moon_id": "SandWorldHomeStage:3371:523",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "ShootingElevatorExStage:105:190",
+      "item_moon_id": "PackunPoisonNoCapExStage:4:1069",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Crouch"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1100:1108",
+      "item_moon_id": "LavaWorldHomeStage:6595:1090",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SkyWorldHomeStage:1380:345",
+      "item_moon_id": "SeaWorldLighthouseZone:406:775",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHome2DZone:139:828",
+      "item_moon_id": "SnowWorldHomeStage:581:7",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1487:1166",
+      "item_moon_id": "SandWorldSphinxExStage:880:556",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1566:959",
+      "item_moon_id": "MoonWorldHomeStage:461:579",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CapWorldHomeStage:926:227",
+      "item_moon_id": "LavaWorldHomeStage:4980:244",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldHomeStage:783:423",
+      "item_moon_id": "MoonWorldHomeStage:1125:798",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldTownStage:1183:1081",
+      "item_moon_id": "WaterfallWorldHomeStage:2618:669",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 3,
+      "location_moon_id": "LakeWorldTownZone:1277:715",
+      "item_moon_id": "ClashWorldHomeStage:54:375",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 4,
+      "location_moon_id": "SeaWorld2DLargeZone:365:467",
+      "item_moon_id": "LavaWorldHomeStage:6442:952",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CloudExStage:310:485",
+      "item_moon_id": "PackunPoisonExStage:112:202",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:2875:1113",
+      "item_moon_id": "LavaWorldCostumeStage:39:991",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:1391:1000",
+      "item_moon_id": "SkyWorldCostumeStage:2573:987",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonAthleticExStage:82:602",
+      "item_moon_id": "CityWorldHomeStage:4956:68",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:568:411",
+      "item_moon_id": "GotogotonExStage:269:971",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldHomeStage:524:415",
+      "item_moon_id": "BossRaidWorldHomeStage:256:793",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:614:412",
+      "item_moon_id": "IceWaterDashExStage:81:12",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "DotHardExStage:723:1051",
+      "item_moon_id": "SenobiTowerExStage:162:482",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldBottomHollowZone:38:454",
+      "item_moon_id": "SkyWorldCastleZone:7296:1039",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:1715:498",
+      "item_moon_id": "Special1WorldHomeStage:469:1122",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Climb"
+      ]
+    },
+    {
+      "sphere": 5,
+      "location_moon_id": "SnowWorldTownStage:987:23",
+      "item_moon_id": "SkyWorldCastleZone:649:339",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 5,
+      "location_moon_id": "SandWorldHomeStage:3782:525",
+      "item_moon_id": "MoonWorldHomeStage:937:577",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldHomeStage:2112:451",
+      "item_moon_id": "SeaWorldVibrationStage:15:1135",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:576:518",
+      "item_moon_id": "SnowWorldByugoZone:272:703",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:4059:508",
+      "item_moon_id": "PackunPoisonExStage:328:203",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "FrogSearchExStage:249:239",
+      "item_moon_id": "LakeWorldTownZone:1333:870",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonWorldHomeStage:1125:798",
+      "item_moon_id": "KillerRoadExStage:1667:882",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SeaWorldUnderGlassZone:400:1057",
+      "item_moon_id": "PeachWorldHomeStage:734:912",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Senobi"
+      ]
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:4508:145",
+      "item_moon_id": "SnowWorldIcicleZone:206:20",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:4352:143",
+      "item_moon_id": "DotTowerExStage:282:888",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:4503:144",
+      "item_moon_id": "CityWorldHomeStage:10046:59",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldTowerStage:161:180",
+      "item_moon_id": "LakeWorldHomeStage:918:1017",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:3772:141",
+      "item_moon_id": "PeachWorldHomeStage:1495:857",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Fastener"
+      ]
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:3577:139",
+      "item_moon_id": "Special1WorldHomeStage:478:1125",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:3694:140",
+      "item_moon_id": "CityWorldHomeStage:13457:99",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldTowerStage:220:179",
+      "item_moon_id": "LavaWorldHomeStage:4879:287",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 7,
+      "location_moon_id": "SeaWorldCostumeStage:21:484",
+      "item_moon_id": "SkyWorldWallZone:1671:334",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:1064:129",
+      "item_moon_id": "ClashWorldHomeStage:142:378",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 6,
+      "location_moon_id": "ForestWorldHomeStage:4127:142",
+      "item_moon_id": "SkyWorldCastleZone:3646:319",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 7,
+      "location_moon_id": "LakeWorldTownZone:488:410",
+      "item_moon_id": "LavaWorldBubbleLaneExStage:743:299",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "CapWorldHomeStage:2422:815",
+      "item_moon_id": "PeachWorldCostumeStage:35:1144",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Hosui"
+      ]
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:1863:443",
+      "item_moon_id": "MoonWorldHomeStage:1216:811",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldWallCaveCenterZone:4:455",
+      "item_moon_id": "PeachWorldHomeStage:1103:1111",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Gamane"
+      ]
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:1973:1104",
+      "item_moon_id": "PoleKillerExStage:1583:116",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:2225:1105",
+      "item_moon_id": "SandWorldHomeStage:4483:553",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 10,
+      "location_moon_id": "ForestWorldWoodsStage:392:1153",
+      "item_moon_id": "SandWorldHomeStage:5206:501",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:1831:1103",
+      "item_moon_id": "CityWorldHomeStage:12578:881",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:3104:1106",
+      "item_moon_id": "SkyWorldCastleZone:7276:1032",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:1558:449",
+      "item_moon_id": "LavaWorldHomeStage:3419:243",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 9,
+      "location_moon_id": "SeaWorldHomeStage:382:438",
+      "item_moon_id": "PeachWorldHomeStage:1554:913",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Wanwan"
+      ]
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "WaterfallWorldHomeStage:407:206",
+      "item_moon_id": "SkyWorldHomeStage:1809:324",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "SandWorldMeganeExStage:253:561",
+      "item_moon_id": "SkyWorldCastleZone:5201:691",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "SkyWorldHomeStage:1596:322",
+      "item_moon_id": "SeaWorldDamageBallZone:60:439",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "WaterfallWorldHomeStage:214:205",
+      "item_moon_id": "CityPeopleRoadStage:247:1023",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "SandWorldCostumeStage:19:569",
+      "item_moon_id": "CityWorldHomeStage:10128:71",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 8,
+      "location_moon_id": "ForestWorldHomeStage:424:130",
+      "item_moon_id": "Special2WorldHomeStage:55:1061",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "SideFlip",
+        "Dive",
+        "LongJump"
+      ]
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "FogMountainExStage:92:193",
+      "item_moon_id": "ClashWorldHomeStage:575:381",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "FrogPoisonExStage:4456:434",
+      "item_moon_id": "CityWorldHomeStage:12592:84",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "BikeSteelNoCapExStage:6:1065",
+      "item_moon_id": "SandWorldShopStage:9:564",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "KillerRoadNoCapExStage:3:1062",
+      "item_moon_id": "ForestWorldWoodsStage:186:185",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "MoonWorldHomeStage:263:576:taking_notes_on_the_moon_s_surface",
+      "item_moon_id": "CityWorldHomeStage:7046:41",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "MoonWorldHomeStage:753:584",
+      "item_moon_id": "SandWorldHomeStage:2230:521",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "SandWorldMeganeExStage:119:562",
+      "item_moon_id": "SkyWorldCastleZone:6841:963",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "FogMountainExStage:249:194",
+      "item_moon_id": "PeachWorldHomeStage:1507:1119",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Tsukkun"
+      ]
+    },
+    {
+      "sphere": 13,
+      "location_moon_id": "IceWaterBlockExStage:363:15",
+      "item_moon_id": "SnowWorldShopStage:24:868",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 13,
+      "location_moon_id": "IceWaterBlockExStage:170:14",
+      "item_moon_id": "PeachWorldHomeStage:1295:613",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "ElectricWire"
+      ]
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "CityPeopleRoadStage:1379:1021",
+      "item_moon_id": "SandWorldHomeStage:3437:547",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:7421:1092",
+      "item_moon_id": "SandWorldHomeStage:5335:712",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:2335:318",
+      "item_moon_id": "TsukkunRotateExStage:149:367",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "CityPeopleRoadStage:247:1023",
+      "item_moon_id": "ForestWorldWoodsTreasureStage:8:188",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldHomeStage:1673:315",
+      "item_moon_id": "FukuwaraiKuriboStage:116:982",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "CityPeopleRoadStage:1390:1022",
+      "item_moon_id": "SandWorldUnderground001Stage:321:995",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldWallZone:1179:333",
+      "item_moon_id": "SwingSteelExStage:103:126",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldHomeStage:1264:321",
+      "item_moon_id": "SandWorldHomeStage:6244:1096",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "Special1WorldHomeStage:469:1122",
+      "item_moon_id": "SeaWorldWallCaveCenterZone:4:455",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldWallZone:2165:337",
+      "item_moon_id": "SeaWorldHomeStage:2558:477",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldHomeStage:1740:323",
+      "item_moon_id": "ClashWorldHomeStage:2560:393",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldWallZone:1690:335",
+      "item_moon_id": "ForestWorldBonusStage:91:195",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SnowWorldHomeStage:1431:937",
+      "item_moon_id": "SnowWorldCostumeStage:450:1030",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldWoodsTreasureStage:8:188",
+      "item_moon_id": "ShootingElevatorExStage:105:190",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:3646:319",
+      "item_moon_id": "MoonWorldHomeStage:997:581",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "RevengeGiantWanderBossStage:1277:1147",
+      "item_moon_id": "SeaWorldHomeStage:1277:437",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "FrogPoisonExStage:4547:431",
+      "item_moon_id": "TrampolineWallCatchExStage:1117:425",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:3056:331",
+      "item_moon_id": "LavaWorldUpDownYoshiExStage:26:1082",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "LedgeGrab"
+      ]
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:2203:327",
+      "item_moon_id": "YoshiCloudExStage:668:974",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Kuribo"
+      ]
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SkyWorldCastleZone:2320:328",
+      "item_moon_id": "ForestWorldHomeStage:5142:138",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "SnowWorldIcicleZone:412:699",
+      "item_moon_id": "MoonWorldCaptureParadeLavaPillarZone:460:596",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "LakeWorldHomeStage:918:1017",
+      "item_moon_id": "SeaWorld2DLargeZone:13:466",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "LakeWorldTimerAthletic000Zone:175:420",
+      "item_moon_id": "PeachWorldHomeStage:1732:977",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "FukuwaraiFacePartsKuribo"
+      ]
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "RailCollisionExStage:216:192",
+      "item_moon_id": "CityWorldMainTowerStage:489:100",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "SkyWorldHomeStage:1809:324",
+      "item_moon_id": "MoonWorldShopRoom:21:1157",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 11,
+      "location_moon_id": "SnowWorldGabuzouZone:235:24",
+      "item_moon_id": "SkyWorldHomeStage:3316:1016",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "SeaWorldDamageBallZone:144:446",
+      "item_moon_id": "MoonWorldWeddingRoomZone:260:1164",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "PeachWorldHomeStage:1762:984",
+      "item_moon_id": "SeaWorldLavaZone:606:1043",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 13,
+      "location_moon_id": "FukuwaraiKuriboStage:117:983",
+      "item_moon_id": "SkyWorldWallZone:1179:333",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "PeachWorldHomeStage:794:606",
+      "item_moon_id": "DotHardExStage:690:1050",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Tank"
+      ]
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldHomeStage:3942:131",
+      "item_moon_id": "CityWorldTimerAthletic003Zone:27:1054",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldHomeStage:5652:147",
+      "item_moon_id": "PeachWorldHomeStage:1102:1110",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "KaronWing"
+      ]
+    },
+    {
+      "sphere": 15,
+      "location_moon_id": "MoonWorldCaptureParadeLavaPillarZone:460:596",
+      "item_moon_id": "LakeWorldHomeStage:783:423",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorld2DRoadZone:61:150",
+      "item_moon_id": "SkyWorldCastleZone:3056:331",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldHomeStage:1667:159",
+      "item_moon_id": "ElectricWireExStage:764:121",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ShootingElevatorExStage:160:189",
+      "item_moon_id": "ImomuPoisonExStage:3970:399",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldHomeStage:4570:146",
+      "item_moon_id": "Note2D3DRoomExStage:901:102",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "SandWorldHomeStage:3387:524",
+      "item_moon_id": "BikeSteelNoCapExStage:5:1064",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 13,
+      "location_moon_id": "FukuwaraiKuriboStage:116:982",
+      "item_moon_id": "CityWorldFactory01Zone:599:1100",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 12,
+      "location_moon_id": "SnowWorldIcicleZone:206:20",
+      "item_moon_id": "LavaWorldHomeStage:5666:908",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "ForestWorldHomeStage:2309:134",
+      "item_moon_id": "LavaWorldCostumeStage:20:990",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "CityWorldHomeStage:3203:37",
+      "item_moon_id": "RevengeForestBossStage:6:1149",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "JugemFishing",
+        "Yoshi"
+      ]
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "PeachWorldHomeStage:2364:1134",
+      "item_moon_id": "SandWorldHomeStage:3434:546",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "PeachWorldHomeStage:1495:857",
+      "item_moon_id": "ForestWorldHomeStage:4127:142",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "LakeWorldTownZone:645:416",
+      "item_moon_id": "MoonWorldHomeStage:1078:714",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "ForestWorldWaterExStage:52:196",
+      "item_moon_id": "IceWalkerExStage:18:877",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "CityWorldHomeStage:7051:42",
+      "item_moon_id": "SnowWorldGabuzouZone:280:701",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "PeachWorldHomeStage:1473:856",
+      "item_moon_id": "SkyWorldWallZone:2165:337",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "SeaWorldSecretStage:13:483",
+      "item_moon_id": "SeaWorldUnderGlassZone:345:474",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "LavaWorldUpDownYoshiExStage:27:1083",
+      "item_moon_id": "SkyWorldCastleZone:8382:1161",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "PeachWorldHomeStage:1497:858",
+      "item_moon_id": "ForestWorldHomeStage:5887:174",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 18,
+      "location_moon_id": "CityWorldHomeStage:7046:41",
+      "item_moon_id": "SandWorldHomeStage:2888:522",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 17,
+      "location_moon_id": "LavaWorldUpDownYoshiExStage:26:1082",
+      "item_moon_id": "SeaWorldSphinxQuizZone:11:457",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 19,
+      "location_moon_id": "CityWorldHomeStage:9072:44",
+      "item_moon_id": "ForestWorldHomeStage:7285:1011",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 14,
+      "location_moon_id": "RevengeMofumofuStage:54:1141",
+      "item_moon_id": "RevengeBossKnuckleStage:9:1148",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Kakku",
+        "Imomu",
+        "Byugo"
+      ]
+    },
+    {
+      "sphere": 20,
+      "location_moon_id": "ImomuPoisonExStage:4857:400",
+      "item_moon_id": "SandWorldHomeStage:4277:535",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 20,
+      "location_moon_id": "SandWorldSecretStage:92:566",
+      "item_moon_id": "SnowWorldLobby000Stage:951:903",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 20,
+      "location_moon_id": "ImomuPoisonExStage:3970:399",
+      "item_moon_id": "PeachWorldHomeStage:1719:978",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "BreedaWanwan"
+      ]
+    },
+    {
+      "sphere": 20,
+      "location_moon_id": "ByugoPuzzleExStage:69:33",
+      "item_moon_id": "ForestWorldTowerStage:220:179",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 16,
+      "location_moon_id": "ForestWorldBossStage:6:181",
+      "item_moon_id": "RevengeGiantWanderBossStage:1277:1147",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "WorldPeace_Wooded",
+        "Pukupuku",
+        "GotogotonCity",
+        "Fukankun",
+        "MoonRockActive_Wooded"
+      ]
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:7299:1010",
+      "item_moon_id": "SandWorldHomeStage:6209:1046",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldBossStage:488:182",
+      "item_moon_id": "LavaWorldTimerAthletic000Zone:100:264",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5161:156",
+      "item_moon_id": "SandWorldHomeStage:6126:965",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldTownZone:398:409",
+      "item_moon_id": "WaterTubeExStage:3240:35",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:7205:1001",
+      "item_moon_id": "LavaWorldHomeStage:4868:277",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "PushBlockExStage:193:234",
+      "item_moon_id": "SandWorldHomeStage:3456:493",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6970:905",
+      "item_moon_id": "SeaWorldBeachVolleyBallZone:385:473",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldTimerAthletic001Zone:41:676",
+      "item_moon_id": "WaterfallWorldHomeStage:2423:906",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5887:174",
+      "item_moon_id": "WaterValleyExStage:800:478",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldTownZone:1057:405",
+      "item_moon_id": "ForestWorld2DRoadZone:61:150",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5309:151",
+      "item_moon_id": "LavaWorldHomeStage:2184:254",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "CapWorldHomeStage:2771:1073",
+      "item_moon_id": "SeaWorldLighthouseZone:16:441",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "AnimalChaseExStage:1383:201",
+      "item_moon_id": "SnowWorldCloudBonusExStage:5375:830",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldHomeStage:974:1078",
+      "item_moon_id": "ClashWorldHomeStage:1001:385",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:7360:1026",
+      "item_moon_id": "PeachWorldCastleStage:131:1152",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Megane"
+      ]
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "AnimalChaseExStage:552:200",
+      "item_moon_id": "ClashWorldHomeStage:920:384",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "SeaWorldHomeStage:2394:445",
+      "item_moon_id": "ImomuPoisonExStage:4857:400",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5621:152",
+      "item_moon_id": "SnowWorldGabuzouZone:235:24",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:493:160",
+      "item_moon_id": "SkyWorldHomeStage:1389:350",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ClashWorldShopStage:19:398",
+      "item_moon_id": "ForestWorldHomeStage:6968:901",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6962:892",
+      "item_moon_id": "LakeWorldTownZone:645:416",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "SeaWorldLighthouseZone:16:441",
+      "item_moon_id": "ForestWorldHomeStage:5185:170",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "SeaWorldHomeStage:3622:1151",
+      "item_moon_id": "CityWorldHomeStage:12590:82",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5184:161",
+      "item_moon_id": "ShootingCityYoshiExStage:4:1067",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Roll"
+      ]
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldTownZone:1288:719",
+      "item_moon_id": "ForestWorldWoodsStage:415:1159",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:7285:1011",
+      "item_moon_id": "SnowWorldHomeStage:1507:1003",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 23,
+      "location_moon_id": "PackunPoisonNoCapExStage:9:1068",
+      "item_moon_id": "WaterfallWorldHomeStage:1526:208",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 22,
+      "location_moon_id": "SeaWorldLavaZone:168:440",
+      "item_moon_id": "SkyWorldShopStage:36:360",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6110:177",
+      "item_moon_id": "SnowWorldLobby000Stage:684:843",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 24,
+      "location_moon_id": "SeaWorldDamageBallZone:60:439",
+      "item_moon_id": "ForestWorldHomeStage:6177:149",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:1840:168",
+      "item_moon_id": "LavaWorldHomeStage:4862:271",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldTownZone:371:403",
+      "item_moon_id": "MoonWorldHomeStage:263:576:taking_notes_on_the_moon_s_surface",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldHomeStage:848:709",
+      "item_moon_id": "CityWorldHomeStage:7058:43",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6371:157",
+      "item_moon_id": "SandWorldSphinxExStage:334:557",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldCloudBonusExStage:11:198",
+      "item_moon_id": "LakeWorldTownZone:371:403",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5183:169",
+      "item_moon_id": "SnowWorldTownStage:536:25",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5185:170",
+      "item_moon_id": "Lift2DExStage:6784:221",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "LakeWorldHomeStage:859:720",
+      "item_moon_id": "LakeWorldHomeStage:976:1094",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "PushBlockExStage:463:235",
+      "item_moon_id": "ForestWorldBossStage:488:182",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:5180:133",
+      "item_moon_id": "WaterfallWorldHomeStage:2455:217",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6560:166",
+      "item_moon_id": "LavaWorldClockExStage:544:307",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 25,
+      "location_moon_id": "SeaWorldHomeStage:1277:437",
+      "item_moon_id": "CityWorldHomeStage:3203:37",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "WorldPeace_Seaside",
+        "MoonRockActive_Seaside"
+      ]
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2802:1028",
+      "item_moon_id": "MoonWorldHomeStage:1064:707",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "TogezoRotateExStage:465:489",
+      "item_moon_id": "SandWorldHomeStage:123:516",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldSphinxQuizZone:106:778",
+      "item_moon_id": "RocketFlowerExStage:232:575",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:4391:1163",
+      "item_moon_id": "LavaWorldIslandZone:113:263",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:3153:1120",
+      "item_moon_id": "SandWorldHomeStage:576:518",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldUnderGlassZone:384:475",
+      "item_moon_id": "SkyWorldCostumeStage:2659:988",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2581:780",
+      "item_moon_id": "LakeWorldTownZone:568:411",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SnowWorldShopStage:24:868",
+      "item_moon_id": "Galaxy2DExStage:864:604",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorld2DLargeZone:559:790",
+      "item_moon_id": "RailCollisionExStage:216:192",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldLighthouseZone:406:775",
+      "item_moon_id": "SandWorldHomeStage:5989:893",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2248:452",
+      "item_moon_id": "ClashWorldHomeStage:616:392",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2578:773",
+      "item_moon_id": "TrexBikeExStage:3726:1140",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2803:1029",
+      "item_moon_id": "WaterfallWorldHomeStage:1028:214",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldLighthouseZone:407:776",
+      "item_moon_id": "CapWorldHomeStage:2721:1025",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:1665:476",
+      "item_moon_id": "SnowWorldHomeStage:1116:6",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2580:779",
+      "item_moon_id": "CityWorldHomeStage:13924:809",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldBeachVolleyBallZone:357:472",
+      "item_moon_id": "LakeWorldHomeStage:974:1078",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2652:864",
+      "item_moon_id": "CityWorldHomeStage:14342:904",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2689:920",
+      "item_moon_id": "ByugoPuzzleExStage:69:33",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldHomeStage:2645:863",
+      "item_moon_id": "WanwanClashExStage:504:226",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldBeachVolleyBallZone:385:473",
+      "item_moon_id": "SeaWorldCoveCaveZone:76:448",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "WaterfallWorldHomeStage:1033:207",
+      "item_moon_id": "SandWorldHomeStage:5364:799",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldLavaZone:606:1043",
+      "item_moon_id": "SnowWorldHomeStage:1491:1002",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "SeaWorldUnderGlassZone:345:474",
+      "item_moon_id": "SandWorldHomeStage:980:520",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 26,
+      "location_moon_id": "TogezoRotateExStage:958:490",
+      "item_moon_id": "GabuzouClockExStage:439:312",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldCloudBonusExStage:1556:199",
+      "item_moon_id": "SandWorldHomeStage:4059:508",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 20,
+      "location_moon_id": "SnowWorldTownStage:532:18",
+      "item_moon_id": "DotHardExStage:723:1051",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "Guidepost"
+      ]
+    },
+    {
+      "sphere": 27,
+      "location_moon_id": "CityWorldHomeStage:7058:43",
+      "item_moon_id": "Cube2DExStage:38:914",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 27,
+      "location_moon_id": "SnowWorldTownStage:536:25",
+      "item_moon_id": "PeachWorldHomeStage:992:607",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "TRex"
+      ]
+    },
+    {
+      "sphere": 21,
+      "location_moon_id": "ForestWorldHomeStage:6241:153",
+      "item_moon_id": "SandWorldHomeStage:4632:531",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 28,
+      "location_moon_id": "WaterfallWorldHomeStage:21:218",
+      "item_moon_id": "RevengeMofumofuStage:54:1141",
+      "reason": "unlock",
+      "unlocked_tokens": [
+        "WorldPeace_Cascade",
+        "StatueKoopa",
+        "KuriboWing",
+        "MoonRockActive_Cap",
+        "MoonRockActive_Cascade"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WindBlowExStage:167:673",
+      "item_moon_id": "SandWorldPyramid001Stage:265:563",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WindBlowExStage:299:674",
+      "item_moon_id": "ForestWorldHomeStage:7463:1089",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "RollingExStage:11:950",
+      "item_moon_id": "CityWorldHomeStage:12585:74",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 28,
+      "location_moon_id": "WaterfallWorldHomeStage:124:212",
+      "item_moon_id": "CapWorldHomeStage:2789:1086",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2975:1158",
+      "item_moon_id": "ClashWorldHomeStage:492:379",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2741:708",
+      "item_moon_id": "SeaWorldHomeStage:2803:1029",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2424:817",
+      "item_moon_id": "PeachWorldHomeStage:794:606",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Killer"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2691:670",
+      "item_moon_id": "SeaWorld2DLargeZone:559:790",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2618:669",
+      "item_moon_id": "PeachWorldShopStage:21:933",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "BossKnuckleHand"
+      ]
+    },
+    {
+      "sphere": 30,
+      "location_moon_id": "SandWorldKillerExStage:127:555",
+      "item_moon_id": "LakeWorldShopStage:12:430",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 30,
+      "location_moon_id": "SandWorldHomeStage:123:516",
+      "item_moon_id": "LakeWorld2DZone:13:407",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2972:1156",
+      "item_moon_id": "IceWalkerExStage:19:878",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2778:770",
+      "item_moon_id": "LakeWorldHomeStage:768:408",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 30,
+      "location_moon_id": "SandWorldHomeStage:2047:504",
+      "item_moon_id": "SkyWorldHomeStage:2043:317",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2490:210",
+      "item_moon_id": "SandWorldHomeStage:4685:536",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1928:216",
+      "item_moon_id": "CloudWorldHomeStage:130:1118",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:3523:1167",
+      "item_moon_id": "CityWorldHomeStage:13616:50",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2824:826",
+      "item_moon_id": "SeaWorldLongReefZone:238:447",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2611:981",
+      "item_moon_id": "MoonWorldHomeStage:1399:1049",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 30,
+      "location_moon_id": "SandWorldHomeStage:902:507",
+      "item_moon_id": "WaterfallWorldHomeStage:124:212",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "RollingExStage:4:951",
+      "item_moon_id": "ClashWorldHomeStage:71:376",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1717:204",
+      "item_moon_id": "SandWorldHomeStage:3387:524",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2423:816",
+      "item_moon_id": "BikeSteelNoCapExStage:6:1065",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Backflip"
+      ]
+    },
+    {
+      "sphere": 31,
+      "location_moon_id": "RevengeBossKnuckleStage:9:1148",
+      "item_moon_id": "SnowWorldLobby001Stage:331:1020",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "TrexPoppunExStage:18:1116",
+      "item_moon_id": "ForestWorldWoodsCostumeStage:14:187",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WanwanClashExStage:371:225",
+      "item_moon_id": "TrampolineWallCatchExStage:1238:426",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1119:211",
+      "item_moon_id": "Special1WorldHomeStage:482:1127",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Vault"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:3284:1145",
+      "item_moon_id": "CapWorldHomeStage:2972:1156",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2455:217",
+      "item_moon_id": "ForestWorldHomeStage:3942:131",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WanwanClashExStage:504:226",
+      "item_moon_id": "SeaWorldBottomHollowZone:38:454",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2947:894",
+      "item_moon_id": "LakeWorldTownZone:1334:871",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 30,
+      "location_moon_id": "SandWorldHomeStage:980:520",
+      "item_moon_id": "PushBlockExStage:463:235",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "YoshiCloudExStage:668:974",
+      "item_moon_id": "ForestWorldHomeStage:5180:133",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:3110:1004",
+      "item_moon_id": "ForestWorldHomeStage:4352:143",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "YoshiCloudExStage:903:975",
+      "item_moon_id": "ForestWorldHomeStage:6078:137",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1029:215",
+      "item_moon_id": "SnowWorldLobby000Stage:943:879",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2681:1018",
+      "item_moon_id": "SeaWorldHomeStage:2225:1105",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2721:1025",
+      "item_moon_id": "SeaWorldHomeStage:2580:779",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2729:1034",
+      "item_moon_id": "PoisonWaveExStage:381:237",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2898:866",
+      "item_moon_id": "TogezoRotateExStage:958:490",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1526:208",
+      "item_moon_id": "ForestWorldHomeStage:1667:159",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:820:231",
+      "item_moon_id": "SandWorldHomeStage:5267:538",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:2823:825",
+      "item_moon_id": "SenobiTowerYoshiExStage:25:1071",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "DoubleJump"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:3208:1041",
+      "item_moon_id": "FukuwaraiMarioStage:116:985",
+      "reason": "buffer placement",
+      "unlocked_tokens": [
+        "Radicon"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "CapWorldHomeStage:2196:232",
+      "item_moon_id": "BossRaidWorldHomeStage:353:835",
+      "reason": "buffer placement",
+      "unlocked_tokens": []
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "PeachWorldHomeStage:1101:1109",
+      "item_moon_id": "Special1WorldHomeStage:476:1124",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "RollBoost"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:1074:404",
+      "item_moon_id": "Special1WorldHomeStage:486:1129",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Spin"
+      ]
+    },
+    {
+      "sphere": 32,
+      "location_moon_id": "BikeSteelNoCapExStage:5:1064",
+      "item_moon_id": "PeachWorldHomeStage:1762:984",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Bubble"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "MoonWorldCaptureParadeStage:246:595",
+      "item_moon_id": "PeachWorldHomeStage:2364:1134",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "KillerMagnum"
+      ]
+    },
+    {
+      "sphere": 33,
+      "location_moon_id": "LavaWorldHomeStage:1097:291",
+      "item_moon_id": "ShootingCityYoshiExStage:3:1066",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "WallJump"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SandWorldHomeStage:1599:497",
+      "item_moon_id": "PeachWorldHomeStage:1566:959",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Bull"
+      ]
+    },
+    {
+      "sphere": 35,
+      "location_moon_id": "SandWorldHomeStage:3735:496",
+      "item_moon_id": "PeachWorldHomeStage:2209:1121",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Yukimaru"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "LakeWorldTownZone:903:417",
+      "item_moon_id": "PeachWorldHomeStage:1473:856",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Car"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "MoonAthleticExStage:53:601",
+      "item_moon_id": "PeachWorldHomeStage:1101:1109",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "FukuwaraiFacePartsMario"
+      ]
+    },
+    {
+      "sphere": 29,
+      "location_moon_id": "WaterfallWorldHomeStage:1028:214",
+      "item_moon_id": "PeachWorldHomeStage:2102:1027",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "BazookaElectric"
+      ]
+    },
+    {
+      "sphere": 1,
+      "location_moon_id": "SnowWorldHomeStage:1338:694",
+      "item_moon_id": "Special1WorldHomeStage:480:1126",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "GroundPound"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "BossRaidWorldHomeStage:30:795",
+      "item_moon_id": "RevengeBossMagmaStage:5904:1142",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "WorldPeace_Ruined",
+        "PukupukuSnow",
+        "Statue",
+        "MoonRockActive_Ruined"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "CloudWorldHomeStage:156:851",
+      "item_moon_id": "PeachWorldHomeStage:1100:1108",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Manhole"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "CloudWorldHomeStage:138:852",
+      "item_moon_id": "PeachWorldHomeStage:1497:858",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "RockForest"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "ClashWorldHomeStage:1001:385",
+      "item_moon_id": "KillerRoadNoCapExStage:5:1063",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "TripleJump"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "ClashWorldHomeStage:111:377",
+      "item_moon_id": "PeachWorldHomeStage:281:608",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "HammerBros"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "CloudWorldHomeStage:392:1160",
+      "item_moon_id": "Special1WorldHomeStage:475:1123",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "SpinThrow"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "SeaWorldHomeStage:2079:444",
+      "item_moon_id": "SenobiTowerYoshiExStage:26:1070",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "UpThrow"
+      ]
+    },
+    {
+      "sphere": 40,
+      "location_moon_id": "LavaWorldHomeStage:355:251",
+      "item_moon_id": "PeachWorldHomeStage:1679:968",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "GotogotonLake"
+      ]
+    },
+    {
+      "sphere": 39,
+      "location_moon_id": "DotTowerExStage:282:888",
+      "item_moon_id": "Special1WorldHomeStage:489:1132",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "GroundPoundJump"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "SkyWorldHomeStage:836:320",
+      "item_moon_id": "PeachWorldCastleStage:71:807",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "FireBros"
+      ]
+    },
+    {
+      "sphere": 38,
+      "location_moon_id": "KillerRoadNoCapExStage:5:1063",
+      "item_moon_id": "Special1WorldHomeStage:487:1130",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "Swing"
+      ]
+    },
+    {
+      "sphere": 39,
+      "location_moon_id": "BullRunExStage:122:890",
+      "item_moon_id": "PeachWorldHomeStage:1439:840",
+      "reason": "progression tail",
+      "unlocked_tokens": [
+        "WanwanBig"
+      ]
+    }
+  ],
+  "warnings": [
+    "Could not prove every randomized entrance destination reachable from an overworld entrance (5 missing: 0, 73, 90, 133, 139)."
+  ],
+  "final_objective": {
+    "reached": true,
+    "note": "Moon Kingdom is reachable with its 0-moon requirement, MoonWorldHomeStage::checkpoint::obj1348 is reachable, and every mandatory capture/ability unlock is proven reachable."
+  }
+}

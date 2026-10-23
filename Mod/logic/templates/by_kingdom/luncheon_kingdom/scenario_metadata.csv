@@ -1,0 +1,30 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+CapAppearLavaLiftExStage,Luncheon Kingdom,Volcano Cave Cruising,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CapAppearLavaLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,1,Common;G;H;J,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,2,A;H;I;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,3,A;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,4,A;B;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,5,A;C;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,6,A;D;G;K,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,7,A;E;F;G;H;I;J;L,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+ForkExStage,Luncheon Kingdom,Fork-Flickin to the Summit,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,ForkExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+GabuzouClockExStage,Luncheon Kingdom,Blazing Above the Gears,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,GabuzouClockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaBonus1Zone,Luncheon Kingdom,Luncheon Kingdom Slots(?),subarea,,,,LavaBonus1ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldBubbleLaneExStage,Luncheon Kingdom,Narrow Magma Path,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldBubbleLaneExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldCaveZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldClockExStage,Luncheon Kingdom,Spinning Athletics,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldClockExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldCostumeStage,Luncheon Kingdom,Simmering in the Kitchen,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldExcavationExStage,Luncheon Kingdom,Shards in the Cheese Rocks,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldExcavationExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldFenceLiftExStage,Luncheon Kingdom,Lava Island Fly-By,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldFenceLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldIslandZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldShopStage,Luncheon Kingdom,Crazy Cap Store(?),subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldTimerAthletic000ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldHomeStage,Luncheon Kingdom,Luncheon Kingdom,overworld,,,,LavaWorldTimerAthletic001ZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldTreasureStage,Luncheon Kingdom,Luncheon Treasure Vault(?),subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldTreasureStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,1,Common;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,2,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,4,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,5,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,6,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,
+LavaWorldUpDownExStage,Luncheon Kingdom,Magma Swamp,subarea,7,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,LavaWorldUpDownExStageMap.szs,ScenarioInfo.byml,extracted,

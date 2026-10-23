@@ -1,0 +1,4 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+CloudWorldHomeStage,Cloud Kingdom,Cloud Kingdom,overworld,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,CloudWorldHomeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+Cube2DExStage,Cloud Kingdom,2D Cube,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,Cube2DExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+FukuwaraiKuriboStage,Cloud Kingdom,Picture Match,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,FukuwaraiKuriboStageMap.szs,,missing,No ScenarioInfo.byml in archive.

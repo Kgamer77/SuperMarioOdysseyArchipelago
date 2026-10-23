@@ -1,0 +1,7 @@
+stage,kingdom,stage_display_name,stage_start_node_id,area_scope,listed_in_stage_warp,has_shine_db_moons,active_entrance_link_count,excluded_entrance_link_count,has_raw_stage_data_points,status,notes
+FastenerExStage,Lake Kingdom,Unzipping the Chasm,FastenerExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+FrogPoisonExStage,Lake Kingdom,Waves of Poison,FrogPoisonExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+GotogotonExStage,Lake Kingdom,Puzzle Room,GotogotonExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+LakeWorldHomeStage,Lake Kingdom,Lake Kingdom,LakeWorldHomeStage::start,overworld,true,true,5,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link. Includes embedded map LakeWorld2DZone. Includes embedded map LakeWorldTimerAthletic000Zone. Includes embedded map LakeWorldTownZone.
+LakeWorldShopStage,Lake Kingdom,Crazy Cap Store,LakeWorldShopStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.
+TrampolineWallCatchExStage,Lake Kingdom,"Jump, Grab, Cling, Climb",TrampolineWallCatchExStage::start,subarea,true,true,1,0,true,listed,Every listed room gets a stage_start node even when EntranceDB has no active link.

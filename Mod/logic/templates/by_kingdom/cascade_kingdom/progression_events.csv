@@ -1,0 +1,3 @@
+event_token,event_type,kingdom,world_id,develop_name,main_stage,event_node_id,event_location_node_id,requirement_expr,status,notes
+WorldPeace_Cascade,world_peace,Cascade Kingdom,1,Cascade,WaterfallWorldHomeStage,WaterfallWorldHomeStage::event::WorldPeace_Cascade,,,todo,Fill the story moons/bosses that must be completed for world peace in this kingdom.
+MoonRockActive_Cascade,moon_rock_active,Cascade Kingdom,1,Cascade,WaterfallWorldHomeStage,WaterfallWorldHomeStage::event::MoonRockActive_Cascade,WaterfallWorldHomeStage::event::MoonRockActive_Cascade,,todo,Fill the route to the Moon Rock and any prerequisite story/global state. Location imported from StageData obj obj1030.

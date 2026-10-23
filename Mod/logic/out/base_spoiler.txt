@@ -1,0 +1,1168 @@
+=== SMO Randomizer Logic Spoiler ===
+Seed: 12345
+
+=== Moon Placements by Final Location ===
+
+Bowser's Kingdom:
+  Jaxi Driver - Sand Kingdom @ Jizo and the Hidden Room
+  A Rumble Under the Arena Floor - Bowser's Kingdom @ Jizo's Big Adventure
+  Space Is "In" Right Now - Lake Kingdom @ Center of Hexagon Tower
+  Moon Quiz: Amazing! - Moon Kingdom @ Searching Hexagon Tower
+  Knocking Down the Nice Frame - Bowser's Kingdom @ A Rumble Under the Arena Floor
+  Lake Kingdom Master Cup - Lake Kingdom @ Above the Poison Swamp
+  Up on the Big Screen - Metro Kingdom @ Big Broodal Battle
+  Inside a Block in the Castle - Bowser's Kingdom @ Bowser's Kingdom Time Challenge 1
+  Metro Kingdom Master Cup - Metro Kingdom @ Bowser's Kingdom Timer Challenge 2
+  Bowser's Kingdom Master Cup - Bowser's Kingdom @ Caught Hopping at Bowser's Castle!
+  Atop a Column in a Row - Luncheon Kingdom @ Fishing(?) in Bowser's Castle
+  Ocean-Bottom Maze: Hidden Room - Seaside Kingdom @ Found Behind Bars!
+  Let's Go Swimming, Captain Toad! - Lake Kingdom @ Found with Bowser's Kingdom Art
+  Outside the Rotating Maze - Metro Kingdom @ From Crates in the Moat
+  Taking Notes: Ocean-Bottom Maze - Seaside Kingdom @ Good to See You, Captain Toad!
+  Golden Turnip Recipe 1 - Luncheon Kingdom @ Hidden Corridor Under the Floor
+  Strange Neighborhood - Sand Kingdom @ I Met a Pokio!
+  On the Lakeshore - Lake Kingdom @ Inside a Block in the Castle
+  Bottom of the Waterfall Basin - Cascade Kingdom @ Knocking Down the Nice Frame
+  Next to the Stone Arch - Cascade Kingdom @ On the Giant Bowser Statue's Nose
+  Snowline Circuit Class S - Snow Kingdom @ Past the Moving Wall
+  Shopping in Lake Lamode - Lake Kingdom @ Poking Your Nose by the Great Gate
+  Flower Thieves of Sky Garden - Wooded Kingdom @ Showdown at Bowser's Castle
+  Ocean-Bottom Maze: Treasure - Seaside Kingdom @ Sphynx Over Bowser's Castle
+  Slip Through the Nesting Spot - Seaside Kingdom @ Sunken Treasure in the Moat
+  Under the Mummy's Curse - Sand Kingdom @ Taking Notes with a Spinning Throw
+  Captain Toad is Chilly! - Snow Kingdom @ Dashing Above the Clouds
+  Jumping from Flag to Flag - Bowser's Kingdom @ Dashing Through the Clouds
+  Wooded Kingdom Master Cup - Wooded Kingdom @ Scene of Crossing the Poison Swamp
+  Shh! It's a Shortcut! - Seaside Kingdom @ Taking Notes: In the Folding Screen
+  Spinning Above the Clouds - Snow Kingdom @ Behind the Big Wall
+  Dashing Over Cold Water! - Snow Kingdom @ Behind the Tall Wall: Poke, Poke!
+  Forgotten in the Holding Room - Snow Kingdom @ Bowser's Kingdom Master Cup
+  Below Breakdown Road - Wooded Kingdom @ Bowser's Kingdom Regular Cup
+  I Met an Uproot! - Wooded Kingdom @ Caught on the Giant Horn
+  By the Babbling Brook in Deep Woods - Wooded Kingdom @ Caught on the Iron Fence
+  On the Statue's Tail - Sand Kingdom @ Exterminate the Ogres!
+  Shopping at Bowser's Castle - Bowser's Kingdom @ Infiltrate Bowser's Castle!
+  Shining in the Snow in Town - Snow Kingdom @ Inside a Block at the Gate
+  Iceburn Circuit Class S - Snow Kingdom @ Invader in Bowser's Castle
+  Taking Notes: In the Cliffside - Lake Kingdom @ Jizo All in a Row
+  Behind the Floodgate - Lake Kingdom @ Jumping from Flag to Flag
+  Hey Out There, Captain Toad! - Wooded Kingdom @ Peach in Bowser's Kingdom
+  Underground Treasure Chest - Sand Kingdom @ Poking Your Nose in the Plaster Wall
+  Treasure Inside the Turret - Bowser's Kingdom @ Secret Path to Bowser's Castle!
+  Peach in the Cloud Kingdom - Cloud Kingdom @ Small Bird in Bowser's Castle
+  Moon Shards in the Lake - Lake Kingdom @ Stack Up Above the Wall
+  Love at Peach's Castle - Mushroom Kingdom (Paragoomba) @ Taking Notes: Between Spinies
+  Walking the Desert! - Sand Kingdom @ Taking Notes: On the Wall
+  Shopping in Shiveria - Snow Kingdom @ Third Courtyard Outskirts
+  Magma Narrow Path - Luncheon Kingdom @ Underground Jizo
+  RC Car Champ! - Metro Kingdom @ Shopping at Bowser's Castle
+  Hang Your Hat on the Fountain - Sand Kingdom @ Bowser's Castle Treasure Vault
+  Shopping in Honeylune Ridge - Moon Kingdom @ From the Side Above the Castle Gate
+  Celebrating in the Streets! - Metro Kingdom @ Poking the Turret Wall
+  Freezing Water Near the Ceiling - Snow Kingdom @ Smart Bombing
+  Caught Hopping on a Building! - Metro Kingdom @ Stone Wall Circuit
+  Volcano Cave and Mysterious Clouds - Luncheon Kingdom @ Treasure Inside the Turret
+  Deep, Deep Down - Lake Kingdom @ Climb the Wooden Tower
+  Under the Old Electrical Pole - Cascade Kingdom @ Poke the Wooden Tower
+  Where the Birds Gather - Sand Kingdom @ Down and Up the Spinning Tower
+  Treasure Under the Cliff - Cascade Kingdom @ On Top of the Spinning Tower
+
+Cap Kingdom:
+  Bowser's Castle Treasure Vault - Bowser's Kingdom @ Bird Traveling in the Fog
+  Cascade Kingdom Regular Cup - Cascade Kingdom @ Bonneter Blockade
+  Above the Iron Mountain Path - Wooded Kingdom @ Cap Kingdom Master Cup
+  Invisible Road: Secret! - Dark Side (Side Flip) @ Cap Kingdom Regular Cup
+  Through the Freezing Waterway - Sand Kingdom @ Cap Kingdom Timer Challenge 1
+  Taking Notes with a Spinning Throw - Bowser's Kingdom @ Cap Kingdom Timer Challenge 2
+  Herding Sheep in the Dunes - Sand Kingdom @ Caught Hopping Near the Ship!
+  The Nut at the Dead End - Wooded Kingdom @ Danger Sign
+  Found with Dark Side Art 6 - Dark Side @ Fly to the Edge of the Fog
+  Light the Two Flames - Luncheon Kingdom @ Fog-Shrouded Platform
+  Fork Flickin' Detour - Luncheon Kingdom @ Found with Cap Kingdom Art
+  Inside a Block Is a Hard Place - Sand Kingdom @ Frog-Jumping Above the Fog
+  Ride the Jetstream - Seaside Kingdom @ Frog-Jumping from the Top Deck
+  Sphynx's Treasure Vault - Sand Kingdom @ Good Evening, Captain Toad!
+  That "Old West" Style - Lake Kingdom @ Hidden in a Sunken Hat
+  Over the Cliff's Edge - Wooded Kingdom @ Next to Glasses Bridge
+  The Mummy Army's Curse - Ruined Kingdom @ Peach in the Cap Kingdom
+  Secret 2D Treasure - Mushroom Kingdom (Meat) @ Shopping in Bonneton
+  On the North Pillar - Sand Kingdom @ Spin the Hat, Get a Prize
+  Drummer on Board! - Metro Kingdom @ Taking Notes: In the Fog
+  Taking Notes: Big Pot Swim - Luncheon Kingdom @ Taxi Flying Through Bonneton
+  Taking Notes: Snow Path Dash - Snow Kingdom @ The Forgotten Treasure
+  Beneath the Roots of the Moving Tree - Wooded Kingdom @ Under the Big One's Brim
+  Invisible Road: Rush! - Dark Side (Wall Jump) @ Searching the Frog Pond
+  Love by the Seaside - Seaside Kingdom @ Secrets of the Frog Pond
+  Breakdown Road: Final Challenge! - Dark Side (Up Throw) @ Skimming the Poison Tide
+  City Hall Lost & Found - Metro Kingdom @ Slipping Through the Poison Tide
+  Taking Notes: On the Wall - Bowser's Kingdom @ Hidden Among the Push-Blocks
+  Below the Cliff's Edge - Lost Kingdom @ Push-Block Peril
+  Taking Notes: On the Moon's Surface - Moon Kingdom @ Precision Rolling
+  End of the Hidden Passage - Lake Kingdom @ Roll On and On
+
+Cascade Kingdom:
+  Unzip the Chasm - Lake Kingdom @ Across the Mysterious Clouds
+  Avoiding Fuzzies Inside the Wall - Lost Kingdom @ Atop a Wall Among the Clouds
+  Walking on the Moon: Again! - Moon Kingdom @ Hidden Chasm Passage
+  Jump-Rope Genius - Metro Kingdom @ Past the Chasm Lifts
+  Swinging Scaffolding: Jump! - Metro Kingdom @ Dinosaur Nest: Big Cleanup!
+  Stretch on the Side Path - Seaside Kingdom @ Dinosaur Nest: Running Wild!
+  A Tourist in the Moon Kingdom! - Moon Kingdom @ Nice Shot with the Chain Chomp!
+  Past the Moving Wall - Bowser's Kingdom @ Very Nice Shot with the Chain Chomp!
+  Sphynx Traveling to the Waterfall - Cascade Kingdom @ A Tourist in the Cascade Kingdom
+  Inside the Rising Stone Pillar - Lost Kingdom @ Above a High Cliff
+  A Swing on Top of a Swing - Moon Kingdom @ Across the Floating Isles
+  Secret of the Mural - Sand Kingdom @ Behind the Waterfall
+  Ice-Dodging Goomba Stack - Snow Kingdom @ Bottom of the Waterfall Basin
+  Peach in the Moon Kingdom - Moon Kingdom @ Cascade Kingdom Master Cup
+  Good Evening, Captain Toad! - Cap Kingdom @ Cascade Kingdom Regular Cup
+  Peach in the Sand Kingdom - Sand Kingdom @ Cascade Kingdom Timer Challenge 1
+  An Invisible Gleam - Sand Kingdom @ Cascade Kingdom Timer Challenge 2
+  Caught Hopping on the Moon! - Moon Kingdom @ Caught Hopping at the Waterfall!
+  I Met a Pokio! - Bowser's Kingdom @ Caveman Cave-Fan
+  Snow Kingdom Master Cup - Snow Kingdom @ Chomp Through the Rocks
+  Roll On and On - Cap Kingdom @ Good Morning, Captain Toad!
+  Big Jump: Escape! - Metro Kingdom @ Guarded by a Colossal Fossil
+  High, High Above the Clouds - Cloud Kingdom @ Inside the Busted Fossil
+  The Nut in the Robot Storeroom - Wooded Kingdom @ Just a Hat, Skip, and a Jump
+  Showdown at Bowser's Castle - Bowser's Kingdom @ Multi Moon Atop the Falls
+  Enjoying the View of Forgotten Isle - Lost Kingdom @ Next to the Stone Arch
+  Dashing Above and Beyond! - Snow Kingdom @ On Top of the Rubble
+  Up in the Rafters - Moon Kingdom @ Our First Power Moon
+  Bench Friends - Metro Kingdom @ Peach in the Cascade Kingdom
+  Poster Cleanup - Sand Kingdom @ Rolling Rock by the Falls
+  From a Crack in the Hard Ground - Luncheon Kingdom @ Secret Path to Fossil Falls!
+  Stacked-Up Ice Climb - Snow Kingdom @ Shopping in Fossil Falls
+  Caught Hopping in the Desert! - Sand Kingdom @ Sphynx Traveling to the Waterfall
+  Fire in the Cave - Wooded Kingdom @ Taking Notes: Hurry Upward
+  Upon the Broken Arch - Ruined Kingdom @ Treasure Under the Cliff
+  A Fine Detail on the Glass - Seaside Kingdom @ Treasure of the Waterfall Basin
+  Motor Scooter Daredevil! - Metro Kingdom @ Under the Ground
+  Bowser's Kingdom Regular Cup - Bowser's Kingdom @ Under the Old Electrical Pole
+  Entrance to Shiveria - Snow Kingdom @ Across the Gusty Bridges
+  Slipping Through the Poison Tide - Cap Kingdom @ Flying Far Away from Gusty Bridges
+
+Cloud Kingdom:
+  The Treasure of Jaxi Ruins - Sand Kingdom @ Crossing the Cloud Sea
+  Hat-and-Seek in the Snow - Snow Kingdom @ Digging in the...Cloud?
+  Found with Dark Side Art 4 - Dark Side @ High, High Above the Clouds
+  Behind Snowy Mountain - Snow Kingdom @ Peach in the Cloud Kingdom
+  Welcome Back, Jaxi! - Sand Kingdom @ Taking Notes: Up and Down
+  Sunken Treasure in the Moat - Bowser's Kingdom @ King of the Cube!
+  Inside a Rock in the Forest - Wooded Kingdom @ The Sixth Face
+  Center of the Galaxy - Moon Kingdom @ Picture Match: A Stellar Goomba
+  From Inside a Bright Stone - Luncheon Kingdom @ Picture Match: Basically a Goomba
+
+Dark Side:
+  Found in the Park! Good Dog! - Metro Kingdom @ Vanishing Road Challenge
+  Luncheon Kingdom Timer Challenge 2 - Luncheon Kingdom @ Vanishing Road Rush
+  Jammin' in the Metro Kingdom - Metro Kingdom @ Breakdown Road: Final Challenge!
+  Chomp Through the Rocks - Cascade Kingdom @ Breakdown Road: Hurry!
+  The Shiverian Treasure Chest - Snow Kingdom @ Fruit Feast in the Magma Swamp
+  Secrets of the Frog Pond - Cap Kingdom @ Yoshi's Magma Swamp
+  Over the Fuzzies, Above the Swamp - Lost Kingdom @ Invisible Road: Rush!
+  Edge of the Galaxy - Moon Kingdom @ Invisible Road: Secret!
+  Taking Notes: In the Wall Painting - Sand Kingdom @ Fruit Feast on the Sinking Island
+  Sunken Treasure in the Cloud Sea - Seaside Kingdom @ Yoshi on the Sinking Island
+  Rewiring the Neighborhood - Metro Kingdom @ Fruit Feast Under Siege
+  Running the Flower Road - Snow Kingdom @ Yoshi Under Siege
+  Defend the Secret Flower Field! - Wooded Kingdom @ Arrival at Rabbit Ridge!
+  Powering Up the Station - Metro Kingdom @ Captain Toad on the Dark Side!
+  Caught Hopping at Peach's Castle! - Mushroom Kingdom (Puzzle Part (Lake Kingdom)) @ Found with Dark Side Art 1
+  Fog-Shrouded Platform - Cap Kingdom @ Found with Dark Side Art 10
+  Moon Shards in the Snow - Snow Kingdom @ Found with Dark Side Art 2
+  Our First Power Moon - Cascade Kingdom @ Found with Dark Side Art 3
+  In the Ancient Treasure Chest - Ruined Kingdom @ Found with Dark Side Art 4
+  Looking Back on the Flower Road - Snow Kingdom @ Found with Dark Side Art 5
+  Taking Notes: Swimming in Magma - Luncheon Kingdom @ Found with Dark Side Art 6
+  Atop the Tall Tree - Wooded Kingdom @ Found with Dark Side Art 7
+  Rolling Rock on the Battlefield - Ruined Kingdom @ Found with Dark Side Art 8
+  Bird Traveling the Forest - Wooded Kingdom @ Found with Dark Side Art 9
+
+Darker Side:
+  Cookatiel Showdown! - Luncheon Kingdom @ Long Journey's End
+
+Lake Kingdom:
+  Atop a Propeller Pillar - Lost Kingdom @ Super-Secret Zipper
+  Caught on the Giant Horn - Bowser's Kingdom @ Unzip the Chasm
+  Peach in the Seaside Kingdom - Seaside Kingdom @ Waves of Poison: Hop to It!
+  Courtyard Chest Trap - Mushroom Kingdom (Manhole) @ Waves of Poison: Hoppin' Over
+  Wandering Cactus - Sand Kingdom @ A Successful Repair Job
+  Pops Out of the Tail - Mushroom Kingdom (Spark Pylon) @ Taking Notes: In the Cliffside
+  Breakdown Road: Hurry! - Dark Side (Backflip) @ Behind the Floodgate
+  Yoshi's Feast in the Sea of Clouds - Mushroom Kingdom (Big Chain Chomp) @ Bird Traveling Over the Lake
+  Arrival at Rabbit Ridge! - Dark Side (Vault, Spin, Long Jump) @ Broodals Over the Lake
+  Flower Road Reach - Wooded Kingdom @ Found with Lake Kingdom Art
+  A Rumble on the Seaside Floor - Seaside Kingdom @ Lake Kingdom Master Cup
+  Found Behind Bars! - Bowser's Kingdom @ Lake Kingdom Regular Cup
+  Taking Notes: Around the Well - Mushroom Kingdom (Pokio) @ Love by the Lake
+  Climb the Wooden Tower - Bowser's Kingdom @ On the Lakeshore
+  Luncheon Kingdom: Master Cup - Luncheon Kingdom @ Peach in the Lake Kingdom
+  Lake Fishing - Lake Kingdom @ Taking Notes: Dive and Swim
+  The Snowy Mountain Barrier - Snow Kingdom @ Taxi Flying Through Lake Lamode
+  Skull Sign in the Transparent Maze - Sand Kingdom @ Treasure in the Spiky Waterway
+  The Sphynx's Underwater Vault - Seaside Kingdom @ Shopping in Lake Lamode
+  Picture Match: A Stellar Mario! - Mushroom Kingdom (Poison Piranha Plant) @ Lake Kingdom Timer Challenge 2
+  Sneaking Around in the Crater - Moon Kingdom @ Cheep Cheep Crossing
+  Across the Gusty Bridges - Cascade Kingdom @ Deep, Deep Down
+  Off the Beaten Wire - Metro Kingdom @ Dorrie-Back Rider
+  Left at the CafÃ©? - Metro Kingdom @ End of the Hidden Passage
+  High Up on a Rock Wall - Wooded Kingdom @ From the Broken Pillar
+  Seaside Kingdom Time Challenge 2 - Seaside Kingdom @ High-Flying Leap
+  Path to the Secret Flower Field - Wooded Kingdom @ I Feel Underdressed
+  Free Parking: Leap of Faith - Metro Kingdom @ I Met a Lake Cheep Cheep!
+  Cliffside Treasure Chest - Moon Kingdom @ Lake Fishing
+  Who Piled Garbage on This? - Metro Kingdom @ Lake Gardening: Spiky Passage Seed
+  Our Secret Little Room - Lake Kingdom @ Lake Kingdom Timer Challenge 1
+  Bonneter Blockade - Cap Kingdom @ Let's Go Swimming, Captain Toad!
+  Moon Shards in the Jungle - Lost Kingdom @ Moon Shards in the Lake
+  Jump, Grab, Cling, and Climb - Lake Kingdom @ Our Secret Little Room
+  By the Cannon Pointed at the Big Pot - Luncheon Kingdom @ Rooftop of the Water Plaza
+  Found with Dark Side Art 5 - Dark Side @ Secret Path to Lake Lamode!
+  Jump, Grab, and Climb Some More - Lake Kingdom @ Space Is "In" Right Now
+  Rapid Ascent on Hot Springs Island - Seaside Kingdom @ That "Old West" Style
+  Treasure of the Waterfall Basin - Cascade Kingdom @ That Trendy "Pirate" Look
+  Guitarist on Board! - Metro Kingdom @ What's in the Box?
+  Hidden on the Side of the Cliff - Moon Kingdom @ Jump, Grab, Cling, and Climb
+  Aim! Poke! - Seaside Kingdom @ Jump, Grab, and Climb Some More
+
+Lost Kingdom:
+  test test - Sand Kingdom @ A Butterfly's Treasure
+  The Nut 'Round the Corner - Wooded Kingdom @ A Propeller Pillar's Secret
+  Across the Mysterious Clouds - Cascade Kingdom @ Atop a Propeller Pillar
+  Found with Wooded Kingdom Art - Wooded Kingdom @ Avoiding Fuzzies Inside the Wall
+  Infiltrate Bowser's Castle! - Bowser's Kingdom @ Below the Cliff's Edge
+  Smart Bombing - Bowser's Kingdom @ Caught Hopping in the Jungle!
+  Small Bird in Bowser's Castle - Bowser's Kingdom @ Cave Gardening
+  The Lighthouse Seal - Seaside Kingdom @ Enjoying the View of Forgotten Isle
+  Lost in the Luggage - Sand Kingdom @ Get Some Rest, Captain Toad
+  Lake Kingdom Timer Challenge 1 - Lake Kingdom @ I Met a Tropical Wiggler!
+  Lurking in the Pillar's Shadow - Luncheon Kingdom @ Inside the Rising Stone Pillar
+  Atop a Blustery Arch - Snow Kingdom @ Inside the Stone Cage
+  Found with Dark Side Art 10 - Dark Side @ Jump Down to the Top of a Tree
+  Secret Path to Bowser's Castle! - Bowser's Kingdom @ Line It Up, Blow It Up
+  Found with Mushroom Kingdom Art - Mushroom Kingdom @ Lost Kingdom Master Cup
+  Invader in Bowser's Castle - Bowser's Kingdom @ Lost Kingdom Regular Cup
+  Metro Kingdom Timer Challenge 1 - Metro Kingdom @ Lost Kingdom Timer Challenge
+  Bird Traveling in the City - Metro Kingdom @ Moon Shards in the Jungle
+  Snow Kingdom Timer Challenge 3 - Snow Kingdom @ On a Tree in the Swamp
+  Road to Sky Garden - Wooded Kingdom @ On the Mountain Road
+  Glass Palace Treasure Chest - Seaside Kingdom @ Over the Fuzzies, Above the Swamp
+  Atop the Jutting Crag - Luncheon Kingdom @ Peach in the Lost Kingdom
+  Taking Notes: Dive and Swim - Lake Kingdom @ Peeking Out from Under the Bridge
+  Snow Kingdom Timer Challenge 2 - Snow Kingdom @ Soaring Over Forgotten Isle!
+  Invisible Road: Danger! - Wooded Kingdom @ Taking Notes: Stretch and Shrink
+  A Light Next to the Lighthouse - Seaside Kingdom @ Taxi Flying Through Forgotten Isle
+  Thanks for the Charge! - Wooded Kingdom @ The Caged Gold
+  Caught on the Iron Fence - Bowser's Kingdom @ The Shining Fruit
+  Under the Big One's Brim - Cap Kingdom @ Twist 'n' Turn-Up Treasure
+  Flying Far Away from Gusty Bridges - Cascade Kingdom @ Wrecked Rock Block
+  Chasing Klepto - Lost Kingdom @ Shopping on Forgotten Isle
+  Lighthouse Leaper - Seaside Kingdom @ Aglow in the Jungle
+  Vaulting Up a High-Rise - Metro Kingdom @ Stretch and Traverse the Jungle
+  Treasure Trap Hidden in the Inlet - Seaside Kingdom @ Chasing Klepto
+  Surrounded by Tall Mountains - Luncheon Kingdom @ Extremely Hot Bath
+
+Luncheon Kingdom:
+  Spinning-Platforms Treasure - Wooded Kingdom @ Volcano Cave Cruisin'
+  A Tourist in the Cascade Kingdom - Cascade Kingdom @ Volcano Cave and Mysterious Clouds
+  The Forgotten Treasure - Cap Kingdom @ Fork Flickin' Detour
+  Cave Gardening - Lost Kingdom @ Fork Flickin' to the Summit
+  Sewer Treasure - Metro Kingdom @ Lanterns on the Gear Steps
+  Across the Floating Isles - Cascade Kingdom @ Stepping Over the Gears
+  Climb the Cheese Rocks - Luncheon Kingdom @ Luncheon Kingdom Slots
+  I'm not Cold! - Snow Kingdom @ Crossing to the Magma
+  Peach in the Snow Kingdom - Snow Kingdom @ Magma Narrow Path
+  Taxi Flying Through Lake Lamode - Lake Kingdom @ Spinning Athletics End Goal
+  Hurry and Stretch - Seaside Kingdom @ Taking Notes: Spinning Athletics
+  I Met a Lake Cheep Cheep! - Lake Kingdom @ A Strong Simmer
+  On Top of the Rubble - Cascade Kingdom @ An Extreme Simmer
+  Found with Seaside Kingdom Art - Seaside Kingdom @ Climb the Cheese Rocks
+  Underground Jizo - Bowser's Kingdom @ Excavate 'n' Search the Cheese Rocks
+  Swing Around Secret Flower Field - Wooded Kingdom @ Flying Over the Lava Islands
+  Taking Notes: In the Folding Screen - Bowser's Kingdom @ Treasure of the Lava Islands
+  Treasure in the Ice Wall - Snow Kingdom @ A Tourist in the Luncheon Kingdom!
+  Waves of Poison: Hoppin' Over - Lake Kingdom @ Alcove Behind the Pillars of Magma
+  Extremely Hot Bath - Lost Kingdom @ Atop a Column in a Row
+  Rooftop of the Water Plaza - Lake Kingdom @ Atop the Jutting Crag
+  Long Journey's End - Darker Side @ Big Pot on the Volcano: Dive In!
+  Found with Metro Kingdom Art - Metro Kingdom @ Bon AppÃ©tit, Captain Toad!
+  Underwater Highway East: Explore! - Seaside Kingdom @ By the Cannon Pointed at the Big Pot
+  Sea Gardening: Hot-Spring Seed - Seaside Kingdom @ Caught Hopping at the Volcano!
+  Found with Sand Kingdom Art - Sand Kingdom @ Climb Up the Cascading Magma
+  Multi Moon Atop the Falls - Cascade Kingdom @ Cookatiel Showdown!
+  Light the Lantern on the Small Island - Luncheon Kingdom @ Diving from the Big Pot!
+  Hat-and-Seek: Among the Food - Luncheon Kingdom @ Found with Luncheon Kingdom Art
+  Bonjour, Dorrie! - Seaside Kingdom @ From Inside a Bright Stone
+  Climb Up the Cascading Magma - Luncheon Kingdom @ From a Crack in the Hard Ground
+  Moon Kingdom Regular Cup - Moon Kingdom @ Golden Turnip Recipe 1
+  A Strong Simmer - Luncheon Kingdom @ Golden Turnip Recipe 2
+  I Met a Snow Cheep Cheep! - Snow Kingdom @ Golden Turnip Recipe 3
+  Back Way Up the Mountain - Wooded Kingdom @ Hat-and-Seek: Among the Food
+  Good to See You, Captain Toad! - Bowser's Kingdom @ Is This an Ingredient Too?!
+  Bird Traveling in the Park - Metro Kingdom @ Island of Salt Floating in the Lava
+  Crossing Lines - Metro Kingdom @ Jammin' in the Luncheon Kingdom
+  Hat-and-Seek: In the Crowd - Metro Kingdom @ Light the Far-Off Lanterns
+  Crossing the Cloud Sea - Cloud Kingdom @ Light the Lantern on the Small Island
+  Found with Dark Side Art 8 - Dark Side @ Light the Two Flames
+  Taking Notes in the Sea - Seaside Kingdom @ Love Above the Lava
+  Hat-and-Seek: In the City - Metro Kingdom @ Luncheon Kingdom Timer Challenge 3
+  Lake Gardening: Spiky Passage Seed - Lake Kingdom @ Luncheon Kingdom: Master Cup
+  Jizo and the Hidden Room - Bowser's Kingdom @ Luncheon Kingdom: Regular Cup
+  Icy Jump Challenge - Snow Kingdom @ Lurking in the Pillar's Shadow
+  Snow Kingdom Timer Challenge 1 - Snow Kingdom @ Mechanic: Repairs Complete!
+  Crossing to the Magma - Luncheon Kingdom @ On Top of a Tall, Tall Roof
+  Girder Sandwich - Metro Kingdom @ Overlooking a Bunch of Ingredients
+  Big Broodal Battle - Bowser's Kingdom @ Peach in the Luncheon Kingdom
+  Secret Path to Bubblaine! - Seaside Kingdom @ Piled on the Salt
+  Shopping in Bonneton - Cap Kingdom @ Secret Path to Mount Volbono!
+  Stack Up Above the Wall - Bowser's Kingdom @ Surrounded by Tall Mountains
+  Poke! Roll! - Seaside Kingdom @ Taking Notes: Big Pot Swim
+  The Ice Wall Barrier - Snow Kingdom @ Taking Notes: Swimming in Magma
+  Iceburn Circuit Class A - Snow Kingdom @ The Broodals Are After Some Cookin'
+  Beneath the Rolling Vegetables - Luncheon Kingdom @ The Rooftop Lantern
+  Found with Snow Kingdom Art - Snow Kingdom @ Treasure Beneath the Cheese Rocks
+  Sphynx Over Bowser's Castle - Bowser's Kingdom @ Under the Cheese Rocks
+  A Rumble from the Sandy Floor - Sand Kingdom @ Under the Meat Plateau
+  Taking Notes: Ocean Surface Dash - Seaside Kingdom @ All the Cracks Are Fixed
+  Taking Notes: Between Spinies - Bowser's Kingdom @ Beneath the Rolling Vegetables
+  Seaside Kingdom Time Challenge 1 - Seaside Kingdom @ Shopping in Mount Volbono
+  Caught Hopping at the Waterfall! - Cascade Kingdom @ Luncheon Kingdom Timer Challenge 1
+  Good Morning, Captain Toad! - Cascade Kingdom @ Luncheon Kingdom Timer Challenge 2
+  Secret Path to Fossil Falls! - Cascade Kingdom @ The Treasure Chest in the Veggies
+  The Spinning Maze: Open! - Seaside Kingdom @ Corner of the Magma Swamp
+  Jaxi Reunion! - Sand Kingdom @ Magma Swamp: Floating and Sinking
+
+Metro Kingdom:
+  On a Tree in the Swamp - Lost Kingdom @ Full-Throttle Scooting!
+  The Caged Gold - Lost Kingdom @ Motor Scooter Daredevil!
+  Sea Gardening: Canyon Seed - Seaside Kingdom @ Inside the Rotating Maze
+  Poke the Wooden Tower - Bowser's Kingdom @ Outside the Rotating Maze
+  The Spinning Maze: Search! - Seaside Kingdom @ Hat-and-Seek: In the Crowd
+  Wooded Kingdom Regular Cup - Wooded Kingdom @ High Over the Crowd
+  Above the Freezing Fishing Pond - Snow Kingdom @ Pushing Through the Crowd
+  Fork Flickin' to the Summit - Luncheon Kingdom @ Celebrating in the Streets!
+  Jizo's Big Adventure - Bowser's Kingdom @ Sewer Treasure
+  Blowing and Sliding - Snow Kingdom @ Powering Up the Power Plant
+  Bird Traveling the Wastes - Sand Kingdom @ Powering Up the Station
+  Precision Rolling - Cap Kingdom @ A Request from the Mayor
+  Found on the Beach! Good Dog! - Seaside Kingdom @ A Tourist in the Metro Kingdom!
+  The Bound Bowl Grand Prix - Snow Kingdom @ A Traditional Festival!
+  Found with Cap Kingdom Art - Cap Kingdom @ Bassist on Board!
+  Peach in the Cascade Kingdom - Cascade Kingdom @ Bench Friends
+  Stretching Your Legs - Wooded Kingdom @ Bird Traveling in the City
+  Spinning Athletics End Goal - Luncheon Kingdom @ Bird Traveling in the Park
+  Danger Sign - Cap Kingdom @ Caught Hopping on a Building!
+  Next to Glasses Bridge - Cap Kingdom @ City Gardening: Building Planter
+  High-Altitude Spinning - Snow Kingdom @ City Gardening: Plaza Planter
+  Overlooking the Desert Town - Sand Kingdom @ City Gardening: Rooftop Planter
+  Cap Kingdom Regular Cup - Cap Kingdom @ Crossing Lines
+  Overlooking a Bunch of Ingredients - Luncheon Kingdom @ Dizzying Heights
+  Light from the Ceiling - Mushroom Kingdom (Jizo) @ Drummer on Board!
+  Secret Path to Lake Lamode! - Lake Kingdom @ Found in the Park! Good Dog!
+  Dizzying Heights - Metro Kingdom @ Found with Metro Kingdom Art
+  Lost Kingdom Regular Cup - Lost Kingdom @ Free Parking: Leap of Faith
+  Found with Dark Side Art 2 - Dark Side @ Free Parking: Rooftop Hop
+  Hidden in the Scrap - Metro Kingdom @ Girder Sandwich
+  Jammin' in the Luncheon Kingdom - Luncheon Kingdom @ Glittering Above the Pool
+  Nut Hidden in the Fog - Wooded Kingdom @ Guitarist on Board!
+  Fishing in the Oasis - Sand Kingdom @ Hanging Between Buildings
+  Caught Hopping at Glass Palace - Seaside Kingdom @ Hat-and-Seek: In the City
+  Moon Shards in the Sea - Seaside Kingdom @ Hidden in the Scrap
+  Squirming Under Ice - Snow Kingdom @ How Do They Take Out the Trash?
+  Nut Planted in the Tower - Wooded Kingdom @ How You Doin', Captain Toad?
+  Wrecked Rock Block - Lost Kingdom @ Inside an Iron Girder
+  Rolling Rock by the Falls - Cascade Kingdom @ Jammin' in the Metro Kingdom
+  Found with Luncheon Kingdom Art - Luncheon Kingdom @ Jump-Rope Genius
+  Is This an Ingredient Too?! - Luncheon Kingdom @ Jump-Rope Hero
+  Secret Path to the Steam Gardens! - Wooded Kingdom @ Left at the CafÃ©?
+  Dinosaur Nest: Running Wild! - Cascade Kingdom @ Mario Signs His Name
+  The Nut in the Red Maze - Wooded Kingdom @ Metro Kingdom Master Cup
+  Shopping in Steam Gardens - Wooded Kingdom @ Metro Kingdom Regular Cup
+  Moon Shards in the Sand - Sand Kingdom @ Metro Kingdom Timer Challenge 3
+  Dust-Up in New Donk City: Rematch - Mushroom Kingdom (Binoculars, Bullet Bill, Boulder) @ New Donk City's Pest Problem
+  Love in the Heart of the Desert - Sand Kingdom @ Out of a Crate in the City
+  Poking Your Nose by the Great Gate - Bowser's Kingdom @ Peach in the Metro Kingdom
+  Jump 'n' Swim in the Freezing Water - Snow Kingdom @ Remotely Captured Car
+  Glittering Above the Pool - Metro Kingdom @ Secret Girder Tunnel!
+  Dorrie-Back Rider - Lake Kingdom @ Secret Path to New Donk City!
+  The Back Canyon: Excavate! - Seaside Kingdom @ Sphynx in the City
+  On the Leaning Pillar - Sand Kingdom @ Surprise Clown!
+  Caught Hopping at Bowser's Castle! - Bowser's Kingdom @ Swaying in the Breeze
+  Found with Dark Side Art 3 - Dark Side @ Trumpeter on Board!
+  Behind the Tall Wall: Poke, Poke! - Bowser's Kingdom @ Who Piled Garbage on This?
+  Fly to the Edge of the Fog - Cap Kingdom @ City Hall Lost & Found
+  Invader in the Sky Garden - Wooded Kingdom @ Metro Kingdom Slots
+  Super-Secret Zipper - Lake Kingdom @ Shopping in New Donk City
+  Wandering in the Fog - Wooded Kingdom @ Metro Kingdom Timer Challenge 2
+  Line It Up, Blow It Up - Lost Kingdom @ Metro Kingdom Timer Challenge 1
+  On the Eastern Pillar - Sand Kingdom @ Reaching Pitchblack Island
+  Digging in the...Cloud? - Cloud Kingdom @ Scaling Pitchblack Mountain
+  Into the Flowing Sands - Sand Kingdom @ Off the Beaten Wire
+  Rolling Rock in the Deep Woods - Wooded Kingdom @ Rewiring the Neighborhood
+  Moon Shards in the Cold Room - Snow Kingdom @ Taking Notes: In the Private Room
+  Light the Far-Off Lanterns - Luncheon Kingdom @ Hanging from a High-Rise
+  Secret Path to Shiveria! - Snow Kingdom @ Vaulting Up a High-Rise
+  The Hard Rock in Deep Woods - Wooded Kingdom @ Bullet Billding
+  From the Side Above the Castle Gate - Bowser's Kingdom @ One Man's Trash...
+  Frog-Jumping from the Top Deck - Cap Kingdom @ RC Car Champ!
+  Surprise Clown! - Metro Kingdom @ RC Car Pro!
+  Along the Cliff Face - Moon Kingdom @ Moon Shards Under Siege
+  Shining Above the Moon - Moon Kingdom @ Sharpshooting Under Siege
+  Golden Turnip Recipe 2 - Luncheon Kingdom @ Swinging Scaffolding: Break!
+  At the Base of the Lighthouse - Seaside Kingdom @ Swinging Scaffolding: Jump!
+  King of the Cube! - Cloud Kingdom @ Down Inside the Big Screen
+  All the Cracks Are Fixed - Luncheon Kingdom @ Up on the Big Screen
+  Roulette Tower: Stopped - Ruined Kingdom @ Big Jump: Escape!
+  Deep in the Cold, Cold Water - Snow Kingdom @ Motor Scooter: Escape!
+
+Moon Kingdom:
+  Taxi Flying Through Bonneton - Cap Kingdom @ Center of the Galaxy
+  Seaside Kingdom Master Cup - Seaside Kingdom @ Edge of the Galaxy
+  Full-Throttle Scooting! - Metro Kingdom @ A Swing on Top of a Swing
+  More Walking in the Desert! - Sand Kingdom @ Navigating Giant Swings
+  Hat-and-Seek: In the Sand - Sand Kingdom @ Around the Barrier Wall
+  Hat-and-Seek: Mushroom Kingdom - Mushroom Kingdom (Fire Piranha Plant) @ On Top of the Cannon
+  Alcove Behind the Pillars of Magma - Luncheon Kingdom @ In a Hole in the Magma
+  Where the Transparent Platforms End - Sand Kingdom @ Fly to the Treasure Chest and Back
+  The Tip of a White Spire - Moon Kingdom @ Up in the Rafters
+  Yoshi's Second Helping! - Mushroom Kingdom (Picture Match Part (Mario)) @ Along the Cliff Face
+  On the Giant Bowser Statue's Nose - Bowser's Kingdom @ Taking Notes: In Low Gravity
+  What Shines Inside the Glass - Seaside Kingdom @ A Tourist in the Moon Kingdom!
+  Fishing(?) in Bowser's Castle - Bowser's Kingdom @ Caught Hopping on the Moon!
+  Charging Through an Army - Ruined Kingdom @ Cliffside Treasure Chest
+  Mushroom Kingdom Time Challenge - Mushroom Kingdom (Uproot) @ Found on the Moon, Good Dog!
+  Behind the Big Wall - Bowser's Kingdom @ Hidden on the Side of the Cliff
+  Gap in the Ocean Trench - Seaside Kingdom @ Jumping High as a Frog
+  Scaling Pitchblack Mountain - Metro Kingdom @ Moon Kingdom Master Cup
+  Moon Kingdom Timer Challenge 2 - Moon Kingdom @ Moon Kingdom Regular Cup
+  Bubblaine Northern Reaches - Seaside Kingdom @ Moon Kingdom Timer Challenge 1
+  Picture Match: Basically a Goomba - Cloud Kingdom @ Moon Kingdom Timer Challenge 2
+  Shining on High - Snow Kingdom @ Moon Quiz: Amazing!
+  Dinosaur Nest: Big Cleanup! - Cascade Kingdom @ Moon Shards on the Moon
+  Caught on a Big Horn - Ruined Kingdom @ Mysterious Flying Object
+  Navigating Giant Swings - Moon Kingdom @ Peach in the Moon Kingdom
+  Peach in the Lost Kingdom - Lost Kingdom @ Rolling Rock on the Moon
+  Sand Kingdom Slots - Sand Kingdom @ Shining Above the Moon
+  Picture Match: A Stellar Goomba - Cloud Kingdom @ Sneaking Around in the Crater
+  Caught Hopping at the Volcano! - Luncheon Kingdom @ Taking Notes: On the Moon's Surface
+  Jammin' in the Wooded Kingdom - Wooded Kingdom @ Thanks, Captain Toad!
+  The Bullet Bill Maze: Side Path - Sand Kingdom @ The Tip of a White Spire
+  Shopping in Fossil Falls - Cascade Kingdom @ Under the Bowser Statue
+  Gobbling Fruit with Yoshi - Mushroom Kingdom (Lava Bubble) @ Walking on the Moon!
+  Moon Kingdom Timer Challenge 1 - Moon Kingdom @ Walking on the Moon: Again!
+  Piled on the Salt - Luncheon Kingdom @ Shopping in Honeylune Ridge
+  A Tourist in Mushroom Kingdom! - Mushroom Kingdom (Cheep Cheep) @ Sphynx's Hidden Vault
+  Above the Clouds - Wooded Kingdom @ Doctor in the House
+  Looking Down on the Goombas - Wooded Kingdom @ Found with Moon Kingdom Art
+
+Mushroom Kingdom:
+  Jammin' in the Sand Kingdom - Sand Kingdom @ 2D Boost from Bullet Bill
+  Under the Cheese Rocks - Luncheon Kingdom @ Secret 2D Treasure
+  Jump Onto the Transparent Lift - Sand Kingdom @ Picture Match: A Stellar Mario!
+  The Treasure Chest in the Veggies - Luncheon Kingdom @ Picture Match: Basically Mario
+  Treasure in the Spiky Waterway - Lake Kingdom @ Found with Mushroom Kingdom Art
+  The Broodals Are After Some Cookin' - Luncheon Kingdom @ Light from the Ceiling
+  Poking the Turret Wall - Bowser's Kingdom @ Loose-Tile Trackdown
+  Lost Kingdom Timer Challenge - Lost Kingdom @ Courtyard Chest Trap
+  One Man's Trash... - Metro Kingdom @ Totally Classic!
+  Lost in the Tall Trees - Wooded Kingdom @ A Tourist in Mushroom Kingdom!
+  Cap Kingdom Master Cup - Cap Kingdom @ Caught Hopping at Peach's Castle!
+  Wooded Kingdom Timer Challenge 3 - Wooded Kingdom @ Forever Onward, Captain Toad!
+  Cracked Nut on a Crumbling Tower - Wooded Kingdom @ Found at Peach's Castle! Good Dog!
+  A Tourist in the Metro Kingdom! - Metro Kingdom @ Gardening for Toad: Field Seed
+  Jaxi Stunt Driving - Sand Kingdom @ Gardening for Toad: Garden Seed
+  Fly Through the Narrow Valley - Seaside Kingdom @ Gardening for Toad: Lake Seed
+  Peach in the Luncheon Kingdom - Luncheon Kingdom @ Gardening for Toad: Pasture Seed
+  Jump Down to the Top of a Tree - Lost Kingdom @ Gobbling Fruit with Yoshi
+  Hidden Room in the Flowing Sands - Sand Kingdom @ Grow a Flower Garden
+  Excavate 'n' Search the Cheese Rocks - Luncheon Kingdom @ Hat-and-Seek: Mushroom Kingdom
+  Hidden Room in the Inverted Pyramid - Sand Kingdom @ Herding Sheep at Peach's Castle
+  The Lurker Under the Stone - Sand Kingdom @ Jammin' in the Mushroom Kingdom
+  Binding Band Returned - Sand Kingdom @ Love at Peach's Castle
+  Island of Salt Floating in the Lava - Luncheon Kingdom @ Mushroom Kingdom Master Cup
+  Mechanic: Repairs Complete! - Luncheon Kingdom @ Mushroom Kingdom Regular Cup
+  Inside a Block at the Gate - Bowser's Kingdom @ Mushroom Kingdom Time Challenge
+  On the Mountain Road - Lost Kingdom @ Perched on the Castle Roof
+  Exterminate the Ogres! - Bowser's Kingdom @ Pops Out of the Tail
+  Taking Notes: Hurry Upward - Cascade Kingdom @ Princess Peach, Home Again!
+  The Invisible Maze - Sand Kingdom @ Secret Path to Peach's Castle!
+  Aglow in the Jungle - Lost Kingdom @ Taking Notes: Around the Well
+  Rolling Rock in the Woods - Wooded Kingdom @ Toad Defender
+  Secret Path to Peach's Castle! - Mushroom Kingdom (Parabones) @ Yoshi's All Filled Up!
+  Golden Turnip Recipe 3 - Luncheon Kingdom @ Yoshi's Second Helping!
+  Yoshi Under Siege - Dark Side (Double Jump) @ Shopping Near Peach's Castle
+  Tussle in Tostarena: Rematch - Mushroom Kingdom (Yoshi, Fire Bro, Glydon) @ Tussle in Tostarena: Rematch
+  Broodals Over the Lake - Lake Kingdom @ Blowup at Mount Volbono: Rematch
+  Rumble in Crumbleden: Rematch - Mushroom Kingdom (Cheep Cheep (Snow Kingdom), Letter, Mini Rocket) @ Rumble in Crumbleden: Rematch
+  Blowup at Mount Volbono: Rematch - Mushroom Kingdom (RC Car, Gushen, Taxi) @ Struggle in Steam Gardens: Rematch
+  Battle in Bubblaine: Rematch - Mushroom Kingdom (Moe-Eye, Bowser, Tropical Wiggler) @ Battle in Bubblaine: Rematch
+  Struggle in Steam Gardens: Rematch - Mushroom Kingdom (Lakitu, Pole, Paragoomba) @ Dust-Up in New Donk City: Rematch
+  Flying Over the Lava Islands - Luncheon Kingdom @ Sunken Star in the Sea of Clouds
+  Peach in the Cap Kingdom - Cap Kingdom @ Yoshi's Feast in the Sea of Clouds
+
+Ruined Kingdom:
+  New Donk City's Pest Problem - Metro Kingdom @ Battle with the Lord of Lightning!
+  Free Parking: Rooftop Hop - Metro Kingdom @ Caught on a Big Horn
+  From a Crate in the Ruins - Sand Kingdom @ In the Ancient Treasure Chest
+  Cheep Cheep Crossing - Lake Kingdom @ Peach in the Ruined Kingdom
+  Hanging from a High-Rise - Metro Kingdom @ Rolling Rock on the Battlefield
+  A Request from the Mayor - Metro Kingdom @ Upon the Broken Arch
+  Picture Match: Basically Mario - Mushroom Kingdom (Goomba) @ Charging Through an Army
+  Vanishing Road Rush - Dark Side (Ledge Grab) @ The Mummy Army's Curse
+  Above the Poison Swamp - Bowser's Kingdom @ Roulette Tower: Climbed
+  Peach in the Metro Kingdom - Metro Kingdom @ Roulette Tower: Stopped
+
+Sand Kingdom:
+  Caveman Cave-Fan - Cascade Kingdom @ Jump Onto the Transparent Lift
+  Down Inside the Big Screen - Metro Kingdom @ Where the Transparent Platforms End
+  Make the Secret Flower Field Bloom - Wooded Kingdom @ Colossal Ruins: Dash! Jump!
+  Past the Chasm Lifts - Cascade Kingdom @ Sinking Colossal Ruins: Hurry!
+  What's in the Box? - Lake Kingdom @ Dancing with New Friends
+  Sea Gardening: Inlet Seed - Seaside Kingdom @ 'Round-the-World Tourist
+  Bon AppÃ©tit, Captain Toad! - Luncheon Kingdom @ Alcove in the Ruins
+  City Gardening: Rooftop Planter - Metro Kingdom @ Among the Five Cactuses
+  Colossal Ruins: Dash! Jump! - Sand Kingdom @ An Invisible Gleam
+  Wooded Kingdom Timer Challenge 2 - Wooded Kingdom @ Atop the Highest Tower
+  Princess Peach, Home Again! - Mushroom Kingdom (Tree) @ Bird Traveling the Desert
+  Caught Hopping Near the Ship! - Cap Kingdom @ Bird Traveling the Wastes
+  On Top of the Stone Archway - Sand Kingdom @ Bullet Bill Breakthrough
+  Taking Notes: Stretch and Shrink - Lost Kingdom @ Caught Hopping in the Desert!
+  What the Waves Left Behind - Seaside Kingdom @ Desert Gardening: Plaza Seed
+  Jammin' in the Mushroom Kingdom - Mushroom Kingdom (Knucklotec's Fist) @ Desert Gardening: Ruins Seed
+  Metro Kingdom Timer Challenge 2 - Metro Kingdom @ Desert Gardening: Seed on the Cliff
+  Twist 'n' Turn-Up Treasure - Lost Kingdom @ Fishing in the Oasis
+  Inside an Iron Girder - Metro Kingdom @ Found in the Sand! Good Dog!
+  Taking Notes: Running Down - Sand Kingdom @ Found with Sand Kingdom Art
+  Trumpeter on Board! - Metro Kingdom @ From a Crate in the Ruins
+  Found with Dark Side Art 7 - Dark Side @ Hang Your Hat on the Fountain
+  Luncheon Kingdom Slots - Luncheon Kingdom @ Hat-and-Seek: In the Sand
+  Beach Valleyball: Champ - Seaside Kingdom @ Herding Sheep in the Dunes
+  Forever Onward, Captain Toad! - Mushroom Kingdom (Pole) @ Hidden Room in the Flowing Sands
+  Secret of the Inverted Mural - Sand Kingdom @ Inside a Block Is a Hard Place
+  Get Some Rest, Captain Toad - Lost Kingdom @ Into the Flowing Sands
+  Walking on Clouds - Wooded Kingdom @ Island in the Poison Swamp
+  Stone Wall Circuit - Bowser's Kingdom @ Jammin' in the Sand Kingdom
+  You're Quite a Catch, Captain Toad! - Sand Kingdom @ Jaxi Reunion!
+  Cascade Kingdom Master Cup - Cascade Kingdom @ Lost in the Luggage
+  Metro Kingdom Slots - Metro Kingdom @ Love at the Edge of the Desert
+  Waves of Poison: Hop to It! - Lake Kingdom @ Love in the Heart of the Desert
+  Bird Traveling Over the Ocean - Seaside Kingdom @ Mighty Leap from the Palm Tree!
+  Treasure of the Lava Islands - Luncheon Kingdom @ Moon Shards in the Sand
+  Rolling Rock on the Moon - Moon Kingdom @ More Walking in the Desert!
+  From Crates in the Moat - Bowser's Kingdom @ On Top of the Stone Archway
+  Good Job, Captain Toad! - Seaside Kingdom @ On the Eastern Pillar
+  Luncheon Kingdom Timer Challenge 3 - Luncheon Kingdom @ On the Leaning Pillar
+  Sunken Star in the Sea of Clouds - Mushroom Kingdom (Ty-foo) @ On the Lone Pillar
+  Under the Ground - Cascade Kingdom @ On the North Pillar
+  Love by the Lake - Lake Kingdom @ On the Statue's Tail
+  Island in the Poison Swamp - Sand Kingdom @ Overlooking the Desert Town
+  Taking Notes: In Low Gravity - Moon Kingdom @ Peach in the Sand Kingdom
+  Moon Shards in the Forest - Wooded Kingdom @ Poster Cleanup
+  The Nut Under the Observation Deck - Wooded Kingdom @ Sand Kingdom Master Cup
+  The Sixth Face - Cloud Kingdom @ Sand Kingdom Regular Cup
+  Hidden Among the Push-Blocks - Cap Kingdom @ Sand Kingdom Timer Challenge 1
+  Sharpshooting Under Siege - Metro Kingdom @ Sand Kingdom Timer Challenge 2
+  Freezing Waterway: Hidden Room - Sand Kingdom @ Sand Kingdom Timer Challenge 3
+  Lake Kingdom Regular Cup - Lake Kingdom @ Sand Quiz: Wonderful!
+  Perched on the Castle Roof - Mushroom Kingdom (T-Rex) @ Secret Path to Tostarena!
+  Yoshi on the Sinking Island - Dark Side (Climb) @ Secret of the Inverted Mural
+  Battle with the Lord of Lightning! - Ruined Kingdom @ Showdown on the Inverted Pyramid
+  Dancing with New Friends - Sand Kingdom @ Taking Notes: Jump on the Palm
+  Cap Kingdom Timer Challenge 1 - Cap Kingdom @ Taking Notes: Running Down
+  Sand Kingdom Timer Challenge 2 - Sand Kingdom @ The Lurker Under the Stone
+  Taking Notes: In the Private Room - Metro Kingdom @ The Treasure of Jaxi Ruins
+  Shopping on Forgotten Isle - Lost Kingdom @ Top of a Dune
+  Dashing Above the Clouds - Bowser's Kingdom @ Walking the Desert!
+  Sand Kingdom Timer Challenge 1 - Sand Kingdom @ Wandering Cactus
+  Behind the Waterfall - Cascade Kingdom @ Welcome Back, Jaxi!
+  Underwater Highway West: Explore! - Seaside Kingdom @ Where the Birds Gather
+  Jump-Rope Hero - Metro Kingdom @ You're Quite a Catch, Captain Toad!
+  Skimming the Poison Tide - Cap Kingdom @ test test
+  Down and Back Breakdown Road - Wooded Kingdom @ The Bullet Bill Maze: Break Through!
+  Third Courtyard Outskirts - Bowser's Kingdom @ The Bullet Bill Maze: Side Path
+  In a Hole in the Magma - Moon Kingdom @ Secret of the Mural
+  Poking Your Nose in the Plaster Wall - Bowser's Kingdom @ Taking Notes: In the Wall Painting
+  Taking Notes: On Top of the Wall - Wooded Kingdom @ Skull Sign in the Transparent Maze
+  I Feel Underdressed - Lake Kingdom @ The Invisible Maze
+  Fruit Feast Under Siege - Dark Side (Roll) @ Ice Cave Treasure
+  Mario Signs His Name - Metro Kingdom @ Hidden Room in the Inverted Pyramid
+  Herding Sheep Above the Forest Fog - Wooded Kingdom @ Above a Strange Neighborhood
+  Seaside Kingdom Timer Challenge 3 - Seaside Kingdom @ Strange Neighborhood
+  Bird Traveling Over the Lake - Lake Kingdom @ Sphynx's Treasure Vault
+  Inside the Rotating Maze - Metro Kingdom @ Employees Only
+  A Tourist in the Luncheon Kingdom! - Luncheon Kingdom @ Shopping in Tostarena
+  Captain Toad on the Dark Side! - Dark Side (Ground Pound Jump) @ Sand Kingdom Slots
+  Center of Hexagon Tower - Bowser's Kingdom @ Jaxi Driver
+  Shopping in Bubblaine - Seaside Kingdom @ Jaxi Stunt Driving
+  A Successful Repair Job - Lake Kingdom @ Goomba Tower Assembly
+  Cascade Kingdom Timer Challenge 2 - Cascade Kingdom @ Underground Treasure Chest
+  Herding Sheep on the Iron Bridge - Wooded Kingdom @ Binding Band Returned
+  The Glass Is Half Full! - Seaside Kingdom @ The Hole in the Desert
+  Mushroom Kingdom Master Cup - Mushroom Kingdom (Banzai Bill) @ Under the Mummy's Curse
+  Bullet Bill Breakthrough - Sand Kingdom @ A Rumble from the Sandy Floor
+  Walking on the Moon! - Moon Kingdom @ Freezing Waterway: Hidden Room
+  Searching the Frog Pond - Cap Kingdom @ Through the Freezing Waterway
+
+Seaside Kingdom:
+  Peach in the Ruined Kingdom - Ruined Kingdom @ Sunken Treasure in the Cloud Sea
+  Peach in Bowser's Kingdom - Bowser's Kingdom @ Wading in the Cloud Sea
+  Found on the Moon, Good Dog! - Moon Kingdom @ Aim! Poke!
+  Sphynx's Hidden Vault - Moon Kingdom @ Poke! Roll!
+  Elevator Escalation - Wooded Kingdom @ Ocean-Bottom Maze: Hidden Room
+  Stepping Over the Gears - Luncheon Kingdom @ Ocean-Bottom Maze: Treasure
+  Bowser's Kingdom Timer Challenge 2 - Bowser's Kingdom @ Taking Notes: Ocean-Bottom Maze
+  Under the Meat Plateau - Luncheon Kingdom @ Seaside Kingdom Time Challenge 1
+  Caught Hopping in the Jungle! - Lost Kingdom @ Beach Valleyball: Champ
+  Among the Five Cactuses - Sand Kingdom @ Beach Valleyball: Hero of the Beach!
+  Soaring Over Forgotten Isle! - Lost Kingdom @ Moon Shards in the Sea
+  Found with Lake Kingdom Art - Lake Kingdom @ A Relaxing Dance
+  Taking Notes: Up and Down - Cloud Kingdom @ Treasure Trap Hidden in the Inlet
+  Doctor in the House - Moon Kingdom @ Love by the Seaside
+  The Nut that Grew on the Tall Fence - Wooded Kingdom @ The Seal Above the Canyon
+  The Stone Pillar Seal - Seaside Kingdom @ A Fine Detail on the Glass
+  Snow Kingdom Regular Cup - Snow Kingdom @ Above the Parasol: Catch!
+  Flooding Pipeway - Wooded Kingdom @ Bird Traveling Over the Ocean
+  The Bullet Bill Maze: Break Through! - Sand Kingdom @ Bonjour, Dorrie!
+  Toad Defender - Mushroom Kingdom (Zipper) @ Bubblaine Northern Reaches
+  Above a High Cliff - Cascade Kingdom @ Found on the Beach! Good Dog!
+  Love at the Edge of the Desert - Sand Kingdom @ Found with Seaside Kingdom Art
+  Mysterious Flying Object - Moon Kingdom @ Good Job, Captain Toad!
+  Very Nice Shot with the Chain Chomp! - Cascade Kingdom @ Merci, Dorrie!
+  City Gardening: Building Planter - Metro Kingdom @ On the Cliff Overlooking the Beach
+  Magma Swamp: Floating and Sinking - Luncheon Kingdom @ Peach in the Seaside Kingdom
+  Secret Girder Tunnel! - Metro Kingdom @ Sea Gardening: Canyon Seed
+  Hidden Corridor Under the Floor - Bowser's Kingdom @ Sea Gardening: Hot-Spring Seed
+  A Propeller Pillar's Secret - Lost Kingdom @ Sea Gardening: Inlet Seed
+  Vanishing Road Challenge - Dark Side (Neutral Throw) @ Sea Gardening: Ocean Trench Seed
+  Sphynx in the City - Metro Kingdom @ Seaside Kingdom Master Cup
+  That Trendy "Pirate" Look - Lake Kingdom @ Seaside Kingdom Regular Cup
+  Secret Path to Mount Volbono! - Luncheon Kingdom @ Seaside Kingdom Time Challenge 2
+  Bowser's Kingdom Time Challenge 1 - Bowser's Kingdom @ Seaside Kingdom Timer Challenge 3
+  Yoshi's All Filled Up! - Mushroom Kingdom (Bowser Statue) @ Secret Path to Bubblaine!
+  Shopping in Mount Volbono - Luncheon Kingdom @ Shh! It's a Shortcut!
+  Invisible Road: Hidden Room - Wooded Kingdom @ Shopping in Bubblaine
+  Diving from the Big Pot! - Luncheon Kingdom @ Taking Notes in the Sea
+  Peach in the Wooded Kingdom - Wooded Kingdom @ Taking Notes: Ocean Surface Dash
+  RC Car Pro! - Metro Kingdom @ The Back Canyon: Excavate!
+  Showdown on the Inverted Pyramid - Sand Kingdom @ The Glass Is Half Full!
+  Top of a Dune - Sand Kingdom @ The Stone Pillar Seal
+  Luncheon Kingdom: Regular Cup - Luncheon Kingdom @ Under a Dangerous Ceiling
+  A Treasure Made from Coins - Wooded Kingdom @ Underwater Highway East: Explore!
+  Found with Moon Kingdom Art - Moon Kingdom @ Underwater Highway Tunnel
+  Even More Walking on Ice! - Snow Kingdom @ Underwater Highway West: Explore!
+  Elevator Blind Spot - Wooded Kingdom @ What Shines Inside the Glass
+  Around the Barrier Wall - Moon Kingdom @ Rapid Ascent on Hot Springs Island
+  Wooded Kingdom Timer Challenge 1 - Wooded Kingdom @ The Hot Spring Seal
+  Down and Up the Spinning Tower - Bowser's Kingdom @ A Light Next to the Lighthouse
+  Jumping High as a Frog - Moon Kingdom @ At the Base of the Lighthouse
+  Just a Hat, Skip, and a Jump - Cascade Kingdom @ The Lighthouse Seal
+  Hidden in a Sunken Hat - Cap Kingdom @ What the Waves Left Behind
+  Walking on Ice! - Snow Kingdom @ The Sphynx's Underwater Vault
+  Hot, Hot, Hot from the Campfire - Wooded Kingdom @ Wriggling on the Sandy Bottom
+  Loose-Tile Trackdown - Mushroom Kingdom (Cactus) @ Gap in the Ocean Trench
+  Exploring for Treasure - Wooded Kingdom @ Ocean Quiz: Good!
+  Lost Kingdom Master Cup - Lost Kingdom @ The Tall Rock Shelf in the Deep Ocean
+  On Top of the Cannon - Moon Kingdom @ Caught Hopping at Glass Palace
+  Found with Bowser's Kingdom Art - Bowser's Kingdom @ Glass Palace Treasure Chest
+  Cap Kingdom Timer Challenge 2 - Cap Kingdom @ Lighthouse Leaper
+  Flooding Pipeway Ceiling Secret - Wooded Kingdom @ Looking Back in the Dark Waterway
+  Bird Traveling the Desert - Sand Kingdom @ Slip Through the Nesting Spot
+  An Extreme Simmer - Luncheon Kingdom @ A Rumble on the Seaside Floor
+  Gardening for Toad: Garden Seed - Mushroom Kingdom (Frog) @ Ride the Jetstream
+  Found at Peach's Castle! Good Dog! - Mushroom Kingdom (Volbonan) @ Hurry and Stretch
+  Bassist on Board! - Metro Kingdom @ Stretch on the Side Path
+  Secret Path to New Donk City! - Metro Kingdom @ The Spinning Maze: Open!
+  Inside the Busted Fossil - Cascade Kingdom @ The Spinning Maze: Search!
+  Caught Hopping in the Forest! - Wooded Kingdom @ Fly Through the Narrow Valley
+  The Gusty Barrier - Snow Kingdom @ Treasure Chest in the Narrow Valley
+
+Snow Kingdom:
+  The Seal Above the Canyon - Seaside Kingdom @ Blowing and Sliding
+  The Tall Rock Shelf in the Deep Ocean - Seaside Kingdom @ Even More Walking on Ice!
+  The Hot Spring Seal - Seaside Kingdom @ Walking on Ice!
+  Wriggling on the Sandy Bottom - Seaside Kingdom @ Freezing Water Near the Ceiling
+  Scene of Crossing the Poison Swamp - Bowser's Kingdom @ Jump 'n' Swim in the Freezing Water
+  Gardening for Toad: Field Seed - Mushroom Kingdom (Broode's Chain Chomp) @ Dashing Above and Beyond!
+  Lanterns on the Gear Steps - Luncheon Kingdom @ Dashing Over Cold Water!
+  Hidden Chasm Passage - Cascade Kingdom @ Looking Back on the Flower Road
+  Remotely Captured Car - Metro Kingdom @ Running the Flower Road
+  Atop the Highest Tower - Sand Kingdom @ Behind Snowy Mountain
+  Above the Parasol: Catch! - Seaside Kingdom @ Squirming Under Ice
+  Sand Kingdom Master Cup - Sand Kingdom @ Atop a Blustery Arch
+  Alcove in the Ruins - Sand Kingdom @ Icy Jump Challenge
+  How Do They Take Out the Trash? - Metro Kingdom @ High-Altitude Spinning
+  On the Lone Pillar - Sand Kingdom @ Spinning Above the Clouds
+  High Over the Crowd - Metro Kingdom @ Moon Shards in the Cold Room
+  Fruit Feast on the Sinking Island - Dark Side (Roll Boost) @ Slip Behind the Ice
+  Yoshi's Magma Swamp - Dark Side (Ground Pound) @ Treasure in the Ice Wall
+  Moon Kingdom Master Cup - Moon Kingdom @ Water Pooling in the Crevasse
+  Flower Road Run - Wooded Kingdom @ Above the Freezing Fishing Pond
+  Behind the Rock Wall - Wooded Kingdom @ Captain Toad is Chilly!
+  The Shining Fruit - Lost Kingdom @ Caught Hopping in the Snow!
+  I Met a Tropical Wiggler! - Lost Kingdom @ Deep in the Cold, Cold Water
+  Taking Notes: Spinning Athletics - Luncheon Kingdom @ Fishing in the Glacier!
+  Nice Shot with the Chain Chomp! - Cascade Kingdom @ I Met a Snow Cheep Cheep!
+  High-Flying Leap - Lake Kingdom @ Ice Floe Swimming
+  Pushing Through the Crowd - Metro Kingdom @ It Popped Out of the Ice
+  Dashing Through the Clouds - Bowser's Kingdom @ Moon Shards in the Snow
+  City Gardening: Plaza Planter - Metro Kingdom @ Secret Path to Shiveria!
+  Desert Gardening: Plaza Seed - Sand Kingdom @ Shining on High
+  Push-Block Peril - Cap Kingdom @ Snow Kingdom Master Cup
+  Found with Dark Side Art 1 - Dark Side @ Snow Kingdom Regular Cup
+  Roulette Tower: Climbed - Ruined Kingdom @ Snow Kingdom Timer Challenge 1
+  Mighty Leap from the Palm Tree! - Sand Kingdom @ Snow Kingdom Timer Challenge 2
+  Spin the Hat, Get a Prize - Cap Kingdom @ Snow Kingdom Timer Challenge 3
+  Slip Behind the Ice - Snow Kingdom @ Taking Notes: Snow Path Dash
+  Totally Classic! - Mushroom Kingdom (Picture Match Part (Goomba)) @ Ice-Dodging Goomba Stack
+  Atop a Wall Among the Clouds - Cascade Kingdom @ Stacked-Up Ice Climb
+  Shopping Near Peach's Castle - Mushroom Kingdom (Sherm) @ Forgotten in the Holding Room
+  Herding Sheep at Peach's Castle - Mushroom Kingdom (Shiverian Racer) @ Hat-and-Seek in the Snow
+  Desert Gardening: Ruins Seed - Sand Kingdom @ Snowline Circuit Class S
+  A Traditional Festival! - Metro Kingdom @ The Bound Bowl Grand Prix
+  Merci, Dorrie! - Seaside Kingdom @ Iceburn Circuit Class A
+  Ocean Quiz: Good! - Seaside Kingdom @ Iceburn Circuit Class S
+  2D Boost from Bullet Bill - Mushroom Kingdom (Coin Coffer) @ Shopping in Shiveria
+  Lake Kingdom Timer Challenge 2 - Lake Kingdom @ Entrance to Shiveria
+  Water Pooling in the Crevasse - Snow Kingdom @ Found with Snow Kingdom Art
+  Cascade Kingdom Timer Challenge 1 - Cascade Kingdom @ I'm not Cold!
+  Searching Hexagon Tower - Bowser's Kingdom @ Peach in the Snow Kingdom
+  'Round-the-World Tourist - Sand Kingdom @ Shining in the Snow in Town
+  Powering Up the Power Plant - Metro Kingdom @ The Gusty Barrier
+  Jizo All in a Row - Bowser's Kingdom @ The Ice Wall Barrier
+  Volcano Cave Cruisin' - Luncheon Kingdom @ The Icicle Barrier
+  Employees Only - Sand Kingdom @ The Shiverian Treasure Chest
+  Shopping in Tostarena - Sand Kingdom @ The Snowy Mountain Barrier
+
+Wooded Kingdom:
+  Above a Strange Neighborhood - Sand Kingdom @ Herding Sheep Above the Forest Fog
+  Frog-Jumping Above the Fog - Cap Kingdom @ Herding Sheep on the Iron Bridge
+  Out of a Crate in the City - Metro Kingdom @ Nut Hidden in the Fog
+  Goomba Tower Assembly - Sand Kingdom @ Wandering in the Fog
+  A Butterfly's Treasure - Lost Kingdom @ Back Way Up the Mountain
+  Climb the Cliff to Get the Nut - Wooded Kingdom @ Spinning-Platforms Treasure
+  The Hole in the Desert - Sand Kingdom @ Defend the Secret Flower Field!
+  On Top of a Tall, Tall Roof - Luncheon Kingdom @ Make the Secret Flower Field Bloom
+  Sand Kingdom Timer Challenge 3 - Sand Kingdom @ Above the Clouds
+  Past the Peculiar Pipes - Wooded Kingdom @ Walking on Clouds
+  Sea Gardening: Ocean Trench Seed - Seaside Kingdom @ Above the Iron Mountain Path
+  Grow a Flower Garden - Mushroom Kingdom (Hammer Bro) @ Atop the Tall Tree
+  Fly to the Treasure Chest and Back - Moon Kingdom @ Behind the Rock Wall
+  Under a Dangerous Ceiling - Seaside Kingdom @ Bird Traveling the Forest
+  Wading in the Cloud Sea - Seaside Kingdom @ Caught Hopping in the Forest!
+  Stretch and Traverse the Jungle - Lost Kingdom @ Climb the Cliff to Get the Nut
+  Gardening for Toad: Lake Seed - Mushroom Kingdom (Chain Chomp) @ Cracked Nut on a Crumbling Tower
+  Sand Kingdom Regular Cup - Sand Kingdom @ Fire in the Cave
+  Big Pot on the Volcano: Dive In! - Luncheon Kingdom @ Flower Thieves of Sky Garden
+  Metro Kingdom Timer Challenge 3 - Metro Kingdom @ Found with Wooded Kingdom Art
+  Moon Shards on the Moon - Moon Kingdom @ Hey Out There, Captain Toad!
+  Luncheon Kingdom Timer Challenge 1 - Luncheon Kingdom @ High Up in the Cave
+  Bullet Billding - Metro Kingdom @ High Up on a Rock Wall
+  Seaside Kingdom Regular Cup - Seaside Kingdom @ Hot, Hot, Hot from the Campfire
+  Metro Kingdom Regular Cup - Metro Kingdom @ I Met an Uproot!
+  Peach in the Lake Kingdom - Lake Kingdom @ Inside a Rock in the Forest
+  Guarded by a Colossal Fossil - Cascade Kingdom @ Invader in the Sky Garden
+  Reaching Pitchblack Island - Metro Kingdom @ Jammin' in the Wooded Kingdom
+  Deep Woods Treasure Trap - Wooded Kingdom @ Looking Down on the Goombas
+  Sinking Colossal Ruins: Hurry! - Sand Kingdom @ Lost in the Tall Trees
+  Beach Valleyball: Hero of the Beach! - Seaside Kingdom @ Love in the Forest Ruins
+  On the Cliff Overlooking the Beach - Seaside Kingdom @ Moon Shards in the Forest
+  Peeking Out from Under the Bridge - Lost Kingdom @ Over the Cliff's Edge
+  Underwater Highway Tunnel - Seaside Kingdom @ Path to the Secret Flower Field
+  Hanging Between Buildings - Metro Kingdom @ Peach in the Wooded Kingdom
+  Looking Back in the Dark Waterway - Seaside Kingdom @ Road to Sky Garden
+  Treasure Chest in the Narrow Valley - Seaside Kingdom @ Rolling Rock in the Woods
+  Swinging Scaffolding: Break! - Metro Kingdom @ Secret Path to the Steam Gardens!
+  Moon Shards Under Siege - Metro Kingdom @ Shopping in Steam Gardens
+  Fishing in the Glacier! - Snow Kingdom @ Swing Around Secret Flower Field
+  Taking Notes: Stretching - Wooded Kingdom @ Taking Notes: On Top of the Wall
+  On Top of the Spinning Tower - Bowser's Kingdom @ Taking Notes: Stretching
+  Taxi Flying Through Forgotten Isle - Lost Kingdom @ Thanks for the Charge!
+  Taking Notes: Jump on the Palm - Sand Kingdom @ The Nut 'Round the Corner
+  Love Above the Lava - Luncheon Kingdom @ The Nut Under the Observation Deck
+  Desert Gardening: Seed on the Cliff - Sand Kingdom @ The Nut at the Dead End
+  Glowing in the Deep Woods - Wooded Kingdom @ The Nut in the Red Maze
+  Bird Traveling in the Fog - Cap Kingdom @ The Nut in the Robot Storeroom
+  Treasure Beneath the Cheese Rocks - Luncheon Kingdom @ The Nut that Grew on the Tall Fence
+  Mushroom Kingdom Regular Cup - Mushroom Kingdom (Puzzle Part (Metro Kingdom)) @ Tucked Away Inside the Tunnel
+  Shopping in New Donk City - Metro Kingdom @ Wooded Kingdom Master Cup
+  Found in the Sand! Good Dog! - Sand Kingdom @ Wooded Kingdom Regular Cup
+  Corner of the Magma Swamp - Luncheon Kingdom @ Wooded Kingdom Timer Challenge 1
+  Inside the Stone Cage - Lost Kingdom @ Wooded Kingdom Timer Challenge 3
+  Found with Dark Side Art 9 - Dark Side @ Wooded Kingdom Timer Challenge 2
+  Thanks, Captain Toad! - Moon Kingdom @ Nut Planted in the Tower
+  Secret Path to Tostarena! - Sand Kingdom @ Stretching Your Legs
+  Caught Hopping in the Snow! - Snow Kingdom @ Flooding Pipeway
+  From the Broken Pillar - Lake Kingdom @ Flooding Pipeway Ceiling Secret
+  Fruit Feast in the Magma Swamp - Dark Side (Dive) @ Exploring for Treasure
+  Swaying in the Breeze - Metro Kingdom @ A Treasure Made from Coins
+  Under the Bowser Statue - Moon Kingdom @ Beneath the Roots of the Moving Tree
+  Ice Floe Swimming - Snow Kingdom @ By the Babbling Brook in Deep Woods
+  The Icicle Barrier - Snow Kingdom @ Glowing in the Deep Woods
+  Motor Scooter: Escape! - Metro Kingdom @ Past the Peculiar Pipes
+  Love in the Forest Ruins - Wooded Kingdom @ Rolling Rock in the Deep Woods
+  Sand Quiz: Wonderful! - Sand Kingdom @ The Hard Rock in Deep Woods
+  How You Doin', Captain Toad? - Metro Kingdom @ Deep Woods Treasure Trap
+  High Up in the Cave - Wooded Kingdom @ Below Breakdown Road
+  The Rooftop Lantern - Luncheon Kingdom @ Down and Back Breakdown Road
+  It Popped Out of the Ice - Snow Kingdom @ Invisible Road: Danger!
+  A Relaxing Dance - Seaside Kingdom @ Invisible Road: Hidden Room
+  Gardening for Toad: Pasture Seed - Mushroom Kingdom (Chargin' Chuck) @ Flower Road Reach
+  Taking Notes: In the Fog - Cap Kingdom @ Flower Road Run
+  Tucked Away Inside the Tunnel - Wooded Kingdom @ Elevator Blind Spot
+  Ice Cave Treasure - Sand Kingdom @ Elevator Escalation
+
+=== Entrance Randomizer ===
+
+Ruined Kingdom:
+  Ruined Kingdom BossRaidWorldMoonEx02_Enter -> Sand Kingdom: SandWorldPressExStage (arijigoku)
+  Ruined Kingdom BossRaidWorldEx01_Eixt -> Moon Kingdom: Galaxy2DExStage (dot00)
+
+Cap Kingdom:
+  Cap Kingdom PushBlockExStageEnt -> Cascade Kingdom: WanwanClashExStage (WanwanExStart)
+  Cap Kingdom PoisonWaveExEnt -> Lake Kingdom: GotogotonExStage (Goton)
+  Cap Kingdom FrogSearchExStageEnt -> Cap Kingdom: FrogSearchExStage (FrogSearchExStageEnt)
+  Cap Kingdom rollingstart -> Dark Side: Special1WorldTowerCapThrowerStage (CapThrowerRoomStart)
+
+Metro Kingdom:
+  Metro Kingdom densen -> Mushroom Kingdom: YoshiCloudExStage (PeachWorldEx1a)
+  Metro Kingdom kaitendokan -> Metro Kingdom: CityWorldShop01Stage (shop_coin)
+  Metro Kingdom bike02 -> Dark Side: BikeSteelNoCapExStage (BikeSteelNoCapEx)
+  Metro Kingdom gragra -> Seaside Kingdom: SenobiTowerExStage (SeaWorldEX3a)
+  Metro Kingdom donsuke -> Seaside Kingdom: TogezoRotateExStage (SeaWorldMoonEX2)
+  Metro Kingdom theater -> Moon Kingdom: MoonAthleticExStage (moon)
+  Metro Kingdom gunsyu -> Metro Kingdom: CityWorldSandSlotStage (Bonus)
+  Metro Kingdom bou -> Metro Kingdom: PoleKillerExStage (bou)
+  Metro Kingdom onpu -> Metro Kingdom: CityPeopleRoadStage (gunsyu)
+  Metro Kingdom tenjo -> Seaside Kingdom: SeaWorldCostumeStage (CostumeEventSeaWorld)
+  Metro Kingdom taxi -> Snow Kingdom: ByugoPuzzleExStage (ByugoPuzzle)
+  Metro Kingdom Bonus -> Metro Kingdom: ShootingCityExStage (taxi)
+  Metro Kingdom shop_corect -> Dark Side: PackunPoisonNoCapExStage (PackunPoisonNoCapEx)
+  Metro Kingdom shop_coin -> Moon Kingdom: MoonWorldShopRoom (ddd)
+  Metro Kingdom bike -> Mushroom Kingdom: PeachWorldPictureBossForestStage (BossForestA)
+
+Lost Kingdom:
+  Lost Kingdom imomu_01 -> Metro Kingdom: CapRotatePackunExStage (kaitendokan)
+  Lost Kingdom ClashWorldMoonEX2 -> Mushroom Kingdom: PeachWorldCastleStage (PeachCastleGate)
+  Lost Kingdom Kinopio -> Mushroom Kingdom: PeachWorldPictureBossKnuckleStage (BossKnuckleA)
+
+Cloud Kingdom:
+  Cloud Kingdom Fukuwarai -> Bowser's Kingdom: TsukkunClimbExStage (tukkun001_enter)
+  Cloud Kingdom cube -> Snow Kingdom: SnowWorldLobbyExStage (MoonRace)
+
+Wooded Kingdom:
+  Wooded Kingdom EX_Water -> Cascade Kingdom: WindBlowExStage (WindBlowExStart)
+  Wooded Kingdom EX_RailCollision -> Lake Kingdom: TrampolineWallCatchExStage (CapTrampolineA)
+  Wooded Kingdom EX_Tankuro -> Luncheon Kingdom: LavaWorldClockExStage (BBQEx)
+  Wooded Kingdom EX_Mist -> Wooded Kingdom: ForestWorldWoodsStage (Jyukai001)
+  Wooded Kingdom bonus -> Luncheon Kingdom: LavaWorldUpDownExStage (KeyMoveEx)
+  Wooded Kingdom PoisonEx -> Sand Kingdom: RocketFlowerExStage (rocket)
+  Wooded Kingdom KillerRoad -> Metro Kingdom: PoleGrabCeilExStage (tenjo)
+  Wooded Kingdom EXCloud -> Luncheon Kingdom: LavaWorldCostumeStage (CostumeEventWorldLava)
+  Wooded Kingdom EX_AnimalChase -> Cascade Kingdom: Lift2DExStage (Lift2D)
+  Wooded Kingdom Jyukai001 -> Metro Kingdom: SwingSteelExStage (gragra)
+  Wooded Kingdom Jyukai003 -> Lost Kingdom: ImomuPoisonExStage (imomu_01)
+
+Lake Kingdom:
+  Lake Kingdom CapTrampolineA -> Sand Kingdom: SandWorldRotateExStage (biru)
+  Lake Kingdom FastenerEx -> Metro Kingdom: CityWorldShop01Stage (shop_corect)
+  Lake Kingdom Goton -> Sand Kingdom: SandWorldSphinxExStage (aaa)
+  Lake Kingdom LakeWorldMoonEX1a -> Seaside Kingdom: SeaWorldSneakingManStage (RoomEventWorldSea)
+  Lake Kingdom LakeWorldShop -> Cloud Kingdom: FukuwaraiKuriboStage (Fukuwarai)
+
+Luncheon Kingdom:
+  Luncheon Kingdom ForkEX -> Luncheon Kingdom: LavaWorldShopStage (shop)
+  Luncheon Kingdom LavaLiftEx -> Luncheon Kingdom: CapAppearLavaLiftExStage (LavaLiftEx)
+  Luncheon Kingdom GabuzouClockEx -> Luncheon Kingdom: GabuzouClockExStage (GabuzouClockEx)
+  Luncheon Kingdom PechoBubbleEx -> Metro Kingdom: Theater2DExStage (theater)
+  Luncheon Kingdom MartinCubeEx -> Lake Kingdom: FrogPoisonExStage (LakeWorldMoonEX1a)
+  Luncheon Kingdom KeyMoveEx -> Mushroom Kingdom: DotHardExStage (PeachWorldEx2a)
+  Luncheon Kingdom BBQEx -> Dark Side: KillerRoadNoCapExStage (KillerRoadNoCapEx)
+  Luncheon Kingdom FenceLiftEx -> Luncheon Kingdom: LavaWorldFenceLiftExStage (FenceLiftEx)
+  Luncheon Kingdom CostumeEventWorldLava -> Sand Kingdom: SandWorldVibrationStage (shindo)
+  Luncheon Kingdom TreasureEventWorldLava -> Metro Kingdom: BikeSteelExStage (bike)
+  Luncheon Kingdom town -> Metro Kingdom: DonsukeExStage (donsuke)
+  Luncheon Kingdom shop -> Wooded Kingdom: KillerRoadExStage (KillerRoad)
+
+Moon Kingdom:
+  Moon Kingdom dot00 -> Sand Kingdom: SandWorldMeganeExStage (wall)
+  Moon Kingdom moon -> Mushroom Kingdom: PeachWorldCostumeStage (CostumeEventWorldPeach)
+  Moon Kingdom ggg -> Lost Kingdom: JangoExStage (ClashWorldMoonEX2)
+  Moon Kingdom ddd -> Mushroom Kingdom: PeachWorldPictureBossRaidStage (BossRaidA)
+
+Mushroom Kingdom:
+  Mushroom Kingdom PeachWorldEx1a -> Wooded Kingdom: ShootingElevatorExStage (EX_Tankuro)
+  Mushroom Kingdom PeachWorldEx2a -> Cloud Kingdom: Cube2DExStage (cube)
+  Mushroom Kingdom Fukuwarai2 -> Dark Side: Special1WorldTowerBombTailStage (BombTailRoomStart)
+  Mushroom Kingdom PeachCastleGate -> Luncheon Kingdom: LavaWorldTreasureStage (TreasureEventWorldLava)
+  Mushroom Kingdom PeachWorldShopA -> Sand Kingdom: SandWorldShopStage (bar1)
+  Mushroom Kingdom CostumeEventWorldPeach -> Wooded Kingdom: FogMountainExStage (EX_Mist)
+  Mushroom Kingdom BossForestA -> Bowser's Kingdom: TsukkunRotateExStage (tukkun000_enter)
+  Mushroom Kingdom BossKnuckleA -> Sand Kingdom: SandWorldKillerExStage (doukutu1)
+  Mushroom Kingdom BossMagmaA -> Seaside Kingdom: ReflectBombExStage (SeaWorldMoonEX1a)
+  Mushroom Kingdom MofumofuA -> Snow Kingdom: IceWaterBlockExStage (EX_IceWater)
+  Mushroom Kingdom BossRaidA -> Dark Side: Special1WorldTowerStackerStage (StackerRoomStart)
+  Mushroom Kingdom GiantWanderBossA -> Dark Side: ShootingCityYoshiExStage (ShootingCityYoshiEx)
+
+Sand Kingdom:
+  Sand Kingdom doukutu1 -> Lost Kingdom: ClashWorldShopStage (Kinopio)
+  Sand Kingdom aaa -> Bowser's Kingdom: SkyWorldCostumeStage (byoubu)
+  Sand Kingdom wall -> Seaside Kingdom: CloudExStage (SeaWorldEX2)
+  Sand Kingdom biru -> Cascade Kingdom: CapAppearExStage (CapAppearExEnt)
+  Sand Kingdom rocket -> Sand Kingdom: MeganeLiftExStage (meganelift01)
+  Sand Kingdom meganelift01 -> Snow Kingdom: KillerRailCollisionExStage (EX_RailCol2)
+  Sand Kingdom arijigoku1 -> Bowser's Kingdom: SkyWorldTreasureStage (shop_dress)
+  Sand Kingdom hide -> Sand Kingdom: SandWorldSecretStage (hide)
+  Sand Kingdom run00return -> Sand Kingdom: SandWorldCostumeStage (abc)
+  Sand Kingdom shindo -> Mushroom Kingdom: FukuwaraiMarioStage (Fukuwarai2)
+  Sand Kingdom bar1 -> Seaside Kingdom: SeaWorldSecretStage (TreasureEventWorldSea)
+  Sand Kingdom bar2 -> Cap Kingdom: PushBlockExStage (PushBlockExStageEnt)
+  Sand Kingdom town -> Wooded Kingdom: PackunPoisonExStage (PoisonEx)
+  Sand Kingdom abc -> Sand Kingdom: WaterTubeExStage (EX_2DHosui)
+  Sand Kingdom EX_2DHosui -> Mushroom Kingdom: PeachWorldPictureMofumofuStage (MofumofuA)
+
+Seaside Kingdom:
+  Seaside Kingdom SeaWorldEX1a -> Wooded Kingdom: ForestWorldWoodsStage (Jyukai003)
+  Seaside Kingdom SeaWorldEX2 -> Wooded Kingdom: AnimalChaseExStage (EX_AnimalChase)
+  Seaside Kingdom SeaWorldMoonEX2 -> Luncheon Kingdom: LavaBonus1Zone (town)
+  Seaside Kingdom SeaWorldEX3a -> Cascade Kingdom: TrexPoppunExStage (RexPoppunEx)
+  Seaside Kingdom SeaWorldMoonEX1a -> Moon Kingdom: MoonWorldSphinxRoom (ggg)
+  Seaside Kingdom PukupukuCaveStart -> Wooded Kingdom: ForestWorldWaterExStage (EX_Water)
+  Seaside Kingdom RoomEventWorldSea -> Luncheon Kingdom: ForkExStage (ForkEX)
+  Seaside Kingdom TreasureEventWorldSea -> Snow Kingdom: IceWaterDashExStage (EX_IceWaterDash)
+  Seaside Kingdom shindo_Lv2 -> Metro Kingdom: TrexBikeExStage (bike02)
+  Seaside Kingdom CostumeEventSeaWorld -> Metro Kingdom: ElectricWireExStage (densen)
+
+Bowser's Kingdom:
+  Bowser's Kingdom jizo01 -> Wooded Kingdom: ForestWorldBonusStage (bonus)
+  Bowser's Kingdom tukkun000_enter -> Dark Side: Special1WorldTowerFireBlowerStage (FireBlowerRoomStart)
+  Bowser's Kingdom tukkun001_enter -> Bowser's Kingdom: JizoSwitchExStage (jizo01)
+  Bowser's Kingdom sora001 -> Ruined Kingdom: DotTowerExStage (BossRaidWorldEx01_Eixt)
+  Bowser's Kingdom shop_dress -> Wooded Kingdom: ForestWorldCloudBonusExStage (EXCloud)
+  Bowser's Kingdom shop -> Lake Kingdom: FastenerExStage (FastenerEx)
+  Bowser's Kingdom byoubu -> Mushroom Kingdom: PeachWorldPictureGiantWanderBossStage (GiantWanderBossA)
+
+Snow Kingdom:
+  Snow Kingdom EX_IceWaterDash -> Ruined Kingdom: BullRunExStage (BossRaidWorldMoonEx02_Enter)
+  Snow Kingdom EX_IceWater -> Luncheon Kingdom: LavaWorldExcavationExStage (MartinCubeEx)
+  Snow Kingdom ByugoPuzzle -> Mushroom Kingdom: PeachWorldPictureBossMagmaStage (BossMagmaA)
+  Snow Kingdom FigureWalker -> Bowser's Kingdom: SkyWorldCloudBonusExStage (sora001)
+  Snow Kingdom EX_SkyBonus -> Cap Kingdom: RollingExStage (rollingstart)
+  Snow Kingdom EX_RailCol2 -> Sand Kingdom: SandWorldSlotStage (town)
+  Snow Kingdom MoonRace -> Bowser's Kingdom: SkyWorldShopStage (shop)
+
+Dark Side:
+  Dark Side StackerRoomStart -> Seaside Kingdom: SeaWorldVibrationStage (shindo_Lv2)
+  Dark Side BombTailRoomStart -> Sand Kingdom: SandWorldSphinxExStage (run00return)
+  Dark Side FireBlowerRoomStart -> Mushroom Kingdom: PeachWorldShopStage (PeachWorldShopA)
+  Dark Side CapThrowerRoomStart -> Lake Kingdom: LakeWorldShopStage (LakeWorldShop)
+  Dark Side BikeSteelNoCapEx -> Dark Side: LavaWorldUpDownYoshiExStage (LavaWorldUpDownYoshiEx)
+  Dark Side PackunPoisonNoCapEx -> Seaside Kingdom: SeaWorldUtsuboCaveStage (PukupukuCaveStart)
+  Dark Side KillerRoadNoCapEx -> Dark Side: SenobiTowerYoshiExStage (SenobiTowerYoshiEx)
+  Dark Side ShootingCityYoshiEx -> Cap Kingdom: PoisonWaveExStage (PoisonWaveExEnt)
+  Dark Side SenobiTowerYoshiEx -> Seaside Kingdom: WaterValleyExStage (SeaWorldEX1a)
+  Dark Side LavaWorldUpDownYoshiEx -> Snow Kingdom: IceWalkerExStage (FigureWalker)
+
+Cascade Kingdom:
+  Cascade Kingdom WanwanExStart -> Sand Kingdom: SandWorldShopStage (bar2)
+  Cascade Kingdom WindBlowExStart -> Metro Kingdom: Note2D3DRoomExStage (onpu)
+  Cascade Kingdom CapAppearExEnt -> Wooded Kingdom: RailCollisionExStage (EX_RailCollision)
+  Cascade Kingdom Lift2D -> Snow Kingdom: SnowWorldCloudBonusExStage (EX_SkyBonus)
+  Cascade Kingdom RexPoppunEx -> Luncheon Kingdom: LavaWorldBubbleLaneExStage (PechoBubbleEx)
+
+=== Painting Links ===
+  Cascade Kingdom (WaterfallWorldHomeStage::stage_change::Go::raw) <-> Bowser's Kingdom (SkyWorldHomeStage::stage_change::Come::raw)
+  Bowser's Kingdom (SkyWorldHomeStage::stage_change::Go::raw) <-> Snow Kingdom (SnowWorldHomeStage::stage_change::Come::raw)
+  Snow Kingdom (SnowWorldHomeStage::stage_change::Go::raw) <-> Wooded Kingdom (ForestWorldHomeStage::stage_change::Come::raw)
+  Wooded Kingdom (ForestWorldHomeStage::stage_change::Go::raw) <-> Sand Kingdom (SandWorldHomeStage::stage_change::Come::raw)
+  Sand Kingdom (SandWorldHomeStage::stage_change::Go::raw) <-> Metro Kingdom (CityWorldHomeStage::stage_change::Come::raw)
+  Metro Kingdom (CityWorldHomeStage::stage_change::Go::raw) <-> LakeWorldTownZone (LakeWorldTownZone::stage_change::Come::raw)
+  LakeWorldTownZone (LakeWorldTownZone::stage_change::Go::raw) <-> Luncheon Kingdom (LavaWorldHomeStage::stage_change::Come::raw)
+  Luncheon Kingdom (LavaWorldHomeStage::stage_change::Go::raw) <-> Mushroom Kingdom (PeachWorldHomeStage::stage_change::Come::raw)
+  Mushroom Kingdom (PeachWorldHomeStage::stage_change::Go::raw) <-> Seaside Kingdom (SeaWorldHomeStage::stage_change::Come::raw)
+  Seaside Kingdom (SeaWorldHomeStage::stage_change::Go::raw) <-> Cascade Kingdom (WaterfallWorldHomeStage::stage_change::Come::raw)
+
+=== Suggested Progress Path ===
+001. Dark Side: collect Our First Power Moon at Found with Dark Side Art 3 (moon requirement)
+002. Dark Side: collect Chomp Through the Rocks at Breakdown Road: Hurry! (moon requirement)
+003. Moon Kingdom: collect Dinosaur Nest: Big Cleanup! at Moon Shards on the Moon (moon requirement)
+004. Snow Kingdom: collect Cascade Kingdom Timer Challenge 1 at I'm not Cold! (moon requirement)
+005. Seaside Kingdom: collect Very Nice Shot with the Chain Chomp! at Merci, Dorrie! (moon requirement)
+006. Snow Kingdom: collect Atop the Highest Tower at Behind Snowy Mountain (moon requirement)
+007. Moon Kingdom: collect Sand Kingdom Slots at Shining Above the Moon (moon requirement)
+008. Sand Kingdom: collect Island in the Poison Swamp at Overlooking the Desert Town (moon requirement)
+009. Bowser's Kingdom: collect On the Statue's Tail at Exterminate the Ogres! (moon requirement)
+010. Lost Kingdom: collect test test at A Butterfly's Treasure (moon requirement)
+011. Mushroom Kingdom: collect Hidden Room in the Inverted Pyramid at Herding Sheep at Peach's Castle (moon requirement)
+012. Wooded Kingdom: collect Sand Kingdom Regular Cup at Fire in the Cave (moon requirement)
+013. Lost Kingdom: collect Lost in the Luggage at Get Some Rest, Captain Toad (moon requirement)
+014. Sand Kingdom: collect Secret of the Inverted Mural at Inside a Block Is a Hard Place (moon requirement)
+015. Mushroom Kingdom: collect Hidden Room in the Flowing Sands at Grow a Flower Garden (moon requirement)
+016. Cap Kingdom: collect Through the Freezing Waterway at Cap Kingdom Timer Challenge 1 (moon requirement)
+017. Bowser's Kingdom: collect Underground Treasure Chest at Poking Your Nose in the Plaster Wall (moon requirement)
+018. Seaside Kingdom: collect Bird Traveling the Desert at Slip Through the Nesting Spot (moon requirement)
+019. Mushroom Kingdom: collect Jaxi Stunt Driving at Gardening for Toad: Garden Seed (moon requirement)
+020. Seaside Kingdom: collect Love at the Edge of the Desert at Found with Seaside Kingdom Art (moon requirement)
+021. Seaside Kingdom: collect Top of a Dune at The Stone Pillar Seal (moon requirement)
+022. Mushroom Kingdom: collect Broodals Over the Lake at Blowup at Mount Volbono: Rematch (moon requirement)
+023. Sand Kingdom: collect Lake Kingdom Regular Cup at Sand Quiz: Wonderful! (moon requirement)
+024. Sand Kingdom: collect What's in the Box? at Dancing with New Friends (moon requirement)
+025. Lost Kingdom: collect Taking Notes: Dive and Swim at Peeking Out from Under the Bridge (moon requirement)
+026. Sand Kingdom: collect Bird Traveling Over the Lake at Sphynx's Treasure Vault (moon requirement)
+027. Snow Kingdom: collect Lake Kingdom Timer Challenge 2 at Entrance to Shiveria (moon requirement)
+028. Lost Kingdom: collect Road to Sky Garden at On the Mountain Road (moon requirement)
+029. Bowser's Kingdom: collect By the Babbling Brook in Deep Woods at Caught on the Iron Fence (moon requirement)
+030. Seaside Kingdom: collect Elevator Escalation at Ocean-Bottom Maze: Hidden Room (moon requirement)
+031. Lost Kingdom: collect Thanks for the Charge! at The Caged Gold (moon requirement)
+032. Mushroom Kingdom: collect Wooded Kingdom Timer Challenge 3 at Forever Onward, Captain Toad! (moon requirement)
+033. Dark Side: collect Atop the Tall Tree at Found with Dark Side Art 7 (moon requirement)
+034. Dark Side: collect Bird Traveling the Forest at Found with Dark Side Art 9 (moon requirement)
+035. Seaside Kingdom: collect Flooding Pipeway Ceiling Secret at Looking Back in the Dark Waterway (moon requirement)
+036. Metro Kingdom: collect Wandering in the Fog at Metro Kingdom Timer Challenge 2 (moon requirement)
+037. Sand Kingdom: collect Wooded Kingdom Timer Challenge 2 at Atop the Highest Tower (moon requirement)
+038. Seaside Kingdom: collect Caught Hopping in the Forest! at Fly Through the Narrow Valley (moon requirement)
+039. Wooded Kingdom: collect Love in the Forest Ruins at Rolling Rock in the Deep Woods (moon requirement)
+040. Mushroom Kingdom: collect Rolling Rock in the Woods at Toad Defender (moon requirement)
+041. Lost Kingdom: collect Found with Wooded Kingdom Art at Avoiding Fuzzies Inside the Wall (moon requirement)
+042. Lost Kingdom: collect The Nut 'Round the Corner at A Propeller Pillar's Secret (moon requirement)
+043. Seaside Kingdom: collect Peach in the Wooded Kingdom at Taking Notes: Ocean Surface Dash (moon requirement)
+044. Lost Kingdom: collect Chasing Klepto at Shopping on Forgotten Isle (moon requirement)
+045. Dark Side: collect Over the Fuzzies, Above the Swamp at Invisible Road: Rush! (moon requirement)
+046. Mushroom Kingdom: collect Jump Down to the Top of a Tree at Gobbling Fruit with Yoshi (moon requirement)
+047. Seaside Kingdom: collect Soaring Over Forgotten Isle! at Moon Shards in the Sea (moon requirement)
+048. Mushroom Kingdom: collect Aglow in the Jungle at Taking Notes: Around the Well (moon requirement)
+049. Moon Kingdom: collect Peach in the Lost Kingdom at Rolling Rock on the Moon (moon requirement)
+050. Mushroom Kingdom: collect On the Mountain Road at Perched on the Castle Roof (moon requirement)
+051. Wooded Kingdom: collect A Butterfly's Treasure at Back Way Up the Mountain (moon requirement)
+052. Seaside Kingdom: collect A Propeller Pillar's Secret at Sea Gardening: Inlet Seed (moon requirement)
+053. Wooded Kingdom: collect Stretch and Traverse the Jungle at Climb the Cliff to Get the Nut (moon requirement)
+054. Ruined Kingdom: collect New Donk City's Pest Problem at Battle with the Lord of Lightning! (moon requirement) | unlocks: WorldPeace_Ruined, MoonRockActive_Ruined
+055. Mushroom Kingdom: collect A Tourist in the Metro Kingdom! at Gardening for Toad: Field Seed (moon requirement)
+056. Ruined Kingdom: collect Free Parking: Rooftop Hop at Caught on a Big Horn (moon requirement)
+057. Ruined Kingdom: collect Peach in the Metro Kingdom at Roulette Tower: Stopped (moon requirement)
+058. Seaside Kingdom: collect RC Car Pro! at The Back Canyon: Excavate! (moon requirement)
+059. Sand Kingdom: collect City Gardening: Rooftop Planter at Among the Five Cactuses (moon requirement)
+060. Wooded Kingdom: collect Swinging Scaffolding: Break! at Secret Path to the Steam Gardens! (moon requirement)
+061. Seaside Kingdom: collect Secret Girder Tunnel! at Sea Gardening: Canyon Seed (moon requirement)
+062. Seaside Kingdom: collect City Gardening: Building Planter at On the Cliff Overlooking the Beach (moon requirement)
+063. Snow Kingdom: collect City Gardening: Plaza Planter at Secret Path to Shiveria! (moon requirement)
+064. Snow Kingdom: collect High Over the Crowd at Moon Shards in the Cold Room (moon requirement)
+065. Ruined Kingdom: collect Hanging from a High-Rise at Rolling Rock on the Battlefield (moon requirement)
+066. Wooded Kingdom: collect Moon Shards Under Siege at Shopping in Steam Gardens (moon requirement)
+067. Wooded Kingdom: collect Motor Scooter: Escape! at Past the Peculiar Pipes (moon requirement)
+068. Ruined Kingdom: collect A Request from the Mayor at Upon the Broken Arch (moon requirement)
+069. Wooded Kingdom: collect How You Doin', Captain Toad? at Deep Woods Treasure Trap (moon requirement)
+070. Sand Kingdom: collect Metro Kingdom Timer Challenge 2 at Desert Gardening: Seed on the Cliff (moon requirement)
+071. Mushroom Kingdom: collect One Man's Trash... at Totally Classic! (moon requirement)
+072. Wooded Kingdom: collect The Icicle Barrier at Glowing in the Deep Woods (moon requirement)
+073. Seaside Kingdom: collect Walking on Ice! at The Sphynx's Underwater Vault (moon requirement)
+074. Lost Kingdom: collect Snow Kingdom Timer Challenge 3 at On a Tree in the Swamp (moon requirement)
+075. Dark Side: collect The Shiverian Treasure Chest at Fruit Feast in the Magma Swamp (moon requirement)
+076. Dark Side: collect Looking Back on the Flower Road at Found with Dark Side Art 5 (moon requirement)
+077. Lost Kingdom: collect Atop a Blustery Arch at Inside the Stone Cage (moon requirement)
+078. Bowser's Kingdom: collect Spinning Above the Clouds at Behind the Big Wall (moon requirement)
+079. Moon Kingdom: collect Shining on High at Moon Quiz: Amazing! (moon requirement)
+080. Wooded Kingdom: collect Caught Hopping in the Snow! at Flooding Pipeway (moon requirement)
+081. Snow Kingdom: collect Water Pooling in the Crevasse at Found with Snow Kingdom Art (moon requirement)
+082. Lost Kingdom: collect The Lighthouse Seal at Enjoying the View of Forgotten Isle (moon requirement)
+083. Moon Kingdom: collect Bubblaine Northern Reaches at Moon Kingdom Timer Challenge 1 (moon requirement)
+084. Lost Kingdom: collect A Light Next to the Lighthouse at Taxi Flying Through Forgotten Isle (moon requirement)
+085. Wooded Kingdom: collect Treasure Chest in the Narrow Valley at Rolling Rock in the Woods (moon requirement)
+086. Lake Kingdom: collect The Sphynx's Underwater Vault at Shopping in Lake Lamode (moon requirement)
+087. Bowser's Kingdom: collect Shh! It's a Shortcut! at Taking Notes: In the Folding Screen (moon requirement)
+088. Wooded Kingdom: collect Wading in the Cloud Sea at Caught Hopping in the Forest! (moon requirement)
+089. Lost Kingdom: collect Glass Palace Treasure Chest at Over the Fuzzies, Above the Swamp (moon requirement)
+090. Cascade Kingdom: collect A Fine Detail on the Glass at Treasure of the Waterfall Basin (moon requirement)
+091. Moon Kingdom: collect What Shines Inside the Glass at A Tourist in the Moon Kingdom! (moon requirement)
+092. Mushroom Kingdom: collect The Broodals Are After Some Cookin' at Light from the Ceiling (moon requirement)
+093. Snow Kingdom: collect Volcano Cave Cruisin' at The Icicle Barrier (moon requirement)
+094. Mushroom Kingdom: collect Mechanic: Repairs Complete! at Mushroom Kingdom Regular Cup (moon requirement)
+095. Mushroom Kingdom: collect Island of Salt Floating in the Lava at Mushroom Kingdom Master Cup (moon requirement)
+096. Seaside Kingdom: collect Stepping Over the Gears at Ocean-Bottom Maze: Treasure (moon requirement)
+097. Wooded Kingdom: collect Treasure Beneath the Cheese Rocks at The Nut that Grew on the Tall Fence (moon requirement)
+098. Bowser's Kingdom: collect Magma Narrow Path at Underground Jizo (moon requirement)
+099. Cascade Kingdom: collect From a Crack in the Hard Ground at Secret Path to Fossil Falls! (moon requirement)
+100. Dark Side: collect Taking Notes: Swimming in Magma at Found with Dark Side Art 6 (moon requirement)
+101. Sand Kingdom: collect A Tourist in the Luncheon Kingdom! at Shopping in Tostarena (moon requirement)
+102. Mushroom Kingdom: collect Golden Turnip Recipe 3 at Yoshi's Second Helping! (moon requirement)
+103. Seaside Kingdom: collect Shopping in Mount Volbono at Shh! It's a Shortcut! (moon requirement)
+104. Moon Kingdom: collect Piled on the Salt at Shopping in Honeylune Ridge (moon requirement)
+105. Mushroom Kingdom: collect Flying Over the Lava Islands at Sunken Star in the Sea of Clouds (moon requirement)
+106. Lost Kingdom: collect Atop the Jutting Crag at Peach in the Lost Kingdom (moon requirement)
+107. Seaside Kingdom: collect Luncheon Kingdom: Regular Cup at Under a Dangerous Ceiling (moon requirement)
+108. Sand Kingdom: collect Bon AppÃ©tit, Captain Toad! at Alcove in the Ruins (moon requirement)
+109. Sand Kingdom: collect Treasure of the Lava Islands at Moon Shards in the Sand (moon requirement)
+110. Seaside Kingdom: collect Peach in the Ruined Kingdom at Sunken Treasure in the Cloud Sea (moon requirement)
+111. Moon Kingdom: collect Charging Through an Army at Cliffside Treasure Chest (moon requirement)
+112. Dark Side: collect In the Ancient Treasure Chest at Found with Dark Side Art 4 (moon requirement)
+113. Lost Kingdom: collect Infiltrate Bowser's Castle! at Below the Cliff's Edge (moon requirement)
+114. Moon Kingdom: collect Fishing(?) in Bowser's Castle at Caught Hopping on the Moon! (moon requirement)
+115. Bowser's Kingdom: collect Shopping at Bowser's Castle at Infiltrate Bowser's Castle! (moon requirement)
+116. Lost Kingdom: collect Smart Bombing at Caught Hopping in the Jungle! (moon requirement)
+117. Bowser's Kingdom: collect Jumping from Flag to Flag at Dashing Through the Clouds (moon requirement)
+118. Mushroom Kingdom: collect Exterminate the Ogres! at Pops Out of the Tail (moon requirement)
+119. Mushroom Kingdom: collect Inside a Block at the Gate at Mushroom Kingdom Time Challenge (moon requirement)
+120. Bowser's Kingdom: collect Treasure Inside the Turret at Secret Path to Bowser's Castle! (moon requirement)
+121. Lake Kingdom: collect Arrival at Rabbit Ridge! at Broodals Over the Lake (unlock) | unlocks: WorldPeace_Lake, Vault, Spin, LongJump, MoonRockActive_Lake
+122. Sand Kingdom: collect Yoshi on the Sinking Island at Secret of the Inverted Mural (unlock) | unlocks: Climb
+123. Lake Kingdom: collect Yoshi's Feast in the Sea of Clouds at Bird Traveling Over the Lake (unlock) | unlocks: WanwanBig
+124. Dark Side: collect Caught Hopping at Peach's Castle! at Found with Dark Side Art 1 (unlock) | unlocks: GotogotonLake
+125. Moon Kingdom: collect Mushroom Kingdom Time Challenge at Found on the Moon, Good Dog! (unlock) | unlocks: Senobi
+126. Snow Kingdom: collect 2D Boost from Bullet Bill at Shopping in Shiveria (unlock) | unlocks: Gamane
+127. Metro Kingdom: collect Dust-Up in New Donk City: Rematch at New Donk City's Pest Problem (unlock) | unlocks: Fukankun, Killer, RockForest
+128. Seaside Kingdom: collect Vanishing Road Challenge at Sea Gardening: Ocean Trench Seed (unlock) | unlocks: NeutralThrow
+129. Mushroom Kingdom: collect Blowup at Mount Volbono: Rematch at Struggle in Steam Gardens: Rematch (unlock) | unlocks: Radicon, Hosui, Car
+130. Cap Kingdom: collect Invisible Road: Rush! at Searching the Frog Pond (unlock) | unlocks: WallJump
+131. Sand Kingdom: collect Jammin' in the Mushroom Kingdom at Desert Gardening: Ruins Seed (unlock) | unlocks: BossKnuckleHand
+132. Mushroom Kingdom: collect Tussle in Tostarena: Rematch at Tussle in Tostarena: Rematch (unlock) | unlocks: Yoshi, FireBros, Kakku
+133. Mushroom Kingdom: collect Secret Path to Peach's Castle! at Yoshi's All Filled Up! (unlock) | unlocks: KaronWing
+134. Bowser's Kingdom: collect Love at Peach's Castle at Taking Notes: Between Spinies (unlock) | unlocks: KuriboWing
+135. Snow Kingdom: collect Herding Sheep at Peach's Castle at Hat-and-Seek in the Snow (unlock) | unlocks: Yukimaru
+136. Moon Kingdom: collect Yoshi's Second Helping! at Along the Cliff Face (unlock) | unlocks: FukuwaraiFacePartsMario
+137. Lake Kingdom: collect Pops Out of the Tail at Taking Notes: In the Cliffside (unlock) | unlocks: ElectricWire
+138. Sand Kingdom: collect Perched on the Castle Roof at Secret Path to Tostarena! (unlock) | unlocks: TRex
+139. Snow Kingdom: collect Shopping Near Peach's Castle at Forgotten in the Holding Room (unlock) | unlocks: Tank
+140. Sand Kingdom: collect Mushroom Kingdom Master Cup at Under the Mummy's Curse (unlock) | unlocks: KillerMagnum
+141. Ruined Kingdom: collect Picture Match: Basically Mario at Charging Through an Army (unlock) | unlocks: Kuribo
+142. Seaside Kingdom: collect Gardening for Toad: Garden Seed at Ride the Jetstream (unlock) | unlocks: Frog
+143. Ruined Kingdom: collect Vanishing Road Rush at The Mummy Army's Curse (unlock) | unlocks: LedgeGrab
+144. Sand Kingdom: collect Sunken Star in the Sea of Clouds at On the Lone Pillar (unlock) | unlocks: Byugo
+145. Cap Kingdom: collect Invisible Road: Secret! at Cap Kingdom Regular Cup (unlock) | unlocks: SideFlip
+146. Wooded Kingdom: collect Gardening for Toad: Lake Seed at Cracked Nut on a Crumbling Tower (unlock) | unlocks: Wanwan
+147. Seaside Kingdom: collect Toad Defender at Bubblaine Northern Reaches (unlock) | unlocks: Fastener
+148. Moon Kingdom: collect A Tourist in Mushroom Kingdom! at Sphynx's Hidden Vault (unlock) | unlocks: Pukupuku
+149. Snow Kingdom: collect Yoshi's Magma Swamp at Treasure in the Ice Wall (unlock) | unlocks: GroundPound
+150. Seaside Kingdom: collect Loose-Tile Trackdown at Gap in the Ocean Trench (unlock) | unlocks: Cactus
+151. Sand Kingdom: collect Princess Peach, Home Again! at Bird Traveling the Desert (unlock) | unlocks: Tree
+152. Wooded Kingdom: collect Fruit Feast in the Magma Swamp at Exploring for Treasure (unlock) | unlocks: Dive
+153. Moon Kingdom: collect Hat-and-Seek: Mushroom Kingdom at On Top of the Cannon (capture/ability reachable) | unlocks: PackunFire
+154. Mushroom Kingdom: collect Battle in Bubblaine: Rematch at Battle in Bubblaine: Rematch (capture/ability reachable) | unlocks: Megane, Koopa, Imomu
+155. Seaside Kingdom: collect Yoshi's All Filled Up! at Secret Path to Bubblaine! (capture/ability reachable) | unlocks: StatueKoopa
+156. Sand Kingdom: collect Fruit Feast Under Siege at Ice Cave Treasure (capture/ability reachable) | unlocks: Roll
+157. Wooded Kingdom: collect Mushroom Kingdom Regular Cup at Tucked Away Inside the Tunnel (capture/ability reachable) | unlocks: GotogotonCity
+158. Lake Kingdom: collect Courtyard Chest Trap at Waves of Poison: Hoppin' Over (capture/ability reachable) | unlocks: Manhole
+159. Lake Kingdom: collect Taking Notes: Around the Well at Love by the Lake (capture/ability reachable) | unlocks: Tsukkun
+160. Snow Kingdom: collect Fruit Feast on the Sinking Island at Slip Behind the Ice (capture/ability reachable) | unlocks: RollBoost
+161. Cap Kingdom: collect Secret 2D Treasure at Shopping in Bonneton (capture/ability reachable) | unlocks: CarryMeat
+162. Snow Kingdom: collect Totally Classic! at Ice-Dodging Goomba Stack (capture/ability reachable) | unlocks: FukuwaraiFacePartsKuribo
+163. Wooded Kingdom: collect Gardening for Toad: Pasture Seed at Flower Road Reach (capture/ability reachable) | unlocks: Bull
+164. Mushroom Kingdom: collect Rumble in Crumbleden: Rematch at Rumble in Crumbleden: Rematch (capture/ability reachable) | unlocks: PukupukuSnow, AnagramAlphabetCharacter, BazookaElectric
+165. Seaside Kingdom: collect Found at Peach's Castle! Good Dog! at Hurry and Stretch (capture/ability reachable) | unlocks: HackFork
+166. Snow Kingdom: collect Gardening for Toad: Field Seed at Dashing Above and Beyond! (capture/ability reachable) | unlocks: BreedaWanwan
+167. Mushroom Kingdom: collect Yoshi Under Siege at Shopping Near Peach's Castle (capture/ability reachable) | unlocks: DoubleJump
+168. Sand Kingdom: collect Forever Onward, Captain Toad! at Hidden Room in the Flowing Sands (capture/ability reachable) | unlocks: Guidepost
+169. Wooded Kingdom: collect Grow a Flower Garden at Atop the Tall Tree (capture/ability reachable) | unlocks: HammerBros
+170. Lake Kingdom: collect Breakdown Road: Hurry! at Behind the Floodgate (capture/ability reachable) | unlocks: Backflip
+171. Mushroom Kingdom: collect Struggle in Steam Gardens: Rematch at Dust-Up in New Donk City: Rematch (capture/ability reachable) | unlocks: JugemFishing
+172. Lake Kingdom: collect Picture Match: A Stellar Mario! at Lake Kingdom Timer Challenge 2 (capture/ability reachable) | unlocks: PackunPoison
+173. Sand Kingdom: collect Captain Toad on the Dark Side! at Sand Kingdom Slots (capture/ability reachable) | unlocks: GroundPoundJump
+174. Cap Kingdom: collect Breakdown Road: Final Challenge! at Skimming the Poison Tide (capture/ability reachable) | unlocks: UpThrow
+175. Metro Kingdom: collect Light from the Ceiling at Drummer on Board! (capture/ability reachable) | unlocks: Statue
+176. Moon Kingdom: collect Gobbling Fruit with Yoshi at Walking on the Moon! (capture/ability reachable) | unlocks: Bubble
+
+=== Final Objective ===
+Not proven
+Moon Kingdom access may be reachable, but the entrance graph did not prove every randomized destination reachable from an overworld entrance.
+
+=== Warnings ===
+- Could not prove every randomized entrance destination reachable from an overworld entrance (17 missing: 9, 55, 61, 66, 70...).

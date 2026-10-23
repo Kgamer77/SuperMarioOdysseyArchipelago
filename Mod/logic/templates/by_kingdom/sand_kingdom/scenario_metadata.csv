@@ -1,0 +1,29 @@
+stage,kingdom,stage_display_name,area_scope,scenario_no,active_layers,stage_map_indices,source_archive,source_file,status,notes
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,3,B,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,4,Scenario1_3;Scenario2_3;Scenario3;C,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,5,Scenario1_3;Scenario2_3;Scenario3;C;A,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldHomeStageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,1,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,2,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,3,Common,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,4,A;Scenario3;Scenario2_3;Scenario1_3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+SandWorldUnderground001Stage,Sand Kingdom,Deepest Underground,subarea,5,Scenario3,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground001StageMap.szs,ScenarioInfo.byml,extracted,
+MeganeLiftExStage,Sand Kingdom,The Invisible Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,MeganeLiftExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+RocketFlowerExStage,Sand Kingdom,Colossal Ruins,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,RocketFlowerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldCostumeStage,Sand Kingdom,Costume Room,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldCostumeStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,,,,SandWorldHomeTownZoneMap.szs,ScenarioInfo.byml,raw,ScenarioInfo type=Array; inspect manually if needed.
+SandWorldKillerExStage,Sand Kingdom,Bullet Bill Maze,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldKillerExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldHomeStage,Sand Kingdom,Sand Kingdom,overworld,,,,SandWorldKillerTowerZoneMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldMeganeExStage,Sand Kingdom,Transparent Lifts,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldMeganeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPressExStage,Sand Kingdom,Ice Cave,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPressExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPyramid000Stage,Sand Kingdom,Inverted Pyramid: Lower Interior,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPyramid000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldPyramid001Stage,Sand Kingdom,Inverted Pyramid: Upper Interior,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldPyramid001StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldRotateExStage,Sand Kingdom,Strange Neighborhood,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldRotateExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSecretStage,Sand Kingdom,Sphynx Treasure Vault,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSecretStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldShopStage,Sand Kingdom,Crazy Cap Store,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldShopStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSlotStage,Sand Kingdom,Tostarena Slots,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSlotStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldSphinxExStage,Sand Kingdom,Jaxi Driving,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldSphinxExStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldUnderground000Stage,Sand Kingdom,Underground Ruins,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldUnderground000StageMap.szs,,missing,No ScenarioInfo.byml in archive.
+SandWorldVibrationStage,Sand Kingdom,Rumbling Floor House,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,SandWorldVibrationStageMap.szs,,missing,No ScenarioInfo.byml in archive.
+WaterTubeExStage,Sand Kingdom,Freezing Waterway,subarea,,,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14,WaterTubeExStageMap.szs,,missing,No ScenarioInfo.byml in archive.

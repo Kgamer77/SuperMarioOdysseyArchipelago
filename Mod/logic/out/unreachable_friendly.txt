@@ -1,0 +1,98 @@
+TOTAL collected 704/775
+
+================ Metro Kingdom  (5 unreachable, reached scenario 8) ================
+  -- needs scenario (kingdom only reached 8) (1):
+       "Celebrating in the Streets!"   [Metro Kingdom]  via node: start
+  -- other (4):
+       "Metro Kingdom Master Cup"   [Metro Kingdom]  via node: place::new_place_8
+       "Metro Kingdom Regular Cup"   [Metro Kingdom]  via node: place::new_place_8
+       "Out of a Crate in the City"   [Metro Kingdom]  via node: checkpoint::obj4000
+       "Peach in the Metro Kingdom"   [Metro Kingdom]  via node: checkpoint::obj4904
+
+================ Cap Kingdom  (14 unreachable, reached scenario 3) ================
+  -- needs scenario (kingdom only reached 3) (14):
+       "Bird Traveling in the Fog"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Cap Kingdom Master Cup"   [Cap Kingdom]  via node: checkpoint::obj381
+       "Cap Kingdom Timer Challenge 2"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Caught Hopping Near the Ship!"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Danger Sign"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Fly to the Edge of the Fog"   [Cap Kingdom]  via node: place::new_place
+       "Fog-Shrouded Platform"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Hidden in a Sunken Hat"   [Cap Kingdom]  via node: place::new_place_2
+       "Next to Glasses Bridge"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Spin the Hat, Get a Prize"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Taking Notes: In the Fog"   [Cap Kingdom]  via node: checkpoint::obj2497
+       "Under the Big One's Brim"   [Cap Kingdom]  via node: checkpoint::obj381
+       "Precision Rolling"   [Precision Rolling]  via node: entrance::rollingstart::sub_near
+       "Roll On and On"   [Precision Rolling]  via node: entrance::rollinggoal::sub_far
+
+================ Cloud Kingdom  (9 unreachable, reached scenario 1) ================
+  -- needs scenario (kingdom only reached 1) (9):
+       "King of the Cube!"   [2D Cube]  via node: entrance::cube::sub_near
+       "The Sixth Face"   [2D Cube]  via node: entrance::cube::sub_near
+       "Crossing the Cloud Sea"   [Cloud Kingdom]  via node: start
+       "Digging in the...Cloud?"   [Cloud Kingdom]  via node: start
+       "High, High Above the Clouds"   [Cloud Kingdom]  via node: start
+       "Peach in the Cloud Kingdom"   [Cloud Kingdom]  via node: start
+       "Taking Notes: Up and Down"   [Cloud Kingdom]  via node: start
+       "Picture Match: A Stellar Goomba"   [Picture Match]  via node: entrance::Fukuwarai::sub_near
+       "Picture Match: Basically a Goomba"   [Picture Match]  via node: entrance::Fukuwarai::sub_near
+
+================ Lost Kingdom  (10 unreachable, reached scenario 3) ================
+  -- needs scenario (kingdom only reached 3) (10):
+       "Chasing Klepto"   [Klepto 2 - Lava Boogaloo]  via node: entrance::ClashWorldMoonEX2::sub_near
+       "Extremely Hot Bath"   [Klepto 2 - Lava Boogaloo]  via node: entrance::ClashWorldMoonEX2::sub_near
+       "Jump Down to the Top of a Tree"   [Lost Kingdom]  via node: checkpoint::obj543
+       "Line It Up, Blow It Up"   [Lost Kingdom]  via node: checkpoint::obj543
+       "Lost Kingdom Master Cup"   [Lost Kingdom]  via node: checkpoint::obj543
+       "Lost Kingdom Timer Challenge"   [Lost Kingdom]  via node: checkpoint::obj543
+       "Taking Notes: Stretch and Shrink"   [Lost Kingdom]  via node: checkpoint::obj543
+       "The Shining Fruit"   [Lost Kingdom]  via node: checkpoint::obj543
+       "Aglow in the Jungle"   [Stretch and Traverse the Jungle]  via node: entrance::imomu_01::sub_near
+       "Stretch and Traverse the Jungle"   [Stretch and Traverse the Jungle]  via node: entrance::imomu_02::sub_far
+
+================ Luncheon Kingdom  (17 unreachable, reached scenario 8) ================
+  -- NO PATH (10):
+       "Alcove Behind the Pillars of Magma"   [Luncheon Kingdom]  via node: checkpoint::obj2549
+       "Bon Appétit, Captain Toad!"   [Luncheon Kingdom]  via node: place::new_place_5
+       "By the Cannon Pointed at the Big Pot"   [Luncheon Kingdom]  via node: checkpoint::obj4117
+       "Diving from the Big Pot!"   [Luncheon Kingdom]  via node: checkpoint::obj4117
+       "Light the Far-Off Lanterns"   [Luncheon Kingdom]  via node: checkpoint::obj2292
+       "Luncheon Kingdom Timer Challenge 3"   [Luncheon Kingdom]  via node: checkpoint::obj2292
+       "Luncheon Kingdom: Master Cup"   [Luncheon Kingdom]  via node: checkpoint::obj2292
+       "Luncheon Kingdom: Regular Cup"   [Luncheon Kingdom]  via node: checkpoint::obj2292
+       "On Top of a Tall, Tall Roof"   [Luncheon Kingdom]  via node: checkpoint::obj4117
+       "Taking Notes: Big Pot Swim"   [Luncheon Kingdom]  via node: checkpoint::obj4117
+  -- other (7):
+       "Atop the Jutting Crag"   [Luncheon Kingdom]  via node: place::new_place_4
+       "Found with Luncheon Kingdom Art"   [Luncheon Kingdom]  via node: place::new_place_2
+       "Light the Lantern on the Small Island"   [Luncheon Kingdom]  via node: checkpoint::obj4074
+       "Light the Two Flames"   [Luncheon Kingdom]  via node: start
+       "Overlooking a Bunch of Ingredients"   [Luncheon Kingdom]  via node: place::new_place
+       "Surrounded by Tall Mountains"   [Luncheon Kingdom]  via node: place::new_place_2
+       "Treasure Beneath the Cheese Rocks"   [Luncheon Kingdom]  via node: place::new_place_2
+
+================ Moon Kingdom  (13 unreachable, reached scenario 2) ================
+  -- needs scenario (kingdom only reached 2) (11):
+       "Center of the Galaxy"   [8-Bit Galaxy]  via node: entrance::dot00::sub_near
+       "Edge of the Galaxy"   [8-Bit Galaxy]  via node: entrance::dot00::sub_near
+       "A Swing on Top of a Swing"   [Giant Swings]  via node: entrance::moon::sub_near
+       "Navigating Giant Swings"   [Giant Swings]  via node: entrance::moon::sub_near
+       "Hidden on the Side of the Cliff"   [Moon Kingdom]  via node: checkpoint::obj127
+       "Jumping High as a Frog"   [Moon Kingdom]  via node: event::MoonRockActive_Moon
+       "Moon Kingdom Master Cup"   [Moon Kingdom]  via node: checkpoint::obj1348
+       "Moon Kingdom Timer Challenge 2"   [Moon Kingdom]  via node: checkpoint::obj345
+       "Mysterious Flying Object"   [Moon Kingdom]  via node: checkpoint::obj1348
+       "Taking Notes: In Low Gravity"   [Moon Kingdom]  via node: start
+       "Walking on the Moon: Again!"   [Moon Kingdom]  via node: start
+  -- other (2):
+       "Doctor in the House"   [Wedding Room]  via node: start
+       "Found with Moon Kingdom Art"   [Wedding Room]  via node: start
+
+================ Mushroom Kingdom  (3 unreachable, reached scenario 2) ================
+  -- needs scenario (kingdom only reached 2) (2):
+       "Hat-and-Seek: Mushroom Kingdom"   [Mushroom Kingdom]  via node: (no anchor)
+       "Princess Peach, Home Again!"   [Mushroom Kingdom]  via node: (no anchor)
+  -- other (1):
+       "Found with Mushroom Kingdom Art"   [Peach's Castle]  via node: start
+
