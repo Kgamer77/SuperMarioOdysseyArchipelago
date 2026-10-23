@@ -27,6 +27,8 @@
 #include "Multiplayer/sync/SyncedActor.h"
 #include "Randomizer/TrackerBridge.h"
 
+#include "Archipelago/ArchipelagoSocket.h"
+
 // static HkTrampoline<void, GameSystem*> gameSystemInit = hk::hook::trampoline([](GameSystem* gameSystem) -> void {
 //     nn::nifm::Initialize();
 //     nn::nifm::SubmitNetworkRequest();
@@ -188,6 +190,7 @@ static HkTrampoline<void, al::SystemKit*, sead::Heap*> createHeap = hk::hook::tr
         // dedicated heap from - see TrackerBridge.cpp's sTrackerHeap comment
         // for why it needs one at all.
         TrackerBridge::initHeap();
+        ArchipelagoSocket::initHeap();
     });
 
 void installInitHooks() {

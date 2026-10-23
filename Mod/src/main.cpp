@@ -88,6 +88,9 @@
 #include "Multiplayer/main.hpp"
 #include "Multiplayer/server/Client.hpp"
 
+#include "Archipelago/Archipelago.h"
+#include "Archipelago/ArchipelagoClient.hpp"
+
 #include <cstring>
 
 // ── Forward declarations ──────────────────────────────────────────────────────
@@ -293,6 +296,8 @@ static HkTrampoline<void, HakoniwaSequence*> hakoniwaSequenceHook = hk::hook::tr
     Client::setStageInfo(sequence);
 
     Client::update();
+
+    ArchipelagoClient::update();
 
     updatePlayerInfo(GameDataHolderWriter(stageScene), player, isYukimaru);
 
