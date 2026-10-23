@@ -1,0 +1,611 @@
+#include "Randomizer/BingoMoonTags.h"
+
+#include "ShineDB.h"
+
+namespace Bingo {
+    namespace {
+
+        // Generated from logic/templates/moon_access.csv's
+        // shine_info_is_moon_rock field. Hint UIDs are globally unique ShineDB keys.
+        static constexpr s16 sMoonRockUids[] = {
+            6,
+            7,
+            8,
+            9,
+            10,
+            31,
+            32,
+            35,
+            36,
+            74,
+            78,
+            82,
+            84,
+            106,
+            123,
+            124,
+            125,
+            126,
+            151,
+            152,
+            156,
+            160,
+            161,
+            163,
+            166,
+            168,
+            169,
+            170,
+            174,
+            177,
+            213,
+            214,
+            215,
+            217,
+            223,
+            224,
+            231,
+            232,
+            233,
+            271,
+            276,
+            277,
+            287,
+            308,
+            310,
+            311,
+            312,
+            313,
+            348,
+            349,
+            350,
+            351,
+            355,
+            356,
+            369,
+            370,
+            392,
+            393,
+            395,
+            396,
+            399,
+            400,
+            422,
+            423,
+            431,
+            434,
+            475,
+            476,
+            487,
+            488,
+            489,
+            490,
+            491,
+            492,
+            515,
+            521,
+            540,
+            542,
+            545,
+            546,
+            547,
+            550,
+            553,
+            572,
+            573,
+            574,
+            575,
+            601,
+            602,
+            603,
+            604,
+            673,
+            674,
+            699,
+            701,
+            703,
+            704,
+            712,
+            714,
+            719,
+            720,
+            770,
+            771,
+            773,
+            775,
+            776,
+            778,
+            779,
+            780,
+            783,
+            790,
+            798,
+            799,
+            801,
+            802,
+            810,
+            811,
+            813,
+            816,
+            817,
+            822,
+            823,
+            825,
+            826,
+            828,
+            829,
+            834,
+            835,
+            843,
+            851,
+            852,
+            853,
+            855,
+            864,
+            878,
+            892,
+            894,
+            895,
+            896,
+            897,
+            899,
+            900,
+            901,
+            909,
+            914,
+            915,
+            920,
+            938,
+            940,
+            948,
+            949,
+            950,
+            951,
+            963,
+            965,
+            973,
+            981,
+            983,
+            997,
+            998,
+            1001,
+            1003,
+            1010,
+            1014,
+            1015,
+            1016,
+            1017,
+            1018,
+            1021,
+            1025,
+            1029,
+            1032,
+            1034,
+            1043,
+            1046,
+            1049,
+            1101,
+            1102,
+            1120,
+            1143,
+            1155,
+            1156,
+            1158,
+            1160,
+            1163,
+            1167,
+        };
+
+        static constexpr s16 sChestUids[] = {
+            23,
+            24,
+            100,
+            187,
+            188,
+            203,
+            216,
+            249,
+            355,
+            367,
+            415,
+            417,
+            426,
+            431,
+            448,
+            464,
+            479,
+            483,
+            486,
+            490,
+            530,
+            536,
+            563,
+            566,
+            573,
+            574,
+            582,
+            596,
+            598,
+            599,
+            711,
+            793,
+            802,
+            853,
+            882,
+            937,
+            953,
+            963,
+            981,
+            992,
+            1008,
+            1011,
+            1057,
+            1062,
+            1068,
+            1075,
+            1143,
+            1144,
+        };
+        static constexpr s16 sTimerUids[] = {
+            124,
+            157,
+            264,
+            420,
+            531,
+            539,
+            584,
+            669,
+            670,
+            676,
+            678,
+            686,
+            691,
+            715,
+            798,
+            855,
+            861,
+            863,
+            864,
+            938,
+            977,
+            1003,
+            1010,
+            1022,
+            1054,
+            1137,
+        };
+        static constexpr s16 sRaceUids[] = {
+            153,
+            266,
+            695,
+            707,
+            708,
+            709,
+            720,
+            832,
+            859,
+            894,
+            895,
+            896,
+            897,
+            899,
+            900,
+            901,
+            939,
+            940,
+            967,
+            968,
+            1028,
+            1029,
+            1033,
+            1034,
+            1045,
+            1046,
+        };
+        static constexpr s16 sNoteUids[] = {
+            3,
+            102,
+            151,
+            170,
+            244,
+            306,
+            315,
+            351,
+            393,
+            402,
+            407,
+            442,
+            515,
+            525,
+            556,
+            576,
+            770,
+            783,
+            790,
+            828,
+            833,
+            988,
+            1018,
+            1102,
+            1121,
+            1160,
+            1163,
+        };
+        static constexpr s16 sCaptainToadUids[] = {
+            46,
+            133,
+            204,
+            227,
+            265,
+            318,
+            372,
+            403,
+            443,
+            605,
+            692,
+            694,
+            1000,
+            1122,
+        };
+        static constexpr s16 sTwoDUids[] = {
+            102,
+            150,
+            212,
+            222,
+            263,
+            387,
+            407,
+            466,
+            467,
+            468,
+            504,
+            505,
+            586,
+            603,
+            604,
+            770,
+            783,
+            790,
+            828,
+            875,
+            889,
+            915,
+            929,
+            987,
+            988,
+            1031,
+            1050,
+            1051,
+        };
+        static constexpr s16 sGroundPoundUids[] = {
+            9,
+            10,
+            16,
+            49,
+            77,
+            82,
+            135,
+            184,
+            185,
+            186,
+            213,
+            228,
+            245,
+            246,
+            247,
+            248,
+            271,
+            276,
+            277,
+            339,
+            373,
+            379,
+            401,
+            405,
+            444,
+            445,
+            447,
+            471,
+            506,
+            509,
+            510,
+            511,
+            512,
+            542,
+            594,
+            672,
+            701,
+            775,
+            813,
+            822,
+            823,
+            835,
+            840,
+            851,
+            887,
+            948,
+            952,
+            956,
+            1015,
+            1080,
+            1135,
+            1136,
+            1151,
+            1161,
+        };
+        static constexpr s16 sCrateUids[] = { 74, 121, 240, 369, 404, 507, 843, 892, 1032 };
+        static constexpr s16 sShardUids[] = {
+            2,
+            22,
+            114,
+            118,
+            122,
+            152,
+            193,
+            236,
+            238,
+            300,
+            302,
+            334,
+            386,
+            413,
+            454,
+            489,
+            496,
+            671,
+            801,
+            914,
+            928,
+            1030,
+        };
+        static constexpr s16 sNutUids[] = {
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            160,
+            169,
+            174,
+            177,
+            180,
+            194,
+            195,
+        };
+        // The twelve GrowFlower rewards in Lake, Sand, Seaside, and Mushroom Kingdom.
+        static constexpr s16 sSeedUids[] = {
+            1103,
+            1104,
+            1105,
+            1106,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113,
+            1114,
+            1166,
+        };
+        static constexpr s16 sSheepHerdingUids[] = { 200, 201, 532, 607 };
+        static constexpr s16 sGoombetteUids[] = { 131, 446, 493, 606, 803, 965, 1017 };
+        static constexpr s16 sLakituUids[] = { 4, 416, 502, 690 };
+        static constexpr s16 sRabbitUids[] = {
+            99,
+            148,
+            217,
+            232,
+            289,
+            343,
+            390,
+            475,
+            553,
+            585,
+            613,
+            1002,
+        };
+        static constexpr s16 sBirdUids[] = { 166, 423, 526, 552, 1014, 1120, 1150, 1155, 1156 };
+        static constexpr s16 sHideAndSeekUids[] = { 81, 280, 903, 924, 978, 1021 };
+        static constexpr s16 sSlotsUids[] = { 1040, 1042, 1047 };
+        static constexpr s16 sKoopaTraceWalkingUids[] = { 533, 578, 712, 714, 877, 878 };
+
+        template <s32 N>
+        bool contains(const s16 (&values)[N], s32 uid) {
+            for (s32 i = 0; i < N; i++)
+                if (values[i] == uid)
+                    return true;
+            return false;
+        }
+
+        struct BossMoon {
+            s16 uid;
+            s8 boss;
+        };
+
+        // Physical victory rewards, including distinct Mushroom Kingdom rematches.
+        static constexpr BossMoon sBossMoons[] = {
+            { 218, 1 },
+            { 495, 3 },
+            { 560, 5 },
+            { 424, 4 },
+            { 181, 6 },
+            { 37, 7 },
+            { 290, 9 },
+            { 437, 8 },
+            { 795, 10 },
+            { 332, 11 },
+            { 130, 0 },
+            { 291, 0 },
+            { 314, 0 }, // other Broodal story encounters
+            { 1055, 2 },
+            { 1141, 7 },
+            { 1142, 9 },
+            { 1146, 10 },
+            { 1147, 8 },
+            { 1148, 5 },
+            { 1149, 6 },
+        };
+
+    } // namespace
+
+    u32 getPhysicalMoonTags(const ShineDB::ShineEntry& shine) {
+        u32 tags = PhysicalMoonTag_None;
+        if (contains(sMoonRockUids, shine.uid))
+            tags |= PhysicalMoonTag_MoonRock;
+        if (contains(sChestUids, shine.uid))
+            tags |= PhysicalMoonTag_Chest;
+        if (contains(sTimerUids, shine.uid))
+            tags |= PhysicalMoonTag_Timer;
+        if (contains(sRaceUids, shine.uid))
+            tags |= PhysicalMoonTag_Race;
+        if (contains(sNoteUids, shine.uid))
+            tags |= PhysicalMoonTag_Note;
+        if (contains(sCaptainToadUids, shine.uid))
+            tags |= PhysicalMoonTag_CaptainToad;
+        if (contains(sTwoDUids, shine.uid))
+            tags |= PhysicalMoonTag_TwoD;
+        if (contains(sGroundPoundUids, shine.uid))
+            tags |= PhysicalMoonTag_GroundPound;
+        if (contains(sCrateUids, shine.uid))
+            tags |= PhysicalMoonTag_Crate;
+        if (contains(sShardUids, shine.uid))
+            tags |= PhysicalMoonTag_Shards;
+        if (contains(sNutUids, shine.uid))
+            tags |= PhysicalMoonTag_Nut;
+        if (contains(sSeedUids, shine.uid))
+            tags |= PhysicalMoonTag_Seed;
+        if (contains(sSheepHerdingUids, shine.uid))
+            tags |= PhysicalMoonTag_SheepHerding;
+        if (contains(sGoombetteUids, shine.uid))
+            tags |= PhysicalMoonTag_Goombette;
+        if (contains(sLakituUids, shine.uid))
+            tags |= PhysicalMoonTag_Lakitu;
+        if (contains(sRabbitUids, shine.uid))
+            tags |= PhysicalMoonTag_Rabbit;
+        if (contains(sBirdUids, shine.uid))
+            tags |= PhysicalMoonTag_Bird;
+        if (contains(sHideAndSeekUids, shine.uid))
+            tags |= PhysicalMoonTag_HideAndSeek;
+        if (contains(sSlotsUids, shine.uid))
+            tags |= PhysicalMoonTag_Slots;
+        if (contains(sKoopaTraceWalkingUids, shine.uid))
+            tags |= PhysicalMoonTag_KoopaTraceWalking;
+        return tags;
+    }
+
+    s32 getBossForPhysicalMoon(const ShineDB::ShineEntry& shine, u32* encounterKey) {
+        for (s32 i = 0; i < static_cast<s32>(sizeof(sBossMoons) / sizeof(sBossMoons[0])); i++) {
+            if (sBossMoons[i].uid != shine.uid)
+                continue;
+            if (encounterKey)
+                *encounterKey = 0x60000000u | static_cast<u32>(shine.uid);
+            return sBossMoons[i].boss;
+        }
+        return -1;
+    }
+
+} // namespace Bingo

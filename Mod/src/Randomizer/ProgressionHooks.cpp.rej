@@ -1,0 +1,526 @@
+diff a / src / Randomizer / ProgressionHooks.cpp b / src / Randomizer / ProgressionHooks.cpp(rejected hunks) @ @-997, 236 + 995, 85 @ @ namespace ProgressionHooks {
+    return mask;
+}
+
+- static void storeUnlockSet(GameDataFile* file, u32 mask) {
+    -if (!file)
+        - return;
+    -u32 existing = 0;
+    -if (file->customGetRandoUnlockSet(&existing) && existing == mask)
+        - return;
+    -file->customSetRandoUnlockSet(mask);
+    -requestSave(file);
+    -
+}
+-
+    - // Render the unlock set into the vanilla per-world unlock bits + unlocked count. These are
+    - // OUTPUTS only: every sync overwrites them from the set, so vanilla globe/warp code writing
+    - // mIsUnlockWorld can never corrupt our state (it is re-derived, not read back as authority).
+    -static void renderMaskToUnlockWorld(GameDataFile* file, u32 mask) {
+    -if (!file)
+        - return;
+    -GameProgressData* progress = file->getGameProgressData();
+    -if (!progress || !progress->mIsUnlockWorld)
+        - return;
+    - -for (s32 i = 0; i < WorldMeta::sWorldCount; i++)
+        - progress->mIsUnlockWorld[i]
+        = false;
+    - -s32 count = 0;
+    -for (s32 logicalWorldId = 0; logicalWorldId < WorldMeta::sWorldCount; logicalWorldId++) {
+        -if (!isWorldInMask(mask, logicalWorldId) || !isProgressionRouteWorld(logicalWorldId))
+            - continue;
+        -if (!isValidTravelWorld(logicalWorldId))
+            - continue;
+        - // mIsUnlockWorld is logical-indexed in vanilla (see isProgressionWorldUnlocked).
+            -progress->mIsUnlockWorld[logicalWorldId]
+            = true;
+        -count++;
+        -
+    }
+    -progress->mUnlockWorldNum = count;
+    -
+}
+-
+    - static void calcAccessibleWorlds(bool* accessible, const GameDataFile* file) {
+    -for (s32 i = 0; i < WorldMeta::sWorldCount; i++)
+        - accessible[i]
+        = false;
+    - -const GameProgressData* progress = file ? file->getGameProgressData() : nullptr;
+    -accessible[getStartingProgressionWorldId()] = true;
+    -if (!progress || !progress->mIsUnlockWorld || shouldForceStartWorldOnly(file))
+        - return;
+    - -for (s32 logicalWorldId = 0; logicalWorldId < WorldMeta::sWorldCount; logicalWorldId++) {
+        -if (!isProgressionRouteWorld(logicalWorldId))
+            - continue;
+        - // mIsUnlockWorld is logical-indexed (see isProgressionWorldUnlocked).
+            -if (isValidTravelWorld(logicalWorldId) && progress->mIsUnlockWorld[logicalWorldId])
+            - accessible[logicalWorldId]
+            = true;
+        -
+    }
+    -
+}
+-
+    - static void getOrderedBranchWorlds(const GameProgressData* progress, BranchPair branch, bool isFirstBranch,
+        -s32& first, s32& second) {
+    -(void)isFirstBranch;
+    -first = branch.first;
+    -second = branch.second;
+    - -if (!progress)
+        - return;
+    - - // Put the chosen sibling first (cosmetic map order). The choice is derived from the
+      - // stable unlock mirror, not a separately-stored enum.
+      -if (deriveBranchChoice(progress, branch) == branch.second) {
+        -first = branch.second;
+        -second = branch.first;
+        -
+    }
+    -
+}
+-
+    - // Walk the KingdomRando route in tier order, ordering each branch pair by the chosen sibling.
+    - // Used only by display/warp helpers (e.g. getNextStageName) â€” it reads the rendered unlock
+    - // mirror and is not the unlock authority.
+    -static s32 buildOrderedRoute(const GameProgressData* progress, s32* outRoute) {
+    -s32 count = 0;
+    -for (s32 tierIndex = 0; tierIndex < KingdomRando::getTierCount(); tierIndex++) {
+        -const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIndex);
+        -if (!tier)
+            - continue;
+        - -if (tier->count == 2) {
+            -s32 first = -1;
+            -s32 second = -1;
+            -getOrderedBranchWorlds(progress, getBranchPairForTier(tierIndex), isFirstBranchTierIndex(tierIndex), first, second);
+            -if (isValidTravelWorld(first) && count < sNumWorlds)
+                - outRoute[count++]
+                = first;
+            -if (isValidTravelWorld(second) && count < sNumWorlds)
+                - outRoute[count++]
+                = second;
+            -
+        }
+        else {
+            -for (s32 i = 0; i < tier->count && count < sNumWorlds; i++)
+                - outRoute[count++]
+                = tier->worlds[i];
+            +static bool isProgressionWorldAccessible(const GameDataFile* file, s32 logicalWorldId) {
+                +if (!isValidTravelWorld(logicalWorldId))
+                    + return false;
+                + +for (s32 i = 0; i < sRouteCount; i++) {
+                    +if (sRouteList[i].worldId == logicalWorldId) return true;
+                    +if (!sRouteList[i].isComplete) {
+                        +s32 tierIdx = KingdomRando::findTierIndex(sRouteList[i].worldId);
+                        +if (tierIdx >= 0) {
+                            +const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIdx);
+                            +if (tier && tier->count == 2 && i + 1 < sRouteCount && sRouteList[i + 1].worldId == logicalWorldId) {
+                                +return true;
+                                +
+                            }
+                            +
+                        }
+                        +return false;
+                    }
+                }
+                -return count;
+                +return false;
+            }
+
+            static s32 getLastAccessibleProgressionWorld(const GameDataFile* file) {
+                if (!file)
+                    return -1;
+                - -bool accessible[WorldMeta::sWorldCount];
+                -calcAccessibleWorlds(accessible, file);
+                -const GameProgressData* progress = file->getGameProgressData();
+                s32 last = -1;
+                - -auto considerWorld = [&](s32 logicalWorldId) {
+-            if (isValidTravelWorld(logicalWorldId) && accessible[logicalWorldId])
+-                last = logicalWorldId;
+- };
+                - -auto considerBranchWorlds = [&](BranchPair branch, bool isFirstBranch) {
+-            s32 first = -1;
+-            s32 second = -1;
+-            getOrderedBranchWorlds(progress, branch, isFirstBranch, first, second);
+-            considerWorld(first);
+-            considerWorld(second);
+- };
+                - -for (s32 tierIndex = 0; tierIndex < KingdomRando::getTierCount(); tierIndex++) {
+                    -const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIndex);
+                    -if (!tier)
+                        - continue;
+                    -if (tier->count == 2)
+                        - considerBranchWorlds(getBranchPairForTier(tierIndex), isFirstBranchTierIndex(tierIndex));
+                    -else if (tier->count == 1)
+                        - considerWorld(tier->worlds[0]);
+                    +for (s32 i = 0; i < sRouteCount; i++) {
+                        +if (isValidTravelWorld(sRouteList[i].worldId)) {
+                            +last = sRouteList[i].worldId;
+                            +
+                        }
+                        +if (!sRouteList[i].isComplete) {
+                            +break;
+                            +
+                        }
+                    }
+                    return last;
+                }
+
+                -static bool pushProgressionUnlockCandidate(s32 * candidates, s32 maxCandidates, s32 & count,
+                    -const GameProgressData* progress, s32 logicalWorldId) {
+                    -if (!candidates || count >= maxCandidates || !isValidTravelWorld(logicalWorldId) || isProgressionWorldUnlocked(progress, logicalWorldId))
+                        - return false;
+                    - -for (s32 i = 0; i < count; i++) {
+                        -if (candidates[i] == logicalWorldId)
+                            - return false;
+                        -
+                    }
+                    - -candidates[count++] = logicalWorldId;
+                    -return true;
+                    -
+                }
+                -static s32 calcNextProgressionUnlockCandidates(const GameDataFile* file, s32* candidates, s32 maxCandidates) {
+                    if (!file || !candidates || maxCandidates <= 0)
+                        return 0;
+
+                    -for (s32 i = 0; i < maxCandidates; i++)
+                        - candidates[i]
+                        = -1;
+                    - -const GameProgressData* progress = file->getGameProgressData();
+                    -if (!progress || !progress->mIsUnlockWorld)
+                        - return 0;
+                    - -const s32 currentLogicalWorldId = file->getCurrentWorldId();
+                    -if (!isProgressionRouteWorld(currentLogicalWorldId) || !isProgressionWorldUnlocked(progress, currentLogicalWorldId) || !isProgressionWorldComplete(file, currentLogicalWorldId))
+                        - return 0;
+                    - -s32 count = 0;
+                    -const s32 currentTierIndex = KingdomRando::findTierIndex(currentLogicalWorldId);
+                    -const KingdomRando::RouteTier* currentTier = KingdomRando::getTier(currentTierIndex);
+                    -if (!currentTier)
+                        + s32 currentWorldId
+                        = toLogicalWorldId(file->getCurrentWorldId());
+                    + +s32 activeIndex = -1;
+                    +for (s32 i = 0; i < sRouteCount; i++) {
+                        +if (!sRouteList[i].isComplete) {
+                            +activeIndex = i;
+                            +break;
+                            +
+                        }
+                        +
+                    }
+                    + +if (activeIndex < 0) return 0;
+                    + +if (currentWorldId != sRouteList[activeIndex].worldId) {
+                        return 0;
+                        - -auto pushNextTier = [&]() {
+-            const KingdomRando::RouteTier* nextTier = KingdomRando::getTier(currentTierIndex + 1);
+-            if (!nextTier)
+-                return;
+-            for (s32 i = 0; i < nextTier->count; i++)
+-                pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress, nextTier->worlds[i]);
+- };
+                        - -if (currentTier->count == 2) {
+                            -const BranchPair branch = getBranchPairForTier(currentTierIndex);
+                            -const s32 sibling = getBranchSibling(currentLogicalWorldId, branch);
+                            -if (isValidTravelWorld(sibling) && !isProgressionWorldUnlocked(progress, sibling))
+                                - pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress, sibling);
+                            -else if (isBranchPairComplete(file, branch))
+                                - pushNextTier();
+                            -
+                        }
+                        else {
+                            -pushNextTier();
+                        }
+                        - -return count;
+                        + +s32 collected = getCollectedMoonsForProgression(file, currentWorldId);
+                        +s32 required = getMoonRequirementForWorld(currentWorldId);
+                        +bool complete = collected >= required;
+                        +if (isBossRequiredProgressionWorld(currentWorldId)) {
+                            +complete = complete && isBossProgressComplete(file, currentWorldId);
+                            +
+                        }
+                        + +if (complete && activeIndex + 1 < sRouteCount) {
+                            +candidates[0] = sRouteList[activeIndex + 1].worldId;
+                            +return 1;
+                            +
+                        }
+                        +return 0;
+                    }
+
+                    -static s32 inferNextProgressionUnlockCandidatesFromProgress(const GameProgressData* progress, s32* candidates,
+                        -s32 maxCandidates) {
+                        -if (!progress || !progress->mIsUnlockWorld || !candidates || maxCandidates <= 0)
+                            - return 0;
+                        - -for (s32 i = 0; i < maxCandidates; i++)
+                            - candidates[i]
+                            = -1;
+                        - -if (!isProgressionWorldUnlocked(progress, getStartingProgressionWorldId()))
+                            + static s32 inferNextProgressionUnlockCandidatesFromProgress(const GameProgressData* progress, s32* candidates, s32 maxCandidates) {
+                            +if (!progress || !candidates || maxCandidates <= 0) return 0;
+
+                            -s32 count = 0;
+                            -for (s32 tierIndex = 0; tierIndex < KingdomRando::getTierCount(); tierIndex++) {
+                                -const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIndex);
+                                -if (!tier)
+                                    - continue;
+                                - -if (tier->count == 1) {
+                                    -if (!isProgressionWorldUnlocked(progress, tier->worlds[0]))
+                                            - return pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress, tier->worlds[0])
+                                            -
+                                        ? count
+                                            -
+                                        : 0;
+                                    -continue;
+                                    +for (s32 i = 0; i < sRouteCount; i++) {
+                                        +if (!sRouteList[i].isComplete) {
+                                            +candidates[0] = sRouteList[i].worldId;
+                                            +return 1;
+                                        }
+                                        - -if (tier->count != 2)
+                                            - continue;
+                                        - -const bool firstUnlocked = isProgressionWorldUnlocked(progress, tier->worlds[0]);
+                                        -const bool secondUnlocked = isProgressionWorldUnlocked(progress, tier->worlds[1]);
+                                        -if (!firstUnlocked && !secondUnlocked) {
+                                            -pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress, tier->worlds[0]);
+                                            -pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress, tier->worlds[1]);
+                                            -return count;
+                                            -
+                                        }
+                                        -if (firstUnlocked != secondUnlocked)
+                                                - return pushProgressionUnlockCandidate(candidates, maxCandidates, count, progress,
+                                                    -firstUnlocked ? tier->worlds[1] : tier->worlds[0])
+                                                -
+                                            ? count
+                                                -
+                                            : 0;
+                                    }
+                                    -return 0;
+                                }
+
+                                @ @-1373, 55 + 1220, 38 @ @ namespace ProgressionHooks {
+                                    if (!progress || !progress->mIsUnlockWorld)
+                                        return false;
+
+                                    -const u32 loadedMask = loadUnlockSet(file);
+                                    -u32 mask = loadedMask | startWorldBit();
+                                    - - // Render the current set so the frontier check below sees an accurate unlock state
+                                      - // (calcNextProgressionUnlockCandidates reads the rendered mIsUnlockWorld mirror).
+                                      -renderMaskToUnlockWorld(file, mask);
+                                    - -if (isValidTravelWorld(requestedLogicalWorldId) && !isWorldInMask(mask, requestedLogicalWorldId)) {
+                                        - // Honor the requested unlock when it is the next frontier. Accept it if it passes the
+                                            - // strict current-world-complete gate OR if it is the world the map has already revealed
+                                            - // as next (the tier frontier the unlock animation showed) â€” the two can disagree by a
+                                            - // frame at the globe, and the cosmetic reveal must never out-run the committed set.
+                                            -s32 candidates[2]
+                                            = { -1, -1 };
+                                        -const s32 strictCount = calcNextProgressionUnlockCandidates(file, candidates, 2);
+                                        -bool accept = false;
+                                        -for (s32 i = 0; i < strictCount; i++)
+                                            - accept
+                                            = accept || candidates[i] == requestedLogicalWorldId;
+                                        -if (!accept) {
+                                            -s32 revealed[2] = { -1, -1 };
+                                            -const s32 revealedCount = inferNextProgressionUnlockCandidatesFromProgress(progress, revealed, 2);
+                                            -for (s32 i = 0; i < revealedCount; i++)
+                                                - accept
+                                                = accept || revealed[i] == requestedLogicalWorldId;
+                                            +bool changed = false;
+                                            +s32 currentWorldId = toLogicalWorldId(file->getCurrentWorldId());
+                                            + +s32 activeIndex = -1;
+                                            +for (s32 i = 0; i < sRouteCount; i++) {
+                                                +if (!sRouteList[i].isComplete) {
+                                                    +activeIndex = i;
+                                                    +break;
+                                                }
+                                                -if (accept) {
+                                                    -mask |= 1u << requestedLogicalWorldId;
+                                                    +
+                                                }
+                                                + +if (activeIndex >= 0 && currentWorldId == sRouteList[activeIndex].worldId) {
+                                                    +s32 collected = getCollectedMoonsForProgression(file, currentWorldId);
+                                                    +s32 required = getMoonRequirementForWorld(currentWorldId);
+                                                    +bool complete = collected >= required;
+                                                    +if (isBossRequiredProgressionWorld(currentWorldId)) {
+                                                        +complete = complete && isBossProgressComplete(file, currentWorldId);
+                                                        +
+                                                    }
+                                                    +if (complete) {
+                                                        +sRouteList[activeIndex].isComplete = true;
+                                                        +changed = true;
+                                                        file->customAddHackDictionary(kProgressionStartedFlag);
+                                                    }
+                                                }
+
+                                                - // Pin to the start world only when no progression has legitimately begun (brand-new save
+                                                    - // with no requested unlock). A committed first unlock has already set the started flag, so
+                                                    - // this is correctly skipped and the first Cap -> Cascade unlock is never discarded.
+                                                    -if (shouldForceStartWorldOnly(file))
+                                                    - mask
+                                                    = startWorldBit();
+                                                - -const bool changed = mask != loadedMask;
+                                                -if (changed)
+                                                    - storeUnlockSet(file, mask);
+                                                -renderMaskToUnlockWorld(file, mask);
+                                                +if (changed) {
+                                                    +requestSave(file);
+                                                    +
+                                                }
+                                                return changed;
+                                            }
+
+                                            -static bool isProgressionWorldAccessible(const GameDataFile* file, s32 logicalWorldId) {
+                                                -if (!isValidTravelWorld(logicalWorldId))
+                                                    - return false;
+                                                -bool accessible[WorldMeta::sWorldCount];
+                                                -calcAccessibleWorlds(accessible, file);
+                                                -return accessible[logicalWorldId];
+                                                -
+                                            }
+                                            +
+
+                                                static bool
+                                                isAlreadyGoAccessibleWorld(const GameProgressData* progress, s32 gameWorldId) {
+                                                (void)progress;
+                                                @ @-1502, 106 + 1378, 47 @ @ namespace ProgressionHooks {
+                                                    sLastTotalShineNum = currentShineNum;
+                                                    sLastCurrentWorldId = currentWorldId;
+                                                    sLastExpensiveSyncSeed = Randomizer::getSeed();
+                                                    -sLastUnlockMask = mask;
+                                                }
+
+                                                GameProgressData* progress = file->getGameProgressData();
+                                                const bool forceStartWorldOnly = shouldForceStartWorldOnly(file);
+
+                                                - // Accessible worlds come straight from the set (start world is always accessible).
+                                                    -bool accessible[WorldMeta::sWorldCount];
+                                                -for (s32 i = 0; i < WorldMeta::sWorldCount; i++)
+                                                    - accessible[i]
+                                                    = false;
+                                                -accessible[getStartingProgressionWorldId()] = true;
+                                                -if (!forceStartWorldOnly) {
+                                                    -for (s32 logicalWorldId = 0; logicalWorldId < WorldMeta::sWorldCount; logicalWorldId++) {
+                                                        -if (isWorldInMask(mask, logicalWorldId) && isProgressionRouteWorld(logicalWorldId))
+                                                            - accessible[logicalWorldId]
+                                                            = true;
+                                                        -
+                                                    }
+                                                    -
+                                                }
+                                                - -uintptr_t base = reinterpret_cast<uintptr_t>(file);
+                                                -s32* unlockedWorldId = *reinterpret_cast<s32**>(base + 0x5f0); // GameDataFile::mUnlockedWorldId
+                                                -s32* worldMapIndex = *reinterpret_cast<s32**>(base + 0xb40); // GameDataFile::mWorldMapIndex
+                                                -s32* worldWarpIndex = *reinterpret_cast<s32**>(base + 0xb50); // GameDataFile::mWorldWarpIndex
+                                                - -for (s32 i = 0; i < sNumWorlds; i++) {
+                                                    -if (unlockedWorldId)
+                                                        - unlockedWorldId[i]
+                                                        = -1;
+                                                    -if (worldMapIndex)
+                                                        - worldMapIndex[i]
+                                                        = -1;
+                                                    -if (worldWarpIndex)
+                                                        - worldWarpIndex[i]
+                                                        = -1;
+                                                    -if (progress) {
+                                                        -if (progress->mWorldIdForWorldMap)
+                                                            - progress->mWorldIdForWorldMap[i]
+                                                            = -1;
+                                                        -if (progress->mWorldIdForWorldWarpHole)
+                                                            - progress->mWorldIdForWorldWarpHole[i]
+                                                            = -1;
+                                                        -
+                                                    }
+                                                    -
+                                                }
+                                                - -if (progress && progress->mIsUnlockWorld) {
+                                                    -for (s32 i = 0; i < WorldMeta::sWorldCount; i++)
+                                                        - progress->mIsUnlockWorld[i]
+                                                        = false;
+                                                    -
+                                                }
+                                                -s32 count = 0;
+                                                -auto appendWorld = [&](s32 logicalWorldId) {
+-            if (!isValidTravelWorld(logicalWorldId) || !accessible[logicalWorldId] || count >= sNumWorlds)
+-                return;
+-
+-            // Use logicalWorldId for all UI arrays (mWorldMapIndex, etc.) as the vanilla game expects
+-            if (unlockedWorldId)
+-                unlockedWorldId[count] = logicalWorldId;
+-            if (worldMapIndex)
+-                worldMapIndex[count] = logicalWorldId;
+-            if (worldWarpIndex)
+-                worldWarpIndex[count] = logicalWorldId;
+-
++        for (s32 i = 0; i < sRouteCount; i++) {
++            s32 logicalWorldId = sRouteList[i].worldId;
++            if (!isValidTravelWorld(logicalWorldId)) continue;
++            
++            if (unlockedWorldId) unlockedWorldId[count] = logicalWorldId;
++            if (worldMapIndex) worldMapIndex[count] = logicalWorldId;
++            if (worldWarpIndex) worldWarpIndex[count] = logicalWorldId;
+             if (progress) {
+-                if (progress->mWorldIdForWorldMap)
+-                    progress->mWorldIdForWorldMap[count] = logicalWorldId;
+-                if (progress->mWorldIdForWorldWarpHole)
+-                    progress->mWorldIdForWorldWarpHole[count] = logicalWorldId;
+-
+-                // mIsUnlockWorld is logical-indexed too (vanilla unlockNextWorld/isUnlockWorld both
+-                // use the WorldList index). Indexing it by scenarioWorldId swapped the Lake<->Wooded
+-                // and Snow<->Seaside slots, so vanilla's travel gate and our deposit gate disagreed.
+-                if (progress->mIsUnlockWorld)
+-                    progress->mIsUnlockWorld[logicalWorldId] = true;
++                if (progress->mWorldIdForWorldMap) progress->mWorldIdForWorldMap[count] = logicalWorldId;
++                if (progress->mWorldIdForWorldWarpHole) progress->mWorldIdForWorldWarpHole[count] = logicalWorldId;
++                if (progress->mIsUnlockWorld) progress->mIsUnlockWorld[logicalWorldId] = true;
+             }
+-
+             count++;
+-        };
+-
+-        auto appendBranchWorlds = [&](BranchPair branch) {
+-            // Order by the chosen sibling (read from the mask, since mIsUnlockWorld is being
+-            // rebuilt right now), then fall back to whichever side is actually accessible first.
+-            s32 first = branch.first;
+-            s32 second = branch.second;
+-            if (branchChoiceFromMask(mask, branch) == branch.second) {
+-                first = branch.second;
+-                second = branch.first;
+-            }
+-
+-            if (isValidTravelWorld(first) && isValidTravelWorld(second) && !accessible[first] && accessible[second]) {
+-                const s32 temp = first;
+-                first = second;
+-                second = temp;
++            
++            if (!sRouteList[i].isComplete) {
++                s32 tierIdx = KingdomRando::findTierIndex(logicalWorldId);
++                if (tierIdx >= 0) {
++                    const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIdx);
++                    if (tier && tier->count == 2 && i + 1 < sRouteCount) {
++                        s32 sibling = sRouteList[i + 1].worldId;
++                        if (sibling == tier->worlds[0] || sibling == tier->worlds[1]) {
++                            if (unlockedWorldId) unlockedWorldId[count] = sibling;
++                            if (worldMapIndex) worldMapIndex[count] = sibling;
++                            if (worldWarpIndex) worldWarpIndex[count] = sibling;
++                            if (progress) {
++                                if (progress->mWorldIdForWorldMap) progress->mWorldIdForWorldMap[count] = sibling;
++                                if (progress->mWorldIdForWorldWarpHole) progress->mWorldIdForWorldWarpHole[count] = sibling;
++                                if (progress->mIsUnlockWorld) progress->mIsUnlockWorld[sibling] = true;
++                            }
++                            count++;
++                        }
++                    }
++                }
++                break;
+             }
+-
+-            appendWorld(first);
+-            appendWorld(second);
+-        };
+-
+-        for (s32 tierIndex = 0; tierIndex < KingdomRando::getTierCount(); tierIndex++) {
+-            const KingdomRando::RouteTier* tier = KingdomRando::getTier(tierIndex);
+-            if (!tier)
+-                continue;
+-            if (tier->count == 2)
+-                appendBranchWorlds(getBranchPairForTier(tierIndex));
+-            else if (tier->count == 1)
+-                appendWorld(tier->worlds[0]);
+         }
+ 
+         *reinterpret_cast<s32*>(base + 0xb48) = count; // GameDataFile::mWorldMapNum
