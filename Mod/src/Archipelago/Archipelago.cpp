@@ -15,6 +15,7 @@
 using namespace Archipelago;
 
 void Archipelago::startArchipelago() {
+    initArchipelago();
     // sead::FixedSafeString<128> connectInfo = sead::FixedSafeString<128>();
     // connectInfo.format("%s:%d", getHost(), getPort());
     AP_Init(getHost(), getPort(), kArchipelagoGame, getSlot(), getPassword());
@@ -42,6 +43,45 @@ void Archipelago::startArchipelago() {
     AP_Start();
 
     // Use AP_Get_Connection_status for a layout similar to player counter for displaying if AP connected in pause menu
+}
+
+void Archipelago::initArchipelago() {
+    sWorldPayCounts.fill(0);
+    sWorldScenarios.fill(0);
+    sCollectedShines.fill(0);
+    sCollectedOutfits.fill(0);
+    sCollectedStickers.fill(0);
+    sCollectedSouvenirs.fill(0);
+    sScoutedOutfits.fill(0);
+    sScoutedStickers.fill(0);
+    sScoutedSouvenirs.fill(0);
+    sScoutedShopMoons.fill(0);
+    sCollectedCaptures.fill(0);
+    sCheckedCaptures.fill(0);
+    sCollectedRegionals.fill(0);
+    sCollectedMoonRocks.fill(0);
+    sScoutedMoonRocks.fill(0);
+    sUnlockedAbilities.fill(0);
+    shineTextReplacements.fill({ 0, 0 });
+    sShineColors.fill(0);
+
+    sShopCapTextReplacements.fill({ 0, 0 });
+    sShopClothTextReplacements.fill({ 0, 0 });
+    sShopRegionalTextReplacements.fill({ 0, 0 });
+    sShopMoonTextReplacements = { 0, 0 };
+
+    // Fetch Via LocationScouts and GetDataPackage
+    sGameNames.fill(sead::FixedSafeString<kArchipelagoNameSize>());
+    sSlotNames.fill(sead::FixedSafeString<kArchipelagoNameSize>());
+    sItemNames.fill(sead::FixedSafeString<kArchipelagoNameSize>());
+
+    sOverworldStageConnections.fill({ 0, 0 });
+    sSubAreaStageConnections.fill({ 0, 0 });
+    sLastERStageId = "";
+    sLastERStageName = "";
+    sLastExitStageId = "";
+    sLastExitStageName = "";
+    sStoryShineArray.clear();
 }
 
 void Archipelago::initScene(al::ActorInitInfo* initInfo, al::Scene* scene) {

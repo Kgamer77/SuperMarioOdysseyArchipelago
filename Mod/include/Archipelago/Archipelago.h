@@ -151,7 +151,7 @@ namespace Archipelago {
     static bool sApDeath = false;
     static int sCheckIndex = 0;
 
-    static std::map<int, std::map<int, int>> sCoinValues;
+    // static std::map<int, std::map<int, int>> sCoinValues;
 
     static vector<AP_NetworkItem> sScoutedMoons;
 
@@ -292,6 +292,7 @@ namespace Archipelago {
         return sArchipelagoActive;
     };
     void startArchipelago();
+    void initArchipelago();
     void initScene(al::ActorInitInfo* initInfo, al::Scene* scene);
     inline StageScene* getCurScene() {
         return sCurScene;

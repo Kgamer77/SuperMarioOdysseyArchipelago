@@ -90,6 +90,7 @@
 
 #include "Archipelago/Archipelago.h"
 #include "Archipelago/ArchipelagoClient.hpp"
+#include "Archipelago/ArchipelagoHooks.hpp"
 
 #include <cstring>
 
@@ -1072,7 +1073,7 @@ extern "C" void hkMain() {
     InstallAbilityLockHooks();
     MovementAbilityLock::installHooks();
     InstallQolPatches();
-    CaptureHat::installHooks();
+    // CaptureHat::installHooks();
     // Must stay after every Randomizer installHooks() above: the Multiplayer
     // hooks deliberately avoid the functions those already own, and the mpOn*
     // bridge (Multiplayer/main.hpp) is what keeps its sync features alive on
@@ -1080,6 +1081,7 @@ extern "C" void hkMain() {
     installMultiplayerHooks();
     SDRedirect::installHooks();
     SaveRedirect::installHooks();
+    // InstallArchipelagoHooks();
 
     hk::hook::writeBranchLinkAtSym<"R_hakoniwaSetNerveSetup">(speedboot::hakoniwaSetNerveSetup);
     hk::hook::a64::assemble<"mov w2, #0x1f">().installAtSym<"R_hakoniwaSetNerveCount">();
