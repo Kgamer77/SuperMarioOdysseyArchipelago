@@ -77,27 +77,27 @@ namespace RandoSaveFile {
     // category. A file-select screen BROWSING slots before anything is
     // activated (or generating a brand new save on a background thread)
     // needs to pass its own category explicitly instead.
-    bool readHeader(s32 slot, Header* header, Meta* meta,
+    bool readHeader(s32 slot, Header* header, Meta* meta, SaveRedirect::Category mode = SaveRedirect::getActiveMode(),
         SaveRedirect::Category category = SaveRedirect::getActiveCategory());
-    bool write(s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+    bool write(s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     bool loadAndApply(
-        s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
-    bool updateMeta(s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
-    bool updateMeta(s32 slot, const GameDataFile* file,
+        s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+    bool updateMeta(s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+    bool updateMeta(s32 slot, const GameDataFile* file, SaveRedirect::Category mode = SaveRedirect::getActiveMode(),
         SaveRedirect::Category category = SaveRedirect::getActiveCategory());
-    bool updateMeta(s32 slot, GameDataHolderAccessor accessor,
+    bool updateMeta(s32 slot, GameDataHolderAccessor accessor, SaveRedirect::Category mode = SaveRedirect::getActiveMode(),
         SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     // The metadata write itself is synchronous. Runtime callers may schedule it
     // outside a moon-get demo, and can suppress the verbose diagnostic trace
     // that otherwise writes several debugger lines.
-    bool updateMeta(s32 slot, GameDataHolderAccessor accessor, bool verbose,
+    bool updateMeta(s32 slot, GameDataHolderAccessor accessor, bool verbose, SaveRedirect::Category mode = SaveRedirect::getActiveMode(),
         SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     bool updateSettingsFlags(
-        s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+        s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     // Transactionally updates the version-10 hint price profiles.
     // Loaded older sidecars are upgraded through the same full-file transaction.
     bool updateHintConfiguration(
-        s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+        s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     // Generation-safety-net items are kept in rando.bin until the freshly
     // initialized native save has received them. Applying is main-thread-only;
     // committing the notification bit happens after the native save write.
@@ -105,6 +105,6 @@ namespace RandoSaveFile {
     s32 getAutoGrantCount();
     s32 applyAutoGrants(GameDataHolderWriter writer);
     bool commitAutoGrantsNotified(
-        s32 slot, SaveRedirect::Category category = SaveRedirect::getActiveCategory());
+        s32 slot, SaveRedirect::Category mode = SaveRedirect::getActiveMode(), SaveRedirect::Category category = SaveRedirect::getActiveCategory());
     Randomizer::RunMode getRunMode(const Header& header, const Meta* meta = nullptr);
 } // namespace RandoSaveFile

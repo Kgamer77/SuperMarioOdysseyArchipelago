@@ -1132,6 +1132,7 @@ private:
 
     s32 mSelectedSlot = 1;
     SaveRedirect::Category mSaveCategory = SaveRedirect::Category::SinglePlayer;
+    SaveRedirect::Category mSaveMode = SaveRedirect::Category::Randomizer;
     s32 mActionCount = 0;
     s32 mGenerateFrame = -1;
     s32 mGenerateDoneStep = -1;

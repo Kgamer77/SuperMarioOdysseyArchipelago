@@ -7526,7 +7526,7 @@ void StageSceneStateFileSelect::exeSlotAction() {
     if (compatible) {
         if (selected == 0) {
             SaveRedirect::setActiveSlot(mSelectedSlot, mSaveCategory);
-            if (RandoSaveFile::loadAndApply(mSelectedSlot, mSaveCategory)
+            if (RandoSaveFile::loadAndApply(mSelectedSlot, mSaveMode, mSaveCategory)
                 && (!Randomizer::isBoardRunMode() || Bingo::load(mSelectedSlot, mSaveCategory))) {
                 // Missing logs are expected for saves created before entrance
                 // discovery tracking; load() still resets the in-memory state.
@@ -8861,7 +8861,7 @@ void StageSceneStateFileSelect::exeJoinRoom() {
         (long long)fileSizeOrMissing(
             makeRandoPath(kGuestSlot, SaveRedirect::Category::MultiplayerGuest).cstr()));
 
-    if (RandoSaveFile::loadAndApply(kGuestSlot, SaveRedirect::Category::MultiplayerGuest)
+    if (RandoSaveFile::loadAndApply(kGuestSlot, SaveRedirect::Category::Randomizer, SaveRedirect::Category::MultiplayerGuest)
         && (!Randomizer::isBoardRunMode()
             || Bingo::load(kGuestSlot, SaveRedirect::Category::MultiplayerGuest))) {
         TrackerBridge::loadRoomCodeFromSlot(kGuestSlot, SaveRedirect::Category::MultiplayerGuest);
@@ -8960,7 +8960,7 @@ void StageSceneStateFileSelect::exeActivateSlot() {
             ArrivalLog::recordAutoGrantSummary(autoGrantCount);
         if (mLoadAutoGrantWriteStarted) {
             if (!RandoSaveFile::commitAutoGrantsNotified(
-                    mSelectedSlot, mSaveCategory))
+                    mSelectedSlot, mSaveMode, mSaveCategory))
                 Randomizer::logPush(
                     "exeActivateSlot: load auto-grant notification commit failed slot=%d",
                     mSelectedSlot);
@@ -8988,7 +8988,7 @@ void StageSceneStateFileSelect::exeActivateSlot() {
                 mSelectedSlot, savedForcedPeace, rebuiltForcedPeace);
         }
         if (!RandoSaveFile::updateMeta(
-                mSelectedSlot, mGameDataHolder->getGameDataFile(0), mSaveCategory))
+                mSelectedSlot, mGameDataHolder->getGameDataFile(0), mSaveMode, mSaveCategory))
             Randomizer::logPush("exeActivateSlot: metadata refresh failed slot=%d", mSelectedSlot);
         // After the progression record has loaded, since the redirect asks the
         // kingdom order where the run starts.
@@ -9017,12 +9017,12 @@ void StageSceneStateFileSelect::exeActivateSlot() {
                 file ? file->getCurrentWorldId() : -1,
                 SaveDataAccessFunction::isDoneSave(mGameDataHolder));
             if (!RandoSaveFile::commitAutoGrantsNotified(
-                    mSelectedSlot, mSaveCategory))
+                    mSelectedSlot, mSaveMode, mSaveCategory))
                 Randomizer::logPush(
                     "exeActivateSlot: new-game auto-grant notification commit failed slot=%d",
                     mSelectedSlot);
             if (!RandoSaveFile::updateMeta(
-                    mSelectedSlot, file, mSaveCategory))
+                    mSelectedSlot, file, mSaveMode, mSaveCategory))
                 Randomizer::logPush(
                     "exeActivateSlot: new-game metadata refresh failed slot=%d",
                     mSelectedSlot);

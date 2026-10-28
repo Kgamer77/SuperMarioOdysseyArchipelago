@@ -18,6 +18,7 @@ namespace SaveRedirect {
     namespace {
         static s32 sActiveSlot = -1;
         static Category sActiveCategory = Category::SinglePlayer;
+        static Category sActiveMode = Category::Randomizer;
 
         bool isValidSlot(s32 slot) {
             return slot >= 1 && slot <= 10;
@@ -30,6 +31,15 @@ namespace SaveRedirect {
         bool isSdMounted() {
             sead::FileDeviceMgr* manager = sead::FileDeviceMgr::instance();
             return manager && manager->hasMountedSd();
+        }
+
+        const char* modeRoot(Category category) {
+            switch (category) {
+            case Category::Randomizer:
+                return "SMO-Randomizer";
+            case Category::Archipealgo:
+                return "SMO-Archipelago";
+            }
         }
 
         // "Saves" (single-player) vs "MPSaves" (multiplayer) - two fully
@@ -62,12 +72,29 @@ namespace SaveRedirect {
             nn::fs::CreateDirectory(none.cstr());
         }
 
+        void ensureArchipelagoSaveRoot(Category category) {
+            SDPaths::ensureArchipelagoRoot();
+            al::StringTmp<64> root = { "sd:/SMO-Archipelago/%s", categoryRoot(category) };
+            nn::fs::CreateDirectory(root.cstr());
+            al::StringTmp<64> none = { "sd:/SMO-Archipelago/%s/_none", categoryRoot(category) };
+            nn::fs::CreateDirectory(none.cstr());
+        }
+
         void ensureActiveSlotDirectory() {
             if (!isValidSlot(sActiveSlot))
                 return;
 
             ensureSaveRoot(sActiveCategory);
             al::StringTmp<96> slotPath = { "sd:/SMO-Randomizer/%s/Slot%d", categoryRoot(sActiveCategory), sActiveSlot };
+            nn::fs::CreateDirectory(slotPath.cstr());
+        }
+
+        void ensureArchipelagoActiveSlotDirectory() {
+            if (!isValidSlot(sActiveSlot))
+                return;
+
+            ensureArchipelagoSaveRoot(sActiveCategory);
+            al::StringTmp<96> slotPath = { "sd:/SMO-Archipelago/%s/Slot%d", categoryRoot(sActiveCategory), sActiveSlot };
             nn::fs::CreateDirectory(slotPath.cstr());
         }
 
@@ -82,6 +109,17 @@ namespace SaveRedirect {
             out->format("SMO-Randomizer/%s/Slot%d/%s", categoryRoot(sActiveCategory), sActiveSlot, name);
         }
 
+        void makeArchipelagoWritePath(al::StringTmp<128>* out, const char* name) {
+            ensureArchipelagoSaveRoot(sActiveCategory);
+            if (isCommonSave(name) || !isValidSlot(sActiveSlot)) {
+                out->format("SMO-Archipelago/%s/%s", isCommonSave(name) ? commonRoot(sActiveCategory) : categoryRoot(sActiveCategory), name);
+                return;
+            }
+
+            ensureArchipelagoActiveSlotDirectory();
+            out->format("SMO-Archipelago/%s/Slot%d/%s", categoryRoot(sActiveCategory), sActiveSlot, name);
+        }
+
         void makeReadPath(al::StringTmp<128>* out, const char* name) {
             if (isCommonSave(name)) {
                 out->format("SMO-Randomizer/%s/%s", commonRoot(sActiveCategory), name);
@@ -94,6 +132,20 @@ namespace SaveRedirect {
             }
 
             out->format("SMO-Randomizer/%s/Slot%d/%s", categoryRoot(sActiveCategory), sActiveSlot, name);
+        }
+
+        void makeArchipelagoReadPath(al::StringTmp<128>* out, const char* name) {
+            if (isCommonSave(name)) {
+                out->format("SMO-Archipelago/%s/%s", commonRoot(sActiveCategory), name);
+                return;
+            }
+
+            if (!isValidSlot(sActiveSlot)) {
+                out->format("SMO-Archipelago/%s/_none/%s", categoryRoot(sActiveCategory), name);
+                return;
+            }
+
+            out->format("SMO-Archipelago/%s/Slot%d/%s", categoryRoot(sActiveCategory), sActiveSlot, name);
         }
 
         bool deleteFileIfPresent(const char* path) {
@@ -157,6 +209,10 @@ namespace SaveRedirect {
         sActiveSlot = isValidSlot(slot) ? slot : -1;
         sActiveCategory = category;
         Randomizer::logPush("SAVE REDIRECT active=%d category=%d requested=%d", sActiveSlot, (int)sActiveCategory, slot);
+    }
+
+    Category getActiveMode() {
+        return sActiveMode;
     }
 
     s32 getActiveSlot() {

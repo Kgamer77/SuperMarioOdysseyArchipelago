@@ -13,6 +13,8 @@ namespace SaveRedirect {
     // write a single-player save.
     enum class Category : s32
     {
+        Randomizer,
+        Archipealgo,
         SinglePlayer,
         Multiplayer,
         MultiplayerGuest,
@@ -22,6 +24,7 @@ namespace SaveRedirect {
 
     void installHooks();
     void setActiveSlot(s32 slot, Category category = Category::SinglePlayer);
+    Category getActiveMode();
     s32 getActiveSlot();
     Category getActiveCategory();
     // Deletes every per-slot artifact.  Common.bin is deliberately shared and

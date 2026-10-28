@@ -776,44 +776,57 @@ namespace RandoSaveFile {
             return slot >= 1 && slot <= 10;
         }
 
+        const char* modeRoot(SaveRedirect::Category category) {
+            switch (category) {
+            case SaveRedirect::Category::Randomizer:
+                return "SMO-Randomizer";
+            case SaveRedirect::Category::Archipealgo:
+                return "SMO-Archipelago";
+            }
+        }
+
         const char* categoryRoot(SaveRedirect::Category category) {
             switch (category) {
             case SaveRedirect::Category::Multiplayer:
                 return "MPSaves";
             case SaveRedirect::Category::MultiplayerGuest:
                 return "MPSaves/_guest";
+
+            case SaveRedirect::Category::Archipelago_MultiData:
+                return "MultiData";
+
             default:
                 return "Saves";
             }
         }
 
-        al::StringTmp<128> makeSlotDir(s32 slot, SaveRedirect::Category category) {
-            return al::StringTmp<128>("sd:/SMO-Randomizer/%s/Slot%d", categoryRoot(category), slot);
+        al::StringTmp<128> makeSlotDir(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
+            return al::StringTmp<128>("sd:/%s/%s/Slot%d", modeRoot(mode), categoryRoot(category), slot);
         }
 
-        al::StringTmp<128> makePath(s32 slot, SaveRedirect::Category category) {
+        al::StringTmp<128> makePath(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
             return al::StringTmp<128>(
-                "sd:/SMO-Randomizer/%s/Slot%d/rando.bin", categoryRoot(category), slot);
+                "sd:/%s/%s/Slot%d/rando.bin", modeRoot(mode), categoryRoot(category), slot);
         }
 
-        al::StringTmp<128> makeTempPath(s32 slot, SaveRedirect::Category category) {
+        al::StringTmp<128> makeTempPath(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
             return al::StringTmp<128>(
-                "sd:/SMO-Randomizer/%s/Slot%d/rando.bin.pending", categoryRoot(category), slot);
+                "sd:/%s/%s/Slot%d/rando.bin.pending", modeRoot(mode), categoryRoot(category), slot);
         }
 
-        al::StringTmp<128> makeBackupPath(s32 slot, SaveRedirect::Category category) {
+        al::StringTmp<128> makeBackupPath(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
             return al::StringTmp<128>(
-                "sd:/SMO-Randomizer/%s/Slot%d/rando.bin.backup", categoryRoot(category), slot);
+                "sd:/%s/%s/Slot%d/rando.bin.backup", modeRoot(mode), categoryRoot(category), slot);
         }
 
-        bool ensureSlotDir(s32 slot, SaveRedirect::Category category) {
+        bool ensureSlotDir(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
             if (!isValidSlot(slot))
                 return false;
 
             SDPaths::ensureRandomizerRoot();
-            al::StringTmp<64> root = { "sd:/SMO-Randomizer/%s", categoryRoot(category) };
+            al::StringTmp<64> root = { "sd:/%s/%s", modeRoot(mode), categoryRoot(category) };
             nn::fs::CreateDirectory(root.cstr());
-            nn::fs::CreateDirectory(makeSlotDir(slot, category).cstr());
+            nn::fs::CreateDirectory(makeSlotDir(slot, mode, category).cstr());
             return true;
         }
 
@@ -1316,9 +1329,9 @@ namespace RandoSaveFile {
         }
 
         bool recoverSidecarIfNeeded(
-            s32 slot, SaveRedirect::Category category, bool verbose,
+            s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category, bool verbose,
             bool inspectExisting = false) {
-            const auto primary = makePath(slot, category);
+            const auto primary = makePath(slot, mode, category);
             // Recovery is normally for the rename window, where the primary
             // path is absent. Callers that found transaction artifacts request
             // validation of an existing primary too: it may be a torn/corrupt
@@ -1328,8 +1341,8 @@ namespace RandoSaveFile {
                     return true;
             }
 
-            const auto temp = makeTempPath(slot, category);
-            const auto backup = makeBackupPath(slot, category);
+            const auto temp = makeTempPath(slot, mode, category);
+            const auto backup = makeBackupPath(slot, mode, category);
             const bool tempValid = validateSidecarFile(temp.cstr());
             const bool backupValid = validateSidecarFile(backup.cstr());
 
@@ -1367,7 +1380,7 @@ namespace RandoSaveFile {
             return false;
         }
 
-        bool replaceSidecarTransaction(s32 slot, SaveRedirect::Category category,
+        bool replaceSidecarTransaction(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category,
             const Header& header, const Meta& meta, const u8* payload,
             size_t payloadSize) {
             if (!payload || payloadSize == 0 || payloadSize > cMaxPayloadSize
@@ -1379,11 +1392,11 @@ namespace RandoSaveFile {
             // Resolve a previously interrupted swap before reusing its temp or
             // backup names. A brand-new slot legitimately has nothing to
             // recover, so the return value is intentionally advisory here.
-            recoverSidecarIfNeeded(slot, category, true, true);
+            recoverSidecarIfNeeded(slot, mode, category, true, true);
 
-            const auto primary = makePath(slot, category);
-            const auto temp = makeTempPath(slot, category);
-            const auto backup = makeBackupPath(slot, category);
+            const auto primary = makePath(slot, mode, category);
+            const auto temp = makeTempPath(slot, mode, category);
+            const auto backup = makeBackupPath(slot, mode, category);
             const bool hadValidPrimary = validateSidecarFile(primary.cstr());
             if (!hadValidPrimary && validateSidecarFile(temp.cstr())
                 && !validateSidecarFile(backup.cstr())) {
@@ -1536,9 +1549,9 @@ namespace RandoSaveFile {
             return { record.link, static_cast<EntranceRando::ConnKind>(record.kind) };
         }
 
-        bool writeHeaderAt(s32 slot, const Header& header, SaveRedirect::Category category) {
+        bool writeHeaderAt(s32 slot, const Header& header, SaveRedirect::Category mode, SaveRedirect::Category category) {
             nn::fs::FileHandle handle;
-            const auto path = makePath(slot, category);
+            const auto path = makePath(slot, mode, category);
             if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_ReadWrite).IsFailure())
                 return false;
             const bool ok = nn::fs::WriteFile(handle, 0, &header, sizeof(Header),
@@ -1549,9 +1562,9 @@ namespace RandoSaveFile {
         }
 
         bool writeMetaAt(
-            s32 slot, const Meta& meta, SaveRedirect::Category category, bool verbose = true) {
+            s32 slot, const Meta& meta, SaveRedirect::Category mode, SaveRedirect::Category category, bool verbose = true) {
             nn::fs::FileHandle handle;
-            const auto path = makePath(slot, category);
+            const auto path = makePath(slot, mode, category);
             if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_ReadWrite).IsFailure())
                 return false;
             const bool ok = nn::fs::WriteFile(handle, sizeof(Header), &meta, sizeof(Meta),
@@ -1568,7 +1581,7 @@ namespace RandoSaveFile {
         }
 
         bool readHeaderImpl(
-            s32 slot, Header* header, Meta* meta, bool verbose, SaveRedirect::Category category) {
+            s32 slot, Header* header, Meta* meta, bool verbose, SaveRedirect::Category mode, SaveRedirect::Category category) {
             if (!isValidSlot(slot) || !header) {
                 if (verbose) {
                     Randomizer::logPush("SIDECAR read reject slot=%d header=%d",
@@ -1577,16 +1590,16 @@ namespace RandoSaveFile {
                 return false;
             }
             nn::fs::FileHandle handle;
-            const auto path = makePath(slot, category);
-            const auto temp = makeTempPath(slot, category);
-            const auto backup = makeBackupPath(slot, category);
+            const auto path = makePath(slot, mode, category);
+            const auto temp = makeTempPath(slot, mode, category);
+            const auto backup = makeBackupPath(slot, mode, category);
             // Avoid a full payload/CRC scan on the ordinary read path, but do
             // validate the primary before trusting it when a transactional
             // artifact remains. This lets recovery promote a valid backup or
             // pending sidecar when the existing primary was torn.
             const bool inspectExisting = sidecarFileExists(temp.cstr())
                 || sidecarFileExists(backup.cstr());
-            recoverSidecarIfNeeded(slot, category, verbose, inspectExisting);
+            recoverSidecarIfNeeded(slot, mode, category, verbose, inspectExisting);
             if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_Read).IsFailure()) {
                 if (verbose) {
                     Randomizer::logPush("SIDECAR read open-fail slot=%d path=%s",
@@ -1666,7 +1679,7 @@ namespace RandoSaveFile {
         return applied;
     }
 
-    bool commitAutoGrantsNotified(s32 slot, SaveRedirect::Category category) {
+    bool commitAutoGrantsNotified(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
         if (!sAutoGrantNotificationDirty || sAutoGrantCount <= 0)
             return true;
         if (!isValidSlot(slot))
@@ -1674,7 +1687,7 @@ namespace RandoSaveFile {
 
         Header header = {};
         Meta meta = {};
-        if (!readHeader(slot, &header, &meta, category)
+        if (!readHeader(slot, &header, &meta, mode, category)
             || header.version < cAutoGrantFormatVersion)
             return false;
         if (!sAutoGrantSeedValid || header.seed != sAutoGrantSeed)
@@ -1687,7 +1700,7 @@ namespace RandoSaveFile {
             return false;
 
         nn::fs::FileHandle handle;
-        const auto path = makePath(slot, category);
+        const auto path = makePath(slot, mode, category);
         if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_Read).IsFailure())
             return false;
         const bool readOk = nn::fs::ReadFile(handle,
@@ -1721,7 +1734,7 @@ namespace RandoSaveFile {
         std::memcpy(sPayload + payloadSize - sizeof(block), &block, sizeof(block));
         header.payloadCrc32 = calcCrc32(sPayload, payloadSize);
         const bool ok = replaceSidecarTransaction(
-            slot, category, header, meta, sPayload, payloadSize);
+            slot, mode, category, header, meta, sPayload, payloadSize);
         if (ok)
             sAutoGrantNotificationDirty = false;
         Randomizer::logPush(
@@ -1730,12 +1743,12 @@ namespace RandoSaveFile {
         return ok;
     }
 
-    bool readHeader(s32 slot, Header* header, Meta* meta, SaveRedirect::Category category) {
-        return readHeaderImpl(slot, header, meta, true, category);
+    bool readHeader(s32 slot, Header* header, Meta* meta, SaveRedirect::Category mode, SaveRedirect::Category category) {
+        return readHeaderImpl(slot, header, meta, true, mode, category);
     }
 
-    bool write(s32 slot, SaveRedirect::Category category) {
-        if (!ensureSlotDir(slot, category))
+    bool write(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
+        if (!ensureSlotDir(slot, mode, category))
             return false;
 
         if (Randomizer::isMoonRandoEnabled()
@@ -2046,7 +2059,7 @@ namespace RandoSaveFile {
         header.payloadCrc32 = calcCrc32(sPayload, payloadSize);
 
         const bool ok = replaceSidecarTransaction(
-            slot, category, header, meta, sPayload, payloadSize);
+            slot, mode, category, header, meta, sPayload, payloadSize);
         if (ok) {
             sAutoGrantCount = autoGrantCount;
             for (s32 i = 0; i < autoGrantCount; i++)
@@ -2063,10 +2076,10 @@ namespace RandoSaveFile {
         return ok;
     }
 
-    bool loadAndApply(s32 slot, SaveRedirect::Category category) {
+    bool loadAndApply(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
-        if (!readHeader(slot, &header, &meta, category) || !isCompatible(header))
+        if (!readHeader(slot, &header, &meta, mode, category) || !isCompatible(header))
             return false;
         clearAutoGrantState();
 
@@ -2077,7 +2090,7 @@ namespace RandoSaveFile {
             return false;
 
         nn::fs::FileHandle handle;
-        const auto path = makePath(slot, category);
+        const auto path = makePath(slot, mode, category);
         if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_Read).IsFailure())
             return false;
 
@@ -2774,34 +2787,34 @@ namespace RandoSaveFile {
         return true;
     }
 
-    bool updateMeta(s32 slot, SaveRedirect::Category category) {
+    bool updateMeta(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
         if (!readHeader(slot, &header, &meta, category) || !isCompatible(header))
             return false;
         fillMeta(&meta);
-        return writeMetaAt(slot, meta, category);
+        return writeMetaAt(slot, meta, mode, category);
     }
 
-    bool updateMeta(s32 slot, GameDataHolderAccessor accessor, SaveRedirect::Category category) {
-        return updateMeta(slot, accessor, true, category);
+    bool updateMeta(s32 slot, GameDataHolderAccessor accessor, SaveRedirect::Category mode, SaveRedirect::Category category) {
+        return updateMeta(slot, accessor, true, mode, category);
     }
 
     bool updateMeta(
-        s32 slot, GameDataHolderAccessor accessor, bool verbose, SaveRedirect::Category category) {
+        s32 slot, GameDataHolderAccessor accessor, bool verbose, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
-        if (!readHeaderImpl(slot, &header, &meta, verbose, category) || !isCompatible(header))
+        if (!readHeaderImpl(slot, &header, &meta, verbose, mode, category) || !isCompatible(header))
             return false;
         fillMeta(&meta, accessor);
         if (verbose) {
             Randomizer::logPush("rando meta update slot=%d moons=%d world=%d",
                 slot, meta.totalMoons, meta.currentWorldId);
         }
-        return writeMetaAt(slot, meta, category, verbose);
+        return writeMetaAt(slot, meta, mode, category, verbose);
     }
 
-    bool updateMeta(s32 slot, const GameDataFile* file, SaveRedirect::Category category) {
+    bool updateMeta(s32 slot, const GameDataFile* file, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
         if (!readHeader(slot, &header, &meta, category) || !isCompatible(header))
@@ -2809,22 +2822,22 @@ namespace RandoSaveFile {
         fillMeta(&meta, file);
         Randomizer::logPush("rando meta update slot=%d moons=%d world=%d (file)",
             slot, meta.totalMoons, meta.currentWorldId);
-        return writeMetaAt(slot, meta, category);
+        return writeMetaAt(slot, meta, mode, category);
     }
 
-    bool updateSettingsFlags(s32 slot, SaveRedirect::Category category) {
+    bool updateSettingsFlags(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
         if (!readHeader(slot, &header, &meta, category) || !isCompatible(header))
             return false;
         fillHeaderSettings(&header);
-        return writeHeaderAt(slot, header, category);
+        return writeHeaderAt(slot, header, mode, category);
     }
 
-    bool updateHintConfiguration(s32 slot, SaveRedirect::Category category) {
+    bool updateHintConfiguration(s32 slot, SaveRedirect::Category mode, SaveRedirect::Category category) {
         Header header = {};
         Meta meta = {};
-        if (!readHeader(slot, &header, &meta, category) || !isCompatible(header))
+        if (!readHeader(slot, &header, &meta, mode, category) || !isCompatible(header))
             return false;
         if (header.version != cHintConfigurationSettingsFormatVersion) {
             // An older payload has no gap where an in-place profile record can
@@ -2832,7 +2845,7 @@ namespace RandoSaveFile {
             // path once a loaded run is active; it retains every restored
             // placement/connection record and emits the current full-sidecar
             // format through the established save path.
-            return write(slot, category);
+            return write(slot, mode, category);
         }
 
         const size_t payloadSize = header.fileSize >= sizeof(Header) + sizeof(Meta)
@@ -2841,7 +2854,7 @@ namespace RandoSaveFile {
         if (payloadSize == 0 || payloadSize > cMaxPayloadSize)
             return false;
 
-        const auto path = makePath(slot, category);
+        const auto path = makePath(slot, mode, category);
         nn::fs::FileHandle handle;
         if (nn::fs::OpenFile(&handle, path.cstr(), nn::fs::OpenMode_Read).IsFailure())
             return false;
@@ -2885,7 +2898,7 @@ namespace RandoSaveFile {
         header.payloadCrc32 = calcCrc32(sPayload, payloadSize);
 
         const bool ok = replaceSidecarTransaction(
-            slot, category, header, meta, sPayload, payloadSize);
+            slot, mode, category, header, meta, sPayload, payloadSize);
         Randomizer::logPush("SIDECAR hint-config slot=%d ok=%d", slot, ok);
         return ok;
     }
