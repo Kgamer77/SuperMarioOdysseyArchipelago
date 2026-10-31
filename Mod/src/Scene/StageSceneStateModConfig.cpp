@@ -50,6 +50,8 @@
 #include "Randomizer/TrackerBridge.h"
 #include "Randomizer/WorldMeta.h"
 
+#include "Archipelago/Archipelago.h"
+
 #include "SD/SDHooks.h"
 
 #include "nn/err.h"
@@ -541,6 +543,9 @@ bool StageSceneStateModConfig::sMultiplayerFileSelectRequest = false;
 bool StageSceneStateModConfig::sMpShowEndpoint = false;
 char StageSceneStateModConfig::sMpRoomName[17] = {};
 
+bool StageSceneStateModConfig::sEnterOnArchipelagoPage = false;
+bool StageSceneStateModConfig::sArchipelagoFileSelectRequest = false;
+
 StageSceneStateModConfig::StageSceneStateModConfig(
     const char* name, al::Scene* scene,
     const al::LayoutInitInfo& initInfo,
@@ -802,6 +807,15 @@ void StageSceneStateModConfig::exeMainMenu() {
             return;
         }
         mMpStandalonePage = false;
+
+        if (sEnterOnArchipelagoPage) {
+            sEnterOnArchipelagoPage = false;
+            mApStandalonePage = true;
+            mRandoMiscPage = RANDO_MISC_PAGE_ARCHIPELAGO;
+            al::setNerve(this, &NrvStageSceneStateModConfig.RandomizerMiscSettings);
+            return;
+        }
+        mApStandalonePage = false;
     }
 
     handleMenuInput();
@@ -1474,6 +1488,23 @@ const char* StageSceneStateModConfig::randoMiscOptionDescription(s32 page, s32 i
         default:
             return "";
         }
+    case RANDO_MISC_PAGE_ARCHIPELAGO:
+        switch (index) {
+        case AP_HOSTNAME:
+            return "Server address to connect to. Saved to save file.";
+        case AP_PORT:
+            return "Server port to connect to. Default 38281; Saved to save file.";
+        case AP_SLOT:
+            return "Archipelago slot name to connect to. Saved to save file.";
+        case AP_PASSWORD:
+            return "Archipelago lobby password, leave blank for none. Saves to save file.";
+        case AP_DEATHLINK_OVERRIDE:
+            return "Overrides DeathLink setting from the yaml.";
+        case AP_CONNECT:
+            return "Connect to Archipelago, then continue to Archipelago file select.";
+        default:
+            return "";
+        }
     case RANDO_MISC_PAGE_CONTROLS:
         switch (index) {
         case CONTROLS_UP_THROW:
@@ -1533,6 +1564,8 @@ s32 StageSceneStateModConfig::randoMiscPageCount() const {
         return mControlsMenuOptionsCount;
     case RANDO_MISC_PAGE_MULTIPLAYER:
         return mMultiplayerMenuOptionsCount;
+    case RANDO_MISC_PAGE_ARCHIPELAGO:
+        return mArchipelagoMenuOptionsCount;
     default:
         return mRandoMiscMenuOptionsCount;
     }
@@ -1550,6 +1583,8 @@ s32 StageSceneStateModConfig::randoMiscPageColSize() const {
         return mControlsColSize;
     case RANDO_MISC_PAGE_MULTIPLAYER:
         return mMultiplayerColSize;
+    case RANDO_MISC_PAGE_ARCHIPELAGO:
+        return mArchipelagoColSize;
     default:
         return mRandoMiscColSize;
     }
@@ -1608,6 +1643,17 @@ void StageSceneStateModConfig::applyRandoMiscPageStyles() {
             // keyboard rows and Connect is an action, all of which render their
             // value inside the row text itself.
             if (i == MP_SHOW_ENDPOINT)
+                applyRowStyle(item, RowStyle::Check);
+            else
+                applyRowStyle(item, RowStyle::Base);
+            continue;
+        }
+
+        if (mRandoMiscPage == RANDO_MISC_PAGE_ARCHIPELAGO) {
+            // Only the show/hide toggle is a checkbox; IP/Port/Room Name are
+            // keyboard rows and Connect is an action, all of which render their
+            // value inside the row text itself.
+            if (i == AP_DEATHLINK_OVERRIDE)
                 applyRowStyle(item, RowStyle::Check);
             else
                 applyRowStyle(item, RowStyle::Base);
@@ -1685,6 +1731,10 @@ void StageSceneStateModConfig::loadRandoMiscPage(s32 page) {
         rebuildControlsRoll();
     } else if (page == RANDO_MISC_PAGE_MULTIPLAYER) {
         al::setPaneString(menuList[MENU_RANDOMIZER_MISC], "TxtOption", u"Multiplayer", 0);
+        if (mMenuFooters[MENU_RANDOMIZER_MISC])
+            mMenuFooters[MENU_RANDOMIZER_MISC]->changeText(makeMainFooterText());
+    } else if (page == RANDO_MISC_PAGE_ARCHIPELAGO) {
+        al::setPaneString(menuList[MENU_RANDOMIZER_MISC], "TxtOption", u"Archipelago", 0);
         if (mMenuFooters[MENU_RANDOMIZER_MISC])
             mMenuFooters[MENU_RANDOMIZER_MISC]->changeText(makeMainFooterText());
     } else {
@@ -1975,6 +2025,11 @@ void StageSceneStateModConfig::updateRandomizerMiscOptions() {
         return;
     }
 
+    if (mRandoMiscPage == RANDO_MISC_PAGE_ARCHIPELAGO) {
+        updateArchipelagoOptions();
+        return;
+    }
+
     msgList[MENU_RANDOMIZER_MISC]->mBuffer[RANDO_MISC_SKYBOXES].copy(u"Skyboxes:");
 
     msgList[MENU_RANDOMIZER_MISC]->mBuffer[RANDO_MISC_STABILIZE_SHADERS].copy(u"Stabilize Shaders");
@@ -2110,6 +2165,21 @@ void StageSceneStateModConfig::exeRandomizerMiscSettings() {
             }
         }
 
+        if (!mApStandalonePage) {
+            if (al::isPadTriggerL() && mRandoMiscPage > 0) {
+                loadRandoMiscPage(mRandoMiscPage - 1);
+                mActiveColumn = 0;
+                activateInput();
+                return;
+            }
+            if (al::isPadTriggerR() && mRandoMiscPage < RANDO_MISC_PAGE_COUNT - 1) {
+                loadRandoMiscPage(mRandoMiscPage + 1);
+                mActiveColumn = 0;
+                activateInput();
+                return;
+            }
+        }
+
         handleTwoColumnNavigationInput(
             mInput, mCurrentList, randoMiscPageCount(), randoMiscPageColSize(), mActiveColumn);
 
@@ -2142,6 +2212,8 @@ void StageSceneStateModConfig::exeRandomizerMiscSettings() {
             // (sSuppressLiveData).
             if (mMpStandalonePage)
                 exitMultiplayerMenu();
+            else if (mApStandalonePage)
+                exitArchipelagoMenu();
             else
                 endSubMenu();
         }
@@ -2212,6 +2284,50 @@ void StageSceneStateModConfig::exeRandomizerMiscSettings() {
                 break;
             }
             refreshMultiplayerRows();
+            activateInput();
+            return;
+        }
+
+        if (mRandoMiscPage == RANDO_MISC_PAGE_ARCHIPELAGO) {
+            switch (mCurrentList->mCurSelected) {
+            case AP_HOSTNAME:
+                mApKeyboardField = mCurrentList->mCurSelected;
+                al::setNerve(this, &NrvStageSceneStateModConfig.OpenKeyboardArchipelago);
+                return;
+
+            case AP_PORT:
+                mApKeyboardField = mCurrentList->mCurSelected;
+                al::setNerve(this, &NrvStageSceneStateModConfig.OpenKeyboardArchipelago);
+                return;
+
+            case AP_SLOT:
+                mApKeyboardField = mCurrentList->mCurSelected;
+                al::setNerve(this, &NrvStageSceneStateModConfig.OpenKeyboardArchipelago);
+                return;
+
+            case AP_PASSWORD:
+                mApKeyboardField = mCurrentList->mCurSelected;
+                al::setNerve(this, &NrvStageSceneStateModConfig.OpenKeyboardArchipelago);
+                return;
+            case AP_DEATHLINK_OVERRIDE:
+                Archipelago::setDeathLinkFlag(!Archipelago::isDeathLinkEnabled());
+                break;
+            case AP_CONNECT:
+                // Kicks the connection off and returns immediately; the
+                // handshake is then polled a frame at a time by
+                // updateMultiplayerConnect() at the top of this nerve. It used
+                // to be one blocking call that slept up to 30 SECONDS on this
+                // thread waiting for the server's room assignment - and since
+                // this is the main thread, a server that accepted the socket
+                // but never assigned a room presented as the game hanging at
+                // 0 fps on the Connect row, with the actual reason only
+                // appearing half a minute later if you waited it out.
+                startArchipelagoConnect();
+                break;
+            default:
+                break;
+            }
+            refreshArchipelagoRows();
             activateInput();
             return;
         }

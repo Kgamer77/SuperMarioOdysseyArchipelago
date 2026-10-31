@@ -856,6 +856,13 @@ namespace MenuText {
     inline constexpr s32 ROLL_TEAM_COUNT = 4;
 
     // ==========================================================================
+    // Archipelago
+    // ==========================================================================
+    inline constexpr const char16_t* PAGE_ARCHIPELAGO = u"Archipelago";
+
+
+
+    // ==========================================================================
     // Summary
     // ==========================================================================
 
@@ -890,6 +897,7 @@ namespace MenuText {
     inline constexpr const char16_t* OPT_CUSTOM_TAB_PAGE_QOL_II_LABEL = u"Quality of Life II:";
     inline constexpr const char16_t* OPT_CUSTOM_TAB_PAGE_TRACKER_LABEL = u"Tracker:";
     inline constexpr const char16_t* OPT_CUSTOM_TAB_PAGE_MULTIPLAYER_LABEL = u"Multiplayer:";
+    inline constexpr const char16_t* OPT_CUSTOM_TAB_PAGE_ARCHIPELAGO_LABEL = u"Archipelago:";
     inline constexpr const char16_t* OPT_CUSTOM_TAB_PAGE_SUMMARY_LABEL = u"Summary:";
 
     // ========================================================================

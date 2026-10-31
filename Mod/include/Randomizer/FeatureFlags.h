@@ -61,7 +61,7 @@
 // Client::isSocketActive(), and Multiplayer/hooks/initHooks.cpp is what creates
 // gHeap and TrackerBridge's heap for the whole mod, so it must keep running.
 #ifndef SMOR_FEATURE_MULTIPLAYER
-#define SMOR_FEATURE_MULTIPLAYER 0
+#define SMOR_FEATURE_MULTIPLAYER 1
 #endif
 
 // Archipelago is a title-menu row only - the row is deliberately inert (see

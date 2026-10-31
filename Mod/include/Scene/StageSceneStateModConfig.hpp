@@ -589,8 +589,8 @@ private:
         AP_DEATHLINK_OVERRIDE = 4, // Checkbox never masked
         AP_CONNECT = 5, // action
     };
-    static constexpr int mArchipelgoMenuOptionsCount = 5;
-    static constexpr int mArchipelagoColSize = 5;
+    static constexpr int mArchipelagoMenuOptionsCount = 6;
+    static constexpr int mArchipelagoColSize = 6;
 
     // Which of the three keyboard rows OpenKeyboardArchipelago is editing.
     // -1 when that nerve isn't active.
@@ -604,6 +604,7 @@ private:
     bool mApConnectPending = false;
     s32 mApConnectFrames = 0;
     s32 mApRestoreRow = -1;
+    bool mApStandalonePage = false;
     static constexpr s32 cApConnectTimeoutFrames = 60 * 30;
 
     void updateArchipelagoOptions();
@@ -628,10 +629,12 @@ private:
         // loadRandoMiscPage()'s clamp are the only two readers, and nothing
         // sizes an array by this.
         RANDO_MISC_PAGE_MULTIPLAYER = 5,
+        RANDO_MISC_PAGE_ARCHIPELAGO = 6,
         // A Multiplayer Settings child page used to sit at 6, holding Death
         // Link. It moved to the file select (see MP_CONNECT's comment above),
         // and since it was the last value, dropping it shifts nothing.
-        RANDO_MISC_PAGE_COUNT = SMOR_FEATURE_MULTIPLAYER ? 6 : 5,
+        RANDO_MISC_PAGE_COUNT = 5 + (Randomizer::FeatureFlags::Multiplayer ? 1 : 0)
+            + (Randomizer::FeatureFlags::Archipelago ? 1 : 0),
     };
     s32 mRandoMiscPage = RANDO_MISC_PAGE_MISC;
     RollPartsData* mRandoMiscRollParts = nullptr; // active shared-page data

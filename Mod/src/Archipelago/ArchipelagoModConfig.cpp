@@ -42,6 +42,18 @@
 #include <cstdlib>
 #include <cstring>
 
+namespace MenuUtilFunctions {
+
+    static void setMenuRowText(sead::WFixedSafeString<0x200>& row, const char* fmt, ...) {
+        char buf[96];
+        va_list args;
+        va_start(args, fmt);
+        nn::util::VSNPrintf(buf, sizeof(buf), fmt, args);
+        va_end(args);
+        row.convertFromMultiByteString(buf, strlen(buf));
+    }
+};
+
 // Re-renders the Archipelago rows in place, without going through
 // loadRandoMiscPage().
 //
@@ -83,20 +95,20 @@ void StageSceneStateModConfig::updateArchipelagoOptions() {
     char portText[16] = {};
     nn::util::SNPrintf(portText, sizeof(portText), "%d", Archipelago::getPort());
 
-    setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_HOSTNAME],
+    MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_HOSTNAME],
         "Hostname: %s", Archipelago::getHost());
-    setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_PORT], "Port: %s", portText);
-    setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_SLOT],
+    MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_PORT], "Port: %s", portText);
+    MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_SLOT],
         "Slot Name: %s", Archipelago::getSlot());
 
     // char masked[80] = {};
     // maskEndpointText(masked, sizeof(masked), Archipelago::getHost());
-    // setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_HOSTNAME], "IP Address: %s", masked);
+    // MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_HOSTNAME], "IP Address: %s", masked);
     // maskEndpointText(masked, sizeof(masked), portText);
-    // setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_PORT], "Port: %s", masked);
+    // MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_PORT], "Port: %s", masked);
 
     // if (mApSaveStatusBuf[0])
-    //     setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[Ap_SAVE_SETTINGS],
+    //     MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[Ap_SAVE_SETTINGS],
     //         "Save Settings - %s", mApSaveStatusBuf);
     // else if (Archipelago::hasSessionOverride())
     //     msgList[MENU_RANDOMIZER_MISC]->mBuffer[Ap_SAVE_SETTINGS].copy(
@@ -108,7 +120,7 @@ void StageSceneStateModConfig::updateArchipelagoOptions() {
     // joining them, and is the one field they must set themselves.
 
     if (mApStatusBuf[0])
-        setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_CONNECT],
+        MenuUtilFunctions::setMenuRowText(msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_CONNECT],
             "Connect - %s", mApStatusBuf);
     else if (!Archipelago::getHost()[0])
         msgList[MENU_RANDOMIZER_MISC]->mBuffer[AP_CONNECT].copy(

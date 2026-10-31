@@ -467,7 +467,7 @@ namespace PauseMenuHooks {
                     // decide-trigger frame entirely instead of falling
                     // through - idle frames below still reach orig()
                     // normally, so animation/pose keeps working.
-                    // StageSceneStateModConfig::requestArchipelagoPageOnAppear();
+                    StageSceneStateModConfig::requestArchipelagoPageOnAppear();
                     return;
                 }
                 sTitleSelectedRow = menu->mSelectParts->mCursorItemIndex;

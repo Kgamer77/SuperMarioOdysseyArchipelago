@@ -153,7 +153,7 @@ void SpeedbootLoad::updateTextElements() {
     const char16_t* kingdom = getKingdomName(stageName);
 
     if (kingdom) {
-        Randomizer::logPush("Enter Kingdom");
+        // Randomizer::logPush("Enter Kingdom");
         al::setPaneString(this, "TxtKingdom", kingdom, 0);
     } else {
         sead::WFormatFixedSafeString<0x100> fallback(u"");
@@ -163,37 +163,37 @@ void SpeedbootLoad::updateTextElements() {
         }
         al::setPaneString(this, "TxtKingdom", fallback.cstr(), 0);
     }
-    Randomizer::logPush("Dot Count");
+    // Randomizer::logPush("Dot Count");
     s32 dotCount = ((s32)(mRotTime * 0.8f)) % 4;
     sead::WFormatFixedSafeString<0x20> loadingStr(u"Loading");
     for (s32 i = 0; i < dotCount; i++)
         loadingStr.append(u".");
     al::setPaneString(this, "TxtLoading", loadingStr.cstr(), 0);
 
-    Randomizer::logPush("Display  Percent");
+    // Randomizer::logPush("Display  Percent");
     f32 displayPercent = sead::Mathf::clamp(mProgression * 100.0f, 0.0f, 100.0f);
     sead::WFormatFixedSafeString<0x20> percentStr(u"");
     percentStr.appendWithFormat(u"%.0f%%", displayPercent);
     al::setPaneString(this, "TxtLoadingPercent", percentStr.cstr(), 0);
 
-    Randomizer::logPush("Progress");
+    // Randomizer::logPush("Progress");
 
     sead::WFormatFixedSafeString<0x100> debugStr(u"Progress: %.1f%%", displayPercent);
     al::setPaneString(this, "TxtDebug", debugStr.cstr(), 0);
 
-    Randomizer::logPush("Mod Name");
+    // Randomizer::logPush("Mod Name");
 
     al::setPaneString(this, "TxtCurModName", u"Randomizer", 0);
-    Randomizer::logPush("Version");
+    // Randomizer::logPush("Version");
 
     al::setPaneStringFormat(this, "TxtCurModVersion", "%s (%s)\n", TOSTRING(BUILDVERSTR), TOSTRING(BUILDDATESTR));
-    Randomizer::logPush("Credits");
+    // Randomizer::logPush("Credits");
     al::setPaneString(this, "TxtCredits", u"CONTRIBUTORS", 0);
-    Randomizer::logPush("Tip");
+    // Randomizer::logPush("Tip");
 
-    // al::setPaneString(this, "TxtTip", u"  ", 0); // useless rn i think
+    al::setPaneString(this, "TxtTip", u"  ", 0); // useless rn i think
 
-    Randomizer::logPush("Contributors");
+    // Randomizer::logPush("Contributors");
     // Contributors list is 6 individually-colorable panes (TxtContrib0..5),
     // split out of the original single TxtContributors pane so each name can
     // get its own exact-hex al::setPaneVtxColor tint.
@@ -204,19 +204,19 @@ void SpeedbootLoad::updateTextElements() {
     const sead::Color4u8 kColorFireRising(0xeb, 0x3a, 0x0e, 255); // #eb3a0e
     const sead::Color4u8 kColorMrKatzenGaming(0x86, 0x0d, 0xff, 255); // #860dff
 
-    // al::setPaneString(this, "TxtContrib0", u"Onijuiku_", 0);
-    // al::setPaneVtxColor(this, "TxtContrib0", kColorOnijuiku);
+    al::setPaneString(this, "TxtContrib0", u"Onijuiku_", 0);
+    al::setPaneVtxColor(this, "TxtContrib0", kColorOnijuiku);
     // Randomizer::logPush("2nd Contrib");
 
-    // al::setPaneString(this, "TxtContrib1", u"Karateman", 0);
-    // al::setPaneVtxColor(this, "TxtContrib1", kColorKarateman);
-    // al::setPaneString(this, "TxtContrib2", u"1tsAJ", 0);
-    // al::setPaneVtxColor(this, "TxtContrib2", kColorAJ);
-    // al::setPaneString(this, "TxtContrib3", u"BaconFearMC", 0);
-    // al::setPaneVtxColor(this, "TxtContrib3", kColorBaconFearMC);
-    // al::setPaneString(this, "TxtContrib4", u"FireRising", 0);
-    // al::setPaneVtxColor(this, "TxtContrib4", kColorFireRising);
-    // al::setPaneString(this, "TxtContrib5", u"MrKatzenGaming", 0);
-    // al::setPaneVtxColor(this, "TxtContrib5", kColorMrKatzenGaming);
-    Randomizer::logPush("Finished Text Elements");
+    al::setPaneString(this, "TxtContrib1", u"Karateman", 0);
+    al::setPaneVtxColor(this, "TxtContrib1", kColorKarateman);
+    al::setPaneString(this, "TxtContrib2", u"1tsAJ", 0);
+    al::setPaneVtxColor(this, "TxtContrib2", kColorAJ);
+    al::setPaneString(this, "TxtContrib3", u"BaconFearMC", 0);
+    al::setPaneVtxColor(this, "TxtContrib3", kColorBaconFearMC);
+    al::setPaneString(this, "TxtContrib4", u"FireRising", 0);
+    al::setPaneVtxColor(this, "TxtContrib4", kColorFireRising);
+    al::setPaneString(this, "TxtContrib5", u"MrKatzenGaming", 0);
+    al::setPaneVtxColor(this, "TxtContrib5", kColorMrKatzenGaming);
+    // Randomizer::logPush("Finished Text Elements");
 }

@@ -32,8 +32,8 @@ void Archipelago::startArchipelago() {
     AP_RegisterSlotDataIntCallback("death_link", setDeathLinkFlag);
     AP_RegisterSlotDataRawCallback("counts", setMoonRequirements);
     AP_RegisterSlotDataMapIntIntCallback("shine_colors", setShineColors);
-    AP_RegisterSlotDataRawCallback("coin_values", setMoonRequirements);
-    AP_RegisterSlotDataRawCallback("entrances", setMoonRequirements);
+    AP_RegisterSlotDataRawCallback("coin_values", setCoinValues);
+    AP_RegisterSlotDataRawCallback("entrances", setEntranceBindings);
 
     // AP_RegisterSlotDataRawCallback();
 
@@ -178,16 +178,34 @@ void Archipelago::addRegionalCoin(int index) {
     sCollectedRegionals[index / 8] = add(checkedRegionalsEntry, index);
 }
 
-void Archipelago::setMoonRequirements(std::string data) {
-    cJSON* reqs = cJSON_ParseWithLength(data.c_str(), data.size());
+void Archipelago::unlockAbility(int index) {
+    u8 checkedAbilityEntry = sUnlockedAbilities[index / 8];
 
+    sUnlockedAbilities[index / 8] = add(checkedAbilityEntry, index);
+}
+
+bool Archipelago::isAbilityUnlocked(int index) {
+    u8 checkedAbilityEntry = sUnlockedAbilities[index / 8];
+
+    return has(checkedAbilityEntry, index);
+}
+
+void Archipelago::setApDeath(bool value) {
+    sApDeath = value;
+}
+
+void Archipelago::setDying(bool value) {
+    sApDeath = value;
+}
+
+void Archipelago::setMoonRequirements(cJSON* data) {
     const char* kingdoms[] = { "Cap", "Cascade", "Sand", "Wooded", "Lake", "Cloud", "Lost", "Metro", "Seaside",
         "Snow", "Luncheon", "Ruined", "Bowser's", "Moon", "Mushroom", "Dark Side", "Darker Side" };
 
     for (int i = 0; i < 17; i++) {
-        sWorldPayCounts[i] = cJSON_GetObjectItem(reqs, kingdoms[i])->valueint;
+        sWorldPayCounts[i] = cJSON_GetObjectItem(data, kingdoms[i])->valueint;
     }
-    cJSON_Delete(reqs);
+    cJSON_Delete(data);
 }
 
 void Archipelago::setShineColors(std::map<int, int> data) {
@@ -197,7 +215,7 @@ void Archipelago::setShineColors(std::map<int, int> data) {
     }
 }
 
-void Archipelago::setCoinValues(std::string data) {
+void Archipelago::setCoinValues(cJSON* data) {
     // cJSON* coinValues = cJSON_ParseWithLength(data.c_str(), data.size());
 
     // for (unsigned int i = 0; i < root.size(); i++) {
@@ -212,10 +230,9 @@ void Archipelago::setCoinValues(std::string data) {
     // }
 }
 
-void Archipelago::setEntranceBindings(std::string data) {
-    cJSON* erBindings = cJSON_ParseWithLength(data.c_str(), data.size());
-    cJSON* overWorld = cJSON_GetObjectItem(cJSON_GetObjectItem(erBindings, "entrances"), "over_world");
-    cJSON* subArea = cJSON_GetObjectItem(cJSON_GetObjectItem(erBindings, "entrances"), "sub_area");
+void Archipelago::setEntranceBindings(cJSON* data) {
+    cJSON* overWorld = cJSON_GetObjectItem(cJSON_GetObjectItem(data, "entrances"), "over_world");
+    cJSON* subArea = cJSON_GetObjectItem(cJSON_GetObjectItem(data, "entrances"), "sub_area");
     cJSON* map_idx = NULL;
     cJSON_ArrayForEach(map_idx, overWorld) {
         int key = std::stoi(map_idx->string);
@@ -233,7 +250,7 @@ void Archipelago::setEntranceBindings(std::string data) {
             static_cast<short>(cJSON_GetArrayItem(map_idx, 1)->valueint)
         };
     }
-    cJSON_Delete(erBindings);
+    cJSON_Delete(data);
 }
 
 /*

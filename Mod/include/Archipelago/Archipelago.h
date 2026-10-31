@@ -449,10 +449,10 @@ namespace Archipelago {
         return sIsMotionInputRebound;
     };
 
-    void setMoonRequirements(std::string data);
+    void setMoonRequirements(cJSON* data);
     void setShineColors(std::map<int, int> data);
-    void setCoinValues(std::string data);
-    void setEntranceBindings(std::string data);
+    void setCoinValues(cJSON* data);
+    void setEntranceBindings(cJSON* data);
 
     bool chooseTalkatooSpokenUtf8(int world_id, int index, char* out, u32 out_cap);
     // void setConnectInitFlag(bool value) {

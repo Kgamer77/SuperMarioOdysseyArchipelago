@@ -2103,6 +2103,15 @@ const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sGuestMult
         MenuText::ROLL_TEAM, MenuText::ROLL_TEAM_COUNT },
 };
 
+// Archipelago Page
+const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sArchipelagoOptions[] = {
+    // { OPT_TEAM, KIND_ROLL, MenuText::OPT_TEAM_LABEL,
+    //     MenuText::ROLL_TEAM, MenuText::ROLL_TEAM_COUNT },
+    // { OPT_DEATH_LINK, KIND_CHECK, MenuText::OPT_DEATH_LINK_LABEL, nullptr, 0 },
+    // { OPT_SYNC_OTHER_TEAMS, KIND_CHECK,
+    //     MenuText::OPT_SYNC_OTHER_TEAMS_LABEL, nullptr, 0 },
+};
+
 const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sSummaryOptions[] = {
     { OPT_SAVE_AS_PRESET, KIND_ACTION, MenuText::OPT_SAVE_AS_PRESET_LABEL, nullptr, 0 },
     { OPT_GENERATE_SEED, KIND_ACTION, MenuText::OPT_GENERATE_SEED_LABEL, nullptr, 0 },
@@ -2148,6 +2157,7 @@ const StageSceneStateFileSelect::PageDef StageSceneStateFileSelect::sPages[] = {
     // Seed - the room's settings have to be set before the seed that records
     // them is made.
     PAGE_DEF(MenuText::PAGE_MULTIPLAYER, sMultiplayerOptions),
+    PAGE_DEF(MenuText::PAGE_ARCHIPELAGO, sArchipelagoOptions),
     PAGE_DEF(MenuText::PAGE_SUMMARY, sSummaryOptions),
 };
 

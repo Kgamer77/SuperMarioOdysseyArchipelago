@@ -125,7 +125,7 @@ ${PROJECT_SOURCE_DIR}/lib/APCppNX/zlib/adler32.c
 
 list(FILTER SOURCES_APCPP EXCLUDE REGEX "/.*(test|mock|example|ws).*/")
 list(FILTER SOURCES_APCPP EXCLUDE REGEX "/(test|main|httpd|linenoise|zfstream|zstream|msgpack11|CLI11).*")
-list(FILTER SOURCES_ZLIB EXCLUDE REGEX "/(contrib)/*")
+# list(FILTER SOURCES_ZLIB EXCLUDE REGEX "*/contrib/*")
 # list(FILTER SOURCES_ZLIB EXCLUDE REGEX "/(gz)*.")
 # list(FILTER SOURCES_APCPP EXCLUDE REGEX "/IX*(SelectInterruptPipe|Agent|Uuid)*.*")
 
