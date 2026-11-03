@@ -371,12 +371,20 @@ namespace PauseMenuHooks {
                 return;
             }
 
+            if (StageSceneStateModConfig::consumeArchipelagoFileSelectRequest()) {
+                if (gStageSceneStateFileSelect) {
+                    gStageSceneStateFileSelect->setSaveCategory(SaveRedirect::Category::Archipealgo);
+                }
+                al::setNerve(menu, &NrvStageSceneStatePauseMenu.FileSelect);
+            }
+
             if (sTitleStartPendingFrames > 0) {
                 menu->mSelectParts->update();
                 sTitleStartPendingFrames++;
                 if (sTitleStartPendingFrames >= cTitleStartRedirectDelay) {
                     sTitleStartPendingFrames = 0;
-                    if (sTitleSelectedRow == cTitleRowMp) {
+                    switch (sTitleSelectedRow) {
+                    case cTitleRowMp: {
                         // Route through the EXISTING FileSelect nerve rather
                         // than a brand-new custom one. A dedicated third
                         // custom nerve (RoomCodeKeyboard) was tried first and
@@ -418,7 +426,16 @@ namespace PauseMenuHooks {
                         // lines again.
                         StageSceneStateModConfig::requestMultiplayerPageOnAppear();
                         al::setNerve(menu, &NrvStageSceneStatePauseMenu.ModConfig);
-                    } else {
+                        break;
+                    }
+
+                    case cTitleRowAp: {
+                        StageSceneStateModConfig::requestArchipelagoPageOnAppear();
+                        al::setNerve(menu, &NrvStageSceneStatePauseMenu.ModConfig);
+                        break;
+                    }
+
+                    default: {
                         // Randomize! always means single-player, even if a
                         // previous visit to this same title session left the
                         // category on Multiplayer (backed out of MP file-
@@ -440,6 +457,7 @@ namespace PauseMenuHooks {
                                 SaveRedirect::Category::SinglePlayer);
                         al::setNerve(menu, &NrvStageSceneStatePauseMenu.FileSelect);
                     }
+                    }
                 }
                 return;
             }
@@ -453,23 +471,6 @@ namespace PauseMenuHooks {
             if (rs::isTriggerUiDecide(menu->mHost) || al::isPadTriggerA(-1)) {
                 MpDebugLog::write("pauseMenuExeWaitHook: A/decide trigger, cursorRow=%d",
                     menu->mSelectParts->mCursorItemIndex);
-                if (menu->mSelectParts->mCursorItemIndex == cTitleRowAp) {
-                    // The AP row is meant to be a true no-op, but every
-                    // physical row is bound to a real vanilla action regardless
-                    // of its text label (same class of issue as the MP row and
-                    // SeparatePlay, fixed above in separatePlayHook), and that
-                    // holds wherever the row lands, so this swallow follows the
-                    // row instead of a fixed index - confirmed on
-                    // hardware: falling through to pauseMenuExeWaitHook.orig()
-                    // on this exact frame let vanilla process its own decide
-                    // handling for whatever this row really is, opening
-                    // vanilla's "create a new save data" flow. Swallow the
-                    // decide-trigger frame entirely instead of falling
-                    // through - idle frames below still reach orig()
-                    // normally, so animation/pose keeps working.
-                    StageSceneStateModConfig::requestArchipelagoPageOnAppear();
-                    return;
-                }
                 sTitleSelectedRow = menu->mSelectParts->mCursorItemIndex;
                 if (menu->field_0x20)
                     al::startHitReaction(menu->field_0x20, cDecideHitReaction, nullptr);
@@ -562,6 +563,33 @@ namespace PauseMenuHooks {
             // finish, which is when the game acts on it.
             al::setNerve(state, &NrvStageSceneStatePauseMenu.End);
         });
+
+    // static HkTrampoline<void, StageSceneStatePauseMenu*>
+    //     optionHook = hk::hook::trampoline([](StageSceneStatePauseMenu* state) -> void {
+    //         if (state == sTitlePauseMenu) {
+    //             // Physical row 1 is hard-wired to vanilla's SeparatePlay action
+    //             // regardless of what text setAfterTitleHook puts on it - this is
+    //             // the row now labelled "MP". Falling through to orig() here is
+    //             // what actually started a real vanilla 2-player game straight
+    //             // from the title (confirmed on hardware: it went on to load a
+    //             // real StageScene and hit the already-documented
+    //             // sceneStateModConfig heap-leak abort, since the title was never
+    //             // meant to reach a real stage load at all). Same redirect-to-
+    //             // Wait pattern as overrideHelpFadeNerve above, for the same
+    //             // reason: the title should never act on vanilla's native
+    //             // interpretation of this row.
+    //             al::setNerve(state, &NrvStageSceneStatePauseMenu.Wait);
+    //             return;
+    //         }
+    //         if (!StartPositionRando::canReturnToStart()
+    //             || !StartPositionRando::warpToStart(state->mDataHolder)) {
+    //             separatePlayHook.orig(state);
+    //             return;
+    //         }
+    //         // The stage change is queued; End closes the menu and lets the scene
+    //         // finish, which is when the game acts on it.
+    //         al::setNerve(state, &NrvStageSceneStatePauseMenu.End);
+    //     });
 
     static HkTrampoline<bool, const TitleMenuScene*>
         titleIsNewGameHook = hk::hook::trampoline([](const TitleMenuScene* scene) -> bool {
@@ -706,6 +734,7 @@ namespace PauseMenuHooks {
         setAfterTitleHook.installAtSym<"_ZN24StageSceneStatePauseMenu13setAfterTitleEv">();
         pauseMenuExeWaitHook.installAtSym<"_ZN24StageSceneStatePauseMenu7exeWaitEv">();
         separatePlayHook.installAtSym<"_ZN24StageSceneStatePauseMenu20exeStartSeparatePlayEv">();
+        // optionHook.installAtSym<"_ZN24StageSceneStatePauseMenu9exeOptionEv">();
         titleIsNewGameHook.installAtMainOffset(0x505F08);
         titleSetScenarioHook.installAtMainOffset(0x506004);
         titleExeWipeHook.installAtMainOffset(0x506480);
