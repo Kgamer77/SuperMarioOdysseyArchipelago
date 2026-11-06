@@ -375,7 +375,7 @@ namespace PauseMenuHooks {
                 if (gStageSceneStateFileSelect) {
                     gStageSceneStateFileSelect->setSaveCategory(SaveRedirect::Category::Archipealgo);
                 }
-                al::setNerve(menu, &NrvStageSceneStatePauseMenu.FileSelect);
+                al::setNerve(menu, &NrvStageSceneStatePauseMenu.ModConfig);
             }
 
             if (sTitleStartPendingFrames > 0) {
@@ -431,7 +431,7 @@ namespace PauseMenuHooks {
 
                     case cTitleRowAp: {
                         StageSceneStateModConfig::requestArchipelagoPageOnAppear();
-                        al::setNerve(menu, &NrvStageSceneStatePauseMenu.ModConfig);
+                        al::setNerve(menu, &NrvStageSceneStatePauseMenu.FileSelect);
                         break;
                     }
 

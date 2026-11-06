@@ -860,6 +860,19 @@ namespace MenuText {
     // ==========================================================================
     inline constexpr const char16_t* PAGE_ARCHIPELAGO = u"Archipelago";
 
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_HOSTNAME_LABEL = u"Host Name";
+    inline constexpr const char* DESC_ARCHIPELAGO_HOSTNAME_LABEL = "Host Name or IPv4 Address to connect to. (Default: archipelago.gg)";
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_PORT_LABEL = u"Port";
+    inline constexpr const char* DESC_ARCHIPELAGO_PORT_LABEL = "Port number to connect to. (Default: 38281)";
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_SLOT_LABEL = u"Slot Name";
+    inline constexpr const char* DESC_ARCHIPELAGO_SLOT_LABEL = "Player Slot Name as specified in the configuration yaml.";
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_PASSWORD_LABEL = u"Password";
+    inline constexpr const char* DESC_ARCHIPELAGO_PASSWORD_LABEL = "Archipelago Lobby Password";
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_DEATHLINK_LABEL = u"Deathlink";
+    inline constexpr const char* DESC_ARCHIPELAGO_DEATHLINK_LABEL = "Override Deathink with set Option";
+    inline constexpr const char16_t* OPT_ARCHIPELAGO_CONNECT_LABEL = u"Connect";
+    inline constexpr const char* DESC_ARCHIPELAGO_CONNECT_LABEL = "Connect to Archipelago";
+
     // ==========================================================================
     // Summary
     // ==========================================================================

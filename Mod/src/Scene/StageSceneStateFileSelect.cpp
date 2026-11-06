@@ -2104,13 +2104,14 @@ const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sGuestMult
 };
 
 // Archipelago Page
-// const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sArchipelagoOptions[] = {
-// { OPT_TEAM, KIND_ROLL, MenuText::OPT_TEAM_LABEL,
-//     MenuText::ROLL_TEAM, MenuText::ROLL_TEAM_COUNT },
-// { OPT_DEATH_LINK, KIND_CHECK, MenuText::OPT_DEATH_LINK_LABEL, nullptr, 0 },
-// { OPT_SYNC_OTHER_TEAMS, KIND_CHECK,
-//     MenuText::OPT_SYNC_OTHER_TEAMS_LABEL, nullptr, 0 },
-// };
+const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sArchipelagoOptions[] = {
+{ OPT_ARCHIPELAGO_HOSTNAME, KIND_ACTION, MenuText::OPT_ARCHIPELAGO_HOSTNAME_LABEL, nullptr, 0 },
+{ OPT_ARCHIPELAGO_PORT, KIND_ACTION, MenuText::OPT_ARCHIPELAGO_PORT_LABEL, nullptr, 0 },
+{ OPT_ARCHIPELAGO_SLOTNAME, KIND_ACTION, MenuText::OPT_ARCHIPELAGO_SLOT_LABEL, nullptr, 0 },
+{ OPT_ARCHIPELAGO_PASSWORD, KIND_ACTION, MenuText::OPT_ARCHIPELAGO_PASSWORD_LABEL, nullptr, 0 },
+{ OPT_ARCHIPELAGO_DEATHLINK, KIND_CHECK, MenuText::OPT_ARCHIPELAGO_DEATHLINK_LABEL, nullptr, 0 },
+{ OPT_ARCHIPELAGO_CONNECT, KIND_ACTION, MenuText::OPT_ARCHIPELAGO_CONNECT_LABEL, nullptr, 0 },
+};
 
 const StageSceneStateFileSelect::OptionDef StageSceneStateFileSelect::sSummaryOptions[] = {
     { OPT_SAVE_AS_PRESET, KIND_ACTION, MenuText::OPT_SAVE_AS_PRESET_LABEL, nullptr, 0 },

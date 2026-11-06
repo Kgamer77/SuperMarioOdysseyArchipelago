@@ -638,7 +638,15 @@ public:
         // Music Source. Appended, never inserted, for the same
         // preset-serialization reason as everything above.
         OPT_MUSIC_SOURCE = OPT_ADVANCED_REQ_BASE_16 + 1,
-        OPT_COUNT = OPT_MUSIC_SOURCE + 1,
+
+        // Archipelago
+        OPT_ARCHIPELAGO_HOSTNAME = OPT_MUSIC_SOURCE + 1,
+        OPT_ARCHIPELAGO_PORT = OPT_ARCHIPELAGO_HOSTNAME + 1,
+        OPT_ARCHIPELAGO_SLOTNAME = OPT_ARCHIPELAGO_PORT + 1,
+        OPT_ARCHIPELAGO_PASSWORD = OPT_ARCHIPELAGO_SLOTNAME + 1,
+        OPT_ARCHIPELAGO_DEATHLINK = OPT_ARCHIPELAGO_PASSWORD + 1,
+        OPT_ARCHIPELAGO_CONNECT = OPT_ARCHIPELAGO_DEATHLINK + 1,
+        OPT_COUNT = OPT_ARCHIPELAGO_CONNECT + 1,
     };
 
     // Tagged preset entries and the settings code are unsigned, so the signed
@@ -790,6 +798,11 @@ private:
         OverwriteUserPreset,
         RedistributeAllocation,
         RedistributeTripleMoons,
+        ArchipelagoHost,
+        ArchipelagoPort,
+        ArchipelagoSlot,
+        ArchipelagoPassowrd,
+        ArchipelagoConnect,
     };
 
     enum OptKind : u8
@@ -915,6 +928,8 @@ private:
     static const OptionDef sSummaryOptions[];
     // Guest join mode's Summary page - see setGuestJoinMode().
     static const OptionDef sGuestSummaryOptions[];
+
+    static const OptionDef sArchipelagoOptions[];
     static const PageDef sPages[];
 
     void initSlotListMenu(const al::LayoutInitInfo& initInfo);
