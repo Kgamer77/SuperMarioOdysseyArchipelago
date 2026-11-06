@@ -59,6 +59,10 @@ public:
     void exeOpenKeyboardMedalRequired();
     void exeOpenKeyboardPresetName();
     void exeOpenKeyboardTrackerRoomCode();
+    void exeOpenKeyboardArchipelagoHostName();
+    void exeOpenKeyboardArchipelagoPort();
+    void exeOpenKeyboardArchipelagoSlotName();
+    void exeOpenKeyboardArchipelagoPassword();
     void exeGenerate();
     void exeActivateSlot();
     // Guest join mode's counterpart to exeGenerate(): instead of running the
@@ -1208,6 +1212,10 @@ namespace {
     NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardMedalRequired)
     NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardPresetName)
     NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardTrackerRoomCode)
+    NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardArchipelagoHostName)
+    NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardArchipelagoPort)
+    NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardArchipelagoSlotName)
+    NERVE_IMPL(StageSceneStateFileSelect, OpenKeyboardArchipelagoPassword)
     NERVE_IMPL(StageSceneStateFileSelect, Generate)
     NERVE_IMPL(StageSceneStateFileSelect, JoinRoom)
     NERVE_IMPL(StageSceneStateFileSelect, ActivateSlot)
